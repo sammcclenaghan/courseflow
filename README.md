@@ -22,8 +22,21 @@ npm run build
 This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:
 
 ```bash
-npm run test
+nub run test
 ```
+
+## Dependency policy
+
+Use Nub for installs and dependency updates:
+
+```bash
+nub install
+nub ci
+nub add -E <package>
+nub update --latest --exact
+```
+
+Direct dependency versions are exact-pinned in `package.json`. `.npmrc` sets `save-exact=true` and a seven-day `minimum-release-age`, so `nub update --latest --exact` only selects package versions that have been published for at least a week.
 
 ## Styling
 
