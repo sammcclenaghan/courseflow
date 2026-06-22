@@ -1,0 +1,7 @@
+packages:
+  - .
+
+# Avoid installing freshly published package versions. 10080 minutes = 7 days.
+# Nub/pnpm update commands respect this cooling window, so upgrades happen only
+# after a version has survived at least one week on the registry.
+minimumReleaseAge: 10080
