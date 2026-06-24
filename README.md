@@ -1,257 +1,109 @@
-Welcome to your new TanStack Start app! 
+# CourseFlow v4
 
-# Getting Started
+CourseFlow is a UVic course scheduler being ported to Cloudflare Workers and the TanStack ecosystem.
 
-To run this application:
+## Stack
+
+- TanStack Start + Router + Query
+- Cloudflare Workers via `@cloudflare/vite-plugin`
+- Cloudflare D1 for course catalog, sections, saved schedules, and course connections
+- Biome, TypeScript, Vitest
+
+## Local setup
 
 ```bash
-npm install
-npm run dev
+nub ci
+nub run d1:migrate:local
+nub run d1:seed:csc
+nub run dev
 ```
 
-# Building For Production
-
-To build this application for production:
+Useful checks:
 
 ```bash
-npm run build
-```
-
-## Testing
-
-This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:
-
-```bash
+nub run check
+nub run typecheck
 nub run test
 ```
 
-## Dependency policy
+## Catalog import
 
-Use Nub for installs and dependency updates:
-
-```bash
-nub install
-nub ci
-nub add -E <package>
-nub update --latest --exact
-```
-
-Direct dependency versions are exact-pinned in `package.json`. `.npmrc` sets `save-exact=true` and a seven-day `minimum-release-age`, so `nub update --latest --exact` only selects package versions that have been published for at least a week.
-
-## Styling
-
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
-
-### Removing Tailwind CSS
-
-If you prefer not to use Tailwind CSS:
-
-1. Remove the demo pages in `src/routes/demo/`
-2. Replace the Tailwind import in `src/styles.css` with your own styles
-3. Remove `tailwindcss()` from the plugins array in `vite.config.ts`
-4. Uninstall the packages: `npm install @tailwindcss/vite tailwindcss -D`
-
-## Linting & Formatting
-
-This project uses [Biome](https://biomejs.dev/) for linting and formatting. The following scripts are available:
-
+The Worker-compatible TypeScript importer fetches the Kuali course catalog, Banner timetable sections, and live enrollment counts, then writes D1 upsert SQL through Wrangler.
 
 ```bash
-npm run lint
-npm run format
-npm run check
+# Smoke test a small local import without writing D1
+nub run catalog:import -- --term 202609 --subject CSC --limit 5 --dry-run
+
+# Import a term locally
+nub run catalog:import:local -- --term 202609 --subject CSC
+
+# Import a term into production D1
+nub run catalog:import:prod -- --term 202609
 ```
 
+Useful flags:
 
-## Deploy to Cloudflare Workers
+- `--subject CSC,SENG` limits the import to specific subject prefixes.
+- `--limit 25` imports only the first selected courses.
+- `--skip-enrollment` imports timetable data without live enrollment counts.
+- `--concurrency 4` controls course/section fetch concurrency.
 
-This project uses the Cloudflare Vite plugin (configured in `vite.config.ts`) and `wrangler.jsonc`:
+The full course index lives at `data/import/courses.json`. Import reports and generated SQL are written under `.wrangler/tmp/`.
 
-1. Install Wrangler: `npm install -g wrangler`
-2. Authenticate: `wrangler login`
-3. Deploy: `npx wrangler deploy`
+## Database
 
-For production env vars, run `wrangler secret put MY_VAR` for each secret listed in `.env.example`. Public (non-secret) vars go in `wrangler.jsonc` under `vars`.
+The D1 binding is `DB` and is configured in `wrangler.jsonc`.
 
-KV, D1, R2, and Durable Object bindings are configured in `wrangler.jsonc` — see https://developers.cloudflare.com/workers/wrangler/configuration/.
+Current production database:
 
+- name: `course-flow-v4`
+- binding: `DB`
+- migrations directory: `migrations/`
 
-## Shadcn
-
-Add components using the latest version of [Shadcn](https://ui.shadcn.com/).
+Commands:
 
 ```bash
-pnpm dlx shadcn@latest add button
+nub run d1:info
+nub run d1:migrate:local
+nub run d1:migrate:prod
+nub run d1:seed:csc:local
+nub run d1:seed:csc:prod
+nub run d1:backup:prod
 ```
 
+Add schema changes as new numbered SQL files in `migrations/`; never edit migrations that may already be recorded in D1's `d1_migrations` table.
 
-## T3Env
+## Production deploy
 
-- You can use T3Env to add type safety to your environment variables.
-- Add Environment variables to the `src/env.mjs` file.
-- Use the environment variables in your code.
-
-### Usage
-
-```ts
-import { env } from "#/env";
-
-console.log(env.VITE_APP_TITLE);
+```bash
+nub run check
+nub run typecheck
+nub run test
+nub run d1:migrate:prod
+nub run deploy:dry-run
+nub run deploy
 ```
 
+After deploy, verify:
 
-
-
-
-
-## Routing
-
-This project uses [TanStack Router](https://tanstack.com/router) with file-based routing. Routes are managed as files in `src/routes`.
-
-### Adding A Route
-
-To add a new route to your application just add a new file in the `./src/routes` directory.
-
-TanStack will automatically generate the content of the route file for you.
-
-Now that you have two routes you can use a `Link` component to navigate between them.
-
-### Adding Links
-
-To use SPA (Single Page Application) navigation you will need to import the `Link` component from `@tanstack/react-router`.
-
-```tsx
-import { Link } from "@tanstack/react-router";
+```bash
+curl https://course-flow-v4.sam-238.workers.dev/api/v1/health
 ```
 
-Then anywhere in your JSX you can use it like so:
+If recreating D1 from scratch, create the database and copy the returned UUID into `wrangler.jsonc`:
 
-```tsx
-<Link to="/about">About</Link>
+```bash
+nub exec wrangler d1 create course-flow-v4 --location wnam
+nub exec wrangler types
 ```
 
-This will create a link that will navigate to the `/about` route.
+Secrets should be set with `wrangler secret put`; do not commit secret values. Non-secret Worker vars live in `wrangler.jsonc`.
 
-More information on the `Link` component can be found in the [Link documentation](https://tanstack.com/router/v1/docs/framework/react/api/router/linkComponent).
+## API endpoints
 
-### Using A Layout
-
-In the File Based Routing setup the layout is located in `src/routes/__root.tsx`. Anything you add to the root route will appear in all the routes. The route content will appear in the JSX where you render `{children}` in the `shellComponent`.
-
-Here is an example layout that includes a header:
-
-```tsx
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-
-export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'My App' },
-    ],
-  }),
-  shellComponent: ({ children }) => (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </nav>
-        </header>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  ),
-})
-```
-
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
-## Server Functions
-
-TanStack Start provides server functions that allow you to write server-side code that seamlessly integrates with your client components.
-
-```tsx
-import { createServerFn } from '@tanstack/react-start'
-
-const getServerTime = createServerFn({
-  method: 'GET',
-}).handler(async () => {
-  return new Date().toISOString()
-})
-
-// Use in a component
-function MyComponent() {
-  const [time, setTime] = useState('')
-  
-  useEffect(() => {
-    getServerTime().then(setTime)
-  }, [])
-  
-  return <div>Server time: {time}</div>
-}
-```
-
-## API Routes
-
-You can create API routes by using the `server` property in your route definitions:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-import { json } from '@tanstack/react-start'
-
-export const Route = createFileRoute('/api/hello')({
-  server: {
-    handlers: {
-      GET: () => json({ message: 'Hello, World!' }),
-    },
-  },
-})
-```
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-
-export const Route = createFileRoute('/people')({
-  loader: async () => {
-    const response = await fetch('https://swapi.dev/api/people')
-    return response.json()
-  },
-  component: PeopleComponent,
-})
-
-function PeopleComponent() {
-  const data = Route.useLoaderData()
-  return (
-    <ul>
-      {data.results.map((person) => (
-        <li key={person.name}>{person.name}</li>
-      ))}
-    </ul>
-  )
-}
-```
-
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
-
-# Demo files
-
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
-
-# Learn More
-
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
-
-For TanStack Start specific documentation, visit [TanStack Start](https://tanstack.com/start).
+- `GET /api/v1/health`
+- `GET /api/v1/courses/search?q=<query>&term=<term>`
+- `GET /api/v1/courses/code/$subjectCode`
+- `GET /api/v1/courses/subjects?term=<term>`
+- `GET /api/v1/sections/$pid/$term`
+- `GET /api/v1/sections/by-crns/$term?crns=12345,67890`
