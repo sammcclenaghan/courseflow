@@ -1,17 +1,22 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "course-flow-v4",
-  "compatibility_date": "2025-09-02",
+  "compatibility_date": "2026-06-23",
   "compatibility_flags": ["nodejs_compat"],
   "main": "@tanstack/react-start/server-entry",
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1
+  },
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "course-flow-v4",
+      "database_id": "a5fe7d9c-7715-4a4f-a715-8e0fb49a58ec",
       "migrations_dir": "migrations"
     }
   ],
   "vars": {
-    "APP_ENV": "development"
+    "APP_ENV": "production"
   }
 }

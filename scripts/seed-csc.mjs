@@ -5,8 +5,36 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+
+function readOption(name) {
+	const inline = process.argv.find((arg) => arg.startsWith(`${name}=`));
+	if (inline) return inline.slice(name.length + 1);
+
+	const index = process.argv.indexOf(name);
+	return index === -1 ? undefined : process.argv[index + 1];
+}
+
+if (process.argv.includes("--help")) {
+	console.info(`Usage: node scripts/seed-csc.mjs [--local|--remote] [--database course-flow-v4]
+
+Seeds the CSC fixture into D1. Defaults to --local.`);
+	process.exit(0);
+}
+
+const useRemote = process.argv.includes("--remote");
+const useLocal = process.argv.includes("--local");
+
+if (useRemote && useLocal) {
+	throw new Error("Choose only one target: --local or --remote");
+}
+
+const databaseName = readOption("--database") ?? "course-flow-v4";
+const targetFlag = useRemote ? "--remote" : "--local";
 const fixturePath = resolve(root, "data/seed/csc.json");
-const sqlPath = resolve(root, ".wrangler/tmp/seed-csc.sql");
+const sqlPath = resolve(
+	root,
+	`.wrangler/tmp/seed-csc.${useRemote ? "remote" : "local"}.sql`,
+);
 
 const fixture = JSON.parse(readFileSync(fixturePath, "utf8"));
 const courses = fixture.courses ?? [];
@@ -37,11 +65,15 @@ function sqlJson(value) {
 	return sqlString(JSON.stringify(value));
 }
 
-const statements = [
-	"PRAGMA foreign_keys = ON;",
-	"BEGIN TRANSACTION;",
+const statements = ["PRAGMA foreign_keys = ON;"];
+
+if (!useRemote) {
+	statements.push("BEGIN TRANSACTION;");
+}
+
+statements.push(
 	`DELETE FROM sections WHERE term IN (${terms.map(sqlString).join(", ")}) AND course_pid IN (${coursePids.map(sqlString).join(", ")});`,
-];
+);
 
 for (const course of courses) {
 	statements.push(`INSERT INTO courses (
@@ -130,25 +162,19 @@ for (const section of sections) {
 );`);
 }
 
-statements.push("COMMIT;");
+if (!useRemote) {
+	statements.push("COMMIT;");
+}
 
 mkdirSync(dirname(sqlPath), { recursive: true });
 writeFileSync(sqlPath, `${statements.join("\n\n")}\n`);
 
 execFileSync(
 	"npx",
-	[
-		"wrangler",
-		"d1",
-		"execute",
-		"course-flow-v4",
-		"--local",
-		"--file",
-		sqlPath,
-	],
+	["wrangler", "d1", "execute", databaseName, targetFlag, "--file", sqlPath],
 	{ cwd: root, stdio: "inherit" },
 );
 
 console.info(
-	`Seeded ${courses.length} courses and ${sections.length} sections from ${fixturePath}`,
+	`Seeded ${courses.length} courses and ${sections.length} sections from ${fixturePath} into ${databaseName} (${targetFlag})`,
 );
