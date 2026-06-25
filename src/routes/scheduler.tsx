@@ -1,21 +1,36 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, stripSearchParams } from "@tanstack/react-router";
+import { z } from "zod";
+import { SchedulerPage } from "@/components/scheduler/scheduler-page";
+import { DEFAULT_TERM } from "@/utils/constants";
+import { scheduleQueries } from "@/utils/schedule-queries";
 
-export const Route = createFileRoute("/scheduler")({
-	component: SchedulerPlaceholder,
+const schedulerSearchSchema = z.object({
+	term: z.string().default(DEFAULT_TERM).catch(DEFAULT_TERM),
 });
 
-function SchedulerPlaceholder() {
+export const Route = createFileRoute("/scheduler")({
+	validateSearch: schedulerSearchSchema,
+	search: {
+		middlewares: [stripSearchParams({ term: DEFAULT_TERM })],
+	},
+	loaderDeps: ({ search: { term } }) => ({ term }),
+	loader: ({ context: { queryClient }, deps: { term } }) =>
+		queryClient.ensureQueryData(scheduleQueries.mine(term)),
+	component: SchedulerRoute,
+});
+
+function SchedulerRoute() {
+	const { term } = Route.useSearch();
+	const navigate = Route.useNavigate();
+
 	return (
-		<section className="flex flex-1 flex-col items-center justify-center px-6 py-24 text-center">
-			<p className="font-medium text-[11px] text-muted-foreground tracking-[0.3em] uppercase">
-				Timetable
-			</p>
-			<h1 className="mt-4 font-semibold text-3xl tracking-tight">
-				Weekly schedule
-			</h1>
-			<p className="mt-4 max-w-md text-sm text-muted-foreground leading-relaxed">
-				The drag-to-build timetable view will land here next.
-			</p>
-		</section>
+		<SchedulerPage
+			term={term}
+			onTermChange={(nextTerm) => {
+				void navigate({
+					search: (previous) => ({ ...previous, term: nextTerm }),
+				});
+			}}
+		/>
 	);
 }

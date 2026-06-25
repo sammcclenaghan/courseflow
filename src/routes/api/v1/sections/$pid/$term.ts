@@ -1,20 +1,13 @@
-import { env } from "cloudflare:workers";
 import { createFileRoute } from "@tanstack/react-router";
-import { groupSections, type SectionRow } from "@/utils/sections.server";
+import { listSectionsByPidAndTermFromDb } from "@/utils/sections-db.server";
 
 export const Route = createFileRoute("/api/v1/sections/$pid/$term")({
 	server: {
 		handlers: {
 			GET: async ({ params }) => {
-				const { results } = await env.DB.prepare(
-					`SELECT * FROM sections
-WHERE course_pid = ? AND term = ?
-ORDER BY schedule_type, crn`,
-				)
-					.bind(params.pid, params.term)
-					.all<SectionRow>();
-
-				return Response.json(groupSections(results));
+				return Response.json(
+					await listSectionsByPidAndTermFromDb(params.pid, params.term),
+				);
 			},
 		},
 	},

@@ -3,7 +3,21 @@
   "name": "course-flow-v4",
   "compatibility_date": "2026-06-23",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "@tanstack/react-start/server-entry",
+  "main": "src/server.ts",
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "SCHEDULE_SHARE_ROOM",
+        "class_name": "ScheduleShareRoom"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["ScheduleShareRoom"]
+    }
+  ],
   "observability": {
     "enabled": true,
     "head_sampling_rate": 0.1
