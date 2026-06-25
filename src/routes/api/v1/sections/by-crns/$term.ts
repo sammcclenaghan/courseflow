@@ -1,6 +1,6 @@
 import { env } from "cloudflare:workers";
 import { createFileRoute } from "@tanstack/react-router";
-import { mapSection, type SectionRow } from "@/utils/sections.server";
+import { mapSection, type SectionRow } from "@/utils/sections-domain.server";
 
 const MAX_CRNS = 100;
 

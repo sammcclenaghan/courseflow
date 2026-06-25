@@ -1,17 +1,12 @@
 import { queryOptions } from "@tanstack/react-query";
-import { searchCourses } from "./courses";
-import {
-	getMySchedule,
-	getMyScheduleShare,
-	getSharedScheduleById,
-} from "./schedules";
-import { listSectionsByPidAndTerm } from "./sections";
+import { searchCourses } from "../utils/catalog.functions";
+import { getMySchedule } from "../utils/scheduler.functions";
+import { listSectionsByPidAndTerm } from "../utils/sections.functions";
+import { getMyScheduleShare } from "../utils/sharing.functions";
 
 export const scheduleQueryKey = (term: string) => ["schedule", term] as const;
 export const scheduleShareQueryKey = (term: string) =>
 	["schedule", term, "share"] as const;
-export const sharedScheduleQueryKey = (shareId: string) =>
-	["sharedSchedule", shareId] as const;
 
 export const courseQueries = {
 	search(query: string, term?: string) {
@@ -49,16 +44,6 @@ export const scheduleShareQueries = {
 			queryKey: scheduleShareQueryKey(term),
 			queryFn: () => getMyScheduleShare({ data: { term } }),
 			staleTime: 10_000,
-		});
-	},
-};
-
-export const sharedScheduleQueries = {
-	byShareId(shareId: string) {
-		return queryOptions({
-			queryKey: sharedScheduleQueryKey(shareId),
-			queryFn: () => getSharedScheduleById({ data: { shareId } }),
-			refetchOnWindowFocus: true,
 		});
 	},
 };

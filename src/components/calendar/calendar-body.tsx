@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
-import type { CalendarEvent as CalendarEventType } from "@/utils/schedule-types";
+import type { CalendarEvent as CalendarEventType } from "@/utils/scheduler-types";
 import { CalendarEvent } from "./calendar-event";
 
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"] as const;

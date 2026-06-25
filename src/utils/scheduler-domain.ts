@@ -1,6 +1,6 @@
-import type { Course } from "./course-types";
-import type { SavedCourse, ScheduleWithSections } from "./schedule-types";
-import type { Section } from "./section-types";
+import type { Course } from "./catalog-types";
+import type { SavedCourse, ScheduleWithSections } from "./scheduler-types";
+import type { Section } from "./sections-types";
 
 export function buildCourseFromSection(section: Section): Course {
 	const subjectCode = `${section.subject}${section.courseNumber}`.replace(

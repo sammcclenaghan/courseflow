@@ -1,6 +1,6 @@
-import { COURSE_COLORS, DAY_MAP } from "./constants";
-import type { CalendarEvent, SavedCourse } from "./schedule-types";
-import type { Section, SectionMeeting } from "./section-types";
+import { COURSE_COLORS, DAY_MAP } from "@/utils/constants";
+import type { CalendarEvent, SavedCourse } from "@/utils/scheduler-types";
+import type { Section, SectionMeeting } from "@/utils/sections-types";
 
 export function sectionMeetings(section: Section): SectionMeeting[] {
 	if (section.meetings.length > 0) return section.meetings;

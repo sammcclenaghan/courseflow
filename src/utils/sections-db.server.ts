@@ -1,5 +1,5 @@
 import { env } from "cloudflare:workers";
-import { groupSections, type SectionRow } from "./sections.server";
+import { groupSections, type SectionRow } from "./sections-domain.server";
 
 export async function listSectionsByPidAndTermFromDb(
 	pid: string,

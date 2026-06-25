@@ -5,7 +5,7 @@ import type {
 	ListSubjectsInput,
 	SearchCoursesInput,
 	SubjectResult,
-} from "./course-types";
+} from "./catalog-types";
 
 type CourseRow = {
 	id: number;

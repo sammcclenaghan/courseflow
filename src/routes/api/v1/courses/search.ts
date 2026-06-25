@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { searchCoursesFromDb } from "@/utils/courses.server";
+import { searchCoursesFromDb } from "@/utils/catalog-db.server";
 
 export const Route = createFileRoute("/api/v1/courses/search")({
 	server: {

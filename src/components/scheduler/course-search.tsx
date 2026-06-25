@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
-import type { CourseSearchResult } from "@/utils/course-types";
-import { courseQueries } from "@/utils/schedule-queries";
+import { courseQueries } from "@/queries/scheduler";
+import type { CourseSearchResult } from "@/utils/catalog-types";
 import { getCourseToggle } from "./course-toggle";
 
 export function CourseSearch({

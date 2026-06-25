@@ -4,14 +4,18 @@ import {
 	InvalidScheduleCRNsError,
 	normalizeScheduleCrns,
 	ScheduleRequestError,
-} from "./schedules.shared";
-import { mapSection, type Section, type SectionRow } from "./sections.server";
+} from "./scheduler-shared";
+import {
+	mapSection,
+	type Section,
+	type SectionRow,
+} from "./sections-domain.server";
 
 export {
 	InvalidScheduleCRNsError,
 	normalizeScheduleCrns,
 	ScheduleRequestError,
-} from "./schedules.shared";
+} from "./scheduler-shared";
 
 export type ScheduleResult = {
 	id: number;

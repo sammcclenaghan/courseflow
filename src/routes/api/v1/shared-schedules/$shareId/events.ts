@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
 	getSharedSchedule,
 	scheduleErrorResponse,
-} from "@/utils/schedules.server";
+} from "@/utils/scheduler-db.server";
 
 export const Route = createFileRoute(
 	"/api/v1/shared-schedules/$shareId/events",

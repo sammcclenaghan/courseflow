@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { groupSections, mapSection, type SectionRow } from "./sections.server";
+import {
+	groupSections,
+	mapSection,
+	type SectionRow,
+} from "./sections-domain.server";
 
 const baseRow = {
 	id: 1,

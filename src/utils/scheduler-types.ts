@@ -1,5 +1,5 @@
-import type { Course } from "./course-types";
-import type { Section } from "./section-types";
+import type { Course } from "./catalog-types";
+import type { Section } from "./sections-types";
 
 export type CalendarEvent = {
 	id: string;

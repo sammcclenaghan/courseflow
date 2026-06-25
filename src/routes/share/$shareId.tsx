@@ -4,15 +4,15 @@ import { Copy, Loader2, RefreshCw } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Calendar } from "@/components/calendar/calendar";
 import { Button } from "@/components/ui/button";
-import { getTermLabel } from "@/utils/constants";
-import { buildSavedCourses } from "@/utils/schedule-data";
+import { scheduleQueryKey } from "@/queries/scheduler";
 import {
-	scheduleQueryKey,
 	sharedScheduleQueries,
 	sharedScheduleQueryKey,
-} from "@/utils/schedule-queries";
-import { copySharedScheduleToMine } from "@/utils/schedules";
+} from "@/queries/sharing";
+import { getTermLabel } from "@/utils/constants";
+import { buildSavedCourses } from "@/utils/scheduler-domain";
 import { coursesToEvents } from "@/utils/section-to-events";
+import { copySharedScheduleToMine } from "@/utils/sharing.functions";
 
 export const Route = createFileRoute("/share/$shareId")({
 	loader: ({ context: { queryClient }, params: { shareId } }) =>

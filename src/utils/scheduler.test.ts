@@ -3,7 +3,7 @@ import {
 	MAX_SCHEDULE_CRNS,
 	normalizeScheduleCrns,
 	ScheduleRequestError,
-} from "./schedules.shared";
+} from "./scheduler-shared";
 
 describe("schedule helpers", () => {
 	it("normalizes CRNs by trimming blanks and removing duplicates", () => {

@@ -1,5 +1,5 @@
 import { type LucideIcon, Plus, X } from "lucide-react";
-import type { CourseSearchResult } from "@/utils/course-types";
+import type { CourseSearchResult } from "@/utils/catalog-types";
 
 export interface CourseToggle {
 	/** Icon for the add/remove affordance. */

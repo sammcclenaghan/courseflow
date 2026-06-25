@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { CalendarEvent } from "@/utils/schedule-types";
+import type { CalendarEvent } from "@/utils/scheduler-types";
 import { CalendarBody } from "./calendar-body";
 
 export function Calendar({

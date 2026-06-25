@@ -6,12 +6,12 @@ import { Input } from "@/components/ui/input";
 import {
 	scheduleShareQueries,
 	scheduleShareQueryKey,
-} from "@/utils/schedule-queries";
+} from "@/queries/scheduler";
 import {
 	createMyScheduleShare,
 	regenerateMyScheduleShare,
 	revokeMyScheduleShare,
-} from "@/utils/schedules";
+} from "@/utils/sharing.functions";
 
 export function ScheduleSharePanel({
 	term,

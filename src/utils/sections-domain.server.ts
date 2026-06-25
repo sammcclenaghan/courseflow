@@ -1,6 +1,14 @@
-import type { GroupedSections, Section, SectionMeeting } from "./section-types";
+import type {
+	GroupedSections,
+	Section,
+	SectionMeeting,
+} from "./sections-types";
 
-export type { GroupedSections, Section, SectionMeeting } from "./section-types";
+export type {
+	GroupedSections,
+	Section,
+	SectionMeeting,
+} from "./sections-types";
 
 export type SectionRow = {
 	id: number;

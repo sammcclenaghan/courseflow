@@ -1,8 +1,8 @@
 import { createFileRoute, stripSearchParams } from "@tanstack/react-router";
 import { z } from "zod";
 import { SchedulerPage } from "@/components/scheduler/scheduler-page";
+import { scheduleQueries } from "@/queries/scheduler";
 import { DEFAULT_TERM } from "@/utils/constants";
-import { scheduleQueries } from "@/utils/schedule-queries";
 
 const schedulerSearchSchema = z.object({
 	term: z.string().default(DEFAULT_TERM).catch(DEFAULT_TERM),

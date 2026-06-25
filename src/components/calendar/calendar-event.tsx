@@ -1,6 +1,6 @@
 import { MapPin } from "lucide-react";
 import { cn, hexToRgba } from "@/lib/utils";
-import type { CalendarEvent as CalendarEventType } from "@/utils/schedule-types";
+import type { CalendarEvent as CalendarEventType } from "@/utils/scheduler-types";
 
 type EventPosition = {
 	left: string;

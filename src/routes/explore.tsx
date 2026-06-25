@@ -7,7 +7,7 @@ import {
 	getCourseBySubjectCode,
 	listSubjects,
 	searchCourses,
-} from "@/utils/courses";
+} from "@/utils/catalog.functions";
 
 const DEFAULT_TERM = "202609";
 

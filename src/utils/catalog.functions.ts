@@ -4,7 +4,7 @@ import type {
 	GetCourseBySubjectCodeInput,
 	ListSubjectsInput,
 	SearchCoursesInput,
-} from "./course-types";
+} from "./catalog-types";
 
 export type {
 	Course,
@@ -13,19 +13,21 @@ export type {
 	ListSubjectsInput,
 	SearchCoursesInput,
 	SubjectResult,
-} from "./course-types";
+} from "./catalog-types";
 
 export const searchCourses = createServerFn({ method: "GET" })
 	.validator((data: SearchCoursesInput) => data)
 	.handler(async ({ data }) => {
-		const { searchCoursesFromDb } = await import("./courses.server");
+		const { searchCoursesFromDb } = await import("./catalog-db.server");
 		return searchCoursesFromDb(data);
 	});
 
 export const getCourseBySubjectCode = createServerFn({ method: "GET" })
 	.validator((data: GetCourseBySubjectCodeInput) => data)
 	.handler(async ({ data }) => {
-		const { getCourseBySubjectCodeFromDb } = await import("./courses.server");
+		const { getCourseBySubjectCodeFromDb } = await import(
+			"./catalog-db.server"
+		);
 		const course = await getCourseBySubjectCodeFromDb(data.subjectCode);
 		if (!course) {
 			throw notFound();
@@ -36,6 +38,6 @@ export const getCourseBySubjectCode = createServerFn({ method: "GET" })
 export const listSubjects = createServerFn({ method: "GET" })
 	.validator((data?: ListSubjectsInput) => data ?? {})
 	.handler(async ({ data }) => {
-		const { listSubjectsFromDb } = await import("./courses.server");
+		const { listSubjectsFromDb } = await import("./catalog-db.server");
 		return listSubjectsFromDb(data);
 	});

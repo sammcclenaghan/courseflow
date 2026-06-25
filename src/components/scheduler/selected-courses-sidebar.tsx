@@ -17,11 +17,11 @@ import {
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
-import type { Course } from "@/utils/course-types";
-import { sectionQueries } from "@/utils/schedule-queries";
-import type { SavedCourse } from "@/utils/schedule-types";
+import { sectionQueries } from "@/queries/scheduler";
+import type { Course } from "@/utils/catalog-types";
+import type { SavedCourse } from "@/utils/scheduler-types";
 import { sectionMeetings } from "@/utils/section-to-events";
-import type { Section } from "@/utils/section-types";
+import type { Section } from "@/utils/sections-types";
 
 interface SelectedCoursesSidebarProps {
 	term: string;

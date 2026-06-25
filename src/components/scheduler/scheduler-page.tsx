@@ -1,18 +1,21 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useMemo, useRef } from "react";
 import { Calendar } from "@/components/calendar/calendar";
-import { TERMS } from "@/utils/constants";
-import type { Course, CourseSearchResult } from "@/utils/course-types";
-import { expandSavedSchedule } from "@/utils/schedule-data";
 import {
 	scheduleQueries,
 	scheduleQueryKey,
 	sectionQueries,
-} from "@/utils/schedule-queries";
-import type { SavedCourse, ScheduleWithSections } from "@/utils/schedule-types";
-import { saveMySchedule } from "@/utils/schedules";
+} from "@/queries/scheduler";
+import type { Course, CourseSearchResult } from "@/utils/catalog-types";
+import { TERMS } from "@/utils/constants";
+import { saveMySchedule } from "@/utils/scheduler.functions";
+import { expandSavedSchedule } from "@/utils/scheduler-domain";
+import type {
+	SavedCourse,
+	ScheduleWithSections,
+} from "@/utils/scheduler-types";
 import { coursesToEvents } from "@/utils/section-to-events";
-import type { GroupedSections, Section } from "@/utils/section-types";
+import type { GroupedSections, Section } from "@/utils/sections-types";
 import { CourseSearch } from "./course-search";
 import { ScheduleSharePanel } from "./schedule-share-panel";
 import { SelectedCoursesSidebar } from "./selected-courses-sidebar";

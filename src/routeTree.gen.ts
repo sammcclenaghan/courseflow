@@ -64,9 +64,9 @@ const ApiV1CoursesSearchRoute = ApiV1CoursesSearchRouteImport.update({
 } as any)
 const ApiV1SharedSchedulesShareIdEventsRoute =
   ApiV1SharedSchedulesShareIdEventsRouteImport.update({
-    id: '/events',
-    path: '/events',
-    getParentRoute: () => ApiV1SharedSchedulesShareIdRoute,
+    id: '/api/v1/shared-schedules/$shareId/events',
+    path: '/api/v1/shared-schedules/$shareId/events',
+    getParentRoute: () => rootRouteImport,
   } as any)
 const ApiV1SectionsByCrnsTermRoute = ApiV1SectionsByCrnsTermRouteImport.update({
   id: '/api/v1/sections/by-crns/$term',
@@ -185,6 +185,7 @@ export interface RootRouteChildren {
   ApiV1CoursesCodeSubjectCodeRoute: typeof ApiV1CoursesCodeSubjectCodeRoute
   ApiV1SectionsPidTermRoute: typeof ApiV1SectionsPidTermRoute
   ApiV1SectionsByCrnsTermRoute: typeof ApiV1SectionsByCrnsTermRoute
+  ApiV1SharedSchedulesShareIdEventsRoute: typeof ApiV1SharedSchedulesShareIdEventsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -247,10 +248,10 @@ declare module '@tanstack/react-router' {
     }
     '/api/v1/shared-schedules/$shareId/events': {
       id: '/api/v1/shared-schedules/$shareId/events'
-      path: '/events'
+      path: '/api/v1/shared-schedules/$shareId/events'
       fullPath: '/api/v1/shared-schedules/$shareId/events'
       preLoaderRoute: typeof ApiV1SharedSchedulesShareIdEventsRouteImport
-      parentRoute: typeof ApiV1SharedSchedulesShareIdRoute
+      parentRoute: typeof rootRouteImport
     }
     '/api/v1/sections/by-crns/$term': {
       id: '/api/v1/sections/by-crns/$term'
@@ -288,6 +289,8 @@ const rootRouteChildren: RootRouteChildren = {
   ApiV1CoursesCodeSubjectCodeRoute: ApiV1CoursesCodeSubjectCodeRoute,
   ApiV1SectionsPidTermRoute: ApiV1SectionsPidTermRoute,
   ApiV1SectionsByCrnsTermRoute: ApiV1SectionsByCrnsTermRoute,
+  ApiV1SharedSchedulesShareIdEventsRoute:
+    ApiV1SharedSchedulesShareIdEventsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
