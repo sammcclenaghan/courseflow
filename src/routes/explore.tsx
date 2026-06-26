@@ -1,12 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ChevronLeft, Search, X } from "lucide-react";
-import { type ReactNode, useMemo, useRef, useState } from "react";
+import { Fragment, type ReactNode, useMemo, useRef, useState } from "react";
 import { searchCourseAutocomplete } from "@/catalog/course-autocomplete";
 import {
 	markCourseSearchInput,
 	useCourseSearchPerformance,
 } from "@/catalog/course-search-performance";
+import { highlightTextSegments } from "@/catalog/text-highlight";
 import { useCourseAutocomplete } from "@/catalog/use-course-autocomplete";
 import { catalogQueries } from "@/queries/catalog";
 import type { CourseSearchResult, SubjectResult } from "@/utils/catalog-types";
@@ -353,17 +354,24 @@ const COURSE_ROW_SKELETON_KEYS = [
 ];
 
 function highlightMatch(text: string, query: string, minLength = 1): ReactNode {
-	if (query.trim().length < minLength) return text;
-	const normalizedQuery = query.trim();
-	const index = text.toLowerCase().indexOf(normalizedQuery.toLowerCase());
-	if (index === -1) return text;
+	const segments = highlightTextSegments(text, query, minLength);
+	if (segments.length === 1 && !segments[0]?.highlighted) return text;
+
 	return (
 		<>
-			{text.slice(0, index)}
-			<mark className="rounded bg-uvic-blue/10 px-0.5 text-uvic-blue">
-				{text.slice(index, index + normalizedQuery.length)}
-			</mark>
-			{text.slice(index + normalizedQuery.length)}
+			{segments.map((segment) => (
+				<Fragment
+					key={`${segment.highlighted ? "hit" : "text"}-${segment.text}`}
+				>
+					{segment.highlighted ? (
+						<mark className="rounded bg-uvic-blue/10 px-0.5 text-uvic-blue">
+							{segment.text}
+						</mark>
+					) : (
+						segment.text
+					)}
+				</Fragment>
+			))}
 		</>
 	);
 }
