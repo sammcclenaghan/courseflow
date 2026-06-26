@@ -27,11 +27,18 @@ import type { ScheduleWithSections } from "@/utils/scheduler-types";
 import { formatSectionSchedule } from "@/utils/section-to-events";
 import type { GroupedSections, Section } from "@/utils/sections-types";
 
-const alternativesDefault = "best" satisfies AlternativeMode;
+const alternativesDefault = "all" satisfies AlternativeMode;
+const ALTERNATIVES_MODE_STORAGE_KEY = "courseflow:alternatives-mode";
+
+function readStoredAlternativesMode(): AlternativeMode | null {
+	if (typeof window === "undefined") return null;
+	const stored = window.localStorage.getItem(ALTERNATIVES_MODE_STORAGE_KEY);
+	return stored === "all" || stored === "offered" ? stored : null;
+}
 const courseSearchSchema = z.object({
 	term: z.string().default(DEFAULT_TERM).catch(DEFAULT_TERM),
 	alternatives: z
-		.enum(["best", "offered", "all"])
+		.enum(["offered", "all"])
 		.default(alternativesDefault)
 		.catch(alternativesDefault),
 });
@@ -90,6 +97,28 @@ function CourseDetailPage() {
 	const scheduleQuery = useQuery(scheduleQueries.mine(term));
 	const [isAdding, setIsAdding] = useState(false);
 	const { isFavourite, toggleFavourite } = useFavouriteCourses();
+
+	// Keep the alternatives mode sticky across courses. If the URL explicitly
+	// carries a mode (e.g. a shared link), it wins and we remember it; otherwise
+	// fall back to the last choice the user made.
+	useEffect(() => {
+		const urlHasMode = new URLSearchParams(window.location.search).has(
+			"alternatives",
+		);
+		if (urlHasMode) {
+			window.localStorage.setItem(ALTERNATIVES_MODE_STORAGE_KEY, alternatives);
+			return;
+		}
+		const stored = readStoredAlternativesMode();
+		if (stored && stored !== alternatives) {
+			navigate({
+				search: (prev) => ({ ...prev, alternatives: stored }),
+				replace: true,
+			});
+		}
+		// Re-run when the visited course changes; navigate/alternatives are stable enough here.
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [subjectCode]);
 
 	if (courseQuery.isLoading) {
 		return <CourseDetailSkeleton />;
@@ -273,12 +302,15 @@ function CourseDetailPage() {
 							results={alternativesQuery.data?.results ?? []}
 							isLoading={alternativesQuery.isLoading}
 							mode={alternatives}
-							term={term}
-							onModeChange={(mode) =>
+							onModeChange={(mode) => {
+								window.localStorage.setItem(
+									ALTERNATIVES_MODE_STORAGE_KEY,
+									mode,
+								);
 								navigate({
 									search: (prev) => ({ ...prev, alternatives: mode }),
-								})
-							}
+								});
+							}}
 						/>
 
 						<section>
@@ -493,17 +525,14 @@ function SimilarAlternativesSection({
 	results,
 	isLoading,
 	mode,
-	term,
 	onModeChange,
 }: {
 	results: CourseAlternative[];
 	isLoading: boolean;
 	mode: AlternativeMode;
-	term: string;
 	onModeChange: (mode: AlternativeMode) => void;
 }) {
 	const [expanded, setExpanded] = useState(false);
-	const label = getTermLabel(term);
 
 	if (isLoading) {
 		return (
@@ -530,12 +559,7 @@ function SimilarAlternativesSection({
 			<AlternativesHeader mode={mode} onModeChange={onModeChange} />
 			<div className="divide-y divide-[#1a1a1a]/[0.05] overflow-hidden rounded-xl border border-[#1a1a1a]/[0.06] bg-white/40">
 				{visible.map((result, i) => (
-					<AlternativeCourseRow
-						key={result.pid}
-						result={result}
-						index={i}
-						termLabel={label}
-					/>
+					<AlternativeCourseRow key={result.pid} result={result} index={i} />
 				))}
 			</div>
 			{hasMore && (
@@ -568,30 +592,24 @@ function AlternativesHeader({
 		<div className="mb-4 flex flex-wrap items-center justify-between gap-3">
 			<div>
 				<h2 className="font-semibold text-[#1a1a1a]/30 text-[11px] tracking-[0.12em] uppercase">
-					Similar alternatives
+					Related courses
 				</h2>
-				<p className="mt-1 text-[#1a1a1a]/35 text-[12px]">
-					Courses that overlap in topic, prerequisites, or learning path.
-				</p>
 			</div>
-			<div className="flex rounded-full bg-[#1a1a1a]/[0.05] p-1">
-				{(["best", "offered", "all"] as const).map((option) => (
+			<div className="inline-flex items-center gap-0.5 rounded-full border border-[#1a1a1a]/[0.06] bg-[#1a1a1a]/[0.03] p-0.5">
+				{(["all", "offered"] as const).map((option) => (
 					<button
 						key={option}
 						type="button"
+						aria-pressed={mode === option}
 						onClick={() => onModeChange(option)}
 						className={[
-							"rounded-full px-3 py-1 font-medium text-[11px] capitalize transition-colors",
+							"rounded-full px-3.5 py-1.5 font-medium text-[12px] transition-all duration-200",
 							mode === option
-								? "bg-white text-[#1a1a1a]/70 shadow-sm"
-								: "text-[#1a1a1a]/35 hover:text-[#1a1a1a]/60",
+								? "bg-white text-[#1a1a1a]/80 shadow-[0_1px_2px_rgba(0,0,0,0.06)] ring-1 ring-[#1a1a1a]/[0.04]"
+								: "text-[#1a1a1a]/40 hover:text-[#1a1a1a]/65",
 						].join(" ")}
 					>
-						{option === "best"
-							? "Best matches"
-							: option === "offered"
-								? "Offered this term"
-								: "All catalog"}
+						{option === "all" ? "All courses" : "This term"}
 					</button>
 				))}
 			</div>
@@ -602,11 +620,9 @@ function AlternativesHeader({
 function AlternativeCourseRow({
 	result,
 	index,
-	termLabel,
 }: {
 	result: CourseAlternative;
 	index: number;
-	termLabel: string;
 }) {
 	return (
 		<div
@@ -626,21 +642,6 @@ function AlternativeCourseRow({
 					<span className="truncate text-[#1a1a1a]/40 text-[13px]">
 						{result.title}
 					</span>
-				</div>
-				<div className="mt-1.5 flex flex-wrap gap-1.5">
-					<span className="rounded-full bg-[#1a1a1a]/[0.05] px-2 py-0.5 font-medium text-[#1a1a1a]/45 text-[10px]">
-						{result.offeredInTerm
-							? `Offered ${termLabel}`
-							: `Not offered ${termLabel}`}
-					</span>
-					{result.reasons.slice(0, 2).map((reason) => (
-						<span
-							key={reason}
-							className="rounded-full bg-uvic-blue/10 px-2 py-0.5 font-medium text-[10px] text-uvic-blue/75"
-						>
-							{reason}
-						</span>
-					))}
 				</div>
 			</div>
 			<Link

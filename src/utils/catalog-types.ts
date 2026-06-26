@@ -37,7 +37,7 @@ export type ListSubjectsInput = {
 	term?: string;
 };
 
-export type AlternativeMode = "best" | "offered" | "all";
+export type AlternativeMode = "offered" | "all";
 
 export type CourseAlternative = {
 	pid: string;

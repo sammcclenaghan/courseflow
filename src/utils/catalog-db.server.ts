@@ -46,11 +46,6 @@ type CourseRecommendationRow = {
 	has_available_seats: number;
 };
 
-type SourceAvailabilityRow = {
-	offered_in_term: number;
-	has_available_seats: number;
-};
-
 export async function searchCoursesFromDb({
 	query,
 	term,
@@ -150,7 +145,7 @@ ORDER BY c.subject_code`,
 export async function getCourseAlternativesFromDb({
 	subjectCode,
 	term,
-	mode = "best",
+	mode = "all",
 	limit = 8,
 }: GetCourseAlternativesInput): Promise<CourseAlternativesResponse> {
 	const course = await getCourseBySubjectCodeFromDb(subjectCode);
@@ -181,8 +176,6 @@ LIMIT 1`,
 		};
 	}
 
-	const sourceAvailability = await getCourseAvailability(course.pid, term);
-	const offeredBoost = sourceAvailability.offered_in_term ? 0.04 : 0.12;
 	const rows = await listRecommendationRows(
 		course.pid,
 		latestAlgorithm.algorithm_version,
@@ -194,10 +187,6 @@ LIMIT 1`,
 		.map((row) => {
 			const offeredInTerm = Boolean(row.offered_in_term);
 			const hasAvailableSeats = Boolean(row.has_available_seats);
-			const score =
-				mode === "best" && offeredInTerm
-					? row.final_score + offeredBoost + (hasAvailableSeats ? 0.02 : 0)
-					: row.final_score;
 
 			return {
 				pid: row.pid,
@@ -205,7 +194,7 @@ LIMIT 1`,
 				title: row.title,
 				credits: row.credits,
 				rank: row.recommendation_rank,
-				score,
+				score: row.final_score,
 				semanticScore: row.semantic_score,
 				offeredInTerm,
 				hasAvailableSeats,
@@ -223,24 +212,6 @@ LIMIT 1`,
 		mode,
 		results,
 	};
-}
-
-async function getCourseAvailability(
-	coursePid: string,
-	term: string,
-): Promise<SourceAvailabilityRow> {
-	return (
-		(await env.DB.prepare(
-			`SELECT
-  EXISTS(SELECT 1 FROM sections WHERE course_pid = ? AND term = ?) AS offered_in_term,
-  EXISTS(SELECT 1 FROM sections WHERE course_pid = ? AND term = ? AND enrollment_seats_available > 0) AS has_available_seats`,
-		)
-			.bind(coursePid, term, coursePid, term)
-			.first<SourceAvailabilityRow>()) ?? {
-			offered_in_term: 0,
-			has_available_seats: 0,
-		}
-	);
 }
 
 async function listRecommendationRows(
