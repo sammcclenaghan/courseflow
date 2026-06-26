@@ -15,6 +15,7 @@ export type CatalogImportOptions = {
 	concurrency: number;
 	enrollmentConcurrency: number;
 	timeoutMs: number;
+	delayMs: number;
 	skipEnrollment: boolean;
 	onProgress?: (message: string) => void;
 };
@@ -40,9 +41,11 @@ export async function importCatalog({
 	concurrency,
 	enrollmentConcurrency,
 	timeoutMs,
+	delayMs,
 	skipEnrollment,
 	onProgress,
 }: CatalogImportOptions): Promise<CatalogImportResult> {
+	const fetchFn = createThrottledFetch(delayMs);
 	const courseResults = await mapConcurrent(
 		entries,
 		concurrency,
@@ -52,6 +55,7 @@ export async function importCatalog({
 				catalogId,
 				enrollmentConcurrency,
 				timeoutMs,
+				fetchFn,
 				skipEnrollment,
 				onProgress,
 			}),
@@ -80,7 +84,7 @@ type ImportEntryOptions = Pick<
 	| "timeoutMs"
 	| "skipEnrollment"
 	| "onProgress"
->;
+> & { fetchFn: typeof fetch };
 
 async function importEntry(
 	entry: CourseEntry,
@@ -97,6 +101,7 @@ async function importEntry(
 		course = await fetchCourseInfo(entry.pid, {
 			catalogId: options.catalogId,
 			timeoutMs: options.timeoutMs,
+			fetchFn: options.fetchFn,
 		});
 		options.onProgress?.(`${label} course ✓ ${course.title}`);
 	} catch (error) {
@@ -114,7 +119,7 @@ async function importEntry(
 	try {
 		sections = await fetchSectionsForCourse(
 			{ ...parsedCourseId, term: options.term, coursePid: entry.pid },
-			{ timeoutMs: options.timeoutMs },
+			{ timeoutMs: options.timeoutMs, fetchFn: options.fetchFn },
 		);
 		options.onProgress?.(`${label} sections ✓ ${sections.length}`);
 	} catch (error) {
@@ -128,6 +133,7 @@ async function importEntry(
 			await refreshEnrollment(sections, {
 				concurrency: options.enrollmentConcurrency,
 				timeoutMs: options.timeoutMs,
+				fetchFn: options.fetchFn,
 			});
 			const refreshed = sections.filter(
 				(section) => section.enrollmentRefreshed,
@@ -142,6 +148,23 @@ async function importEntry(
 	}
 
 	return { entry, course, sections, errors };
+}
+
+function createThrottledFetch(delayMs: number): typeof fetch {
+	if (delayMs <= 0) return fetch;
+
+	let nextStart = 0;
+	return async (input, init) => {
+		const now = Date.now();
+		const waitMs = Math.max(0, nextStart - now);
+		nextStart = Math.max(now, nextStart) + delayMs;
+		if (waitMs > 0) await delay(waitMs);
+		return fetch(input, init);
+	};
+}
+
+function delay(ms: number): Promise<void> {
+	return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function errorMessage(error: unknown): string {

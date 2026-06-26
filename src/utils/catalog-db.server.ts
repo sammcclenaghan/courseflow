@@ -1,7 +1,10 @@
 import { env } from "cloudflare:workers";
 import type {
 	Course,
+	CourseAlternative,
+	CourseAlternativesResponse,
 	CourseSearchResult,
+	GetCourseAlternativesInput,
 	ListSubjectsInput,
 	SearchCoursesInput,
 	SubjectResult,
@@ -28,6 +31,24 @@ type CourseSearchRow = Pick<
 
 type SubjectCodeRow = {
 	subject_code: string;
+};
+
+type CourseRecommendationRow = {
+	pid: string;
+	subject_code: string;
+	title: string;
+	credits: string;
+	semantic_score: number;
+	final_score: number;
+	reasons_json: string;
+	recommendation_rank: number;
+	offered_in_term: number;
+	has_available_seats: number;
+};
+
+type SourceAvailabilityRow = {
+	offered_in_term: number;
+	has_available_seats: number;
 };
 
 export async function searchCoursesFromDb({
@@ -124,6 +145,146 @@ ORDER BY c.subject_code`,
 		subject,
 		courseCount,
 	})).sort((a, b) => a.subject.localeCompare(b.subject));
+}
+
+export async function getCourseAlternativesFromDb({
+	subjectCode,
+	term,
+	mode = "best",
+	limit = 8,
+}: GetCourseAlternativesInput): Promise<CourseAlternativesResponse> {
+	const course = await getCourseBySubjectCodeFromDb(subjectCode);
+	if (!course) {
+		return {
+			subjectCode,
+			term,
+			mode,
+			results: [],
+		};
+	}
+
+	const latestAlgorithm = await env.DB.prepare(
+		`SELECT algorithm_version FROM course_recommendations
+WHERE source_pid = ?
+ORDER BY computed_at DESC
+LIMIT 1`,
+	)
+		.bind(course.pid)
+		.first<{ algorithm_version: string }>();
+
+	if (!latestAlgorithm) {
+		return {
+			subjectCode: course.subjectCode,
+			term,
+			mode,
+			results: [],
+		};
+	}
+
+	const sourceAvailability = await getCourseAvailability(course.pid, term);
+	const offeredBoost = sourceAvailability.offered_in_term ? 0.04 : 0.12;
+	const rows = await listRecommendationRows(
+		course.pid,
+		latestAlgorithm.algorithm_version,
+		term,
+	);
+	const sourceSubject = subjectPrefix(course.subjectCode);
+
+	const results = rows
+		.map((row) => {
+			const offeredInTerm = Boolean(row.offered_in_term);
+			const hasAvailableSeats = Boolean(row.has_available_seats);
+			const score =
+				mode === "best" && offeredInTerm
+					? row.final_score + offeredBoost + (hasAvailableSeats ? 0.02 : 0)
+					: row.final_score;
+
+			return {
+				pid: row.pid,
+				subjectCode: row.subject_code,
+				title: row.title,
+				credits: row.credits,
+				rank: row.recommendation_rank,
+				score,
+				semanticScore: row.semantic_score,
+				offeredInTerm,
+				hasAvailableSeats,
+				isCrossSubject: subjectPrefix(row.subject_code) !== sourceSubject,
+				reasons: parseReasons(row.reasons_json),
+			} satisfies CourseAlternative;
+		})
+		.filter((alternative) => mode !== "offered" || alternative.offeredInTerm)
+		.sort((a, b) => b.score - a.score)
+		.slice(0, Math.max(1, Math.min(limit, 24)));
+
+	return {
+		subjectCode: course.subjectCode,
+		term,
+		mode,
+		results,
+	};
+}
+
+async function getCourseAvailability(
+	coursePid: string,
+	term: string,
+): Promise<SourceAvailabilityRow> {
+	return (
+		(await env.DB.prepare(
+			`SELECT
+  EXISTS(SELECT 1 FROM sections WHERE course_pid = ? AND term = ?) AS offered_in_term,
+  EXISTS(SELECT 1 FROM sections WHERE course_pid = ? AND term = ? AND enrollment_seats_available > 0) AS has_available_seats`,
+		)
+			.bind(coursePid, term, coursePid, term)
+			.first<SourceAvailabilityRow>()) ?? {
+			offered_in_term: 0,
+			has_available_seats: 0,
+		}
+	);
+}
+
+async function listRecommendationRows(
+	sourcePid: string,
+	algorithmVersion: string,
+	term: string,
+): Promise<CourseRecommendationRow[]> {
+	const { results } = await env.DB.prepare(
+		`SELECT
+  c.pid,
+  c.subject_code,
+  c.title,
+  c.credits,
+  r.semantic_score,
+  r.final_score,
+  r.reasons_json,
+  r.recommendation_rank,
+  EXISTS(SELECT 1 FROM sections s WHERE s.course_pid = c.pid AND s.term = ?) AS offered_in_term,
+  EXISTS(SELECT 1 FROM sections s WHERE s.course_pid = c.pid AND s.term = ? AND s.enrollment_seats_available > 0) AS has_available_seats
+FROM course_recommendations r
+JOIN courses c ON c.pid = r.related_pid
+WHERE r.source_pid = ? AND r.algorithm_version = ?
+ORDER BY r.recommendation_rank
+LIMIT 96`,
+	)
+		.bind(term, term, sourcePid, algorithmVersion)
+		.all<CourseRecommendationRow>();
+
+	return results;
+}
+
+function parseReasons(raw: string): string[] {
+	try {
+		const parsed: unknown = JSON.parse(raw);
+		return Array.isArray(parsed)
+			? parsed.filter((reason): reason is string => typeof reason === "string")
+			: [];
+	} catch {
+		return [];
+	}
+}
+
+function subjectPrefix(subjectCode: string): string {
+	return subjectCode.match(/^[A-Za-z]+/)?.[0].toUpperCase() ?? subjectCode;
 }
 
 function mapCourseRow(row: CourseRow): Course {

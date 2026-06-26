@@ -14,6 +14,7 @@ import { Route as RegisterRouteImport } from './routes/register'
 import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ShareShareIdRouteImport } from './routes/share/$shareId'
+import { Route as CoursesSubjectCodeRouteImport } from './routes/courses/$subjectCode'
 import { Route as ApiV1HealthRouteImport } from './routes/api/v1/health'
 import { Route as ApiV1CoursesSubjectsRouteImport } from './routes/api/v1/courses/subjects'
 import { Route as ApiV1CoursesSearchRouteImport } from './routes/api/v1/courses/search'
@@ -45,6 +46,11 @@ const IndexRoute = IndexRouteImport.update({
 const ShareShareIdRoute = ShareShareIdRouteImport.update({
   id: '/share/$shareId',
   path: '/share/$shareId',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoursesSubjectCodeRoute = CoursesSubjectCodeRouteImport.update({
+  id: '/courses/$subjectCode',
+  path: '/courses/$subjectCode',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiV1HealthRoute = ApiV1HealthRouteImport.update({
@@ -90,6 +96,7 @@ export interface FileRoutesByFullPath {
   '/explore': typeof ExploreRoute
   '/register': typeof RegisterRoute
   '/scheduler': typeof SchedulerRoute
+  '/courses/$subjectCode': typeof CoursesSubjectCodeRoute
   '/share/$shareId': typeof ShareShareIdRoute
   '/api/v1/health': typeof ApiV1HealthRoute
   '/api/v1/courses/search': typeof ApiV1CoursesSearchRoute
@@ -104,6 +111,7 @@ export interface FileRoutesByTo {
   '/explore': typeof ExploreRoute
   '/register': typeof RegisterRoute
   '/scheduler': typeof SchedulerRoute
+  '/courses/$subjectCode': typeof CoursesSubjectCodeRoute
   '/share/$shareId': typeof ShareShareIdRoute
   '/api/v1/health': typeof ApiV1HealthRoute
   '/api/v1/courses/search': typeof ApiV1CoursesSearchRoute
@@ -119,6 +127,7 @@ export interface FileRoutesById {
   '/explore': typeof ExploreRoute
   '/register': typeof RegisterRoute
   '/scheduler': typeof SchedulerRoute
+  '/courses/$subjectCode': typeof CoursesSubjectCodeRoute
   '/share/$shareId': typeof ShareShareIdRoute
   '/api/v1/health': typeof ApiV1HealthRoute
   '/api/v1/courses/search': typeof ApiV1CoursesSearchRoute
@@ -135,6 +144,7 @@ export interface FileRouteTypes {
     | '/explore'
     | '/register'
     | '/scheduler'
+    | '/courses/$subjectCode'
     | '/share/$shareId'
     | '/api/v1/health'
     | '/api/v1/courses/search'
@@ -149,6 +159,7 @@ export interface FileRouteTypes {
     | '/explore'
     | '/register'
     | '/scheduler'
+    | '/courses/$subjectCode'
     | '/share/$shareId'
     | '/api/v1/health'
     | '/api/v1/courses/search'
@@ -163,6 +174,7 @@ export interface FileRouteTypes {
     | '/explore'
     | '/register'
     | '/scheduler'
+    | '/courses/$subjectCode'
     | '/share/$shareId'
     | '/api/v1/health'
     | '/api/v1/courses/search'
@@ -178,6 +190,7 @@ export interface RootRouteChildren {
   ExploreRoute: typeof ExploreRoute
   RegisterRoute: typeof RegisterRoute
   SchedulerRoute: typeof SchedulerRoute
+  CoursesSubjectCodeRoute: typeof CoursesSubjectCodeRoute
   ShareShareIdRoute: typeof ShareShareIdRoute
   ApiV1HealthRoute: typeof ApiV1HealthRoute
   ApiV1CoursesSearchRoute: typeof ApiV1CoursesSearchRoute
@@ -223,6 +236,13 @@ declare module '@tanstack/react-router' {
       path: '/share/$shareId'
       fullPath: '/share/$shareId'
       preLoaderRoute: typeof ShareShareIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/courses/$subjectCode': {
+      id: '/courses/$subjectCode'
+      path: '/courses/$subjectCode'
+      fullPath: '/courses/$subjectCode'
+      preLoaderRoute: typeof CoursesSubjectCodeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/v1/health': {
@@ -282,6 +302,7 @@ const rootRouteChildren: RootRouteChildren = {
   ExploreRoute: ExploreRoute,
   RegisterRoute: RegisterRoute,
   SchedulerRoute: SchedulerRoute,
+  CoursesSubjectCodeRoute: CoursesSubjectCodeRoute,
   ShareShareIdRoute: ShareShareIdRoute,
   ApiV1HealthRoute: ApiV1HealthRoute,
   ApiV1CoursesSearchRoute: ApiV1CoursesSearchRoute,

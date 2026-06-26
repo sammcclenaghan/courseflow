@@ -36,3 +36,33 @@ export type GetCourseBySubjectCodeInput = {
 export type ListSubjectsInput = {
 	term?: string;
 };
+
+export type AlternativeMode = "best" | "offered" | "all";
+
+export type CourseAlternative = {
+	pid: string;
+	subjectCode: string;
+	title: string;
+	credits: string;
+	rank: number;
+	score: number;
+	semanticScore: number;
+	offeredInTerm: boolean;
+	hasAvailableSeats: boolean;
+	isCrossSubject: boolean;
+	reasons: string[];
+};
+
+export type CourseAlternativesResponse = {
+	subjectCode: string;
+	term: string;
+	mode: AlternativeMode;
+	results: CourseAlternative[];
+};
+
+export type GetCourseAlternativesInput = {
+	subjectCode: string;
+	term: string;
+	mode?: AlternativeMode;
+	limit?: number;
+};

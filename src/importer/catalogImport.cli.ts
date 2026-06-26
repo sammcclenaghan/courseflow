@@ -22,6 +22,7 @@ type CliOptions = {
 	concurrency: number;
 	enrollmentConcurrency: number;
 	timeoutMs: number;
+	delayMs: number;
 	limit?: number;
 	subjects: Set<string>;
 	skipEnrollment: boolean;
@@ -53,6 +54,7 @@ export async function runCatalogImportCli(args: string[]): Promise<void> {
 		concurrency: options.concurrency,
 		enrollmentConcurrency: options.enrollmentConcurrency,
 		timeoutMs: options.timeoutMs,
+		delayMs: options.delayMs,
 		skipEnrollment: options.skipEnrollment,
 		onProgress: (message) => console.info(message),
 	});
@@ -156,6 +158,7 @@ Options:
   --concurrency <n>             Course/section fetch concurrency (default: 4)
   --enrollment-concurrency <n>  Enrollment fetch concurrency per course (default: 8)
   --timeout-ms <n>              Per-request timeout (default: 15000)
+  --delay-ms <n>                Minimum delay between outbound UVic requests (default: 500)
   --skip-enrollment             Import timetable data without live enrollment counts
   --dry-run                     Fetch and write a report, but do not write D1
 `);
@@ -179,6 +182,7 @@ Options:
 		concurrency: readPositiveInt(args, "--concurrency", 4),
 		enrollmentConcurrency: readPositiveInt(args, "--enrollment-concurrency", 8),
 		timeoutMs: readPositiveInt(args, "--timeout-ms", 15_000),
+		delayMs: readNonNegativeInt(args, "--delay-ms", 500),
 		limit: readOptionalPositiveInt(args, "--limit"),
 		subjects: new Set(
 			(readOption(args, "--subject") ?? "")
@@ -205,6 +209,20 @@ function readPositiveInt(
 	defaultValue: number,
 ): number {
 	return readOptionalPositiveInt(args, name) ?? defaultValue;
+}
+
+function readNonNegativeInt(
+	args: string[],
+	name: string,
+	defaultValue: number,
+): number {
+	const value = readOption(args, name);
+	if (value === undefined) return defaultValue;
+	const parsed = Number.parseInt(value, 10);
+	if (!Number.isInteger(parsed) || parsed < 0) {
+		throw new Error(`${name} must be a non-negative integer`);
+	}
+	return parsed;
 }
 
 function readOptionalPositiveInt(

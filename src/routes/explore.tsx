@@ -1,269 +1,346 @@
-import { queryOptions, useQuery } from "@tanstack/react-query";
-import { createFileRoute } from "@tanstack/react-router";
-import { Loader2, Search } from "lucide-react";
-import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
-import {
-	getCourseBySubjectCode,
-	listSubjects,
-	searchCourses,
-} from "@/utils/catalog.functions";
-
-const DEFAULT_TERM = "202609";
-
-function subjectsQueryOptions(term: string) {
-	return queryOptions({
-		queryKey: ["courses", "subjects", term],
-		queryFn: () => listSubjects({ data: { term: term || undefined } }),
-	});
-}
+import { useQuery } from "@tanstack/react-query";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight, ChevronLeft, Search, X } from "lucide-react";
+import { type ReactNode, useEffect, useMemo, useRef, useState } from "react";
+import { catalogQueries } from "@/queries/catalog";
+import type { CourseSearchResult, SubjectResult } from "@/utils/catalog-types";
 
 export const Route = createFileRoute("/explore")({
-	// Prefetch the subjects list so it renders on first paint (and proves the
-	// server function works end-to-end through SSR + dehydration).
 	loader: ({ context }) =>
-		context.queryClient.ensureQueryData(subjectsQueryOptions(DEFAULT_TERM)),
-	component: Explore,
+		context.queryClient.ensureQueryData(catalogQueries.subjects()),
+	component: ExplorePage,
 });
 
-function Explore() {
-	const [rawQuery, setRawQuery] = useState("");
-	const [term, setTerm] = useState(DEFAULT_TERM);
-	const [selected, setSelected] = useState<string | null>(null);
+function ExplorePage() {
+	const [searchQuery, setSearchQuery] = useState("");
+	const [debouncedSearch, setDebouncedSearch] = useState("");
+	const [activeDepartment, setActiveDepartment] = useState<string | null>(null);
+	const searchInputRef = useRef<HTMLInputElement>(null);
 
-	// Debounce the search input so we don't hit the server on every keystroke.
-	const [query, setQuery] = useState("");
 	useEffect(() => {
-		const id = setTimeout(() => setQuery(rawQuery.trim()), 250);
-		return () => clearTimeout(id);
-	}, [rawQuery]);
+		const timer = setTimeout(() => setDebouncedSearch(searchQuery), 250);
+		return () => clearTimeout(timer);
+	}, [searchQuery]);
 
-	const trimmedTerm = term.trim();
+	const { data: subjects } = useQuery(catalogQueries.subjects());
+	const searchTerm = debouncedSearch || activeDepartment || "";
+	const { data: searchResults, isLoading: searchLoading } = useQuery(
+		catalogQueries.search(searchTerm),
+	);
 
-	const search = useQuery({
-		queryKey: ["courses", "search", query, trimmedTerm],
-		queryFn: () =>
-			searchCourses({ data: { query, term: trimmedTerm || undefined } }),
-		enabled: query.length > 0,
-	});
+	const sortedSubjects = useMemo(() => {
+		if (!subjects) return [];
+		return [...subjects].sort((a, b) => a.subject.localeCompare(b.subject));
+	}, [subjects]);
 
-	const subjects = useQuery(subjectsQueryOptions(trimmedTerm));
+	const indexedSubjects = useMemo(() => {
+		if (!sortedSubjects.length) return [];
+		const groups = new Map<string, SubjectResult[]>();
+		for (const subject of sortedSubjects) {
+			const letter = subject.subject[0] ?? "#";
+			if (!groups.has(letter)) groups.set(letter, []);
+			groups.get(letter)?.push(subject);
+		}
+		return Array.from(groups.entries()).map(([letter, items]) => ({
+			letter,
+			items,
+		}));
+	}, [sortedSubjects]);
 
-	const detail = useQuery({
-		queryKey: ["courses", "detail", selected],
-		queryFn: () =>
-			getCourseBySubjectCode({ data: { subjectCode: selected as string } }),
-		enabled: selected !== null,
-	});
+	const isSearching = debouncedSearch.length > 0 || activeDepartment !== null;
+	const displayCourses = searchResults ?? [];
+
+	function handleDepartmentClick(dept: string) {
+		if (activeDepartment === dept) {
+			setActiveDepartment(null);
+		} else {
+			setActiveDepartment(dept);
+			setSearchQuery("");
+		}
+	}
+
+	function handleSearchChange(value: string) {
+		setSearchQuery(value);
+		if (value.length > 0) {
+			setActiveDepartment(null);
+		}
+	}
+
+	function clearSearch() {
+		setSearchQuery("");
+		setDebouncedSearch("");
+		setActiveDepartment(null);
+		searchInputRef.current?.focus();
+	}
 
 	return (
-		<section className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-6 py-12">
-			<header>
-				<p className="font-medium text-[11px] text-muted-foreground tracking-[0.3em] uppercase">
-					Explore — API demo
-				</p>
-				<h1 className="mt-3 font-semibold text-3xl tracking-tight">
-					Course catalog
-				</h1>
-				<p className="mt-2 max-w-xl text-muted-foreground text-sm leading-relaxed">
-					Live demo wired to the D1-backed server functions:{" "}
-					<code className="rounded bg-muted px-1 py-0.5 text-xs">
-						searchCourses
-					</code>
-					,{" "}
-					<code className="rounded bg-muted px-1 py-0.5 text-xs">
-						getCourseBySubjectCode
-					</code>
-					, and{" "}
-					<code className="rounded bg-muted px-1 py-0.5 text-xs">
-						listSubjects
-					</code>
-					.
-				</p>
-			</header>
+		<div className="explore-page w-full flex-1 overflow-y-auto">
+			<div className="pointer-events-none fixed inset-0 bg-[#FAFAF8]" />
+			<div
+				className="pointer-events-none fixed inset-0 opacity-[0.025]"
+				style={{
+					backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+					backgroundRepeat: "repeat",
+					backgroundSize: "128px 128px",
+				}}
+			/>
 
-			{/* Controls */}
-			<div className="flex flex-col gap-3 sm:flex-row sm:items-end">
-				<label className="flex flex-1 flex-col gap-1.5">
-					<span className="font-medium text-[11px] text-muted-foreground tracking-wider uppercase">
-						Search courses
-					</span>
-					<div className="relative">
-						<Search className="-translate-y-1/2 absolute top-1/2 left-3 h-4 w-4 text-muted-foreground" />
+			<div className="relative z-10 mx-auto w-full max-w-3xl px-6 pt-12 pb-20">
+				<div className="explore-header mb-10">
+					<p className="mb-2 font-medium text-[#1a1a1a]/35 text-[11px] tracking-[0.18em] uppercase">
+						Full Catalog
+					</p>
+					<h1 className="font-light text-[#1a1a1a] text-[clamp(1.8rem,4vw,2.6rem)] tracking-[-0.03em]">
+						Explore Courses
+					</h1>
+					<p className="mt-3 max-w-xl text-[#1a1a1a]/45 text-[14px] leading-relaxed">
+						Browse every UVic course. Term offerings and schedule details appear
+						when you open a course.
+					</p>
+				</div>
+
+				<div className="explore-search sticky top-0 z-20 -mx-6 mb-8 bg-[#FAFAF8]/90 px-6 py-2 backdrop-blur-md max-md:border-[#1a1a1a]/[0.06] max-md:border-b md:relative md:mx-0 md:bg-transparent md:px-0 md:py-0 md:backdrop-blur-none">
+					<div className="group relative">
+						<Search className="pointer-events-none absolute top-1/2 left-4 h-[18px] w-[18px] -translate-y-1/2 text-[#1a1a1a]/25 transition-colors group-focus-within:text-[#1a1a1a]/50" />
 						<input
-							value={rawQuery}
-							onChange={(e) => setRawQuery(e.target.value)}
-							placeholder="e.g. CSC, MATH 100, calculus"
-							className="h-11 w-full rounded-lg border border-border bg-background pr-3 pl-9 text-sm outline-none focus-visible:border-uvic-blue focus-visible:ring-2 focus-visible:ring-uvic-blue/20"
+							ref={searchInputRef}
+							type="text"
+							aria-label="Search courses by code"
+							value={searchQuery}
+							onChange={(e) => handleSearchChange(e.target.value)}
+							placeholder="Search by course code"
+							className="h-12 w-full rounded-xl border border-[#1a1a1a]/[0.08] bg-white/70 pr-10 pl-11 text-[#1a1a1a] text-[15px] outline-none backdrop-blur-sm transition-all placeholder:text-[#1a1a1a]/25 focus:border-uvic-blue/30 focus:bg-white focus:shadow-[0_2px_20px_rgba(0,84,147,0.06)]"
 						/>
+						{searchQuery && (
+							<button
+								type="button"
+								onClick={clearSearch}
+								aria-label="Clear search"
+								className="absolute top-1/2 right-3 -translate-y-1/2 rounded-md p-1 text-[#1a1a1a]/25 transition-colors hover:bg-[#1a1a1a]/[0.05] hover:text-[#1a1a1a]/50"
+							>
+								<X className="h-4 w-4" />
+							</button>
+						)}
 					</div>
-				</label>
-				<label className="flex flex-col gap-1.5">
-					<span className="font-medium text-[11px] text-muted-foreground tracking-wider uppercase">
-						Term
-					</span>
-					<input
-						value={term}
-						onChange={(e) => setTerm(e.target.value)}
-						placeholder="optional"
-						className="h-11 w-full rounded-lg border border-border bg-background px-3 text-sm outline-none focus-visible:border-uvic-blue focus-visible:ring-2 focus-visible:ring-uvic-blue/20 sm:w-36"
+				</div>
+
+				{activeDepartment && (
+					<DepartmentHeader
+						subject={activeDepartment}
+						subjects={sortedSubjects}
+						onBack={() => setActiveDepartment(null)}
 					/>
-				</label>
-			</div>
+				)}
 
-			<div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
-				{/* Search results */}
-				<div className="flex flex-col gap-3">
-					<SectionLabel>
-						Results
-						{search.isFetching && (
-							<Loader2 className="ml-2 inline h-3 w-3 animate-spin" />
-						)}
-					</SectionLabel>
-
-					{query.length === 0 && (
-						<EmptyState>Start typing to search the catalog.</EmptyState>
-					)}
-
-					{search.isError && (
-						<ErrorState>
-							{(search.error as Error)?.message ?? "Search failed."}
-						</ErrorState>
-					)}
-
-					{query.length > 0 && search.isSuccess && search.data.length === 0 && (
-						<EmptyState>No courses match “{query}”.</EmptyState>
-					)}
-
-					{search.data && search.data.length > 0 && (
-						<ul className="flex flex-col divide-y divide-border overflow-hidden rounded-lg border border-border">
-							{search.data.map((course) => (
-								<li key={course.pid}>
-									<button
-										type="button"
-										onClick={() => setSelected(course.subjectCode)}
-										className={cn(
-											"flex w-full items-center justify-between gap-3 px-4 py-3 text-left transition-colors hover:bg-muted/60",
-											selected === course.subjectCode && "bg-muted",
-										)}
-									>
-										<span className="min-w-0">
-											<span className="font-medium text-sm">
-												{course.subjectCode}
-											</span>
-											<span className="block truncate text-muted-foreground text-sm">
-												{course.title}
-											</span>
-										</span>
-										<span className="shrink-0 text-muted-foreground text-xs">
-											{course.credits} cr
-										</span>
-									</button>
-								</li>
-							))}
-						</ul>
-					)}
-
-					{/* Course detail */}
-					{selected && (
-						<div className="mt-2 rounded-lg border border-border bg-card p-4">
-							<SectionLabel>Course detail — {selected}</SectionLabel>
-							{detail.isFetching && (
-								<p className="mt-2 flex items-center gap-2 text-muted-foreground text-sm">
-									<Loader2 className="h-3 w-3 animate-spin" /> Loading…
+				{isSearching ? (
+					<div className="explore-results">
+						{searchLoading ? (
+							<CourseRowSkeleton count={6} />
+						) : displayCourses.length === 0 ? (
+							<div className="py-16 text-center">
+								<p className="font-medium text-[#1a1a1a]/40 text-[14px]">
+									No courses found
+									{debouncedSearch ? ` for "${debouncedSearch}"` : "."}
 								</p>
-							)}
-							{detail.isError && (
-								<ErrorState>Course “{selected}” not found.</ErrorState>
-							)}
-							{detail.data && (
-								<div className="mt-2 flex flex-col gap-2">
-									<h3 className="font-semibold text-base">
-										{detail.data.subjectCode} — {detail.data.title}
-									</h3>
-									<p className="text-muted-foreground text-xs">
-										{detail.data.credits} credits
-										{detail.data.hoursCatalogText
-											? ` · ${detail.data.hoursCatalogText}`
-											: ""}
-									</p>
-									{detail.data.description && (
-										<p className="text-sm leading-relaxed">
-											{detail.data.description}
-										</p>
-									)}
-									{detail.data.preAndCorequisites && (
-										<p className="text-muted-foreground text-sm">
-											<span className="font-medium text-foreground">
-												Pre/co-requisites:{" "}
-											</span>
-											{detail.data.preAndCorequisites}
-										</p>
-									)}
-								</div>
-							)}
-						</div>
-					)}
-				</div>
-
-				{/* Subjects */}
-				<div className="flex flex-col gap-3">
-					<SectionLabel>
-						Subjects
-						{subjects.isFetching && (
-							<Loader2 className="ml-2 inline h-3 w-3 animate-spin" />
+								<p className="mt-2 text-[#1a1a1a]/30 text-[13px]">
+									Try a course code or browse by department.
+								</p>
+							</div>
+						) : (
+							<div className="explore-list divide-y divide-[#1a1a1a]/[0.05]">
+								{displayCourses.map((course, i) => (
+									<CourseRow
+										key={course.pid}
+										course={course}
+										index={i}
+										query={debouncedSearch}
+									/>
+								))}
+							</div>
 						)}
-					</SectionLabel>
-					{subjects.isError && (
-						<ErrorState>Failed to load subjects.</ErrorState>
-					)}
-					{subjects.data && subjects.data.length === 0 && (
-						<EmptyState>No subjects for this term.</EmptyState>
-					)}
-					{subjects.data && subjects.data.length > 0 && (
-						<ul className="flex flex-wrap gap-2">
-							{subjects.data.map((s) => (
-								<li key={s.subject}>
-									<button
-										type="button"
-										onClick={() => setRawQuery(s.subject)}
-										className="flex items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-xs transition-colors hover:border-uvic-blue hover:text-uvic-blue"
-									>
-										<span className="font-medium">{s.subject}</span>
-										<span className="text-muted-foreground">
-											{s.courseCount}
-										</span>
-									</button>
-								</li>
-							))}
-						</ul>
-					)}
+					</div>
+				) : (
+					<DepartmentIndex
+						sections={indexedSubjects}
+						onSelectDepartment={handleDepartmentClick}
+					/>
+				)}
+			</div>
+		</div>
+	);
+}
+
+function DepartmentHeader({
+	subject,
+	subjects,
+	onBack,
+}: {
+	subject: string;
+	subjects: SubjectResult[];
+	onBack: () => void;
+}) {
+	const info = subjects.find((s) => s.subject === subject);
+
+	return (
+		<div className="dept-header mb-8">
+			<button
+				type="button"
+				onClick={onBack}
+				className="-ml-1 mb-3 inline-flex items-center gap-1 rounded-md px-1 py-0.5 font-medium text-[#1a1a1a]/40 text-[12px] transition-colors hover:text-[#1a1a1a]/70 focus-visible:ring-2 focus-visible:ring-uvic-blue/30 focus-visible:outline-none"
+			>
+				<ChevronLeft className="h-3.5 w-3.5" />
+				All departments
+			</button>
+
+			<div className="flex items-center gap-3">
+				<div className="flex h-10 w-10 items-center justify-center rounded-xl bg-uvic-blue text-white">
+					<span className="font-bold text-[11px] tracking-tight">
+						{subject.slice(0, 3)}
+					</span>
+				</div>
+				<div>
+					<h2 className="font-semibold text-[#1a1a1a] text-lg tracking-tight">
+						{subject}
+					</h2>
+					<p className="text-[#1a1a1a]/35 text-[13px]">
+						{info ? `${info.courseCount} courses` : ""} in this department
+					</p>
 				</div>
 			</div>
-		</section>
-	);
-}
 
-function SectionLabel({ children }: { children: React.ReactNode }) {
-	return (
-		<p className="font-medium text-[11px] text-muted-foreground tracking-wider uppercase">
-			{children}
-		</p>
-	);
-}
-
-function EmptyState({ children }: { children: React.ReactNode }) {
-	return (
-		<div className="rounded-lg border border-border border-dashed px-4 py-8 text-center text-muted-foreground text-sm">
-			{children}
+			<div className="mt-6 h-px bg-[#1a1a1a]/[0.06]" />
 		</div>
 	);
 }
 
-function ErrorState({ children }: { children: React.ReactNode }) {
+function CourseRow({
+	course,
+	index,
+	query,
+}: {
+	course: CourseSearchResult;
+	index: number;
+	query: string;
+}) {
 	return (
-		<div className="rounded-lg border border-destructive/30 bg-destructive/5 px-4 py-3 text-destructive text-sm">
-			{children}
+		<div
+			className="explore-row group flex items-center gap-4 px-2.5 py-3 transition-all"
+			style={{ animationDelay: `${Math.min(index * 25, 350)}ms` }}
+		>
+			<div className="min-w-0 flex-1">
+				<div className="flex items-baseline gap-2">
+					<span className="font-semibold text-[#1a1a1a] text-[14px] tracking-tight">
+						{highlightMatch(course.subjectCode, query, 1)}
+					</span>
+					{course.credits && (
+						<span className="text-[#1a1a1a]/25 text-[12px]">
+							{course.credits} cr
+						</span>
+					)}
+				</div>
+				<p className="mt-0.5 truncate text-[#1a1a1a]/60 text-[14px] leading-snug">
+					{highlightMatch(course.title, query, 3)}
+				</p>
+			</div>
+
+			<Link
+				to="/courses/$subjectCode"
+				params={{ subjectCode: course.subjectCode }}
+				className="flex h-8 shrink-0 items-center gap-1.5 rounded-lg px-3 font-medium text-[#1a1a1a]/40 text-[12px] transition-all hover:bg-[#1a1a1a]/[0.04] hover:text-[#1a1a1a]"
+			>
+				Details
+				<ArrowRight className="h-3 w-3" />
+			</Link>
 		</div>
+	);
+}
+
+function DepartmentIndex({
+	sections,
+	onSelectDepartment,
+}: {
+	sections: { letter: string; items: SubjectResult[] }[];
+	onSelectDepartment: (dept: string) => void;
+}) {
+	return (
+		<div className="space-y-8">
+			{sections.map((section) => (
+				<div key={section.letter} className="department-section">
+					<div className="sticky top-0 z-10 mb-3 bg-[#FAFAF8] py-1 max-md:top-[64px]">
+						<span className="font-semibold text-[#1a1a1a]/25 text-[11px] tracking-[0.2em]">
+							{section.letter}
+						</span>
+					</div>
+					<div className="divide-y divide-[#1a1a1a]/[0.05]">
+						{section.items.map((subject, i) => (
+							<button
+								type="button"
+								key={subject.subject}
+								onClick={() => onSelectDepartment(subject.subject)}
+								className="explore-row group flex w-full items-center gap-4 px-2.5 py-3 text-left"
+								style={{ animationDelay: `${Math.min(i * 20, 300)}ms` }}
+							>
+								<div className="min-w-0 flex-1">
+									<div className="flex items-baseline gap-2">
+										<span className="font-semibold text-[#1a1a1a]/75 text-[14px] tracking-tight">
+											{subject.subject}
+										</span>
+										<span className="text-[#1a1a1a]/25 text-[12px]">
+											{subject.courseCount}
+										</span>
+									</div>
+								</div>
+								<span className="font-medium text-[#1a1a1a]/30 text-[12px] transition-colors group-hover:text-[#1a1a1a]/60">
+									Explore
+								</span>
+								<ArrowRight className="h-3 w-3 text-[#1a1a1a]/0 transition-all group-hover:translate-x-0.5 group-hover:text-[#1a1a1a]/35" />
+							</button>
+						))}
+					</div>
+				</div>
+			))}
+		</div>
+	);
+}
+
+function CourseRowSkeleton({ count }: { count: number }) {
+	const keys = COURSE_ROW_SKELETON_KEYS.slice(0, count);
+	return (
+		<div className="divide-y divide-[#1a1a1a]/[0.05]">
+			{keys.map((key) => (
+				<div key={key} className="flex items-center gap-4 px-2.5 py-3">
+					<div className="flex-1 space-y-2">
+						<div className="h-3.5 w-24 animate-pulse rounded bg-[#1a1a1a]/[0.06]" />
+						<div className="h-3 w-48 animate-pulse rounded bg-[#1a1a1a]/[0.04]" />
+					</div>
+					<div className="h-8 w-20 animate-pulse rounded-lg bg-[#1a1a1a]/[0.03]" />
+				</div>
+			))}
+		</div>
+	);
+}
+
+const COURSE_ROW_SKELETON_KEYS = [
+	"course-row-skeleton-1",
+	"course-row-skeleton-2",
+	"course-row-skeleton-3",
+	"course-row-skeleton-4",
+	"course-row-skeleton-5",
+	"course-row-skeleton-6",
+];
+
+function highlightMatch(text: string, query: string, minLength = 1): ReactNode {
+	if (query.trim().length < minLength) return text;
+	const normalizedQuery = query.trim();
+	const index = text.toLowerCase().indexOf(normalizedQuery.toLowerCase());
+	if (index === -1) return text;
+	return (
+		<>
+			{text.slice(0, index)}
+			<mark className="rounded bg-uvic-blue/10 px-0.5 text-uvic-blue">
+				{text.slice(index, index + normalizedQuery.length)}
+			</mark>
+			{text.slice(index + normalizedQuery.length)}
+		</>
 	);
 }
