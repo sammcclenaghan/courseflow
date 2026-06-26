@@ -1,11 +1,19 @@
-import { useQuery } from "@tanstack/react-query";
 import { Search } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
+import {
+	filterCoursesByOfferings,
+	searchCourseAutocomplete,
+} from "@/catalog/course-autocomplete";
+import {
+	markCourseSearchInput,
+	useCourseSearchPerformance,
+} from "@/catalog/course-search-performance";
+import { useCourseAutocomplete } from "@/catalog/use-course-autocomplete";
+import { useCourseOfferings } from "@/catalog/use-course-offerings";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
-import { courseQueries } from "@/queries/scheduler";
 import type { CourseSearchResult } from "@/utils/catalog-types";
 import { getCourseToggle } from "./course-toggle";
 
@@ -23,16 +31,35 @@ export function CourseSearch({
 	disabled?: boolean;
 }) {
 	const [query, setQuery] = useState("");
-	const [debouncedQuery, setDebouncedQuery] = useState("");
-
-	useEffect(() => {
-		const timer = setTimeout(() => setDebouncedQuery(query.trim()), 300);
-		return () => clearTimeout(timer);
-	}, [query]);
-
-	const { data: results, isLoading } = useQuery(
-		courseQueries.search(debouncedQuery, term),
+	const [autocompleteLoadRequested, setAutocompleteLoadRequested] =
+		useState(false);
+	const searchTerm = query.trim();
+	const shouldLoadSearchData =
+		!disabled && (autocompleteLoadRequested || searchTerm.length > 0);
+	const autocomplete = useCourseAutocomplete(shouldLoadSearchData);
+	const offerings = useCourseOfferings(term, shouldLoadSearchData);
+	const offeredCourses = useMemo(() => {
+		if (!autocomplete.courses) return [];
+		if (offerings.isError) return autocomplete.courses;
+		if (!offerings.offeredPids) return [];
+		return filterCoursesByOfferings(
+			autocomplete.courses,
+			offerings.offeredPids,
+		);
+	}, [autocomplete.courses, offerings.isError, offerings.offeredPids]);
+	const results = useMemo(
+		() => searchCourseAutocomplete(offeredCourses, searchTerm),
+		[offeredCourses, searchTerm],
 	);
+	const isLoading =
+		searchTerm.length > 0 && (autocomplete.isLoading || offerings.isLoading);
+
+	useCourseSearchPerformance({
+		surface: "scheduler",
+		query: searchTerm,
+		resultCount: results.length,
+		isLoading,
+	});
 
 	return (
 		<div className="flex h-full min-h-0 flex-col">
@@ -47,7 +74,11 @@ export function CourseSearch({
 						aria-label="Search courses"
 						placeholder="Search by course code…"
 						value={query}
-						onChange={(event) => setQuery(event.target.value)}
+						onFocus={() => setAutocompleteLoadRequested(true)}
+						onChange={(event) => {
+							markCourseSearchInput("scheduler");
+							setQuery(event.target.value);
+						}}
 						disabled={disabled}
 						className="pl-8"
 					/>
@@ -61,25 +92,25 @@ export function CourseSearch({
 				)}
 			>
 				<div>
-					{!debouncedQuery && (
+					{!searchTerm && (
 						<p className="px-4 py-8 text-center text-muted-foreground text-sm">
 							Search by course code to add courses to your planner
 						</p>
 					)}
 
-					{debouncedQuery && isLoading && (
+					{searchTerm && isLoading && (
 						<p className="px-4 py-8 text-center text-muted-foreground text-sm">
 							Searching…
 						</p>
 					)}
 
-					{debouncedQuery && !isLoading && results?.length === 0 && (
+					{searchTerm && !isLoading && results.length === 0 && (
 						<p className="px-4 py-8 text-center text-muted-foreground text-sm">
-							No courses found
+							No courses offered this term found
 						</p>
 					)}
 
-					{debouncedQuery && results && results.length > 0 && (
+					{searchTerm && results.length > 0 && (
 						<div className="divide-y divide-border/60">
 							{results.map((result) => (
 								<CourseRow

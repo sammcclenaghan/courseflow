@@ -1,5 +1,4 @@
 import { queryOptions } from "@tanstack/react-query";
-import { searchCourses } from "../utils/catalog.functions";
 import { getMySchedule } from "../utils/scheduler.functions";
 import { listSectionsByPidAndTerm } from "../utils/sections.functions";
 import { getMyScheduleShare } from "../utils/sharing.functions";
@@ -7,16 +6,6 @@ import { getMyScheduleShare } from "../utils/sharing.functions";
 export const scheduleQueryKey = (term: string) => ["schedule", term] as const;
 export const scheduleShareQueryKey = (term: string) =>
 	["schedule", term, "share"] as const;
-
-export const courseQueries = {
-	search(query: string, term?: string) {
-		return queryOptions({
-			queryKey: ["courses", "search", query, term ?? "all"],
-			queryFn: () => searchCourses({ data: { query, term } }),
-			enabled: query.length > 0,
-		});
-	},
-};
 
 export const scheduleQueries = {
 	mine(term: string) {

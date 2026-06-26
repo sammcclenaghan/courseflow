@@ -1,11 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ChevronLeft, Search, X } from "lucide-react";
-import { type ReactNode, useEffect, useMemo, useRef, useState } from "react";
+import { type ReactNode, useMemo, useRef, useState } from "react";
+import { searchCourseAutocomplete } from "@/catalog/course-autocomplete";
 import {
-	type CourseAutocompleteCourse,
-	searchCourseAutocomplete,
-} from "@/catalog/course-autocomplete";
+	markCourseSearchInput,
+	useCourseSearchPerformance,
+} from "@/catalog/course-search-performance";
+import { useCourseAutocomplete } from "@/catalog/use-course-autocomplete";
 import { catalogQueries } from "@/queries/catalog";
 import type { CourseSearchResult, SubjectResult } from "@/utils/catalog-types";
 
@@ -18,64 +20,33 @@ export const Route = createFileRoute("/explore")({
 function ExplorePage() {
 	const [searchQuery, setSearchQuery] = useState("");
 	const [activeDepartment, setActiveDepartment] = useState<string | null>(null);
-	const [autocompleteCourses, setAutocompleteCourses] = useState<
-		CourseAutocompleteCourse[] | null
-	>(null);
 	const [autocompleteLoadRequested, setAutocompleteLoadRequested] =
 		useState(false);
-	const [autocompleteLoadFailed, setAutocompleteLoadFailed] = useState(false);
 	const searchInputRef = useRef<HTMLInputElement>(null);
 
 	const shouldLoadAutocomplete =
 		autocompleteLoadRequested ||
 		searchQuery.trim().length > 0 ||
 		activeDepartment !== null;
-
-	useEffect(() => {
-		if (
-			!shouldLoadAutocomplete ||
-			autocompleteCourses !== null ||
-			autocompleteLoadFailed
-		) {
-			return;
-		}
-
-		let cancelled = false;
-
-		async function loadAutocompleteCourses() {
-			try {
-				const response = await fetch("/generated/course-autocomplete.json");
-				if (!response.ok) {
-					throw new Error(`Course autocomplete failed: ${response.status}`);
-				}
-
-				const courses = (await response.json()) as CourseAutocompleteCourse[];
-				if (!cancelled) setAutocompleteCourses(courses);
-			} catch {
-				if (!cancelled) setAutocompleteLoadFailed(true);
-			}
-		}
-
-		void loadAutocompleteCourses();
-
-		return () => {
-			cancelled = true;
-		};
-	}, [shouldLoadAutocomplete, autocompleteCourses, autocompleteLoadFailed]);
+	const autocomplete = useCourseAutocomplete(shouldLoadAutocomplete);
 
 	const { data: subjects } = useQuery(catalogQueries.subjects());
 	const searchTerm = searchQuery.trim() || activeDepartment || "";
 	const searchResults = useMemo(
 		() =>
-			autocompleteCourses
-				? searchCourseAutocomplete(autocompleteCourses, searchTerm)
+			autocomplete.courses
+				? searchCourseAutocomplete(autocomplete.courses, searchTerm)
 				: [],
-		[autocompleteCourses, searchTerm],
+		[autocomplete.courses, searchTerm],
 	);
-	const searchLoading =
-		searchTerm.length > 0 &&
-		autocompleteCourses === null &&
-		!autocompleteLoadFailed;
+	const searchLoading = searchTerm.length > 0 && autocomplete.isLoading;
+
+	useCourseSearchPerformance({
+		surface: "explore",
+		query: searchTerm,
+		resultCount: searchResults.length,
+		isLoading: searchLoading,
+	});
 
 	const sortedSubjects = useMemo(() => {
 		if (!subjects) return [];
@@ -110,6 +81,7 @@ function ExplorePage() {
 	}
 
 	function handleSearchChange(value: string) {
+		markCourseSearchInput("explore");
 		setSearchQuery(value);
 		if (value.trim().length > 0) {
 			setAutocompleteLoadRequested(true);

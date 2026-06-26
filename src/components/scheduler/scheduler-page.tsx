@@ -76,6 +76,8 @@ export function SchedulerPage({
 		const grouped = await queryClient.ensureQueryData(
 			sectionQueries.byPidAndTerm(result.pid, term),
 		);
+		if (!hasAnySections(grouped)) return;
+
 		void commitCourses([
 			...selectedCourses,
 			{
@@ -210,6 +212,15 @@ function courseFromSearchResult(result: CourseSearchResult): Course {
 		createdAt: "",
 		updatedAt: "",
 	};
+}
+
+function hasAnySections(grouped: GroupedSections): boolean {
+	return (
+		grouped.lectures.length > 0 ||
+		grouped.labs.length > 0 ||
+		grouped.tutorials.length > 0 ||
+		grouped.other.length > 0
+	);
 }
 
 function selectDefaultSections(grouped: GroupedSections): Section[] {

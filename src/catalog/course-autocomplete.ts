@@ -2,6 +2,13 @@ import type { CourseSearchResult } from "@/utils/catalog-types";
 
 export type CourseAutocompleteCourse = CourseSearchResult;
 
+export function filterCoursesByOfferings(
+	courses: readonly CourseAutocompleteCourse[],
+	offeredPids: ReadonlySet<string>,
+): CourseAutocompleteCourse[] {
+	return courses.filter((course) => offeredPids.has(course.pid));
+}
+
 export function searchCourseAutocomplete(
 	courses: readonly CourseAutocompleteCourse[],
 	query: string,

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
 	type CourseAutocompleteCourse,
+	filterCoursesByOfferings,
 	searchCourseAutocomplete,
 } from "./course-autocomplete";
 
@@ -58,5 +59,13 @@ describe("searchCourseAutocomplete", () => {
 		expect(
 			searchCourseAutocomplete(courses, "csc").map((c) => c.subjectCode),
 		).toEqual(["CSC110", "CSC115", "CSC230"]);
+	});
+
+	it("filters courses to static term offerings", () => {
+		expect(
+			filterCoursesByOfferings(courses, new Set(["csc110", "seng265"])).map(
+				(c) => c.subjectCode,
+			),
+		).toEqual(["CSC110", "SENG265"]);
 	});
 });
