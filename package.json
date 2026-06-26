@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
-    "build": "vite build",
+    "build": "nub run catalog:autocomplete && vite build",
     "preview": "vite preview",
     "test": "vitest run --config vitest.config.ts",
     "format": "biome format",
@@ -26,6 +26,7 @@
     "catalog:import": "node scripts/import-catalog.ts --courses data/import/courses.json",
     "catalog:import:local": "nub run catalog:import -- --target local",
     "catalog:import:prod": "nub run catalog:import -- --target remote",
+    "catalog:autocomplete": "node scripts/generate-course-autocomplete.ts",
     "catalog:embed": "node scripts/generate-course-embeddings.ts",
     "catalog:embed:local": "nub run catalog:embed -- --target local",
     "catalog:embed:prod": "nub run catalog:embed -- --target remote",

@@ -116,9 +116,7 @@ function CourseDetailPage() {
 				replace: true,
 			});
 		}
-		// Re-run when the visited course changes; navigate/alternatives are stable enough here.
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [subjectCode]);
+	}, [alternatives, navigate]);
 
 	if (courseQuery.isLoading) {
 		return <CourseDetailSkeleton />;

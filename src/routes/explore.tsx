@@ -2,6 +2,10 @@ import { useQuery } from "@tanstack/react-query";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ChevronLeft, Search, X } from "lucide-react";
 import { type ReactNode, useEffect, useMemo, useRef, useState } from "react";
+import {
+	type CourseAutocompleteCourse,
+	searchCourseAutocomplete,
+} from "@/catalog/course-autocomplete";
 import { catalogQueries } from "@/queries/catalog";
 import type { CourseSearchResult, SubjectResult } from "@/utils/catalog-types";
 
@@ -13,20 +17,65 @@ export const Route = createFileRoute("/explore")({
 
 function ExplorePage() {
 	const [searchQuery, setSearchQuery] = useState("");
-	const [debouncedSearch, setDebouncedSearch] = useState("");
 	const [activeDepartment, setActiveDepartment] = useState<string | null>(null);
+	const [autocompleteCourses, setAutocompleteCourses] = useState<
+		CourseAutocompleteCourse[] | null
+	>(null);
+	const [autocompleteLoadRequested, setAutocompleteLoadRequested] =
+		useState(false);
+	const [autocompleteLoadFailed, setAutocompleteLoadFailed] = useState(false);
 	const searchInputRef = useRef<HTMLInputElement>(null);
 
+	const shouldLoadAutocomplete =
+		autocompleteLoadRequested ||
+		searchQuery.trim().length > 0 ||
+		activeDepartment !== null;
+
 	useEffect(() => {
-		const timer = setTimeout(() => setDebouncedSearch(searchQuery), 250);
-		return () => clearTimeout(timer);
-	}, [searchQuery]);
+		if (
+			!shouldLoadAutocomplete ||
+			autocompleteCourses !== null ||
+			autocompleteLoadFailed
+		) {
+			return;
+		}
+
+		let cancelled = false;
+
+		async function loadAutocompleteCourses() {
+			try {
+				const response = await fetch("/generated/course-autocomplete.json");
+				if (!response.ok) {
+					throw new Error(`Course autocomplete failed: ${response.status}`);
+				}
+
+				const courses = (await response.json()) as CourseAutocompleteCourse[];
+				if (!cancelled) setAutocompleteCourses(courses);
+			} catch {
+				if (!cancelled) setAutocompleteLoadFailed(true);
+			}
+		}
+
+		void loadAutocompleteCourses();
+
+		return () => {
+			cancelled = true;
+		};
+	}, [shouldLoadAutocomplete, autocompleteCourses, autocompleteLoadFailed]);
 
 	const { data: subjects } = useQuery(catalogQueries.subjects());
-	const searchTerm = debouncedSearch || activeDepartment || "";
-	const { data: searchResults, isLoading: searchLoading } = useQuery(
-		catalogQueries.search(searchTerm),
+	const searchTerm = searchQuery.trim() || activeDepartment || "";
+	const searchResults = useMemo(
+		() =>
+			autocompleteCourses
+				? searchCourseAutocomplete(autocompleteCourses, searchTerm)
+				: [],
+		[autocompleteCourses, searchTerm],
 	);
+	const searchLoading =
+		searchTerm.length > 0 &&
+		autocompleteCourses === null &&
+		!autocompleteLoadFailed;
 
 	const sortedSubjects = useMemo(() => {
 		if (!subjects) return [];
@@ -47,10 +96,11 @@ function ExplorePage() {
 		}));
 	}, [sortedSubjects]);
 
-	const isSearching = debouncedSearch.length > 0 || activeDepartment !== null;
-	const displayCourses = searchResults ?? [];
+	const isSearching = searchTerm.length > 0;
+	const displayCourses = searchResults;
 
 	function handleDepartmentClick(dept: string) {
+		setAutocompleteLoadRequested(true);
 		if (activeDepartment === dept) {
 			setActiveDepartment(null);
 		} else {
@@ -61,14 +111,14 @@ function ExplorePage() {
 
 	function handleSearchChange(value: string) {
 		setSearchQuery(value);
-		if (value.length > 0) {
+		if (value.trim().length > 0) {
+			setAutocompleteLoadRequested(true);
 			setActiveDepartment(null);
 		}
 	}
 
 	function clearSearch() {
 		setSearchQuery("");
-		setDebouncedSearch("");
 		setActiveDepartment(null);
 		searchInputRef.current?.focus();
 	}
@@ -107,6 +157,7 @@ function ExplorePage() {
 							type="text"
 							aria-label="Search courses by code"
 							value={searchQuery}
+							onFocus={() => setAutocompleteLoadRequested(true)}
 							onChange={(e) => handleSearchChange(e.target.value)}
 							placeholder="Search by course code"
 							className="h-12 w-full rounded-xl border border-[#1a1a1a]/[0.08] bg-white/70 pr-10 pl-11 text-[#1a1a1a] text-[15px] outline-none backdrop-blur-sm transition-all placeholder:text-[#1a1a1a]/25 focus:border-uvic-blue/30 focus:bg-white focus:shadow-[0_2px_20px_rgba(0,84,147,0.06)]"
@@ -140,7 +191,7 @@ function ExplorePage() {
 							<div className="py-16 text-center">
 								<p className="font-medium text-[#1a1a1a]/40 text-[14px]">
 									No courses found
-									{debouncedSearch ? ` for "${debouncedSearch}"` : "."}
+									{searchTerm ? ` for "${searchTerm}"` : "."}
 								</p>
 								<p className="mt-2 text-[#1a1a1a]/30 text-[13px]">
 									Try a course code or browse by department.
@@ -153,7 +204,7 @@ function ExplorePage() {
 										key={course.pid}
 										course={course}
 										index={i}
-										query={debouncedSearch}
+										query={searchTerm}
 									/>
 								))}
 							</div>
