@@ -32,6 +32,14 @@ describe("UVic importer", () => {
 			subject: "ENGR",
 			courseNumber: "120A",
 		});
+		expect(parseCourseId("ED-D101")).toEqual({
+			subject: "ED-D",
+			courseNumber: "101",
+		});
+		expect(parseCourseId("ED-P781")).toEqual({
+			subject: "ED-P",
+			courseNumber: "781",
+		});
 		expect(parseCourseId("CSC 230")).toBeNull();
 	});
 

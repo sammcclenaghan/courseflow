@@ -1,6 +1,6 @@
 import type { CourseEntry, ParsedCourseId } from "./catalogImport.types.ts";
 
-const COURSE_ID_RE = /^([A-Z]+)(\d+[A-Z]?)$/;
+const COURSE_ID_RE = /^([A-Z]+(?:-[A-Z]+)*)(\d+[A-Z]?)$/;
 
 export function parseCourseEntries(raw: unknown): CourseEntry[] {
 	if (!Array.isArray(raw)) {
