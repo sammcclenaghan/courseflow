@@ -6,8 +6,10 @@ import {
 } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { Header } from "@/components/header";
+import { Toaster } from "@/components/ui/sonner";
 import type { RouterContext } from "@/router-context";
 import appCss from "@/styles.css?url";
+import "sonner/dist/styles.css";
 
 export const Route = createRootRouteWithContext<RouterContext>()({
 	head: () => ({
@@ -44,6 +46,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
 			<body className="flex min-h-dvh flex-col bg-background font-sans text-foreground antialiased">
 				<Header />
 				<main className="flex flex-1 flex-col">{children}</main>
+				<Toaster />
 				<Scripts />
 			</body>
 		</html>

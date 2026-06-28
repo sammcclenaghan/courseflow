@@ -5,12 +5,13 @@ import {
 	ClipboardList,
 	type LucideIcon,
 } from "lucide-react";
+import { FeedbackPopover } from "@/components/feedback-popover";
 import { cn } from "@/lib/utils";
 
 export function Header() {
 	return (
-		<header className="header-bar sticky top-0 z-50 flex h-14 items-center px-4 md:px-5">
-			<div className="pointer-events-none absolute inset-0 border-b border-border/60 bg-background/80 backdrop-blur-xl" />
+		<header className="header-bar sticky top-0 z-50 isolate flex h-14 items-center px-4 md:px-5">
+			<div className="pointer-events-none absolute inset-0 -z-10 border-b border-border/60 bg-background/80 backdrop-blur-xl" />
 
 			<Link
 				to="/"
@@ -27,6 +28,10 @@ export function Header() {
 				<NavLink to="/scheduler" label="Timetable" icon={Calendar} />
 				<NavLink to="/register" label="Register" icon={ClipboardList} />
 			</nav>
+
+			<div className="ml-auto flex items-center gap-2">
+				<FeedbackPopover />
+			</div>
 		</header>
 	);
 }

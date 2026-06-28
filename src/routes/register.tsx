@@ -93,8 +93,8 @@ function RegistrationPage() {
 				{/* Intro + steps */}
 				<p className="mt-6 text-[14px] text-foreground/75 leading-6">
 					UVic offers a quick and easy way to register for a course using the
-					Course Reference Number (CRN). Follow the given steps below to register
-					in your chosen course sections:
+					Course Reference Number (CRN). Follow the given steps below to
+					register in your chosen course sections:
 				</p>
 
 				<ol className="mt-4 list-decimal space-y-1.5 pl-6 text-[14px] text-foreground/75 leading-6 marker:text-foreground/45">
@@ -119,7 +119,9 @@ function RegistrationPage() {
 					</li>
 					<li>
 						Select the{" "}
-						<strong className="font-semibold text-foreground">Enter CRNs</strong>{" "}
+						<strong className="font-semibold text-foreground">
+							Enter CRNs
+						</strong>{" "}
 						tab.
 					</li>
 					<li>

@@ -99,6 +99,16 @@ nub exec wrangler types
 
 Secrets should be set with `wrangler secret put`; do not commit secret values. Non-secret Worker vars live in `wrangler.jsonc`.
 
+### Feedback
+
+Anonymous feedback is submitted to a Discord webhook. Configure the webhook URL as a secret:
+
+```bash
+nub exec wrangler secret put DISCORD_FEEDBACK_WEBHOOK_URL
+```
+
+If unset, the `submitFeedback` server function returns `503` and the popover surfaces a toast. Each submission includes the user's message, optional mood emoji, page path, search params, full scheduler snapshot (term, courses, sections, derived calendar events), and a client metadata blob (UA, viewport, timezone, connection, etc.) — no user identity is collected.
+
 ## API endpoints
 
 - `GET /api/v1/health`
