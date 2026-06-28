@@ -116,6 +116,9 @@ describe("parseFeedbackSubmission", () => {
 		expect(submission.scheduler?.selectedCourses[0]?.subjectCode).toBe(
 			"CSC110",
 		);
+		expect(submission.scheduler?.selectedCourses[0]?.sections[0]?.crn).toBe(
+			"12345",
+		);
 		expect(submission.scheduler?.calendarEvents[0]?.crn).toBe("12345");
 		expect(submission.client.timezone).toBe("America/Vancouver");
 	});

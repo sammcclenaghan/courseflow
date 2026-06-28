@@ -34,10 +34,6 @@ function clipString(value: unknown, max = 200): string {
 	return clip(value.slice(0, max), max);
 }
 
-function isString(value: unknown): value is string {
-	return typeof value === "string";
-}
-
 function asRecord(value: unknown): Record<string, unknown> | null {
 	if (!value || typeof value !== "object" || Array.isArray(value)) return null;
 	return value as Record<string, unknown>;
@@ -50,10 +46,6 @@ function readNumber(value: unknown): number | undefined {
 		return Number.isFinite(n) ? n : undefined;
 	}
 	return undefined;
-}
-
-function readStringArray(value: unknown): string[] {
-	return Array.isArray(value) ? value.filter(isString) : [];
 }
 
 function readRecordArray(value: unknown): Record<string, unknown>[] {
@@ -83,10 +75,8 @@ function sanitizeScheduler(
 		.map((entry) => {
 			const record = asRecord(entry);
 			if (!record) return null;
-			const sections = readStringArray(record.sections as unknown)
-				.map((sectionEntry) => {
-					const section = asRecord(sectionEntry);
-					if (!section) return null;
+			const sections = readRecordArray(record.sections as unknown)
+				.map((section) => {
 					return {
 						crn: clipString(section.crn, 16),
 						subject: clipString(section.subject, 16),

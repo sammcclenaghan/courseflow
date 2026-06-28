@@ -1,3 +1,4 @@
+import { useMutation } from "@tanstack/react-query";
 import { Frown, Laugh, type LucideIcon, Meh, Smile } from "lucide-react";
 import * as React from "react";
 import { toast } from "sonner";
@@ -16,7 +17,7 @@ import {
 	readFeedbackClientMeta,
 	useSchedulerSnapshot,
 } from "@/utils/feedback-client";
-import type { FeedbackMood } from "@/utils/feedback-types";
+import type { FeedbackMood, FeedbackSubmission } from "@/utils/feedback-types";
 
 const MOODS: { value: FeedbackMood; icon: LucideIcon; label: string }[] = [
 	{ value: "sad", icon: Frown, label: "Sad" },
@@ -33,34 +34,19 @@ export function FeedbackPopover({ className }: Props) {
 	const [open, setOpen] = React.useState(false);
 	const [message, setMessage] = React.useState("");
 	const [mood, setMood] = React.useState<FeedbackMood | undefined>();
-	const [submitting, setSubmitting] = React.useState(false);
 
 	const trimmed = message.trim();
-	const canSend = trimmed.length > 0 && !submitting;
-
 	const { serialized: schedulerSnapshot } = useSchedulerSnapshot();
 
-	async function handleSubmit() {
-		if (!canSend) return;
-		setSubmitting(true);
-		try {
-			const page =
-				typeof window !== "undefined" ? window.location.pathname : undefined;
-			await submitFeedback({
-				data: {
-					message: trimmed,
-					mood,
-					page,
-					search: readCurrentSearch(),
-					scheduler: schedulerSnapshot ?? undefined,
-					client: readFeedbackClientMeta(),
-				},
-			});
+	const submitFeedbackMutation = useMutation({
+		mutationFn: (data: FeedbackSubmission) => submitFeedback({ data }),
+		onSuccess: () => {
 			toast.success("Thanks for the feedback");
 			setOpen(false);
 			setMessage("");
 			setMood(undefined);
-		} catch (err) {
+		},
+		onError: (err) => {
 			const message =
 				err instanceof Error
 					? err.message
@@ -68,9 +54,23 @@ export function FeedbackPopover({ className }: Props) {
 						? err
 						: "Network error — please try again.";
 			toast.error(message);
-		} finally {
-			setSubmitting(false);
-		}
+		},
+	});
+
+	const canSend = trimmed.length > 0 && !submitFeedbackMutation.isPending;
+
+	function handleSubmit() {
+		if (!canSend) return;
+		const page =
+			typeof window !== "undefined" ? window.location.pathname : "(unknown)";
+		submitFeedbackMutation.mutate({
+			message: trimmed,
+			mood,
+			page,
+			search: readCurrentSearch(),
+			scheduler: schedulerSnapshot ?? undefined,
+			client: readFeedbackClientMeta(),
+		});
 	}
 
 	function handleKeyDown(e: React.KeyboardEvent<HTMLTextAreaElement>) {
@@ -145,7 +145,7 @@ export function FeedbackPopover({ className }: Props) {
 						})}
 					</div>
 					<Button size="sm" onClick={handleSubmit} disabled={!canSend}>
-						{submitting ? "Sending…" : "Send"}
+						{submitFeedbackMutation.isPending ? "Sending…" : "Send"}
 					</Button>
 				</div>
 			</PopoverContent>
