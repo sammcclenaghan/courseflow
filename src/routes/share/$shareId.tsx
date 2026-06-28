@@ -108,7 +108,7 @@ function SharedSchedulePage() {
 	const termLabel = getTermLabel(sharedQuery.data.schedule.term);
 
 	return (
-		<div className="flex h-[calc(100dvh-var(--app-header-height))] w-full flex-col overflow-hidden">
+		<div className="app-fill-height flex w-full flex-col overflow-hidden">
 			<header className="flex flex-wrap items-center justify-between gap-3 border-border/60 border-b px-5 py-4">
 				<div>
 					<p className="font-medium text-[11px] text-muted-foreground tracking-[0.24em] uppercase">

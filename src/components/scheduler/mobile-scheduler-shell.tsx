@@ -13,7 +13,6 @@ import { SchedulerSearchSheet } from "./scheduler-search-sheet";
 
 interface MobileSchedulerShellProps {
 	term: string;
-	onTermChange: (term: string) => void;
 	selectedCourses: SavedCourse[];
 	events: CalendarEvent[];
 	onCourseSelect: (result: CourseSearchResult) => void;
@@ -24,7 +23,6 @@ interface MobileSchedulerShellProps {
 
 export function MobileSchedulerShell({
 	term,
-	onTermChange,
 	selectedCourses,
 	events,
 	onCourseSelect,
@@ -59,11 +57,9 @@ export function MobileSchedulerShell({
 	}, [events]);
 
 	return (
-		<div className="flex h-[calc(100dvh-var(--app-header-height))] w-full flex-col overflow-hidden bg-background">
+		<div className="app-fill-height flex w-full flex-col overflow-hidden bg-background">
 			{/* Compact header */}
 			<MobileScheduleHeader
-				term={term}
-				onTermChange={onTermChange}
 				courseCount={selectedCourses.length}
 				onSearchOpen={() => setSearchOpen(true)}
 				onCoursesOpen={() => setCoursesOpen(true)}

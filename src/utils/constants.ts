@@ -14,7 +14,17 @@ export const TERMS = [
 	{ label: "Spring 2027", value: "202701" },
 ] as const;
 
+export type TermValue = (typeof TERMS)[number]["value"];
+
 export const DEFAULT_TERM = TERMS[0].value;
+
+export function isTermValue(value: string): value is TermValue {
+	return TERMS.some((term) => term.value === value);
+}
+
+export function normalizeTerm(value: string | undefined): TermValue {
+	return value && isTermValue(value) ? value : DEFAULT_TERM;
+}
 
 export function getTermLabel(termValue: string) {
 	return TERMS.find((term) => term.value === termValue)?.label ?? termValue;

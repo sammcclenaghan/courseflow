@@ -20,7 +20,7 @@ export function MobileDayPicker({
 	eventCountByDay = {},
 }: MobileDayPickerProps) {
 	return (
-		<div className="no-scrollbar flex gap-1.5 overflow-x-auto px-4 pb-2">
+		<div className="no-scrollbar flex snap-x scroll-px-4 gap-1.5 overflow-x-auto overscroll-x-contain px-4 pb-2">
 			{DAYS.map(({ short, key }) => {
 				const isActive = selectedDay === key;
 				const count = eventCountByDay[key] ?? 0;
@@ -31,7 +31,7 @@ export function MobileDayPicker({
 						type="button"
 						onClick={() => onDayChange(key)}
 						className={cn(
-							"relative flex min-w-[56px] flex-col items-center gap-0.5 rounded-xl px-3 py-2 text-xs font-medium transition-all",
+							"relative flex min-w-[56px] snap-start flex-col items-center gap-0.5 rounded-xl px-3 py-2 text-xs font-medium transition-all",
 							isActive
 								? "bg-primary text-primary-foreground shadow-sm"
 								: "bg-muted/60 text-muted-foreground active:bg-muted",

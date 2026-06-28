@@ -1,11 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import {
-	BookOpen,
-	Calendar,
-	ClipboardList,
-	type LucideIcon,
-} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { FeedbackPopover } from "@/components/feedback-popover";
+import { NAV_ITEMS, type NavTo } from "@/components/nav-items";
+import { TermSelector } from "@/components/term-selector";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -20,17 +17,24 @@ export function Header() {
 				Course<span className="text-uvic-blue">Flow</span>
 			</Link>
 
+			{/* Desktop nav */}
 			<nav
 				aria-label="Primary"
-				className="relative z-10 ml-3 flex h-full items-stretch md:ml-6"
+				className="relative z-10 ml-6 hidden h-full items-stretch md:flex"
 			>
-				<NavLink to="/explore" label="Explore" icon={BookOpen} />
-				<NavLink to="/scheduler" label="Timetable" icon={Calendar} />
-				<NavLink to="/register" label="Register" icon={ClipboardList} />
+				{NAV_ITEMS.map((item) => (
+					<NavLink
+						key={item.to}
+						to={item.to}
+						label={item.label}
+						icon={item.icon}
+					/>
+				))}
 			</nav>
 
-			<div className="ml-auto flex items-center gap-2">
-				<FeedbackPopover />
+			<div className="relative z-10 ml-auto flex items-center gap-2">
+				<TermSelector className="w-[116px] max-[360px]:w-[104px]" />
+				<FeedbackPopover className="h-9 max-[430px]:hidden max-md:w-auto max-md:px-3" />
 			</div>
 		</header>
 	);
@@ -41,7 +45,7 @@ function NavLink({
 	label,
 	icon: Icon,
 }: {
-	to: "/explore" | "/scheduler" | "/register";
+	to: NavTo;
 	label: string;
 	icon: LucideIcon;
 }) {

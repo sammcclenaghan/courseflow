@@ -1,9 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import {
-	createFileRoute,
-	Link,
-	stripSearchParams,
-} from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import {
 	AlertCircle,
 	CheckCircle2,
@@ -12,11 +8,10 @@ import {
 	ExternalLink,
 } from "lucide-react";
 import { useMemo, useState } from "react";
-import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { scheduleQueries } from "@/queries/scheduler";
-import { DEFAULT_TERM, getTermLabel } from "@/utils/constants";
+import { getTermLabel } from "@/utils/constants";
 import { expandSavedSchedule } from "@/utils/scheduler-domain";
 import type { SavedCourse } from "@/utils/scheduler-types";
 import { formatSectionSchedule } from "@/utils/section-to-events";
@@ -27,15 +22,7 @@ const UVIC_REGISTRATION_URL =
 const UVIC_REGISTRATION_GUIDE_URL =
 	"https://www.uvic.ca/students/academics/register-for-courses/";
 
-const registerSearchSchema = z.object({
-	term: z.string().default(DEFAULT_TERM).catch(DEFAULT_TERM),
-});
-
 export const Route = createFileRoute("/register")({
-	validateSearch: registerSearchSchema,
-	search: {
-		middlewares: [stripSearchParams({ term: DEFAULT_TERM })],
-	},
 	loaderDeps: ({ search: { term } }) => ({ term }),
 	loader: ({ context: { queryClient }, deps: { term } }) =>
 		queryClient.ensureQueryData(scheduleQueries.mine(term)),
@@ -76,7 +63,7 @@ function RegistrationPage() {
 
 	return (
 		<div className="w-full flex-1 overflow-y-auto bg-[#FAFAF8]">
-			<div className="mx-auto w-full max-w-3xl px-6 pt-10 pb-20">
+			<div className="app-bottom-pad mx-auto w-full max-w-3xl px-6 pt-10">
 				{/* Title row */}
 				<div className="flex items-start justify-between gap-4 border-border/60 border-b pb-5">
 					<h1 className="font-bold text-2xl text-foreground tracking-tight md:text-3xl">

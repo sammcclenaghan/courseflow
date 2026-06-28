@@ -2,16 +2,37 @@ import {
 	createRootRouteWithContext,
 	HeadContent,
 	Outlet,
+	retainSearchParams,
 	Scripts,
+	stripSearchParams,
 } from "@tanstack/react-router";
 import type { ReactNode } from "react";
+import { z } from "zod";
 import { Header } from "@/components/header";
+import { MobileTabBar } from "@/components/mobile-tab-bar";
 import { Toaster } from "@/components/ui/sonner";
+import { usePersistedTermBootstrap } from "@/lib/use-term";
 import type { RouterContext } from "@/router-context";
 import appCss from "@/styles.css?url";
+import { DEFAULT_TERM, normalizeTerm } from "@/utils/constants";
 import "sonner/dist/styles.css";
 
+const rootSearchSchema = z.object({
+	term: z
+		.string()
+		.default(DEFAULT_TERM)
+		.catch(DEFAULT_TERM)
+		.transform((term) => normalizeTerm(term)),
+});
+
 export const Route = createRootRouteWithContext<RouterContext>()({
+	validateSearch: rootSearchSchema,
+	search: {
+		middlewares: [
+			retainSearchParams(["term"]),
+			stripSearchParams({ term: DEFAULT_TERM }),
+		],
+	},
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -37,6 +58,11 @@ function RootComponent() {
 	);
 }
 
+function GlobalTermBootstrap() {
+	usePersistedTermBootstrap();
+	return null;
+}
+
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
 	return (
 		<html lang="en">
@@ -44,8 +70,10 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
 				<HeadContent />
 			</head>
 			<body className="flex min-h-dvh flex-col bg-background font-sans text-foreground antialiased">
+				<GlobalTermBootstrap />
 				<Header />
 				<main className="flex flex-1 flex-col">{children}</main>
+				<MobileTabBar />
 				<Toaster />
 				<Scripts />
 			</body>

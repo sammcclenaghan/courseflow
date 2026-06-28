@@ -9,6 +9,8 @@
 :root {
   --radius: 0.625rem;
   --app-header-height: 3.5rem;
+  /* Bottom tab bar — only rendered below md (see MobileTabBar). */
+  --mobile-bottom-nav-height: 5rem;
   --ease-polish: cubic-bezier(0.22, 1, 0.36, 1);
 
   /* CourseFlow palette: warm editorial neutrals with UVic blue accents. */
@@ -111,6 +113,8 @@ body,
   html {
     @apply font-sans;
     scroll-behavior: smooth;
+    /* Kill the grey flash when tapping links/buttons on mobile WebKit. */
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
@@ -172,6 +176,39 @@ body,
 
 .header-bar {
   animation: header-slide-down 0.4s var(--ease-polish) both;
+}
+
+/*
+  Layout helpers that account for the mobile bottom tab bar.
+
+  The floating MobileTabBar (see src/components/mobile-tab-bar.tsx) is fixed
+  to the bottom of the viewport and only renders below the md breakpoint.
+  These two classes keep full-height grids and scrollable content from being
+  hidden behind it; at md+ the bar is gone, so they collapse to the standard
+  app metrics (no extra space).
+
+  Use `.app-fill-height` on non-scrolling full-viewport grids (calendar shells)
+  and `.app-bottom-pad` on the inner content of `overflow-y-auto` pages so the
+  last rows clear the bar.
+*/
+.app-fill-height {
+  height: calc(
+    100dvh - var(--app-header-height) - var(--mobile-bottom-nav-height) -
+      env(safe-area-inset-bottom)
+  );
+}
+.app-bottom-pad {
+  padding-bottom: calc(
+    5rem + var(--mobile-bottom-nav-height) + env(safe-area-inset-bottom)
+  );
+}
+@media (min-width: 768px) {
+  .app-fill-height {
+    height: calc(100dvh - var(--app-header-height));
+  }
+  .app-bottom-pad {
+    padding-bottom: 5rem;
+  }
 }
 
 .landing-page {

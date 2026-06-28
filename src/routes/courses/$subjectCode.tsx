@@ -21,7 +21,7 @@ import type {
 	Course,
 	CourseAlternative,
 } from "@/utils/catalog-types";
-import { DEFAULT_TERM, getTermLabel } from "@/utils/constants";
+import { getTermLabel } from "@/utils/constants";
 import { saveMySchedule } from "@/utils/scheduler.functions";
 import type { ScheduleWithSections } from "@/utils/scheduler-types";
 import { formatSectionSchedule } from "@/utils/section-to-events";
@@ -36,7 +36,6 @@ function readStoredAlternativesMode(): AlternativeMode | null {
 	return stored === "all" || stored === "offered" ? stored : null;
 }
 const courseSearchSchema = z.object({
-	term: z.string().default(DEFAULT_TERM).catch(DEFAULT_TERM),
 	alternatives: z
 		.enum(["offered", "all"])
 		.default(alternativesDefault)
@@ -46,12 +45,7 @@ const courseSearchSchema = z.object({
 export const Route = createFileRoute("/courses/$subjectCode")({
 	validateSearch: courseSearchSchema,
 	search: {
-		middlewares: [
-			stripSearchParams({
-				term: DEFAULT_TERM,
-				alternatives: alternativesDefault,
-			}),
-		],
+		middlewares: [stripSearchParams({ alternatives: alternativesDefault })],
 	},
 	loaderDeps: ({ search: { term, alternatives } }) => ({ term, alternatives }),
 	loader: async ({ context: { queryClient }, params, deps }) => {
@@ -174,7 +168,7 @@ function CourseDetailPage() {
 				}}
 			/>
 
-			<div className="relative z-10 mx-auto w-full max-w-5xl px-6 py-12">
+			<div className="app-bottom-pad relative z-10 mx-auto w-full max-w-5xl px-6 pt-12">
 				<Link
 					to="/explore"
 					className="group mb-8 inline-flex items-center gap-1.5 rounded-md text-[#1a1a1a]/35 text-[13px] hover:text-[#1a1a1a]/60"

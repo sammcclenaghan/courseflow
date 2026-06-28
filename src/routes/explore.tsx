@@ -97,7 +97,7 @@ function ExplorePage() {
 	}
 
 	return (
-		<div className="explore-page w-full flex-1 overflow-y-auto">
+		<div className="explore-page w-full flex-1 overflow-y-auto overscroll-contain">
 			<div className="pointer-events-none fixed inset-0 bg-[#FAFAF8]" />
 			<div
 				className="pointer-events-none fixed inset-0 opacity-[0.025]"
@@ -108,7 +108,7 @@ function ExplorePage() {
 				}}
 			/>
 
-			<div className="relative z-10 mx-auto w-full max-w-3xl px-6 pt-12 pb-20">
+			<div className="app-bottom-pad relative z-10 mx-auto w-full max-w-3xl px-6 pt-12">
 				<div className="explore-header mb-10">
 					<p className="mb-2 font-medium text-[#1a1a1a]/35 text-[11px] tracking-[0.18em] uppercase">
 						Full Catalog

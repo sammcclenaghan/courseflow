@@ -8,7 +8,6 @@ import {
 	sectionQueries,
 } from "@/queries/scheduler";
 import type { Course, CourseSearchResult } from "@/utils/catalog-types";
-import { TERMS } from "@/utils/constants";
 import { saveMySchedule } from "@/utils/scheduler.functions";
 import { expandSavedSchedule } from "@/utils/scheduler-domain";
 import type {
@@ -22,13 +21,7 @@ import { MobileSchedulerShell } from "./mobile-scheduler-shell";
 import { ScheduleSharePanel } from "./schedule-share-panel";
 import { SelectedCoursesSidebar } from "./selected-courses-sidebar";
 
-export function SchedulerPage({
-	term,
-	onTermChange,
-}: {
-	term: string;
-	onTermChange: (term: string) => void;
-}) {
+export function SchedulerPage({ term }: { term: string }) {
 	const queryClient = useQueryClient();
 	const isMobile = useIsMobile();
 	const saveVersionRef = useRef(0);
@@ -117,7 +110,6 @@ export function SchedulerPage({
 		return (
 			<MobileSchedulerShell
 				term={term}
-				onTermChange={onTermChange}
 				selectedCourses={selectedCourses}
 				events={events}
 				onCourseSelect={addCourse}
@@ -129,7 +121,7 @@ export function SchedulerPage({
 	}
 
 	return (
-		<div className="flex h-[calc(100dvh-var(--app-header-height))] w-full flex-col overflow-hidden lg:flex-row">
+		<div className="app-fill-height flex w-full flex-col overflow-hidden lg:flex-row">
 			<aside className="flex h-60 w-full shrink-0 flex-col overflow-hidden border-border/60 border-b bg-background lg:h-auto lg:w-80 lg:border-r lg:border-b-0">
 				<CourseSearch
 					term={term}
@@ -145,34 +137,11 @@ export function SchedulerPage({
 			</aside>
 
 			<main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-background">
-				<div className="flex flex-wrap items-center justify-between gap-3 border-border/60 border-b px-4 py-3">
-					<div className="flex items-center gap-2">
-						<label
-							className="font-medium text-muted-foreground text-xs"
-							htmlFor="term"
-						>
-							Term
-						</label>
-						<select
-							id="term"
-							value={term}
-							onChange={(event) => onTermChange(event.target.value)}
-							className="h-8 rounded-lg border border-border bg-background px-2 text-sm outline-none focus-visible:border-uvic-blue"
-						>
-							{TERMS.map((option) => (
-								<option key={option.value} value={option.value}>
-									{option.label}
-								</option>
-							))}
-						</select>
-					</div>
-
-					<div className="flex items-center gap-2">
-						<ScheduleSharePanel
-							term={term}
-							disabled={selectedCourses.length === 0}
-						/>
-					</div>
+				<div className="flex flex-wrap items-center justify-end gap-3 border-border/60 border-b px-4 py-3">
+					<ScheduleSharePanel
+						term={term}
+						disabled={selectedCourses.length === 0}
+					/>
 				</div>
 
 				<div className="relative flex-1 overflow-hidden">
