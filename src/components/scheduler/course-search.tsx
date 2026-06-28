@@ -13,6 +13,7 @@ import { useCourseOfferings } from "@/catalog/use-course-offerings";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 import type { CourseSearchResult } from "@/utils/catalog-types";
 import { getCourseToggle } from "./course-toggle";
@@ -102,9 +103,13 @@ export function CourseSearch({
 					)}
 
 					{searchTerm && isLoading && (
-						<p className="px-4 py-8 text-center text-muted-foreground text-sm">
-							Searching…
-						</p>
+						<div className="divide-y divide-border/60">
+							<CourseRowSkeleton />
+							<CourseRowSkeleton />
+							<CourseRowSkeleton />
+							<CourseRowSkeleton />
+							<CourseRowSkeleton />
+						</div>
 					)}
 
 					{searchTerm && !isLoading && results.length === 0 && (
@@ -169,6 +174,18 @@ function CourseRow({
 			>
 				<Icon className="size-4" />
 			</Button>
+		</div>
+	);
+}
+
+function CourseRowSkeleton() {
+	return (
+		<div className="flex items-start gap-3 px-4 py-3.5">
+			<div className="min-w-0 flex-1 space-y-2 pt-0.5">
+				<Skeleton className="h-4 w-28" />
+				<Skeleton className="h-3.5 w-44" />
+			</div>
+			<Skeleton className="size-8 shrink-0 rounded-lg" />
 		</div>
 	);
 }

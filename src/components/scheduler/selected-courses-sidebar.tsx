@@ -11,6 +11,7 @@ import {
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Skeleton } from "@/components/ui/skeleton";
 import {
 	Tooltip,
 	TooltipContent,
@@ -200,7 +201,10 @@ function SectionSelector({
 
 	if (isLoading) {
 		return (
-			<p className="py-2 text-xs text-muted-foreground">Loading sections…</p>
+			<div className="space-y-3">
+				<SectionGroupSkeleton />
+				<SectionGroupSkeleton />
+			</div>
 		);
 	}
 
@@ -313,6 +317,18 @@ function SectionSelector({
 					</div>
 				</div>
 			))}
+		</div>
+	);
+}
+
+function SectionGroupSkeleton() {
+	return (
+		<div>
+			<Skeleton className="mb-1.5 h-3 w-16" />
+			<div className="space-y-1">
+				<Skeleton className="h-12 w-full rounded-md" />
+				<Skeleton className="h-12 w-full rounded-md" />
+			</div>
 		</div>
 	);
 }

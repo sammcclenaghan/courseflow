@@ -62,22 +62,29 @@ export function CalendarEvent({
 	className?: string;
 }) {
 	const style = calculatePosition(event, allEvents);
+	const hasConflict = getOverlappingEvents(event, allEvents).length > 0;
 
 	return (
 		<div
+			data-conflict={hasConflict ? "true" : undefined}
 			className={cn(
-				"absolute flex flex-col overflow-hidden rounded-md py-1.5 pr-2.5 pl-3.5 text-foreground transition-shadow hover:shadow-md",
+				"absolute flex flex-col overflow-hidden rounded-md py-1.5 pr-2.5 pl-3.5 text-foreground",
+				hasConflict && "border border-destructive/60",
 				className,
 			)}
 			style={{
 				...style,
-				backgroundColor: hexToRgba(event.color, 0.12),
+				backgroundColor: hasConflict
+					? "color-mix(in srgb, var(--destructive) 12%, transparent)"
+					: hexToRgba(event.color, 0.12),
 			}}
 		>
 			<span
 				aria-hidden="true"
 				className="absolute inset-y-0 left-0 w-[3px]"
-				style={{ backgroundColor: event.color }}
+				style={{
+					backgroundColor: hasConflict ? "var(--destructive)" : event.color,
+				}}
 			/>
 			<p className="truncate font-semibold text-xs">
 				{event.section.subject} {event.section.courseNumber}{" "}

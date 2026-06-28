@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 import type { CourseSearchResult } from "@/utils/catalog-types";
 import { getCourseToggle } from "./course-toggle";
@@ -135,8 +136,13 @@ export function SchedulerSearchSheet({
 						)}
 
 						{searchTerm && isLoading && (
-							<div className="flex items-center justify-center py-16">
-								<div className="size-5 rounded-full border-2 border-muted-foreground/20 border-t-primary animate-spin" />
+							<div className="space-y-2.5 py-4">
+								<SearchRowSkeleton />
+								<SearchRowSkeleton />
+								<SearchRowSkeleton />
+								<SearchRowSkeleton />
+								<SearchRowSkeleton />
+								<SearchRowSkeleton />
 							</div>
 						)}
 
@@ -200,5 +206,17 @@ export function SchedulerSearchSheet({
 				</ScrollArea>
 			</DrawerContent>
 		</Drawer>
+	);
+}
+
+function SearchRowSkeleton() {
+	return (
+		<div className="flex items-center gap-3 px-1 py-3.5">
+			<div className="min-w-0 flex-1 space-y-2 pt-0.5">
+				<Skeleton className="h-4 w-32" />
+				<Skeleton className="h-3.5 w-48" />
+			</div>
+			<Skeleton className="size-8 shrink-0 rounded-lg" />
+		</div>
 	);
 }

@@ -1,9 +1,12 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { Copy, Loader2, RefreshCw } from "lucide-react";
+import { Copy, Loader2 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Calendar } from "@/components/calendar/calendar";
 import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { useIsMobile } from "@/lib/use-media-query";
+import { cn } from "@/lib/utils";
 import { scheduleQueryKey } from "@/queries/scheduler";
 import {
 	sharedScheduleQueries,
@@ -11,6 +14,7 @@ import {
 } from "@/queries/sharing";
 import { getTermLabel } from "@/utils/constants";
 import { buildSavedCourses } from "@/utils/scheduler-domain";
+import type { SavedCourse } from "@/utils/scheduler-types";
 import { coursesToEvents } from "@/utils/section-to-events";
 import { copySharedScheduleToMine } from "@/utils/sharing.functions";
 
@@ -24,9 +28,8 @@ function SharedSchedulePage() {
 	const { shareId } = Route.useParams();
 	const queryClient = useQueryClient();
 	const navigate = useNavigate();
-	const [copyState, setCopyState] = useState<"idle" | "copying" | "done">(
-		"idle",
-	);
+	const isMobile = useIsMobile();
+	const [isCopying, setIsCopying] = useState(false);
 
 	const sharedQuery = useQuery(sharedScheduleQueries.byShareId(shareId));
 
@@ -38,14 +41,19 @@ function SharedSchedulePage() {
 			`${protocol}//${window.location.host}/api/v1/shared-schedules/${shareId}/events`,
 		);
 
-		socket.addEventListener("message", (event) => {
+		const handleMessage = (event: MessageEvent) => {
 			if (event.data === "pong") return;
 			queryClient.invalidateQueries({
 				queryKey: sharedScheduleQueryKey(shareId),
 			});
-		});
+		};
 
-		return () => socket.close();
+		socket.addEventListener("message", handleMessage);
+
+		return () => {
+			socket.removeEventListener("message", handleMessage);
+			socket.close();
+		};
 	}, [queryClient, shareId, sharedQuery.data]);
 
 	const savedCourses = useMemo(() => {
@@ -58,21 +66,20 @@ function SharedSchedulePage() {
 	const events = useMemo(() => coursesToEvents(savedCourses), [savedCourses]);
 
 	async function copySchedule() {
-		setCopyState("copying");
+		setIsCopying(true);
 		try {
 			const schedule = await copySharedScheduleToMine({ data: { shareId } });
 			queryClient.setQueryData(
 				scheduleQueryKey(schedule.schedule.term),
 				schedule,
 			);
-			setCopyState("done");
 			await navigate({
 				to: "/scheduler",
 				search: { term: schedule.schedule.term },
 			});
 		} catch (error) {
 			console.error("Failed to copy shared schedule", error);
-			setCopyState("idle");
+			setIsCopying(false);
 		}
 	}
 
@@ -80,7 +87,7 @@ function SharedSchedulePage() {
 		return (
 			<section className="flex flex-1 items-center justify-center px-6 py-24">
 				<p className="flex items-center gap-2 text-muted-foreground text-sm">
-					<Loader2 className="size-4 animate-spin" /> Loading shared schedule…
+					<Loader2 className="size-4 animate-spin" /> Loading…
 				</p>
 			</section>
 		);
@@ -88,17 +95,14 @@ function SharedSchedulePage() {
 
 	if (sharedQuery.isError || !sharedQuery.data) {
 		return (
-			<section className="mx-auto flex w-full max-w-xl flex-1 flex-col items-center justify-center px-6 py-24 text-center">
-				<p className="font-medium text-[11px] text-muted-foreground tracking-[0.3em] uppercase">
-					Shared schedule
-				</p>
-				<h1 className="mt-4 font-semibold text-3xl tracking-tight">
-					This share link is unavailable
+			<section className="mx-auto flex w-full max-w-md flex-1 flex-col items-center justify-center px-6 py-24 text-center">
+				<h1 className="font-semibold text-lg tracking-tight">
+					This link is unavailable
 				</h1>
-				<p className="mt-4 text-muted-foreground text-sm leading-relaxed">
-					The owner may have turned off sharing or regenerated their link.
+				<p className="mt-2 text-muted-foreground text-sm leading-relaxed">
+					Sharing may have been turned off.
 				</p>
-				<Button asChild className="mt-6">
+				<Button asChild variant="outline" className="mt-5">
 					<Link to="/scheduler" preload="intent">
 						Open your scheduler
 					</Link>
@@ -111,68 +115,62 @@ function SharedSchedulePage() {
 
 	return (
 		<div className="app-fill-height flex w-full flex-col overflow-hidden">
-			<header className="flex flex-wrap items-center justify-between gap-3 border-border/60 border-b px-5 py-4">
-				<div>
-					<p className="font-medium text-[11px] text-muted-foreground tracking-[0.24em] uppercase">
-						Live shared timetable
-					</p>
-					<h1 className="mt-1 font-semibold text-xl tracking-tight">
+			<header className="flex flex-wrap items-center justify-between gap-3 border-b border-border/60 px-4 py-3 md:px-5">
+				<div className="flex items-baseline gap-2">
+					<h1 className="font-semibold text-base tracking-tight md:text-lg">
 						{termLabel}
 					</h1>
+					<span className="text-muted-foreground text-xs">Shared schedule</span>
 				</div>
-				<div className="flex items-center gap-2">
-					<Button
-						variant="outline"
-						size="sm"
-						onClick={() => sharedQuery.refetch()}
-						disabled={sharedQuery.isFetching}
-					>
-						<RefreshCw className="size-4" />
-						Refresh
-					</Button>
-					<Button
-						size="sm"
-						onClick={copySchedule}
-						disabled={copyState === "copying"}
-					>
-						{copyState === "copying" ? (
-							<Loader2 className="size-4 animate-spin" />
-						) : (
-							<Copy className="size-4" />
-						)}
-						Copy schedule
-					</Button>
-				</div>
+				<Button size="sm" onClick={copySchedule} disabled={isCopying}>
+					{isCopying ? (
+						<Loader2 className="size-4 animate-spin" />
+					) : (
+						<Copy className="size-4" />
+					)}
+					{isCopying ? "Copying…" : "Copy to my schedule"}
+				</Button>
 			</header>
-			<div className="flex min-h-0 flex-1 overflow-hidden">
-				<main className="min-w-0 flex-1">
+
+			<div className="flex min-h-0 flex-1 flex-col overflow-hidden lg:flex-row">
+				<main className="relative min-w-0 flex-1">
 					<Calendar events={events} />
 				</main>
-				<aside className="w-80 shrink-0 overflow-auto border-border/60 border-l p-4 max-lg:hidden">
-					<h2 className="font-semibold text-sm">Courses</h2>
-					<ul className="mt-4 space-y-3">
-						{savedCourses.map((savedCourse) => (
-							<li
-								key={savedCourse.course.pid}
-								className="rounded-lg border border-border/60 bg-card p-3"
-							>
-								<p className="font-semibold text-sm">
-									{savedCourse.course.subjectCode}
-								</p>
-								<p className="mt-1 text-muted-foreground text-xs">
-									{savedCourse.course.title}
-								</p>
-								<p className="mt-2 text-muted-foreground text-xs">
-									CRNs:{" "}
-									{savedCourse.sections
-										.map((section) => section.crn)
-										.join(", ")}
-								</p>
-							</li>
-						))}
-					</ul>
+				<aside
+					className={cn(
+						"flex shrink-0 flex-col border-border/60 bg-background",
+						isMobile ? "border-t" : "w-72 border-l",
+					)}
+				>
+					<ScrollArea className="min-h-0 flex-1">
+						<ul className="divide-y divide-border/60">
+							{savedCourses.length === 0 ? (
+								<li className="px-4 py-8 text-center text-sm text-muted-foreground">
+									No courses
+								</li>
+							) : (
+								savedCourses.map((savedCourse) => (
+									<CourseListItem
+										key={savedCourse.course.pid}
+										savedCourse={savedCourse}
+									/>
+								))
+							)}
+						</ul>
+					</ScrollArea>
 				</aside>
 			</div>
 		</div>
+	);
+}
+
+function CourseListItem({ savedCourse }: { savedCourse: SavedCourse }) {
+	return (
+		<li className="px-4 py-3">
+			<p className="font-medium text-sm">{savedCourse.course.subjectCode}</p>
+			<p className="mt-0.5 text-xs leading-snug text-muted-foreground">
+				{savedCourse.course.title}
+			</p>
+		</li>
 	);
 }
