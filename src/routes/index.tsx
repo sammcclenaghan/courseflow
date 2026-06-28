@@ -51,6 +51,7 @@ function Landing() {
 				<div className="mt-10 flex items-center gap-5">
 					<Link
 						to="/explore"
+						preload="intent"
 						className="group flex min-h-11 items-center gap-2.5 rounded-full bg-primary px-7 py-3 font-medium text-[13px] text-primary-foreground tracking-wide uppercase shadow-[0_14px_40px_rgba(0,84,147,0.16)] hover:-translate-y-0.5 hover:bg-uvic-dark-blue"
 					>
 						Explore Courses
@@ -58,6 +59,7 @@ function Landing() {
 					</Link>
 					<Link
 						to="/scheduler"
+						preload="intent"
 						className="inline-flex min-h-11 items-center font-medium text-foreground/50 text-[13px] tracking-wide uppercase hover:text-uvic-blue"
 					>
 						Build Timetable

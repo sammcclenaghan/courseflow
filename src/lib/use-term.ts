@@ -28,13 +28,14 @@ export function useTerm() {
 		strict: false,
 		select: (search) => normalizeTerm(search.term),
 	});
-	const navigate = useNavigate({ from: "/" });
+	const navigate = useNavigate();
 
 	const setSelectedTerm = React.useCallback(
 		(term: string, options?: { replace?: boolean }) => {
 			const nextTerm = normalizeTerm(term);
 			writeStoredTerm(nextTerm);
 			void navigate({
+				to: ".",
 				replace: options?.replace,
 				search: (previous) => ({ ...previous, term: nextTerm }),
 			});

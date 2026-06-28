@@ -35,10 +35,10 @@ function ExplorePage() {
 	const searchTerm = searchQuery.trim() || activeDepartment || "";
 	const searchResults = useMemo(
 		() =>
-			autocomplete.courses
-				? searchCourseAutocomplete(autocomplete.courses, searchTerm)
+			autocomplete.index
+				? searchCourseAutocomplete(autocomplete.index, searchTerm)
 				: [],
-		[autocomplete.courses, searchTerm],
+		[autocomplete.index, searchTerm],
 	);
 	const searchLoading = searchTerm.length > 0 && autocomplete.isLoading;
 
@@ -270,6 +270,7 @@ function CourseRow({
 			<Link
 				to="/courses/$subjectCode"
 				params={{ subjectCode: course.subjectCode }}
+				preload="intent"
 				className="flex h-8 shrink-0 items-center gap-1.5 rounded-lg px-3 font-medium text-[#1a1a1a]/40 text-[12px] transition-all hover:bg-[#1a1a1a]/[0.04] hover:text-[#1a1a1a]"
 			>
 				Details

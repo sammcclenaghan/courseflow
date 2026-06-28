@@ -99,7 +99,9 @@ function SharedSchedulePage() {
 					The owner may have turned off sharing or regenerated their link.
 				</p>
 				<Button asChild className="mt-6">
-					<Link to="/scheduler">Open your scheduler</Link>
+					<Link to="/scheduler" preload="intent">
+						Open your scheduler
+					</Link>
 				</Button>
 			</section>
 		);

@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 import {
+	buildCourseAutocompleteIndex,
 	type CourseAutocompleteCourse,
+	filterCourseAutocompleteIndexByOfferings,
 	filterCoursesByOfferings,
 	searchCourseAutocomplete,
 } from "./course-autocomplete";
@@ -61,11 +63,30 @@ describe("searchCourseAutocomplete", () => {
 		).toEqual(["CSC110", "CSC115", "CSC230"]);
 	});
 
+	it("searches a prebuilt normalized index", () => {
+		const index = buildCourseAutocompleteIndex(courses);
+
+		expect(
+			searchCourseAutocomplete(index, "software").map((c) => c.subjectCode),
+		).toEqual(["SENG265"]);
+	});
+
 	it("filters courses to static term offerings", () => {
 		expect(
 			filterCoursesByOfferings(courses, new Set(["csc110", "seng265"])).map(
 				(c) => c.subjectCode,
 			),
 		).toEqual(["CSC110", "SENG265"]);
+	});
+
+	it("filters a prebuilt index to static term offerings", () => {
+		const index = filterCourseAutocompleteIndexByOfferings(
+			buildCourseAutocompleteIndex(courses),
+			new Set(["csc110", "seng265"]),
+		);
+
+		expect(
+			searchCourseAutocomplete(index, "software").map((c) => c.subjectCode),
+		).toEqual(["SENG265"]);
 	});
 });

@@ -37,8 +37,13 @@ function harness(initial: string) {
 		path: "/",
 		component: () => null,
 	});
+	const schedulerRoute = createRoute({
+		getParentRoute: () => rootRoute,
+		path: "scheduler",
+		component: () => null,
+	});
 	return createRouter({
-		routeTree: rootRoute.addChildren([indexRoute]),
+		routeTree: rootRoute.addChildren([indexRoute, schedulerRoute]),
 		history: createMemoryHistory({ initialEntries: [initial] }),
 	});
 }
@@ -93,5 +98,18 @@ describe("TermSelector", () => {
 			expect(router.state.location.search.term).toBe("202701");
 		});
 		expect(window.localStorage.getItem(TERM_STORAGE_KEY)).toBe("202701");
+	});
+
+	it("updates the current route instead of navigating home", async () => {
+		const router = harness("/scheduler?term=202609");
+		render(<RouterProvider router={router} />);
+
+		const select = await getTermSelect();
+		fireEvent.change(select, { target: { value: "202701" } });
+
+		await waitFor(() => {
+			expect(router.state.location.pathname).toBe("/scheduler");
+			expect(router.state.location.search.term).toBe("202701");
+		});
 	});
 });

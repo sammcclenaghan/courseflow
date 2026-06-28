@@ -1,29 +1,34 @@
 import { useEffect, useState } from "react";
-import type { CourseAutocompleteCourse } from "./course-autocomplete";
+import {
+	buildCourseAutocompleteIndex,
+	type CourseAutocompleteCourse,
+	type CourseAutocompleteIndex,
+} from "./course-autocomplete";
 
 const COURSE_AUTOCOMPLETE_URL = "/generated/course-autocomplete.json";
 
-let cachedCourses: CourseAutocompleteCourse[] | null = null;
-let loadPromise: Promise<CourseAutocompleteCourse[]> | null = null;
+let cachedIndex: CourseAutocompleteIndex | null = null;
+let loadPromise: Promise<CourseAutocompleteIndex> | null = null;
 
 export function useCourseAutocomplete(enabled: boolean): {
-	courses: CourseAutocompleteCourse[] | null;
+	courses: readonly CourseAutocompleteCourse[] | null;
+	index: CourseAutocompleteIndex | null;
 	isLoading: boolean;
 	isError: boolean;
 } {
-	const [courses, setCourses] = useState<CourseAutocompleteCourse[] | null>(
-		() => cachedCourses,
+	const [index, setIndex] = useState<CourseAutocompleteIndex | null>(
+		() => cachedIndex,
 	);
 	const [isError, setIsError] = useState(false);
 
 	useEffect(() => {
-		if (!enabled || courses !== null || isError) return;
+		if (!enabled || index !== null || isError) return;
 
 		let cancelled = false;
 
 		loadCourseAutocomplete()
-			.then((loadedCourses) => {
-				if (!cancelled) setCourses(loadedCourses);
+			.then((loadedIndex) => {
+				if (!cancelled) setIndex(loadedIndex);
 			})
 			.catch(() => {
 				if (!cancelled) setIsError(true);
@@ -32,17 +37,18 @@ export function useCourseAutocomplete(enabled: boolean): {
 		return () => {
 			cancelled = true;
 		};
-	}, [enabled, courses, isError]);
+	}, [enabled, index, isError]);
 
 	return {
-		courses,
-		isLoading: enabled && courses === null && !isError,
+		courses: index?.courses ?? null,
+		index,
+		isLoading: enabled && index === null && !isError,
 		isError,
 	};
 }
 
-async function loadCourseAutocomplete(): Promise<CourseAutocompleteCourse[]> {
-	if (cachedCourses) return cachedCourses;
+async function loadCourseAutocomplete(): Promise<CourseAutocompleteIndex> {
+	if (cachedIndex) return cachedIndex;
 
 	loadPromise ??= fetch(COURSE_AUTOCOMPLETE_URL)
 		.then(async (response) => {
@@ -52,8 +58,9 @@ async function loadCourseAutocomplete(): Promise<CourseAutocompleteCourse[]> {
 			return (await response.json()) as CourseAutocompleteCourse[];
 		})
 		.then((courses) => {
-			cachedCourses = courses;
-			return courses;
+			const index = buildCourseAutocompleteIndex(courses);
+			cachedIndex = index;
+			return index;
 		})
 		.catch((error: unknown) => {
 			loadPromise = null;

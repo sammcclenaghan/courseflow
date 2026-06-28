@@ -53,7 +53,8 @@ function NavLink({
 		<Link
 			to={to}
 			aria-label={label}
-			activeOptions={{ exact: to !== "/explore" }}
+			preload="intent"
+			activeOptions={{ exact: to !== "/explore", includeSearch: false }}
 			activeProps={{ className: "text-foreground" }}
 			inactiveProps={{
 				className: "text-muted-foreground hover:text-foreground/80",

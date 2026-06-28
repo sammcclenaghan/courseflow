@@ -163,7 +163,7 @@ function RegistrationPage() {
 								Unable to find saved courses from your timetable for {termLabel}
 							</p>
 							<Button asChild size="sm" className="mt-4">
-								<Link to="/scheduler" search={{ term }}>
+								<Link to="/scheduler" search={{ term }} preload="intent">
 									{termLabel} Timetable
 								</Link>
 							</Button>

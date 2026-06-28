@@ -1,36 +1,81 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "course-flow-v4",
-  "compatibility_date": "2026-06-23",
-  "compatibility_flags": ["nodejs_compat"],
-  "main": "src/server.ts",
-  "durable_objects": {
-    "bindings": [
-      {
-        "name": "SCHEDULE_SHARE_ROOM",
-        "class_name": "ScheduleShareRoom"
-      }
-    ]
-  },
-  "migrations": [
-    {
-      "tag": "v1",
-      "new_sqlite_classes": ["ScheduleShareRoom"]
-    }
-  ],
-  "observability": {
-    "enabled": true,
-    "head_sampling_rate": 0.1
-  },
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "course-flow-v4",
-      "database_id": "a5fe7d9c-7715-4a4f-a715-8e0fb49a58ec",
-      "migrations_dir": "migrations"
-    }
-  ],
-  "vars": {
-    "APP_ENV": "production"
-  }
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "course-flow-v4",
+	"compatibility_date": "2026-06-23",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"main": "src/server.ts",
+	"assets": {},
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "SCHEDULE_SHARE_ROOM",
+				"class_name": "ScheduleShareRoom"
+			}
+		]
+	},
+	"migrations": [
+		{
+			"tag": "v1",
+			"new_sqlite_classes": [
+				"ScheduleShareRoom"
+			]
+		}
+	],
+	"observability": {
+		"enabled": true,
+		"head_sampling_rate": 0.1,
+		"logs": {
+			"head_sampling_rate": 0.1
+		},
+		"traces": {
+			"head_sampling_rate": 0.1
+		}
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "course-flow-v4",
+			"database_id": "a5fe7d9c-7715-4a4f-a715-8e0fb49a58ec",
+			"migrations_dir": "migrations"
+		}
+	],
+	"vars": {
+		"APP_ENV": "production",
+		"DISCORD_FEEDBACK_WEBHOOK_URL": "REDACTED"
+	},
+	"env": {
+		"local": {
+			"assets": {},
+			"vars": {
+				"APP_ENV": "local"
+			},
+			"durable_objects": {
+				"bindings": [
+					{
+						"name": "SCHEDULE_SHARE_ROOM",
+						"class_name": "ScheduleShareRoom"
+					}
+				]
+			},
+			"d1_databases": [
+				{
+					"binding": "DB",
+					"database_name": "course-flow-v4",
+					"database_id": "a5fe7d9c-7715-4a4f-a715-8e0fb49a58ec",
+					"migrations_dir": "migrations"
+				}
+			],
+			"observability": {
+				"enabled": true,
+				"logs": {
+					"head_sampling_rate": 1
+				},
+				"traces": {
+					"head_sampling_rate": 1
+				}
+			}
+		}
+	}
 }

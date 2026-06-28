@@ -171,6 +171,7 @@ function CourseDetailPage() {
 			<div className="app-bottom-pad relative z-10 mx-auto w-full max-w-5xl px-6 pt-12">
 				<Link
 					to="/explore"
+					preload="intent"
 					className="group mb-8 inline-flex items-center gap-1.5 rounded-md text-[#1a1a1a]/35 text-[13px] hover:text-[#1a1a1a]/60"
 				>
 					<ArrowLeft className="h-3.5 w-3.5 transition-transform group-hover:-translate-x-0.5" />
@@ -319,6 +320,7 @@ function CourseDetailPage() {
 									<Link
 										to="/scheduler"
 										search={{ term }}
+										preload="intent"
 										className="font-medium text-[#1a1a1a]/40 text-[12px] transition-colors hover:text-uvic-blue"
 									>
 										Open Timetable →
@@ -414,6 +416,7 @@ function LinkedCourseText({ text }: { text: string }) {
 				key={`${normalized}-${start}`}
 				to="/courses/$subjectCode"
 				params={{ subjectCode: normalized }}
+				preload="intent"
 				className="font-medium text-uvic-blue/80 underline decoration-uvic-blue/20 underline-offset-3 transition-colors hover:text-uvic-blue hover:decoration-uvic-blue/40"
 			>
 				{normalized}
@@ -627,6 +630,7 @@ function AlternativeCourseRow({
 					<Link
 						to="/courses/$subjectCode"
 						params={{ subjectCode: result.subjectCode }}
+						preload="intent"
 						className="font-semibold text-[#1a1a1a]/80 text-[14px] transition-colors hover:text-[#1a1a1a]"
 					>
 						{result.subjectCode}
@@ -639,6 +643,7 @@ function AlternativeCourseRow({
 			<Link
 				to="/courses/$subjectCode"
 				params={{ subjectCode: result.subjectCode }}
+				preload="intent"
 				className="flex h-7 shrink-0 items-center gap-1 rounded-full px-2 text-[#1a1a1a]/25 text-[11px] transition-colors group-hover:text-[#1a1a1a]/55"
 			>
 				Details
@@ -684,6 +689,7 @@ function CourseNotFound() {
 			<div className="mx-auto w-full max-w-5xl px-6 py-16">
 				<Link
 					to="/explore"
+					preload="intent"
 					className="group mb-6 inline-flex items-center gap-1.5 rounded-md text-[#1a1a1a]/35 text-[13px] hover:text-[#1a1a1a]/60"
 				>
 					<ArrowLeft className="h-3.5 w-3.5 transition-transform group-hover:-translate-x-0.5" />

@@ -56,7 +56,8 @@ function TabLink({
 		<Link
 			to={to}
 			aria-label={label}
-			activeOptions={{ exact: to !== "/explore" }}
+			preload="intent"
+			activeOptions={{ exact: to !== "/explore", includeSearch: false }}
 			activeProps={{ className: "text-uvic-blue" }}
 			inactiveProps={{
 				className: "text-foreground/55 active:text-foreground/80",

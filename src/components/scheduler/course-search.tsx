@@ -1,7 +1,7 @@
 import { Search } from "lucide-react";
 import { useMemo, useState } from "react";
 import {
-	filterCoursesByOfferings,
+	filterCourseAutocompleteIndexByOfferings,
 	searchCourseAutocomplete,
 } from "@/catalog/course-autocomplete";
 import {
@@ -38,18 +38,21 @@ export function CourseSearch({
 		!disabled && (autocompleteLoadRequested || searchTerm.length > 0);
 	const autocomplete = useCourseAutocomplete(shouldLoadSearchData);
 	const offerings = useCourseOfferings(term, shouldLoadSearchData);
-	const offeredCourses = useMemo(() => {
-		if (!autocomplete.courses) return [];
-		if (offerings.isError) return autocomplete.courses;
-		if (!offerings.offeredPids) return [];
-		return filterCoursesByOfferings(
-			autocomplete.courses,
+	const offeredCourseIndex = useMemo(() => {
+		if (!autocomplete.index) return null;
+		if (offerings.isError) return autocomplete.index;
+		if (!offerings.offeredPids) return null;
+		return filterCourseAutocompleteIndexByOfferings(
+			autocomplete.index,
 			offerings.offeredPids,
 		);
-	}, [autocomplete.courses, offerings.isError, offerings.offeredPids]);
+	}, [autocomplete.index, offerings.isError, offerings.offeredPids]);
 	const results = useMemo(
-		() => searchCourseAutocomplete(offeredCourses, searchTerm),
-		[offeredCourses, searchTerm],
+		() =>
+			offeredCourseIndex
+				? searchCourseAutocomplete(offeredCourseIndex, searchTerm)
+				: [],
+		[offeredCourseIndex, searchTerm],
 	);
 	const isLoading =
 		searchTerm.length > 0 && (autocomplete.isLoading || offerings.isLoading);
