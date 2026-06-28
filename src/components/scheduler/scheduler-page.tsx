@@ -1,6 +1,7 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useMemo, useRef } from "react";
 import { Calendar } from "@/components/calendar/calendar";
+import { useIsMobile } from "@/lib/use-media-query";
 import {
 	scheduleQueries,
 	scheduleQueryKey,
@@ -17,6 +18,7 @@ import type {
 import { coursesToEvents } from "@/utils/section-to-events";
 import type { GroupedSections, Section } from "@/utils/sections-types";
 import { CourseSearch } from "./course-search";
+import { MobileSchedulerShell } from "./mobile-scheduler-shell";
 import { ScheduleSharePanel } from "./schedule-share-panel";
 import { SelectedCoursesSidebar } from "./selected-courses-sidebar";
 
@@ -28,6 +30,7 @@ export function SchedulerPage({
 	onTermChange: (term: string) => void;
 }) {
 	const queryClient = useQueryClient();
+	const isMobile = useIsMobile();
 	const saveVersionRef = useRef(0);
 	const scheduleQuery = useQuery(scheduleQueries.mine(term));
 	const selectedCourses = useMemo(
@@ -108,6 +111,21 @@ export function SchedulerPage({
 
 	function clearAll() {
 		void commitCourses([]);
+	}
+
+	if (isMobile) {
+		return (
+			<MobileSchedulerShell
+				term={term}
+				onTermChange={onTermChange}
+				selectedCourses={selectedCourses}
+				events={events}
+				onCourseSelect={addCourse}
+				onCourseRemove={removeCourse}
+				onSectionsUpdate={updateSections}
+				onClearAll={clearAll}
+			/>
+		);
 	}
 
 	return (
