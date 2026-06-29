@@ -16,12 +16,9 @@ import { type ReactNode, useEffect, useState } from "react";
 import { z } from "zod";
 import { catalogQueries, catalogSectionQueries } from "@/queries/catalog";
 import { scheduleQueries, scheduleQueryKey } from "@/queries/scheduler";
-import type {
-	AlternativeMode,
-	Course,
-	CourseAlternative,
-} from "@/utils/catalog-types";
+import type { AlternativeMode, CourseAlternative } from "@/utils/catalog-types";
 import { getTermLabel } from "@/utils/constants";
+import { useFavouriteCourses } from "@/utils/favourite-courses";
 import { saveMySchedule } from "@/utils/scheduler.functions";
 import type { ScheduleWithSections } from "@/utils/scheduler-types";
 import { formatSectionSchedule } from "@/utils/section-to-events";
@@ -699,39 +696,4 @@ function CourseNotFound() {
 			</div>
 		</div>
 	);
-}
-
-function useFavouriteCourses() {
-	const [favourites, setFavourites] = useState<Set<string>>(() => new Set());
-
-	useEffect(() => {
-		try {
-			const raw = window.localStorage.getItem("courseflow:favourite-courses");
-			if (raw) setFavourites(new Set(JSON.parse(raw)));
-		} catch {
-			setFavourites(new Set());
-		}
-	}, []);
-
-	function persist(next: Set<string>) {
-		setFavourites(next);
-		try {
-			window.localStorage.setItem(
-				"courseflow:favourite-courses",
-				JSON.stringify([...next]),
-			);
-		} catch {
-			// Ignore localStorage failures.
-		}
-	}
-
-	return {
-		isFavourite: (pid: string) => favourites.has(pid),
-		toggleFavourite: (course: Course) => {
-			const next = new Set(favourites);
-			if (next.has(course.pid)) next.delete(course.pid);
-			else next.add(course.pid);
-			persist(next);
-		},
-	};
 }

@@ -16,6 +16,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 import type { CourseSearchResult } from "@/utils/catalog-types";
+import { useFavouriteCourses } from "@/utils/favourite-courses";
 import { getCourseToggle } from "./course-toggle";
 
 export function CourseSearch({
@@ -31,14 +32,18 @@ export function CourseSearch({
 	selectedPids: Set<string>;
 	disabled?: boolean;
 }) {
+	const { favourites } = useFavouriteCourses();
 	const [query, setQuery] = useState("");
 	const [autocompleteLoadRequested, setAutocompleteLoadRequested] =
 		useState(false);
 	const searchTerm = query.trim();
+	const shouldShowSavedCourses =
+		!disabled && searchTerm.length === 0 && favourites.length > 0;
 	const shouldLoadSearchData =
 		!disabled && (autocompleteLoadRequested || searchTerm.length > 0);
+	const shouldLoadOfferings = shouldLoadSearchData || shouldShowSavedCourses;
 	const autocomplete = useCourseAutocomplete(shouldLoadSearchData);
-	const offerings = useCourseOfferings(term, shouldLoadSearchData);
+	const offerings = useCourseOfferings(term, shouldLoadOfferings);
 	const offeredCourseIndex = useMemo(() => {
 		if (!autocomplete.index) return null;
 		if (offerings.isError) return autocomplete.index;
@@ -48,6 +53,18 @@ export function CourseSearch({
 			offerings.offeredPids,
 		);
 	}, [autocomplete.index, offerings.isError, offerings.offeredPids]);
+	const savedCoursesOfferedThisTerm = useMemo(() => {
+		if (!shouldShowSavedCourses) return [];
+		if (offerings.isError) return favourites;
+		const offeredPids = offerings.offeredPids;
+		if (!offeredPids) return [];
+		return favourites.filter((course) => offeredPids.has(course.pid));
+	}, [
+		favourites,
+		offerings.isError,
+		offerings.offeredPids,
+		shouldShowSavedCourses,
+	]);
 	const results = useMemo(
 		() =>
 			offeredCourseIndex
@@ -57,6 +74,7 @@ export function CourseSearch({
 	);
 	const isLoading =
 		searchTerm.length > 0 && (autocomplete.isLoading || offerings.isLoading);
+	const isLoadingSavedCourses = shouldShowSavedCourses && offerings.isLoading;
 
 	useCourseSearchPerformance({
 		surface: "scheduler",
@@ -96,11 +114,44 @@ export function CourseSearch({
 				)}
 			>
 				<div>
-					{!searchTerm && (
-						<p className="px-4 py-8 text-center text-muted-foreground text-sm">
-							Search by course code to add courses to your planner
-						</p>
+					{!searchTerm && isLoadingSavedCourses && (
+						<div className="divide-y divide-border/60">
+							<CourseRowSkeleton />
+							<CourseRowSkeleton />
+							<CourseRowSkeleton />
+						</div>
 					)}
+
+					{!searchTerm &&
+						!isLoadingSavedCourses &&
+						savedCoursesOfferedThisTerm.length === 0 && (
+							<p className="px-4 py-8 text-center text-muted-foreground text-sm">
+								Search by course code to add courses to your planner
+							</p>
+						)}
+
+					{!searchTerm &&
+						!isLoadingSavedCourses &&
+						savedCoursesOfferedThisTerm.length > 0 && (
+							<>
+								<div className="border-border/60 border-b bg-muted/30 px-4 pt-3 pb-2">
+									<p className="font-medium text-[11px] text-muted-foreground uppercase tracking-wide">
+										Saved courses
+									</p>
+								</div>
+								<div className="divide-y divide-border/60">
+									{savedCoursesOfferedThisTerm.map((course) => (
+										<CourseRow
+											key={course.pid}
+											course={course}
+											alreadyAdded={selectedPids.has(course.pid)}
+											onSelect={onCourseSelect}
+											onRemove={onCourseRemove}
+										/>
+									))}
+								</div>
+							</>
+						)}
 
 					{searchTerm && isLoading && (
 						<div className="divide-y divide-border/60">
