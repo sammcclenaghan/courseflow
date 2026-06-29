@@ -42,8 +42,7 @@
 		}
 	],
 	"vars": {
-		"APP_ENV": "production",
-		"DISCORD_FEEDBACK_WEBHOOK_URL": "REDACTED"
+		"APP_ENV": "production"
 	},
 	"env": {
 		"local": {

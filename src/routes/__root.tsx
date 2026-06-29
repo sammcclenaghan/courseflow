@@ -9,6 +9,7 @@ import {
 import type { ReactNode } from "react";
 import { z } from "zod";
 import { Header } from "@/components/header";
+import { LegacyScheduleMigration } from "@/components/legacy-schedule-migration";
 import { MobileTabBar } from "@/components/mobile-tab-bar";
 import { Toaster } from "@/components/ui/sonner";
 import { usePersistedTermBootstrap } from "@/lib/use-term";
@@ -44,7 +45,10 @@ export const Route = createRootRouteWithContext<RouterContext>()({
 					"Search the University of Victoria course catalog, build a conflict-free timetable, and copy your CRNs into UVic's registration system.",
 			},
 		],
-		links: [{ rel: "stylesheet", href: appCss }],
+		links: [
+			{ rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
+			{ rel: "stylesheet", href: appCss },
+		],
 	}),
 	component: RootComponent,
 	notFoundComponent: NotFound,
@@ -71,6 +75,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
 			</head>
 			<body className="flex min-h-dvh flex-col bg-background font-sans text-foreground antialiased">
 				<GlobalTermBootstrap />
+				<LegacyScheduleMigration />
 				<Header />
 				<main className="flex flex-1 flex-col">{children}</main>
 				<MobileTabBar />

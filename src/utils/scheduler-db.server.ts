@@ -124,6 +124,16 @@ VALUES ((SELECT id FROM schedules WHERE token = ? AND term = ?), ?, ?, ?)`,
 	};
 }
 
+export async function filterExistingSectionCrns(
+	term: string,
+	crns: string[],
+): Promise<string[]> {
+	const uniqueCrns = normalizeScheduleCrns(crns);
+	const sections = await loadSectionsByCrns(term, uniqueCrns);
+	const existing = new Set(sections.map((section) => section.crn));
+	return uniqueCrns.filter((crn) => existing.has(crn));
+}
+
 export async function deleteScheduleByToken(
 	term: string,
 	token: string,

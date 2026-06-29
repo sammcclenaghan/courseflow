@@ -12,6 +12,11 @@ export function getOrCreateAnonymousScheduleToken(): string {
 	if (existing) return existing;
 
 	const token = crypto.randomUUID();
+	setAnonymousScheduleToken(token);
+	return token;
+}
+
+export function setAnonymousScheduleToken(token: string): void {
 	setCookie(SCHEDULE_TOKEN_COOKIE, token, {
 		httpOnly: true,
 		sameSite: "lax",
@@ -19,6 +24,4 @@ export function getOrCreateAnonymousScheduleToken(): string {
 		path: "/",
 		maxAge: ONE_YEAR_SECONDS,
 	});
-
-	return token;
 }
