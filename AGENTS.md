@@ -15,8 +15,8 @@ Before editing files for a substantial task:
 
 ## Task Completion Requirements
 
-- `nub run check` and `nub run typecheck` must pass before considering any task complete.
-- `nub run test` must pass. Add or update tests for any behaviour change.
+- `npm run check` and `npm run typecheck` must pass before considering any task complete.
+- `npm run test` must pass. Add or update tests for any behaviour change.
 
 ## Project Snapshot
 
