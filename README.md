@@ -1,6 +1,6 @@
 # CourseFlow
 
-A course scheduler for the University of Victoria — search the catalog, compare sections with live enrollment counts, and build a conflict-free timetable. Live at **[courseflow.smccl.ca](https://courseflow.smccl.ca)**.
+A course scheduler for the University of Victoria. Search the catalog, compare sections with live enrollment counts, and build a conflict-free timetable. Live at **[courseflow.smccl.ca](https://courseflow.smccl.ca)**.
 
 <p align="center">
   <img src=".github/screenshot.png" alt="CourseFlow scheduler — timetable with live section enrollment" width="90%" />
@@ -17,14 +17,14 @@ Fourth iteration of the project: it started as a Go CLI scraper, grew into a Go 
 ## Development
 
 ```bash
-npm ci
-npm run d1:migrate:local
-npm run d1:seed:csc
-npm run dev
+nub ci
+nub run d1:migrate:local
+nub run d1:seed:csc
+nub run dev
 ```
 
-`npm run check`, `npm run typecheck`, and `npm run test` must pass before deploying with `npm run deploy`.
+`nub run check`, `nub run typecheck`, and `nub run test` must pass before deploying with `nub run deploy`.
 
-Course data comes from a Worker-compatible TypeScript importer that ingests the Kuali catalog, Banner timetable sections, and live enrollment counts into D1 — see `npm run catalog:import`.
+Course data comes from a Worker-compatible TypeScript importer that ingests the Kuali catalog, Banner timetable sections, and live enrollment counts into D1 — see `nub run catalog:import`.
 
 Secrets are set with `wrangler secret put`, never committed. Non-secret Worker vars live in `wrangler.jsonc`.
