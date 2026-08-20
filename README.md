@@ -16,6 +16,8 @@ Fourth iteration of the project: it started as a Go CLI scraper, grew into a Go 
 
 ## Development
 
+In this project, we use (nub)[https://github.com/nubjs/nub?og], and no that's not a typo for bun.
+
 ```bash
 nub ci
 nub run d1:migrate:local
