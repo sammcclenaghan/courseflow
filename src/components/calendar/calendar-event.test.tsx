@@ -54,7 +54,7 @@ function event(
 afterEach(cleanup);
 
 describe("CalendarEvent", () => {
-	it("marks overlapping events as conflicts", () => {
+	it("splits the column between overlapping events", () => {
 		const first = event(
 			"first",
 			"A01",
@@ -71,11 +71,11 @@ describe("CalendarEvent", () => {
 		render(<CalendarEvent event={first} allEvents={[first, second]} />);
 
 		const card = screen.getByText("CSC 110 A01").parentElement;
-		expect(card?.getAttribute("data-conflict")).toBe("true");
-		expect(card?.className).toContain("border-destructive");
+		expect(card?.style.width).toBe("50%");
+		expect(card?.style.left).toBe("0%");
 	});
 
-	it("does not mark non-overlapping events as conflicts", () => {
+	it("uses the full column when nothing overlaps", () => {
 		const first = event(
 			"first",
 			"A01",
@@ -92,7 +92,7 @@ describe("CalendarEvent", () => {
 		render(<CalendarEvent event={first} allEvents={[first, second]} />);
 
 		const card = screen.getByText("CSC 110 A01").parentElement;
-		expect(card?.getAttribute("data-conflict")).toBeNull();
-		expect(card?.className).not.toContain("border-destructive");
+		expect(card?.style.width).toBe("100%");
+		expect(card?.style.left).toBe("0%");
 	});
 });
