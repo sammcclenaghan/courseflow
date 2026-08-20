@@ -43,22 +43,23 @@ function harness(initial: string) {
 }
 
 describe("MobileTabBar", () => {
-	it.each(
-		NAV_ITEMS.map((item) => [item.to, item.label] as const),
-	)("renders all three tabs and marks %s active", async (to, label) => {
-		render(<RouterProvider router={harness(to)} />);
+	it.each(NAV_ITEMS.map((item) => [item.to, item.label] as const))(
+		"renders all three tabs and marks %s active",
+		async (to, label) => {
+			render(<RouterProvider router={harness(to)} />);
 
-		// Every student surface is reachable from the bar. findBy* retries
-		// until the in-memory router finishes its async load.
-		for (const item of NAV_ITEMS) {
-			await screen.findByRole("link", { name: item.label });
-		}
+			// Every student surface is reachable from the bar. findBy* retries
+			// until the in-memory router finishes its async load.
+			for (const item of NAV_ITEMS) {
+				await screen.findByRole("link", { name: item.label });
+			}
 
-		// The current route's tab reflects "you are here".
-		const active = await screen.findByRole("link", { name: label });
-		expect(active.getAttribute("aria-current")).toBe("page");
-		expect(active.className).toContain("text-uvic-blue");
-	});
+			// The current route's tab reflects "you are here".
+			const active = await screen.findByRole("link", { name: label });
+			expect(active.getAttribute("aria-current")).toBe("page");
+			expect(active.className).toContain("text-uvic-blue");
+		},
+	);
 
 	it("keeps inactive tabs muted", async () => {
 		render(<RouterProvider router={harness("/scheduler")} />);

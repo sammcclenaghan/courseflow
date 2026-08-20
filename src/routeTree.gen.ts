@@ -9,28 +9,23 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SchedulerRouteImport } from './routes/scheduler'
-import { Route as RegisterRouteImport } from './routes/register'
-import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ShareShareIdRouteImport } from './routes/share/$shareId'
+import { Route as ExploreRouteImport } from './routes/explore'
+import { Route as RegisterRouteImport } from './routes/register'
+import { Route as SchedulerRouteImport } from './routes/scheduler'
 import { Route as CoursesSubjectCodeRouteImport } from './routes/courses/$subjectCode'
+import { Route as ShareShareIdRouteImport } from './routes/share/$shareId'
 import { Route as ApiV1HealthRouteImport } from './routes/api/v1/health'
-import { Route as ApiV1CoursesSubjectsRouteImport } from './routes/api/v1/courses/subjects'
 import { Route as ApiV1CoursesSearchRouteImport } from './routes/api/v1/courses/search'
-import { Route as ApiV1SharedSchedulesShareIdEventsRouteImport } from './routes/api/v1/shared-schedules/$shareId/events'
-import { Route as ApiV1SectionsByCrnsTermRouteImport } from './routes/api/v1/sections/by-crns/$term'
-import { Route as ApiV1SectionsPidTermRouteImport } from './routes/api/v1/sections/$pid/$term'
+import { Route as ApiV1CoursesSubjectsRouteImport } from './routes/api/v1/courses/subjects'
 import { Route as ApiV1CoursesCodeSubjectCodeRouteImport } from './routes/api/v1/courses/code/$subjectCode'
+import { Route as ApiV1SectionsPidTermRouteImport } from './routes/api/v1/sections/$pid/$term'
+import { Route as ApiV1SectionsByCrnsTermRouteImport } from './routes/api/v1/sections/by-crns/$term'
+import { Route as ApiV1SharedSchedulesShareIdEventsRouteImport } from './routes/api/v1/shared-schedules/$shareId/events'
 
-const SchedulerRoute = SchedulerRouteImport.update({
-  id: '/scheduler',
-  path: '/scheduler',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RegisterRoute = RegisterRouteImport.update({
-  id: '/register',
-  path: '/register',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExploreRoute = ExploreRouteImport.update({
@@ -38,14 +33,14 @@ const ExploreRoute = ExploreRouteImport.update({
   path: '/explore',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const RegisterRoute = RegisterRouteImport.update({
+  id: '/register',
+  path: '/register',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ShareShareIdRoute = ShareShareIdRouteImport.update({
-  id: '/share/$shareId',
-  path: '/share/$shareId',
+const SchedulerRoute = SchedulerRouteImport.update({
+  id: '/scheduler',
+  path: '/scheduler',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CoursesSubjectCodeRoute = CoursesSubjectCodeRouteImport.update({
@@ -53,14 +48,14 @@ const CoursesSubjectCodeRoute = CoursesSubjectCodeRouteImport.update({
   path: '/courses/$subjectCode',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ShareShareIdRoute = ShareShareIdRouteImport.update({
+  id: '/share/$shareId',
+  path: '/share/$shareId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiV1HealthRoute = ApiV1HealthRouteImport.update({
   id: '/api/v1/health',
   path: '/api/v1/health',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiV1CoursesSubjectsRoute = ApiV1CoursesSubjectsRouteImport.update({
-  id: '/api/v1/courses/subjects',
-  path: '/api/v1/courses/subjects',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiV1CoursesSearchRoute = ApiV1CoursesSearchRouteImport.update({
@@ -68,26 +63,31 @@ const ApiV1CoursesSearchRoute = ApiV1CoursesSearchRouteImport.update({
   path: '/api/v1/courses/search',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiV1SharedSchedulesShareIdEventsRoute =
-  ApiV1SharedSchedulesShareIdEventsRouteImport.update({
-    id: '/api/v1/shared-schedules/$shareId/events',
-    path: '/api/v1/shared-schedules/$shareId/events',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ApiV1SectionsByCrnsTermRoute = ApiV1SectionsByCrnsTermRouteImport.update({
-  id: '/api/v1/sections/by-crns/$term',
-  path: '/api/v1/sections/by-crns/$term',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiV1SectionsPidTermRoute = ApiV1SectionsPidTermRouteImport.update({
-  id: '/api/v1/sections/$pid/$term',
-  path: '/api/v1/sections/$pid/$term',
+const ApiV1CoursesSubjectsRoute = ApiV1CoursesSubjectsRouteImport.update({
+  id: '/api/v1/courses/subjects',
+  path: '/api/v1/courses/subjects',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiV1CoursesCodeSubjectCodeRoute =
   ApiV1CoursesCodeSubjectCodeRouteImport.update({
     id: '/api/v1/courses/code/$subjectCode',
     path: '/api/v1/courses/code/$subjectCode',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApiV1SectionsPidTermRoute = ApiV1SectionsPidTermRouteImport.update({
+  id: '/api/v1/sections/$pid/$term',
+  path: '/api/v1/sections/$pid/$term',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiV1SectionsByCrnsTermRoute = ApiV1SectionsByCrnsTermRouteImport.update({
+  id: '/api/v1/sections/by-crns/$term',
+  path: '/api/v1/sections/by-crns/$term',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiV1SharedSchedulesShareIdEventsRoute =
+  ApiV1SharedSchedulesShareIdEventsRouteImport.update({
+    id: '/api/v1/shared-schedules/$shareId/events',
+    path: '/api/v1/shared-schedules/$shareId/events',
     getParentRoute: () => rootRouteImport,
   } as any)
 
@@ -203,18 +203,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/scheduler': {
-      id: '/scheduler'
-      path: '/scheduler'
-      fullPath: '/scheduler'
-      preLoaderRoute: typeof SchedulerRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/register': {
-      id: '/register'
-      path: '/register'
-      fullPath: '/register'
-      preLoaderRoute: typeof RegisterRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/explore': {
@@ -224,18 +217,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExploreRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/register': {
+      id: '/register'
+      path: '/register'
+      fullPath: '/register'
+      preLoaderRoute: typeof RegisterRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/share/$shareId': {
-      id: '/share/$shareId'
-      path: '/share/$shareId'
-      fullPath: '/share/$shareId'
-      preLoaderRoute: typeof ShareShareIdRouteImport
+    '/scheduler': {
+      id: '/scheduler'
+      path: '/scheduler'
+      fullPath: '/scheduler'
+      preLoaderRoute: typeof SchedulerRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/courses/$subjectCode': {
@@ -245,18 +238,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CoursesSubjectCodeRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/share/$shareId': {
+      id: '/share/$shareId'
+      path: '/share/$shareId'
+      fullPath: '/share/$shareId'
+      preLoaderRoute: typeof ShareShareIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/v1/health': {
       id: '/api/v1/health'
       path: '/api/v1/health'
       fullPath: '/api/v1/health'
       preLoaderRoute: typeof ApiV1HealthRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/v1/courses/subjects': {
-      id: '/api/v1/courses/subjects'
-      path: '/api/v1/courses/subjects'
-      fullPath: '/api/v1/courses/subjects'
-      preLoaderRoute: typeof ApiV1CoursesSubjectsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/v1/courses/search': {
@@ -266,18 +259,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiV1CoursesSearchRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/v1/shared-schedules/$shareId/events': {
-      id: '/api/v1/shared-schedules/$shareId/events'
-      path: '/api/v1/shared-schedules/$shareId/events'
-      fullPath: '/api/v1/shared-schedules/$shareId/events'
-      preLoaderRoute: typeof ApiV1SharedSchedulesShareIdEventsRouteImport
+    '/api/v1/courses/subjects': {
+      id: '/api/v1/courses/subjects'
+      path: '/api/v1/courses/subjects'
+      fullPath: '/api/v1/courses/subjects'
+      preLoaderRoute: typeof ApiV1CoursesSubjectsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/v1/sections/by-crns/$term': {
-      id: '/api/v1/sections/by-crns/$term'
-      path: '/api/v1/sections/by-crns/$term'
-      fullPath: '/api/v1/sections/by-crns/$term'
-      preLoaderRoute: typeof ApiV1SectionsByCrnsTermRouteImport
+    '/api/v1/courses/code/$subjectCode': {
+      id: '/api/v1/courses/code/$subjectCode'
+      path: '/api/v1/courses/code/$subjectCode'
+      fullPath: '/api/v1/courses/code/$subjectCode'
+      preLoaderRoute: typeof ApiV1CoursesCodeSubjectCodeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/v1/sections/$pid/$term': {
@@ -287,11 +280,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiV1SectionsPidTermRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/v1/courses/code/$subjectCode': {
-      id: '/api/v1/courses/code/$subjectCode'
-      path: '/api/v1/courses/code/$subjectCode'
-      fullPath: '/api/v1/courses/code/$subjectCode'
-      preLoaderRoute: typeof ApiV1CoursesCodeSubjectCodeRouteImport
+    '/api/v1/sections/by-crns/$term': {
+      id: '/api/v1/sections/by-crns/$term'
+      path: '/api/v1/sections/by-crns/$term'
+      fullPath: '/api/v1/sections/by-crns/$term'
+      preLoaderRoute: typeof ApiV1SectionsByCrnsTermRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/v1/shared-schedules/$shareId/events': {
+      id: '/api/v1/shared-schedules/$shareId/events'
+      path: '/api/v1/shared-schedules/$shareId/events'
+      fullPath: '/api/v1/shared-schedules/$shareId/events'
+      preLoaderRoute: typeof ApiV1SharedSchedulesShareIdEventsRouteImport
       parentRoute: typeof rootRouteImport
     }
   }

@@ -18,16 +18,9 @@ export function buildCatalogImportSql({
 		sections,
 		(section) => `${section.term}:${section.crn}`,
 	);
-	const coursePids = uniqueCourses.map((course) => course.pid).filter(Boolean);
 
 	const statements = ["PRAGMA foreign_keys = ON;"];
 	if (wrapTransaction) statements.push("BEGIN TRANSACTION;");
-
-	if (coursePids.length > 0) {
-		statements.push(
-			`DELETE FROM sections WHERE term = ${sqlString(term)} AND course_pid IN (${coursePids.map(sqlString).join(", ")});`,
-		);
-	}
 
 	for (const course of uniqueCourses) {
 		statements.push(courseUpsertStatement(course));
@@ -37,8 +30,30 @@ export function buildCatalogImportSql({
 		statements.push(sectionInsertStatement(section));
 	}
 
+	statements.push(...staleSectionPruneStatements(uniqueSections, term));
+
 	if (wrapTransaction) statements.push("COMMIT;");
 	return `${statements.join("\n\n")}\n`;
+}
+
+// Deleting a section cascades into users' saved schedule_sections, so pruning
+// must only remove CRNs that genuinely no longer exist for a course whose
+// sections were fetched this run. Courses with zero fetched sections are left
+// untouched: a failed upstream fetch must not delete good data.
+function staleSectionPruneStatements(
+	sections: readonly ImportedSection[],
+	term: string,
+): string[] {
+	const crnsByCoursePid = new Map<string, string[]>();
+	for (const section of sections) {
+		if (section.term !== term || !section.coursePid) continue;
+		const crns = crnsByCoursePid.get(section.coursePid) ?? [];
+		crns.push(section.crn);
+		crnsByCoursePid.set(section.coursePid, crns);
+	}
+	return Array.from(crnsByCoursePid, ([coursePid, crns]) => {
+		return `DELETE FROM sections WHERE term = ${sqlString(term)} AND course_pid = ${sqlString(coursePid)} AND crn NOT IN (${crns.map(sqlString).join(", ")});`;
+	});
 }
 
 function courseUpsertStatement(course: ImportedCourse): string {
