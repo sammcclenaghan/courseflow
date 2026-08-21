@@ -211,21 +211,6 @@ body,
   }
 }
 
-.landing-page {
-  font-family: 'DM Sans', system-ui, sans-serif;
-}
-
-.landing-page::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 128px 128px;
-}
-
 @keyframes header-slide-down {
   from {
     opacity: 0;
@@ -237,28 +222,14 @@ body,
   }
 }
 
-.landing-page h1,
-.landing-page h1 + p,
-.landing-page h1 ~ div {
-  animation: landing-fade-up 0.8s var(--ease-polish) both;
-}
-
-.landing-page h1 {
-  animation-delay: 0.1s;
-}
-
-.landing-page h1 + p {
-  animation-delay: 0.3s;
-}
-
-.landing-page h1 ~ div {
-  animation-delay: 0.45s;
-}
-
-.landing-underline path {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  animation: landing-draw 1.2s var(--ease-polish) 0.6s forwards;
+/* The tab bar's active thumb, arriving on a bar that had nothing selected. */
+@keyframes tab-thumb-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes landing-fade-up {
@@ -272,9 +243,184 @@ body,
   }
 }
 
-@keyframes landing-draw {
+/*
+  The landing catalog wall: one cell per course UVic offers (see
+  src/components/landing/catalog-wall.tsx). Cells are bare <i> elements styled
+  from here rather than carrying utility classes each — at ~3.7k nodes that
+  keeps the markup compressible and hydration cheap.
+
+  No cell size keeps 3.7k course codes legible below lg, so the wall drops the
+  type there and shows one dot per course instead. Rows are minmax(0, 1fr) so
+  the grid always divides the height it is given: the whole catalog stays on
+  screen at every viewport, which is the entire point of it.
+*/
+.catalog-wall {
+  /*
+    The cell is a width; the row height is whatever the viewport's height
+    divided by the resulting row count comes to. Pick the width per breakpoint
+    so those two land close together — a cell much narrower than it is tall
+    reads as ruled lines instead of a field of courses.
+  */
+  --wall-cell: 7px;
+  --wall-dot: 3px;
+  display: grid;
+  /*
+    --wall-columns is measured in catalog-wall.tsx: of the column counts that
+    fit, it picks the one that leaves the fewest empty cells in the last row.
+    Until it lands, fill the width the plain way.
+  */
+  grid-template-columns: repeat(
+    var(--wall-columns, auto-fill),
+    minmax(var(--wall-cell), 1fr)
+  );
+  grid-auto-rows: minmax(0, 1fr);
+  overflow: hidden;
+  contain: content;
+  font-family: var(--font-mono, ui-monospace, 'SF Mono', Menlo, monospace);
+  /* The catalog prints itself on, left to right, once. */
+  mask-image: linear-gradient(78deg, #000 42%, transparent 60%);
+  mask-size: 280% 100%;
+  mask-repeat: no-repeat;
+  animation: wall-print 1s var(--ease-polish) both;
+}
+
+.catalog-wall i {
+  display: block;
+  font-size: 0;
+  font-style: normal;
+  line-height: 1;
+  color: color-mix(in srgb, var(--foreground) 32%, transparent);
+  /*
+    Courses light up when the term's offerings land. Short, because it is spent
+    on top of the wait for that payload — half a second of fade on the end read
+    as the blue itself being slow to arrive.
+  */
+  transition: color 240ms var(--ease-polish);
+}
+
+.catalog-wall i::before {
+  content: '';
+  display: block;
+  width: var(--wall-dot);
+  height: var(--wall-dot);
+  border-radius: 1px;
+  background: currentColor;
+}
+
+.catalog-wall i.on {
+  color: color-mix(in srgb, var(--uvic-blue) 92%, transparent);
+}
+
+/*
+  Once the page has settled — five seconds in, courtesy of the animation delay
+  — the courses running this term start to glitter. Only a sparse slice of them
+  animates at a time (every 29th cell, six offset buckets, all different
+  durations) so it reads as a scatter of twinkles rather than a pulsing block,
+  and so a few hundred cells animate instead of twelve hundred.
+
+  The global prefers-reduced-motion rule collapses all of this to a single
+  frame, leaving the courses simply lit.
+*/
+.catalog-wall i.on:nth-child(29n + 1) {
+  animation: course-glitter 5.5s var(--ease-polish) 5s infinite;
+}
+.catalog-wall i.on:nth-child(29n + 6) {
+  animation: course-glitter 7s var(--ease-polish) 6.2s infinite;
+}
+.catalog-wall i.on:nth-child(29n + 11) {
+  animation: course-glitter 6.2s var(--ease-polish) 7.4s infinite;
+}
+.catalog-wall i.on:nth-child(29n + 17) {
+  animation: course-glitter 8s var(--ease-polish) 5.8s infinite;
+}
+.catalog-wall i.on:nth-child(29n + 22) {
+  animation: course-glitter 6.6s var(--ease-polish) 8.1s infinite;
+}
+.catalog-wall i.on:nth-child(29n + 26) {
+  animation: course-glitter 7.4s var(--ease-polish) 6.8s infinite;
+}
+
+/*
+  Brighter and haloed at the peak, not paler: on paper this light, fading to
+  light blue would read as a course blinking out rather than catching light.
+*/
+@keyframes course-glitter {
+  0%,
+  58%,
+  100% {
+    color: color-mix(in srgb, var(--uvic-blue) 92%, transparent);
+    text-shadow: none;
+  }
+  72%,
+  80% {
+    color: color-mix(in srgb, var(--uvic-light-blue) 62%, var(--uvic-blue));
+    text-shadow: 0 0 5px color-mix(in srgb, var(--uvic-light-blue) 60%, transparent);
+  }
+}
+
+@keyframes wall-print {
+  from {
+    mask-position: 100% 0;
+  }
   to {
-    stroke-dashoffset: 0;
+    mask-position: 0 0;
+  }
+}
+
+@media (min-width: 640px) {
+  .catalog-wall {
+    --wall-cell: 13px;
+    --wall-dot: 4px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog-wall {
+    --wall-cell: 29px;
+  }
+
+  .catalog-wall i {
+    font-size: 5.5px;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+
+  .catalog-wall i::before {
+    display: none;
+  }
+}
+
+/*
+  Enough paper behind the copy to read it against the wall. Below lg the copy
+  sits in the top of the screen, so the paper is a band that fades out under
+  the buttons: the catalog is faint texture behind the words and then, in the
+  lower half, simply itself.
+*/
+/*
+  The stops are lengths, not percentages, because what they have to clear is
+  the copy — which is the same height on a small phone as on a tall one. Tied
+  to the viewport instead, the wall stayed washed out halfway down a tall
+  screen.
+*/
+.wall-scrim {
+  background: linear-gradient(
+    to bottom,
+    var(--background) 90px,
+    color-mix(in srgb, var(--background) 93%, transparent) 215px,
+    color-mix(in srgb, var(--background) 40%, transparent) 300px,
+    transparent 380px
+  );
+}
+
+@media (min-width: 1024px) {
+  .wall-scrim {
+    background: linear-gradient(
+      100deg,
+      color-mix(in srgb, var(--background) 97%, transparent) 6%,
+      color-mix(in srgb, var(--background) 88%, transparent) 30%,
+      color-mix(in srgb, var(--background) 32%, transparent) 50%,
+      transparent 64%
+    );
   }
 }
 
