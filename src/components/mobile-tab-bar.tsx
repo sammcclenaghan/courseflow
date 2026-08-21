@@ -28,13 +28,19 @@ export function MobileTabBar() {
 			className="pointer-events-none fixed inset-x-0 bottom-0 z-50 flex justify-center pb-[max(1.5rem,calc(env(safe-area-inset-bottom)+1rem))] md:hidden"
 		>
 			<div className="pointer-events-auto relative flex items-stretch rounded-full border border-border/60 bg-background/80 p-1 shadow-[0_10px_30px_-8px_rgba(26,26,26,0.25)] backdrop-blur-xl">
-				{/* Sliding active highlight */}
-				<span
-					aria-hidden="true"
-					style={{ transform: `translateX(${activeIndex * 100}%)` }}
-					className="absolute top-1 left-1 h-11 w-14 rounded-full bg-uvic-blue/10 transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none data-[hidden=true]:opacity-0"
-					data-hidden={activeIndex < 0}
-				/>
+				{/*
+					The thumb slides between segments, but only once it is already on
+					screen. Off a route with no tab — the landing page — it is not
+					rendered at all, so arriving at a tab mounts it in place and fades
+					it up rather than travelling in from a segment you were never on.
+				*/}
+				{activeIndex < 0 ? null : (
+					<span
+						aria-hidden="true"
+						style={{ transform: `translateX(${activeIndex * 100}%)` }}
+						className="absolute top-1 left-1 h-11 w-14 rounded-full bg-uvic-blue/10 [animation:tab-thumb-in_200ms_var(--ease-polish)_both] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none"
+					/>
+				)}
 				{NAV_ITEMS.map((item) => (
 					<TabLink key={item.to} {...item} />
 				))}

@@ -1,78 +1,97 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { useCourseAutocomplete } from "@/catalog/use-course-autocomplete";
+import { useCourseOfferings } from "@/catalog/use-course-offerings";
+import { CatalogWall } from "@/components/landing/catalog-wall";
+import { getTermLabel } from "@/utils/constants";
 
 export const Route = createFileRoute("/")({
+	/*
+		Both payloads are fetched from a client effect, so without this they queue
+		up behind hydration — the wall printed on grey and only lit up a beat
+		later. Preloading puts them on the wire alongside the bundle instead. The
+		offerings file is the one that lights the wall and is small (~30kB), so it
+		goes at the default high priority; the much larger autocomplete payload
+		only swaps skeleton codes for real ones, and is asked for politely so it
+		does not crowd out the JS.
+
+		crossorigin is load-bearing even though these are same-origin: an
+		as="fetch" preload without it has a credentials mode that no plain
+		fetch() can match, so the browser downloads both files twice and the
+		preload buys nothing. Chrome says so in the console when you get it
+		wrong.
+	*/
+	head: () => ({
+		links: [
+			{
+				rel: "preload",
+				as: "fetch",
+				crossOrigin: "anonymous",
+				href: "/generated/course-offerings.json",
+			},
+			{
+				rel: "preload",
+				as: "fetch",
+				crossOrigin: "anonymous",
+				fetchPriority: "low",
+				href: "/generated/course-autocomplete.json",
+			},
+		],
+	}),
 	component: Landing,
 });
 
 function Landing() {
+	const { term } = Route.useSearch();
+
+	// Both payloads are static assets, fetched after first paint, and are the
+	// same ones Explore and the scheduler need — so the landing page warms
+	// them up rather than paying for them twice.
+	const { courses } = useCourseAutocomplete(true);
+	const { offeredPids } = useCourseOfferings(term, true);
+
 	return (
-		<div className="landing-page relative flex w-full flex-1 flex-col overflow-hidden bg-background min-h-[calc(100dvh-var(--app-header-height))]">
-			<div className="relative z-10 flex flex-1 flex-col items-center justify-center px-6">
-				{/* Decorative line */}
-				<div className="mb-8 h-px w-12 bg-foreground/15" />
-
-				{/* Tagline */}
-				<p className="mb-6 font-medium text-foreground/40 text-[11px] tracking-[0.3em] uppercase">
-					University of Victoria
-				</p>
-
-				{/* Hero headline */}
-				<h1 className="text-center leading-[1]">
-					<span className="block font-light text-foreground text-[clamp(2.5rem,7vw,5.5rem)] tracking-[-0.035em]">
-						Plan Your
-					</span>
-					<span className="relative block font-semibold text-foreground text-[clamp(2.7rem,7.5vw,6rem)] tracking-[-0.03em]">
-						Course Flow
-						<svg
-							aria-hidden="true"
-							className="landing-underline absolute -bottom-1 left-[10%] w-[80%]"
-							viewBox="0 0 200 8"
-							fill="none"
-							preserveAspectRatio="none"
-						>
-							<path
-								d="M1 5.5C40 2, 80 2, 100 4.5S160 7, 199 3"
-								stroke="var(--uvic-blue)"
-								strokeWidth="1.5"
-								strokeLinecap="round"
-							/>
-						</svg>
-					</span>
-				</h1>
-
-				{/* Subtitle */}
-				<p className="mt-8 max-w-lg text-balance text-center text-foreground/45 text-[15px] leading-relaxed">
-					Search courses, build your timetable, and design the perfect semester
-					— all in one place.
-				</p>
-
-				{/* CTAs */}
-				<div className="mt-10 flex items-center gap-5">
-					<Link
-						to="/explore"
-						preload="intent"
-						className="group flex min-h-11 items-center gap-2.5 rounded-full bg-primary px-7 py-3 font-medium text-[13px] text-primary-foreground tracking-wide uppercase shadow-[0_14px_40px_rgba(0,84,147,0.16)] hover:-translate-y-0.5 hover:bg-uvic-dark-blue"
-					>
-						Explore Courses
-						<ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-					</Link>
-					<Link
-						to="/scheduler"
-						preload="intent"
-						className="inline-flex min-h-11 items-center font-medium text-foreground/50 text-[13px] tracking-wide uppercase hover:text-uvic-blue"
-					>
-						Build Timetable
-					</Link>
-				</div>
+		<div className="app-fill-height relative isolate w-full overflow-hidden bg-background">
+			<div className="absolute inset-0">
+				<CatalogWall
+					courses={courses}
+					offeredPids={offeredPids}
+					label={`Every course in the UVic catalog, one mark each, with the ones running in ${getTermLabel(term)} lit up.`}
+				/>
+				<div
+					aria-hidden="true"
+					className="wall-scrim pointer-events-none absolute inset-0"
+				/>
 			</div>
 
-			{/* Footer accent */}
-			<footer className="relative z-10 flex items-center justify-center px-8 pb-8">
-				<p className="text-foreground/25 text-[11px] tracking-wide uppercase">
-					Built for UVic students
-				</p>
-			</footer>
+			<div className="pointer-events-none relative z-10 flex h-full items-start px-6 pt-7 sm:px-10 sm:pt-10 lg:w-[54%] lg:items-center lg:pt-0">
+				<div className="max-w-lg [animation:landing-fade-up_0.7s_var(--ease-polish)_both]">
+					<h1 className="font-semibold text-[clamp(2.15rem,5.6vw,4.5rem)] text-foreground leading-[1.03] tracking-[-0.03em]">
+						Plan your
+						<br />
+						UVic timetable
+					</h1>
+					<p className="mt-4 max-w-[20rem] text-[15px] text-foreground/60 leading-relaxed sm:mt-6 sm:max-w-md sm:text-[17px]">
+						Every course UVic offers is on this screen. Pick your sections,
+						watch the seat counts, then copy your CRNs straight into Banner.
+					</p>
+					<div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-1 sm:mt-9">
+						<Link
+							to="/scheduler"
+							preload="intent"
+							className="pointer-events-auto inline-flex min-h-12 items-center rounded-lg bg-primary px-6 font-medium text-[15px] text-primary-foreground shadow-sm hover:bg-uvic-dark-blue active:scale-[0.98] sm:min-h-13 sm:px-7 sm:text-[16px]"
+						>
+							Build your timetable
+						</Link>
+						<Link
+							to="/explore"
+							preload="intent"
+							className="pointer-events-auto inline-flex min-h-12 items-center px-1 text-[15px] text-foreground/55 underline decoration-foreground/25 underline-offset-4 hover:text-uvic-blue hover:decoration-uvic-blue/50 sm:min-h-13 sm:text-[16px]"
+						>
+							Browse courses
+						</Link>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }
