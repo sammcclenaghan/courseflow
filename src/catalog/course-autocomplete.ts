@@ -7,6 +7,13 @@ export type CourseAutocompleteIndex = {
 	entries: readonly CourseAutocompleteIndexEntry[];
 };
 
+export type NormalizedCourseSearchQuery = {
+	text: string;
+	compactCode: string;
+	titleWords: readonly string[];
+	includeTitle: boolean;
+};
+
 type CourseAutocompleteIndexEntry = {
 	course: CourseAutocompleteCourse;
 	compactCode: string;
@@ -65,19 +72,14 @@ export function searchCourseAutocomplete(
 	const trimmedQuery = query.trim();
 	if (trimmedQuery === "") return [];
 
-	const textQuery = normalizeText(trimmedQuery);
-	const compactQuery = normalizeCompact(trimmedQuery);
-	const includeTitle = textQuery.length >= 3;
+	const normalizedQuery = normalizeCourseSearchQuery(trimmedQuery);
+	if (normalizedQuery.text === "") return [];
 	const ranked: Array<{ entry: CourseAutocompleteIndexEntry; rank: number }> =
 		[];
 	const index = toCourseAutocompleteIndex(source);
 
 	for (const entry of index.entries) {
-		const rank = rankCourse(entry, {
-			textQuery,
-			compactQuery,
-			includeTitle,
-		});
+		const rank = rankCourse(entry, normalizedQuery);
 		if (rank !== null) ranked.push({ entry, rank });
 	}
 
@@ -109,27 +111,33 @@ function isCourseArray(
 	return Array.isArray(source);
 }
 
-type NormalizedQuery = {
-	textQuery: string;
-	compactQuery: string;
-	includeTitle: boolean;
-};
-
 function rankCourse(
 	entry: CourseAutocompleteIndexEntry,
-	{ textQuery, compactQuery, includeTitle }: NormalizedQuery,
+	query: NormalizedCourseSearchQuery,
 ): number | null {
-	if (entry.compactCode === compactQuery) return 0;
-	if (entry.compactCode.startsWith(compactQuery)) return 10;
-	if (entry.textCode.startsWith(textQuery)) return 20;
+	if (entry.compactCode === query.compactCode) return 0;
+	if (entry.compactCode.startsWith(query.compactCode)) return 10;
+	if (entry.textCode.startsWith(query.text)) return 20;
 
-	if (!includeTitle) return null;
+	if (!query.includeTitle) return null;
 
-	if (entry.titleWords.some((word) => word === textQuery)) return 40;
-	if (entry.titleWords.some((word) => word.startsWith(textQuery))) return 50;
-	if (entry.title.includes(textQuery)) return 60;
+	if (entry.titleWords.some((word) => word === query.text)) return 40;
+	if (entry.titleWords.some((word) => word.startsWith(query.text))) return 50;
+	if (entry.title.includes(query.text)) return 60;
 
 	return null;
+}
+
+export function normalizeCourseSearchQuery(
+	query: string,
+): NormalizedCourseSearchQuery {
+	const text = normalizeText(query);
+	return {
+		text,
+		compactCode: normalizeCompact(query),
+		titleWords: text.split(" ").filter(Boolean),
+		includeTitle: text.length >= 3,
+	};
 }
 
 function normalizeText(value: string): string {

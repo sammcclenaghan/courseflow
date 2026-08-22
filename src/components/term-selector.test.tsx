@@ -15,6 +15,7 @@ import {
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { z } from "zod";
 import { TermSelector } from "@/components/term-selector";
+import { readStoredTerm } from "@/lib/use-term";
 import { DEFAULT_TERM, normalizeTerm } from "@/utils/constants";
 
 const TERM_STORAGE_KEY = "courseflow:selected-term";
@@ -75,6 +76,18 @@ afterEach(() => {
 });
 
 describe("TermSelector", () => {
+	it("ignores a persisted term after it rolls out of the supported list", () => {
+		window.localStorage.setItem(TERM_STORAGE_KEY, "202501");
+
+		expect(readStoredTerm()).toBeNull();
+	});
+
+	it("retains a persisted term that is still supported", () => {
+		window.localStorage.setItem(TERM_STORAGE_KEY, "202701");
+
+		expect(readStoredTerm()).toBe("202701");
+	});
+
 	it("reads the current term from TanStack Router search state", async () => {
 		const router = harness("/");
 		render(<RouterProvider router={router} />);

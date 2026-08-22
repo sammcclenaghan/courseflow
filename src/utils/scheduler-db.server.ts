@@ -5,6 +5,12 @@ import {
 	normalizeScheduleCrns,
 	ScheduleRequestError,
 } from "./scheduler-shared";
+import type {
+	ScheduleResult,
+	ScheduleShareResult,
+	ScheduleWithSections,
+	SharedScheduleWithSections,
+} from "./scheduler-types";
 import {
 	mapSection,
 	type Section,
@@ -16,33 +22,6 @@ export {
 	normalizeScheduleCrns,
 	ScheduleRequestError,
 } from "./scheduler-shared";
-
-export type ScheduleResult = {
-	id: number;
-	term: string;
-	createdAt: string;
-	updatedAt: string;
-};
-
-export type PublicScheduleResult = Omit<ScheduleResult, "id">;
-
-export type ScheduleWithSections = {
-	schedule: ScheduleResult;
-	sections: Section[];
-};
-
-export type SharedScheduleWithSections = {
-	share: ScheduleShareResult;
-	schedule: PublicScheduleResult;
-	sections: Section[];
-};
-
-export type ScheduleShareResult = {
-	shareId: string;
-	term: string;
-	createdAt: string;
-	updatedAt: string;
-};
 
 type ScheduleRow = {
 	id: number;
