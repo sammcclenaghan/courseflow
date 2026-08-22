@@ -5,6 +5,7 @@ import { execFileSync } from "node:child_process";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { isRecord } from "../src/lib/validation.ts";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const DEFAULT_MODEL = "nomic-embed-text";
@@ -360,10 +361,6 @@ function sqlValue(value: string) {
 
 function escapeSql(value: string) {
 	return value.replaceAll("'", "''");
-}
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-	return typeof value === "object" && value !== null;
 }
 
 function parseOptions(args: string[]): Options {

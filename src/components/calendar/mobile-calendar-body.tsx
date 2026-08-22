@@ -2,6 +2,7 @@ import { MapPin } from "lucide-react";
 import { useEffect, useMemo, useRef } from "react";
 import { cn, hexToRgba } from "@/lib/utils";
 import type { CalendarEvent } from "@/utils/scheduler-types";
+import { getEventColumnLayout } from "./calendar-event-layout";
 
 const HOURS = Array.from({ length: 13 }, (_, i) => {
 	const hour = 8 + i;
@@ -114,18 +115,9 @@ function MobileEventBlock({ event, allDayEvents }: MobileEventBlockProps) {
 	const top = (startMinutes / 60) * HOUR_HEIGHT;
 	const height = Math.max((durationMinutes / 60) * HOUR_HEIGHT, 44);
 
-	const overlapping = allDayEvents.filter(
-		(e) => e.id !== event.id && event.start < e.end && event.end > e.start,
-	);
-	const group = [event, ...overlapping].sort((a, b) => {
-		const diff = a.start.getTime() - b.start.getTime();
-		if (diff !== 0) return diff;
-		return a.id.localeCompare(b.id);
-	});
-	const position = group.indexOf(event);
-	const total = overlapping.length + 1;
-	const widthPercent = 100 / total;
-	const leftPercent = position * widthPercent;
+	const { column, columnCount } = getEventColumnLayout(event, allDayEvents);
+	const widthPercent = 100 / columnCount;
+	const leftPercent = column * widthPercent;
 
 	const isCompact = height < 56;
 

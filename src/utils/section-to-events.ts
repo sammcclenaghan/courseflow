@@ -1,45 +1,18 @@
+import {
+	addDays,
+	setLocalTime,
+	startOfWeekSunday,
+} from "@/components/calendar/calendar-date";
 import { COURSE_COLORS, DAY_MAP } from "@/utils/constants";
 import type { CalendarEvent, SavedCourse } from "@/utils/scheduler-types";
-import type { Section, SectionMeeting } from "@/utils/sections-types";
+import { sectionMeetings } from "@/utils/section-meetings";
+import type { Section } from "@/utils/sections-types";
 
-export function sectionMeetings(section: Section): SectionMeeting[] {
-	if (section.meetings.length > 0) return section.meetings;
+export { sectionMeetings } from "@/utils/section-meetings";
 
-	if (section.time === "" && section.days === "") return [];
-	return [
-		{
-			frequency: section.frequency,
-			time: section.time,
-			days: section.days,
-			location: section.location,
-			dateRange: section.dateRange,
-			scheduleType: section.scheduleType,
-		},
-	];
-}
-
-function startOfWeek(date: Date) {
-	const start = new Date(date);
-	start.setHours(0, 0, 0, 0);
-	start.setDate(start.getDate() - start.getDay());
-	return start;
-}
-
-function addDays(date: Date, days: number) {
-	const next = new Date(date);
-	next.setDate(next.getDate() + days);
-	return next;
-}
-
-function setTime(date: Date, hour: number, minute: number) {
-	const next = new Date(date);
-	next.setHours(hour, minute, 0, 0);
-	return next;
-}
-
-function parseTime(timeStr: string) {
+export function parseTime(timeStr: string) {
 	const match = timeStr.match(
-		/(\d{1,2}):(\d{2})\s*(am|pm)\s*-\s*(\d{1,2}):(\d{2})\s*(am|pm)/i,
+		/^\s*(\d{1,2}):(\d{2})\s*(am|pm)\s*-\s*(\d{1,2}):(\d{2})\s*(am|pm)\s*$/i,
 	);
 	if (!match) return null;
 
@@ -49,20 +22,33 @@ function parseTime(timeStr: string) {
 	let endHour = Number.parseInt(match[4], 10);
 	const endMin = Number.parseInt(match[5], 10);
 	const endPeriod = match[6].toLowerCase();
+	if (
+		startHour < 1 ||
+		startHour > 12 ||
+		endHour < 1 ||
+		endHour > 12 ||
+		startMin > 59 ||
+		endMin > 59
+	) {
+		return null;
+	}
 
 	if (startPeriod === "pm" && startHour !== 12) startHour += 12;
 	if (startPeriod === "am" && startHour === 12) startHour = 0;
 	if (endPeriod === "pm" && endHour !== 12) endHour += 12;
 	if (endPeriod === "am" && endHour === 12) endHour = 0;
+	if (endHour * 60 + endMin <= startHour * 60 + startMin) return null;
 
 	return { startHour, startMin, endHour, endMin };
 }
 
-function parseDays(daysStr: string): number[] {
-	return daysStr
-		.split("")
-		.map((character) => DAY_MAP[character])
-		.filter((day): day is number => day !== undefined);
+export function parseDays(daysStr: string): number[] {
+	const days = new Set<number>();
+	for (const character of daysStr.toUpperCase()) {
+		const day = DAY_MAP[character];
+		if (day !== undefined) days.add(day);
+	}
+	return [...days];
 }
 
 export function formatSectionSchedule(section: Section): string {
@@ -77,7 +63,7 @@ export function sectionToEvents(
 	referenceDate: Date,
 	colorIndex: number,
 ): CalendarEvent[] {
-	const weekStart = startOfWeek(referenceDate);
+	const weekStart = startOfWeekSunday(referenceDate);
 	const color = COURSE_COLORS[colorIndex % COURSE_COLORS.length];
 
 	return sectionMeetings(section).flatMap((meeting, meetingIndex) => {
@@ -91,8 +77,8 @@ export function sectionToEvents(
 
 		return days.map((day) => {
 			const dayDate = addDays(weekStart, day);
-			const start = setTime(dayDate, time.startHour, time.startMin);
-			const end = setTime(dayDate, time.endHour, time.endMin);
+			const start = setLocalTime(dayDate, time.startHour, time.startMin);
+			const end = setLocalTime(dayDate, time.endHour, time.endMin);
 
 			return {
 				id: `${section.crn}-${meetingIndex}-${day}`,

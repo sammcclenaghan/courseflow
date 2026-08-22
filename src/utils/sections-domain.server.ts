@@ -1,3 +1,5 @@
+import { isRecord } from "@/lib/validation";
+import { legacyMeeting } from "./section-meetings";
 import type {
 	GroupedSections,
 	Section,
@@ -108,17 +110,15 @@ function meetingsForSection(row: SectionRow): SectionMeeting[] {
 		}
 	}
 
-	if (row.time === "" && row.days === "") return [];
-	return [
-		{
-			frequency: row.frequency,
-			time: row.time,
-			days: row.days,
-			location: row.location,
-			dateRange: row.date_range,
-			scheduleType: row.schedule_type,
-		},
-	];
+	const fallback = legacyMeeting({
+		frequency: row.frequency,
+		time: row.time,
+		days: row.days,
+		location: row.location,
+		dateRange: row.date_range,
+		scheduleType: row.schedule_type,
+	});
+	return fallback ? [fallback] : [];
 }
 
 function parseMeetings(value: unknown): SectionMeeting[] {
@@ -138,8 +138,4 @@ function isSectionMeeting(value: unknown): value is SectionMeeting {
 		typeof value.dateRange === "string" &&
 		typeof value.scheduleType === "string"
 	);
-}
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-	return typeof value === "object" && value !== null;
 }

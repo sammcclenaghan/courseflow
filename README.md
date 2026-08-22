@@ -28,3 +28,19 @@ nub run dev
 Course data comes from a Worker-compatible TypeScript importer that ingests the Kuali catalog, Banner timetable sections, and live enrollment counts into D1 — see `nub run catalog:import`.
 
 Secrets are set with `wrangler secret put`, never committed. Non-secret Worker vars live in `wrangler.jsonc`.
+
+## Code organization
+
+CourseFlow is one TanStack Start application, so it stays in one package. A new
+package should have an independent consumer or deployment boundary; source
+folders are enough for application-only features.
+
+- `src/routes` contains thin file routes, loaders, and HTTP handlers.
+- `src/queries` owns TanStack Query keys and client cache configuration.
+- `*.functions.ts` files define `createServerFn` RPC boundaries that routes and
+  components may import.
+- `*.server.ts` files contain Cloudflare, D1, cookie, and other server-only code.
+- Shared types and pure domain transforms live in purpose-named TypeScript
+  modules and must remain safe to import in either environment.
+- `src/components` contains rendering and interaction code; non-visual calendar
+  layout logic is kept alongside the calendar components and tested directly.
