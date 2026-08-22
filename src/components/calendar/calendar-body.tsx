@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import type { CalendarEvent as CalendarEventType } from "@/utils/scheduler-types";
+import { addDays, startOfWeekSunday } from "./calendar-date";
 import { CalendarEvent } from "./calendar-event";
 
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri"] as const;
@@ -10,19 +11,6 @@ const HOURS = Array.from({ length: 13 }, (_, index) => {
 	return hour < 12 ? `${hour} AM` : `${hour - 12} PM`;
 });
 
-function startOfWeek(date: Date) {
-	const start = new Date(date);
-	start.setHours(0, 0, 0, 0);
-	start.setDate(start.getDate() - start.getDay());
-	return start;
-}
-
-function addDays(date: Date, days: number) {
-	const next = new Date(date);
-	next.setDate(next.getDate() + days);
-	return next;
-}
-
 export function CalendarBody({
 	events,
 	overlay,
@@ -30,7 +18,7 @@ export function CalendarBody({
 	events: CalendarEventType[];
 	overlay?: ReactNode;
 }) {
-	const weekStart = startOfWeek(new Date());
+	const weekStart = startOfWeekSunday(new Date());
 	const monday = addDays(weekStart, 1);
 	const weekDays = Array.from({ length: 5 }, (_, index) =>
 		addDays(monday, index),

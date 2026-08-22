@@ -1,4 +1,8 @@
 import { env } from "cloudflare:workers";
+import {
+	normalizeCourseSearchQuery,
+	searchCourseAutocomplete,
+} from "@/catalog/course-autocomplete";
 import type {
 	Course,
 	CourseAlternative,
@@ -57,11 +61,18 @@ export async function searchCoursesFromDb({
 		return [];
 	}
 
-	const codePrefix = `${trimmedQuery}%`;
-	const compactCodePrefix = `${trimmedQuery.replaceAll(" ", "")}%`;
-	const includeTitle = trimmedQuery.length >= 3;
-	const titleClause = includeTitle ? " OR c.title LIKE ?" : "";
-	const titleParams = includeTitle ? [`%${trimmedQuery}%`] : [];
+	const normalizedQuery = normalizeCourseSearchQuery(trimmedQuery);
+	if (normalizedQuery.text === "") return [];
+	const compactCodePrefix = `${normalizedQuery.compactCode}%`;
+	const textCodePrefix = `${normalizedQuery.text}%`;
+	const titleClauses = normalizedQuery.includeTitle
+		? normalizedQuery.titleWords.map(() => "LOWER(c.title) LIKE ?")
+		: [];
+	const titleClause =
+		titleClauses.length > 0 ? ` OR (${titleClauses.join(" AND ")})` : "";
+	const titleParams = normalizedQuery.includeTitle
+		? normalizedQuery.titleWords.map((word) => `%${word}%`)
+		: [];
 	const termClause = trimmedTerm
 		? "EXISTS (SELECT 1 FROM sections s WHERE s.course_pid = c.pid AND s.term = ?) AND "
 		: "";
@@ -70,29 +81,19 @@ export async function searchCoursesFromDb({
 	const { results } = await env.DB.prepare(
 		`SELECT c.pid, c.subject_code, c.title, c.credits FROM courses c
 WHERE ${termClause}(
-  c.subject_code LIKE ?
-  OR REPLACE(c.subject_code, ' ', '') LIKE ?
+  LOWER(REPLACE(REPLACE(REPLACE(c.subject_code, ' ', ''), '-', ''), '/', '')) LIKE ?
+  OR LOWER(REPLACE(c.subject_code, '-', ' ')) LIKE ?
   ${titleClause}
 )
-ORDER BY
-  (
-    c.subject_code LIKE ?
-    OR REPLACE(c.subject_code, ' ', '') LIKE ?
-  ) DESC,
-  c.subject_code
-LIMIT 50`,
+ORDER BY c.subject_code`,
 	)
-		.bind(
-			...termParams,
-			codePrefix,
-			compactCodePrefix,
-			...titleParams,
-			codePrefix,
-			compactCodePrefix,
-		)
+		.bind(...termParams, compactCodePrefix, textCodePrefix, ...titleParams)
 		.all<CourseSearchRow>();
 
-	return results.map(mapCourseSearchRow);
+	return searchCourseAutocomplete(
+		results.map(mapCourseSearchRow),
+		trimmedQuery,
+	);
 }
 
 export async function getCourseBySubjectCodeFromDb(

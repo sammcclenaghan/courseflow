@@ -1,3 +1,4 @@
+import { asRecord } from "@/lib/validation";
 import type {
 	FeedbackClientMeta,
 	FeedbackMood,
@@ -32,11 +33,6 @@ function clipInt(value: unknown, fallback: number): number {
 function clipString(value: unknown, max = 200): string {
 	if (typeof value !== "string") return "";
 	return clip(value.slice(0, max), max);
-}
-
-function asRecord(value: unknown): Record<string, unknown> | null {
-	if (!value || typeof value !== "object" || Array.isArray(value)) return null;
-	return value as Record<string, unknown>;
 }
 
 function readNumber(value: unknown): number | undefined {

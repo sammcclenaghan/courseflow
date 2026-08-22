@@ -1,6 +1,7 @@
 import { MapPin } from "lucide-react";
 import { cn, hexToRgba } from "@/lib/utils";
 import type { CalendarEvent as CalendarEventType } from "@/utils/scheduler-types";
+import { getEventColumnLayout } from "./calendar-event-layout";
 
 type EventPosition = {
 	left: string;
@@ -9,44 +10,15 @@ type EventPosition = {
 	height: string;
 };
 
-function isSameDay(a: Date, b: Date) {
-	return (
-		a.getFullYear() === b.getFullYear() &&
-		a.getMonth() === b.getMonth() &&
-		a.getDate() === b.getDate()
-	);
-}
-
-function getOverlappingEvents(
-	event: CalendarEventType,
-	allEvents: CalendarEventType[],
-): CalendarEventType[] {
-	return allEvents.filter((candidate) => {
-		if (candidate.id === event.id) return false;
-		return (
-			event.start < candidate.end &&
-			event.end > candidate.start &&
-			isSameDay(event.start, candidate.start)
-		);
-	});
-}
-
 function calculatePosition(
 	event: CalendarEventType,
 	allEvents: CalendarEventType[],
 ): EventPosition {
-	const overlapping = getOverlappingEvents(event, allEvents);
-	const group = [event, ...overlapping].sort((a, b) => {
-		const diff = a.start.getTime() - b.start.getTime();
-		if (diff !== 0) return diff;
-		return a.id.localeCompare(b.id);
-	});
-	const position = group.indexOf(event);
-	const total = overlapping.length + 1;
+	const { column, columnCount } = getEventColumnLayout(event, allEvents);
 
 	return {
-		left: `${(position * 100) / total}%`,
-		width: `${100 / total}%`,
+		left: `${(column * 100) / columnCount}%`,
+		width: `${100 / columnCount}%`,
 		top: `${(event.start.getMinutes() / 60) * 100}%`,
 		height: `${((event.end.getTime() - event.start.getTime()) / 60_000 / 60) * 100}%`,
 	};

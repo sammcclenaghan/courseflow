@@ -1,20 +1,16 @@
 import { createServerFn } from "@tanstack/react-start";
-import { setResponseHeader } from "@tanstack/react-start/server";
 import {
 	deliverFeedback,
 	parseFeedbackSubmission,
 	setFeedbackResponseStatus,
 } from "./feedback.server";
 import type { FeedbackSubmission } from "./feedback-types";
-
-function noStore() {
-	setResponseHeader("Cache-Control", "no-store");
-}
+import { setNoStore } from "./response-cache.server";
 
 export const submitFeedback = createServerFn({ method: "POST" })
 	.validator((data: unknown) => data)
 	.handler(async ({ data }): Promise<null> => {
-		noStore();
+		setNoStore();
 		const parsed = parseFeedbackSubmission(data, 0);
 		if (!parsed.ok) {
 			setFeedbackResponseStatus(parsed.status);

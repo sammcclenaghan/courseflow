@@ -1,7 +1,8 @@
 import { createServerFn } from "@tanstack/react-start";
-import { setResponseHeader } from "@tanstack/react-start/server";
+import { isRecord, isUuid } from "@/lib/validation";
 import { isTermValue } from "./constants";
 import type { LegacyScheduleMigrationInput } from "./legacy-schedule-migration";
+import { setNoStore } from "./response-cache.server";
 import {
 	MAX_SCHEDULE_CRNS,
 	normalizeScheduleCrns,
@@ -18,18 +19,10 @@ type LegacyScheduleMigrationResult = {
 	skippedTerms: { term: string; reason: string }[];
 };
 
-const UUID_RE =
-	/^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[1-5][a-fA-F0-9]{3}-[89abAB][a-fA-F0-9]{3}-[a-fA-F0-9]{12}$/;
-
-function noStore() {
-	setResponseHeader("Cache-Control", "no-store");
-	setResponseHeader("Vary", "Cookie");
-}
-
 export const getMySchedule = createServerFn({ method: "GET" })
 	.validator((data: TermInput) => data)
 	.handler(async ({ data }): Promise<ScheduleWithSections | null> => {
-		noStore();
+		setNoStore({ varyByCookie: true });
 		const [{ getScheduleByToken }, { getOrCreateAnonymousScheduleToken }] =
 			await Promise.all([
 				import("./scheduler-db.server"),
@@ -42,7 +35,7 @@ export const getMySchedule = createServerFn({ method: "GET" })
 export const saveMySchedule = createServerFn({ method: "POST" })
 	.validator((data: SaveScheduleInput) => data)
 	.handler(async ({ data }): Promise<ScheduleWithSections | null> => {
-		noStore();
+		setNoStore({ varyByCookie: true });
 		const [{ saveScheduleByToken }, { getOrCreateAnonymousScheduleToken }] =
 			await Promise.all([
 				import("./scheduler-db.server"),
@@ -59,7 +52,7 @@ export const saveMySchedule = createServerFn({ method: "POST" })
 export const migrateLegacySchedule = createServerFn({ method: "POST" })
 	.validator(validateLegacyScheduleMigrationInput)
 	.handler(async ({ data }): Promise<LegacyScheduleMigrationResult> => {
-		noStore();
+		setNoStore({ varyByCookie: true });
 		const [scheduleDb, scheduleSession] = await Promise.all([
 			import("./scheduler-db.server"),
 			import("./scheduler-session.server"),
@@ -138,7 +131,7 @@ function validateLegacyScheduleMigrationInput(
 		throw new ScheduleRequestError("migration payload must be an object", 400);
 	}
 
-	if (typeof data.legacyToken !== "string" || !UUID_RE.test(data.legacyToken)) {
+	if (typeof data.legacyToken !== "string" || !isUuid(data.legacyToken)) {
 		throw new ScheduleRequestError("invalid legacy schedule token", 400);
 	}
 
@@ -169,8 +162,4 @@ function validateLegacyScheduleMigrationInput(
 			crns: normalizeScheduleCrns(crns).slice(0, MAX_SCHEDULE_CRNS),
 		})),
 	};
-}
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-	return typeof value === "object" && value !== null;
 }

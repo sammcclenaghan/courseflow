@@ -63,6 +63,50 @@ describe("searchCourseAutocomplete", () => {
 		).toEqual(["CSC110", "CSC115", "CSC230"]);
 	});
 
+	it("applies exact, prefix, word, and substring ranks in a stable order", () => {
+		const rankedCourses: CourseAutocompleteCourse[] = [
+			{
+				pid: "title-substring",
+				subjectCode: "ART100",
+				title: "Applied XCSC Systems",
+				credits: "1.5",
+			},
+			{
+				pid: "code-prefix",
+				subjectCode: "CSC100",
+				title: "Programming",
+				credits: "1.5",
+			},
+			{
+				pid: "code-exact",
+				subjectCode: "CSC",
+				title: "Computer Science",
+				credits: "1.5",
+			},
+			{
+				pid: "title-word",
+				subjectCode: "SENG100",
+				title: "CSC Foundations",
+				credits: "1.5",
+			},
+		];
+
+		expect(
+			searchCourseAutocomplete(rankedCourses, "csc").map(
+				(course) => course.pid,
+			),
+		).toEqual(["code-exact", "code-prefix", "title-word", "title-substring"]);
+	});
+
+	it("normalizes punctuation consistently and ignores punctuation-only queries", () => {
+		expect(
+			searchCourseAutocomplete(courses, "software-development").map(
+				(course) => course.subjectCode,
+			),
+		).toEqual(["SENG265"]);
+		expect(searchCourseAutocomplete(courses, "---")).toEqual([]);
+	});
+
 	it("searches a prebuilt normalized index", () => {
 		const index = buildCourseAutocompleteIndex(courses);
 

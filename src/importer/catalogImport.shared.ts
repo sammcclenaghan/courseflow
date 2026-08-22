@@ -1,3 +1,4 @@
+import { isRecord } from "../lib/validation.ts";
 import type { CourseEntry, ParsedCourseId } from "./catalogImport.types.ts";
 
 const COURSE_ID_RE = /^([A-Z]+(?:-[A-Z]+)*)(\d+[A-Z]?)$/;
@@ -67,6 +68,4 @@ export function readString(
 	return typeof value === "string" ? value : "";
 }
 
-export function isRecord(value: unknown): value is Record<string, unknown> {
-	return typeof value === "object" && value !== null && !Array.isArray(value);
-}
+export { isRecord } from "../lib/validation.ts";

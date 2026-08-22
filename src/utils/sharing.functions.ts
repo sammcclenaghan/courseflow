@@ -1,5 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { setResponseHeader } from "@tanstack/react-start/server";
+import { setNoStore } from "./response-cache.server";
 import type {
 	ScheduleShareResult,
 	ScheduleWithSections,
@@ -9,15 +10,10 @@ import type {
 type TermInput = { term: string };
 type ShareInput = { shareId: string };
 
-function noStore() {
-	setResponseHeader("Cache-Control", "no-store");
-	setResponseHeader("Vary", "Cookie");
-}
-
 export const getMyScheduleShare = createServerFn({ method: "GET" })
 	.validator((data: TermInput) => data)
 	.handler(async ({ data }): Promise<ScheduleShareResult | null> => {
-		noStore();
+		setNoStore({ varyByCookie: true });
 		const [{ getScheduleShareByToken }, { getOrCreateAnonymousScheduleToken }] =
 			await Promise.all([
 				import("./scheduler-db.server"),
@@ -33,7 +29,7 @@ export const getMyScheduleShare = createServerFn({ method: "GET" })
 export const createMyScheduleShare = createServerFn({ method: "POST" })
 	.validator((data: TermInput) => data)
 	.handler(async ({ data }): Promise<ScheduleShareResult> => {
-		noStore();
+		setNoStore({ varyByCookie: true });
 		const [{ createScheduleShare }, { getOrCreateAnonymousScheduleToken }] =
 			await Promise.all([
 				import("./scheduler-db.server"),
@@ -46,7 +42,7 @@ export const createMyScheduleShare = createServerFn({ method: "POST" })
 export const regenerateMyScheduleShare = createServerFn({ method: "POST" })
 	.validator((data: TermInput) => data)
 	.handler(async ({ data }): Promise<ScheduleShareResult> => {
-		noStore();
+		setNoStore({ varyByCookie: true });
 		const [{ regenerateScheduleShare }, { getOrCreateAnonymousScheduleToken }] =
 			await Promise.all([
 				import("./scheduler-db.server"),
@@ -62,7 +58,7 @@ export const regenerateMyScheduleShare = createServerFn({ method: "POST" })
 export const revokeMyScheduleShare = createServerFn({ method: "POST" })
 	.validator((data: TermInput) => data)
 	.handler(async ({ data }): Promise<void> => {
-		noStore();
+		setNoStore({ varyByCookie: true });
 		const [{ revokeScheduleShare }, { getOrCreateAnonymousScheduleToken }] =
 			await Promise.all([
 				import("./scheduler-db.server"),
@@ -83,7 +79,7 @@ export const getSharedScheduleById = createServerFn({ method: "GET" })
 export const copySharedScheduleToMine = createServerFn({ method: "POST" })
 	.validator((data: ShareInput) => data)
 	.handler(async ({ data }): Promise<ScheduleWithSections> => {
-		noStore();
+		setNoStore({ varyByCookie: true });
 		const [{ copySharedSchedule }, { getOrCreateAnonymousScheduleToken }] =
 			await Promise.all([
 				import("./scheduler-db.server"),
