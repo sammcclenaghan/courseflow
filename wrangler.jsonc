@@ -8,8 +8,13 @@
 	"main": "src/server.ts",
 	"assets": {},
 	"triggers": {
+		// Daily at 09:00 UTC (~2 AM Pacific): enrollment only needs to be
+		// day-fresh outside registration season, and a low, off-peak request
+		// rate keeps us a polite Banner client. With the 40-section cap in
+		// enrollment-refresh.server.ts, a pool larger than 40 saved sections
+		// rotates across days, least-recently-refreshed first.
 		"crons": [
-			"*/15 * * * *"
+			"0 9 * * *"
 		]
 	},
 	"durable_objects": {
