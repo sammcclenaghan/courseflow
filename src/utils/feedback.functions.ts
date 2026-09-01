@@ -11,11 +11,19 @@ function noStore() {
 	setResponseHeader("Cache-Control", "no-store");
 }
 
+function measureBodyBytes(data: unknown): number {
+	try {
+		return new TextEncoder().encode(JSON.stringify(data) ?? "").length;
+	} catch {
+		return Number.MAX_SAFE_INTEGER;
+	}
+}
+
 export const submitFeedback = createServerFn({ method: "POST" })
 	.validator((data: unknown) => data)
 	.handler(async ({ data }): Promise<null> => {
 		noStore();
-		const parsed = parseFeedbackSubmission(data, 0);
+		const parsed = parseFeedbackSubmission(data, measureBodyBytes(data));
 		if (!parsed.ok) {
 			setFeedbackResponseStatus(parsed.status);
 			throw new Error(parsed.message);

@@ -147,6 +147,27 @@ describe("UVic importer", () => {
 		});
 	});
 
+	it("parses negative seats available without drifting into the next field", () => {
+		expect(
+			parseEnrollmentHtml(`
+<section>
+  <span>Enrolment Actual:</span> <span>105</span>
+  <span>Enrolment Maximum:</span> <span>100</span>
+  <span>Enrolment Seats Available:</span> <span>-5</span>
+  <span>Waitlist Capacity:</span> <span>25</span>
+  <span>Waitlist Actual:</span> <span>2</span>
+  <span>Waitlist Seats Available:</span> <span>23</span>
+</section>`),
+		).toEqual({
+			enrollmentActual: 105,
+			enrollmentMaximum: 100,
+			enrollmentSeatsAvailable: -5,
+			waitlistCapacity: 25,
+			waitlistActual: 2,
+			waitlistSeatsAvailable: 23,
+		});
+	});
+
 	it("accepts Banner's Enrollment spelling variant", () => {
 		expect(
 			parseEnrollmentHtml(`

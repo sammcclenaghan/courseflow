@@ -7,6 +7,11 @@
 	],
 	"main": "src/server.ts",
 	"assets": {},
+	"triggers": {
+		"crons": [
+			"*/15 * * * *"
+		]
+	},
 	"durable_objects": {
 		"bindings": [
 			{

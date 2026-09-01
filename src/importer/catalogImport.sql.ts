@@ -113,6 +113,7 @@ function sectionInsertStatement(section: ImportedSection): string {
   waitlist_capacity,
   waitlist_actual,
   waitlist_seats_available,
+  enrollment_updated_at,
   meetings,
   updated_at
 ) VALUES (
@@ -138,6 +139,7 @@ function sectionInsertStatement(section: ImportedSection): string {
   ${sqlNumber(section.waitlistCapacity)},
   ${sqlNumber(section.waitlistActual)},
   ${sqlNumber(section.waitlistSeatsAvailable)},
+  ${section.enrollmentRefreshed ? "strftime('%Y-%m-%dT%H:%M:%fZ', 'now')" : "NULL"},
   ${sqlJson(section.meetings)},
   strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
 )
@@ -156,12 +158,13 @@ ON CONFLICT(term, crn) DO UPDATE SET
   date_range = excluded.date_range,
   units = excluded.units,
   additional_information = excluded.additional_information,
-  enrollment_actual = excluded.enrollment_actual,
-  enrollment_maximum = excluded.enrollment_maximum,
-  enrollment_seats_available = excluded.enrollment_seats_available,
-  waitlist_capacity = excluded.waitlist_capacity,
-  waitlist_actual = excluded.waitlist_actual,
-  waitlist_seats_available = excluded.waitlist_seats_available,
+  enrollment_actual = CASE WHEN excluded.enrollment_updated_at IS NOT NULL THEN excluded.enrollment_actual ELSE enrollment_actual END,
+  enrollment_maximum = CASE WHEN excluded.enrollment_updated_at IS NOT NULL THEN excluded.enrollment_maximum ELSE enrollment_maximum END,
+  enrollment_seats_available = CASE WHEN excluded.enrollment_updated_at IS NOT NULL THEN excluded.enrollment_seats_available ELSE enrollment_seats_available END,
+  waitlist_capacity = CASE WHEN excluded.enrollment_updated_at IS NOT NULL THEN excluded.waitlist_capacity ELSE waitlist_capacity END,
+  waitlist_actual = CASE WHEN excluded.enrollment_updated_at IS NOT NULL THEN excluded.waitlist_actual ELSE waitlist_actual END,
+  waitlist_seats_available = CASE WHEN excluded.enrollment_updated_at IS NOT NULL THEN excluded.waitlist_seats_available ELSE waitlist_seats_available END,
+  enrollment_updated_at = COALESCE(excluded.enrollment_updated_at, enrollment_updated_at),
   meetings = excluded.meetings,
   updated_at = excluded.updated_at;`;
 }

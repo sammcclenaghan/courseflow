@@ -6,7 +6,32 @@ import type {
 } from "./catalogImport.types.ts";
 import { fetchText } from "./uvicHttp.server.ts";
 
-const ENROLLMENT_VALUE_RE = /:<\/span>\s*<span[^>]*>(\d+)/;
+const ENROLLMENT_URL =
+	"https://banner.uvic.ca/StudentRegistrationSsb/ssb/searchResults/getEnrollmentInfo";
+
+export async function fetchEnrollmentCounts(
+	term: string,
+	crn: string,
+	options: FetchOptions = {},
+): Promise<EnrollmentCounts | null> {
+	const form = new URLSearchParams({
+		term,
+		courseReferenceNumber: crn,
+	});
+
+	const html = await fetchText(ENROLLMENT_URL, {
+		fetchFn: options.fetchFn,
+		timeoutMs: options.timeoutMs,
+		method: "POST",
+		headers: {
+			"Content-Type": "application/x-www-form-urlencoded",
+			"User-Agent": "Mozilla/5.0",
+		},
+		body: form,
+	});
+
+	return parseEnrollmentHtml(html);
+}
 
 export async function refreshEnrollment(
 	sections: ImportedSection[],
@@ -14,26 +39,11 @@ export async function refreshEnrollment(
 ): Promise<void> {
 	await mapConcurrent(sections, options.concurrency ?? 8, async (section) => {
 		if (section.crn === "") return;
-		const form = new URLSearchParams({
-			term: section.term,
-			courseReferenceNumber: section.crn,
-		});
-
-		const html = await fetchText(
-			"https://banner.uvic.ca/StudentRegistrationSsb/ssb/searchResults/getEnrollmentInfo",
-			{
-				fetchFn: options.fetchFn,
-				timeoutMs: options.timeoutMs,
-				method: "POST",
-				headers: {
-					"Content-Type": "application/x-www-form-urlencoded",
-					"User-Agent": "Mozilla/5.0",
-				},
-				body: form,
-			},
+		const counts = await fetchEnrollmentCounts(
+			section.term,
+			section.crn,
+			options,
 		);
-
-		const counts = parseEnrollmentHtml(html);
 		if (!counts) return;
 
 		section.enrollmentActual = counts.enrollmentActual;
@@ -87,17 +97,26 @@ export function parseEnrollmentHtml(html: string): EnrollmentCounts | null {
 	};
 }
 
+// The value regex is anchored to the label so a non-matching value (e.g. an
+// unexpected format) fails outright instead of drifting forward and capturing
+// the next field's number. Banner reports over-enrolled sections with negative
+// seats available, so the sign must be part of the match.
 function extractEnrollmentValue(
 	html: string,
 	labelOrLabels: string | readonly string[],
 ): number | null {
 	const labels = Array.isArray(labelOrLabels) ? labelOrLabels : [labelOrLabels];
 	for (const label of labels) {
-		const start = html.indexOf(`${label}:</span>`);
-		if (start === -1) continue;
-		const match = ENROLLMENT_VALUE_RE.exec(html.slice(start + label.length));
-		if (!match) return null;
+		const pattern = new RegExp(
+			`${escapeRegExp(label)}:</span>\\s*<span[^>]*>\\s*(-?\\d+)`,
+		);
+		const match = pattern.exec(html);
+		if (!match) continue;
 		return Number.parseInt(match[1] ?? "", 10);
 	}
 	return null;
+}
+
+function escapeRegExp(value: string): string {
+	return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }

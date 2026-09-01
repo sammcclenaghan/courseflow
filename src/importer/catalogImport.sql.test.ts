@@ -124,4 +124,42 @@ describe("buildCatalogImportSql", () => {
 
 		expect(sql).not.toContain("DELETE FROM sections");
 	});
+
+	it("stamps enrollment freshness for refreshed sections and updates counts on conflict", () => {
+		const sql = buildCatalogImportSql({
+			courses: [course],
+			sections: [section],
+			term: "202609",
+		});
+
+		expect(sql).toContain(
+			"CASE WHEN excluded.enrollment_updated_at IS NOT NULL THEN excluded.enrollment_actual ELSE enrollment_actual END",
+		);
+		expect(sql).toContain(
+			"enrollment_updated_at = COALESCE(excluded.enrollment_updated_at, enrollment_updated_at)",
+		);
+		// Refreshed section: the insert carries a real timestamp, not NULL.
+		const insertValues = sql.slice(
+			sql.indexOf("INSERT INTO sections"),
+			sql.indexOf("ON CONFLICT(term, crn)"),
+		);
+		expect(insertValues).toContain("strftime('%Y-%m-%dT%H:%M:%fZ', 'now'),");
+	});
+
+	it("inserts NULL freshness for unrefreshed sections so existing counts are retained", () => {
+		const sql = buildCatalogImportSql({
+			courses: [course],
+			sections: [{ ...section, enrollmentRefreshed: false }],
+			term: "202609",
+		});
+
+		const insertValues = sql.slice(
+			sql.indexOf("INSERT INTO sections"),
+			sql.indexOf("ON CONFLICT(term, crn)"),
+		);
+		expect(insertValues).toContain("NULL,\n  ");
+		expect(insertValues).not.toContain(
+			"strftime('%Y-%m-%dT%H:%M:%fZ', 'now'),\n  '[",
+		);
+	});
 });
