@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useCourseAutocomplete } from "@/catalog/use-course-autocomplete";
 import { useCourseOfferings } from "@/catalog/use-course-offerings";
-import { getTermLabel } from "@/utils/constants";
 import { CatalogWall } from "@/components/landing/catalog-wall";
+import { getTermLabel } from "@/utils/constants";
 
 export const Route = createFileRoute("/")({
 	/*

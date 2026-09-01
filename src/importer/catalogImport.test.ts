@@ -168,6 +168,20 @@ describe("UVic importer", () => {
 		});
 	});
 
+	it("rejects negative values on fields that cannot be negative", () => {
+		expect(
+			parseEnrollmentHtml(`
+<section>
+  <span>Enrolment Actual:</span> <span>-90</span>
+  <span>Enrolment Maximum:</span> <span>100</span>
+  <span>Enrolment Seats Available:</span> <span>10</span>
+  <span>Waitlist Capacity:</span> <span>25</span>
+  <span>Waitlist Actual:</span> <span>2</span>
+  <span>Waitlist Seats Available:</span> <span>23</span>
+</section>`),
+		).toBeNull();
+	});
+
 	it("accepts Banner's Enrollment spelling variant", () => {
 		expect(
 			parseEnrollmentHtml(`

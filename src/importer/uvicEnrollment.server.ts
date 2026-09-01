@@ -65,15 +65,20 @@ export function parseEnrollmentHtml(html: string): EnrollmentCounts | null {
 		"Enrolment Maximum",
 		"Enrollment Maximum",
 	]);
-	const enrollmentSeatsAvailable = extractEnrollmentValue(html, [
-		"Enrolment Seats Available",
-		"Enrollment Seats Available",
-	]);
+	// Only the seats-available fields can legitimately go negative (Banner
+	// reports over-enrollment that way); a negative count or capacity is a
+	// malformed response and must fail the parse.
+	const enrollmentSeatsAvailable = extractEnrollmentValue(
+		html,
+		["Enrolment Seats Available", "Enrollment Seats Available"],
+		{ allowNegative: true },
+	);
 	const waitlistCapacity = extractEnrollmentValue(html, "Waitlist Capacity");
 	const waitlistActual = extractEnrollmentValue(html, "Waitlist Actual");
 	const waitlistSeatsAvailable = extractEnrollmentValue(
 		html,
 		"Waitlist Seats Available",
+		{ allowNegative: true },
 	);
 
 	if (
@@ -99,11 +104,13 @@ export function parseEnrollmentHtml(html: string): EnrollmentCounts | null {
 
 // The value regex is anchored to the label so a non-matching value (e.g. an
 // unexpected format) fails outright instead of drifting forward and capturing
-// the next field's number. Banner reports over-enrolled sections with negative
-// seats available, so the sign must be part of the match.
+// the next field's number. The sign is matched so a negative value can never
+// drift either way — but it only *passes* for fields where Banner legitimately
+// reports negatives (over-enrolled seats available).
 function extractEnrollmentValue(
 	html: string,
 	labelOrLabels: string | readonly string[],
+	options: { allowNegative?: boolean } = {},
 ): number | null {
 	const labels = Array.isArray(labelOrLabels) ? labelOrLabels : [labelOrLabels];
 	for (const label of labels) {
@@ -112,7 +119,9 @@ function extractEnrollmentValue(
 		);
 		const match = pattern.exec(html);
 		if (!match) continue;
-		return Number.parseInt(match[1] ?? "", 10);
+		const value = Number.parseInt(match[1] ?? "", 10);
+		if (value < 0 && !options.allowNegative) return null;
+		return value;
 	}
 	return null;
 }

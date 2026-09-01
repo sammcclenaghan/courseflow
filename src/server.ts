@@ -10,9 +10,13 @@ export default {
 		env: Env,
 		_ctx: ExecutionContext,
 	) {
-		const summary = await refreshSavedScheduleEnrollment(env.DB);
-		console.log(
-			`enrollment refresh: ${summary.refreshed}/${summary.targeted} sections refreshed, ${summary.failed} failed`,
-		);
+		try {
+			const summary = await refreshSavedScheduleEnrollment(env.DB);
+			console.log(
+				`enrollment refresh: ${summary.refreshed}/${summary.targeted} sections refreshed, ${summary.failed} failed`,
+			);
+		} catch (error) {
+			console.error("enrollment refresh failed", error);
+		}
 	},
 };
