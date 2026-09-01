@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useCourseAutocomplete } from "@/catalog/use-course-autocomplete";
 import { useCourseOfferings } from "@/catalog/use-course-offerings";
 import { CatalogWall } from "@/components/landing/catalog-wall";
-import { getTermLabel } from "@/utils/constants";
 
 export const Route = createFileRoute("/")({
 	/*
@@ -45,17 +44,17 @@ function Landing() {
 
 	// Both payloads are static assets, fetched after first paint, and are the
 	// same ones Explore and the scheduler need — so the landing page warms
-	// them up rather than paying for them twice.
+	// them up rather than paying for them twice. The wall only renders the
+	// autocomplete payload; offerings are prefetched purely as a cache warmer.
 	const { courses } = useCourseAutocomplete(true);
-	const { offeredPids } = useCourseOfferings(term, true);
+	useCourseOfferings(term, true);
 
 	return (
 		<div className="app-fill-height relative isolate w-full overflow-hidden bg-background">
 			<div className="absolute inset-0">
 				<CatalogWall
 					courses={courses}
-					offeredPids={offeredPids}
-					label={`Every course in the UVic catalog, one mark each, with the ones running in ${getTermLabel(term)} lit up.`}
+					label="Every course in the UVic catalog, one mark each."
 				/>
 				<div
 					aria-hidden="true"

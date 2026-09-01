@@ -15,14 +15,15 @@ import type { CourseSearchResult } from "@/utils/catalog-types";
   Every course UVic offers, one cell each. Before the catalog payload arrives
   each cell carries just its subject code, so the wall is already the right
   shape and density on first paint; once the real courses land the cells fill
-  in with their own codes and the ones running this term light up.
+  in with their own codes.
 
   The wall stays pointer-events-none — no hit targets, nothing to click, and
   Explore remains where you go to look a course up. But it reacts to presence:
-  a single window pointermove listener maps the cursor to a cell index and
-  lights a small neighborhood, and an interval sparks random cells, both by
-  toggling a class straight on the DOM so React never re-renders the ~3.7k
-  nodes. Cells are bare <i> elements — see .catalog-wall in styles.css.
+  every cell starts grey, random cells all over the wall flicker blue and fade
+  back, and the one cell directly under the cursor lights as it passes. One
+  window pointermove listener and direct class toggles, so React never
+  re-renders the ~3.7k nodes. Cells are bare <i> elements — see .catalog-wall
+  in styles.css.
 */
 
 // How far past the CSS cell width we will stretch cells to close the gap in
@@ -56,11 +57,9 @@ function fitColumns(width: number, cellWidth: number) {
 
 export function CatalogWall({
 	courses,
-	offeredPids,
 	label,
 }: {
 	courses: readonly CourseSearchResult[] | null;
-	offeredPids: ReadonlySet<string> | null;
 	label: string;
 }) {
 	const wallRef = useRef<HTMLDivElement>(null);
@@ -128,19 +127,10 @@ export function CatalogWall({
 			const column = Math.floor(x / (rect.width / columns));
 			const row = Math.floor(y / (rect.height / rows));
 
-			// A diamond of radius 2 around the cursor, each cell fading out on
-			// its own clock so the trail dissolves instead of snapping off.
-			for (let dr = -2; dr <= 2; dr++) {
-				for (let dc = -2; dc <= 2; dc++) {
-					if (Math.abs(dr) + Math.abs(dc) > 2) continue;
-					const r = row + dr;
-					const c = column + dc;
-					if (r < 0 || c < 0 || c >= columns) continue;
-					const index = r * columns + c;
-					if (index >= cells.length) continue;
-					light(index, 500 + Math.random() * 500);
-				}
-			}
+			// Just the cell directly under the cursor; the slow fade-out is
+			// what turns a moving pointer into a trail.
+			const index = row * columns + column;
+			if (index < cells.length) light(index, 500 + Math.random() * 500);
 		};
 
 		const onPointerMove = (event: PointerEvent) => {
@@ -154,14 +144,17 @@ export function CatalogWall({
 
 		window.addEventListener("pointermove", onPointerMove, { passive: true });
 
+		// With no permanently-lit cells, this is the wall's whole pulse: a
+		// steady scatter of courses catching blue and letting it go, ~1-2% of
+		// the wall lit at any moment.
 		const sparkle = window.setInterval(() => {
-			for (let i = 0; i < 3; i++) {
+			for (let i = 0; i < 8; i++) {
 				light(
 					Math.floor(Math.random() * cells.length),
-					900 + Math.random() * 1400,
+					1000 + Math.random() * 2000,
 				);
 			}
-		}, 400);
+		}, 250);
 
 		return () => {
 			window.removeEventListener("pointermove", onPointerMove);
@@ -179,16 +172,9 @@ export function CatalogWall({
 	const cells = useMemo(
 		() =>
 			courses
-				? courses.map((course) => (
-						<i
-							key={course.pid}
-							className={offeredPids?.has(course.pid) ? "on" : undefined}
-						>
-							{course.subjectCode}
-						</i>
-					))
+				? courses.map((course) => <i key={course.pid}>{course.subjectCode}</i>)
 				: CATALOG_SKELETON.map((cell) => <i key={cell.id}>{cell.subject}</i>),
-		[courses, offeredPids],
+		[courses],
 	);
 
 	return (

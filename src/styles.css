@@ -286,9 +286,8 @@ body,
   line-height: 1;
   color: color-mix(in srgb, var(--foreground) 32%, transparent);
   /* The slow leg of the presence effect: .lit snaps on below, then this
-     transition dissolves the glow when the class drops, so the cursor leaves
-     a trail rather than a hard edge. It also covers offered courses lighting
-     up when the term's offerings land. */
+     transition dissolves the glow when the class drops, so flickers breathe
+     out and the cursor leaves a trail rather than a hard edge. */
   transition:
     color 800ms var(--ease-polish),
     text-shadow 800ms var(--ease-polish);
@@ -303,14 +302,10 @@ body,
   background: currentColor;
 }
 
-.catalog-wall i.on {
-  color: color-mix(in srgb, var(--uvic-blue) 92%, transparent);
-}
-
 /*
-  Presence: cells under the cursor and random sparks (catalog-wall.tsx toggles
-  this class directly on the DOM). Snap on fast and bright — the fade back down
-  rides the slow transition on the base cell above.
+  Presence: the cell under the cursor and random flickers all over the wall
+  (catalog-wall.tsx toggles this class directly on the DOM). Snap on fast and
+  bright — the fade back down rides the slow transition on the base cell above.
 */
 .catalog-wall i.lit {
   color: color-mix(in srgb, var(--uvic-light-blue) 55%, var(--uvic-blue));
@@ -318,43 +313,6 @@ body,
   transition:
     color 60ms var(--ease-polish),
     text-shadow 60ms var(--ease-polish);
-}
-
-/*
-  Once the page has settled — five seconds in, courtesy of the delay — the
-  courses running this term start to glitter. Three sparse slices on unrelated
-  durations, so it reads as a scatter of twinkles rather than a pulsing block,
-  and so ~400 cells animate forever instead of twelve hundred.
-
-  The global prefers-reduced-motion rule collapses all of this to a single
-  frame, leaving the courses simply lit.
-*/
-.catalog-wall i.on:nth-child(29n + 1) {
-  animation: course-glitter 5.5s var(--ease-polish) 5s infinite;
-}
-.catalog-wall i.on:nth-child(29n + 11) {
-  animation: course-glitter 7s var(--ease-polish) 6.4s infinite;
-}
-.catalog-wall i.on:nth-child(29n + 22) {
-  animation: course-glitter 8s var(--ease-polish) 7.9s infinite;
-}
-
-/*
-  Brighter and haloed at the peak, not paler: on paper this light, fading to
-  light blue would read as a course blinking out rather than catching light.
-*/
-@keyframes course-glitter {
-  0%,
-  58%,
-  100% {
-    color: color-mix(in srgb, var(--uvic-blue) 92%, transparent);
-    text-shadow: none;
-  }
-  72%,
-  80% {
-    color: color-mix(in srgb, var(--uvic-light-blue) 62%, var(--uvic-blue));
-    text-shadow: 0 0 5px color-mix(in srgb, var(--uvic-light-blue) 60%, transparent);
-  }
 }
 
 @keyframes wall-print {
