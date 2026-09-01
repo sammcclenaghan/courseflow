@@ -17,9 +17,12 @@ import type { CourseSearchResult } from "@/utils/catalog-types";
   shape and density on first paint; once the real courses land the cells fill
   in with their own codes and the ones running this term light up.
 
-  The wall is scenery, not a control: no pointer handlers, no hit targets,
-  nothing that moves under the cursor. Explore is where you go to look a course
-  up. Cells are bare <i> elements — see .catalog-wall in styles.css.
+  The wall stays pointer-events-none — no hit targets, nothing to click, and
+  Explore remains where you go to look a course up. But it reacts to presence:
+  a single window pointermove listener maps the cursor to a cell index and
+  lights a small neighborhood, and an interval sparks random cells, both by
+  toggling a class straight on the DOM so React never re-renders the ~3.7k
+  nodes. Cells are bare <i> elements — see .catalog-wall in styles.css.
 */
 
 // How far past the CSS cell width we will stretch cells to close the gap in
@@ -82,6 +85,94 @@ export function CatalogWall({
 		observer.observe(wall);
 		return () => observer.disconnect();
 	}, []);
+
+	// Presence effects: light cells under the cursor and spark random ones.
+	// Class toggles go straight to the DOM; a React state path here would
+	// re-render 3.7k nodes per pointer frame.
+	useEffect(() => {
+		const wall = wallRef.current;
+		if (!wall || !columns) return;
+		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+		const cells = wall.children;
+		const litUntil = new Map<number, number>();
+
+		const light = (index: number, holdMs: number) => {
+			const cell = cells[index] as HTMLElement | undefined;
+			if (!cell) return;
+			cell.classList.add("lit");
+			const previous = litUntil.get(index);
+			if (previous) window.clearTimeout(previous);
+			litUntil.set(
+				index,
+				window.setTimeout(() => {
+					cell.classList.remove("lit");
+					litUntil.delete(index);
+				}, holdMs),
+			);
+		};
+
+		let frame = 0;
+		let pointerX = 0;
+		let pointerY = 0;
+		let framePending = false;
+
+		const applyPointer = () => {
+			framePending = false;
+			const rect = wall.getBoundingClientRect();
+			const x = pointerX - rect.left;
+			const y = pointerY - rect.top;
+			if (x < 0 || y < 0 || x >= rect.width || y >= rect.height) return;
+
+			const rows = Math.ceil(cells.length / columns);
+			const column = Math.floor(x / (rect.width / columns));
+			const row = Math.floor(y / (rect.height / rows));
+
+			// A diamond of radius 2 around the cursor, each cell fading out on
+			// its own clock so the trail dissolves instead of snapping off.
+			for (let dr = -2; dr <= 2; dr++) {
+				for (let dc = -2; dc <= 2; dc++) {
+					if (Math.abs(dr) + Math.abs(dc) > 2) continue;
+					const r = row + dr;
+					const c = column + dc;
+					if (r < 0 || c < 0 || c >= columns) continue;
+					const index = r * columns + c;
+					if (index >= cells.length) continue;
+					light(index, 500 + Math.random() * 500);
+				}
+			}
+		};
+
+		const onPointerMove = (event: PointerEvent) => {
+			pointerX = event.clientX;
+			pointerY = event.clientY;
+			if (!framePending) {
+				framePending = true;
+				frame = requestAnimationFrame(applyPointer);
+			}
+		};
+
+		window.addEventListener("pointermove", onPointerMove, { passive: true });
+
+		const sparkle = window.setInterval(() => {
+			for (let i = 0; i < 3; i++) {
+				light(
+					Math.floor(Math.random() * cells.length),
+					900 + Math.random() * 1400,
+				);
+			}
+		}, 400);
+
+		return () => {
+			window.removeEventListener("pointermove", onPointerMove);
+			window.clearInterval(sparkle);
+			cancelAnimationFrame(frame);
+			for (const [index, timeout] of litUntil) {
+				window.clearTimeout(timeout);
+				(cells[index] as HTMLElement | undefined)?.classList.remove("lit");
+			}
+		};
+	}, [columns]);
 
 	// Only the column count re-renders this component, so a resize is the only
 	// thing that ever touches these ~3.7k nodes again.

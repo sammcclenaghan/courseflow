@@ -285,9 +285,13 @@ body,
   font-style: normal;
   line-height: 1;
   color: color-mix(in srgb, var(--foreground) 32%, transparent);
-  /* Courses light up when the term's offerings land — briefly, because this
-     is spent on top of the wait for that payload. */
-  transition: color 240ms var(--ease-polish);
+  /* The slow leg of the presence effect: .lit snaps on below, then this
+     transition dissolves the glow when the class drops, so the cursor leaves
+     a trail rather than a hard edge. It also covers offered courses lighting
+     up when the term's offerings land. */
+  transition:
+    color 800ms var(--ease-polish),
+    text-shadow 800ms var(--ease-polish);
 }
 
 .catalog-wall i::before {
@@ -301,6 +305,19 @@ body,
 
 .catalog-wall i.on {
   color: color-mix(in srgb, var(--uvic-blue) 92%, transparent);
+}
+
+/*
+  Presence: cells under the cursor and random sparks (catalog-wall.tsx toggles
+  this class directly on the DOM). Snap on fast and bright — the fade back down
+  rides the slow transition on the base cell above.
+*/
+.catalog-wall i.lit {
+  color: color-mix(in srgb, var(--uvic-light-blue) 55%, var(--uvic-blue));
+  text-shadow: 0 0 6px color-mix(in srgb, var(--uvic-light-blue) 65%, transparent);
+  transition:
+    color 60ms var(--ease-polish),
+    text-shadow 60ms var(--ease-polish);
 }
 
 /*
