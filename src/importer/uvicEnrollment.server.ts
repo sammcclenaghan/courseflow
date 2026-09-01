@@ -6,7 +6,32 @@ import type {
 } from "./catalogImport.types.ts";
 import { fetchText } from "./uvicHttp.server.ts";
 
-const ENROLLMENT_VALUE_RE = /:<\/span>\s*<span[^>]*>(\d+)/;
+const ENROLLMENT_URL =
+	"https://banner.uvic.ca/StudentRegistrationSsb/ssb/searchResults/getEnrollmentInfo";
+
+export async function fetchEnrollmentCounts(
+	term: string,
+	crn: string,
+	options: FetchOptions = {},
+): Promise<EnrollmentCounts | null> {
+	const form = new URLSearchParams({
+		term,
+		courseReferenceNumber: crn,
+	});
+
+	const html = await fetchText(ENROLLMENT_URL, {
+		fetchFn: options.fetchFn,
+		timeoutMs: options.timeoutMs,
+		method: "POST",
+		headers: {
+			"Content-Type": "application/x-www-form-urlencoded",
+			"User-Agent": "Mozilla/5.0",
+		},
+		body: form,
+	});
+
+	return parseEnrollmentHtml(html);
+}
 
 export async function refreshEnrollment(
 	sections: ImportedSection[],
@@ -14,26 +39,11 @@ export async function refreshEnrollment(
 ): Promise<void> {
 	await mapConcurrent(sections, options.concurrency ?? 8, async (section) => {
 		if (section.crn === "") return;
-		const form = new URLSearchParams({
-			term: section.term,
-			courseReferenceNumber: section.crn,
-		});
-
-		const html = await fetchText(
-			"https://banner.uvic.ca/StudentRegistrationSsb/ssb/searchResults/getEnrollmentInfo",
-			{
-				fetchFn: options.fetchFn,
-				timeoutMs: options.timeoutMs,
-				method: "POST",
-				headers: {
-					"Content-Type": "application/x-www-form-urlencoded",
-					"User-Agent": "Mozilla/5.0",
-				},
-				body: form,
-			},
+		const counts = await fetchEnrollmentCounts(
+			section.term,
+			section.crn,
+			options,
 		);
-
-		const counts = parseEnrollmentHtml(html);
 		if (!counts) return;
 
 		section.enrollmentActual = counts.enrollmentActual;
@@ -55,15 +65,20 @@ export function parseEnrollmentHtml(html: string): EnrollmentCounts | null {
 		"Enrolment Maximum",
 		"Enrollment Maximum",
 	]);
-	const enrollmentSeatsAvailable = extractEnrollmentValue(html, [
-		"Enrolment Seats Available",
-		"Enrollment Seats Available",
-	]);
+	// Only the seats-available fields can legitimately go negative (Banner
+	// reports over-enrollment that way); a negative count or capacity is a
+	// malformed response and must fail the parse.
+	const enrollmentSeatsAvailable = extractEnrollmentValue(
+		html,
+		["Enrolment Seats Available", "Enrollment Seats Available"],
+		{ allowNegative: true },
+	);
 	const waitlistCapacity = extractEnrollmentValue(html, "Waitlist Capacity");
 	const waitlistActual = extractEnrollmentValue(html, "Waitlist Actual");
 	const waitlistSeatsAvailable = extractEnrollmentValue(
 		html,
 		"Waitlist Seats Available",
+		{ allowNegative: true },
 	);
 
 	if (
@@ -87,17 +102,30 @@ export function parseEnrollmentHtml(html: string): EnrollmentCounts | null {
 	};
 }
 
+// The value regex is anchored to the label so a non-matching value (e.g. an
+// unexpected format) fails outright instead of drifting forward and capturing
+// the next field's number. The sign is matched so a negative value can never
+// drift either way — but it only *passes* for fields where Banner legitimately
+// reports negatives (over-enrolled seats available).
 function extractEnrollmentValue(
 	html: string,
 	labelOrLabels: string | readonly string[],
+	options: { allowNegative?: boolean } = {},
 ): number | null {
 	const labels = Array.isArray(labelOrLabels) ? labelOrLabels : [labelOrLabels];
 	for (const label of labels) {
-		const start = html.indexOf(`${label}:</span>`);
-		if (start === -1) continue;
-		const match = ENROLLMENT_VALUE_RE.exec(html.slice(start + label.length));
-		if (!match) return null;
-		return Number.parseInt(match[1] ?? "", 10);
+		const pattern = new RegExp(
+			`${escapeRegExp(label)}:</span>\\s*<span[^>]*>\\s*(-?\\d+)`,
+		);
+		const match = pattern.exec(html);
+		if (!match) continue;
+		const value = Number.parseInt(match[1] ?? "", 10);
+		if (value < 0 && !options.allowNegative) return null;
+		return value;
 	}
 	return null;
+}
+
+function escapeRegExp(value: string): string {
+	return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }

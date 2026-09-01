@@ -120,19 +120,20 @@ function serialiseCalendarEvent(
 	};
 }
 
+// Catalog credits are strings ("1.5", "3"); non-numeric values count as 0.
+function parseCredits(value: string | number): number {
+	const parsed = typeof value === "number" ? value : Number(value);
+	return Number.isFinite(parsed) ? parsed : 0;
+}
+
 function serialiseSelectedCourse(
 	saved: SavedCourse,
 ): SerializableSelectedCourse {
-	const credits =
-		typeof saved.course.credits === "number" &&
-		Number.isFinite(saved.course.credits)
-			? saved.course.credits
-			: 0;
 	return {
 		pid: saved.course.pid,
 		subjectCode: saved.course.subjectCode,
 		title: saved.course.title,
-		credits,
+		credits: parseCredits(saved.course.credits),
 		term: saved.term,
 		sections: saved.sections.map((section) =>
 			serialiseSection(section, saved.term),
@@ -150,12 +151,7 @@ export function serialiseScheduler(
 		0,
 	);
 	const totalCredits = savedCourses.reduce(
-		(sum, course) =>
-			sum +
-			(typeof course.course.credits === "number" &&
-			Number.isFinite(course.course.credits)
-				? course.course.credits
-				: 0),
+		(sum, course) => sum + parseCredits(course.course.credits),
 		0,
 	);
 

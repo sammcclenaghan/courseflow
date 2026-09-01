@@ -1,4 +1,5 @@
-import { Search } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { ArrowUpRight, Search } from "lucide-react";
 import { useMemo, useState } from "react";
 import {
 	filterCourseAutocompleteIndexByOfferings,
@@ -203,9 +204,16 @@ function CourseRow({
 	return (
 		<div className="group flex items-start gap-3 px-4 py-3.5 transition-colors hover:bg-accent/50">
 			<div className="min-w-0 flex-1">
-				<p className="font-bold text-[15px] text-foreground leading-tight">
+				<Link
+					to="/courses/$subjectCode"
+					params={{ subjectCode: course.subjectCode }}
+					preload="intent"
+					className="inline-flex items-center gap-0.5 font-bold text-[15px] text-primary leading-tight hover:underline"
+					aria-label={`View ${course.subjectCode} details`}
+				>
 					{course.subjectCode}
-				</p>
+					<ArrowUpRight className="size-3.5" />
+				</Link>
 				<p className="mt-1.5 break-words text-sm leading-snug text-foreground/90">
 					{course.title}
 				</p>
