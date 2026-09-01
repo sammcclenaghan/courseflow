@@ -286,11 +286,9 @@ body,
   line-height: 1;
   color: color-mix(in srgb, var(--foreground) 32%, transparent);
   /* The slow leg of the presence effect: .lit snaps on below, then this
-     transition dissolves the glow when the class drops, so flickers breathe
+     transition dissolves the blue when the class drops, so flickers breathe
      out and the cursor leaves a trail rather than a hard edge. */
-  transition:
-    color 800ms var(--ease-polish),
-    text-shadow 800ms var(--ease-polish);
+  transition: color 800ms var(--ease-polish);
 }
 
 .catalog-wall i::before {
@@ -302,17 +300,20 @@ body,
   background: currentColor;
 }
 
+/* This term's offerings, permanently lit. */
+.catalog-wall i.on {
+  color: color-mix(in srgb, var(--uvic-blue) 92%, transparent);
+}
+
 /*
-  Presence: the cell under the cursor and random flickers all over the wall
-  (catalog-wall.tsx toggles this class directly on the DOM). Snap on fast and
-  bright — the fade back down rides the slow transition on the base cell above.
+  Presence: the cell under the cursor and random grey cells flickering into
+  the same blue as the offerings (catalog-wall.tsx toggles this class directly
+  on the DOM). Snap on fast — the fade back down rides the slow transition on
+  the base cell above.
 */
 .catalog-wall i.lit {
-  color: color-mix(in srgb, var(--uvic-light-blue) 55%, var(--uvic-blue));
-  text-shadow: 0 0 6px color-mix(in srgb, var(--uvic-light-blue) 65%, transparent);
-  transition:
-    color 60ms var(--ease-polish),
-    text-shadow 60ms var(--ease-polish);
+  color: color-mix(in srgb, var(--uvic-blue) 92%, transparent);
+  transition: color 60ms var(--ease-polish);
 }
 
 @keyframes wall-print {

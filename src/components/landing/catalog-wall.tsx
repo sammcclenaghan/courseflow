@@ -15,15 +15,15 @@ import type { CourseSearchResult } from "@/utils/catalog-types";
   Every course UVic offers, one cell each. Before the catalog payload arrives
   each cell carries just its subject code, so the wall is already the right
   shape and density on first paint; once the real courses land the cells fill
-  in with their own codes.
+  in with their own codes and the ones running this term light up blue.
 
   The wall stays pointer-events-none — no hit targets, nothing to click, and
   Explore remains where you go to look a course up. But it reacts to presence:
-  every cell starts grey, random cells all over the wall flicker blue and fade
-  back, and the one cell directly under the cursor lights as it passes. One
-  window pointermove listener and direct class toggles, so React never
-  re-renders the ~3.7k nodes. Cells are bare <i> elements — see .catalog-wall
-  in styles.css.
+  on top of the permanently-lit offerings, random grey cells flicker into the
+  same blue and fade back, and the one cell directly under the cursor lights
+  as it passes. One window pointermove listener and direct class toggles, so
+  React never re-renders the ~3.7k nodes. Cells are bare <i> elements — see
+  .catalog-wall in styles.css.
 */
 
 // How far past the CSS cell width we will stretch cells to close the gap in
@@ -57,9 +57,11 @@ function fitColumns(width: number, cellWidth: number) {
 
 export function CatalogWall({
 	courses,
+	offeredPids,
 	label,
 }: {
 	courses: readonly CourseSearchResult[] | null;
+	offeredPids: ReadonlySet<string> | null;
 	label: string;
 }) {
 	const wallRef = useRef<HTMLDivElement>(null);
@@ -144,17 +146,17 @@ export function CatalogWall({
 
 		window.addEventListener("pointermove", onPointerMove, { passive: true });
 
-		// With no permanently-lit cells, this is the wall's whole pulse: a
-		// steady scatter of courses catching blue and letting it go, ~1-2% of
-		// the wall lit at any moment.
+		// A steady scatter of grey courses flickering into the offered-course
+		// blue and letting it go again — sparse enough that the permanent
+		// offerings stay the wall's dominant signal.
 		const sparkle = window.setInterval(() => {
-			for (let i = 0; i < 8; i++) {
+			for (let i = 0; i < 4; i++) {
 				light(
 					Math.floor(Math.random() * cells.length),
-					1000 + Math.random() * 2000,
+					1000 + Math.random() * 1500,
 				);
 			}
-		}, 250);
+		}, 300);
 
 		return () => {
 			window.removeEventListener("pointermove", onPointerMove);
@@ -172,9 +174,16 @@ export function CatalogWall({
 	const cells = useMemo(
 		() =>
 			courses
-				? courses.map((course) => <i key={course.pid}>{course.subjectCode}</i>)
+				? courses.map((course) => (
+						<i
+							key={course.pid}
+							className={offeredPids?.has(course.pid) ? "on" : undefined}
+						>
+							{course.subjectCode}
+						</i>
+					))
 				: CATALOG_SKELETON.map((cell) => <i key={cell.id}>{cell.subject}</i>),
-		[courses],
+		[courses, offeredPids],
 	);
 
 	return (
