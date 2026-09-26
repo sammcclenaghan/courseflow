@@ -111,7 +111,7 @@ console.info(`SQL written to ${sqlPath}`);
 
 if (!options.dryRun) {
 	execFileSync(
-		"npx",
+		"nubx",
 		[
 			"wrangler",
 			"d1",
@@ -251,7 +251,7 @@ VALUES (${sqlValue(recommendation.source.pid)}, ${sqlValue(recommendation.relate
 
 async function queryD1<T>(command: string, options: Options): Promise<T[]> {
 	const raw = execFileSync(
-		"npx",
+		"nubx",
 		[
 			"wrangler",
 			"d1",

@@ -6,8 +6,8 @@
 
 Before editing files for a substantial task:
 
-- Run `npx @tanstack/intent@latest list` from the workspace root to see available local skills.
-- If a listed skill matches the task, run `npx @tanstack/intent@latest load <package>#<skill>` before changing files.
+- Run `nubx -y @tanstack/intent@latest list` from the workspace root to see available local skills.
+- If a listed skill matches the task, run `nubx -y @tanstack/intent@latest load <package>#<skill>` before changing files.
 - Use the loaded `SKILL.md` guidance while making the change.
 - Monorepos: when working across packages, run the skill check from the workspace root and prefer the local skill for the package being changed.
 - Multiple matches: prefer the most specific local skill for the package or concern you are changing; load additional skills only when the task spans multiple packages or concerns.
@@ -15,8 +15,8 @@ Before editing files for a substantial task:
 
 ## Task Completion Requirements
 
-- `npm run check` and `npm run typecheck` must pass before considering any task complete.
-- `npm run test` must pass. Add or update tests for any behaviour change.
+- `nub run check` and `nub run typecheck` must pass before considering any task complete.
+- `nub run test` must pass. Add or update tests for any behaviour change.
 
 ## Project Snapshot
 

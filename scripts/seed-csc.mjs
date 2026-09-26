@@ -170,7 +170,7 @@ mkdirSync(dirname(sqlPath), { recursive: true });
 writeFileSync(sqlPath, `${statements.join("\n\n")}\n`);
 
 execFileSync(
-	"npx",
+	"nubx",
 	["wrangler", "d1", "execute", databaseName, targetFlag, "--file", sqlPath],
 	{ cwd: root, stdio: "inherit" },
 );

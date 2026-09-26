@@ -31,7 +31,7 @@ type D1ExecuteResponse = Array<{
 const options = parseOptions(process.argv.slice(2));
 const response = JSON.parse(
 	execFileSync(
-		"npx",
+		"nubx",
 		[
 			"wrangler",
 			"d1",
