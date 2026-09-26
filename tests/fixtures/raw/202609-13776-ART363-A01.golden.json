@@ -1,0 +1,36 @@
+{
+	"term": "202609",
+	"crn": "13776",
+	"subject": "ART",
+	"courseNumber": "363",
+	"section": "A01",
+	"title": "Advanced Digital Art",
+	"scheduleType": "Lecture Topic",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1Y",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 20,
+		"capacity": 18,
+		"available": -2
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 100,
+		"available": 100
+	},
+	"meetings": [
+		{
+			"days": [
+				2
+			],
+			"start": 540,
+			"end": 710,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		}
+	]
+}

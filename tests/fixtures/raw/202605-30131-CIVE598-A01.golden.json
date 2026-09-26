@@ -1,0 +1,36 @@
+{
+	"term": "202605",
+	"crn": "30131",
+	"subject": "CIVE",
+	"courseNumber": "598",
+	"section": "A01",
+	"title": "MEng Project in Civil Engineering",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": null,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 6,
+		"capacity": 20,
+		"available": 14
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 10,
+		"available": 10
+	},
+	"meetings": [
+		{
+			"days": [
+				3
+			],
+			"start": 600,
+			"end": 650,
+			"startDate": "2026-05-06",
+			"endDate": "2026-07-31"
+		}
+	]
+}

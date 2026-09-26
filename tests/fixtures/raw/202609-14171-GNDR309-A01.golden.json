@@ -1,0 +1,46 @@
+{
+	"term": "202609",
+	"crn": "14171",
+	"subject": "GNDR",
+	"courseNumber": "309",
+	"section": "A01",
+	"title": "Masculinities",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Blended",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 29,
+		"capacity": 53,
+		"available": 24
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 100,
+		"available": 100
+	},
+	"meetings": [
+		{
+			"days": [
+				1,
+				3
+			],
+			"start": 870,
+			"end": 920,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		},
+		{
+			"days": [
+				4
+			],
+			"start": null,
+			"end": null,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		}
+	]
+}

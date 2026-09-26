@@ -1,0 +1,34 @@
+{
+	"term": "202605",
+	"crn": "30305",
+	"subject": "ECE",
+	"courseNumber": "310",
+	"section": "T01",
+	"title": "Digital Signal Processing I",
+	"scheduleType": "Tutorial",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": 0,
+	"linkId": "T1",
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 20,
+		"capacity": 85,
+		"available": 65
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 50,
+		"available": 50
+	},
+	"meetings": [
+		{
+			"days": [],
+			"start": null,
+			"end": null,
+			"startDate": "2026-05-06",
+			"endDate": "2026-07-31"
+		}
+	]
+}

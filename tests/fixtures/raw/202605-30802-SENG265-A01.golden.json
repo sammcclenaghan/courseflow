@@ -1,0 +1,60 @@
+{
+	"term": "202605",
+	"crn": "30802",
+	"subject": "SENG",
+	"courseNumber": "265",
+	"section": "A01",
+	"title": "Software Development Methods",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": "A1",
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 17,
+		"capacity": 45,
+		"available": 28
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 50,
+		"available": 50
+	},
+	"meetings": [
+		{
+			"days": [
+				2,
+				3,
+				5
+			],
+			"start": 630,
+			"end": 680,
+			"startDate": "2026-05-06",
+			"endDate": "2026-05-27"
+		},
+		{
+			"days": [
+				2,
+				3,
+				5
+			],
+			"start": 630,
+			"end": 680,
+			"startDate": "2026-05-29",
+			"endDate": "2026-06-12"
+		},
+		{
+			"days": [
+				2,
+				3,
+				5
+			],
+			"start": 630,
+			"end": 680,
+			"startDate": "2026-06-16",
+			"endDate": "2026-07-31"
+		}
+	]
+}

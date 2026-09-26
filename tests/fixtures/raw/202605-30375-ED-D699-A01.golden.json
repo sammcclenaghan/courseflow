@@ -1,0 +1,26 @@
+{
+	"term": "202605",
+	"crn": "30375",
+	"subject": "ED-D",
+	"courseNumber": "699",
+	"section": "A01",
+	"title": "PhD Dissertation",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": null,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 3,
+		"capacity": 25,
+		"available": 22
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 0,
+		"available": 0
+	},
+	"meetings": []
+}

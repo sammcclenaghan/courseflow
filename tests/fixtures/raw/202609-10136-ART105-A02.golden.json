@@ -1,0 +1,36 @@
+{
+	"term": "202609",
+	"crn": "10136",
+	"subject": "ART",
+	"courseNumber": "105",
+	"section": "A02",
+	"title": "Foundation Photography and Video Art",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 21,
+		"capacity": 24,
+		"available": 3
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 100,
+		"available": 100
+	},
+	"meetings": [
+		{
+			"days": [
+				4
+			],
+			"start": 540,
+			"end": 710,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		}
+	]
+}

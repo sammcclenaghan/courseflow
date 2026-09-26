@@ -1,0 +1,26 @@
+{
+	"term": "202701",
+	"crn": "21128",
+	"subject": "EDCI",
+	"courseNumber": "136",
+	"section": "A01",
+	"title": "Digital Literacy",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Fully Online",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": "A1",
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 13,
+		"capacity": 126,
+		"available": 113
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 100,
+		"available": 100
+	},
+	"meetings": []
+}

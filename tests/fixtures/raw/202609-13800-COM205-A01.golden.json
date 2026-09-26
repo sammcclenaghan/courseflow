@@ -1,0 +1,36 @@
+{
+	"term": "202609",
+	"crn": "13800",
+	"subject": "COM",
+	"courseNumber": "205",
+	"section": "A01",
+	"title": "Professional Skills Development",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1Y",
+	"credits": 0,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 299,
+		"capacity": 300,
+		"available": 1
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 100,
+		"available": 100
+	},
+	"meetings": [
+		{
+			"days": [
+				3
+			],
+			"start": 690,
+			"end": 770,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		}
+	]
+}

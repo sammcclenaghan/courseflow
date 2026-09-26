@@ -1,0 +1,46 @@
+{
+	"term": "202609",
+	"crn": "13495",
+	"subject": "LAW",
+	"courseNumber": "395A",
+	"section": "A01",
+	"title": "Intersocietal Jurisprudence Through Cinema",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1L",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 9,
+		"capacity": 24,
+		"available": 15
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 10,
+		"available": 10
+	},
+	"meetings": [
+		{
+			"days": [
+				5
+			],
+			"start": 780,
+			"end": 950,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		},
+		{
+			"days": [
+				1,
+				3
+			],
+			"start": 840,
+			"end": 920,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"term": "202605",
+	"crn": "31549",
+	"subject": "PAAS",
+	"courseNumber": "397",
+	"section": "A01",
+	"title": "FIELD SCHOOL IN PAAS: Japan",
+	"scheduleType": "Lecture Topic",
+	"instructionalMethod": "Course with Field Component",
+	"partOfTerm": "G5",
+	"credits": 3,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 16,
+		"capacity": 20,
+		"available": 4
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 0,
+		"available": 0
+	},
+	"meetings": [
+		{
+			"days": [
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"start": 690,
+			"end": 860,
+			"startDate": "2026-05-06",
+			"endDate": "2026-05-22"
+		},
+		{
+			"days": [],
+			"start": null,
+			"end": null,
+			"startDate": "2026-05-23",
+			"endDate": "2026-07-31"
+		}
+	]
+}

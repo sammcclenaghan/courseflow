@@ -1,0 +1,45 @@
+{
+	"term": "202609",
+	"crn": "10166",
+	"subject": "ASTR",
+	"courseNumber": "101",
+	"section": "B01",
+	"title": "Exploring the Night Sky",
+	"scheduleType": "Lab",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": 0,
+	"linkId": "B1",
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 15,
+		"capacity": 18,
+		"available": 3
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 0,
+		"available": 0
+	},
+	"meetings": [
+		{
+			"days": [
+				1
+			],
+			"start": 570,
+			"end": 740,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		},
+		{
+			"days": [
+				1
+			],
+			"start": 1230,
+			"end": 1400,
+			"startDate": "2026-09-21",
+			"endDate": "2026-09-21"
+		}
+	]
+}

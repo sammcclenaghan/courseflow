@@ -1,0 +1,37 @@
+{
+	"term": "202609",
+	"crn": "10396",
+	"subject": "BIOL",
+	"courseNumber": "460",
+	"section": "A01",
+	"title": "Honours Seminar",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": 0,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 16,
+		"capacity": 40,
+		"available": 24
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 100,
+		"available": 100
+	},
+	"meetings": [
+		{
+			"days": [
+				2,
+				3
+			],
+			"start": 750,
+			"end": 800,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		}
+	]
+}

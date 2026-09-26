@@ -1,0 +1,26 @@
+{
+	"term": "202605",
+	"crn": "31024",
+	"subject": "EDUC",
+	"courseNumber": "801",
+	"section": "W01",
+	"title": "CO-OP WORK TERM",
+	"scheduleType": "Work Term",
+	"instructionalMethod": "Work Term and Exchange Courses",
+	"partOfTerm": "1W",
+	"credits": 3,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 2,
+		"capacity": 999,
+		"available": 997
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 0,
+		"available": 0
+	},
+	"meetings": []
+}

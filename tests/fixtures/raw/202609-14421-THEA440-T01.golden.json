@@ -1,0 +1,34 @@
+{
+	"term": "202609",
+	"crn": "14421",
+	"subject": "THEA",
+	"courseNumber": "440",
+	"section": "T01",
+	"title": "Ensemble Creation",
+	"scheduleType": "Tutorial",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1Y",
+	"credits": 0,
+	"linkId": "T1",
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 2,
+		"capacity": 5,
+		"available": 3
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 0,
+		"available": 0
+	},
+	"meetings": [
+		{
+			"days": [],
+			"start": null,
+			"end": null,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		}
+	]
+}

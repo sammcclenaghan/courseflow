@@ -1,0 +1,37 @@
+{
+	"term": "202605",
+	"crn": "31186",
+	"subject": "BIOL",
+	"courseNumber": "225",
+	"section": "B01",
+	"title": "Principles of Cell Biology",
+	"scheduleType": "Lab",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "2",
+	"credits": 0,
+	"linkId": "B1",
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 17,
+		"capacity": 20,
+		"available": 3
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 4,
+		"available": 4
+	},
+	"meetings": [
+		{
+			"days": [
+				2,
+				4
+			],
+			"start": 510,
+			"end": 680,
+			"startDate": "2026-05-11",
+			"endDate": "2026-06-26"
+		}
+	]
+}

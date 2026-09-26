@@ -1,0 +1,34 @@
+{
+	"term": "202609",
+	"crn": "14015",
+	"subject": "ECE",
+	"courseNumber": "503",
+	"section": "A03",
+	"title": "Optimization for Machine Learning",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Fully Online",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": "A1",
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 0,
+		"capacity": 15,
+		"available": 15
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 50,
+		"available": 50
+	},
+	"meetings": [
+		{
+			"days": [],
+			"start": null,
+			"end": null,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		}
+	]
+}
