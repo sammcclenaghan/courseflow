@@ -10,7 +10,4 @@ dist-ssr
 .output
 .vinxi
 .pi/
-__unconfig*
-todos.json
-.dev.vars
-leetcode-system.md
+data/raw/
