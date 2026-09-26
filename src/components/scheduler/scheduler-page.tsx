@@ -15,7 +15,7 @@ import type {
 	ScheduleWithSections,
 } from "@/utils/scheduler-types";
 import { coursesToEvents } from "@/utils/section-to-events";
-import type { GroupedSections, Section } from "@/utils/sections-types";
+import type { GroupedSections, LegacySection } from "@/utils/sections-types";
 import { CourseSearch } from "./course-search";
 import { MobileSchedulerShell } from "./mobile-scheduler-shell";
 import { ScheduleSharePanel } from "./schedule-share-panel";
@@ -92,7 +92,7 @@ export function SchedulerPage({ term }: { term: string }) {
 		);
 	}
 
-	function updateSections(course: Course, sections: Section[]) {
+	function updateSections(course: Course, sections: LegacySection[]) {
 		void commitCourses(
 			selectedCourses.map((savedCourse) =>
 				savedCourse.course.pid === course.pid
@@ -210,8 +210,8 @@ function hasAnySections(grouped: GroupedSections): boolean {
 	);
 }
 
-function selectDefaultSections(grouped: GroupedSections): Section[] {
-	const defaults: Section[] = [];
+function selectDefaultSections(grouped: GroupedSections): LegacySection[] {
+	const defaults: LegacySection[] = [];
 	const seenScheduleTypes = new Set<string>();
 
 	for (const section of [

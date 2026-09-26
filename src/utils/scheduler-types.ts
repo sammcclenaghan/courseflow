@@ -1,5 +1,5 @@
 import type { Course } from "./catalog-types";
-import type { Section } from "./sections-types";
+import type { LegacySection } from "./sections-types";
 
 export type CalendarEvent = {
 	id: string;
@@ -7,12 +7,12 @@ export type CalendarEvent = {
 	start: Date;
 	end: Date;
 	color: string;
-	section: Section;
+	section: LegacySection;
 };
 
 export type SavedCourse = {
 	course: Course;
-	sections: Section[];
+	sections: LegacySection[];
 	term: string;
 };
 
@@ -27,7 +27,7 @@ export type PublicScheduleResult = Omit<ScheduleResult, "id">;
 
 export type ScheduleWithSections = {
 	schedule: ScheduleResult;
-	sections: Section[];
+	sections: LegacySection[];
 };
 
 export type ScheduleShareResult = {
@@ -40,5 +40,5 @@ export type ScheduleShareResult = {
 export type SharedScheduleWithSections = {
 	share: ScheduleShareResult;
 	schedule: PublicScheduleResult;
-	sections: Section[];
+	sections: LegacySection[];
 };

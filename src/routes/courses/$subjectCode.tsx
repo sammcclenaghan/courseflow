@@ -22,7 +22,7 @@ import { useFavouriteCourses } from "@/utils/favourite-courses";
 import { saveMySchedule } from "@/utils/scheduler.functions";
 import type { ScheduleWithSections } from "@/utils/scheduler-types";
 import { formatSectionSchedule } from "@/utils/section-to-events";
-import type { GroupedSections, Section } from "@/utils/sections-types";
+import type { GroupedSections, LegacySection } from "@/utils/sections-types";
 
 const alternativesDefault = "all" satisfies AlternativeMode;
 const ALTERNATIVES_MODE_STORAGE_KEY = "courseflow:alternatives-mode";
@@ -470,7 +470,7 @@ function SectionGroup({
 	sections,
 }: {
 	label: string;
-	sections: Section[];
+	sections: LegacySection[];
 }) {
 	if (sections.length === 0) return null;
 	return (
@@ -651,7 +651,7 @@ function AlternativeCourseRow({
 }
 
 function selectDefaultSections(grouped: GroupedSections) {
-	const defaults: Section[] = [];
+	const defaults: LegacySection[] = [];
 	const seenScheduleTypes = new Set<string>();
 	for (const section of [
 		...grouped.lectures,

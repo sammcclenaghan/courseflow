@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import type { Course } from "@/utils/catalog-types";
 import type { SavedCourse } from "@/utils/scheduler-types";
-import type { Section } from "@/utils/sections-types";
+import type { LegacySection } from "@/utils/sections-types";
 import { SelectedCoursesSidebar } from "./selected-courses-sidebar";
 
 interface SchedulerCoursesSheetProps {
@@ -11,7 +11,7 @@ interface SchedulerCoursesSheetProps {
 	term: string;
 	selectedCourses: SavedCourse[];
 	onCourseRemove: (course: Course) => void;
-	onSectionsUpdate: (course: Course, sections: Section[]) => void;
+	onSectionsUpdate: (course: Course, sections: LegacySection[]) => void;
 	onClearAll: () => void;
 	share?: ReactNode;
 }

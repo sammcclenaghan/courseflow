@@ -7,7 +7,7 @@ export type SectionMeeting = {
 	scheduleType: string;
 };
 
-export type Section = {
+export type LegacySection = {
 	id: number;
 	term: string;
 	crn: string;
@@ -37,8 +37,8 @@ export type Section = {
 };
 
 export type GroupedSections = {
-	lectures: Section[];
-	labs: Section[];
-	tutorials: Section[];
-	other: Section[];
+	lectures: LegacySection[];
+	labs: LegacySection[];
+	tutorials: LegacySection[];
+	other: LegacySection[];
 };

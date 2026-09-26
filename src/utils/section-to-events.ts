@@ -1,8 +1,8 @@
 import { COURSE_COLORS, DAY_MAP } from "@/utils/constants";
 import type { CalendarEvent, SavedCourse } from "@/utils/scheduler-types";
-import type { Section, SectionMeeting } from "@/utils/sections-types";
+import type { LegacySection, SectionMeeting } from "@/utils/sections-types";
 
-export function sectionMeetings(section: Section): SectionMeeting[] {
+export function sectionMeetings(section: LegacySection): SectionMeeting[] {
 	if (section.meetings.length > 0) return section.meetings;
 
 	if (section.time === "" && section.days === "") return [];
@@ -65,7 +65,7 @@ function parseDays(daysStr: string): number[] {
 		.filter((day): day is number => day !== undefined);
 }
 
-export function formatSectionSchedule(section: Section): string {
+export function formatSectionSchedule(section: LegacySection): string {
 	return sectionMeetings(section)
 		.map((meeting) => [meeting.days, meeting.time].filter(Boolean).join(" "))
 		.filter(Boolean)
@@ -73,7 +73,7 @@ export function formatSectionSchedule(section: Section): string {
 }
 
 export function sectionToEvents(
-	section: Section,
+	section: LegacySection,
 	referenceDate: Date,
 	colorIndex: number,
 ): CalendarEvent[] {

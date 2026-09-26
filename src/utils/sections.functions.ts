@@ -1,6 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 
-export type { GroupedSections, Section } from "./sections-types";
+export type { GroupedSections, LegacySection } from "./sections-types";
 
 export const listSectionsByPidAndTerm = createServerFn({ method: "GET" })
 	.validator((data: { pid: string; term: string }) => data)

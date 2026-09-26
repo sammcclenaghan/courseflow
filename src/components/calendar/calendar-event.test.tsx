@@ -2,9 +2,9 @@ import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 import { CalendarEvent } from "@/components/calendar/calendar-event";
 import type { CalendarEvent as CalendarEventType } from "@/utils/scheduler-types";
-import type { Section } from "@/utils/sections-types";
+import type { LegacySection } from "@/utils/sections-types";
 
-function section(sectionCode: string): Section {
+function section(sectionCode: string): LegacySection {
 	return {
 		id: 1,
 		term: "202609",

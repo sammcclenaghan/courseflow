@@ -4,7 +4,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseCourseEntries } from "../src/importer/catalogImport.shared.ts";
-import type { CourseAutocompleteCourse } from "../src/catalog/course-autocomplete.ts";
+import type { CourseAutocompleteCourse } from "../src/catalog/search/course-autocomplete.ts";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const coursesPath = resolve(root, "data/import/courses.json");

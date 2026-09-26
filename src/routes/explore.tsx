@@ -2,13 +2,13 @@ import { useQuery } from "@tanstack/react-query";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ChevronLeft, Search, X } from "lucide-react";
 import { Fragment, type ReactNode, useMemo, useRef, useState } from "react";
-import { searchCourseAutocomplete } from "@/catalog/course-autocomplete";
+import { searchCourseAutocomplete } from "@/catalog/search/course-autocomplete";
 import {
 	markCourseSearchInput,
 	useCourseSearchPerformance,
-} from "@/catalog/course-search-performance";
-import { highlightTextSegments } from "@/catalog/text-highlight";
-import { useCourseAutocomplete } from "@/catalog/use-course-autocomplete";
+} from "@/catalog/search/course-search-performance";
+import { highlightTextSegments } from "@/catalog/search/text-highlight";
+import { useCourseAutocomplete } from "@/catalog/search/use-course-autocomplete";
 import { catalogQueries } from "@/queries/catalog";
 import type { CourseSearchResult, SubjectResult } from "@/utils/catalog-types";
 

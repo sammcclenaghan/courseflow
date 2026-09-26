@@ -5,8 +5,8 @@ import {
 	ScheduleRequestError,
 } from "./scheduler-shared";
 import {
+	type LegacySection,
 	mapSection,
-	type Section,
 	type SectionRow,
 } from "./sections-domain.server";
 
@@ -27,13 +27,13 @@ export type PublicScheduleResult = Omit<ScheduleResult, "id">;
 
 export type ScheduleWithSections = {
 	schedule: ScheduleResult;
-	sections: Section[];
+	sections: LegacySection[];
 };
 
 export type SharedScheduleWithSections = {
 	share: ScheduleShareResult;
 	schedule: PublicScheduleResult;
-	sections: Section[];
+	sections: LegacySection[];
 };
 
 export type ScheduleShareResult = {
@@ -328,7 +328,7 @@ LIMIT 1`,
 async function listScheduleSections(
 	scheduleId: number,
 	term: string,
-): Promise<Section[]> {
+): Promise<LegacySection[]> {
 	const { results } = await env.DB.prepare(
 		`SELECT sections.* FROM schedule_sections ss
 JOIN sections ON sections.term = ss.term AND sections.crn = ss.crn
@@ -344,7 +344,7 @@ ORDER BY ss.position, ss.created_at`,
 async function loadSectionsByCrns(
 	term: string,
 	crns: string[],
-): Promise<Section[]> {
+): Promise<LegacySection[]> {
 	if (crns.length === 0) return [];
 
 	const placeholders = crns.map(() => "?").join(", ");
@@ -363,7 +363,7 @@ async function loadSectionsByCrns(
 	});
 }
 
-function assertAllCrnsExist(crns: string[], sections: Section[]): void {
+function assertAllCrnsExist(crns: string[], sections: LegacySection[]): void {
 	const found = new Set(sections.map((section) => section.crn));
 	const missing = crns.filter((crn) => !found.has(crn));
 
