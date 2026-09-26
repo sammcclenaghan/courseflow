@@ -65,10 +65,10 @@ the latest optimistic cache state.
 
 | Purpose | Command | Expected on success |
 |---|---|---|
-| Focused test | `npm run test -- src/components/scheduler/use-serialized-schedule-commits.test.tsx` | exit 0 |
-| Check | `npm run check` | exit 0 |
-| Typecheck | `npm run typecheck` | exit 0 |
-| Full tests | `npm run test` | exit 0 |
+| Focused test | `nub run test -- src/components/scheduler/use-serialized-schedule-commits.test.tsx` | exit 0 |
+| Check | `nub run check` | exit 0 |
+| Typecheck | `nub run typecheck` | exit 0 |
+| Full tests | `nub run test` | exit 0 |
 
 ## Suggested executor toolkit
 
@@ -110,8 +110,8 @@ Run the repository-mandated discovery and load the matching server-functions
 skill before editing:
 
 ```bash
-npx @tanstack/intent@latest list
-npx @tanstack/intent@latest load @tanstack/start-client-core#start-core/server-functions
+nubx @tanstack/intent@latest list
+nubx @tanstack/intent@latest load @tanstack/start-client-core#start-core/server-functions
 ```
 
 Also read the installed `@tanstack/react-query` types/docs for mutation `scope`;
@@ -166,7 +166,7 @@ Do not add a queue library or a second state store.
 **Verify**:
 
 ```bash
-npm run typecheck
+nub run typecheck
 ```
 
 Expected: the new hook typechecks before integration.
@@ -197,7 +197,7 @@ remain able to make rapid edits; the queue is the correctness mechanism.
 
 ```bash
 grep -n "void commitCourses" src/components/scheduler/scheduler-page.tsx
-npm run typecheck
+nub run typecheck
 ```
 
 Expected: all actions call the updater-based function; typecheck exits 0. The
@@ -233,7 +233,7 @@ over rendering scheduler children.
 **Verify**:
 
 ```bash
-npm run test -- src/components/scheduler/use-serialized-schedule-commits.test.tsx
+nub run test -- src/components/scheduler/use-serialized-schedule-commits.test.tsx
 ```
 
 Expected: all race tests pass deterministically.
@@ -243,7 +243,7 @@ Expected: all race tests pass deterministically.
 **Verify**:
 
 ```bash
-npm run check && npm run typecheck && npm run test
+nub run check && nub run typecheck && nub run test
 git diff --check
 git status --short
 ```
@@ -267,7 +267,7 @@ on a local version ref; the defect is server invocation order.
 - [ ] Latest failures reconcile from the server rather than restoring a stale optimistic snapshot.
 - [ ] Separate terms cannot affect one another.
 - [ ] The six deterministic regression cases, including latest failure and remount, pass.
-- [ ] `npm run check`, `npm run typecheck`, and `npm run test` exit 0.
+- [ ] `nub run check`, `nub run typecheck`, and `nub run test` exit 0.
 - [ ] `git diff --check` exits 0.
 - [ ] No out-of-scope file is modified.
 - [ ] `plans/README.md` status is updated.

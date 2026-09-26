@@ -44,16 +44,16 @@ dispatched in parallel after 001 if desired.
 At plan generation time all required gates passed:
 
 ```text
-npm run check       passed (112 files checked)
-npm run typecheck   passed
-npm run test        passed (13 files, 49 tests)
-npm audit --omit=dev --audit-level=high   0 vulnerabilities
+nub run check       passed (112 files checked)
+nub run typecheck   passed
+nub run test        passed (13 files, 49 tests)
+nub audit --omit=dev --audit-level=high   0 vulnerabilities
 ```
 
 Every implementation plan must finish with:
 
 ```bash
-npm run check && npm run typecheck && npm run test
+nub run check && nub run typecheck && nub run test
 ```
 
 Do not run production imports, remote migrations, deployment, or other commands
@@ -75,8 +75,6 @@ in this pass. They are not rejected:
 7. Add and test a browser security-header policy, beginning with CSP report-only.
 8. Extract the duplicated default-section selection logic shared by the scheduler
    and course-detail page.
-9. Make npm build/deploy scripts self-contained instead of relying on an
-   undocumented global `nub` installation.
 
 ## Direction options not planned
 
@@ -102,7 +100,7 @@ in this pass. They are not rejected:
   rejected pending bundle and runtime measurements; the reported millisecond
   cost was unsupported.
 - **Move exact-version dependencies or generated router casts as urgent cleanup**:
-  rejected. `npm audit` found no vulnerabilities, generated casts are framework
+  rejected. `nub audit` found no vulnerabilities, generated casts are framework
   convention, and dependency classification alone does not change bundle output.
 
 ## Audit scope limitations

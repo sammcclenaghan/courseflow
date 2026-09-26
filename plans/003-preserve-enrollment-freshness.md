@@ -71,11 +71,11 @@ unrefreshed rows an explicit unknown state in the API and UI.
 
 | Purpose | Command | Expected on success |
 |---|---|---|
-| Import tests | `npm run test -- src/importer/catalogImport.sql.test.ts src/importer/catalogImport.test.ts` | exit 0 |
-| Section tests | `npm run test -- src/utils/sections.test.ts` | exit 0 |
-| Check | `npm run check` | exit 0 |
-| Typecheck | `npm run typecheck` | exit 0 |
-| Full tests | `npm run test` | exit 0 |
+| Import tests | `nub run test -- src/importer/catalogImport.sql.test.ts src/importer/catalogImport.test.ts` | exit 0 |
+| Section tests | `nub run test -- src/utils/sections.test.ts` | exit 0 |
+| Check | `nub run check` | exit 0 |
+| Typecheck | `nub run typecheck` | exit 0 |
+| Full tests | `nub run test` | exit 0 |
 
 ## Scope
 
@@ -119,7 +119,7 @@ unrefreshed rows an explicit unknown state in the API and UI.
 Run the repository-mandated discovery command before editing:
 
 ```bash
-npx @tanstack/intent@latest list
+nubx @tanstack/intent@latest list
 ```
 
 Load any directly matching importer or TanStack Start skill using the command
@@ -144,8 +144,8 @@ A nullable timestamp is the source of truth:
 **Verify**:
 
 ```bash
-npm run d1:migrate:local
-npx wrangler d1 execute course-flow-v4 --local --json --command "PRAGMA table_info(sections)" | grep "enrollment_updated_at"
+nub run d1:migrate:local
+nubx wrangler d1 execute course-flow-v4 --local --json --command "PRAGMA table_info(sections)" | grep "enrollment_updated_at"
 git diff --check -- migrations/0005_enrollment_freshness.sql
 ```
 
@@ -183,7 +183,7 @@ or real UVic requests.
 **Verify**:
 
 ```bash
-npm run test -- src/importer/catalogImport.test.ts src/importer/catalogImport.server.test.ts
+nub run test -- src/importer/catalogImport.test.ts src/importer/catalogImport.server.test.ts
 ```
 
 If extending the existing test instead of creating the second file, omit the
@@ -213,7 +213,7 @@ successful response may contain all zeroes.
 **Verify**:
 
 ```bash
-npm run test -- src/importer/catalogImport.sql.test.ts
+nub run test -- src/importer/catalogImport.sql.test.ts
 ```
 
 Expected: all SQL tests pass, including refreshed and unrefreshed paths.
@@ -240,8 +240,8 @@ constructs a complete `Section` and therefore must satisfy the shared type.
 **Verify**:
 
 ```bash
-npm run typecheck
-npm run test -- src/utils/sections.test.ts src/components/calendar/calendar-event.test.tsx
+nub run typecheck
+nub run test -- src/utils/sections.test.ts src/components/calendar/calendar-event.test.tsx
 ```
 
 Expected: exit 0 and mapping tests prove both states.
@@ -279,9 +279,9 @@ snapshots.
 **Verify**:
 
 ```bash
-npm run test -- src/utils/enrollment.test.ts src/utils/sections.test.ts
+nub run test -- src/utils/enrollment.test.ts src/utils/sections.test.ts
 grep -n "@/utils/enrollment" src/routes/courses/'$'subjectCode.tsx src/components/scheduler/selected-courses-sidebar.tsx
-npm run typecheck
+nub run typecheck
 ```
 
 Expected: helper tests pass, both UI files import the helper, and typecheck exits 0.
@@ -291,7 +291,7 @@ Expected: helper tests pass, both UI files import the helper, and typecheck exit
 **Verify**:
 
 ```bash
-npm run check && npm run typecheck && npm run test
+nub run check && nub run typecheck && nub run test
 grep -RIn "enrollment_updated_at\|enrollmentUpdatedAt" migrations src/importer src/utils src/routes/courses src/components/scheduler
 git diff --check
 git status --short
@@ -326,7 +326,7 @@ use real network or D1 calls.
 - [ ] `Section` exposes `enrollmentUpdatedAt: string | null`.
 - [ ] Both UI surfaces use the tested shared helper, display unknown data as unavailable, and do not mark it full.
 - [ ] Required regression tests pass.
-- [ ] `npm run check`, `npm run typecheck`, and `npm run test` exit 0.
+- [ ] `nub run check`, `nub run typecheck`, and `nub run test` exit 0.
 - [ ] `git diff --check` exits 0.
 - [ ] No out-of-scope file is modified.
 - [ ] `plans/README.md` status is updated.

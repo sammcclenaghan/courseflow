@@ -79,10 +79,10 @@ rows for courses whose Banner fetch completed successfully.
 
 | Purpose | Command | Expected on success |
 |---|---|---|
-| Focused tests | `npm run test -- src/importer/catalogImport.sql.test.ts src/importer/catalogImport.test.ts` | exit 0; importer tests pass |
-| Check | `npm run check` | exit 0 |
-| Typecheck | `npm run typecheck` | exit 0 |
-| Full tests | `npm run test` | exit 0; all tests pass |
+| Focused tests | `nub run test -- src/importer/catalogImport.sql.test.ts src/importer/catalogImport.test.ts` | exit 0; importer tests pass |
+| Check | `nub run check` | exit 0 |
+| Typecheck | `nub run typecheck` | exit 0 |
+| Full tests | `nub run test` | exit 0; all tests pass |
 
 ## Scope
 
@@ -116,7 +116,7 @@ rows for courses whose Banner fetch completed successfully.
 Run the repository-mandated skill discovery before editing:
 
 ```bash
-npx @tanstack/intent@latest list
+nubx @tanstack/intent@latest list
 ```
 
 If a listed importer, TypeScript, or testing skill directly matches this task,
@@ -151,7 +151,7 @@ do not add a dependency.
 **Verify**:
 
 ```bash
-npm run typecheck
+nub run typecheck
 ```
 
 Expected: exit 0 after all result construction sites provide the boolean and
@@ -184,7 +184,7 @@ no rows but must still replace the old set.
 **Verify**:
 
 ```bash
-npm run typecheck
+nub run typecheck
 git diff --check -- src/importer/catalogImport.sql.ts src/importer/catalogImport.sql.test.ts
 ```
 
@@ -202,7 +202,7 @@ failed section fetches from replacement, not from suppressing all partial work.
 **Verify**:
 
 ```bash
-npm run typecheck
+nub run typecheck
 grep -n "sectionReplacementPids" src/importer/catalogImport.cli.ts src/importer/catalogImport.server.ts src/importer/catalogImport.sql.ts
 ```
 
@@ -232,7 +232,7 @@ real network requests.
 **Verify**:
 
 ```bash
-npm run test -- src/importer/catalogImport.sql.test.ts src/importer/catalogImport.test.ts src/importer/catalogImport.server.test.ts
+nub run test -- src/importer/catalogImport.sql.test.ts src/importer/catalogImport.test.ts src/importer/catalogImport.server.test.ts
 ```
 
 If the optional new file does not exist, omit it from the command. Expected: all
@@ -243,7 +243,7 @@ selected importer tests pass.
 **Verify**:
 
 ```bash
-npm run check && npm run typecheck && npm run test
+nub run check && nub run typecheck && nub run test
 git diff --check
 git status --short
 ```
@@ -269,7 +269,7 @@ remote/local D1 in tests.
 - [ ] Successful empty section fetches still emit the intended delete.
 - [ ] The CLI still reports and safely applies partial successes.
 - [ ] Focused importer tests cover the four required cases.
-- [ ] `npm run check`, `npm run typecheck`, and `npm run test` exit 0.
+- [ ] `nub run check`, `nub run typecheck`, and `nub run test` exit 0.
 - [ ] `git diff --check` exits 0.
 - [ ] No out-of-scope file is modified.
 - [ ] `plans/README.md` status is updated.

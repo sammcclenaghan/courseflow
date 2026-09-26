@@ -100,7 +100,7 @@ export async function runCatalogImportCli(args: string[]): Promise<void> {
 	writeFileSync(sqlPath, sql);
 
 	execFileSync(
-		"npx",
+		"nubx",
 		[
 			"wrangler",
 			"d1",

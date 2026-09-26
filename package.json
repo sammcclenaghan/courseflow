@@ -85,11 +85,15 @@
     "vitest": "4.1.11",
     "wrangler": "4.125.0"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "lightningcss"
-    ]
+  "allowScripts": {
+    "esbuild": true,
+    "lightningcss": true
   },
-  "packageManager": "npm@11.12.1"
+  "devEngines": {
+    "packageManager": {
+      "name": "nub",
+      "version": "^0.9.5",
+      "onFail": "ignore"
+    }
+  }
 }

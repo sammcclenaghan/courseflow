@@ -64,10 +64,10 @@ mapping/webhook work.
 
 | Purpose | Command | Expected on success |
 |---|---|---|
-| Focused tests | `npm run test -- src/utils/feedback.test.ts` | exit 0 |
-| Check | `npm run check` | exit 0 |
-| Typecheck | `npm run typecheck` | exit 0 |
-| Full tests | `npm run test` | exit 0 |
+| Focused tests | `nub run test -- src/utils/feedback.test.ts` | exit 0 |
+| Check | `nub run check` | exit 0 |
+| Typecheck | `nub run typecheck` | exit 0 |
+| Full tests | `nub run test` | exit 0 |
 
 ## Suggested executor toolkit
 
@@ -106,8 +106,8 @@ mapping/webhook work.
 Run the repository-mandated discovery and load the server-functions skill:
 
 ```bash
-npx @tanstack/intent@latest list
-npx @tanstack/intent@latest load @tanstack/start-client-core#start-core/server-functions
+nubx @tanstack/intent@latest list
+nubx @tanstack/intent@latest load @tanstack/start-client-core#start-core/server-functions
 ```
 
 Confirm from the installed TanStack source that the request uses a Seroval
@@ -151,7 +151,7 @@ framework-level buffering.
 **Verify**:
 
 ```bash
-npm run typecheck
+nub run typecheck
 ```
 
 Expected: helper and existing parser typecheck.
@@ -174,7 +174,7 @@ Do not move this check into the client component; client validation is bypassabl
 
 ```bash
 ! grep -RIn "parseFeedbackSubmission(data, 0)" src/utils/feedback.functions.ts
-npm run typecheck
+nub run typecheck
 ```
 
 Expected: grep finds no hardcoded-zero production path and typecheck exits 0.
@@ -199,7 +199,7 @@ TanStack deserialization or JSON measurement of the whole input.
 **Verify**:
 
 ```bash
-npm run test -- src/utils/feedback.test.ts
+nub run test -- src/utils/feedback.test.ts
 ```
 
 Expected: existing sanitization tests still pass.
@@ -224,7 +224,7 @@ parser that accepts an arbitrary number.
 **Verify**:
 
 ```bash
-npm run test -- src/utils/feedback.test.ts
+nub run test -- src/utils/feedback.test.ts
 ```
 
 Expected: all old and new feedback tests pass.
@@ -234,7 +234,7 @@ Expected: all old and new feedback tests pass.
 **Verify**:
 
 ```bash
-npm run check && npm run typecheck && npm run test
+nub run check && nub run typecheck && nub run test
 git diff --check
 git status --short
 ```
@@ -257,7 +257,7 @@ character-count implementation would otherwise look correct in ASCII-only tests.
 - [ ] Selected courses, nested sections, events, and search keys are capped before mapping.
 - [ ] New tests exercise the production helper and all required boundaries.
 - [ ] Existing feedback behavior and response statuses remain intact.
-- [ ] `npm run check`, `npm run typecheck`, and `npm run test` exit 0.
+- [ ] `nub run check`, `nub run typecheck`, and `nub run test` exit 0.
 - [ ] `git diff --check` exits 0.
 - [ ] No out-of-scope file is modified.
 - [ ] `plans/README.md` status is updated.

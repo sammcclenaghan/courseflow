@@ -15,11 +15,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: nubjs/setup-nub@v0
         with:
           node-version: 24
-          cache: npm
-      - run: npm ci
-      - run: npm run check
-      - run: npm run typecheck
-      - run: npm run test
+      - run: nub ci
+      - run: nub run check
+      - run: nub run typecheck
+      - run: nub run test

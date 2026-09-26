@@ -7,7 +7,7 @@
 > `plans/README.md` unless a reviewer dispatched you and said they maintain the
 > index.
 >
-> **Drift check (run first)**: `git diff --stat ca00dbd..HEAD -- AGENTS.md package.json package-lock.json .github/workflows plans/README.md`
+> **Drift check (run first)**: `git diff --stat ca00dbd..HEAD -- AGENTS.md package.json nub.lock .github/workflows plans/README.md`
 > If `AGENTS.md` or the package scripts changed since this plan was written,
 > compare them with the excerpts below. Stop if the required verification gates
 > are no longer `check`, `typecheck`, and `test`.
@@ -34,8 +34,8 @@ pipeline.
 - `AGENTS.md:13-17` defines the mandatory gates:
 
   ```md
-  - `npm run check` and `npm run typecheck` must pass before considering any task complete.
-  - `npm run test` must pass. Add or update tests for any behaviour change.
+  - `nub run check` and `nub run typecheck` must pass before considering any task complete.
+  - `nub run test` must pass. Add or update tests for any behaviour change.
   ```
 
 - `package.json:10-13,36` already exposes the exact scripts:
@@ -48,7 +48,7 @@ pipeline.
 
 - There is no tracked `.github/workflows/` directory. `.github/` currently only
   contains the README screenshot.
-- The package manager is pinned as `npm@11.12.1` in `package.json`. Use `npm ci`,
+- The package manager is declared as nub in `package.json#devEngines`. Use `nub ci`,
   not pnpm or an unpinned install command.
 - Baseline at planning time: Biome checked 112 files, TypeScript exited 0, and
   Vitest passed 13 files / 49 tests.
@@ -57,10 +57,10 @@ pipeline.
 
 | Purpose | Command | Expected on success |
 |---|---|---|
-| Install | `npm ci` | exit 0; lockfile remains unchanged |
-| Check | `npm run check` | exit 0; “No fixes applied” |
-| Typecheck | `npm run typecheck` | exit 0; no errors |
-| Tests | `npm run test` | exit 0; all test files pass |
+| Install | `nub ci` | exit 0; lockfile remains unchanged |
+| Check | `nub run check` | exit 0; “No fixes applied” |
+| Typecheck | `nub run typecheck` | exit 0; no errors |
+| Tests | `nub run test` | exit 0; all test files pass |
 | Diff hygiene | `git diff --check` | exit 0; no output |
 
 ## Scope
@@ -70,7 +70,7 @@ pipeline.
 - `plans/README.md` (status row only)
 
 **Out of scope**:
-- `package.json` and `package-lock.json`; the required scripts already exist.
+- `package.json` and `nub.lock`; the required scripts already exist.
 - Deployment, Wrangler authentication, D1 remote access, catalog imports, and
   generated assets.
 - Adding build, deploy, dependency-audit, release, or preview jobs.
@@ -91,7 +91,7 @@ pipeline.
 Before editing, run the project-mandated command:
 
 ```bash
-npx @tanstack/intent@latest list
+nubx @tanstack/intent@latest list
 ```
 
 No current local skill is expected to be specific to a GitHub Actions-only
@@ -109,12 +109,12 @@ Create `.github/workflows/ci.yml` with these properties:
 3. Grant only `contents: read` permission.
 4. Add one job named `checks` on `ubuntu-latest` with a 10-minute timeout.
 5. Use `actions/checkout@v4` and `actions/setup-node@v4`.
-6. Configure Node 24 and npm caching via `cache: npm`.
+6. Set up nub and Node 24 via `nubjs/setup-nub`.
 7. Run, in this order:
-   - `npm ci`
-   - `npm run check`
-   - `npm run typecheck`
-   - `npm run test`
+   - `nub ci`
+   - `nub run check`
+   - `nub run typecheck`
+   - `nub run test`
 8. Do not add secrets, Cloudflare credentials, D1 setup, or deployment steps.
 
 Use normal two-space YAML indentation. Keep the workflow intentionally small;
@@ -138,11 +138,11 @@ const required = [
   "actions/checkout@v4",
   "actions/setup-node@v4",
   "node-version: 24",
-  "cache: npm",
-  "npm ci",
-  "npm run check",
-  "npm run typecheck",
-  "npm run test",
+  "nubjs/setup-nub",
+  "nub ci",
+  "nub run check",
+  "nub run typecheck",
+  "nub run test",
 ]
 for (const item of required) {
   if (!text.includes(item)) throw new Error(`Missing workflow contract: ${item}`)
@@ -156,13 +156,13 @@ Expected: Ruby parses the YAML, the Node contract check exits 0, and
 
 ### Step 2: Re-run the same gates locally
 
-Run the commands exactly as CI will run them, except `npm ci` may be skipped if
+Run the commands exactly as CI will run them, except `nub ci` may be skipped if
 it was already run in this unchanged worktree.
 
 **Verify**:
 
 ```bash
-npm run check && npm run typecheck && npm run test
+nub run check && nub run typecheck && nub run test
 ```
 
 Expected: exit 0; all tests pass.
@@ -191,11 +191,11 @@ and passes. Do not push merely to perform this verification.
 ## Done criteria
 
 - [ ] `.github/workflows/ci.yml` exists and triggers on pull requests and pushes to `main`.
-- [ ] The workflow uses Node 24, `npm ci`, and exactly the three required npm gates.
+- [ ] The workflow uses Node 24, `nub ci`, and exactly the three required gates.
 - [ ] The workflow contains no credentials, D1 setup, build, or deploy step.
-- [ ] `npm run check` exits 0.
-- [ ] `npm run typecheck` exits 0.
-- [ ] `npm run test` exits 0.
+- [ ] `nub run check` exits 0.
+- [ ] `nub run typecheck` exits 0.
+- [ ] `nub run test` exits 0.
 - [ ] `git diff --check` exits 0.
 - [ ] No file outside the in-scope list is modified.
 - [ ] The status row in `plans/README.md` is updated.
@@ -205,7 +205,7 @@ and passes. Do not push merely to perform this verification.
 Stop and report if:
 
 - `package.json` no longer contains all three documented scripts.
-- `npm ci` changes `package-lock.json` or requires an undocumented registry or
+- `nub ci` changes `nub.lock` or requires an undocumented registry or
   credential.
 - Node 24 is incompatible with the pinned package set.
 - The repository gained another CI workflow after `ca00dbd` that already runs

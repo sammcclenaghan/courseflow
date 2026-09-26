@@ -75,10 +75,10 @@ and combine inserts so the complete save path fits both platform limits.
 
 | Purpose | Command | Expected on success |
 |---|---|---|
-| Focused tests | `npm run test -- src/utils/d1-query-limits.test.ts src/utils/sections-by-crns.server.test.ts src/utils/schedule-write-statements.test.ts src/utils/scheduler.test.ts` | exit 0; all named files run and pass |
-| Check | `npm run check` | exit 0 |
-| Typecheck | `npm run typecheck` | exit 0 |
-| Full tests | `npm run test` | exit 0 |
+| Focused tests | `nub run test -- src/utils/d1-query-limits.test.ts src/utils/sections-by-crns.server.test.ts src/utils/schedule-write-statements.test.ts src/utils/scheduler.test.ts` | exit 0; all named files run and pass |
+| Check | `nub run check` | exit 0 |
+| Typecheck | `nub run typecheck` | exit 0 |
+| Full tests | `nub run test` | exit 0 |
 
 ## Suggested executor toolkit
 
@@ -122,8 +122,8 @@ and combine inserts so the complete save path fits both platform limits.
 Run:
 
 ```bash
-npx @tanstack/intent@latest list
-npx @tanstack/intent@latest load @tanstack/start-client-core#start-core/server-routes
+nubx @tanstack/intent@latest list
+nubx @tanstack/intent@latest load @tanstack/start-client-core#start-core/server-routes
 ```
 
 Read <https://developers.cloudflare.com/d1/platform/limits/> and record the
@@ -160,7 +160,7 @@ successfully and 101 remains rejected.
 **Verify**:
 
 ```bash
-npm run test -- src/utils/d1-query-limits.test.ts src/utils/scheduler.test.ts
+nub run test -- src/utils/d1-query-limits.test.ts src/utils/scheduler.test.ts
 ```
 
 Expected: both named files run and all boundary assertions pass. Because the test
@@ -202,8 +202,8 @@ D1.
 **Verify**:
 
 ```bash
-npm run test -- src/utils/sections-by-crns.server.test.ts
-npm run typecheck
+nub run test -- src/utils/sections-by-crns.server.test.ts
+nub run typecheck
 ```
 
 Expected: the named test runs/passes and typecheck exits 0.
@@ -238,7 +238,7 @@ Create `src/utils/schedule-write-statements.test.ts` covering 0, 1, 20, 21, and
 **Verify**:
 
 ```bash
-npm run test -- src/utils/schedule-write-statements.test.ts
+nub run test -- src/utils/schedule-write-statements.test.ts
 ```
 
 Expected: all statement-count/binding/order cases pass.
@@ -273,7 +273,7 @@ commits.
 ```bash
 ! grep -RIn '\.bind(term, \.\.\.crns)\|\.bind(params.term, \.\.\.crns)' src/utils/scheduler-db.server.ts src/routes/api/v1/sections/by-crns/'$'term.ts
 ! grep -n '\.\.\.uniqueCrns.map' src/utils/scheduler-db.server.ts
-npm run typecheck
+nub run typecheck
 ```
 
 Expected: unsafe read binding and one-statement-per-CRN write patterns are gone;
@@ -284,8 +284,8 @@ typecheck exits 0.
 **Verify**:
 
 ```bash
-npm run test -- src/utils/d1-query-limits.test.ts src/utils/sections-by-crns.server.test.ts src/utils/schedule-write-statements.test.ts src/utils/scheduler.test.ts
-npm run check && npm run typecheck && npm run test
+nub run test -- src/utils/d1-query-limits.test.ts src/utils/sections-by-crns.server.test.ts src/utils/schedule-write-statements.test.ts src/utils/scheduler.test.ts
+nub run check && nub run typecheck && nub run test
 git diff --check
 git status --short
 ```
@@ -317,7 +317,7 @@ Required machine-checkable assertions:
 - [ ] A 100-CRN persistence batch contains seven statements, all inserts at or below 100 bindings.
 - [ ] Query test doubles verify empty, dedupe, placeholders, binding counts, and request ordering.
 - [ ] Schedule statement tests verify 0/1/20/21/100 boundaries and positions.
-- [ ] `npm run check`, `npm run typecheck`, and `npm run test` exit 0.
+- [ ] `nub run check`, `nub run typecheck`, and `nub run test` exit 0.
 - [ ] `git diff --check` exits 0.
 - [ ] No out-of-scope file is modified.
 - [ ] `plans/README.md` status is updated.
