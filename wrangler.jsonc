@@ -12,18 +12,16 @@
 			"*/15 * * * *"
 		]
 	},
-	"durable_objects": {
-		"bindings": [
-			{
-				"name": "SCHEDULE_SHARE_ROOM",
-				"class_name": "ScheduleShareRoom"
-			}
-		]
-	},
 	"migrations": [
 		{
 			"tag": "v1",
 			"new_sqlite_classes": [
+				"ScheduleShareRoom"
+			]
+		},
+		{
+			"tag": "v2",
+			"deleted_classes": [
 				"ScheduleShareRoom"
 			]
 		}
@@ -54,14 +52,6 @@
 			"assets": {},
 			"vars": {
 				"APP_ENV": "local"
-			},
-			"durable_objects": {
-				"bindings": [
-					{
-						"name": "SCHEDULE_SHARE_ROOM",
-						"class_name": "ScheduleShareRoom"
-					}
-				]
 			},
 			"d1_databases": [
 				{

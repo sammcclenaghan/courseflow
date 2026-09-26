@@ -1,8 +1,6 @@
 import handler from "@tanstack/react-start/server-entry";
 import { refreshSavedScheduleEnrollment } from "./utils/enrollment-refresh.server";
 
-export { ScheduleShareRoom } from "./durable-objects/schedule-share-room";
-
 export default {
 	fetch: handler.fetch,
 	async scheduled(

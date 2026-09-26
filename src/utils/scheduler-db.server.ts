@@ -1,5 +1,4 @@
 import { env } from "cloudflare:workers";
-import type { ScheduleShareEvent } from "@/durable-objects/schedule-share-room";
 import {
 	InvalidScheduleCRNsError,
 	normalizeScheduleCrns,
@@ -116,8 +115,6 @@ VALUES ((SELECT id FROM schedules WHERE token = ? AND term = ?), ?, ?, ?)`,
 		throw new ScheduleRequestError("schedule not found after save", 500);
 	}
 
-	await notifyScheduleUpdated(saved.id, saved.updated_at);
-
 	return {
 		schedule: mapSchedule(saved),
 		sections,
@@ -138,9 +135,6 @@ export async function deleteScheduleByToken(
 	term: string,
 	token: string,
 ): Promise<void> {
-	const schedule = await findScheduleByToken(term, token);
-	const share = schedule ? await findShareByScheduleId(schedule.id) : null;
-
 	await env.DB.batch([
 		env.DB.prepare(
 			`DELETE FROM schedule_shares
@@ -155,13 +149,6 @@ WHERE schedule_id = (SELECT id FROM schedules WHERE token = ? AND term = ?)`,
 			term,
 		),
 	]);
-
-	if (share) {
-		await broadcastShareEvent({
-			type: "schedule.deleted",
-			shareId: share.share_id,
-		});
-	}
 }
 
 export async function getScheduleShareByToken(
@@ -222,11 +209,6 @@ WHERE schedule_id = ?`,
 		)
 			.bind(shareId, schedule.id)
 			.run();
-
-		await broadcastShareEvent({
-			type: "schedule.share_revoked",
-			shareId: existing.share_id,
-		});
 	} else {
 		await env.DB.prepare(
 			"INSERT INTO schedule_shares (share_id, schedule_id) VALUES (?, ?)",
@@ -250,17 +232,9 @@ export async function revokeScheduleShare(
 	const schedule = await findScheduleByToken(term, token);
 	if (!schedule) return;
 
-	const share = await findShareByScheduleId(schedule.id);
 	await env.DB.prepare("DELETE FROM schedule_shares WHERE schedule_id = ?")
 		.bind(schedule.id)
 		.run();
-
-	if (share) {
-		await broadcastShareEvent({
-			type: "schedule.share_revoked",
-			shareId: share.share_id,
-		});
-	}
 }
 
 export async function getSharedSchedule(
@@ -425,30 +399,4 @@ function mapSharedScheduleShare(row: SharedScheduleRow): ScheduleShareResult {
 
 function createShareId(): string {
 	return crypto.randomUUID();
-}
-
-async function notifyScheduleUpdated(
-	scheduleId: number,
-	updatedAt: string,
-): Promise<void> {
-	const share = await findShareByScheduleId(scheduleId);
-	if (!share) return;
-
-	await broadcastShareEvent({
-		type: "schedule.updated",
-		shareId: share.share_id,
-		updatedAt,
-	});
-}
-
-async function broadcastShareEvent(event: ScheduleShareEvent): Promise<void> {
-	try {
-		const room = env.SCHEDULE_SHARE_ROOM.getByName(event.shareId);
-		await room.broadcastUpdate(event);
-	} catch (error) {
-		console.warn("Failed to broadcast shared schedule event", {
-			shareId: event.shareId,
-			error: error instanceof Error ? error.message : String(error),
-		});
-	}
 }

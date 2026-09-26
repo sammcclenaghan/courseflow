@@ -1,17 +1,14 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { Copy, Loader2 } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Calendar } from "@/components/calendar/calendar";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useIsMobile } from "@/lib/use-media-query";
 import { cn } from "@/lib/utils";
 import { scheduleQueryKey } from "@/queries/scheduler";
-import {
-	sharedScheduleQueries,
-	sharedScheduleQueryKey,
-} from "@/queries/sharing";
+import { sharedScheduleQueries } from "@/queries/sharing";
 import { getTermLabel } from "@/utils/constants";
 import { buildSavedCourses } from "@/utils/scheduler-domain";
 import type { SavedCourse } from "@/utils/scheduler-types";
@@ -32,29 +29,6 @@ function SharedSchedulePage() {
 	const [isCopying, setIsCopying] = useState(false);
 
 	const sharedQuery = useQuery(sharedScheduleQueries.byShareId(shareId));
-
-	useEffect(() => {
-		if (!sharedQuery.data) return;
-
-		const protocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-		const socket = new WebSocket(
-			`${protocol}//${window.location.host}/api/v1/shared-schedules/${shareId}/events`,
-		);
-
-		const handleMessage = (event: MessageEvent) => {
-			if (event.data === "pong") return;
-			queryClient.invalidateQueries({
-				queryKey: sharedScheduleQueryKey(shareId),
-			});
-		};
-
-		socket.addEventListener("message", handleMessage);
-
-		return () => {
-			socket.removeEventListener("message", handleMessage);
-			socket.close();
-		};
-	}, [queryClient, shareId, sharedQuery.data]);
 
 	const savedCourses = useMemo(() => {
 		if (!sharedQuery.data) return [];

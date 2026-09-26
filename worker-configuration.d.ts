@@ -5,18 +5,15 @@ interface __BaseEnv_Env {
 	DB: D1Database;
 	APP_ENV: "local" | "production";
 	DISCORD_FEEDBACK_WEBHOOK_URL: string;
-	SCHEDULE_SHARE_ROOM: DurableObjectNamespace<import("./src/server").ScheduleShareRoom>;
 }
 declare namespace Cloudflare {
 	interface GlobalProps {
 		mainModule: typeof import("./src/server");
-		durableNamespaces: "ScheduleShareRoom";
 	}
 	interface LocalEnv {
 		DB: D1Database;
 		APP_ENV: "local";
 		DISCORD_FEEDBACK_WEBHOOK_URL: string;
-		SCHEDULE_SHARE_ROOM: DurableObjectNamespace<import("./src/server").ScheduleShareRoom>;
 	}
 	interface Env extends __BaseEnv_Env {}
 }
