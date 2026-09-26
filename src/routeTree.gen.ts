@@ -21,7 +21,6 @@ import { Route as ApiV1CoursesSubjectsRouteImport } from './routes/api/v1/course
 import { Route as ApiV1CoursesCodeSubjectCodeRouteImport } from './routes/api/v1/courses/code/$subjectCode'
 import { Route as ApiV1SectionsPidTermRouteImport } from './routes/api/v1/sections/$pid/$term'
 import { Route as ApiV1SectionsByCrnsTermRouteImport } from './routes/api/v1/sections/by-crns/$term'
-import { Route as ApiV1SharedSchedulesShareIdEventsRouteImport } from './routes/api/v1/shared-schedules/$shareId/events'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -84,12 +83,6 @@ const ApiV1SectionsByCrnsTermRoute = ApiV1SectionsByCrnsTermRouteImport.update({
   path: '/api/v1/sections/by-crns/$term',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiV1SharedSchedulesShareIdEventsRoute =
-  ApiV1SharedSchedulesShareIdEventsRouteImport.update({
-    id: '/api/v1/shared-schedules/$shareId/events',
-    path: '/api/v1/shared-schedules/$shareId/events',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -104,7 +97,6 @@ export interface FileRoutesByFullPath {
   '/api/v1/courses/code/$subjectCode': typeof ApiV1CoursesCodeSubjectCodeRoute
   '/api/v1/sections/$pid/$term': typeof ApiV1SectionsPidTermRoute
   '/api/v1/sections/by-crns/$term': typeof ApiV1SectionsByCrnsTermRoute
-  '/api/v1/shared-schedules/$shareId/events': typeof ApiV1SharedSchedulesShareIdEventsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -119,7 +111,6 @@ export interface FileRoutesByTo {
   '/api/v1/courses/code/$subjectCode': typeof ApiV1CoursesCodeSubjectCodeRoute
   '/api/v1/sections/$pid/$term': typeof ApiV1SectionsPidTermRoute
   '/api/v1/sections/by-crns/$term': typeof ApiV1SectionsByCrnsTermRoute
-  '/api/v1/shared-schedules/$shareId/events': typeof ApiV1SharedSchedulesShareIdEventsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -135,7 +126,6 @@ export interface FileRoutesById {
   '/api/v1/courses/code/$subjectCode': typeof ApiV1CoursesCodeSubjectCodeRoute
   '/api/v1/sections/$pid/$term': typeof ApiV1SectionsPidTermRoute
   '/api/v1/sections/by-crns/$term': typeof ApiV1SectionsByCrnsTermRoute
-  '/api/v1/shared-schedules/$shareId/events': typeof ApiV1SharedSchedulesShareIdEventsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -152,7 +142,6 @@ export interface FileRouteTypes {
     | '/api/v1/courses/code/$subjectCode'
     | '/api/v1/sections/$pid/$term'
     | '/api/v1/sections/by-crns/$term'
-    | '/api/v1/shared-schedules/$shareId/events'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -167,7 +156,6 @@ export interface FileRouteTypes {
     | '/api/v1/courses/code/$subjectCode'
     | '/api/v1/sections/$pid/$term'
     | '/api/v1/sections/by-crns/$term'
-    | '/api/v1/shared-schedules/$shareId/events'
   id:
     | '__root__'
     | '/'
@@ -182,7 +170,6 @@ export interface FileRouteTypes {
     | '/api/v1/courses/code/$subjectCode'
     | '/api/v1/sections/$pid/$term'
     | '/api/v1/sections/by-crns/$term'
-    | '/api/v1/shared-schedules/$shareId/events'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -198,7 +185,6 @@ export interface RootRouteChildren {
   ApiV1CoursesCodeSubjectCodeRoute: typeof ApiV1CoursesCodeSubjectCodeRoute
   ApiV1SectionsPidTermRoute: typeof ApiV1SectionsPidTermRoute
   ApiV1SectionsByCrnsTermRoute: typeof ApiV1SectionsByCrnsTermRoute
-  ApiV1SharedSchedulesShareIdEventsRoute: typeof ApiV1SharedSchedulesShareIdEventsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -287,13 +273,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiV1SectionsByCrnsTermRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/v1/shared-schedules/$shareId/events': {
-      id: '/api/v1/shared-schedules/$shareId/events'
-      path: '/api/v1/shared-schedules/$shareId/events'
-      fullPath: '/api/v1/shared-schedules/$shareId/events'
-      preLoaderRoute: typeof ApiV1SharedSchedulesShareIdEventsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -310,8 +289,6 @@ const rootRouteChildren: RootRouteChildren = {
   ApiV1CoursesCodeSubjectCodeRoute: ApiV1CoursesCodeSubjectCodeRoute,
   ApiV1SectionsPidTermRoute: ApiV1SectionsPidTermRoute,
   ApiV1SectionsByCrnsTermRoute: ApiV1SectionsByCrnsTermRoute,
-  ApiV1SharedSchedulesShareIdEventsRoute:
-    ApiV1SharedSchedulesShareIdEventsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

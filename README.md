@@ -11,7 +11,7 @@ Fourth iteration of the project: it started as a Go CLI scraper, grew into a Go 
 ## Stack
 
 - TanStack Start + Router + Query
-- Cloudflare Workers, D1, and Durable Objects (real-time schedule sharing)
+- Cloudflare Workers and D1
 - Biome, TypeScript, Vitest
 
 ## Development

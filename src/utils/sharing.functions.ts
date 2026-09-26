@@ -75,7 +75,7 @@ export const revokeMyScheduleShare = createServerFn({ method: "POST" })
 export const getSharedScheduleById = createServerFn({ method: "GET" })
 	.validator((data: ShareInput) => data)
 	.handler(async ({ data }): Promise<SharedScheduleWithSections | null> => {
-		setResponseHeader("Cache-Control", "public, max-age=15");
+		noStore();
 		const { getSharedSchedule } = await import("./scheduler-db.server");
 		return getSharedSchedule(data.shareId);
 	});
