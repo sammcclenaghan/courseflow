@@ -17,7 +17,7 @@ export function buildCourseFromSection(section: LegacySection): Course {
 		credits: section.units,
 		hoursCatalogText: "",
 		notes: "",
-		preAndCorequisites: "",
+		requisites: null,
 		createdAt: "",
 		updatedAt: "",
 	};

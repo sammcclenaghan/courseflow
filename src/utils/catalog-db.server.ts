@@ -19,7 +19,7 @@ type CourseRow = {
 	credits: string;
 	hours_catalog_text: string;
 	notes: string;
-	pre_and_corequisites: string;
+	requisites: string | null;
 	created_at: string;
 	updated_at: string;
 };
@@ -268,7 +268,7 @@ function mapCourseRow(row: CourseRow): Course {
 		credits: row.credits,
 		hoursCatalogText: row.hours_catalog_text,
 		notes: row.notes,
-		preAndCorequisites: row.pre_and_corequisites,
+		requisites: row.requisites ? JSON.parse(row.requisites) : null,
 		createdAt: row.created_at,
 		updatedAt: row.updated_at,
 	};

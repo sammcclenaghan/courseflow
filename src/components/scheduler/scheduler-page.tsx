@@ -195,7 +195,7 @@ function courseFromSearchResult(result: CourseSearchResult): Course {
 		credits: result.credits,
 		hoursCatalogText: "",
 		notes: "",
-		preAndCorequisites: "",
+		requisites: null,
 		createdAt: "",
 		updatedAt: "",
 	};
