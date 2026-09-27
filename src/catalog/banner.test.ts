@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { parseSection } from "./banner";
 
-const dir = "tests/fixtures/raw";
+const dir = "tests/fixtures/banner";
 const read = (file: string) =>
 	JSON.parse(readFileSync(`${dir}/${file}`, "utf8"));
 const goldens = readdirSync(dir).filter((file) =>
