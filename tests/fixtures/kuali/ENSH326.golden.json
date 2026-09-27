@@ -7,5 +7,12 @@
 		"Credit will be granted for only one of ENSH 326, ENGL 414A, ENGL 414B."
 	],
 	"credits": "1.5",
-	"hours": "3-0-0"
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "text",
+		"text": "Academic Writing Requirement satisfied."
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

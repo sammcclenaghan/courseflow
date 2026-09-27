@@ -7,5 +7,9 @@
 		"Credit will be granted for only one of ADMN 311, HSD 404, POLI 350."
 	],
 	"credits": "1.5",
-	"hours": null
+	"hours": null,
+	"prerequisites": null,
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

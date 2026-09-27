@@ -8,5 +8,9 @@
 		"This is a field course offered at the Bamfield Marine Sciences Centre for upper level Biology credit. Please visit the Bamfield Marine Sciences Centre website for more information."
 	],
 	"credits": "1.5 or 3",
-	"hours": null
+	"hours": null,
+	"prerequisites": null,
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

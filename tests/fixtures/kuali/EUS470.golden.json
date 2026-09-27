@@ -8,5 +8,32 @@
 		"Satisfies the experiential learning requirement for students completing a Major or Honours in Political Science with the European Studies Option."
 	],
 	"credits": "1.5",
-	"hours": null
+	"hours": null,
+	"prerequisites": {
+		"type": "all",
+		"items": [
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"EUS270",
+					"ECON270",
+					"SLLC270",
+					"POLI211"
+				]
+			},
+			{
+				"type": "text",
+				"text": "Permission of the program."
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": [
+		"EUS 200 and one of EUS 311 or POLI 311 recommended prior to EUS 470."
+	]
 }

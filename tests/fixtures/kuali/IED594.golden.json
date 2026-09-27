@@ -5,5 +5,9 @@
 	"description": "Explores decolonial, generated knowledge and relational approaches to, and features of, effective overviews of literature, context and resources for the development of projects or theses.",
 	"notes": [],
 	"credits": "1.5",
-	"hours": null
+	"hours": null,
+	"prerequisites": null,
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

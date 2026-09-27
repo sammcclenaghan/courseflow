@@ -7,5 +7,9 @@
 		"Credit will be granted for only one of LAW 330A, LAW 343 (if taken as section A01 in Sep - Dec 2015, Jan - Apr 2017, Sep - Dec 2017 or Sep - Dec 2019)."
 	],
 	"credits": "1.5",
-	"hours": "3-0-0"
+	"hours": "3-0-0",
+	"prerequisites": null,
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

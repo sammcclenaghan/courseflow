@@ -9,5 +9,19 @@
 		"STAT 252 cannot be used to satisfy the prerequisites."
 	],
 	"credits": "1.5",
-	"hours": "3-1-0"
+	"hours": "3-1-0",
+	"prerequisites": {
+		"type": "courses",
+		"need": 1,
+		"timing": "completed",
+		"minGrade": "C",
+		"minGpa": null,
+		"courses": [
+			"ECON245",
+			"STAT260"
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

@@ -8,5 +8,58 @@
 		"May be offered as a joint undergraduate and graduate class."
 	],
 	"credits": "1.5",
-	"hours": "3-0-0"
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "all",
+		"items": [
+			{
+				"type": "some",
+				"count": 1,
+				"items": [
+					{
+						"type": "courses",
+						"need": "all",
+						"timing": "completed",
+						"minGrade": "B+",
+						"minGpa": null,
+						"courses": [
+							"CSC226"
+						]
+					},
+					{
+						"type": "all",
+						"items": [
+							{
+								"type": "courses",
+								"need": "all",
+								"timing": "completed",
+								"minGrade": "B+",
+								"minGpa": null,
+								"courses": [
+									"CSC225"
+								]
+							},
+							{
+								"type": "courses",
+								"need": "all",
+								"timing": "completed",
+								"minGrade": "B",
+								"minGpa": null,
+								"courses": [
+									"MATH222"
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "text",
+				"text": "minimum third-year standing."
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

@@ -7,5 +7,28 @@
 		"Not open to fluent speakers of Korean."
 	],
 	"credits": "1.5",
-	"hours": "3-0-0"
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "some",
+		"count": 1,
+		"items": [
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": "B",
+				"minGpa": null,
+				"courses": [
+					"PAAS129"
+				]
+			},
+			{
+				"type": "text",
+				"text": "or permission of the department"
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

@@ -15,6 +15,23 @@ export type Meeting = {
 	endDate: string;
 };
 
+export type Requirement =
+	| { type: "all"; items: Requirement[] }
+	| { type: "some"; count: number; items: Requirement[] }
+	| {
+			type: "courses";
+			/** How many of the courses, or how many units from them. */
+			need: "all" | number | { units: number };
+			/** Whether the courses may be taken at the same time. */
+			timing: "completed" | "concurrent" | "either";
+			/** e.g. "B+" */
+			minGrade: string | null;
+			minGpa: number | null;
+			/** Course codes, e.g. "MATH100" */
+			courses: string[];
+	  }
+	| { type: "text"; text: string };
+
 export type Course = {
 	pid: string;
 	/** e.g. "CSC110" */
@@ -26,6 +43,10 @@ export type Course = {
 	credits: string | null;
 	/** Lecture-lab-tutorial hours, e.g. "3-2-0" */
 	hours: string | null;
+	prerequisites: Requirement | null;
+	preOrCorequisites: Requirement | null;
+	corequisites: Requirement | null;
+	recommendations: string[];
 };
 
 export type Section = {

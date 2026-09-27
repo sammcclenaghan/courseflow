@@ -7,5 +7,29 @@
 		"Credit will be granted for only one of ANTH 400A, ANTH 400."
 	],
 	"credits": "1.5",
-	"hours": "3-0-0"
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "all",
+		"items": [
+			{
+				"type": "courses",
+				"need": "all",
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": 4,
+				"courses": [
+					"ANTH200",
+					"ANTH240",
+					"ANTH250"
+				]
+			},
+			{
+				"type": "text",
+				"text": "minimum fourth-year standing"
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

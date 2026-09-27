@@ -8,5 +8,12 @@
 		"May count towards a Minor in Film Studies. No knowledge of German required."
 	],
 	"credits": null,
-	"hours": "3-0-0"
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "text",
+		"text": "Academic Writing Requirement satisfied."
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

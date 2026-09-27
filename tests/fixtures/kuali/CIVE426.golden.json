@@ -7,5 +7,19 @@
 		"Credit will be granted for only one of CIVE 426, CIVE 480C (if taken in the same topic)."
 	],
 	"credits": "1.5",
-	"hours": "3-0-0"
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "courses",
+		"need": "all",
+		"timing": "completed",
+		"minGrade": null,
+		"minGpa": null,
+		"courses": [
+			"CIVE351",
+			"CIVE352"
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

@@ -8,5 +8,9 @@
 		"May be offered as a joint undergraduate and graduate class."
 	],
 	"credits": "1.5",
-	"hours": null
+	"hours": null,
+	"prerequisites": null,
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

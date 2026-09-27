@@ -9,5 +9,42 @@
 		"For students in Cultural Resource Management, an application is needed. Contact crmcoord@uvic.ca for instructions."
 	],
 	"credits": "1.5 or 3",
-	"hours": null
+	"hours": null,
+	"prerequisites": {
+		"type": "all",
+		"items": [
+			{
+				"type": "courses",
+				"need": {
+					"units": 6
+				},
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"AHVS200",
+					"AHVS202",
+					"AHVS386",
+					"AHVS486A",
+					"AHVS486B",
+					"AHVS493"
+				]
+			},
+			{
+				"type": "text",
+				"text": "fourth-year standing"
+			},
+			{
+				"type": "text",
+				"text": "a declared Honours or Major in Art History and Visual Studies or Visual Arts; or a declared Minor in Museum Studies; or admission to the Cultural and Resource Management Diploma"
+			},
+			{
+				"type": "text",
+				"text": "permission of the department"
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

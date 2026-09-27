@@ -8,5 +8,46 @@
 		"See \"Credit Limit - Beginning Level Statistics Courses\"."
 	],
 	"credits": "1.5",
-	"hours": "3-1-0"
+	"hours": "3-1-0",
+	"prerequisites": {
+		"type": "courses",
+		"need": 1,
+		"timing": "completed",
+		"minGrade": null,
+		"minGpa": null,
+		"courses": [
+			"MATH100",
+			"MATH102",
+			"MATH109"
+		]
+	},
+	"preOrCorequisites": {
+		"type": "all",
+		"items": [
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "either",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"ECON103",
+					"ECON103C",
+					"ECON180"
+				]
+			},
+			{
+				"type": "courses",
+				"need": "all",
+				"timing": "either",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"ECON104"
+				]
+			}
+		]
+	},
+	"corequisites": null,
+	"recommendations": []
 }

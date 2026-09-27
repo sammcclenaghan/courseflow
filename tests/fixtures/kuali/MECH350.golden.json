@@ -7,5 +7,60 @@
 		"Credit will be granted for only one of MECH 350, MECH 260, BME 350, BME 351."
 	],
 	"credits": "1.5",
-	"hours": "3-3-1"
+	"hours": "3-3-1",
+	"prerequisites": {
+		"type": "all",
+		"items": [
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"MECH200",
+					"MECH200B",
+					"ECE299",
+					"ELEC299"
+				]
+			},
+			{
+				"type": "courses",
+				"need": "all",
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"MECH220",
+					"MECH285",
+					"MECH335",
+					"ENGR001"
+				]
+			},
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"ECE250",
+					"ELEC250"
+				]
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": {
+		"type": "courses",
+		"need": 1,
+		"timing": "concurrent",
+		"minGrade": null,
+		"minGpa": null,
+		"courses": [
+			"STAT254",
+			"STAT260"
+		]
+	},
+	"recommendations": []
 }

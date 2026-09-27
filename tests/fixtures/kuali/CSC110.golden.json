@@ -7,5 +7,45 @@
 		"Credit will be granted for only one of CSC 110, CSC 111."
 	],
 	"credits": "1.5",
-	"hours": "3-2-0"
+	"hours": "3-2-0",
+	"prerequisites": {
+		"type": "some",
+		"count": 1,
+		"items": [
+			{
+				"type": "some",
+				"count": 1,
+				"items": [
+					{
+						"type": "text",
+						"text": "Foundations of Math 12"
+					},
+					{
+						"type": "text",
+						"text": "Mathematics 12"
+					},
+					{
+						"type": "text",
+						"text": "Pre-Calculus 12"
+					}
+				]
+			},
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"MATH100",
+					"MATH102",
+					"MATH109",
+					"MATH120"
+				]
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }

@@ -8,5 +8,12 @@
 		"May be offered as a joint undergraduate and graduate class."
 	],
 	"credits": "1.5",
-	"hours": "3-0-0"
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "text",
+		"text": "Minimum fourth-year standing."
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
 }
