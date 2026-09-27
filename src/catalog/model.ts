@@ -49,6 +49,12 @@ export type Course = {
 	recommendations: string[];
 };
 
+/** What the courses table's requisites column holds, as JSON. */
+export type Requisites = Pick<
+	Course,
+	"prerequisites" | "preOrCorequisites" | "corequisites" | "recommendations"
+>;
+
 export type Section = {
 	term: string;
 	crn: string;

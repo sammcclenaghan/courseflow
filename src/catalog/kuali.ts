@@ -42,7 +42,7 @@ const kualiCourse = z
 	.object({
 		pid: z.string().regex(/^[\w-]+$/),
 		__catalogCourseId: z.string().regex(/^[A-Z]{2,4}(-[A-Z])?\d{3}[A-Z]?$/),
-		title: z.string().min(1),
+		title: z.string().trim().min(1),
 		description: z.string().optional(),
 		supplementalNotes: z.string().optional(),
 		credits,
