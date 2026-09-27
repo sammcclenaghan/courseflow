@@ -1,0 +1,29 @@
+{
+	"pid": "rkAOpwpQ4",
+	"code": "ANTH391",
+	"title": "Selected Problems in Anthropology: Area Studies",
+	"description": "Presentation of selected problems in anthropology.\n* Contact hours may vary depending on the topic.",
+	"notes": [
+		"Credit will be granted for only one of ANTH 391, ANTH 390 (if taken in the same topic).",
+		"Topics information will be provided by the departmental office."
+	],
+	"credits": "1.5",
+	"hours": "3-0-0*",
+	"prerequisites": {
+		"type": "some",
+		"count": 1,
+		"items": [
+			{
+				"type": "text",
+				"text": "set by department depending upon topic."
+			},
+			{
+				"type": "text",
+				"text": "permission of the program."
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
+}

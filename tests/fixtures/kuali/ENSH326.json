@@ -1,0 +1,36 @@
+{
+	"__passedCatalogQuery": true,
+	"formerlyNotesText": "also ENGL 414A, 414B",
+	"groupFilter1": {
+		"name": "Department of English",
+		"id": "5b96a3a63a17f40001fa2b6a",
+		"customFields": {}
+	},
+	"corequisites": "<div><div><div><ul><li><div>Rule Not Selected</div></li></ul></div></div></div>",
+	"description": "<p>A study of American film narrative. May include films from the silent era to the present day. </p>",
+	"pid": "ryToTxe4p",
+	"title": "American Film Narrative",
+	"supplementalNotes": "<ul> <li>Credit will be granted for only one of ENSH 326, ENGL 414A, ENGL 414B.</li> </ul>",
+	"__catalogCourseId": "ENSH326",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2024-09-01",
+	"preAndCorequisites": "<div><div><div><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\"><div>Academic Writing Requirement satisfied.</div></div></li></ul></div></div></div>",
+	"id": "66fc4fcfd5fef9d28a7cb8bd",
+	"subjectCode": {
+		"name": "ENSH",
+		"description": "English (ENSH)",
+		"id": "62eaeee44699025ce2257cd4",
+		"linkedGroup": "5b96a3a63a17f40001fa2b6a"
+	},
+	"catalogActivationDate": "2024-09-01",
+	"hoursCatalogText": "3-0-0",
+	"_score": 1
+}

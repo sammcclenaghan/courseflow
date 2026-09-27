@@ -5,7 +5,7 @@ import { scheduleQueries } from "@/queries/scheduler";
 import { expandSavedSchedule } from "@/utils/scheduler-domain";
 import type { CalendarEvent, SavedCourse } from "@/utils/scheduler-types";
 import { coursesToEvents } from "@/utils/section-to-events";
-import type { Section } from "@/utils/sections-types";
+import type { LegacySection } from "@/utils/sections-types";
 import type {
 	FeedbackClientMeta,
 	FeedbackSchedulerSnapshot,
@@ -84,7 +84,7 @@ export function readFeedbackClientMeta(): FeedbackClientMeta {
 }
 
 function serialiseSection(
-	section: Section,
+	section: LegacySection,
 	term: string,
 ): SerializableScheduledSection {
 	return {

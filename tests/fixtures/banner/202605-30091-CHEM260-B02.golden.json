@@ -1,0 +1,45 @@
+{
+	"term": "202605",
+	"crn": "30091",
+	"subject": "CHEM",
+	"courseNumber": "260",
+	"section": "B02",
+	"title": "Synthetic Chemistry Laboratory",
+	"scheduleType": "Gradable Lab",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 12,
+		"capacity": 16,
+		"available": 4
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 16,
+		"available": 16
+	},
+	"meetings": [
+		{
+			"days": [
+				4
+			],
+			"start": 570,
+			"end": 680,
+			"startDate": "2026-05-06",
+			"endDate": "2026-07-31"
+		},
+		{
+			"days": [
+				2
+			],
+			"start": 780,
+			"end": 1010,
+			"startDate": "2026-05-06",
+			"endDate": "2026-07-31"
+		}
+	]
+}

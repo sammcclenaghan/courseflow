@@ -1,3 +1,5 @@
+import type { Requisites } from "@/catalog/model";
+
 export type Course = {
 	id: number;
 	pid: string;
@@ -7,7 +9,7 @@ export type Course = {
 	credits: string;
 	hoursCatalogText: string;
 	notes: string;
-	preAndCorequisites: string;
+	requisites: Requisites | null;
 	createdAt: string;
 	updatedAt: string;
 };

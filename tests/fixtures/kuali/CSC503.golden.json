@@ -1,0 +1,16 @@
+{
+	"pid": "Syo1eZWtE",
+	"code": "CSC503",
+	"title": "Data Mining",
+	"description": "A comprehensive coverage of main Data Mining areas and algorithms. Topics include: supervised learning; unsupervised learning; semi-supervised and weakly supervised learning; recommender systems, dimensionality reduction; association analysis. Data-mining software tools are reviewed and compared.",
+	"notes": [
+		"Credit will be granted for only one of CSC 503, CSC 578D (if taken in the same topic), SENG 474.",
+		"May be offered as a joint undergraduate and graduate class."
+	],
+	"credits": "1.5",
+	"hours": null,
+	"prerequisites": null,
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
+}

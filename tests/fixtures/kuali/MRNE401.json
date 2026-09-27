@@ -1,0 +1,36 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Department of Biology",
+		"id": "5bb51eae8d88df000194e9c2",
+		"customFields": {}
+	},
+	"description": "<p>Offered, as opportunities arise, by distinguished scientists who are working at the Bamfield Marine Sciences Centre. The course is generally of a specialized nature and is at a level appropriate to graduate or senior undergraduate students. Please visit the Bamfield Marine Sciences Centre <a href=\"http://www.bamfieldmsc.com\" target=\"_blank\">website</a> for a current list of Special Topics courses.</p>",
+	"pid": "SJP63_67E",
+	"title": "Special Topics in Marine Biology",
+	"supplementalNotes": "<ul> <li>Permission of the department is required to count any topic toward the Marine Biology Concentration.</li> <li>This is a field course offered at the Bamfield Marine Sciences Centre for upper level Biology credit. Please visit the Bamfield Marine Sciences Centre <a href=\"http://www.bamfieldmsc.com\" target=\"_blank\">website</a> for more information.</li> </ul>",
+	"__catalogCourseId": "MRNE401",
+	"proForma": "no",
+	"dateStart": "2020-01-01",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "3"
+		},
+		"value": [
+			"1.5",
+			"3"
+		],
+		"chosen": "multiple"
+	},
+	"id": "5e5987e33f906f2500809d3b",
+	"subjectCode": {
+		"name": "MRNE",
+		"description": "Marine Science (MRNE)",
+		"id": "5c140131185fc42400eeba64",
+		"linkedGroup": "5bb51eae8d88df000194e9c2"
+	},
+	"catalogActivationDate": "2019-11-15",
+	"repeatableCatalogText": "May be taken more than once for credit in different topics.",
+	"_score": 1
+}

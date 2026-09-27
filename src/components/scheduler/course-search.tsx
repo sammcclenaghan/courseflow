@@ -4,13 +4,13 @@ import { useMemo, useState } from "react";
 import {
 	filterCourseAutocompleteIndexByOfferings,
 	searchCourseAutocomplete,
-} from "@/catalog/course-autocomplete";
+} from "@/catalog/search/course-autocomplete";
 import {
 	markCourseSearchInput,
 	useCourseSearchPerformance,
-} from "@/catalog/course-search-performance";
-import { useCourseAutocomplete } from "@/catalog/use-course-autocomplete";
-import { useCourseOfferings } from "@/catalog/use-course-offerings";
+} from "@/catalog/search/course-search-performance";
+import { useCourseAutocomplete } from "@/catalog/search/use-course-autocomplete";
+import { useCourseOfferings } from "@/catalog/search/use-course-offerings";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";

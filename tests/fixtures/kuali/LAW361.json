@@ -1,0 +1,34 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Faculty of Law",
+		"id": "5be36afe56a15d000126deb9",
+		"customFields": {}
+	},
+	"description": "<p>The development of English legal systems have had a profound impact on Canada as well. Beginning with 11<sup>th</sup> century European developments, considers a number of topics, such as Anglo-Saxon England and the Norman Conquest, the development of common law and equity, criminal law and 19<sup>th</sup> century developments, ending with some analysis of the \"reception\" of English law in the colonies.</p>",
+	"pid": "rykuj_p7N",
+	"title": "Historical Foundations of the Common Law",
+	"supplementalNotes": "",
+	"__catalogCourseId": "LAW361",
+	"proForma": "no",
+	"dateStart": "2020-01-01",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"preAndCorequisites": "<div><div><div><ul><li><span>Complete <!-- -->all<!-- --> of the following</span><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/600a0274969868002748a64c\" target=\"_blank\">LAW105</a> <!-- -->-<!-- --> <!-- -->Contracts<!-- --> <span style=\"margin-left:5px\">(2.0)</span></span></li><li><span><a href=\"#/courses/view/65cfac7e9d59818e5a8564a3\" target=\"_blank\">LAW105I</a> <!-- -->-<!-- --> <!-- -->Transsystemic Contracts<!-- --> <span style=\"margin-left:5px\">(2.5 - 3)</span></span></li><li><span><a href=\"#/courses/view/5c4ffb3d0dc20e2400c1f8e7\" target=\"_blank\">LAW108A</a> <!-- -->-<!-- --> <!-- -->Contracts<!-- --> <span style=\"margin-left:5px\">(2.0)</span></span></li></ul></div></div></li><li data-test=\"ruleView-B\"><div data-test=\"ruleView-B-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/5c4ffb3e0dc20e2400c1f8eb\" target=\"_blank\">LAW108C</a> <!-- -->-<!-- --> <!-- -->Torts<!-- --> <span style=\"margin-left:5px\">(2.0)</span></span></li><li><span><a href=\"#/courses/view/6004e8748bc6210026ffbf87\" target=\"_blank\">LAW109</a> <!-- -->-<!-- --> <!-- -->Torts<!-- --> <span style=\"margin-left:5px\">(2.0)</span></span></li><li><span><a href=\"#/courses/view/65cfae96a4596044d5c523e1\" target=\"_blank\">LAW109I</a> <!-- -->-<!-- --> <!-- -->Transsystemic Torts<!-- --> <span style=\"margin-left:5px\">(2.5 - 3)</span></span></li></ul></div></div></li></ul></li></ul></div></div></div>",
+	"id": "5d1f6c4c94e82e2400a232e2",
+	"subjectCode": {
+		"name": "LAW",
+		"description": "Law (LAW)",
+		"id": "5c13ffb142504f2400e64efb",
+		"linkedGroup": "5be36afe56a15d000126deb9"
+	},
+	"catalogActivationDate": "2019-11-15",
+	"hoursCatalogText": "3-0-0",
+	"_score": 1
+}

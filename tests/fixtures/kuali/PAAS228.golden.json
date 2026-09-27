@@ -1,0 +1,34 @@
+{
+	"pid": "SkhHPGo9w",
+	"code": "PAAS228",
+	"title": "Pre-Intermediate Korean I",
+	"description": "Continuation of PAAS 129 for students who wish to improve their skills in Korean. Includes advanced sentence patterns (grammar) and use of written and audio-visual materials to stimulate students’ ability to communicate on a variety of topics.",
+	"notes": [
+		"Not open to fluent speakers of Korean."
+	],
+	"credits": "1.5",
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "some",
+		"count": 1,
+		"items": [
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": "B",
+				"minGpa": null,
+				"courses": [
+					"PAAS129"
+				]
+			},
+			{
+				"type": "text",
+				"text": "or permission of the department"
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
+}

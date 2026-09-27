@@ -15,7 +15,7 @@ import { getTermLabel } from "@/utils/constants";
 import { expandSavedSchedule } from "@/utils/scheduler-domain";
 import type { SavedCourse } from "@/utils/scheduler-types";
 import { formatSectionSchedule } from "@/utils/section-to-events";
-import type { Section } from "@/utils/sections-types";
+import type { LegacySection } from "@/utils/sections-types";
 
 const UVIC_REGISTRATION_URL =
 	"https://banner.uvic.ca/StudentRegistrationSsb/ssb/registration";
@@ -263,7 +263,7 @@ function SectionRow({
 	onCopy,
 	onToggle,
 }: {
-	section: Section;
+	section: LegacySection;
 	isRegistered: boolean;
 	wasCopied: boolean;
 	onCopy: (crn: string) => void;

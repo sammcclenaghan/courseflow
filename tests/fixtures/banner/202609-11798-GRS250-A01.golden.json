@@ -1,0 +1,26 @@
+{
+	"term": "202609",
+	"crn": "11798",
+	"subject": "GRS",
+	"courseNumber": "250",
+	"section": "A01",
+	"title": "Greek and Latin Roots of Medical and Bioscientific Terminology",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Multi-Access",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": { "enrolled": 38, "capacity": 60, "available": 22 },
+	"waitlist": { "enrolled": 0, "capacity": 100, "available": 100 },
+	"meetings": [
+		{
+			"days": [1, 4],
+			"start": 960,
+			"end": 1040,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		}
+	]
+}

@@ -1,0 +1,63 @@
+{
+	"term": "202609",
+	"crn": "14088",
+	"subject": "ECE",
+	"courseNumber": "476",
+	"section": "B02",
+	"title": "Engineering System Software",
+	"scheduleType": "Lab",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": 0,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 12,
+		"capacity": 34,
+		"available": 22
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 0,
+		"available": 0
+	},
+	"meetings": [
+		{
+			"days": [
+				5
+			],
+			"start": 870,
+			"end": 1040,
+			"startDate": "2026-10-09",
+			"endDate": "2026-10-09"
+		},
+		{
+			"days": [
+				5
+			],
+			"start": 870,
+			"end": 1040,
+			"startDate": "2026-10-30",
+			"endDate": "2026-10-30"
+		},
+		{
+			"days": [
+				5
+			],
+			"start": 870,
+			"end": 1040,
+			"startDate": "2026-11-20",
+			"endDate": "2026-11-20"
+		},
+		{
+			"days": [
+				5
+			],
+			"start": 870,
+			"end": 1040,
+			"startDate": "2026-12-04",
+			"endDate": "2026-12-04"
+		}
+	]
+}

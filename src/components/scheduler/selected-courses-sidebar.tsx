@@ -22,13 +22,13 @@ import { sectionQueries } from "@/queries/scheduler";
 import type { Course } from "@/utils/catalog-types";
 import type { SavedCourse } from "@/utils/scheduler-types";
 import { sectionMeetings } from "@/utils/section-to-events";
-import type { Section } from "@/utils/sections-types";
+import type { LegacySection } from "@/utils/sections-types";
 
 interface SelectedCoursesSidebarProps {
 	term: string;
 	selectedCourses: SavedCourse[];
 	onCourseRemove: (course: Course) => void;
-	onSectionsUpdate: (course: Course, sections: Section[]) => void;
+	onSectionsUpdate: (course: Course, sections: LegacySection[]) => void;
 	onClearAll: () => void;
 	readOnly?: boolean;
 }
@@ -118,7 +118,7 @@ interface CourseCardProps {
 	expanded: boolean;
 	onToggle: () => void;
 	onRemove: () => void;
-	onSectionsUpdate: (sections: Section[]) => void;
+	onSectionsUpdate: (sections: LegacySection[]) => void;
 	readOnly?: boolean;
 }
 
@@ -185,7 +185,7 @@ function CourseCard({
 interface SectionSelectorProps {
 	term: string;
 	savedCourse: SavedCourse;
-	onSectionsUpdate: (sections: Section[]) => void;
+	onSectionsUpdate: (sections: LegacySection[]) => void;
 	readOnly?: boolean;
 }
 
@@ -212,14 +212,14 @@ function SectionSelector({
 
 	const selectedCrns = new Set(savedCourse.sections.map((s) => s.crn));
 
-	const handleSelect = (section: Section) => {
+	const handleSelect = (section: LegacySection) => {
 		const otherTypes = savedCourse.sections.filter(
 			(s) => s.scheduleType !== section.scheduleType,
 		);
 		onSectionsUpdate([...otherTypes, section]);
 	};
 
-	const typeGroups: { label: string; sections: Section[] }[] = [
+	const typeGroups: { label: string; sections: LegacySection[] }[] = [
 		{ label: "Lectures", sections: grouped.lectures },
 		{ label: "Labs", sections: grouped.labs },
 		{ label: "Tutorials", sections: grouped.tutorials },

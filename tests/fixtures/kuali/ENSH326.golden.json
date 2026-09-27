@@ -1,0 +1,18 @@
+{
+	"pid": "ryToTxe4p",
+	"code": "ENSH326",
+	"title": "American Film Narrative",
+	"description": "A study of American film narrative. May include films from the silent era to the present day.",
+	"notes": [
+		"Credit will be granted for only one of ENSH 326, ENGL 414A, ENGL 414B."
+	],
+	"credits": "1.5",
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "text",
+		"text": "Academic Writing Requirement satisfied."
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
+}

@@ -1,0 +1,41 @@
+{
+	"__passedCatalogQuery": true,
+	"formerlyNotesText": "also GERS 487",
+	"groupFilter1": {
+		"name": "Department of English",
+		"id": "5b96a3a63a17f40001fa2b6a",
+		"customFields": {}
+	},
+	"description": "<p>A study of literary and cinematic vampires in historical context. Without focusing exclusively on German literature and film, follows the vampire myth and its various guises from classicism to postmodernism in novels and films.</p>",
+	"pid": "BJJw81f46",
+	"title": "A Cultural History of Vampires in Literature and Film",
+	"supplementalNotes": "<ul> <li>Credit will be granted for only one of ENSH 342V, GERS 487, and GMST 454.</li> <li>May count towards a Minor in Film Studies. No knowledge of German required.</li> </ul>",
+	"__catalogCourseId": "ENSH342V",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": 0,
+			"max": 0
+		},
+		"chosen": "fixed"
+	},
+	"crossListedCourses": [
+		{
+			"__catalogCourseId": "GMST454",
+			"pid": "SJSxUu6XE",
+			"title": "A Cultural History of Vampires in Literature and Film"
+		}
+	],
+	"dateStart": "2024-09-01",
+	"preAndCorequisites": "<div><div><div><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\"><div>Academic Writing Requirement satisfied.</div></div></li></ul></div></div></div>",
+	"id": "655466579112142b4c292b47",
+	"subjectCode": {
+		"name": "ENSH",
+		"description": "English (ENSH)",
+		"id": "62eaeee44699025ce2257cd4",
+		"linkedGroup": "5b96a3a63a17f40001fa2b6a"
+	},
+	"catalogActivationDate": "2024-09-01",
+	"hoursCatalogText": "3-0-0",
+	"_score": 1
+}

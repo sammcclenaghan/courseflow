@@ -1,0 +1,103 @@
+{
+	"pid": "B1JRgd6XN",
+	"code": "ECON365",
+	"title": "Econometrics Part I",
+	"description": "Principles of econometrics using matrix algebra with applied examples. Multiple regression, maximum likelihood estimation, restricted least squares, hypothesis testing, functional form, specification and model selection strategies, nonlinear least squares, time series models. Topics may also include: Bayesian econometrics.",
+	"notes": [
+		"Credit will be granted for only one of ECON 365, ECON 445."
+	],
+	"credits": "1.5",
+	"hours": "3-1-0",
+	"prerequisites": {
+		"type": "all",
+		"items": [
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"ECON103",
+					"ECON103C",
+					"ECON180"
+				]
+			},
+			{
+				"type": "courses",
+				"need": "all",
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"ECON104"
+				]
+			},
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"ECON245",
+					"STAT260"
+				]
+			},
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"ECON246",
+					"STAT261"
+				]
+			},
+			{
+				"type": "some",
+				"count": 1,
+				"items": [
+					{
+						"type": "courses",
+						"need": "all",
+						"timing": "completed",
+						"minGrade": "B",
+						"minGpa": null,
+						"courses": [
+							"MATH208"
+						]
+					},
+					{
+						"type": "courses",
+						"need": 1,
+						"timing": "completed",
+						"minGrade": null,
+						"minGpa": null,
+						"courses": [
+							"MATH110",
+							"MATH211"
+						]
+					}
+				]
+			}
+		]
+	},
+	"preOrCorequisites": {
+		"type": "courses",
+		"need": 1,
+		"timing": "either",
+		"minGrade": null,
+		"minGpa": null,
+		"courses": [
+			"ECON225",
+			"ENGR120",
+			"ENGR240"
+		]
+	},
+	"corequisites": null,
+	"recommendations": [
+		"ECON 203 and ECON 204 recommended prior to ECON 365. Recommended for students to take both ECON 365 and ECON 366, since they form a sequence."
+	]
+}

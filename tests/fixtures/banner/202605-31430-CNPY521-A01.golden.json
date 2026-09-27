@@ -1,0 +1,49 @@
+{
+	"term": "202605",
+	"crn": "31430",
+	"subject": "CNPY",
+	"courseNumber": "521",
+	"section": "A01",
+	"title": "Developmental Issues in Family Counselling",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Online with some face-to-face",
+	"partOfTerm": "B5",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 27,
+		"capacity": 28,
+		"available": 1
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 30,
+		"available": 30
+	},
+	"meetings": [
+		{
+			"days": [
+				1
+			],
+			"start": 840,
+			"end": 1010,
+			"startDate": "2026-05-04",
+			"endDate": "2026-06-15"
+		},
+		{
+			"days": [
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"start": 570,
+			"end": 740,
+			"startDate": "2026-06-22",
+			"endDate": "2026-06-26"
+		}
+	]
+}

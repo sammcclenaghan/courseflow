@@ -1,0 +1,34 @@
+{
+	"term": "202605",
+	"crn": "31608",
+	"subject": "IED",
+	"courseNumber": "159",
+	"section": "A04",
+	"title": "INDIGENOUS LANGUAGE I: ʔayʔaǰuθəm (Ayajuthum)",
+	"scheduleType": "Lecture Topic",
+	"instructionalMethod": "Online with some face-to-face",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 11,
+		"capacity": 50,
+		"available": 39
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 0,
+		"available": 0
+	},
+	"meetings": [
+		{
+			"days": [],
+			"start": null,
+			"end": null,
+			"startDate": "2026-05-06",
+			"endDate": "2026-07-31"
+		}
+	]
+}

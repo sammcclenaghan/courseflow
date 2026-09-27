@@ -1,0 +1,37 @@
+{
+	"term": "202605",
+	"crn": "30647",
+	"subject": "MECH",
+	"courseNumber": "580",
+	"section": "A02",
+	"title": "SELECTED TOPICS:MECH ENGR: Microfluidics for Biom. and Energy App.",
+	"scheduleType": "Lecture Topic",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": "A2",
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 1,
+		"capacity": 10,
+		"available": 9
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 50,
+		"available": 50
+	},
+	"meetings": [
+		{
+			"days": [
+				1,
+				4
+			],
+			"start": 600,
+			"end": 680,
+			"startDate": "2026-05-06",
+			"endDate": "2026-07-31"
+		}
+	]
+}

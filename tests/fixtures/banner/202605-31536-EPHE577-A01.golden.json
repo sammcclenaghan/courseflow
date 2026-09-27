@@ -1,0 +1,40 @@
+{
+	"term": "202605",
+	"crn": "31536",
+	"subject": "EPHE",
+	"courseNumber": "577",
+	"section": "A01",
+	"title": "Research Methods and Techniques in Coaching Studies",
+	"scheduleType": "Lecture",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "F7",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 9,
+		"capacity": 30,
+		"available": 21
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 0,
+		"available": 0
+	},
+	"meetings": [
+		{
+			"days": [
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"start": 480,
+			"end": 620,
+			"startDate": "2026-07-06",
+			"endDate": "2026-07-22"
+		}
+	]
+}

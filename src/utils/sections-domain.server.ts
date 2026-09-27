@@ -1,12 +1,12 @@
 import type {
 	GroupedSections,
-	Section,
+	LegacySection,
 	SectionMeeting,
 } from "./sections-types";
 
 export type {
 	GroupedSections,
-	Section,
+	LegacySection,
 	SectionMeeting,
 } from "./sections-types";
 
@@ -66,7 +66,7 @@ export function groupSections(rows: SectionRow[]): GroupedSections {
 	return grouped;
 }
 
-export function mapSection(row: SectionRow): Section {
+export function mapSection(row: SectionRow): LegacySection {
 	return {
 		id: row.id,
 		term: row.term,

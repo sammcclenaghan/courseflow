@@ -1,0 +1,25 @@
+{
+	"pid": "H1ahoZI5ll",
+	"code": "CIVE426",
+	"title": "Bridge Engineering",
+	"description": "Loading, analysis and design of common types of bridges according to Canadian Highway Bridge Design Code focusing on beam-type bridges: steel and reinforced/prestressed concrete bridges. Basics of seismic design, bridge health monitoring, rehabilitation and strengthening of bridges.",
+	"notes": [
+		"Credit will be granted for only one of CIVE 426, CIVE 480C (if taken in the same topic)."
+	],
+	"credits": "1.5",
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "courses",
+		"need": "all",
+		"timing": "completed",
+		"minGrade": null,
+		"minGpa": null,
+		"courses": [
+			"CIVE351",
+			"CIVE352"
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
+}

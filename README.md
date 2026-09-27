@@ -21,12 +21,20 @@ In this project, we use [nub](https://github.com/nubjs/nub?og), and no that's no
 ```bash
 nub ci
 nub run d1:migrate:local
-nub run d1:seed:csc
 nub run dev
 ```
 
 `nub run check`, `nub run typecheck`, and `nub run test` must pass before deploying with `nub run deploy`.
 
-Course data comes from a Worker-compatible TypeScript importer that ingests the Kuali catalog, Banner timetable sections, and live enrollment counts into D1 — see `nub run catalog:import`.
+Course data comes from `scripts/import.ts`, which fetches the Kuali calendars and Banner 9 sections and prints SQL for wrangler to apply:
+
+```bash
+nub scripts/import.ts courses > .wrangler/courses.sql
+nub scripts/import.ts sections 202701 > .wrangler/sections-202701.sql
+nubx wrangler d1 execute course-flow-v4 --local --file .wrangler/courses.sql
+nubx wrangler d1 execute course-flow-v4 --local --file .wrangler/sections-202701.sql
+```
+
+Import courses before sections, so sections can link to them. Use `--remote` instead of `--local` for production.
 
 Secrets are set with `wrangler secret put`, never committed. Non-secret Worker vars live in `wrangler.jsonc`.

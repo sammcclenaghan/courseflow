@@ -4,7 +4,7 @@ import { MobileCalendarBody } from "@/components/calendar/mobile-calendar-body";
 import { useMediaQuery } from "@/lib/use-media-query";
 import type { Course, CourseSearchResult } from "@/utils/catalog-types";
 import type { CalendarEvent, SavedCourse } from "@/utils/scheduler-types";
-import type { Section } from "@/utils/sections-types";
+import type { LegacySection } from "@/utils/sections-types";
 import { MobileDayPicker } from "./mobile-day-picker";
 import { MobileScheduleHeader } from "./mobile-schedule-header";
 import { ScheduleSharePanel } from "./schedule-share-panel";
@@ -17,7 +17,7 @@ interface MobileSchedulerShellProps {
 	events: CalendarEvent[];
 	onCourseSelect: (result: CourseSearchResult) => void;
 	onCourseRemove: (course: Course) => void;
-	onSectionsUpdate: (course: Course, sections: Section[]) => void;
+	onSectionsUpdate: (course: Course, sections: LegacySection[]) => void;
 	onClearAll: () => void;
 }
 

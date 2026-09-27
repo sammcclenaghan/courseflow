@@ -1,8 +1,8 @@
 import type { Course } from "./catalog-types";
 import type { SavedCourse, ScheduleWithSections } from "./scheduler-types";
-import type { Section } from "./sections-types";
+import type { LegacySection } from "./sections-types";
 
-export function buildCourseFromSection(section: Section): Course {
+export function buildCourseFromSection(section: LegacySection): Course {
 	const subjectCode = `${section.subject}${section.courseNumber}`.replace(
 		/\s+/g,
 		"",
@@ -17,7 +17,7 @@ export function buildCourseFromSection(section: Section): Course {
 		credits: section.units,
 		hoursCatalogText: "",
 		notes: "",
-		preAndCorequisites: "",
+		requisites: null,
 		createdAt: "",
 		updatedAt: "",
 	};
@@ -25,7 +25,7 @@ export function buildCourseFromSection(section: Section): Course {
 
 export function buildSavedCourses(
 	term: string,
-	sections: Section[],
+	sections: LegacySection[],
 ): SavedCourse[] {
 	const coursesByPid = new Map<string, SavedCourse>();
 

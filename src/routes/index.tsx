@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useCourseAutocomplete } from "@/catalog/use-course-autocomplete";
-import { useCourseOfferings } from "@/catalog/use-course-offerings";
+import { useCourseAutocomplete } from "@/catalog/search/use-course-autocomplete";
+import { useCourseOfferings } from "@/catalog/search/use-course-offerings";
 import { CatalogWall } from "@/components/landing/catalog-wall";
 import { getTermLabel } from "@/utils/constants";
 

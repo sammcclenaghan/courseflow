@@ -1,0 +1,39 @@
+{
+	"pid": "ryXEgOIYeg",
+	"code": "EUS470",
+	"title": "Field School in European Studies",
+	"description": "The academic element of the European Union Study Tour offered by the Network for European Studies Canada or another Study Tour/Field School with relevance to European Studies that is approved by the Program. Normally requires some course work to be completed prior to departure, while other course work is due during and after the field school. Content must be approved in advance by the Program.",
+	"notes": [
+		"Credit will be granted for only one of EUS 470 (if taken in the same topic), EUS 390 (if taken in the same topic), EUS 390A (if taken in the same topic), EUS 470X (if taken in the same topic).",
+		"Satisfies the experiential learning requirement for students completing a Major or Honours in Political Science with the European Studies Option."
+	],
+	"credits": "1.5",
+	"hours": null,
+	"prerequisites": {
+		"type": "all",
+		"items": [
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"EUS270",
+					"ECON270",
+					"SLLC270",
+					"POLI211"
+				]
+			},
+			{
+				"type": "text",
+				"text": "Permission of the program."
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": [
+		"EUS 200 and one of EUS 311 or POLI 311 recommended prior to EUS 470."
+	]
+}

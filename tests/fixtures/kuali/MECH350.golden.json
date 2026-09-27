@@ -1,0 +1,66 @@
+{
+	"pid": "SyeYD2_TQE",
+	"code": "MECH350",
+	"title": "Engineering Design",
+	"description": "Design methodology; recognizing and defining open-ended engineering problems, problem definition, concept generation, project planning, modelling, analysis, decision making, design synthesis, prototyping and testing. Students complete a series of design oriented projects in small teams to develop teamwork skills.",
+	"notes": [
+		"Credit will be granted for only one of MECH 350, MECH 260, BME 350, BME 351."
+	],
+	"credits": "1.5",
+	"hours": "3-3-1",
+	"prerequisites": {
+		"type": "all",
+		"items": [
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"MECH200",
+					"MECH200B",
+					"ECE299",
+					"ELEC299"
+				]
+			},
+			{
+				"type": "courses",
+				"need": "all",
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"MECH220",
+					"MECH285",
+					"MECH335",
+					"ENGR001"
+				]
+			},
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"ECE250",
+					"ELEC250"
+				]
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": {
+		"type": "courses",
+		"need": 1,
+		"timing": "concurrent",
+		"minGrade": null,
+		"minGpa": null,
+		"courses": [
+			"STAT254",
+			"STAT260"
+		]
+	},
+	"recommendations": []
+}

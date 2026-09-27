@@ -1,0 +1,22 @@
+{
+	"pid": "rkJXCvTQN",
+	"code": "BIOC699",
+	"title": "PhD Dissertation",
+	"description": null,
+	"notes": [],
+	"credits": "36–40",
+	"hours": null,
+	"prerequisites": null,
+	"preOrCorequisites": null,
+	"corequisites": {
+		"type": "courses",
+		"need": "all",
+		"timing": "concurrent",
+		"minGrade": null,
+		"minGpa": null,
+		"courses": [
+			"MLSC693"
+		]
+	},
+	"recommendations": []
+}

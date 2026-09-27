@@ -1,0 +1,41 @@
+{
+	"pid": "rykuj_p7N",
+	"code": "LAW361",
+	"title": "Historical Foundations of the Common Law",
+	"description": "The development of English legal systems have had a profound impact on Canada as well. Beginning with 11th century European developments, considers a number of topics, such as Anglo-Saxon England and the Norman Conquest, the development of common law and equity, criminal law and 19th century developments, ending with some analysis of the \"reception\" of English law in the colonies.",
+	"notes": [],
+	"credits": "1.5",
+	"hours": "3-0-0",
+	"prerequisites": {
+		"type": "all",
+		"items": [
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"LAW105",
+					"LAW105I",
+					"LAW108A"
+				]
+			},
+			{
+				"type": "courses",
+				"need": 1,
+				"timing": "completed",
+				"minGrade": null,
+				"minGpa": null,
+				"courses": [
+					"LAW108C",
+					"LAW109",
+					"LAW109I"
+				]
+			}
+		]
+	},
+	"preOrCorequisites": null,
+	"corequisites": null,
+	"recommendations": []
+}

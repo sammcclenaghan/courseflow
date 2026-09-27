@@ -12,8 +12,9 @@ import {
 	Heart,
 	Plus,
 } from "lucide-react";
-import { type ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { z } from "zod";
+import { CourseRequisites } from "@/components/course-requisites";
 import { catalogQueries, catalogSectionQueries } from "@/queries/catalog";
 import { scheduleQueries, scheduleQueryKey } from "@/queries/scheduler";
 import type { AlternativeMode, CourseAlternative } from "@/utils/catalog-types";
@@ -22,7 +23,7 @@ import { useFavouriteCourses } from "@/utils/favourite-courses";
 import { saveMySchedule } from "@/utils/scheduler.functions";
 import type { ScheduleWithSections } from "@/utils/scheduler-types";
 import { formatSectionSchedule } from "@/utils/section-to-events";
-import type { GroupedSections, Section } from "@/utils/sections-types";
+import type { GroupedSections, LegacySection } from "@/utils/sections-types";
 
 const alternativesDefault = "all" satisfies AlternativeMode;
 const ALTERNATIVES_MODE_STORAGE_KEY = "courseflow:alternatives-mode";
@@ -264,13 +265,8 @@ function CourseDetailPage() {
 									</section>
 								)}
 
-								{course.preAndCorequisites && (
-									<section>
-										<h2 className="mb-2 font-semibold text-[#1a1a1a]/30 text-[11px] tracking-[0.12em] uppercase">
-											Prerequisites & Corequisites
-										</h2>
-										<PrerequisiteList text={course.preAndCorequisites} />
-									</section>
+								{course.requisites && (
+									<CourseRequisites requisites={course.requisites} />
 								)}
 
 								{course.notes && (
@@ -364,98 +360,6 @@ function CourseDetailPage() {
 	);
 }
 
-const COURSE_CODE_PATTERN = /\b([A-Z]{2,4}\s?\d+[A-Z]?)\b/g;
-
-function PrerequisiteList({ text }: { text: string }) {
-	const items = splitPrerequisiteItems(text);
-	if (items.length === 0) {
-		return (
-			<p className="text-[#1a1a1a]/50 text-[13px] leading-[1.75]">{text}</p>
-		);
-	}
-	return (
-		<div className="space-y-3">
-			{items.map((item) => (
-				<div
-					key={item}
-					className="rounded-2xl border border-[#1a1a1a]/[0.05] bg-white/65 px-4 py-3"
-				>
-					<div className="flex items-start gap-3">
-						<span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#1a1a1a]/20" />
-						<div className="min-w-0 space-y-2">
-							{buildIndentedClauses(item).map((clause) => (
-								<p
-									key={`${clause.level}-${clause.text}`}
-									className="text-[#1a1a1a]/55 text-[13px] leading-[1.7]"
-									style={{ paddingLeft: `${clause.level * 1.25}rem` }}
-								>
-									<LinkedCourseText text={clause.text} />
-								</p>
-							))}
-						</div>
-					</div>
-				</div>
-			))}
-		</div>
-	);
-}
-
-function LinkedCourseText({ text }: { text: string }) {
-	const segments: ReactNode[] = [];
-	let lastIndex = 0;
-	for (const match of text.matchAll(COURSE_CODE_PATTERN)) {
-		const matched = match[0];
-		const start = match.index ?? 0;
-		if (start > lastIndex) segments.push(text.slice(lastIndex, start));
-		const normalized = matched.replace(/\s+/g, "");
-		segments.push(
-			<Link
-				key={`${normalized}-${start}`}
-				to="/courses/$subjectCode"
-				params={{ subjectCode: normalized }}
-				preload="intent"
-				className="font-medium text-uvic-blue/80 underline decoration-uvic-blue/20 underline-offset-3 transition-colors hover:text-uvic-blue hover:decoration-uvic-blue/40"
-			>
-				{normalized}
-			</Link>,
-		);
-		lastIndex = start + matched.length;
-	}
-	if (lastIndex < text.length) segments.push(text.slice(lastIndex));
-	return <>{segments.length > 0 ? segments : text}</>;
-}
-
-function splitPrerequisiteItems(text: string) {
-	return text
-		.replace(/\u2022/g, "\n• ")
-		.replace(/^\s*•\s*/m, "")
-		.replace(/\s{2,}/g, " ")
-		.trim()
-		.split(/\n+\s*•\s*/)
-		.map((item) => item.replace(/\s+/g, " ").trim())
-		.filter(Boolean);
-}
-
-function buildIndentedClauses(text: string) {
-	const clauses = text
-		.replace(/\s+•\s+/g, " • ")
-		.split(/\s+•\s+/)
-		.map((clause) => clause.trim())
-		.filter(Boolean);
-	const result: Array<{ text: string; level: number }> = [];
-	let currentLevel = 0;
-	for (const clause of clauses) {
-		const normalized = clause.toLowerCase();
-		const isGroupHeader =
-			normalized.startsWith("complete all of") ||
-			normalized.startsWith("complete 1 of") ||
-			normalized.startsWith("complete one of");
-		result.push({ text: clause, level: currentLevel });
-		if (isGroupHeader) currentLevel++;
-	}
-	return result;
-}
-
 function hasAnySections(grouped: GroupedSections) {
 	return (
 		grouped.lectures.length > 0 ||
@@ -470,7 +374,7 @@ function SectionGroup({
 	sections,
 }: {
 	label: string;
-	sections: Section[];
+	sections: LegacySection[];
 }) {
 	if (sections.length === 0) return null;
 	return (
@@ -651,7 +555,7 @@ function AlternativeCourseRow({
 }
 
 function selectDefaultSections(grouped: GroupedSections) {
-	const defaults: Section[] = [];
+	const defaults: LegacySection[] = [];
 	const seenScheduleTypes = new Set<string>();
 	for (const section of [
 		...grouped.lectures,

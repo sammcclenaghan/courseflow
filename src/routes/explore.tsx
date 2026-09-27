@@ -2,13 +2,13 @@ import { useQuery } from "@tanstack/react-query";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ChevronLeft, Search, X } from "lucide-react";
 import { Fragment, type ReactNode, useMemo, useRef, useState } from "react";
-import { searchCourseAutocomplete } from "@/catalog/course-autocomplete";
+import { searchCourseAutocomplete } from "@/catalog/search/course-autocomplete";
 import {
 	markCourseSearchInput,
 	useCourseSearchPerformance,
-} from "@/catalog/course-search-performance";
-import { highlightTextSegments } from "@/catalog/text-highlight";
-import { useCourseAutocomplete } from "@/catalog/use-course-autocomplete";
+} from "@/catalog/search/course-search-performance";
+import { highlightTextSegments } from "@/catalog/search/text-highlight";
+import { useCourseAutocomplete } from "@/catalog/search/use-course-autocomplete";
 import { catalogQueries } from "@/queries/catalog";
 import type { CourseSearchResult, SubjectResult } from "@/utils/catalog-types";
 
@@ -97,7 +97,7 @@ function ExplorePage() {
 	}
 
 	return (
-		<div className="explore-page w-full flex-1 overflow-y-auto overscroll-contain">
+		<div className="explore-page h-[calc(100dvh-var(--app-header-height))] w-full overflow-y-auto overscroll-contain">
 			<div className="pointer-events-none fixed inset-0 bg-[#FAFAF8]" />
 			<div
 				className="pointer-events-none fixed inset-0 opacity-[0.025]"

@@ -1,0 +1,36 @@
+{
+	"term": "202609",
+	"crn": "11658",
+	"subject": "FRAN",
+	"courseNumber": "420",
+	"section": "A01",
+	"title": "FRANCOPHONE LIT+CULTURES: Amour, érotisme et sexualité en Francophonie",
+	"scheduleType": "Lecture Topic",
+	"instructionalMethod": "Face-to-face",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 9,
+		"capacity": 35,
+		"available": 26
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 25,
+		"available": 25
+	},
+	"meetings": [
+		{
+			"days": [
+				1
+			],
+			"start": 990,
+			"end": 1160,
+			"startDate": "2026-09-09",
+			"endDate": "2026-12-07"
+		}
+	]
+}
