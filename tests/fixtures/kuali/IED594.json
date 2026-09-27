@@ -1,0 +1,38 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Department of Indigenous Education",
+		"id": "5be36ac2fed2d200010da159",
+		"customFields": {}
+	},
+	"description": "<p>Explores decolonial, generated knowledge and relational approaches to, and features of, effective overviews of literature, context and resources for the development of projects or theses. <strike></strike></p>",
+	"pid": "HJq8qOpQV",
+	"title": "Seminar on Project or Thesis Development",
+	"allGradingTypes": {
+		"com": true,
+		"inp": true,
+		"f": true,
+		"n": true
+	},
+	"supplementalNotes": "",
+	"__catalogCourseId": "IED594",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2025-09-02",
+	"id": "67342d3f0f3fa9213d6a4cf6",
+	"subjectCode": {
+		"name": "IED",
+		"description": "Indigenous Education (IED)",
+		"id": "5c13ff3f185fc42400eeb658",
+		"linkedGroup": "5be36ac2fed2d200010da159"
+	},
+	"catalogActivationDate": "2025-09-01",
+	"_score": 1
+}

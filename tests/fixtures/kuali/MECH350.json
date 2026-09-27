@@ -1,0 +1,35 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Department of Mechanical Engineering",
+		"id": "5be36b3ffed2d200010da15e",
+		"customFields": {}
+	},
+	"corequisites": "<div><div><div><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\">Concurrently enrolled in <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/5d1f6895fb68f3240022ccec\" target=\"_blank\">STAT254</a> <!-- -->-<!-- --> <!-- -->Probability and Statistics for Engineers<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5e615e517eb8e0250078b7da\" target=\"_blank\">STAT260</a> <!-- -->-<!-- --> <!-- -->Introduction to Probability and Statistics I<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li></ul></div></div></div>",
+	"description": "<p>Design methodology; recognizing and defining open-ended engineering problems, problem definition, concept generation, project planning, modelling, analysis, decision making, design synthesis, prototyping and testing. Students complete a series of design oriented projects in small teams to develop teamwork skills.</p>",
+	"pid": "SyeYD2_TQE",
+	"title": "Engineering Design",
+	"supplementalNotes": "<ul> <li>Credit will be granted for only one of MECH 350, MECH 260, BME 350, BME 351.</li> </ul>",
+	"__catalogCourseId": "MECH350",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2026-09-02",
+	"preAndCorequisites": "<div><div><div><ul><li><span>Complete <!-- -->all<!-- --> of the following</span><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/6723d2037c174a144cae7071\" target=\"_blank\">MECH200</a> <!-- -->-<!-- --> <!-- -->Engineering Drawing, CAD and Manufacturing<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/66e09e4626f9a36711aea1a0\" target=\"_blank\">MECH200B</a> <!-- -->-<!-- --> <!-- -->Introduction to Manufacturing Processes<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5cbdf57a67a5c324003b0c2e\" target=\"_blank\">ECE299</a> <!-- -->-<!-- --> <!-- -->Introduction to Electrical and Computer Engineering Design<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5c4ff2cd7ec31124000cf0fb\" target=\"_blank\">ELEC299</a> <!-- -->-<!-- --> <!-- -->Introduction to Electrical and Computer Engineering Design<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><li data-test=\"ruleView-B\"><div data-test=\"ruleView-B-result\">Complete all of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/5d82648f184abe2400908765\" target=\"_blank\">MECH220</a> <!-- -->-<!-- --> <!-- -->Mechanics of Solids I<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5cbdf6052a310a240068a5c6\" target=\"_blank\">MECH285</a> <!-- -->-<!-- --> <!-- -->Properties of Engineering Materials<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5cbdf60a2a310a240068a5c8\" target=\"_blank\">MECH335</a> <!-- -->-<!-- --> <!-- -->Theory of Mechanisms<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/691509e440d2d2c5c814b4b9\" target=\"_blank\">ENGR001</a> <!-- -->-<!-- --> <!-- -->Work Term 1<!-- --> <span style=\"margin-left:5px\">(4.5)</span></span></li></ul></div></div></li><li data-test=\"ruleView-C\"><div data-test=\"ruleView-C-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/5cbdf57667a5c324003b0c2a\" target=\"_blank\">ECE250</a> <!-- -->-<!-- --> <!-- -->Linear Circuits I<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5c4ff2ccbb9b5e24008114b8\" target=\"_blank\">ELEC250</a> <!-- -->-<!-- --> <!-- -->Linear Circuits I<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li></ul></li></ul></div></div></div>",
+	"id": "69b09a10b769c3461563dac7",
+	"subjectCode": {
+		"name": "MECH",
+		"description": "Mechanical Engineering (MECH)",
+		"id": "5c1400cc185fc42400eeb9a5",
+		"linkedGroup": "5be36b3ffed2d200010da15e"
+	},
+	"hoursCatalogText": "3-3-1",
+	"catalogActivationDate": "2026-09-01",
+	"_score": 1
+}

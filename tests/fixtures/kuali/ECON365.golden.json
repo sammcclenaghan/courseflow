@@ -1,0 +1,11 @@
+{
+	"pid": "B1JRgd6XN",
+	"code": "ECON365",
+	"title": "Econometrics Part I",
+	"description": "Principles of econometrics using matrix algebra with applied examples. Multiple regression, maximum likelihood estimation, restricted least squares, hypothesis testing, functional form, specification and model selection strategies, nonlinear least squares, time series models. Topics may also include: Bayesian econometrics.",
+	"notes": [
+		"Credit will be granted for only one of ECON 365, ECON 445."
+	],
+	"credits": "1.5",
+	"hours": "3-1-0"
+}

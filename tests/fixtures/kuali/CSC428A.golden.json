@@ -1,0 +1,12 @@
+{
+	"pid": "By_i1uaXN",
+	"code": "CSC428A",
+	"title": "Combinatorial Algorithms",
+	"description": "Exploration of the interfaces between combinatorics and Computer Science. Algorithms and data structures that are used to manipulate, generate, and randomly select combinatorial objects, including sets, permutations, combinations, trees, graphs. Methods for analyzing combinatorial algorithms such as recurrence relations, asymptotics, and amortized complexity.",
+	"notes": [
+		"Credit will be granted for only one of CSC 428A, CSC 528.",
+		"May be offered as a joint undergraduate and graduate class."
+	],
+	"credits": "1.5",
+	"hours": "3-0-0"
+}

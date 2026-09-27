@@ -1,0 +1,12 @@
+{
+	"pid": "BJlcheuT7N",
+	"code": "ECON245",
+	"title": "Descriptive Statistics and Probability",
+	"description": "Introduction to statistics and probability theory. Key topics include elementary probability, discrete and continuous random variables, as well as descriptive statistics of univariate and bivariate data. Introduction to basic programming and data visualization using R and Excel.",
+	"notes": [
+		"Credit will be granted for only one of ECON 245, ECON 240.",
+		"See \"Credit Limit - Beginning Level Statistics Courses\"."
+	],
+	"credits": "1.5",
+	"hours": "3-1-0"
+}

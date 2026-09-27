@@ -1,0 +1,35 @@
+{
+	"preOrCorequisites": "<div><div><div><ul><li><span>Complete <!-- -->all<!-- --> of the following</span><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\">Completed or concurrently enrolled in <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/5d1f6d80d2bc1524008cafbf\" target=\"_blank\">ECON103</a> <!-- -->-<!-- --> <!-- -->Principles of Microeconomics<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5c4ff0ab1965452400384bb2\" target=\"_blank\">ECON103C</a> <!-- -->-<!-- --> <!-- -->Introduction to Principles of Microeconomics and Financial Project Evaluation<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5db1ccf574176e2400275679\" target=\"_blank\">ECON180</a> <!-- -->-<!-- --> <!-- -->Introduction to Economics and Financial Project Evaluation<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><li data-test=\"ruleView-B\"><div data-test=\"ruleView-B-result\">Completed or concurrently enrolled in all of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/5d1f6ba194e82e2400a23250\" target=\"_blank\">ECON104</a> <!-- -->-<!-- --> <!-- -->Principles of Macroeconomics<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li></ul></li></ul></div></div></div>",
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Department of Economics",
+		"id": "5be366fa56a15d000126de99",
+		"customFields": {}
+	},
+	"description": "<p>Introduction to statistics and probability theory. Key topics include elementary probability, discrete and continuous random variables, as well as descriptive statistics of univariate and bivariate data. Introduction to basic programming and data visualization using R and Excel.</p>",
+	"pid": "BJlcheuT7N",
+	"title": "Descriptive Statistics and Probability",
+	"supplementalNotes": "<ul> <li>Credit will be granted for only one of ECON 245, ECON 240.</li> <li>See &quot;<a href=\"#/policy/B1UAeszdE\">Credit Limit - Beginning Level Statistics Courses</a>&quot;.</li> </ul>",
+	"__catalogCourseId": "ECON245",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2025-09-02",
+	"preAndCorequisites": "<div><div><div><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/63168b42bee727d381e640aa\" target=\"_blank\">MATH100</a> <!-- -->-<!-- --> <!-- -->Calculus I<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/651de9ca8d54b2de78bce62c\" target=\"_blank\">MATH102</a> <!-- -->-<!-- --> <!-- -->Calculus for Students in the Social and Biological Sciences<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/63168d043e376f0b1f621ffd\" target=\"_blank\">MATH109</a> <!-- -->-<!-- --> <!-- -->Introduction to Calculus<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li></ul></div></div></div>",
+	"id": "6721141113d6edf42705341b",
+	"subjectCode": {
+		"name": "ECON",
+		"description": "Economics (ECON)",
+		"id": "5be1fbbfdece022e00ba70c1",
+		"linkedGroup": "5be366fa56a15d000126de99"
+	},
+	"hoursCatalogText": "3-1-0",
+	"catalogActivationDate": "2025-09-01",
+	"_score": 1
+}

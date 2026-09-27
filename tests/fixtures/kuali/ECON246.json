@@ -1,0 +1,34 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Department of Economics",
+		"id": "5be366fa56a15d000126de99",
+		"customFields": {}
+	},
+	"description": "<div>Introduction to estimation including linear regression. Sampling distributions of estimators, confidence intervals, hypothesis tests. Statistical programming and data visualization using R.</div>",
+	"pid": "H193e_TXE",
+	"title": "Statistical Inference",
+	"supplementalNotes": "<ul><li>Credit will be granted for only one of ECON 246, ECON 340.</li><li>Not open to students registered in or with credit in STAT 261.</li><li>STAT 252 cannot be used to satisfy the prerequisites.</li></ul>",
+	"__catalogCourseId": "ECON246",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2025-09-02",
+	"preAndCorequisites": "<div><div><div><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\">Earned a minimum grade of <span>C</span> in <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/6721141113d6edf42705341b\" target=\"_blank\">ECON245</a> <!-- -->-<!-- --> <!-- -->Descriptive Statistics and Probability<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5e615e517eb8e0250078b7da\" target=\"_blank\">STAT260</a> <!-- -->-<!-- --> <!-- -->Introduction to Probability and Statistics I<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li></ul></div></div></div>",
+	"id": "67211550dedefd4ef1889e9d",
+	"subjectCode": {
+		"name": "ECON",
+		"description": "Economics (ECON)",
+		"id": "5be1fbbfdece022e00ba70c1",
+		"linkedGroup": "5be366fa56a15d000126de99"
+	},
+	"hoursCatalogText": "3-1-0",
+	"catalogActivationDate": "2025-09-01",
+	"_score": 1
+}

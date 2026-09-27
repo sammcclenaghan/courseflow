@@ -1,0 +1,33 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Faculty of Law",
+		"id": "5be36afe56a15d000126deb9",
+		"customFields": {}
+	},
+	"description": "<p>Examines the nature, extent and consequences of global corruption. Focuses on global anti-corruption conventions and their adoption in the laws of USA, UK and Canada primarily in three areas: transnational business law, public law and criminal law enforcement.</p>",
+	"pid": "BJGElvTpB",
+	"title": "Global Corruption",
+	"supplementalNotes": "<ul> <li>Credit will be granted for only one of LAW 330A<u></u>, LAW 343 (if taken as section A01 in Sep - Dec 2015, Jan - Apr 2017, Sep - Dec 2017 or Sep - Dec 2019).</li> </ul>",
+	"__catalogCourseId": "LAW330A",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2020-09-01",
+	"id": "5defe02a866cca25005bf38f",
+	"subjectCode": {
+		"name": "LAW",
+		"description": "Law (LAW)",
+		"id": "5c13ffb142504f2400e64efb",
+		"linkedGroup": "5be36afe56a15d000126deb9"
+	},
+	"hoursCatalogText": "3-0-0",
+	"catalogActivationDate": "2020-05-15",
+	"_score": 1
+}

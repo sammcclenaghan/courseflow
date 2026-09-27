@@ -1,0 +1,36 @@
+{
+	"preOrCorequisites": "<div><div><div><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\">Completed or concurrently enrolled in <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/69389ea7c8b26359ce6c5dc5\" target=\"_blank\">ECON225</a> <!-- -->-<!-- --> <!-- -->Writing for Economists<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/620d363a058b920d3cd96a5a\" target=\"_blank\">ENGR120</a> <!-- -->-<!-- --> <!-- -->Design and Communication II<!-- --> <span style=\"margin-left:5px\">(2.5)</span></span></li><li><span><a href=\"#/courses/view/633ca14333e5fe717cbdb3dd\" target=\"_blank\">ENGR240</a> <!-- -->-<!-- --> <!-- -->Technical Writing<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li></ul></div></div></div>",
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Department of Economics",
+		"id": "5be366fa56a15d000126de99",
+		"customFields": {}
+	},
+	"description": "<p>Principles of econometrics using matrix algebra with applied examples. Multiple regression, maximum likelihood estimation, restricted least squares, hypothesis testing, functional form, specification and model selection strategies, nonlinear least squares, time series models. Topics may also include: Bayesian econometrics.</p>",
+	"pid": "B1JRgd6XN",
+	"title": "Econometrics Part I",
+	"recommendations": "<ul><li> ECON 203 and ECON 204 recommended prior to ECON 365. Recommended for students to take both ECON 365 and ECON 366, since they form a sequence.</li></ul>",
+	"supplementalNotes": "<ul><li>Credit will be granted for only one of ECON 365, ECON 445.</li></ul>",
+	"__catalogCourseId": "ECON365",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2026-05-03",
+	"preAndCorequisites": "<div><div><div><ul><li><span>Complete <!-- -->all<!-- --> of the following</span><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/5d1f6d80d2bc1524008cafbf\" target=\"_blank\">ECON103</a> <!-- -->-<!-- --> <!-- -->Principles of Microeconomics<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5c4ff0ab1965452400384bb2\" target=\"_blank\">ECON103C</a> <!-- -->-<!-- --> <!-- -->Introduction to Principles of Microeconomics and Financial Project Evaluation<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5db1ccf574176e2400275679\" target=\"_blank\">ECON180</a> <!-- -->-<!-- --> <!-- -->Introduction to Economics and Financial Project Evaluation<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><li data-test=\"ruleView-B\"><div data-test=\"ruleView-B-result\">Complete all of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/5d1f6ba194e82e2400a23250\" target=\"_blank\">ECON104</a> <!-- -->-<!-- --> <!-- -->Principles of Macroeconomics<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><li data-test=\"ruleView-C\"><div data-test=\"ruleView-C-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/6721141113d6edf42705341b\" target=\"_blank\">ECON245</a> <!-- -->-<!-- --> <!-- -->Descriptive Statistics and Probability<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5e615e517eb8e0250078b7da\" target=\"_blank\">STAT260</a> <!-- -->-<!-- --> <!-- -->Introduction to Probability and Statistics I<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><li data-test=\"ruleView-D\"><div data-test=\"ruleView-D-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/67211550dedefd4ef1889e9d\" target=\"_blank\">ECON246</a> <!-- -->-<!-- --> <!-- -->Statistical Inference<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5e615ea270a30e250015ad11\" target=\"_blank\">STAT261</a> <!-- -->-<!-- --> <!-- -->Introduction to Probability and Statistics II<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><div><span class=\"rules_groupHeader_37\"></span><li><span>Complete <!-- -->1<!-- --> of the following</span><ul><li data-test=\"ruleView-E.1\"><div data-test=\"ruleView-E.1-result\">Earn a minimum grade of <span>B</span> in each of the following: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/629f89a09f74b948ca31547e\" target=\"_blank\">MATH208</a> <!-- -->-<!-- --> <!-- -->Mathematics for Economics and Econometrics<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><li data-test=\"ruleView-E.2\"><div data-test=\"ruleView-E.2-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/5d1f67c789944f24002acd1e\" target=\"_blank\">MATH110</a> <!-- -->-<!-- --> <!-- -->Matrix Algebra for Engineers<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/63168fab578b6df3d6c07ace\" target=\"_blank\">MATH211</a> <!-- -->-<!-- --> <!-- -->Matrix Algebra I<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li></ul></li></div></ul></li></ul></div></div></div>",
+	"id": "68408475083f2e2d4ad43ea3",
+	"subjectCode": {
+		"name": "ECON",
+		"description": "Economics (ECON)",
+		"id": "5be1fbbfdece022e00ba70c1",
+		"linkedGroup": "5be366fa56a15d000126de99"
+	},
+	"hoursCatalogText": "3-1-0",
+	"catalogActivationDate": "2026-05-01",
+	"_score": 1
+}

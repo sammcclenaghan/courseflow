@@ -1,0 +1,35 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Department of Computer Science",
+		"id": "5be366a356a15d000126de93",
+		"customFields": {}
+	},
+	"description": "<p>Exploration of the interfaces between combinatorics and Computer Science. Algorithms and data structures that are used to manipulate, generate, and randomly select combinatorial objects, including sets, permutations, combinations, trees, graphs. Methods for analyzing combinatorial algorithms such as recurrence relations, asymptotics, and amortized complexity.</p>",
+	"pid": "By_i1uaXN",
+	"title": "Combinatorial Algorithms",
+	"supplementalNotes": "<ul> <li>Credit will be granted for only one of CSC 428A, CSC 528.</li> <li>May be offered as a joint undergraduate and graduate class.</li> </ul>",
+	"__catalogCourseId": "CSC428A",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2022-09-02",
+	"crossListedCourses": [],
+	"preAndCorequisites": "<div><div><div><ul><li><span>Complete <!-- -->all<!-- --> of the following</span><ul><div><span class=\"rules_groupHeader_37\"></span><li><span>Complete <!-- -->1<!-- --> of the following</span><ul><li data-test=\"ruleView-A.1\"><div data-test=\"ruleView-A.1-result\">Earn a minimum grade of <span>B+</span> in each of the following: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/682cb258e9b854a010694f7a\" target=\"_blank\">CSC226</a> <!-- -->-<!-- --> <!-- -->Algorithms and Data Structures II<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><div><span class=\"rules_groupHeader_37\"></span><li><span>Complete <!-- -->all<!-- --> of the following</span><ul><li data-test=\"ruleView-A.2.1\"><div data-test=\"ruleView-A.2.1-result\">Earn a minimum grade of <span>B+</span> in each of the following: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/682cacd70a4fbbb96d840da3\" target=\"_blank\">CSC225</a> <!-- -->-<!-- --> <!-- -->Algorithms and Data Structures I<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><li data-test=\"ruleView-A.2.2\"><div data-test=\"ruleView-A.2.2-result\">Earn a minimum grade of <span>B</span> in each of the following: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/654c1b93795631ffc84e95d8\" target=\"_blank\">MATH222</a> <!-- -->-<!-- --> <!-- -->Discrete and Combinatorial Mathematics<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li></ul></li></div></ul></li></div><li data-test=\"ruleView-B\"><div data-test=\"ruleView-B-result\"><div>minimum third-year standing.</div></div></li></ul></li></ul></div></div></div>",
+	"id": "61170e2bd7b1f0b1943b1b98",
+	"subjectCode": {
+		"name": "CSC",
+		"description": "Computer Science (CSC)",
+		"id": "5c13f75e3d3a332600766f0d",
+		"linkedGroup": "5be366a356a15d000126de93"
+	},
+	"hoursCatalogText": "3-0-0",
+	"catalogActivationDate": "2022-09-01",
+	"_score": 1
+}

@@ -1,0 +1,34 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Department of Pacific and Asian Studies",
+		"id": "5bca28157470c1000123acc5",
+		"customFields": {}
+	},
+	"description": "<p>Continuation of PAAS 129 for students who wish to improve their skills in Korean. Includes advanced sentence patterns (grammar) and use of written and audio-visual materials to stimulate students’ ability to communicate on a variety of topics.</p>",
+	"pid": "SkhHPGo9w",
+	"title": "Pre-Intermediate Korean I",
+	"supplementalNotes": "<ul> <li>Not open to fluent speakers of Korean. </li> </ul>",
+	"__catalogCourseId": "PAAS228",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2022-09-02",
+	"preAndCorequisites": "<div><div><div><ul><li><span>Complete <!-- -->1<!-- --> of the following</span><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\">Earned a minimum grade of <span>B</span> in <span></span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/61a676c2a65ae3e323f7180b\" target=\"_blank\">PAAS129</a> <!-- -->-<!-- --> <!-- -->Introduction to Korean II<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><li data-test=\"ruleView-B\"><div data-test=\"ruleView-B-result\"><div>or permission of the department</div></div></li></ul></li></ul></div></div></div>",
+	"id": "61a677464619105a013a4584",
+	"subjectCode": {
+		"name": "PAAS",
+		"description": "Pacific and Asian Studies (PAAS)",
+		"id": "5c1401f9b7636f2400ac4e03",
+		"linkedGroup": "5c13f6e72c6b6100011efdb0"
+	},
+	"hoursCatalogText": "3-0-0",
+	"catalogActivationDate": "2022-09-01",
+	"_score": 1
+}

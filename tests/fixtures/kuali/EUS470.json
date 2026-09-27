@@ -1,0 +1,36 @@
+{
+	"__passedCatalogQuery": true,
+	"formerlyNotesText": "",
+	"groupFilter1": {
+		"name": "European Studies",
+		"id": "5c38e05d502031fa654e47cc",
+		"customFields": {}
+	},
+	"description": "<p>The academic element of the European Union Study Tour offered by the Network for European Studies Canada or another Study Tour/Field School with relevance to European Studies that is approved by the Program. Normally requires some course work to be completed prior to departure, while other course work is due during and after the field school. Content must be approved in advance by the Program.</p>",
+	"pid": "ryXEgOIYeg",
+	"title": "Field School in European Studies",
+	"recommendations": "<ul> <li>EUS 200 and one of EUS 311 or POLI 311 recommended prior to EUS 470.</li> </ul>",
+	"supplementalNotes": "<ul> <li>Credit will be granted for only one of EUS 470 (if taken in the same topic), EUS 390 (if taken in the same topic), EUS 390A (if taken in the same topic), EUS 470X (if taken in the same topic).</li> <li>Satisfies the experiential learning requirement for students completing a Major or Honours in Political Science with the European Studies Option.</li> </ul> <br />",
+	"__catalogCourseId": "EUS470",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2026-05-03",
+	"preAndCorequisites": "<div><div><div><ul><li><span>Complete <!-- -->all<!-- --> of the following</span><ul><li data-test=\"ruleView-B\"><div data-test=\"ruleView-B-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/673d20875df4e0302c0d1249\" target=\"_blank\">EUS270</a> <!-- -->-<!-- --> <!-- -->Culture, Economics and Politics of Europe<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/672d9fd3f3b4d880fad0ba55\" target=\"_blank\">ECON270</a> <!-- -->-<!-- --> <!-- -->Culture, Economics and Politics of Europe<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/673ccf515df4e0302c05accc\" target=\"_blank\">SLLC270</a> <!-- -->-<!-- --> <!-- -->Culture, Economics and Politics of Europe<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/5d1f767e89944f24002ad8c9\" target=\"_blank\">POLI211</a> <!-- -->-<!-- --> <!-- -->European Integration and the European Union<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li><li data-test=\"ruleView-C\"><div data-test=\"ruleView-C-result\"><div>Permission of the program.</div></div></li></ul></li></ul></div></div></div>",
+	"id": "68a8f02aef7b39ac5ca7bd9f",
+	"subjectCode": {
+		"name": "EUS",
+		"description": "European Studies (EUS)",
+		"id": "5c13fbd2185fc42400eeaf52",
+		"linkedGroup": ""
+	},
+	"catalogActivationDate": "2026-05-01",
+	"repeatableCatalogText": "May be taken more than once for credit in different topics with permission of the program to a maximum of 3 units.",
+	"_score": 1
+}

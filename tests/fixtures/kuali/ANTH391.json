@@ -1,0 +1,35 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Department of Anthropology",
+		"id": "5be3636156a15d000126de7e",
+		"customFields": {}
+	},
+	"description": "<p>Presentation of selected problems in anthropology.</p> <br /> <p>* Contact hours may vary depending on the topic.</p>",
+	"pid": "rkAOpwpQ4",
+	"title": "Selected Problems in Anthropology: Area Studies",
+	"supplementalNotes": "<ul><li>Credit will be granted for only one of ANTH 391, ANTH 390 (if taken in the same topic).</li><li>Topics information will be provided by the departmental office.</li></ul>",
+	"__catalogCourseId": "ANTH391",
+	"proForma": "no",
+	"dateStart": "2020-01-01",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"preAndCorequisites": "<div><div><div><ul><li><span>Complete <!-- -->1<!-- --> of the following</span><ul><div><span class=\"rules_groupHeader_37\">For students with declared Honours or Major in Anthropology</span><li data-test=\"ruleView-A.1\"><div data-test=\"ruleView-A.1-result\"><div>set by department depending upon topic.</div></div></li></div><div><span class=\"rules_groupHeader_37\">For students without declared Honours or Major in Anthropology</span><li data-test=\"ruleView-B.1\"><div data-test=\"ruleView-B.1-result\"><div>permission of the program.</div></div></li></div></ul></li></ul></div></div></div>",
+	"id": "5d1f7038d2bc1524008cb1b4",
+	"subjectCode": {
+		"name": "ANTH",
+		"description": "Anthropology (ANTH)",
+		"id": "5be1fb162ce2be2e00301722",
+		"linkedGroup": "5be3636156a15d000126de7e"
+	},
+	"catalogActivationDate": "2019-11-15",
+	"hoursCatalogText": "3-0-0*",
+	"repeatableCatalogText": "May be taken more than once for credit in different topics.",
+	"_score": 1
+}

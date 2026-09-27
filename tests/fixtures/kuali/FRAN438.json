@@ -1,0 +1,34 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "School of Languages, Linguistics and Cultures",
+		"id": "66312691dbba2f001ad676ea",
+		"customFields": {}
+	},
+	"description": "<p>Measures the lasting impact of seminal French literary works, from Abelard’s autobiography to Simone de Beauvoir's <em>Le Deuxième Sexe</em> or the &quot;French theory&quot; that toppled accepted authorities and traditions well beyond their original times and places. By providing historical and intellectual contexts, as well as close readings and conceptual tools, it retraces the threads of transmission and influence of foundational, although revolutionary, ideas and texts.</p>",
+	"pid": "SJdC2DJqS",
+	"title": "French Texts that Made our World",
+	"supplementalNotes": "<ul> <li>Students registered in a French Major or Honours must write their assignments in French; other students may write their assignments in either French or English. Students may consult the school to assess their level of French and their ability to take the course.</li> <li>May be offered as a joint undergraduate and graduate class.</li> </ul>",
+	"__catalogCourseId": "FRAN438",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2024-09-01",
+	"preAndCorequisites": "<div><div><div><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\"><div>permission of the school.</div></div></li></ul></div></div></div>",
+	"id": "66d24df81db65e335d9f78b7",
+	"subjectCode": {
+		"name": "FRAN",
+		"description": "French and Francophone Studies (FRAN)",
+		"id": "5bb6515065a8732e00a173dc",
+		"linkedGroup": "5bb53c2f8d88df000194eaa6"
+	},
+	"hoursCatalogText": "3-0-0",
+	"catalogActivationDate": "2024-09-01",
+	"_score": 1
+}

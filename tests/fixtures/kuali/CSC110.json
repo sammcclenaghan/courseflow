@@ -1,0 +1,34 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "Department of Computer Science",
+		"id": "5be366a356a15d000126de93",
+		"customFields": {}
+	},
+	"description": "<p>Introduction to designing, implementing and understanding computer programs: an introduction to computing and problem solving; selection and iteration; arrays and collections; objects and classes; top-down design; incremental development and an introduction to testing.</p>",
+	"pid": "rkgWq1OpQE",
+	"title": "Fundamentals of Programming I",
+	"supplementalNotes": "<ul><li>Credit will be granted for only one of CSC 110, CSC 111.</li></ul>",
+	"__catalogCourseId": "CSC110",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2026-09-02",
+	"preAndCorequisites": "<div><div><div><ul><li><span>Complete <!-- -->1<!-- --> of the following</span><ul><div><span class=\"rules_groupHeader_37\"></span><li><span>Complete <!-- -->1<!-- --> of the following</span><ul><li data-test=\"ruleView-A.1\"><div data-test=\"ruleView-A.1-result\"><div>Foundations of Math 12</div></div></li><li data-test=\"ruleView-A.2\"><div data-test=\"ruleView-A.2-result\"><div>Mathematics 12</div></div></li><li data-test=\"ruleView-A.3\"><div data-test=\"ruleView-A.3-result\"><div>Pre-Calculus 12</div></div></li></ul></li></div><li data-test=\"ruleView-D\"><div data-test=\"ruleView-D-result\">Complete <span>1</span> of: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/63168b42bee727d381e640aa\" target=\"_blank\">MATH100</a> <!-- -->-<!-- --> <!-- -->Calculus I<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/651de9ca8d54b2de78bce62c\" target=\"_blank\">MATH102</a> <!-- -->-<!-- --> <!-- -->Calculus for Students in the Social and Biological Sciences<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/63168d043e376f0b1f621ffd\" target=\"_blank\">MATH109</a> <!-- -->-<!-- --> <!-- -->Introduction to Calculus<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li><li><span><a href=\"#/courses/view/64dfdcc3020494a4aa686907\" target=\"_blank\">MATH120</a> <!-- -->-<!-- --> <!-- -->Precalculus Mathematics<!-- --> <span style=\"margin-left:5px\">(1.5)</span></span></li></ul></div></div></li></ul></li></ul></div></div></div>",
+	"id": "682df7870ce84e4b4baff766",
+	"subjectCode": {
+		"name": "CSC",
+		"description": "Computer Science (CSC)",
+		"id": "5c13f75e3d3a332600766f0d",
+		"linkedGroup": "5be366a356a15d000126de93"
+	},
+	"hoursCatalogText": "3-2-0",
+	"catalogActivationDate": "2026-09-01",
+	"_score": 1
+}

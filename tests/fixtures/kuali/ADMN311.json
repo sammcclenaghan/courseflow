@@ -1,0 +1,40 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "School of Public Administration",
+		"id": "5bca4f1d1add8e000113d7b3",
+		"customFields": {}
+	},
+	"description": "<p>An exploration of the external factors affecting contemporary public sector management in Canada, the changing structural and value context within which public servants work, the key processes in which they are engaged and how those processes are changing. Focus is primarily on the federal and provincial governments. Discusses municipal administration and Indigenous governance.</p>",
+	"pid": "r1F2hDT7E",
+	"title": "Introduction to Public Administration",
+	"recommendations": "",
+	"supplementalNotes": "<ul> <li>Credit will be granted for only one of ADMN 311, HSD 404, POLI 350.</li> </ul>",
+	"__catalogCourseId": "ADMN311",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"crossListedCourses": [
+		{
+			"__catalogCourseId": "POLI350",
+			"pid": "rywCROTmV",
+			"title": "Introduction to Public Administration"
+		}
+	],
+	"dateStart": "2025-05-03",
+	"id": "67ffff2c84f6076d6372d72a",
+	"subjectCode": {
+		"name": "ADMN",
+		"description": "Public Administration (ADMN)",
+		"id": "5c13f149185fc42400eea048",
+		"linkedGroup": "5bca4f1d1add8e000113d7b3"
+	},
+	"catalogActivationDate": "2025-05-01",
+	"_score": 1
+}

@@ -15,6 +15,19 @@ export type Meeting = {
 	endDate: string;
 };
 
+export type Course = {
+	pid: string;
+	/** e.g. "CSC110" */
+	code: string;
+	title: string;
+	description: string | null;
+	notes: string[];
+	/** "1.5", "1.5–3" or "1.5 or 3"; null when the calendar doesn't say */
+	credits: string | null;
+	/** Lecture-lab-tutorial hours, e.g. "3-2-0" */
+	hours: string | null;
+};
+
 export type Section = {
 	term: string;
 	crn: string;

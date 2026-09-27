@@ -1,0 +1,36 @@
+{
+	"__passedCatalogQuery": true,
+	"formerlyNotesText": "HA 447",
+	"groupFilter1": {
+		"name": "Department of Art History and Visual Studies",
+		"id": "5be365a3fed2d200010da125",
+		"customFields": {}
+	},
+	"description": "<p>An intensive study of a selected aspect of Early Modern art.</p>",
+	"pid": "HyewNTD67V",
+	"title": "Seminar in Early Modern Art, c. 1500-1750",
+	"supplementalNotes": "<ul> <li>Credit will be granted for only one of AHVS 447, HA 447 (if taken in the same topic).</li> <li><span style=\"font-weight: 400;\">May be offered as a joint undergraduate and graduate class.</span></li> </ul>",
+	"__catalogCourseId": "AHVS447",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "1.5",
+			"max": "1.5"
+		},
+		"value": "1.5",
+		"chosen": "fixed"
+	},
+	"dateStart": "2024-05-02",
+	"preAndCorequisites": "<div><div><div><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\"><div>Minimum fourth-year standing.</div></div></li></ul></div></div></div>",
+	"id": "64cac06602c70f684d2c7d21",
+	"subjectCode": {
+		"name": "AHVS",
+		"description": "Art History and Visual Studies (AHVS)",
+		"id": "5c13f4e83d3a332600766a51",
+		"linkedGroup": "5be365a3fed2d200010da125"
+	},
+	"hoursCatalogText": "3-0-0",
+	"catalogActivationDate": "2024-05-01",
+	"repeatableCatalogText": "May be taken more than once for credit in different topics.",
+	"_score": 1
+}

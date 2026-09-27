@@ -1,0 +1,13 @@
+{
+	"pid": "H193e_TXE",
+	"code": "ECON246",
+	"title": "Statistical Inference",
+	"description": "Introduction to estimation including linear regression. Sampling distributions of estimators, confidence intervals, hypothesis tests. Statistical programming and data visualization using R.",
+	"notes": [
+		"Credit will be granted for only one of ECON 246, ECON 340.",
+		"Not open to students registered in or with credit in STAT 261.",
+		"STAT 252 cannot be used to satisfy the prerequisites."
+	],
+	"credits": "1.5",
+	"hours": "3-1-0"
+}

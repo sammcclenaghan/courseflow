@@ -1,0 +1,42 @@
+{
+	"__passedCatalogQuery": true,
+	"groupFilter1": {
+		"name": "School of Molecular Life Sciences",
+		"id": "69fcf26416ecfb85a46ceb67",
+		"customFields": {}
+	},
+	"corequisites": "<div><div><div><ul><li data-test=\"ruleView-A\"><div data-test=\"ruleView-A-result\">Concurrently enrolled in: <div><ul style=\"margin-top:5px;margin-bottom:5px\"><li><span><a href=\"#/courses/view/69fd1ae05cb75cd283fcb1e7\" target=\"_blank\">MLSC693</a> <!-- -->-<!-- --> <!-- -->PhD Candicacy Examination<!-- --> <span style=\"margin-left:5px\">(3.0)</span></span></li></ul></div></div></li></ul></div></div></div>",
+	"description": "",
+	"pid": "rkJXCvTQN",
+	"title": "PhD Dissertation",
+	"allGradingTypes": {
+		"com": true,
+		"inp": true,
+		"f": true,
+		"n": true
+	},
+	"supplementalNotes": "",
+	"__catalogCourseId": "BIOC699",
+	"proForma": "no",
+	"credits": {
+		"credits": {
+			"min": "36",
+			"max": "40"
+		},
+		"value": {
+			"min": "36",
+			"max": "40"
+		},
+		"chosen": "range"
+	},
+	"dateStart": "2026-09-02",
+	"id": "69fd0bd31ca5f568f06ecb71",
+	"subjectCode": {
+		"name": "BIOC",
+		"description": "Biochemistry (BIOC)",
+		"id": "5be1fb262d0dfe2e00ae298c",
+		"linkedGroup": "5be365c456a15d000126de8a"
+	},
+	"catalogActivationDate": "2026-09-01",
+	"_score": 1
+}

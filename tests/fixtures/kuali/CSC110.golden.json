@@ -1,0 +1,11 @@
+{
+	"pid": "rkgWq1OpQE",
+	"code": "CSC110",
+	"title": "Fundamentals of Programming I",
+	"description": "Introduction to designing, implementing and understanding computer programs: an introduction to computing and problem solving; selection and iteration; arrays and collections; objects and classes; top-down design; incremental development and an introduction to testing.",
+	"notes": [
+		"Credit will be granted for only one of CSC 110, CSC 111."
+	],
+	"credits": "1.5",
+	"hours": "3-2-0"
+}
