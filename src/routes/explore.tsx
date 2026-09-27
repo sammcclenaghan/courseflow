@@ -97,7 +97,7 @@ function ExplorePage() {
 	}
 
 	return (
-		<div className="explore-page w-full flex-1 overflow-y-auto overscroll-contain">
+		<div className="explore-page h-[calc(100dvh-var(--app-header-height))] w-full overflow-y-auto overscroll-contain">
 			<div className="pointer-events-none fixed inset-0 bg-[#FAFAF8]" />
 			<div
 				className="pointer-events-none fixed inset-0 opacity-[0.025]"
