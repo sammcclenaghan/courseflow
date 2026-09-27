@@ -1,4 +1,3 @@
-import { MapPin } from "lucide-react";
 import { cn, hexToRgba } from "@/lib/utils";
 import type { CalendarEvent as CalendarEventType } from "@/utils/scheduler-types";
 
@@ -83,10 +82,6 @@ export function CalendarEvent({
 				{event.section.subject} {event.section.courseNumber}{" "}
 				{event.section.section}
 			</p>
-			<div className="mt-0.5 flex items-center gap-1 text-[10px] text-muted-foreground">
-				<MapPin className="h-3 w-3 shrink-0" />
-				<span className="truncate">{event.section.location || "TBA"}</span>
-			</div>
 		</div>
 	);
 }

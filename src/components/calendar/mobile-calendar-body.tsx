@@ -1,4 +1,3 @@
-import { MapPin } from "lucide-react";
 import { useEffect, useMemo, useRef } from "react";
 import { cn, hexToRgba } from "@/lib/utils";
 import type { CalendarEvent } from "@/utils/scheduler-types";
@@ -127,8 +126,6 @@ function MobileEventBlock({ event, allDayEvents }: MobileEventBlockProps) {
 	const widthPercent = 100 / total;
 	const leftPercent = position * widthPercent;
 
-	const isCompact = height < 56;
-
 	return (
 		<div
 			className={cn(
@@ -153,12 +150,6 @@ function MobileEventBlock({ event, allDayEvents }: MobileEventBlockProps) {
 				{event.section.subject} {event.section.courseNumber}{" "}
 				<span className="text-foreground/60">{event.section.section}</span>
 			</p>
-			{!isCompact && (
-				<div className="mt-0.5 flex items-center gap-1 text-[11px] text-muted-foreground">
-					<MapPin className="size-3 shrink-0" />
-					<span className="truncate">{event.section.location || "TBA"}</span>
-				</div>
-			)}
 			<p className="text-[10px] text-muted-foreground/70 tabular-nums mt-0.5">
 				{formatTimeRange(event.start, event.end)}
 			</p>
