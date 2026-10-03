@@ -35,6 +35,7 @@ export type SectionRow = {
 	waitlist_actual: number;
 	waitlist_seats_available: number;
 	meetings: string | null;
+	enrollment_updated_at: string | null;
 	created_at: string;
 	updated_at: string;
 };

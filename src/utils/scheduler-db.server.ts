@@ -4,6 +4,7 @@ import {
 	normalizeScheduleCrns,
 	ScheduleRequestError,
 } from "./scheduler-shared";
+import { refreshStaleSeats } from "./seat-refresh.server";
 import {
 	type LegacySection,
 	mapSection,
@@ -338,6 +339,7 @@ ORDER BY ss.position, ss.created_at`,
 		.bind(scheduleId, term)
 		.all<SectionRow>();
 
+	refreshStaleSeats(term, results);
 	return results.map(mapSection);
 }
 

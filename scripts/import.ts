@@ -1,67 +1,21 @@
 import { writeFileSync } from "node:fs";
 import { z } from "zod";
-import { parseSection } from "../src/catalog/banner.ts";
+import { openSearch } from "../src/catalog/banner.ts";
 import { parseCourse } from "../src/catalog/kuali.ts";
 import type { Course, Meeting, Section } from "../src/catalog/model.ts";
 
-const BANNER = "https://banner.uvic.ca/StudentRegistrationSsb/ssb";
-
-// Pinned because Banner formats dates by Accept-Language, and "*" gives the
-// MM/DD/YYYY that parseSection expects.
-const HEADERS = { "Accept-Language": "*" };
-
-const searchPage = z.object({
-	totalCount: z.number().int(),
-	data: z.array(z.unknown()),
-});
-
 async function fetchSections(term: string): Promise<Section[]> {
-	// Picking a term starts a session; the search runs against its cookies.
-	const session = await fetch(`${BANNER}/term/search?mode=search`, {
-		method: "POST",
-		headers: HEADERS,
-		body: new URLSearchParams({ term }),
-	});
-	const headers = {
-		...HEADERS,
-		Cookie: session.headers
-			.getSetCookie()
-			.map((cookie) => cookie.split(";")[0])
-			.join("; "),
-	};
-	await fetch(`${BANNER}/classSearch/resetDataForm`, {
-		method: "POST",
-		headers,
-	});
-
-	// Banner caps a page at 500 sections, whatever pageMaxSize asks for.
-	const sections: Section[] = [];
-	let total = Number.POSITIVE_INFINITY;
-	while (sections.length < total) {
-		const query = new URLSearchParams({
-			txt_term: term,
-			pageOffset: String(sections.length),
-			pageMaxSize: "500",
-		});
-		const response = await fetch(
-			`${BANNER}/searchResults/searchResults?${query}`,
-			{ headers },
-		);
-		const page = searchPage.parse(await response.json());
-		total = page.totalCount;
-		// A bad session looks like an empty term: totalCount 0, no data.
-		if (page.data.length === 0) {
-			throw new Error(
-				`${term}: no sections at offset ${sections.length} of ${total}`,
-			);
-		}
-		sections.push(...page.data.map(parseSection));
-	}
+	const search = await openSearch(term);
+	const sections = await search();
+	// A bad session looks like an empty term.
+	if (sections.length === 0) throw new Error(`${term}: no sections`);
 
 	// Pruning deletes whatever this misses, so a short fetch must not pass.
 	const crns = new Set(sections.map((section) => section.crn));
-	if (crns.size !== total) {
-		throw new Error(`${term}: ${crns.size} unique CRNs, expected ${total}`);
+	if (crns.size !== sections.length) {
+		throw new Error(
+			`${term}: ${crns.size} unique CRNs in ${sections.length} sections`,
+		);
 	}
 	return sections;
 }

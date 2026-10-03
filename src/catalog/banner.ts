@@ -155,6 +155,74 @@ export function parseSection(raw: unknown): Section {
 	return bannerSection.parse(raw);
 }
 
+const BANNER = "https://banner.uvic.ca/StudentRegistrationSsb/ssb";
+
+// Pinned because Banner formats dates by Accept-Language, and "*" gives the
+// MM/DD/YYYY that parseSection expects.
+const HEADERS = { "Accept-Language": "*" };
+
+const searchPage = z.object({
+	totalCount: z.number().int(),
+	data: z.array(z.unknown()),
+});
+
+// A Banner search session for one term. Filters are searchResults params,
+// e.g. { txt_subject: "CSC", txt_courseNumber: "225" }, or none for the
+// whole term.
+export async function openSearch(term: string) {
+	// Picking a term starts a session; searches run against its cookies.
+	const session = await fetch(`${BANNER}/term/search?mode=search`, {
+		method: "POST",
+		headers: HEADERS,
+		body: new URLSearchParams({ term }),
+	});
+	const headers = {
+		...HEADERS,
+		Cookie: session.headers
+			.getSetCookie()
+			.map((cookie) => cookie.split(";")[0])
+			.join("; "),
+	};
+
+	return async function search(
+		filters: Record<string, string> = {},
+	): Promise<Section[]> {
+		// Without a reset, Banner silently answers with the previous search.
+		await fetch(`${BANNER}/classSearch/resetDataForm`, {
+			method: "POST",
+			headers,
+		});
+
+		// Banner caps a page at 500 sections, whatever pageMaxSize asks for.
+		const sections: Section[] = [];
+		let total = Number.POSITIVE_INFINITY;
+		while (sections.length < total) {
+			const query = new URLSearchParams({
+				...filters,
+				txt_term: term,
+				pageOffset: String(sections.length),
+				pageMaxSize: "500",
+			});
+			const response = await fetch(
+				`${BANNER}/searchResults/searchResults?${query}`,
+				{ headers },
+			);
+			const page = searchPage.parse(await response.json());
+			total = page.totalCount;
+			// A bad session also looks like this, so callers that expect
+			// sections must treat an empty result as a failure.
+			if (total === 0) break;
+			if (page.data.length === 0) {
+				throw new Error(
+					`${term}: no sections at offset ${sections.length} of ${total}`,
+				);
+			}
+			sections.push(...page.data.map(parseSection));
+		}
+		return sections;
+	};
+}
+
 // Banner HTML-escapes titles. The named ones are every entity seen in
 // titles, plus the XML basics; an unknown one fails the title check.
 const NAMED_ENTITIES: Record<string, string> = {
