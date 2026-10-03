@@ -7,6 +7,10 @@
 	],
 	"main": "src/server.ts",
 	"assets": {},
+	// Empty rather than omitted: without the key, deploys keep existing crons.
+	"triggers": {
+		"crons": []
+	},
 	"migrations": [
 		{
 			"tag": "v1",
