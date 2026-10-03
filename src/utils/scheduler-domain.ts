@@ -2,7 +2,7 @@ import type { Course } from "./catalog-types";
 import type { SavedCourse, ScheduleWithSections } from "./scheduler-types";
 import type { LegacySection } from "./sections-types";
 
-export function buildCourseFromSection(section: LegacySection): Course {
+function buildCourseFromSection(section: LegacySection): Course {
 	const subjectCode = `${section.subject}${section.courseNumber}`.replace(
 		/\s+/g,
 		"",

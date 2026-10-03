@@ -3,7 +3,6 @@
 // Runtime types generated with workerd@1.20260617.1 2026-06-23 nodejs_compat
 interface __BaseEnv_Env {
 	DB: D1Database;
-	APP_ENV: "local" | "production";
 	DISCORD_FEEDBACK_WEBHOOK_URL: string;
 }
 declare namespace Cloudflare {
@@ -12,7 +11,6 @@ declare namespace Cloudflare {
 	}
 	interface LocalEnv {
 		DB: D1Database;
-		APP_ENV: "local";
 		DISCORD_FEEDBACK_WEBHOOK_URL: string;
 	}
 	interface Env extends __BaseEnv_Env {}
@@ -22,7 +20,7 @@ type StringifyValues<EnvType extends Record<string, unknown>> = {
 	[Binding in keyof EnvType]: EnvType[Binding] extends string ? EnvType[Binding] : string;
 };
 declare namespace NodeJS {
-	interface ProcessEnv extends StringifyValues<Pick<Cloudflare.Env, "APP_ENV" | "DISCORD_FEEDBACK_WEBHOOK_URL">> {}
+	interface ProcessEnv extends StringifyValues<Pick<Cloudflare.Env, "DISCORD_FEEDBACK_WEBHOOK_URL">> {}
 }
 
 // Begin runtime types

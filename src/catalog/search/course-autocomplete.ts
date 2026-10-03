@@ -37,13 +37,6 @@ export function buildCourseAutocompleteIndex(
 	};
 }
 
-export function filterCoursesByOfferings(
-	courses: readonly CourseAutocompleteCourse[],
-	offeredPids: ReadonlySet<string>,
-): CourseAutocompleteCourse[] {
-	return courses.filter((course) => offeredPids.has(course.pid));
-}
-
 export function filterCourseAutocompleteIndexByOfferings(
 	index: CourseAutocompleteIndex,
 	offeredPids: ReadonlySet<string>,

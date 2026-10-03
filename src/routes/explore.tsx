@@ -3,10 +3,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ChevronLeft, Search, X } from "lucide-react";
 import { Fragment, type ReactNode, useMemo, useRef, useState } from "react";
 import { searchCourseAutocomplete } from "@/catalog/search/course-autocomplete";
-import {
-	markCourseSearchInput,
-	useCourseSearchPerformance,
-} from "@/catalog/search/course-search-performance";
 import { highlightTextSegments } from "@/catalog/search/text-highlight";
 import { catalogQueries } from "@/queries/catalog";
 import { useCourseAutocomplete } from "@/queries/generated";
@@ -42,13 +38,6 @@ function ExplorePage() {
 	);
 	const searchLoading = searchTerm.length > 0 && autocomplete.isLoading;
 
-	useCourseSearchPerformance({
-		surface: "explore",
-		query: searchTerm,
-		resultCount: searchResults.length,
-		isLoading: searchLoading,
-	});
-
 	const sortedSubjects = useMemo(() => {
 		if (!subjects) return [];
 		return [...subjects].sort((a, b) => a.subject.localeCompare(b.subject));
@@ -82,7 +71,6 @@ function ExplorePage() {
 	}
 
 	function handleSearchChange(value: string) {
-		markCourseSearchInput("explore");
 		setSearchQuery(value);
 		if (value.trim().length > 0) {
 			setAutocompleteLoadRequested(true);

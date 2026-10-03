@@ -18,7 +18,7 @@ export type TermValue = (typeof TERMS)[number]["value"];
 
 export const DEFAULT_TERM = TERMS[0].value;
 
-export function isTermValue(value: string): value is TermValue {
+function isTermValue(value: string): value is TermValue {
 	return TERMS.some((term) => term.value === value);
 }
 

@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import type { CalendarEvent as CalendarEventType } from "@/utils/scheduler-types";
 import { CalendarEvent } from "./calendar-event";
@@ -23,13 +22,7 @@ function addDays(date: Date, days: number) {
 	return next;
 }
 
-export function CalendarBody({
-	events,
-	overlay,
-}: {
-	events: CalendarEventType[];
-	overlay?: ReactNode;
-}) {
+export function CalendarBody({ events }: { events: CalendarEventType[] }) {
 	const weekStart = startOfWeek(new Date());
 	const monday = addDays(weekStart, 1);
 	const weekDays = Array.from({ length: 5 }, (_, index) =>
@@ -100,7 +93,6 @@ export function CalendarBody({
 						);
 					})}
 				</div>
-				{overlay}
 			</div>
 		</div>
 	);

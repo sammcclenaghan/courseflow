@@ -9,7 +9,6 @@ import {
 import type { ReactNode } from "react";
 import { z } from "zod";
 import { Header } from "@/components/header";
-import { LegacyScheduleMigration } from "@/components/legacy-schedule-migration";
 import { MobileTabBar } from "@/components/mobile-tab-bar";
 import { Toaster } from "@/components/ui/sonner";
 import { usePersistedTermBootstrap } from "@/lib/use-term";
@@ -75,7 +74,6 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
 			</head>
 			<body className="flex min-h-dvh flex-col bg-background font-sans text-foreground antialiased">
 				<GlobalTermBootstrap />
-				<LegacyScheduleMigration />
 				<Header />
 				<main className="flex flex-1 flex-col">{children}</main>
 				<MobileTabBar />

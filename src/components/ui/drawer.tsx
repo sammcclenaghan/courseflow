@@ -14,12 +14,6 @@ const Drawer = ({
 );
 Drawer.displayName = "Drawer";
 
-const DrawerTrigger = DrawerPrimitive.Trigger;
-
-const DrawerPortal = DrawerPrimitive.Portal;
-
-const DrawerClose = DrawerPrimitive.Close;
-
 const DrawerOverlay = React.forwardRef<
 	React.ComponentRef<typeof DrawerPrimitive.Overlay>,
 	React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Overlay>
@@ -36,7 +30,7 @@ const DrawerContent = React.forwardRef<
 	React.ComponentRef<typeof DrawerPrimitive.Content>,
 	React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
-	<DrawerPortal>
+	<DrawerPrimitive.Portal>
 		<DrawerOverlay />
 		<DrawerPrimitive.Content
 			ref={ref}
@@ -49,31 +43,9 @@ const DrawerContent = React.forwardRef<
 			<div className="mx-auto mt-3 mb-2 h-1 w-10 shrink-0 rounded-full bg-muted-foreground/20" />
 			{children}
 		</DrawerPrimitive.Content>
-	</DrawerPortal>
+	</DrawerPrimitive.Portal>
 ));
 DrawerContent.displayName = "DrawerContent";
-
-const DrawerHeader = ({
-	className,
-	...props
-}: React.HTMLAttributes<HTMLDivElement>) => (
-	<div
-		className={cn("grid gap-1.5 p-4 text-center sm:text-left", className)}
-		{...props}
-	/>
-);
-DrawerHeader.displayName = "DrawerHeader";
-
-const DrawerFooter = ({
-	className,
-	...props
-}: React.HTMLAttributes<HTMLDivElement>) => (
-	<div
-		className={cn("mt-auto flex flex-col gap-2 p-4", className)}
-		{...props}
-	/>
-);
-DrawerFooter.displayName = "DrawerFooter";
 
 const DrawerTitle = React.forwardRef<
 	React.ComponentRef<typeof DrawerPrimitive.Title>,
@@ -90,27 +62,4 @@ const DrawerTitle = React.forwardRef<
 ));
 DrawerTitle.displayName = "DrawerTitle";
 
-const DrawerDescription = React.forwardRef<
-	React.ComponentRef<typeof DrawerPrimitive.Description>,
-	React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Description>
->(({ className, ...props }, ref) => (
-	<DrawerPrimitive.Description
-		ref={ref}
-		className={cn("text-sm text-muted-foreground", className)}
-		{...props}
-	/>
-));
-DrawerDescription.displayName = "DrawerDescription";
-
-export {
-	Drawer,
-	DrawerClose,
-	DrawerContent,
-	DrawerDescription,
-	DrawerFooter,
-	DrawerHeader,
-	DrawerOverlay,
-	DrawerPortal,
-	DrawerTitle,
-	DrawerTrigger,
-};
+export { Drawer, DrawerContent, DrawerTitle };

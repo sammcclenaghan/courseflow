@@ -6,6 +6,7 @@ const STALE_AFTER_MS = 6 * 60 * 60 * 1000;
 const MAX_COURSES = 8;
 
 export function refreshStaleSeats(term: string, rows: SectionRow[]): void {
+	if (import.meta.env.DEV) return;
 	waitUntil(
 		refresh(term, rows).catch((error) =>
 			console.error("seat refresh failed", error),

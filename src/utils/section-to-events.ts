@@ -72,7 +72,7 @@ export function formatSectionSchedule(section: LegacySection): string {
 		.join(" · ");
 }
 
-export function sectionToEvents(
+function sectionToEvents(
 	section: LegacySection,
 	referenceDate: Date,
 	colorIndex: number,

@@ -6,18 +6,6 @@ import type {
 	ListSubjectsInput,
 } from "./catalog-types";
 
-export type {
-	AlternativeMode,
-	Course,
-	CourseAlternative,
-	CourseAlternativesResponse,
-	CourseSearchResult,
-	GetCourseAlternativesInput,
-	GetCourseBySubjectCodeInput,
-	ListSubjectsInput,
-	SubjectResult,
-} from "./catalog-types";
-
 export const getCourseBySubjectCode = createServerFn({ method: "GET" })
 	.validator((data: GetCourseBySubjectCodeInput) => data)
 	.handler(async ({ data }) => {

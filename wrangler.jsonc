@@ -43,15 +43,9 @@
 			"migrations_dir": "migrations"
 		}
 	],
-	"vars": {
-		"APP_ENV": "production"
-	},
 	"env": {
 		"local": {
 			"assets": {},
-			"vars": {
-				"APP_ENV": "local"
-			},
 			"d1_databases": [
 				{
 					"binding": "DB",
