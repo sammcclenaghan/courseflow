@@ -8,14 +8,13 @@ import {
 	markCourseSearchInput,
 	useCourseSearchPerformance,
 } from "@/catalog/search/course-search-performance";
-import { useCourseAutocomplete } from "@/catalog/search/use-course-autocomplete";
-import { useCourseOfferings } from "@/catalog/search/use-course-offerings";
 import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
+import { useCourseAutocomplete, useCourseOfferings } from "@/queries/generated";
 import type { CourseSearchResult } from "@/utils/catalog-types";
 import { getCourseToggle } from "./course-toggle";
 

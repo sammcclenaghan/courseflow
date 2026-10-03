@@ -1,7 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useCourseAutocomplete } from "@/catalog/search/use-course-autocomplete";
-import { useCourseOfferings } from "@/catalog/search/use-course-offerings";
 import { CatalogWall } from "@/components/landing/catalog-wall";
+import {
+	COURSE_AUTOCOMPLETE_URL,
+	COURSE_OFFERINGS_URL,
+	useCourseAutocomplete,
+	useCourseOfferings,
+} from "@/queries/generated";
 import { getTermLabel } from "@/utils/constants";
 
 export const Route = createFileRoute("/")({
@@ -26,14 +30,14 @@ export const Route = createFileRoute("/")({
 				rel: "preload",
 				as: "fetch",
 				crossOrigin: "anonymous",
-				href: "/generated/course-offerings.json",
+				href: COURSE_OFFERINGS_URL,
 			},
 			{
 				rel: "preload",
 				as: "fetch",
 				crossOrigin: "anonymous",
 				fetchPriority: "low",
-				href: "/generated/course-autocomplete.json",
+				href: COURSE_AUTOCOMPLETE_URL,
 			},
 		],
 	}),

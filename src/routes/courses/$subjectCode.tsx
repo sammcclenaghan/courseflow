@@ -15,7 +15,7 @@ import {
 import { useEffect, useState } from "react";
 import { z } from "zod";
 import { CourseRequisites } from "@/components/course-requisites";
-import { catalogQueries, catalogSectionQueries } from "@/queries/catalog";
+import { catalogQueries, sectionQueries } from "@/queries/catalog";
 import { scheduleQueries, scheduleQueryKey } from "@/queries/scheduler";
 import type { AlternativeMode, CourseAlternative } from "@/utils/catalog-types";
 import { getTermLabel } from "@/utils/constants";
@@ -52,7 +52,7 @@ export const Route = createFileRoute("/courses/$subjectCode")({
 		);
 		await Promise.all([
 			queryClient.ensureQueryData(
-				catalogSectionQueries.byPidAndTerm(course.pid, deps.term),
+				sectionQueries.byPidAndTerm(course.pid, deps.term),
 			),
 			queryClient.ensureQueryData(
 				catalogQueries.alternatives({
@@ -76,7 +76,7 @@ function CourseDetailPage() {
 	const courseQuery = useQuery(catalogQueries.bySubjectCode(subjectCode));
 	const course = courseQuery.data;
 	const sectionsQuery = useQuery(
-		catalogSectionQueries.byPidAndTerm(course?.pid ?? "", term),
+		sectionQueries.byPidAndTerm(course?.pid ?? "", term),
 	);
 	const alternativesQuery = useQuery(
 		catalogQueries.alternatives({

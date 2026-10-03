@@ -8,8 +8,8 @@ import {
 	useCourseSearchPerformance,
 } from "@/catalog/search/course-search-performance";
 import { highlightTextSegments } from "@/catalog/search/text-highlight";
-import { useCourseAutocomplete } from "@/catalog/search/use-course-autocomplete";
 import { catalogQueries } from "@/queries/catalog";
+import { useCourseAutocomplete } from "@/queries/generated";
 import type { CourseSearchResult, SubjectResult } from "@/utils/catalog-types";
 
 export const Route = createFileRoute("/explore")({

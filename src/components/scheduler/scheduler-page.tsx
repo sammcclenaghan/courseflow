@@ -2,11 +2,8 @@ import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useMemo, useRef } from "react";
 import { Calendar } from "@/components/calendar/calendar";
 import { useIsMobile } from "@/lib/use-media-query";
-import {
-	scheduleQueries,
-	scheduleQueryKey,
-	sectionQueries,
-} from "@/queries/scheduler";
+import { sectionQueries } from "@/queries/catalog";
+import { scheduleQueries, scheduleQueryKey } from "@/queries/scheduler";
 import type { Course, CourseSearchResult } from "@/utils/catalog-types";
 import { saveMySchedule } from "@/utils/scheduler.functions";
 import { expandSavedSchedule } from "@/utils/scheduler-domain";

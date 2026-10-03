@@ -3,7 +3,6 @@ import {
 	getCourseAlternatives,
 	getCourseBySubjectCode,
 	listSubjects,
-	searchCourses,
 } from "@/utils/catalog.functions";
 import type { AlternativeMode } from "@/utils/catalog-types";
 import { listSectionsByPidAndTerm } from "@/utils/sections.functions";
@@ -14,14 +13,6 @@ export const catalogQueries = {
 			queryKey: ["courses", "subjects", term ?? "all"],
 			queryFn: () => listSubjects({ data: { term } }),
 			staleTime: 10 * 60_000,
-		});
-	},
-	search(query: string, term?: string) {
-		return queryOptions({
-			queryKey: ["courses", "search", query, term ?? "all"],
-			queryFn: () => searchCourses({ data: { query, term } }),
-			enabled: query.length > 0,
-			staleTime: 60_000,
 		});
 	},
 	bySubjectCode(subjectCode: string) {
@@ -54,7 +45,7 @@ export const catalogQueries = {
 	},
 };
 
-export const catalogSectionQueries = {
+export const sectionQueries = {
 	byPidAndTerm(pid: string, term: string) {
 		return queryOptions({
 			queryKey: ["sections", pid, term],

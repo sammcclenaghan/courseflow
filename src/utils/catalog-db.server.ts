@@ -3,10 +3,8 @@ import type {
 	Course,
 	CourseAlternative,
 	CourseAlternativesResponse,
-	CourseSearchResult,
 	GetCourseAlternativesInput,
 	ListSubjectsInput,
-	SearchCoursesInput,
 	SubjectResult,
 } from "./catalog-types";
 
@@ -24,11 +22,6 @@ type CourseRow = {
 	updated_at: string;
 };
 
-type CourseSearchRow = Pick<
-	CourseRow,
-	"pid" | "subject_code" | "title" | "credits"
->;
-
 type SubjectCodeRow = {
 	subject_code: string;
 };
@@ -45,55 +38,6 @@ type CourseRecommendationRow = {
 	offered_in_term: number;
 	has_available_seats: number;
 };
-
-export async function searchCoursesFromDb({
-	query,
-	term,
-}: SearchCoursesInput): Promise<CourseSearchResult[]> {
-	const trimmedQuery = query.trim();
-	const trimmedTerm = term?.trim() ?? "";
-
-	if (trimmedQuery === "") {
-		return [];
-	}
-
-	const codePrefix = `${trimmedQuery}%`;
-	const compactCodePrefix = `${trimmedQuery.replaceAll(" ", "")}%`;
-	const includeTitle = trimmedQuery.length >= 3;
-	const titleClause = includeTitle ? " OR c.title LIKE ?" : "";
-	const titleParams = includeTitle ? [`%${trimmedQuery}%`] : [];
-	const termClause = trimmedTerm
-		? "EXISTS (SELECT 1 FROM sections s WHERE s.course_pid = c.pid AND s.term = ?) AND "
-		: "";
-	const termParams = trimmedTerm ? [trimmedTerm] : [];
-
-	const { results } = await env.DB.prepare(
-		`SELECT c.pid, c.subject_code, c.title, c.credits FROM courses c
-WHERE ${termClause}(
-  c.subject_code LIKE ?
-  OR REPLACE(c.subject_code, ' ', '') LIKE ?
-  ${titleClause}
-)
-ORDER BY
-  (
-    c.subject_code LIKE ?
-    OR REPLACE(c.subject_code, ' ', '') LIKE ?
-  ) DESC,
-  c.subject_code
-LIMIT 50`,
-	)
-		.bind(
-			...termParams,
-			codePrefix,
-			compactCodePrefix,
-			...titleParams,
-			codePrefix,
-			compactCodePrefix,
-		)
-		.all<CourseSearchRow>();
-
-	return results.map(mapCourseSearchRow);
-}
 
 export async function getCourseBySubjectCodeFromDb(
 	subjectCode: string,
@@ -271,14 +215,5 @@ function mapCourseRow(row: CourseRow): Course {
 		requisites: row.requisites ? JSON.parse(row.requisites) : null,
 		createdAt: row.created_at,
 		updatedAt: row.updated_at,
-	};
-}
-
-function mapCourseSearchRow(row: CourseSearchRow): CourseSearchResult {
-	return {
-		pid: row.pid,
-		subjectCode: row.subject_code,
-		title: row.title,
-		credits: row.credits,
 	};
 }

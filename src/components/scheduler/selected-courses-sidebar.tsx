@@ -18,7 +18,7 @@ import {
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
-import { sectionQueries } from "@/queries/scheduler";
+import { sectionQueries } from "@/queries/catalog";
 import type { Course } from "@/utils/catalog-types";
 import type { SavedCourse } from "@/utils/scheduler-types";
 import { sectionMeetings } from "@/utils/section-to-events";

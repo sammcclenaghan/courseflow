@@ -26,11 +26,6 @@ export type SubjectResult = {
 	courseCount: number;
 };
 
-export type SearchCoursesInput = {
-	query: string;
-	term?: string;
-};
-
 export type GetCourseBySubjectCodeInput = {
 	subjectCode: string;
 };
