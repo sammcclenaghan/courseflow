@@ -150,9 +150,6 @@ function upsertCourse(course: Course): string {
 		credits: sql(course.credits ?? ""),
 		hours_catalog_text: sql(course.hours ?? ""),
 		notes: sql(course.notes.join("\n")),
-		// Left as-is on existing courses, so the deployed app keeps showing
-		// the old text until it reads requisites instead.
-		pre_and_corequisites: sql(""),
 		requisites: sql(
 			JSON.stringify({
 				prerequisites: course.prerequisites,
@@ -163,7 +160,7 @@ function upsertCourse(course: Course): string {
 		),
 		updated_at: NOW,
 	};
-	return upsert("courses", ["pid"], row, ["pre_and_corequisites"]);
+	return upsert("courses", ["pid"], row);
 }
 
 const NOW = "strftime('%Y-%m-%dT%H:%M:%fZ', 'now')";
@@ -172,11 +169,10 @@ function upsert(
 	table: string,
 	key: string[],
 	row: Record<string, string>,
-	keep: string[] = [],
 ): string {
 	const columns = Object.keys(row);
 	const updates = columns
-		.filter((column) => !key.includes(column) && !keep.includes(column))
+		.filter((column) => !key.includes(column))
 		.map((column) => `${column} = excluded.${column}`);
 	return `INSERT INTO ${table} (${columns.join(", ")}) VALUES (${Object.values(row).join(", ")}) ON CONFLICT(${key.join(", ")}) DO UPDATE SET ${updates.join(", ")};`;
 }

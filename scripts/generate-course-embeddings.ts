@@ -20,7 +20,6 @@ type CourseRow = {
 	credits: string;
 	hours_catalog_text: string;
 	notes: string;
-	pre_and_corequisites: string;
 };
 
 type ExistingEmbeddingRow = {
@@ -49,7 +48,7 @@ type Options = {
 
 const options = parseOptions(process.argv.slice(2));
 const courses = await queryD1<CourseRow>(
-	`SELECT pid, subject_code, title, description, credits, hours_catalog_text, notes, pre_and_corequisites
+	`SELECT pid, subject_code, title, description, credits, hours_catalog_text, notes
 FROM courses
 ORDER BY subject_code`,
 	options,
@@ -130,8 +129,6 @@ function courseEmbeddingText(course: CourseRow) {
 		course.subject_code,
 		course.title,
 		course.description,
-		course.pre_and_corequisites &&
-			`Prerequisites and corequisites: ${course.pre_and_corequisites}`,
 		course.notes && `Notes: ${course.notes}`,
 		course.hours_catalog_text && `Hours: ${course.hours_catalog_text}`,
 	]
