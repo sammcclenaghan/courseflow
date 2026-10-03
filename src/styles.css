@@ -1,19 +1,21 @@
-@import 'tailwindcss';
-@plugin '@tailwindcss/typography';
-@import 'tw-animate-css';
-@import 'shadcn/tailwind.css';
-@import '@fontsource-variable/geist';
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource-variable/geist";
 
-@custom-variant dark (&:is(.dark *));
+@utility no-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 :root {
   --radius: 0.625rem;
   --app-header-height: 3.5rem;
-  /* Bottom tab bar — only rendered below md (see MobileTabBar). */
   --mobile-bottom-nav-height: 5rem;
   --ease-polish: cubic-bezier(0.22, 1, 0.36, 1);
 
-  /* CourseFlow palette: warm editorial neutrals with UVic blue accents. */
   --background: #fafaf8;
   --foreground: #1a1a1a;
   --card: rgba(255, 255, 255, 0.72);
@@ -53,7 +55,7 @@
 }
 
 @theme inline {
-  --font-sans: 'Geist Variable', system-ui, sans-serif;
+  --font-sans: "Geist Variable", system-ui, sans-serif;
   --font-heading: var(--font-sans);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -150,8 +152,8 @@ body,
   a,
   button,
   input,
-  [role='button'],
-  [data-slot='select-trigger'] {
+  [role="button"],
+  [data-slot="select-trigger"] {
     transition:
       color 180ms var(--ease-polish),
       background-color 180ms var(--ease-polish),
@@ -167,29 +169,12 @@ body,
   }
 }
 
-.prose pre {
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: #1d2e45;
-  color: #e8efff;
-}
-
 .header-bar {
   animation: header-slide-down 0.4s var(--ease-polish) both;
 }
 
 /*
   Layout helpers that account for the mobile bottom tab bar.
-
-  The floating MobileTabBar (see src/components/mobile-tab-bar.tsx) is fixed
-  to the bottom of the viewport and only renders below the md breakpoint.
-  These two classes keep full-height grids and scrollable content from being
-  hidden behind it; at md+ the bar is gone, so they collapse to the standard
-  app metrics (no extra space).
-
-  Use `.app-fill-height` on non-scrolling full-viewport grids (calendar shells)
-  and `.app-bottom-pad` on the inner content of `overflow-y-auto` pages so the
-  last rows clear the bar.
 */
 .app-fill-height {
   height: calc(
@@ -272,7 +257,7 @@ body,
   grid-auto-rows: minmax(0, 1fr);
   /* Paint containment also clips the last row's ragged end. */
   contain: content;
-  font-family: var(--font-mono, ui-monospace, 'SF Mono', Menlo, monospace);
+  font-family: var(--font-mono, ui-monospace, "SF Mono", Menlo, monospace);
   /* The catalog prints itself on, left to right, once. */
   mask-image: linear-gradient(78deg, #000 42%, transparent 60%);
   mask-size: 280% 100%;
@@ -292,7 +277,7 @@ body,
 }
 
 .catalog-wall i::before {
-  content: '';
+  content: "";
   display: block;
   width: var(--wall-dot);
   height: var(--wall-dot);

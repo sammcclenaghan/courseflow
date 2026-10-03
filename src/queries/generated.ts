@@ -8,7 +8,7 @@ import {
 export const COURSE_AUTOCOMPLETE_URL = "/generated/course-autocomplete.json";
 export const COURSE_OFFERINGS_URL = "/generated/course-offerings.json";
 
-export type CourseOfferingsByTerm = Record<string, string[]>;
+type CourseOfferingsByTerm = Record<string, string[]>;
 
 // Plain fetch() on purpose: the landing page preloads these files, and only a
 // request with fetch()'s default credentials mode reuses the preload.
@@ -19,7 +19,7 @@ async function fetchGenerated<T>(url: string): Promise<T> {
 }
 
 // Generated at build time, so they never change while the page is open.
-export const generatedQueries = {
+const generatedQueries = {
 	courseAutocomplete: queryOptions({
 		queryKey: ["generated", "course-autocomplete"],
 		queryFn: async () =>

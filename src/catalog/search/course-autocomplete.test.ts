@@ -3,7 +3,6 @@ import {
 	buildCourseAutocompleteIndex,
 	type CourseAutocompleteCourse,
 	filterCourseAutocompleteIndexByOfferings,
-	filterCoursesByOfferings,
 	searchCourseAutocomplete,
 } from "./course-autocomplete";
 
@@ -69,14 +68,6 @@ describe("searchCourseAutocomplete", () => {
 		expect(
 			searchCourseAutocomplete(index, "software").map((c) => c.subjectCode),
 		).toEqual(["SENG265"]);
-	});
-
-	it("filters courses to static term offerings", () => {
-		expect(
-			filterCoursesByOfferings(courses, new Set(["csc110", "seng265"])).map(
-				(c) => c.subjectCode,
-			),
-		).toEqual(["CSC110", "SENG265"]);
 	});
 
 	it("filters a prebuilt index to static term offerings", () => {

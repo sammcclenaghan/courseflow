@@ -4,12 +4,9 @@ import type { CourseSearchResult } from "@/utils/catalog-types";
 export const FAVOURITE_COURSES_STORAGE_KEY = "courseflow:favourite-courses";
 const CHANGE_EVENT = "courseflow:favourite-courses-change";
 
-export type FavouriteCourse = CourseSearchResult & {
+type FavouriteCourse = CourseSearchResult & {
 	favouritedAt: string;
 };
-
-type LegacyFavouriteCourse = string;
-export type StoredFavouriteCourse = FavouriteCourse | LegacyFavouriteCourse;
 
 function isFavouriteCourse(value: unknown): value is FavouriteCourse {
 	if (!value || typeof value !== "object") return false;
@@ -24,23 +21,16 @@ function isFavouriteCourse(value: unknown): value is FavouriteCourse {
 	);
 }
 
-function getStoredFavouritePid(value: StoredFavouriteCourse) {
-	return typeof value === "string" ? value : value.pid;
-}
-
 export function parseStoredFavouriteCourses(
 	raw: string | null,
-): StoredFavouriteCourse[] {
+): FavouriteCourse[] {
 	if (!raw) return [];
 
 	try {
 		const parsed = JSON.parse(raw);
 		if (!Array.isArray(parsed)) return [];
 
-		return parsed.filter(
-			(value): value is StoredFavouriteCourse =>
-				typeof value === "string" || isFavouriteCourse(value),
-		);
+		return parsed.filter(isFavouriteCourse);
 	} catch {
 		return [];
 	}
@@ -53,7 +43,7 @@ function readStoredFavourites() {
 	);
 }
 
-function writeStoredFavourites(courses: StoredFavouriteCourse[]) {
+function writeStoredFavourites(courses: FavouriteCourse[]) {
 	if (typeof window === "undefined") return;
 
 	try {
@@ -67,16 +57,16 @@ function writeStoredFavourites(courses: StoredFavouriteCourse[]) {
 	}
 }
 
-function getDisplayableFavourites(courses: StoredFavouriteCourse[]) {
-	return courses
-		.filter(isFavouriteCourse)
-		.sort((a, b) => b.favouritedAt.localeCompare(a.favouritedAt));
+function byNewest(courses: FavouriteCourse[]) {
+	return [...courses].sort((a, b) =>
+		b.favouritedAt.localeCompare(a.favouritedAt),
+	);
 }
 
 export function useFavouriteCourses() {
-	const [storedFavourites, setStoredFavourites] = useState<
-		StoredFavouriteCourse[]
-	>(() => readStoredFavourites());
+	const [storedFavourites, setStoredFavourites] = useState<FavouriteCourse[]>(
+		() => readStoredFavourites(),
+	);
 
 	useEffect(() => {
 		function refreshFavourites() {
@@ -93,27 +83,23 @@ export function useFavouriteCourses() {
 	}, []);
 
 	const favourites = useMemo(
-		() => getDisplayableFavourites(storedFavourites),
+		() => byNewest(storedFavourites),
 		[storedFavourites],
 	);
 
 	const isFavourite = useCallback(
 		(pid: string) =>
-			storedFavourites.some(
-				(savedCourse) => getStoredFavouritePid(savedCourse) === pid,
-			),
+			storedFavourites.some((savedCourse) => savedCourse.pid === pid),
 		[storedFavourites],
 	);
 
 	const toggleFavourite = useCallback((course: CourseSearchResult) => {
 		const current = readStoredFavourites();
 		const isSaved = current.some(
-			(savedCourse) => getStoredFavouritePid(savedCourse) === course.pid,
+			(savedCourse) => savedCourse.pid === course.pid,
 		);
-		const next: StoredFavouriteCourse[] = isSaved
-			? current.filter(
-					(savedCourse) => getStoredFavouritePid(savedCourse) !== course.pid,
-				)
+		const next: FavouriteCourse[] = isSaved
+			? current.filter((savedCourse) => savedCourse.pid !== course.pid)
 			: [
 					{
 						pid: course.pid,
@@ -129,18 +115,9 @@ export function useFavouriteCourses() {
 		setStoredFavourites(next);
 	}, []);
 
-	const removeFavourite = useCallback((pid: string) => {
-		const next = readStoredFavourites().filter(
-			(course) => getStoredFavouritePid(course) !== pid,
-		);
-		writeStoredFavourites(next);
-		setStoredFavourites(next);
-	}, []);
-
 	return {
 		favourites,
 		isFavourite,
 		toggleFavourite,
-		removeFavourite,
 	};
 }

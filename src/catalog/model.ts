@@ -1,4 +1,4 @@
-export type Seats = {
+type Seats = {
 	enrolled: number;
 	capacity: number;
 	available: number;

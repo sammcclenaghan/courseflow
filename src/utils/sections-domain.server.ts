@@ -4,11 +4,7 @@ import type {
 	SectionMeeting,
 } from "./sections-types";
 
-export type {
-	GroupedSections,
-	LegacySection,
-	SectionMeeting,
-} from "./sections-types";
+export type { GroupedSections, LegacySection } from "./sections-types";
 
 export type SectionRow = {
 	id: number;

@@ -31,7 +31,7 @@ describe("favourite courses", () => {
 		cleanup();
 	});
 
-	it("parses current course objects and legacy pid-only favourites", () => {
+	it("keeps only complete course objects", () => {
 		const stored = parseStoredFavouriteCourses(
 			JSON.stringify([
 				{
@@ -48,7 +48,6 @@ describe("favourite courses", () => {
 				...course,
 				favouritedAt: "2026-01-02T00:00:00.000Z",
 			},
-			"legacy-pid",
 		]);
 	});
 

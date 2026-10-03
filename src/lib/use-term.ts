@@ -4,7 +4,7 @@ import { DEFAULT_TERM, normalizeTerm, type TermValue } from "@/utils/constants";
 
 const TERM_STORAGE_KEY = "courseflow:selected-term";
 
-export function readStoredTerm(): TermValue | null {
+function readStoredTerm(): TermValue | null {
 	if (typeof window === "undefined") return null;
 	try {
 		return normalizeStoredTerm(window.localStorage.getItem(TERM_STORAGE_KEY));
@@ -13,7 +13,7 @@ export function readStoredTerm(): TermValue | null {
 	}
 }
 
-export function writeStoredTerm(term: string) {
+function writeStoredTerm(term: string) {
 	if (typeof window === "undefined") return;
 	try {
 		window.localStorage.setItem(TERM_STORAGE_KEY, normalizeTerm(term));

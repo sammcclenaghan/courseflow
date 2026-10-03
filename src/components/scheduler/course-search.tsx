@@ -5,10 +5,6 @@ import {
 	filterCourseAutocompleteIndexByOfferings,
 	searchCourseAutocomplete,
 } from "@/catalog/search/course-autocomplete";
-import {
-	markCourseSearchInput,
-	useCourseSearchPerformance,
-} from "@/catalog/search/course-search-performance";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -24,13 +20,11 @@ export function CourseSearch({
 	onCourseSelect,
 	onCourseRemove,
 	selectedPids,
-	disabled = false,
 }: {
 	term: string;
 	onCourseSelect: (result: CourseSearchResult) => void;
 	onCourseRemove: (pid: string) => void;
 	selectedPids: Set<string>;
-	disabled?: boolean;
 }) {
 	const { favourites } = useFavouriteCourses();
 	const [query, setQuery] = useState("");
@@ -38,9 +32,9 @@ export function CourseSearch({
 		useState(false);
 	const searchTerm = query.trim();
 	const shouldShowSavedCourses =
-		!disabled && searchTerm.length === 0 && favourites.length > 0;
+		searchTerm.length === 0 && favourites.length > 0;
 	const shouldLoadSearchData =
-		!disabled && (autocompleteLoadRequested || searchTerm.length > 0);
+		autocompleteLoadRequested || searchTerm.length > 0;
 	const shouldLoadOfferings = shouldLoadSearchData || shouldShowSavedCourses;
 	const autocomplete = useCourseAutocomplete(shouldLoadSearchData);
 	const offerings = useCourseOfferings(term, shouldLoadOfferings);
@@ -76,13 +70,6 @@ export function CourseSearch({
 		searchTerm.length > 0 && (autocomplete.isLoading || offerings.isLoading);
 	const isLoadingSavedCourses = shouldShowSavedCourses && offerings.isLoading;
 
-	useCourseSearchPerformance({
-		surface: "scheduler",
-		query: searchTerm,
-		resultCount: results.length,
-		isLoading,
-	});
-
 	return (
 		<div className="flex h-full min-h-0 flex-col">
 			<div className="border-border/60 border-b p-4">
@@ -98,21 +85,14 @@ export function CourseSearch({
 						value={query}
 						onFocus={() => setAutocompleteLoadRequested(true)}
 						onChange={(event) => {
-							markCourseSearchInput("scheduler");
 							setQuery(event.target.value);
 						}}
-						disabled={disabled}
 						className="pl-8"
 					/>
 				</div>
 			</div>
 
-			<ScrollArea
-				className={cn(
-					"min-h-0 flex-1",
-					disabled && "pointer-events-none opacity-60",
-				)}
-			>
+			<ScrollArea className="min-h-0 flex-1">
 				<div>
 					{!searchTerm && isLoadingSavedCourses && (
 						<div className="divide-y divide-border/60">

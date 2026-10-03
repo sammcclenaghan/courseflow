@@ -5,7 +5,6 @@ import {
 	Clock,
 	Hourglass,
 	Users,
-	Wand2,
 	X,
 } from "lucide-react";
 import { useState } from "react";
@@ -30,7 +29,6 @@ interface SelectedCoursesSidebarProps {
 	onCourseRemove: (course: Course) => void;
 	onSectionsUpdate: (course: Course, sections: LegacySection[]) => void;
 	onClearAll: () => void;
-	readOnly?: boolean;
 }
 
 export function SelectedCoursesSidebar({
@@ -39,7 +37,6 @@ export function SelectedCoursesSidebar({
 	onCourseRemove,
 	onSectionsUpdate,
 	onClearAll,
-	readOnly = false,
 }: SelectedCoursesSidebarProps) {
 	const [collapsedPidsByTerm, setCollapsedPidsByTerm] = useState<
 		Record<string, Set<string>>
@@ -63,24 +60,11 @@ export function SelectedCoursesSidebar({
 			<div className="flex items-center justify-between border-b border-border/60 p-4">
 				<h2 className="text-sm font-semibold">Selected Courses</h2>
 				{selectedCourses.length > 0 && (
-					<Button
-						variant="outline"
-						size="sm"
-						onClick={onClearAll}
-						disabled={readOnly}
-					>
+					<Button variant="outline" size="sm" onClick={onClearAll}>
 						Clear
 					</Button>
 				)}
 			</div>
-
-			{readOnly && (
-				<div className="flex items-center gap-2 border-b border-uvic-blue/15 bg-uvic-blue/5 px-4 py-2 text-[11px] font-medium text-uvic-blue">
-					<Wand2 className="size-3 shrink-0" />
-					<span>Auto-schedule preview</span>
-					<span className="ml-auto text-uvic-blue/65">Close to edit</span>
-				</div>
-			)}
 
 			<ScrollArea className="min-h-0 flex-1">
 				<div className="space-y-4 p-2">
@@ -103,7 +87,6 @@ export function SelectedCoursesSidebar({
 							onSectionsUpdate={(sections) =>
 								onSectionsUpdate(sc.course, sections)
 							}
-							readOnly={readOnly}
 						/>
 					))}
 				</div>
@@ -119,7 +102,6 @@ interface CourseCardProps {
 	onToggle: () => void;
 	onRemove: () => void;
 	onSectionsUpdate: (sections: LegacySection[]) => void;
-	readOnly?: boolean;
 }
 
 function CourseCard({
@@ -129,7 +111,6 @@ function CourseCard({
 	onToggle,
 	onRemove,
 	onSectionsUpdate,
-	readOnly = false,
 }: CourseCardProps) {
 	const { course } = savedCourse;
 
@@ -161,7 +142,6 @@ function CourseCard({
 					size="icon"
 					className="size-7 shrink-0"
 					onClick={onRemove}
-					disabled={readOnly}
 					aria-label={`Remove ${course.subjectCode} from timetable`}
 				>
 					<X className="size-3.5" />
@@ -174,7 +154,6 @@ function CourseCard({
 						term={term}
 						savedCourse={savedCourse}
 						onSectionsUpdate={onSectionsUpdate}
-						readOnly={readOnly}
 					/>
 				</div>
 			)}
@@ -186,14 +165,12 @@ interface SectionSelectorProps {
 	term: string;
 	savedCourse: SavedCourse;
 	onSectionsUpdate: (sections: LegacySection[]) => void;
-	readOnly?: boolean;
 }
 
 function SectionSelector({
 	term,
 	savedCourse,
 	onSectionsUpdate,
-	readOnly = false,
 }: SectionSelectorProps) {
 	const { data: grouped, isLoading } = useQuery(
 		sectionQueries.byPidAndTerm(savedCourse.course.pid, term),
@@ -245,14 +222,11 @@ function SectionSelector({
 									aria-label={`Select ${section.section} ${group.label.toLowerCase()} for ${savedCourse.course.subjectCode}`}
 									key={section.crn}
 									onClick={() => handleSelect(section)}
-									disabled={readOnly}
 									className={cn(
 										"flex w-full flex-col gap-1 rounded-md border px-2.5 py-2 text-left transition-colors",
 										isSelected
 											? "border-primary/35 bg-primary/10"
 											: "border-border/60 hover:bg-accent",
-										readOnly &&
-											"cursor-not-allowed opacity-60 hover:bg-transparent",
 									)}
 								>
 									<div className="flex items-center justify-between">

@@ -51,7 +51,7 @@ function RegistrationPage() {
 
 	const copyCrn = async (crn: string) => {
 		try {
-			await writeClipboardText(crn);
+			await navigator.clipboard.writeText(crn);
 			setRecentlyCopied(crn);
 			window.setTimeout(() => {
 				setRecentlyCopied((c) => (c === crn ? null : c));
@@ -325,25 +325,4 @@ function SectionRow({
 			</button>
 		</li>
 	);
-}
-
-async function writeClipboardText(text: string) {
-	if (navigator.clipboard?.writeText) {
-		await navigator.clipboard.writeText(text);
-		return;
-	}
-
-	const textarea = document.createElement("textarea");
-	textarea.value = text;
-	textarea.style.position = "fixed";
-	textarea.style.opacity = "0";
-	document.body.appendChild(textarea);
-	textarea.select();
-
-	try {
-		const ok = document.execCommand("copy");
-		if (!ok) throw new Error("Copy command failed");
-	} finally {
-		document.body.removeChild(textarea);
-	}
 }

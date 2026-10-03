@@ -23,7 +23,7 @@ export type ScheduleResult = {
 	updatedAt: string;
 };
 
-export type PublicScheduleResult = Omit<ScheduleResult, "id">;
+type PublicScheduleResult = Omit<ScheduleResult, "id">;
 
 export type ScheduleWithSections = {
 	schedule: ScheduleResult;

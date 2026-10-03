@@ -4,10 +4,6 @@ import {
 	filterCourseAutocompleteIndexByOfferings,
 	searchCourseAutocomplete,
 } from "@/catalog/search/course-autocomplete";
-import {
-	markCourseSearchInput,
-	useCourseSearchPerformance,
-} from "@/catalog/search/course-search-performance";
 import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent, DrawerTitle } from "@/components/ui/drawer";
 import { Input } from "@/components/ui/input";
@@ -64,13 +60,6 @@ export function SchedulerSearchSheet({
 	const isLoading =
 		searchTerm.length > 0 && (autocomplete.isLoading || offerings.isLoading);
 
-	useCourseSearchPerformance({
-		surface: "scheduler",
-		query: searchTerm,
-		resultCount: results.length,
-		isLoading,
-	});
-
 	useEffect(() => {
 		if (open) {
 			const timer = setTimeout(() => inputRef.current?.focus(), 100);
@@ -110,7 +99,6 @@ export function SchedulerSearchSheet({
 							ref={inputRef}
 							value={query}
 							onChange={(e) => {
-								markCourseSearchInput("scheduler");
 								setQuery(e.target.value);
 							}}
 							aria-label="Search courses"
