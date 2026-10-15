@@ -1,0 +1,22 @@
+{
+  "pid": "SyoX2Op7E",
+  "code": "MATH699",
+  "title": "Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "21–30",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH693"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

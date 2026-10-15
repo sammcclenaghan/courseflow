@@ -1,0 +1,43 @@
+{
+  "pid": "B1UBxuTmN",
+  "code": "CYC470",
+  "title": "Mental Health and Addictions",
+  "description": "Deepens holistic understandings of the nature, social determinants and neurobiological foundations of mental health and addictions. Explores collective and individual flourishing, assessment, epidemiology, prevention, early intervention, harm reduction and global approaches to relief of suffering. Encompasses CYC with infants, children, youth and families. Discusses cultural variations, Indigenous perspectives, Adverse Childhood Experiences, structural and social inequities, decolonization and impacts of intersecting identities and racialization. Develops readiness for interprofessional teamwork in child and youth care settings.",
+  "notes": [
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC205",
+          "CYC206"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CYC320"
+    ]
+  },
+  "recommendations": []
+}

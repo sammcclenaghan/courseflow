@@ -1,0 +1,50 @@
+{
+  "pid": "Hk_KqiK4h",
+  "code": "MUS123",
+  "title": "Writing About Music",
+  "description": "Reviews methods of music and sonic bibliography and criticism across various popular and academic discourses, with a focus on methodologies for the study and criticism of sonic practices.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "text",
+            "text": "Academic Writing Requirement satisfied"
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ATWP135",
+              "ENSH101",
+              "ENSH102"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS116",
+          "MUS117"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

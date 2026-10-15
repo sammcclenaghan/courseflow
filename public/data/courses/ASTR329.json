@@ -1,0 +1,24 @@
+{
+  "pid": "SJgFJCvTQ4",
+  "code": "ASTR329",
+  "title": "Introduction to Observational Astronomy",
+  "description": "Introduction to observational and data analysis techniques in Astronomy. Observational and practical work, directed reading.",
+  "notes": [
+    "Credit will be granted for only one of ASTR 329, ASTR 429A."
+  ],
+  "credits": "1.5",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ASTR250"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

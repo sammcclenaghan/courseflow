@@ -1,0 +1,35 @@
+{
+  "pid": "BJPx1YTX4",
+  "code": "POLI463",
+  "title": "Violence to Indigenous Lands and Bodies",
+  "description": "A comparison of US and Canadian law and policy. Examines the construction of Indigenous lands and bodies as terra nullius, wastelands and criminal spaces to legalize state claims over Indigenous lands and body. Considers settler colonial logics that affirm state political authority and harm Indigenous bodies and lands.",
+  "notes": [
+    "Credit will be granted for only one of POLI 463, POLI 433 (if taken on the same topic), POLI 533 (if taken on the same topic), POLI 563.",
+    "May be offered as a combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "POLI263",
+          "POLI363"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

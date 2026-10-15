@@ -1,0 +1,18 @@
+{
+  "pid": "ByeGN_6mE",
+  "code": "EPHE487",
+  "title": "Special Topics in Exercise Science, Physical and Health Education",
+  "description": null,
+  "notes": [
+    "Lecture and lab hours may vary depending upon topic."
+  ],
+  "credits": "1.5 or 3",
+  "hours": "3*-0*-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Set by department depending upon topic"
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

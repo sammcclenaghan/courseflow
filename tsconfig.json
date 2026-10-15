@@ -1,9 +1,9 @@
 {
   "include": ["src", "scripts", "worker-configuration.d.ts"],
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "ES2024",
     "module": "ESNext",
-    "lib": ["ES2022"],
+    "lib": ["ES2024"],
     "types": ["node"],
 
     /* Bundler mode */

@@ -1,0 +1,34 @@
+{
+  "pid": "Bkzx3OpmE",
+  "code": "MATH236",
+  "title": "Introduction to Real Analysis",
+  "description": "Axiomatic and metric properties of the real numbers. Sequences and limits. Completeness, compactness, Bolzano-Weierstrass and Heine-Borel theorems. Infinite series. Continuous and uniformly continuous functions.",
+  "notes": [
+    "Not open for credit to students with credit in any of MATH 334, MATH 335, MATH 336."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH101",
+          "MATH122"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

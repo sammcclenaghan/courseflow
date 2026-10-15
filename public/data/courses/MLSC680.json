@@ -1,0 +1,37 @@
+{
+  "pid": "HygBo8lCeg",
+  "code": "MLSC680",
+  "title": "Advanced Research Seminar",
+  "description": "Formal presentation of the research that comprises the major portion of the PhD dissertation work in biochemistry or microbiology.",
+  "notes": [
+    "Credit will be granted for only one of MLSC 680, BCMB 680.",
+    "Requires attendance and participation at all departmental seminars."
+  ],
+  "credits": "0",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MLSC580",
+          "BCMB580",
+          "BIOC580",
+          "MICR580"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

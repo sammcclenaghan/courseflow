@@ -1,0 +1,43 @@
+{
+  "pid": "rJedAgF6QN",
+  "code": "STAT350",
+  "title": "Mathematical Statistics I",
+  "description": "Discrete and continuous probability models, random variables and their distributions, mathematical expectation, moment generating functions, sums of random variables, limit theory, and sampling distributions.",
+  "notes": [
+    "Credit will be granted for only one of STAT 350, MATH 352.",
+    "Emphasis on the probability theory needed for STAT 450."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT252",
+          "STAT254",
+          "STAT255",
+          "STAT260"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH200"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

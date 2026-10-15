@@ -1,0 +1,46 @@
+{
+  "pid": "SJMcCDaQN",
+  "code": "BME481",
+  "title": "Biomaterials and Tissue Engineering",
+  "description": "Introduction to the types of biomaterials and their associated properties. Experimental characterization techniques including microscopy, detection of chemical compositions, protein adsorption and immunoreactivity. Methods for combining biomaterials with cells to engineer tissues.",
+  "notes": [
+    "Credit will be granted for only one of BME481, BME515, MECH450 (if taken in the same topic), MECH450A (if taken in the same topic), MECH481, MECH515, MECH580 (if taken in the same topic).",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BME350",
+          "BME351",
+          "MECH350"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR002"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "and minimum fourth-year standing in the Biomedical Engineering or Computer Engineering or Civil Engineering or Electrical Engineering or Mechanical Engineering program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

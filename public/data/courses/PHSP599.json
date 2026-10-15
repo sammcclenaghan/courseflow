@@ -1,0 +1,16 @@
+{
+  "pid": "ry1t0daQN",
+  "code": "PHSP599",
+  "title": "Thesis",
+  "description": "Students, working independently, with faculty guidance, complete a thesis to meet specific professional and academic goals. The thesis entails research in a topic area chosen in consultation with the student's supervisory committee.",
+  "notes": [],
+  "credits": "6",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the school."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

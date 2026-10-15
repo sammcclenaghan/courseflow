@@ -1,0 +1,46 @@
+{
+  "pid": "SyWHCDOpmV",
+  "code": "HINF320",
+  "title": "Project Management",
+  "description": "Introduction to the essentials of health project management and the project life cycle in health care. Topics may include project charter, network diagramming, management of scope, stakeholder identification, cost management, scheduling and risk management.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF001",
+          "CSC001"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BSc in Health Information Science or Combined BSc in Health Information Science and Computer Science"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "HINF140",
+      "HINF230"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

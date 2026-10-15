@@ -1,0 +1,38 @@
+{
+  "pid": "B1dh7_T7V",
+  "code": "EOS313",
+  "title": "Introductory Geological Oceanography",
+  "description": "An introduction to the geological processes that shape the ocean basins, oceanic plate creation and structure, hydrothermal circulation at mid-ocean ridges, bathymetry, ocean islands, different types of ocean margins, ocean sediments, the sedimentary record of past ocean circulation, coastal geology.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS120"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM101",
+          "CHEM150"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

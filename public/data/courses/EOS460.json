@@ -1,0 +1,45 @@
+{
+  "pid": "ryVTQu6QE",
+  "code": "EOS460",
+  "title": "Earth System Science",
+  "description": "An examination of the interrelationships between the complex systems operating in the solid Earth, hydrosphere, atmosphere and biosphere; methods of systems analysis for the planet; modelling of global processes.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS225",
+          "EOS325",
+          "MATH248",
+          "PHYS248"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS261",
+          "EOS335"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Complete 3 units of: EOS courses numbered 300 or higher (excluding EOS 350, EOS 365)."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

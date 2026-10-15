@@ -1,0 +1,40 @@
+{
+  "pid": "S1xP8Z3ON",
+  "code": "EPHE453",
+  "title": "Event Management",
+  "description": "Provides opportunities for students to apply their planning, risk management and interpersonal communication skills to the development and management of an event. Field experience is required.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE253",
+          "EPHE358",
+          "EPHE359"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CNPY417",
+          "ED-D417"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

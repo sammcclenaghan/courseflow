@@ -1,0 +1,35 @@
+{
+  "pid": "HkMNrdaQV",
+  "code": "GEOG353",
+  "title": "Coastal and Marine Resource Management",
+  "description": "An integration of the scientific, cultural, and policy dimensions of resource management in coastal and marine systems. Concepts will be illustrated with examples from wildlife and fisheries management. Although global context is set, a special focus will be on British Columbia’s coast.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 353, GEOG 452."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG209",
+          "GEOG252"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the instructor."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

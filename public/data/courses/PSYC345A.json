@@ -1,0 +1,24 @@
+{
+  "pid": "S1Tm1YTmE",
+  "code": "PSYC345A",
+  "title": "Drugs and Behaviour",
+  "description": "An introductory course designed to review the scientific literature on drugs, behaviour, and the central nervous system. Topics include introductions to pharmacology, neuropharmacology, the experimental analysis of behaviour, and the behavioural determinants of drug action.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 345A, PSYC 345."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC251"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

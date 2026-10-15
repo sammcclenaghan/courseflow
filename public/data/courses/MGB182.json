@@ -1,0 +1,25 @@
+{
+  "pid": "SJ3jn_aXV",
+  "code": "MGB182",
+  "title": "Language Skills III",
+  "description": "Further development of the language skills learned in 181.",
+  "notes": [
+    "Credit will be granted for only one of MGB 182, MGB 582.",
+    "May not be used for credit in any other undergraduate or graduate program."
+  ],
+  "credits": "1",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MGB181"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

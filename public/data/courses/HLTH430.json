@@ -1,0 +1,30 @@
+{
+  "pid": "Hy2MtOpQ4",
+  "code": "HLTH430",
+  "title": "Practicum",
+  "description": "Includes a 225 hour practicum at an organization and an accompanying course. All placements must be approved by the practicum coordinator. Practicum provides an opportunity to apply theories and concepts from the program into a workplace setting. Students will also have the opportunity to work with a team in a professional setting.",
+  "notes": [
+    "Students must have completed all core, area of focus and elective courses before they can proceed to practicum. They must also submit an application to complete their practicum course two full semesters in advance of the start date of their practicum to receive permission by the school to register.",
+    "HLTH 430 and 435 are only offered in Second Term of Winter Session.",
+    "Both HLTH 430 and 435 must be passed to be considered complete and if one or both courses are failed, both must be repeated successfully.",
+    "Practicum must be completed in Canada."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the school."
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "HLTH435"
+    ]
+  },
+  "recommendations": []
+}

@@ -1,0 +1,23 @@
+{
+  "pid": "HkJgvfhZF",
+  "code": "SOCW434",
+  "title": "Decolonizing Trauma Policy and Practice",
+  "description": "Incorporates decolonial perspectives on trauma and introduces students to a sociogenic understanding of trauma that examines the relationship between individuals, collectives and their environment. Grounded in the writings of Indigenous and post-colonial scholars, provides an examination of the challenges posed to normative conceptualizations of trauma. Focuses on providing culturally suitable interventions in addressing trauma as it affects Indigenous and refugee newcomer children and families.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCW311",
+      "SOCW312A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

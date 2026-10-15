@@ -1,0 +1,25 @@
+{
+  "pid": "r1xE1tTQ4",
+  "code": "PSYC351D",
+  "title": "Biopsychology",
+  "description": "Emphasizes the study of the biological basis of behavior at the molecular, cellular, and neural systems level. Covers the fundamentals of neurophysiology and neuroanatomy from a functional perspective, with an emphasis on the anatomy of the human nervous system. Examines the physiological basis of behaviours through review of contemporary research in areas such as sleep, reproduction, aggression, ingestion, learning and memory, motivation, and mental disorders.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 351D, PSYC 323."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC251"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

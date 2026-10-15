@@ -1,0 +1,34 @@
+{
+  "pid": "ry8oE_kcr",
+  "code": "FRAN394",
+  "title": "Children's and Young Adult Literature in French",
+  "description": "Children’s and young adult’s literature in French from a perspective that immediately grants literary value to the phenomenon. A survey of the Francophone production, from fairy tale to fantasy, from comic books to poetry. Explores the vast and varied literary production destined for children and young adults, and will analyze it for academic and teaching purposes. Includes an experiential learning component.",
+  "notes": [
+    "Students registered in a French Major or Honours must write their assignments in French; other students may write their assignments in either French or English.",
+    "Students may consult the school to assess their level of French and their ability to take the course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "FRAN275"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

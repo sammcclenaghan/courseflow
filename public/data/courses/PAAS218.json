@@ -1,0 +1,36 @@
+{
+  "pid": "SJmi6OpmE",
+  "code": "PAAS218",
+  "title": "Intensive Pre-Intermediate Chinese",
+  "description": "Bringing beginner students to the lower-intermediate level in modern standard Mandarin Chinese. Primary emphasis on reading and translation of texts in modern Mandarin Chinese in both standard and simplified characters. Introduction of elements of the classical language as used in modern writing. Attention to listening, speaking and writing skills.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 218, PAAS 111, CHIN 150, CHIN 200, CHIN 200A, CHIN 200B.",
+    "Not open to fluent speakers of Chinese."
+  ],
+  "credits": "3",
+  "hours": "6-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "PAAS117",
+          "PAAS118"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

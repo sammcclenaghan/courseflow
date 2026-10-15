@@ -1,0 +1,32 @@
+{
+  "pid": "SyZPa_TmV",
+  "code": "NURA517",
+  "title": "Leading in Practice Settings",
+  "description": "Integration of students' evolving knowledge of Advanced Practice Nursing through practice with a particular population. In collaboration with faculty and a field guide, students develop a personalized learning plan that focuses on clinical leadership, consultation, collaboration and research competencies. Students also participate in an online community with their peers for a total of 104 practice hours.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURA516"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

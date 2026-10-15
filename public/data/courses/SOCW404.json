@@ -1,0 +1,96 @@
+{
+  "pid": "Sk5weYp7V",
+  "code": "SOCW404",
+  "title": "Child Welfare Specialization Child Protection Practicum",
+  "description": "Develop, refine and apply generalist practice knowledge, skills, values and ethics. Under supervision in a mandated child protection setting, students will apply child welfare law and policy to direct practice in child protection investigation, interviewing, assessment and court procedures; guardianship and care plans; and various aspects of case management. The practicum is 350 hours.",
+  "notes": [
+    "Credit will be granted for only one of SOCW 404, SOCW 402, SOCW 404A.",
+    "Students must submit an application for this course. Summer and fall term applications must be submitted a minimum of 7.5 months before the start of the term. Spring term applications must be submitted a minimum of 8 months before the start of the term.",
+    "Social Work accreditation standards require that students spend the hours noted above in practice.",
+    "Field Education courses have two components: a placement in the field and an integrative practice seminar (online).",
+    "Students may be required to complete a Ministry of Children and Family Development or Indigenous Delegated Authority Partial Delegation Exam prior to or during their practicum placement. Non-BC students may be required to meet the requirements applicable in other jurisdictions."
+  ],
+  "credits": "4.5",
+  "hours": "1.5-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW304",
+          "SOCW304A"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW350A",
+          "SOCW354",
+          "SOCW356"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW419",
+          "SOCW475"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW491",
+          "SOCW492"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW413",
+          "SOCW451",
+          "SOCW476"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW413",
+          "SOCW451"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

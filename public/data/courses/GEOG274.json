@@ -1,0 +1,23 @@
+{
+  "pid": "SJ3GSdamV",
+  "code": "GEOG274",
+  "title": "Biogeography",
+  "description": "Examines the relationships among organisms - principally plants and animals - and their environment, emphasizing their distributions across a range of spatial and temporal scales. Examines basic ecological and evolutionary concepts affecting biogeographic processes of dispersal, speciation and extinction; how patterns of biodiversity change over space and time from early earth history to the contemporary environment; the nature of changing biotic distributions with increasing human impacts and global change.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG101A",
+      "GEOG103"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

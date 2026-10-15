@@ -1,0 +1,22 @@
+{
+  "pid": "Hklk3uTm4",
+  "code": "LING699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "19.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LING693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

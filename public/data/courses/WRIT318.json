@@ -1,0 +1,33 @@
+{
+  "pid": "rkEwbF674",
+  "code": "WRIT318",
+  "title": "Screenwriting Workshop",
+  "description": "A workshop in writing for the screen.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": "B-",
+        "minGpa": null,
+        "courses": [
+          "WRIT218",
+          "WRIT218B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

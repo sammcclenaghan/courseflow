@@ -1,0 +1,22 @@
+{
+  "pid": "By8uytaXN",
+  "code": "PSYC533",
+  "title": "General Linear Model - Multivariate",
+  "description": "Topics generally include multivariate multiple regression, principle component and factor analysis, canonical correlation analysis, multivariate analysis of variance, discriminant function analysis and logistic regression.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC532"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

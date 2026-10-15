@@ -1,0 +1,22 @@
+{
+  "pid": "BJzExKpmN",
+  "code": "SOCI326",
+  "title": "Social Networks",
+  "description": "The major models, methods, and findings of network analysis. The following areas may be discussed: friendship, social influence and status, small groups, communication and diffusion of information, corporate and community organization, social and economic mobility, and computer analysis of network data.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCI211"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

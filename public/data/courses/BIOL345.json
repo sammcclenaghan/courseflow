@@ -1,0 +1,65 @@
+{
+  "pid": "SyCERwp74",
+  "code": "BIOL345",
+  "title": "Animal Behaviour",
+  "description": "Evolutionary and comparative analyses of animal behaviour. Topics include foraging behaviours, evolution of sex, mate choice, sociality, empathy, conflict and play, nature/nurture controversies, sensory modalities, communication and the evolution of language, hemispheric dominance and laterality, taxonomic diversity of nervous systems, proximate and ultimate mechanisms for interpreting behaviour. Laboratory includes observational and experimental approaches to behaviour of representative invertebrate and vertebrate taxa and a field research project.",
+  "notes": [
+    "Students with credit in MRNE 446 may take this course for credit."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL184",
+          "BIOL190B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL186",
+          "BIOL190A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOL215"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "declared Honours or Major in Anthropology or declared Honours or Major in Combined Biology and Psychology."
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

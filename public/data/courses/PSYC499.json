@@ -1,0 +1,16 @@
+{
+  "pid": "r1-UyF6Q4",
+  "code": "PSYC499",
+  "title": "Honours Thesis and Seminar",
+  "description": "Students attend a weekly seminar which includes oral presentation of their proposed thesis research in the first term and a progress report of the research in the second term. For the remainder of the program, students work closely with a faculty supervisor regarding details of the written thesis which is submitted in April.",
+  "notes": [],
+  "credits": "3",
+  "hours": "1-2-1",
+  "prerequisites": {
+    "type": "text",
+    "text": "Declared Honours in Psychology."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

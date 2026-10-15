@@ -1,0 +1,25 @@
+{
+  "pid": "r1pOxuT74",
+  "code": "ECE403",
+  "title": "Optimization for Machine Learning",
+  "description": "The steepest descent, Newton, conjugate, and quasi-Newton algorithms for unconstrained optimization. Inexact line search techniques. Application of optimization methods to classification, logistic regression, and support vector machines for signal processing and machine intelligence involving audio, image, video, and other types of data. Introduction to constrained optimization.",
+  "notes": [
+    "Credit will be granted for only one of ECE 403, ECE 503, ELEC 403, ELEC 503.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH200"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

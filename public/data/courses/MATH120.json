@@ -1,0 +1,16 @@
+{
+  "pid": "SkUk2uT7E",
+  "code": "MATH120",
+  "title": "Precalculus Mathematics",
+  "description": "The essential topics prerequisite for calculus. Elementary functions with emphasis on the general nature of functions; polynomial, rational, exponential, logarithmic, and trigonometric functions.",
+  "notes": [
+    "Not open for credit to students with credit in any of MATH 012, MATH 100, MATH 102, MATH 109.",
+    "Not intended for students who are proficient with the topics covered in Principles of Mathematics 12 or Pre-Calculus 12. See note 4 under \"Department of Mathematics and Statistics\", \"Notes on Course Requirements\"."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

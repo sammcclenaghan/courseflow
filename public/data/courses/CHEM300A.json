@@ -1,0 +1,18 @@
+{
+  "pid": "SJIRCvpmV",
+  "code": "CHEM300A",
+  "title": "Chemistry in Modern Society",
+  "description": "Intended for a broad audience, including non-scientists. Not intended for those students (Chemistry majors and others) with a strong Chemistry background. Familiarizes students with chemistry as experienced in daily life. Discussions emphasize how to obtain and apply information in order to reach informed decisions on topics where chemistry plays a role.",
+  "notes": [
+    "Not open for credit to students registered in or with credit in any of CHEM 212, CHEM 222, CHEM 225."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Completed Chemistry 11 with a minimum grade of C (60%)"
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

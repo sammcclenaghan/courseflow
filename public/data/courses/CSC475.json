@@ -1,0 +1,81 @@
+{
+  "pid": "rkQhyuamV",
+  "code": "CSC475",
+  "title": "Music Retrieval Techniques",
+  "description": "A comprehensive introduction to the emerging research area of Music Information Retrieval (MIR). Topics include techniques from signal processing, machine learning, information retrieval, human-computer interaction and software engineering are applied in the design and development of MIR algorithms and systems.",
+  "notes": [
+    "Credit will be granted for only one of CSC 475, CSC 484 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 2,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC330"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC360"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC370"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG310"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG330"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE260",
+          "ECE265"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

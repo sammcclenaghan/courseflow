@@ -1,0 +1,25 @@
+{
+  "pid": "rylXMLgAgl",
+  "code": "MLSC602",
+  "title": "Journal Club II",
+  "description": "Introduction to relevant biochemical and microbiological research literature. Focus on the following research themes: molecular pathogenesis; gene expression and signaling; diagnostics, therapeutics and vaccines; protein chemistry, structure and function and proteomics.",
+  "notes": [
+    "Credit will be granted for only one of MLSC 602, BCMB 602."
+  ],
+  "credits": "0",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MLSC502",
+      "BCMB502"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

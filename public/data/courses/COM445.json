@@ -1,0 +1,43 @@
+{
+  "pid": "rkes_JuaXE",
+  "code": "COM445",
+  "title": "Corporate Finance and Valuation",
+  "description": "Serves as a continuation of the introductory finance course to more advanced applications of the techniques, concepts, and tools of corporate finance. Main topics include issuance of debt and equity, cost of capital, capital structure, financial leverage, working capital management, the company size-up, and valuation using market multiples of comparable companies and discounted cash flow (DCF) modelling.",
+  "notes": [
+    "Credit will be granted for only one of COM 445, ECON 454 (if taken prior to May 2021), MBA 524."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": "C+",
+            "minGpa": null,
+            "courses": [
+              "COM240",
+              "COM371"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum third-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

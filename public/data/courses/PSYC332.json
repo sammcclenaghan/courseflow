@@ -1,0 +1,39 @@
+{
+  "pid": "SyPX1KpXN",
+  "code": "PSYC332",
+  "title": "Health Psychology",
+  "description": "A study of health issues from the standpoint of biological, psychological, and social factors acting together. Topics include health promotion, approaches to health-behaviour change, stress and coping, patient-practitioner interaction, pain, psychological issues in chronic and terminal illness, death and bereavement, the role of psychological factors in disease and treatment.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC201"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC231",
+          "PSYC251",
+          "PSYC260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,58 @@
+{
+  "pid": "Bk860QmMD",
+  "code": "CYC211",
+  "title": "Supervised Practicum I",
+  "description": "An introduction to direct practice experience with children/youth in a supervised CYC setting. Acquire foundational professional skills, integrate knowledge obtained through coursework, develop a framework for ethical praxis and gain CYC practice experience.",
+  "notes": [
+    "Credit will be granted for only one of CYC 211, CYC 210, CYC 210A.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC100A",
+          "CYC100B",
+          "CYC110"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC120",
+          "CYC166A",
+          "CYC166B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC152"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to an undergrad program in Child and Youth Care"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

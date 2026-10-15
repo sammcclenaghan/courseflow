@@ -1,0 +1,18 @@
+{
+  "pid": "BklpLZDA9",
+  "code": "ENSH322",
+  "title": "Shakespeare on Screen",
+  "description": "Study of Shakespeare’s texts adapted for film and television.",
+  "notes": [
+    "Credit will only be granted for one of ENSH 322, ENGL 360 (if taken 201909, 202101, 202201)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

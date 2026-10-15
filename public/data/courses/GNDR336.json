@@ -1,0 +1,25 @@
+{
+  "pid": "H1Y7I_6Q4",
+  "code": "GNDR336",
+  "title": "Transgender Theory",
+  "description": "Examines predominant debates within the discipline historically, then explores concepts and knowledge/s generated out of contemporary transgender theory.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

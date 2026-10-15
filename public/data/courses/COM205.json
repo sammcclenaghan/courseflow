@@ -1,0 +1,18 @@
+{
+  "pid": "rJxYwkOpmE",
+  "code": "COM205",
+  "title": "Professional Skills Development",
+  "description": "Designed to ensure all Commerce students develop foundation, communication, personal and professional skills. The foundation skills include those necessary to complete the program of studies in the Gustavson School of Business. Other topics include presentations, public speaking, teamwork, time management, networking, business etiquette and community involvement. Students also develop methods to help establish a career mission. This is a non-credit but mandatory course for all Bachelor of Commerce students.",
+  "notes": [
+    "Taken during BCom Program core, 0.75 fee units per term over both winter terms."
+  ],
+  "credits": "0",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to BCom program core."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

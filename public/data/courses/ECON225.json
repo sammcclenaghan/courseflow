@@ -1,0 +1,49 @@
+{
+  "pid": "Skt2l_Tm4",
+  "code": "ECON225",
+  "title": "Writing for Economists",
+  "description": "Extensive practice in written technical and non-technical composition. Basic grammar is reviewed, including sentence syntax, punctuation and paragraph construction. Students are exposed to the correct style for the various documents they are likely to encounter.",
+  "notes": [
+    "A comprehension and writing test will be given in the first seven calendar days of the course. Students who fail the test will be required to see the Economics ECON 225 TA during the term to upgrade their writing skills. Students satisfy the ECON 225 course requirement if they have passed ENGR 120 or ENGR 240."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON103",
+          "ECON103C",
+          "ECON180"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON104"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied"
+      },
+      {
+        "type": "text",
+        "text": "declared Honours, Major, General, or Minor in Economics."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,41 @@
+{
+  "pid": "rJh2jO6QV",
+  "code": "LING409",
+  "title": "Advanced Morphological Analysis",
+  "description": "Surveys current issues in morphological theory with particular emphasis on contemporary theories and cross-linguistic analysis.",
+  "notes": [
+    "Credit will be granted for only one of LING 409, LING 407, LING 408."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "LING200",
+          "LING203"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "LING311",
+          "LING312"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "SkXBNuT74",
+  "code": "ES417",
+  "title": "Power, Difference, and Environmental Politics",
+  "description": "Explores how environmental politics is shaped by and seek to challenge relations of oppression.",
+  "notes": [
+    "Credit will be granted for only one of ES 417, ES 400A (if taken in Sep 1994 - Apr 1995), ES 422."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ES200",
+      "ES301"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,28 @@
+{
+  "pid": "rJ67BE3I1x",
+  "code": "GEOG333",
+  "title": "Contemporary Challenges in Global Development",
+  "description": "A critical review of contemporary challenges in global development, including a selection of topics related to key areas of focus for official development assistance such as foreign aid, poverty alleviation and development; gender, human rights and democracy; environmental sustainability and public health; transnationalism, migration and mobility; conflict and displacement; food security, water and energy resources; Indigenous issues; and struggles and development challenges in the Global South.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 333, GDS 202, GDS 300, GEOG 347B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG211",
+      "GDS201",
+      "POLI217"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "It is recommended that students declared in the GDS minor take GDS 201 as the prerequisite to satisfy the GDS program requirement."
+  ]
+}

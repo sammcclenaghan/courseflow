@@ -1,0 +1,40 @@
+{
+  "pid": "BJgttC_T7V",
+  "code": "PHYS210",
+  "title": "Introductory Geophysics",
+  "description": "An introduction to seismology, gravity, geomagnetism, paleomagnetism and heat flow, and how they contribute to our understanding of whole Earth structure and plate tectonics.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 210, EOS 210."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-2",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS110",
+          "PHYS120"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH101"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

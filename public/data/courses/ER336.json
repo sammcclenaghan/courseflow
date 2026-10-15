@@ -1,0 +1,25 @@
+{
+  "pid": "r1Y7N_pmV",
+  "code": "ER336",
+  "title": "Science Communication for Ecological Restoration",
+  "description": "Provides students with skills and tools for effective communication in ecological restoration. Introduces a variety of perspectives, methods, and skills such as speaking to policy makers and granting agencies, and putting together science communication pieces.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Certificate or Diploma program in Restoration of Natural Systems"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

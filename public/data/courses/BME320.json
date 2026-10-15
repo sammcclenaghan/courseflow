@@ -1,0 +1,40 @@
+{
+  "pid": "HJy9CvaXE",
+  "code": "BME320",
+  "title": "Engineering Materials with BME applications",
+  "description": "Materials for engineering focused on biomaterials and biomedical applications; atomic structure for biomaterials including metals, ceramics, polymers, and composites; crystalline structures; mechanical properties of metals, ceramics, and polymers, and their application as biomaterials; properties of semiconductors; electrical & optical properties of polymers, ceramics, and metal; applications of polymers as biomaterials in tissue engineering and drug delivery systems.",
+  "notes": [
+    "Not open for credit to students registered in or with credit in MECH 285."
+  ],
+  "credits": "1.5",
+  "hours": "3-2.5-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM101",
+          "CHEM150"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS111"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

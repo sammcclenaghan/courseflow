@@ -1,0 +1,27 @@
+{
+  "pid": "B1l0x_p7V",
+  "code": "ECON366",
+  "title": "Econometrics Part II",
+  "description": "Principles of econometrics using matrix algebra with applied examples. Generalized least squares, ridge regression, instrumental variables estimation, measurement error models, seemingly unrelated regressions, simultaneous equations models, probit and logit models, panel data models. Topics may also include: quantile regression and machine learning models.",
+  "notes": [
+    "Credit will be granted for only one of ECON 366, ECON 445.",
+    "Students wishing to proceed to graduate studies in Economics are advised to include ECON 365 and ECON 366 in their undergraduate program instead of ECON 345."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON365"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "ECON 365 with a minimum grade of B strongly recommended prior to ECON 366."
+  ]
+}

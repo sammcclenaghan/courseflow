@@ -1,0 +1,16 @@
+{
+  "pid": "B1eubF67N",
+  "code": "WRIT412",
+  "title": "Recurrent Themes in Film",
+  "description": "A lecture and seminar teaching the craft of writing about film through study of selected directors, film trends and national cinemas.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

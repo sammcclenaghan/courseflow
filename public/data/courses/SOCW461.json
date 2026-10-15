@@ -1,0 +1,42 @@
+{
+  "pid": "rJse4UrbY",
+  "code": "SOCW461",
+  "title": "Decolonizing Perspectives on Transnational Social Work",
+  "description": "An analysis of the relationship between transnational issues and social work practices within the context of globalization through a decolonizing lens. Themes covered will include economic globalization, forced migration and international social work education. Implications for decolonizing social work practices in relation to each theme will be examined. A diversity of sources, including audio-visual materials as well as writings of scholars from the global south will be used throughout the course.",
+  "notes": [
+    "Credit will be granted for only one of SOCW461, SOCW460 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW311",
+          "SOCW312"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW312A",
+          "SOCW312B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

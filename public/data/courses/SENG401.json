@@ -1,0 +1,26 @@
+{
+  "pid": "HyeVkgYTmE",
+  "code": "SENG401",
+  "title": "Social and Professional Issues",
+  "description": "Introduction to the larger societal context across Software Engineering and Computer Science. Topics include: the impact of software and hardware systems on privacy and handling of personal and proprietary information; the roles of encryption and interception of communication; trust in computers; democracy, free speech and civil discourse; intellectual property; computer crime; computers in the workplace; professional ethics and responsibilities; sustainable development and environmental stewardship; social ethics and relationships; economic exchange.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SENG321",
+      "SENG360",
+      "CSC320",
+      "CSC360",
+      "CSC370"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

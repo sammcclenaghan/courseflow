@@ -1,0 +1,53 @@
+{
+  "pid": "HJ4ibYpmE",
+  "code": "CHEM478",
+  "title": "Industrial Chemistry",
+  "description": "A comparative discussion of a number of chemical industries and the details of their processes.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 478, CHEM 302, CHEM 303, CHEM 306,",
+    "CHEM 578.",
+    "This course will require a background in chemistry and it is primarily designed for students taking a Chemistry program. A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM222",
+          "CHEM225"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM232",
+          "CHEM234"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM245"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

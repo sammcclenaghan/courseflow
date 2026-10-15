@@ -1,0 +1,28 @@
+{
+  "pid": "B1UE6D6QV",
+  "code": "AHVS411",
+  "title": "Seminar in World Histories of Art",
+  "description": "An exploration of different cultural perspectives for conceptualizing artistic works and practices. Topics may include comparisons as well as examinations of specific intercultural and cross-cultural contacts.",
+  "notes": [
+    "Credit will be granted for only one of AHVS 411, AHVS 511, HA 411 (if taken in the same topic).",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum 3 units of 300-level AHVS or HA courses"
+      },
+      {
+        "type": "text",
+        "text": "minimum fourth-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

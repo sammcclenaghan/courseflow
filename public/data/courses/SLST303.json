@@ -1,0 +1,50 @@
+{
+  "pid": "SkD-lY674",
+  "code": "SLST303",
+  "title": "Russian Popular Culture (in Russian)",
+  "description": "For advanced to intermediate students of Russian. Focuses on improving mastery of the spoken language and comprehension and study of Russian popular culture in the original language.",
+  "notes": [
+    "Credit will be granted for only one of SLST 303, RUSS 300B, RUSS 302, RUSS 303."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SLST201",
+              "SLST202"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SLST220"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

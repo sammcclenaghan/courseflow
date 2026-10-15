@@ -1,0 +1,15 @@
+{
+  "pid": "SJgJlHuNi",
+  "code": "TCA430",
+  "title": "Future Ecosystems and Communities",
+  "description": "Focuses on the interface between communities and the ecosystems that support them, developing skills and approaches for designing mitigation and adaptation strategies that support mutual flourishing, including adaptive management, ecological restoration and nature-based solutions.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "TCA 210 recommended prior to or in conjunction with TCA 430."
+  ]
+}

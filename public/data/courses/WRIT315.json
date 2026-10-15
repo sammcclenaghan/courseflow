@@ -1,0 +1,24 @@
+{
+  "pid": "HyGvbKa7E",
+  "code": "WRIT315",
+  "title": "Advanced Journalism and Professional Writing",
+  "description": "A lecture/seminar course in the techniques of investigative research and feature writing.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 315, CW 315A, CW 315B."
+  ],
+  "credits": "1.5",
+  "hours": "2-1-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "WRIT215"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

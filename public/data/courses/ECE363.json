@@ -1,0 +1,26 @@
+{
+  "pid": "SkPsbtwpK",
+  "code": "ECE363",
+  "title": "Communication Networks",
+  "description": "Introduction to communication networking principles and engineering including resource management, error control, flow control, congestion control, TCP/IP model, algorithm and protocol design for wireless and wired communication networks.",
+  "notes": [
+    "Credit will be granted for only one of ECE 363, ECE 458, CENG 460, CSC 361, CSC 450."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE255",
+      "CENG255",
+      "CSC230"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

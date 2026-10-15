@@ -1,0 +1,16 @@
+{
+  "pid": "rJUPZYpmE",
+  "code": "WRIT326",
+  "title": "Media Production for Writers",
+  "description": "Explores digital audio, photography and video production for writers and artists in a practice-based format.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

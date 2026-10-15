@@ -1,0 +1,24 @@
+{
+  "pid": "rkEwoOaX4",
+  "code": "LAW344",
+  "title": "Insurance Law",
+  "description": "The theory and elements of the practice of insurance law, with reference to the most common forms of both first party and third party insurance: property, life and motor vehicle insurance.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LAW105",
+      "LAW105I",
+      "LAW108A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

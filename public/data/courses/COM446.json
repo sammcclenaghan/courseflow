@@ -1,0 +1,43 @@
+{
+  "pid": "BysO1Op7N",
+  "code": "COM446",
+  "title": "Investments",
+  "description": "Fundamental principles related to the securities traded in international financial markets. Includes market structure, information efficiency, asset pricing models, valuation and trading of stocks, bonds, options and futures.",
+  "notes": [
+    "Credit will be granted for only one of COM 446, COM 450 (if taken in the same topic), ECON 435, MBA 525."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "COM240",
+              "COM371"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum third-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

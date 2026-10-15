@@ -1,0 +1,43 @@
+{
+  "pid": "HkLghO6mN",
+  "code": "MATH301",
+  "title": "Complex Variables",
+  "description": "Theory of functions of a complex variable, analytic functions, elementary functions, integration, power series, residue theory.",
+  "notes": [
+    "Credit will be granted for only one of MATH 301, MATH 330B, MATH 338, MATH 438."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH200"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH204",
+          "MATH236",
+          "MATH300",
+          "MATH306",
+          "MATH335"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

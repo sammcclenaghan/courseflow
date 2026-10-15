@@ -1,0 +1,44 @@
+{
+  "pid": "Sk8qUYfrn",
+  "code": "SENG457",
+  "title": "Quantum Algorithms and Software Engineering",
+  "description": "Quantum algorithms, hybrid quantum-classical techniques, quantum software engineering, quantum software development environments, quantum computing applications.",
+  "notes": [
+    "Credit will be granted for only one of SENG 457, SENG480C (if taken in same topic), CSC 557, CSC586C (if taken in same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG265",
+          "CSC225"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "CSC 226 recommended prior to SENG 457."
+  ]
+}

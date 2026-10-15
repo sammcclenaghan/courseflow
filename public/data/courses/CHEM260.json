@@ -1,0 +1,23 @@
+{
+  "pid": "B1biZYam4",
+  "code": "CHEM260",
+  "title": "Synthetic Chemistry Laboratory",
+  "description": "Experimental techniques in synthetic chemistry and physical characterization of organic and inorganic molecules. Laboratory tutorials illustrate concepts and provide practice in structure determination.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM102",
+      "CHEM231"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

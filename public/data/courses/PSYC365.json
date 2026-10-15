@@ -1,0 +1,25 @@
+{
+  "pid": "Sy-EkYpQV",
+  "code": "PSYC365",
+  "title": "Fundamentals of Clinical Psychology",
+  "description": "Concepts, methods, and professional issues; the historical development of the profession, the scientist/practitioner model of training and practice, current research and clinical methods, professional/ethical issues; may include other current topics.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 365, PSYC 432."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC260"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

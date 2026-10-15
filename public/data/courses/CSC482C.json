@@ -1,0 +1,15 @@
+{
+  "pid": "ByO2yOp74",
+  "code": "CSC482C",
+  "title": "Topics in Algorithms",
+  "description": "Entrance is restricted to third- and fourth-year students who meet the prerequisite specified for the offered topic.\n* Lab hours may vary depending on the topic.",
+  "notes": [
+    "Credit will be granted for only one of CSC 482C, CSC 482 (if taken in the same topic), CSC 482A (if taken in the same topic), CSC 482B (if taken in the same topic), CSC 482D (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0*-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

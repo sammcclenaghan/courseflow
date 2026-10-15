@@ -1,0 +1,52 @@
+{
+  "pid": "SkNGh_amE",
+  "code": "MATH446",
+  "title": "Advanced Partial Differential Equations",
+  "description": "Classical linear PDEs; transport, Laplace, Poisson, heat, and wave equations. Scalar nonlinear first order equations, Hamilton-Jacobi, conservation laws, characteristics and notion of weak solutions. Representation of solutions, similarity solutions, Fourier transform, singular perturbation, travelling waves, power series solutions. Sobolev spaces, elliptic equations, Lax-Milgram, regularity, maximum principle. Linear evolution equations, parabolic and hyperbolic, semi-group theory. Additional topics as time permits.",
+  "notes": [
+    "Credit will be granted for only one of MATH 446, MATH 445B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH306",
+              "MATH335"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH341",
+              "MATH342",
+              "MATH346",
+              "MATH379"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

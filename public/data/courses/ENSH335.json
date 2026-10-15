@@ -1,0 +1,18 @@
+{
+  "pid": "Bystt-PAc",
+  "code": "ENSH335",
+  "title": "Special Topics in Literature and Social Justice",
+  "description": "Study of literature’s representation of and/or engagement with social justice issues (such as legal and political oppression, environmental destruction, activism, race relations and gender relations). Topic is announced each year.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 335, ENGL 425 (if taken in the same topic), ENGL 475 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

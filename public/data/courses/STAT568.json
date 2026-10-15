@@ -1,0 +1,13 @@
+{
+  "pid": "Syrk-taQN",
+  "code": "STAT568",
+  "title": "Generalized Linear Models",
+  "description": "Exponential family of distributions and generalized linear models; maximum likelihood estimation and inference; regression diagnostics; logistic regression; nominal and ordinal logistic regression; Poisson regression and log-linear models; clustered and longitudinal data.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

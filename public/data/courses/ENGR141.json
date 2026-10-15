@@ -1,0 +1,41 @@
+{
+  "pid": "B1nc7d67N",
+  "code": "ENGR141",
+  "title": "Engineering Mechanics",
+  "description": "Forces, moments of forces, couples, resultants of force systems; distributed loads; hydrostatics; conditions of equilibrium and applications to particles and rigid bodies in two dimensions; analysis of statically determinate structures including beams, trusses and arches; bending moment and shear force diagrams; dry friction.",
+  "notes": [
+    "Credit will be granted for only one of ENGR 141, MECH 141, MECH 241, MECH 245."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH109"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

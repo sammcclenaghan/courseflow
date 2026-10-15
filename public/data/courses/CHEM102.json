@@ -1,0 +1,59 @@
+{
+  "pid": "r11A0D6XN",
+  "code": "CHEM102",
+  "title": "Chemical Reactivity Fundamentals with Environmental Applications",
+  "description": "Introduction to thermodynamics and kinetics for chemical transformations in the environment. First and second laws of thermodynamics. Equilibria including acid base chemistry. Kinetics of one step and multiple step reactions, with an introduction to transition states and reactive intermediates. Application of these chemical concepts to the atmosphere and oceans. Laboratory builds on the experience of CHEM 101, with practice in developing routine skills. Continued emphasis is given to reporting data accurately.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "text",
+            "text": "Chemistry 12"
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "CHEM091"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM101",
+          "CHEM150"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH100",
+      "MATH102",
+      "MATH109"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

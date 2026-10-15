@@ -1,0 +1,25 @@
+{
+  "pid": "r17XVuaXE",
+  "code": "ER314",
+  "title": "Ethical, Legal and Policy Aspects of Environmental Restoration",
+  "description": "Addresses the relationship of environmental values to legislative and legal systems. Includes: ethical considerations in land management; future economic benefit and ecological cost; the land ethic; policy and legal considerations in restoration; and ecorestoration in research and natural resource management programs.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Certificate or Diploma program in Restoration of Natural Systems"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

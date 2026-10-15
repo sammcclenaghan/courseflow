@@ -1,0 +1,16 @@
+{
+  "pid": "SkqyWtTmN",
+  "code": "THEA105",
+  "title": "Introduction to Stagecraft and Technical Practice",
+  "description": "The intensive study and application of the principles of scenery and costume construction, stage lighting and theatre organization and practice. Practical assignments include the preparation and crewing of department productions, which may occur outside of regularly scheduled hours.",
+  "notes": [],
+  "credits": "3",
+  "hours": "1.5-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to the Theatre Major program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,71 @@
+{
+  "pid": "HJxDBg_6mE",
+  "code": "CYC475",
+  "title": "Advanced Practice with Children, Youth, Families and Communities",
+  "description": "Focuses on critical knowledge, skills and strategies required for practice with children, youth, families and community settings. Provides opportunities to apply CYC theories, perspectives and skills to further establish ethical practice, the importance of a social justice lens and critically engage in praxis. Develop an integrated approach that draws from theory courses, lab courses and practical experiences in the field.",
+  "notes": [
+    "Credit will be granted for only one of CYC 475, CYC 476, CYC 562.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "3",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC310",
+          "CYC310A",
+          "CYC311"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC320",
+          "CYC338"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC300",
+          "CYC321"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC265",
+          "CYC356",
+          "CYC370"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to an undergraduate program in the School of Child and Youth Care."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

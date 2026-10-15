@@ -1,0 +1,24 @@
+{
+  "pid": "H1Zqa_T7N",
+  "code": "NURS604A",
+  "title": "Qualitative Research Design",
+  "description": "Explores assumptions and claims underlying qualitative methodologies that inform research in professional nursing practice and health care.",
+  "notes": [
+    "Credit will be granted for only one of NURS 604, NURS 604A."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NURS601"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

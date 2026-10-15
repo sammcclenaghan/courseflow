@@ -1,0 +1,41 @@
+{
+  "pid": "BklGo1_T74",
+  "code": "CSC370",
+  "title": "Database Systems",
+  "description": "Data entities and relationships, data modeling using Entity-Relationship diagrams, the relational model of databases, relational algebra and calculus as formal foundations for querying, query languages and query optimization, physical representation of data in secondary storage, concurrency control and recovery, security and integrity in multi-user environments, and ethical considerations related to data privacy, access control and responsible data management.",
+  "notes": [
+    "Credit will be granted for only one of CSC 370, CSC 470, HINF 200, HINF 300."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC225",
+          "SENG265"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC120",
+          "ENGR130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

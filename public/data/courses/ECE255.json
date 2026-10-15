@@ -1,0 +1,35 @@
+{
+  "pid": "Hkw_gdpX4",
+  "code": "ECE255",
+  "title": "Introduction to Computer Architecture",
+  "description": "The architecture of computer systems including concepts such as processor, memory, buses, input/output, instruction sets, interrupt processing, pipelining, performance. Families of processors, CISC, RISC. Memory organization and management including cache, virtual memory, protection. Computer arithmetic. Assembly language programming, assemblers, linkers and loaders. Hardware/software interaction.",
+  "notes": [
+    "Credit will be granted for only one of ECE 255, CENG 255, CSC 230."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC110",
+      "CSC111"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC115",
+      "CSC116"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "HksQioU0H",
+  "code": "IS321D",
+  "title": "LE,NONET Community Internship D",
+  "description": "An introduction to practical experience within an Indigenous community or organization setting related to the category of Community and Land-Based learning. In consultation with the Experiential Learning Coordinator, Indigenous students identify an area of interest and undertake 120 hours of work under the supervision of a community adviser from an Indigenous community or organization.",
+  "notes": [
+    "Credit will be granted for only one of IS 321D, IS 321A, IS 321B, IS 321C.",
+    "LE,NONET courses are reserved for Indigenous students."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IS310D"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

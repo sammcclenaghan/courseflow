@@ -1,0 +1,16 @@
+{
+  "pid": "B1f9gOT7E",
+  "code": "ECE514",
+  "title": "Design and Analysis of Computer Communication Networks",
+  "description": "Markov chains and techniques for studying their transient and steady-state behaviour. Queuing theory and discrete time queues. Queuing models for media access, error control and traffic management protocols. Quality of service. Modelling of traffic and inter-arrival time. Self similar distributions and traffic. Analysis and design of switching fabrics. Switch design alternatives and performance modelling. Simulation of networks. Students are required to complete a project.",
+  "notes": [
+    "Credit will be granted for only one of ECE 514, ECE 463, CENG 461, ELEC 514.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

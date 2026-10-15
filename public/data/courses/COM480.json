@@ -1,0 +1,16 @@
+{
+  "pid": "r1Auk_pQV",
+  "code": "COM480",
+  "title": "International Study",
+  "description": "Conducted overseas as part of INTEP. An overseas immersion in cultural orientation, cultural sensitivity, on-site company visits with intensive foreign language training.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to Business Exchange program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

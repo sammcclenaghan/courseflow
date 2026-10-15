@@ -1,0 +1,84 @@
+{
+  "pid": "Hy2-aVyzv",
+  "code": "RCS450",
+  "title": "Capstone Seminar",
+  "description": "Graduating Major's research project consisting of readings and assignments based on what has been learned from the academic study of religion in the program and focused on the relationship of religion and society. Designed to develop as well as measure the student's integration of the various aspects of the discipline of Religious Studies.",
+  "notes": [
+    "Credit will be granted for only one of RCS 450, RS 450."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "courses",
+                "need": 1,
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "RCS200A",
+                  "RS200A"
+                ]
+              },
+              {
+                "type": "courses",
+                "need": 1,
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "RCS200B",
+                  "RS200B"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 2,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "RCS305",
+              "RCS306",
+              "RCS307",
+              "RCS308",
+              "RCS309",
+              "RCS310",
+              "RS305",
+              "RS306",
+              "RS307",
+              "RS308",
+              "RS309",
+              "RS310"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum fourth-year standing"
+          },
+          {
+            "type": "text",
+            "text": "declared Major in Religion, Culture and Society Program."
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

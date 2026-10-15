@@ -1,0 +1,24 @@
+{
+  "pid": "ByLqc_pQ4",
+  "code": "IS201",
+  "title": "Introduction to Indigenous Studies",
+  "description": "Introduces students to historical, social, political, legal, and gendered frameworks that shape the relationship between Indigenous peoples, the state of Canada and Canadian society. Topics include political activism, constitutional reform and recognition, policy, treaties and land claims.",
+  "notes": [
+    "Credit will be granted for only one of IS 201, IS 200, IS 200B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IS101"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,41 @@
+{
+  "pid": "SJjz3uamV",
+  "code": "MATH477",
+  "title": "Stochastic Financial Modelling",
+  "description": "Brief review of financial concepts (hedging, arbitrage, options etc.), Martingales, drift and volatility, the binomial model, Brownian motion, the Black-Scholes option pricing formula and some of its extensions.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH352",
+          "STAT350"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH248",
+          "CSC115",
+          "CSC116",
+          "PHYS248"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "SJg9Av6m4",
+  "code": "BME350",
+  "title": "Biomedical Engineering Design",
+  "description": "Design methodology; recognizing and defining open-ended biomedical engineering problems, problem definition, concept generation, project planning, modelling, analysis, decision making, design synthesis, prototyping and testing. Teamwork and small group design projects. Introduction to engineering graphics; perspective and orthographic projects; 3D models, dimensioning and tolerancing; generation of engineering drawings with CAD systems.",
+  "notes": [
+    "Credit will be granted for only one of BME 350, BME 351, MECH 350."
+  ],
+  "credits": "2",
+  "hours": "4-3-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BME201",
+      "MECH220"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

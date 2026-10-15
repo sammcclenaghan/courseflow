@@ -1,0 +1,18 @@
+{
+  "pid": "H1-GD6suWx",
+  "code": "CHEM090",
+  "title": "Introduction to Basic Chemical Concepts",
+  "description": "Special tutorial designed to provide Chemistry 11 background.",
+  "notes": [
+    "For students intending to enrol, either simultaneously or subsequently, in an university-level introductory general chemistry course.",
+    "0.5 fee unit.",
+    "This course is delivered online.",
+    "There are no set class times; a unit should be completed roughly every two weeks during the term. Students are assessed by timed on-line quizzes after the completion of each unit."
+  ],
+  "credits": "0",
+  "hours": "0-0-1",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

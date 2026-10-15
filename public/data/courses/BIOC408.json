@@ -1,0 +1,23 @@
+{
+  "pid": "SJQM0P6mV",
+  "code": "BIOC408",
+  "title": "Epigenetics and Genome Dynamics",
+  "description": "Chemical modifications of the chromatin fibre including chromatin organization, histone post-translational modifications, histone variants, and DNA methylation. A special emphasis on epigenetics in gene regulation and nuclear metabolism with a discussion of current literature highlighting the role of epigenetics in human disease.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOC300A",
+      "BIOC300B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

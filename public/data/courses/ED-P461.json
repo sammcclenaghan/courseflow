@@ -1,0 +1,25 @@
+{
+  "pid": "BysDzup74",
+  "code": "ED-P461",
+  "title": "Final Practicum (Elementary Post-Degree)",
+  "description": "Full time final practicum experience in BC Ministry of Education approved school. Focussed on effective demonstration of the Professional Standards for BC Educators.",
+  "notes": [
+    "Credit will be granted for only one of ED-P 461, ED-P 400A, ED-P 400B, ED-P 400C, ED-P 400D, IED 461.",
+    "Normally takes place in the fall term."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-P361"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

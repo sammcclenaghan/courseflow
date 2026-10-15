@@ -1,0 +1,66 @@
+{
+  "pid": "Sy2ryKa74",
+  "code": "PSYC451A",
+  "title": "Topics in Advanced Cognitive Psychology",
+  "description": "Detailed analysis of a specific topic in cognitive psychology is presented. The topic varies with the course instructor but specializations include human memory, cognitive control, decision making, visual processes and embodied cognition.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 451A, PSYC 413A, PSYC 413B, PSYC 413C, PSYC 413D, PSYC 413E."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PSYC351A"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 2,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PSYC351B",
+              "PSYC351C",
+              "PSYC351D"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

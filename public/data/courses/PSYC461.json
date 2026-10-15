@@ -1,0 +1,56 @@
+{
+  "pid": "Sk0rktpQN",
+  "code": "PSYC461",
+  "title": "Field Placement in Psychology",
+  "description": "Provides firsthand experience with individuals who are challenged by physical, cognitive, emotional and/or psychological disorders. Requires approximately 65 hours of participation in a volunteer field placement with a community agency (spread over at least 4 months), class attendance and preparation of assignments pertaining to the volunteer experience. Students are responsible for obtaining the field placement site, with assistance and coordination of the instructor. Meets September to April.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 461, PSYC 361, PSYC 430.",
+    "Students must register in PSYC 461 in both Fall and Spring terms."
+  ],
+  "credits": "1.5",
+  "hours": "1.5-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A",
+          "PSYC365"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC332",
+          "PSYC338",
+          "PSYC366"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "fourth-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

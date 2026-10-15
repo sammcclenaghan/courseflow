@@ -1,0 +1,25 @@
+{
+  "pid": "SkQ4J_tTc",
+  "code": "PAAS315",
+  "title": "Critical Approaches to History, Culture and Society in PAAS",
+  "description": "Develops understanding of critical approaches to history, culture and society in Pacific and Asian Studies. Analyzes the rhetorical strategies employed in academic prose, and to contextualize scholarly arguments with reference to broader social, cultural and historical contexts.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PAAS200",
+      "PAAS215"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

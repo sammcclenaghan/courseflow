@@ -1,0 +1,16 @@
+{
+  "pid": "HkxRPWF6QE",
+  "code": "WRIT406",
+  "title": "Writing for Children and Young Adults",
+  "description": "This lecture course familiarizes students with writing for children and young adults.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year-standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

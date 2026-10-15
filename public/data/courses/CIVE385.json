@@ -1,0 +1,38 @@
+{
+  "pid": "SyCX1_pQV",
+  "code": "CIVE385",
+  "title": "Geotechnical Engineering",
+  "description": "Composition, structure and physical properties of soil and rock; groundwater flow; stress in soil; compressibility behaviour, consolidation and settlement analysis; shear strength of soils; rock failure analysis, state of stress in earth's crust, stresses and deformations in rocks, including elastic, plastic, and time-dependent behaviour; impact of geologic discontinuities on rock strength. Site investigation, design, construction aspects of shallow foundations, calculation of settlements in soils, piled foundations, earth pressure calculations, earth retaining structures, slope stability analysis.\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1.5*-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE220",
+          "MECH220"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE285"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

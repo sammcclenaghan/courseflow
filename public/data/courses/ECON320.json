@@ -1,0 +1,51 @@
+{
+  "pid": "HJL6luTmV",
+  "code": "ECON320",
+  "title": "Economic Development",
+  "description": "An introduction to issues and policy problems faced by developing countries. Covers key principles, concepts and measurement issues, empirical facts and analytical perspectives associated with economic development. Topics include human development, inequality and poverty, population growth, education, health and agriculture and rural development. Topics may also include urbanization and migration, role of credit markets, globalization, environment and other current issues in development.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON103",
+          "ECON103C",
+          "ECON180"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON104"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON225",
+          "ENGR120",
+          "ENGR240"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

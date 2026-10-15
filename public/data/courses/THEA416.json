@@ -1,0 +1,25 @@
+{
+  "pid": "rkyXbFpmV",
+  "code": "THEA416",
+  "title": "Theories of Theatre and Performance",
+  "description": "Advanced seminar exploring theories of theatre and performance.",
+  "notes": [
+    "Credit will be granted for only one of THEA 416, THEA 490 (if taken in the same topic).",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "THEA415"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

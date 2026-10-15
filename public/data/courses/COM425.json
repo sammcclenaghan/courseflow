@@ -1,0 +1,42 @@
+{
+  "pid": "rkYdkdpQV",
+  "code": "COM425",
+  "title": "Taxation for Managers",
+  "description": "Introduces the fundamentals of the income tax system with a focus on individuals and corporations. Examines tax compliance as well as tax planning techniques that maximize return on investment. Other topics include federal sales tax, the purchase and sale of a business and Indigenous taxation issues.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": "C+",
+            "minGpa": null,
+            "courses": [
+              "COM202",
+              "COM270",
+              "COM315"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum third-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

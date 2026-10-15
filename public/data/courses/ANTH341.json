@@ -1,0 +1,24 @@
+{
+  "pid": "Hyxx_6va7V",
+  "code": "ANTH341",
+  "title": "Paleolithic Archaeology",
+  "description": "A review of the formative phases in the development of prehistoric cultures and societies during the Plio-Pleistocene in Africa, Eurasia and Australasia. Archaeological evidence on cultural beginnings, ecology, subsistence systems, technology and social life of early humankind.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 341, ANTH 341A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH240"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

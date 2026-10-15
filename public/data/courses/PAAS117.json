@@ -1,0 +1,35 @@
+{
+  "pid": "BJI7bfjqw",
+  "code": "PAAS117",
+  "title": "Beginner Chinese II",
+  "description": "Second half of Beginner Chinese I and a continuation of PAAS 116. Further development of basic communication skills in listening, speaking, reading and writing.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 117, PAAS 110, PAAS 118.",
+    "Not open to fluent speakers of Chinese."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "PAAS116"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

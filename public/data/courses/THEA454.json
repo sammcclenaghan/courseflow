@@ -1,0 +1,31 @@
+{
+  "pid": "S1I7Wta74",
+  "code": "THEA454",
+  "title": "Lighting Design for Production",
+  "description": "Design for department productions.",
+  "notes": [],
+  "credits": "1.5 or 3",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA349"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

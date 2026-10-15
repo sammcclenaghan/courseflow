@@ -1,0 +1,77 @@
+{
+  "pid": "BknoD5ykd",
+  "code": "EOS261",
+  "title": "The Climate System",
+  "description": "Introduces the processes and mechanisms through which the atmosphere, ocean, earth, and biosphere interact to control Earth’s climate. Examines interactions via the carbon cycle and climate feedbacks, giving rise to stability, gradual evolution, and rapid change in the climate system. Develops understanding of the dynamics of the climate system by examining records of past climates and climate models. Applies this understanding to anthropogenic climate change.",
+  "notes": [
+    "Credit will be granted for only one of EOS 261, EOS 260."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-2",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS110",
+          "EOS130",
+          "GEOG130",
+          "GEOG103"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM102"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS111",
+          "PHYS130",
+          "PHYS102B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH102",
+          "MATH109"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH101",
+          "MATH151"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

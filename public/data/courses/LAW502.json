@@ -1,0 +1,16 @@
+{
+  "pid": "HybKs_pXV",
+  "code": "LAW502",
+  "title": "Graduate Seminar in Applied Legal Methodology",
+  "description": "A review of methodological approaches to advanced legal research, particularly as applied to the diverse research interests of seminar participants. Intended to support each student's implementation of their research question through presentation, commentary and refinement.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a graduate program in Law."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

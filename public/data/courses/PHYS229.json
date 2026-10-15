@@ -1,0 +1,57 @@
+{
+  "pid": "H1gTYAuamN",
+  "code": "PHYS229",
+  "title": "Introduction to Experimental Physics",
+  "description": "Principals and techniques of experiment design and measurement, systematic and statistical uncertainties, data acquisition, analysis and the dissemination of knowledge. Laboratory experiments focus on the use of electronics, instrumentation, and optical systems fundamental to experimental physics.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 229, PHYS 214."
+  ],
+  "credits": "1.5",
+  "hours": "2-4-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS110",
+              "PHYS111"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS120",
+              "PHYS130"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH101"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

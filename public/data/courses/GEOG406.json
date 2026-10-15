@@ -1,0 +1,29 @@
+{
+  "pid": "BJgQHB_pm4",
+  "code": "GEOG406",
+  "title": "Sustainable Cities",
+  "description": "Explores the opportunities and challenges of creating ecologically-minded, resilient, healthy, and socially just cities with a practical, community-engaged focus.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 406, GEOG 506.",
+    "May be offered as a joint undergraduate and graduate course.",
+    "International students interested in taking GEOG 406 should contact the International Centre for Students (ICS) to discuss potential work authorization requirements for the experiential learning component of this course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 2,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG209",
+      "GEOG332",
+      "GEOG340",
+      "GEOG346"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

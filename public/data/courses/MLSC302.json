@@ -1,0 +1,38 @@
+{
+  "pid": "S1XaDwQVeg",
+  "code": "MLSC302",
+  "title": "Bioinformatics for Molecular Life Sciences",
+  "description": "Introductory bioinformatics for life sciences. Evaluation of key bioinformatics tools for the analysis of gene expression and genomic sequencing datasets. Execution of basic scripts in Python and R to clean, visualize and interpret biological data. Lectures highlight the application of bioinformatics to improve human health and advance biomedical research.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MICR200B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT255",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

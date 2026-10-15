@@ -1,0 +1,24 @@
+{
+  "pid": "BkxCg_p74",
+  "code": "ECON370",
+  "title": "Labour Economics I",
+  "description": "Aspects of labour supply and demand, and wage structures. Topics may include: the allocation of time, retirement, unemployment insurance, education and training, male-female wage differentials.",
+  "notes": [
+    "Credit will be granted for only one of ECON 370, ECON 315."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON203"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

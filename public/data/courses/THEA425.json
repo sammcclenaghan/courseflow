@@ -1,0 +1,45 @@
+{
+  "pid": "SJxZm-Ka7V",
+  "code": "THEA425",
+  "title": "Stage Movement III",
+  "description": "Advanced techniques and improvisation in stage movement.",
+  "notes": [
+    "Credit will be granted for only one of THEA 425, THEA 460."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA321",
+          "THEA324",
+          "THEA326",
+          "THEA329"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA322",
+          "THEA324",
+          "THEA326"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

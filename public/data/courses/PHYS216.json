@@ -1,0 +1,52 @@
+{
+  "pid": "SJnKR_T74",
+  "code": "PHYS216",
+  "title": "Introductory Electricity and Magnetism",
+  "description": "Electric and magnetic fields, Gauss' law, electric potential, capacitance, dieletrics, current and resistance, resistivity, magnetic inductance. Faraday's law of induction, Ampere's law, energy stored in electric and magnetic fields.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 216, ECE 216, ELEC 216.",
+    "Registration priority may be given to students declared in an Honours, Major, or Combined program offered by the Department."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS110",
+          "PHYS111"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS120",
+          "PHYS130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH200"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

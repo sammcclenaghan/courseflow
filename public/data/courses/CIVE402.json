@@ -1,0 +1,52 @@
+{
+  "pid": "H1S3n_e5a",
+  "code": "CIVE402",
+  "title": "Cross-disciplinary Capstone Design Project",
+  "description": "Team or individual design project. Key sustainability metrics; integration of fundamentals acquired in mathematics, science, engineering, and complementary studies. A project proposal, a progress report, an oral presentation, and a comprehensive final report are required.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 402, CIVE 400."
+  ],
+  "credits": "2",
+  "hours": "1-9-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 9,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE242",
+          "CIVE295",
+          "CIVE310",
+          "CIVE311",
+          "CIVE315",
+          "CIVE322",
+          "CIVE340",
+          "CIVE345",
+          "CIVE351",
+          "CIVE352",
+          "CIVE360",
+          "CIVE385",
+          "CIVE395",
+          "CSC349A"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR003"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

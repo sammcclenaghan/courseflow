@@ -1,0 +1,18 @@
+{
+  "pid": "ryTs7vP0q",
+  "code": "ENSH313",
+  "title": "Children's Literature",
+  "description": "Study of literature written for child readers (and adults who read literature to children).",
+  "notes": [
+    "Credit will be granted for only one of ENSH 313, ENGL 385 (if taken in Sep 2011 - Apr 2014), ENGL 402, ENGL 479."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

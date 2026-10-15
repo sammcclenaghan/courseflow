@@ -1,0 +1,18 @@
+{
+  "pid": "S1rDTP6mN",
+  "code": "ANTH312",
+  "title": "Introduction to Medical Anthropology",
+  "description": "Introduction to key themes and theoretical frameworks in medical anthropology, including applied medical anthropology, cultural construction of illness and critical medical anthropology. Topics include enduring cultural traditions of healing, the place of infectious diseases in human societies, contributions and critiques of biomedicine, medicalization, nutrition, global health campaigns and the comparative study of medical systems.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 312, ANTH 412."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

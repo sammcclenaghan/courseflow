@@ -1,0 +1,24 @@
+{
+  "pid": "HJC--YamN",
+  "code": "THEA349",
+  "title": "Lighting for the Theatre II",
+  "description": "A continuation of THEA 348.",
+  "notes": [
+    "Credit will be granted for only one of THEA 349, THEA 342."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "THEA348"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

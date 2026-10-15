@@ -1,0 +1,18 @@
+{
+  "pid": "B1iPHu6XN",
+  "code": "GEOG524",
+  "title": "Advanced Quantitative Methods",
+  "description": "Examines the use and interpretation of selected multivariate statistics.",
+  "notes": [
+    "Master's Program students are required to take one of GEOG 518, GEOG 523, GEOG 524."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "1.5 units of 200-level STAT course."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

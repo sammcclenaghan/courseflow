@@ -1,0 +1,28 @@
+{
+  "pid": "BJ9qAOamE",
+  "code": "PHYS423",
+  "title": "Quantum Mechanics II",
+  "description": "Further development of the theory and applications, angular momentum, linear vector spaces, perturbation theory, scattering.",
+  "notes": [
+    "Intended for Honours students."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS321A",
+      "PHYS323",
+      "MATH301",
+      "MATH342",
+      "MATH346"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

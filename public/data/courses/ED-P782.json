@@ -1,0 +1,24 @@
+{
+  "pid": "r1eJdzO6m4",
+  "code": "ED-P782",
+  "title": "Final Practicum (Secondary Post-Degree)",
+  "description": "Full-time final practicum experience in BC Ministry of Education approved school. Focussed on effective demonstration of the Professional Standards for BC Educators.",
+  "notes": [
+    "Normally takes place in the fall term."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-P781"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,22 @@
+{
+  "pid": "r10dqeEn8",
+  "code": "EPHE247",
+  "title": "Introduction to Professional Practice in Kinesiology",
+  "description": "Introduction to professional components of a career in Kinesiology and health sciences. Post graduate Kinesiology career opportunities are explored in depth. Other topics include preparation for professional practice, technical computer and data management skills as well as program planning and evaluation.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EPHE143"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

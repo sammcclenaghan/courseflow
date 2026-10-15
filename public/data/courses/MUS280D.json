@@ -1,0 +1,19 @@
+{
+  "pid": "SkHeTdTQ4",
+  "code": "MUS280D",
+  "title": "Jazz and Creative Music Ensemble",
+  "description": "Rehearses and performs music with an emphasis on community and collaboration, including jazz, improvisation and soundtracks for silent film.",
+  "notes": [
+    "Credit will be granted for only one of MUS 280D, MUS 280.",
+    "Open to all students by audition."
+  ],
+  "credits": "1",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Open to all students by audition."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

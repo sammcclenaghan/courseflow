@@ -1,0 +1,39 @@
+{
+  "pid": "BkIzIO6mN",
+  "code": "GNDR300",
+  "title": "Gender Studies Seminar",
+  "description": "Introduction to the discipline of Gender Studies, intended for students pursuing an Honours, Major, or General and Minor program in Gender Studies. Examines various debates and developments in the field, introduces students to faculty research and methodologies, and offers students the opportunity to develop professional skills.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 300, WS 303.",
+    "Required for GNDR Honours and Major students."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Declared Honours, Major, General, or Minor in Gender Studies"
+          },
+          {
+            "type": "text",
+            "text": "Minimum third-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Recommended for GNDR General and Minor students."
+  ]
+}

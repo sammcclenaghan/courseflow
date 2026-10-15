@@ -1,0 +1,19 @@
+{
+  "pid": "H1NtolGAC",
+  "code": "ES549",
+  "title": "Foundations of Restoration Ecology",
+  "description": "Examines ecological theories on topics including functional ecology, resilience, and community assembly as classic ecological frameworks, as well as in more complex socio-ecological contexts. Focuses on application of these concepts to environmental work, particularly ecological restoration. A reading course driven by student discussion and presentations aimed at graduate students and advanced undergraduates.",
+  "notes": [
+    "Credit will be granted for only one of ES 549, ES 449, ES 482 (if taken in the same topic), ES 582 (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to one of the following Fields of Study: Environmental Studies (ES) EN: Industrial Ecology - INEC (INEC) Interdisciplinary (INTD)"
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

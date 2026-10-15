@@ -1,0 +1,27 @@
+{
+  "pid": "BkLAlY6mE",
+  "code": "STAT252",
+  "title": "Statistics for Business",
+  "description": "Descriptive statistics, probability distributions, random sampling and sampling distributions, point and interval estimation, hypothesis testing, statistical inference for comparing samples from two populations, analysis of variance, correlation analysis, simple and multiple linear regression, chi-square test, goodness of fit test, contingency table test, time series analysis. Examples are taken from business applications. Students are expected to analyze data using computer software.",
+  "notes": [
+    "Credit will be granted for only one of STAT 252, STAT 255.",
+    "Not open to students registered in or with credit in one of STAT 254, STAT 250, STAT 260.",
+    "See \"Credit Limit - Beginning Level Statistics Courses\".",
+    "Intended primarily for Business students."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH151"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

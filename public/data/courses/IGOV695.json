@@ -1,0 +1,22 @@
+{
+  "pid": "B1FTlRjJj",
+  "code": "IGOV695",
+  "title": "Dissertation Proposal",
+  "description": "Students will prepare and defend a dissertation research proposal. At the defense, the student will give a 20-minute presentation on their proposed dissertation topic and answer questions posed by the dissertation committee. The proposal and oral defense will also be evaluated on a pass/fail basis.",
+  "notes": [],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IGOV693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

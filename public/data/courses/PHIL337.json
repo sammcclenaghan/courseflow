@@ -1,0 +1,41 @@
+{
+  "pid": "B1zL0OaQE",
+  "code": "PHIL337",
+  "title": "Ethics, Theory and Practice",
+  "description": "A survey of the foundations of moral reasoning and judgment that examines the origins of contemporary normative theories and their relevance to practical ethical issues. Intended primarily for students pursuing the Minor in Applied Ethics, but is open to other students.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHIL232"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "3.0 units of PHIL courses"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

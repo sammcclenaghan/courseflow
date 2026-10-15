@@ -1,0 +1,51 @@
+{
+  "pid": "BJaQJ_T7N",
+  "code": "CIVE360",
+  "title": "Sustainable Transportation Systems",
+  "description": "Topical lectures, case studies, transportation system design project in small teams. Role of transportation in urban development and planning; social impacts, policy; sustainability, clean transportation technology. Transportation network analysis, design and flow prediction.\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1.5*-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE210",
+          "ENGR001"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH200",
+          "CIVE200",
+          "ELEC200"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT254",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

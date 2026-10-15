@@ -1,0 +1,23 @@
+{
+  "pid": "BJ9Q1FaQE",
+  "code": "PSYC338",
+  "title": "Behavioural Interventions with Children and Adults",
+  "description": "Introduces the science of behavioural principles and applied behaviour analysis (ABA). Reviews basic principles of classical and operant conditioning, including stimulus control, motivation, reinforcement, punishment, extinction, and schedules of reinforcement, using examples of everyday behaviours. Consideration is given to behavioural procedures for assessing and changing problem behaviours, with examples from both children and adults.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC260"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

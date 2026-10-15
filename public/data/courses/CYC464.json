@@ -1,0 +1,28 @@
+{
+  "pid": "BkCkY47Mw",
+  "code": "CYC464",
+  "title": "Disability Studies and CYC Praxis",
+  "description": "Focuses on critical perspectives of disability that center on the lived realities of people with disabilities and historical, socio-cultural and political forces and power relations. Interrogate biomedical and ableist assumptions, and CYC praxis with children and youth with disabilities in diverse family and community contexts. Fosters nuanced understandings of inclusion, participation and advocacy.",
+  "notes": [
+    "Credit will be granted for only one of CYC 464, CYC 364, HSD 464, SOCW 469 (if taken prior to January 2011).",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum third-year standing."
+      },
+      {
+        "type": "text",
+        "text": "Admission to an undergraduate program in the School of Child and Youth Care."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,16 @@
+{
+  "pid": "BkzK8upQE",
+  "code": "GRS503",
+  "title": "Latin Literature",
+  "description": null,
+  "notes": [],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Complete 3.0 units of 300 or 400 level LATI courses or equivalent."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

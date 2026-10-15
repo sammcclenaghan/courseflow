@@ -1,0 +1,16 @@
+{
+  "pid": "ryYgOdWkj",
+  "code": "MDIA350",
+  "title": "Cultures of the Book",
+  "description": "The book as both culture and material. Surveys approaches to the book around the world, from oral traditions, clay tablets, and the codex to print, illustrated books, ebooks and audiobooks. Emphasis on experiential learning in UVic Libraries and local communities.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

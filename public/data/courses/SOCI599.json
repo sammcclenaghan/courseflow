@@ -1,0 +1,18 @@
+{
+  "pid": "r1gOIgYamE",
+  "code": "SOCI599",
+  "title": "Thesis",
+  "description": null,
+  "notes": [
+    "Students who wish to register for the thesis must request permission to do so no later than 12 months after entering the MA program."
+  ],
+  "credits": "7.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

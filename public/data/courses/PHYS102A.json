@@ -1,0 +1,18 @@
+{
+  "pid": "rkEtC_pm4",
+  "code": "PHYS102A",
+  "title": "General Physics I",
+  "description": "Introductory algebra-based mechanics. Life Science applications.",
+  "notes": [
+    "Not open for credit to students registered in or with credit in any of PHYS 102, PHYS 110, PHYS 112, PHYS 120, PHYS 122.",
+    "Students intending to take further courses in Physics should consider PHYS 110 or PHYS 120 rather than PHYS 102A."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "One of MATH 100, MATH 102, MATH 109 recommended prior to or in conjunction with PHYS 102A."
+  ]
+}

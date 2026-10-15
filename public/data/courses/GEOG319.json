@@ -1,0 +1,52 @@
+{
+  "pid": "rklMQBupQV",
+  "code": "GEOG319",
+  "title": "Remote Sensing of the Environment using Passive Sensors",
+  "description": "Focuses on physical principles underlying passive remote sensing and electromagnetic propagation in free space and matter; attenuation, absorption and scattering mechanisms; interaction of energy with the atmosphere and Earth materials such as vegetation, soil, rock, water and urban structures.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG222",
+          "GEOG228"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "GEOG226"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "1.5 units minimum 200 level STAT or equivalent"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

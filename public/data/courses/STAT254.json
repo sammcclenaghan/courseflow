@@ -1,0 +1,28 @@
+{
+  "pid": "B1x8ClKamE",
+  "code": "STAT254",
+  "title": "Probability and Statistics for Engineers",
+  "description": "Probability axioms, properties of probability, counting techniques, conditional probability, independence, random variables, discrete and continuous probability distributions, expectation, variance; binomial, hypergeometric, negative binomial, Poisson, uniform, normal, gamma and exponential distributions; discrete and continuous joint distributions, independent random variables, expectation of functions of random vectors, covariance, random samples and sampling distributions, central limit theorem; point and interval estimation; hypothesis testing; linear regression and correlation.",
+  "notes": [
+    "Credit will be granted for only one of STAT 254, STAT 250, STAT 260.",
+    "See \"Credit Limit - Beginning Level Statistics Courses\"."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to BEng program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH200"
+    ]
+  },
+  "recommendations": []
+}

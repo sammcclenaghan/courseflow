@@ -1,0 +1,41 @@
+{
+  "pid": "Sy70fPV4B",
+  "code": "ECE402",
+  "title": "Biomedical Imaging Modalities",
+  "description": "Principles of biomedical imaging modalities with emphasis on ultrasound, x-ray, computed tomography (CT) and magnetic resonance imaging (MRI). The theory of wave propagation, impedance matching, wave-particle duality, quantum physics and nuclear magnetic resonance for medical imaging.",
+  "notes": [
+    "Credit will be granted for only one of ECE 402, BME 402."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE335",
+          "ECE340",
+          "BME335"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH204"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

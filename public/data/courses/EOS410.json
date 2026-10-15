@@ -1,0 +1,31 @@
+{
+  "pid": "HkCnXOpmV",
+  "code": "EOS410",
+  "title": "Global Tectonics",
+  "description": "A study of global tectonic systems including geological, geophysical, geochemical and geographical perspectives on major tectonic environments. A wide range of examples from different continents are used. Vancouver Island is also examined.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS202"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

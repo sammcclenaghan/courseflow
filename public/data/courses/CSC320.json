@@ -1,0 +1,38 @@
+{
+  "pid": "rJTqk_aXN",
+  "code": "CSC320",
+  "title": "Foundations of Computer Science",
+  "description": "A survey of formal models and results that form the theoretical foundations of computer science; typical topics include finite automata, Turing machines, undecidable problems, context free languages and computational complexity.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC226"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC120",
+          "ENGR130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "BJyJ8daXE",
+  "code": "GMST202",
+  "title": "Intermediate German II",
+  "description": "Grammatical features and vocabulary and how to use them in sentences and texts. Exploration of the culture of German-speaking countries. Acquisition of an understanding of German that enables reading, writing, speaking and comprehension of German at the advanced intermediate level.",
+  "notes": [
+    "Credit will be granted for only one of GMST 202, GER 252."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GMST201",
+          "GER200"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "Sy4k1O6QV",
+  "code": "CHEM364",
+  "title": "Physical Chemistry Laboratory",
+  "description": "Emphasizes experimental physical chemistry, data collection and analysis.",
+  "notes": [
+    "A total of 1.5 units of credit will be granted for only one of CHEM 364, CHEM 346 (if taken prior to September 2001), CHEM 347 (if taken prior to September 2001)."
+  ],
+  "credits": "1.5",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM212",
+      "CHEM245"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

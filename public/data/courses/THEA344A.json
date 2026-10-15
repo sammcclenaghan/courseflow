@@ -1,0 +1,36 @@
+{
+  "pid": "BkoKGT1pD",
+  "code": "THEA344A",
+  "title": "Special Topics in Applied Theatre",
+  "description": "An investigation of a special aspect or area in Applied Theatre.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA235A",
+          "THEA235B",
+          "THEA335A",
+          "THEA335B",
+          "THEA235",
+          "THEA335"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

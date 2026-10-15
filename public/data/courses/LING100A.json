@@ -1,0 +1,16 @@
+{
+  "pid": "B1liFoOTmE",
+  "code": "LING100A",
+  "title": "Foundations in Linguistics I",
+  "description": "An introduction to the subject matter and core foundations of language and linguistics. Topics studied include an overview of sounds and sound systems, writing systems, word structure, sentence structure and meaning.",
+  "notes": [
+    "Credit will be granted for only one of LING 100A, LING 100, LING 181, LING 360, LING 362.",
+    "Knowledge of a language other than English not necessary."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

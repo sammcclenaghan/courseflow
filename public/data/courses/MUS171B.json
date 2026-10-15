@@ -1,0 +1,25 @@
+{
+  "pid": "ryLugB3F6",
+  "code": "MUS171B",
+  "title": "Musicianship",
+  "description": "Develops musicianship skills through sight singing (movable do/la based minor) and rhythmic vocalizations. Builds aural skills through melodic, harmonic and rhythmic transcription and introduces atonal sequences, chromatic tendencies, modes, and chordal inversions. Explores cultural intelligence through music.",
+  "notes": [
+    "Credit will be granted for only one of MUS 171B, MUS 170, MUS 170B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MUS170A",
+      "MUS171A"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

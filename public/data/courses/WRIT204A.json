@@ -1,0 +1,44 @@
+{
+  "pid": "H1uIbYpX4",
+  "code": "WRIT204A",
+  "title": "Introduction to Creative Nonfiction Workshop",
+  "description": "A lecture and seminar in the writing and workshopping of creative nonfiction.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 204A, WRIT 204, CW 204."
+  ],
+  "credits": "1.5",
+  "hours": "2-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": "B",
+            "minGpa": null,
+            "courses": [
+              "WRIT100",
+              "CW100E",
+              "CW102E"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to the Writing Major"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

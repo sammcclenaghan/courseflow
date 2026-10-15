@@ -1,0 +1,54 @@
+{
+  "pid": "HkBceY6mE",
+  "code": "SPAN250A",
+  "title": "Intermediate Spanish I",
+  "description": "Acquisition of intermediate language and intercultural competencies equivalent to the A2.1 level of the Common European Framework of Reference for Languages. Taught mostly in Spanish.",
+  "notes": [
+    "Credit will be granted for only one of SPAN 250A, SPAN 249, SPAN 250.",
+    "Not open to native or near-native speakers of Spanish."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "text",
+            "text": "Spanish 12"
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SPAN100B"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SPAN149"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

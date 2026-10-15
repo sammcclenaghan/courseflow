@@ -1,0 +1,27 @@
+{
+  "pid": "H1o2pvTXE",
+  "code": "ART201",
+  "title": "Drawing",
+  "description": "An introduction to concerns and methods in contemporary drawing. Students gain experience in a range of studio practices as well as theoretical issues through projects and critiques.",
+  "notes": [
+    "Credit will be granted for only one of ART 201, ART 101.",
+    "Normally class size is limited."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART100",
+      "ART100E",
+      "ART103"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

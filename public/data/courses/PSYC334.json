@@ -1,0 +1,24 @@
+{
+  "pid": "Bye_71YTmV",
+  "code": "PSYC334",
+  "title": "Organizational Psychology",
+  "description": "Individuals at work: personnel selection, training, motivation, attitudes, and appraisal; leadership, communication, management, productivity, work conditions, safety, and organizational development.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 334, PSYC 334A, COM 120, COM 220."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC231"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

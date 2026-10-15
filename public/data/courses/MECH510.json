@@ -1,0 +1,16 @@
+{
+  "pid": "SkXYn_6QN",
+  "code": "MECH510",
+  "title": "Mechanics and Energy Conversion in Living Cells",
+  "description": "Provides an engineering introduction to cell architecture, and cell function in health and disease states. Cell components and functions. Families of molecules used by cells. The role of water in cell architecture. Proteins - the machine systems of cells. Thermodynamics of metabolic processes. Mechanical analyses of cytoskeleton, cell membranes. Cell movement and forces. Cellular mechanotransduction. Readings in bio-inspired engineering systems, biotechnology, molecular diagnostics, tissue regeneration, stem cells and cancer.",
+  "notes": [
+    "Credit will be granted for only one of MECH 510, MECH 483, MECH 580 (if taken in the same topic), BME 525.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

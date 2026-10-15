@@ -1,0 +1,25 @@
+{
+  "pid": "r1Xmlta7E",
+  "code": "SOCI210",
+  "title": "Classical Social Theorizing",
+  "description": "An examination of the emergence of Sociology, emphasizing the founding ideas and theorists. Outlines the main ideas, concepts, and schools of thought that compose the history of the discipline, as well as the social and historical context from which it developed. In this course, emphasis is placed on developing students' abilities to theorize the social world.",
+  "notes": [
+    "Credit will be granted for only one of SOCI 210, SOCI 209, SOCI 300, SOCI 308."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCI100A",
+      "SOCI100B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

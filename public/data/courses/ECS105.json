@@ -1,0 +1,16 @@
+{
+  "pid": "SktqJonCC",
+  "code": "ECS105",
+  "title": "Academic Success and Diversity in Computing",
+  "description": "An introduction to contemporary theory, research and practices contributing to academic and professional success in engineering and computer science professions through seminar-based lectures, discussions and applied activities. Develops knowledge and skills to foster inclusive and effective learning environments.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "text",
+    "text": "1.5 units of any course numbered 100 or higher."
+  },
+  "recommendations": []
+}

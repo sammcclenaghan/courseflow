@@ -1,0 +1,18 @@
+{
+  "pid": "BJ-XrdpmN",
+  "code": "GEOG309",
+  "title": "Geography of British Columbia",
+  "description": "An examination of the physical, economic, and cultural landscapes that distinguish the cities and rural regions of Canada's West Coast province.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 309, GEOG 219."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "Sy6_WkuHa",
+  "code": "POLI368",
+  "title": "Politics of Western Canada",
+  "description": "Examines the political dynamics of western Canada. Topics will include theories of regions and regionalism, the origins of the West, natural resource extraction in the region, treaties and colonialism, political parties, gender and politics, the West in federal politics, as well as discussions of the provincial political environments in British Columbia, Alberta, Saskatchewan and Manitoba.",
+  "notes": [
+    "Credit will be granted for only one of POLI 368, POLI 369 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "POLI101",
+      "POLI201"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

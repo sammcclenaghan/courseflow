@@ -1,0 +1,27 @@
+{
+  "pid": "HJ7kgKTmV",
+  "code": "SENG371",
+  "title": "Software Evolution",
+  "description": "Introduces problems and solutions of long-term software maintenance/evolution and large-scale, long-lived software systems. Topics include software engineering techniques for programming-in-the-large, programming-in-the-many, legacy software systems, software architecture, software evolution, software maintenance, reverse engineering, program understanding, software visualization, advanced issues in object-oriented programming, design patterns, antipatterns, and client-server computing. Culminates in a team project.",
+  "notes": [
+    "Credit will be granted for only one of SENG 371, SENG 420."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SENG271",
+      "SENG275",
+      "SENG299",
+      "SENG321"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,26 @@
+{
+  "pid": "ryeFe_aX4",
+  "code": "ECE420",
+  "title": "Nanoelectronics",
+  "description": "Nanoscale materials and applications. Techniques and tools of nanostructure fabrication and characterization. Properties of nanoscale materials. Semiconductor nanostructures, metallic nanoparticles, carbon nanostructures, quantum dots, (bio)molecular structures. Applications including silicon nanoelectronics, low-dimensional semiconductor and molecular devices, nanoscale computation, sensing and optoelectronics.",
+  "notes": [
+    "Credit will be granted for only one of ECE 420, ECE 545, ELEC 420, ELEC 545.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE320",
+      "ELEC320"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

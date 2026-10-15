@@ -1,0 +1,34 @@
+{
+  "pid": "HJA02PaXE",
+  "code": "ADMN531",
+  "title": "Performance and Strategic Human Resource Management",
+  "description": "Students explore the critical role of human capital in public organizations and how to align it with strategic objectives. Students learn about human resource management functions - planning, staffing, training and development, performance management, compensation, and labour relations - and theories and approaches to improving organizational performance. Considers some of the contemporary challenges, such as high public expectations, constrained budgets, demographic turnover, and technological change.",
+  "notes": [
+    "Credit will be granted for only one of ADMN 531, ADMN 431."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ADMN507",
+          "PADR504"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

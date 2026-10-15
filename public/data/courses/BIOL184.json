@@ -1,0 +1,58 @@
+{
+  "pid": "S1SXRvT74",
+  "code": "BIOL184",
+  "title": "Evolution and Biodiversity",
+  "description": "An introductory course in the biological sciences. Evolutionary theory, Mendelian genetics, mitosis and the cell cycle, meiosis and sexual life cycles, and diversity of prokaryotes, protists, plants, fungi, invertebrates and craniates.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 184, BIOL 190B.",
+    "BIOL 184 and BIOL 186 may be taken in any order. Students who have passed a placement exam may request permission to register in the course."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOL150A",
+              "BIOL150B",
+              "BIOL186"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Anatomy and Physiology 12"
+          },
+          {
+            "type": "text",
+            "text": "Biology 11"
+          },
+          {
+            "type": "text",
+            "text": "Biology 12"
+          },
+          {
+            "type": "text",
+            "text": "Life Sciences 11"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

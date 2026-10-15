@@ -1,0 +1,42 @@
+{
+  "pid": "S1UfN8Uv3",
+  "code": "CIVE423",
+  "title": "Composite Structures",
+  "description": "Project-based course builds on fundamentals of structural mechanics, steel and timber design. Design of load bearing composite elements such as: Timber-Timber Composite (TTC); Timber-Concrete Composite (TCC); and Steel-Timber Composite (STC) beams and floor plates.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 423, CIVE 480C (if taken in the same topic), CIVE 523, CIVE 580 (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE220",
+          "CIVE351"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE242",
+          "CIVE322"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

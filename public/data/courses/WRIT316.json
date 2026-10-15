@@ -1,0 +1,36 @@
+{
+  "pid": "H1XD-Y67V",
+  "code": "WRIT316",
+  "title": "Creative Nonfiction Workshop",
+  "description": "A workshop in the writing of creative nonfiction.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 316, CW 316A, CW 316B.",
+    "Credit may count either toward a Major in Writing or toward a Minor in Professional Writing in Journalism and Publishing, not both."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": "B-",
+        "minGpa": null,
+        "courses": [
+          "WRIT204",
+          "WRIT204B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,58 @@
+{
+  "pid": "Sy6WTOpXE",
+  "code": "MUS345",
+  "title": "Seminar in Performance",
+  "description": "Individual tuition, weekly master class and integrated performance seminar including discussion of repertoire, pedagogy, and techniques of performance.",
+  "notes": [
+    "Credit will be granted for only one of MUS 345, MUS 340."
+  ],
+  "credits": "2",
+  "hours": "1-1-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS240",
+          "MUS245"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 3,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS102A",
+          "MUS102B",
+          "MUS171A",
+          "MUS171B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS116",
+          "MUS117"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BMus program in Performance."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

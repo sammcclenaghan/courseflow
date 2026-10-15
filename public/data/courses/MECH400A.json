@@ -1,0 +1,34 @@
+{
+  "pid": "B19HsnHso",
+  "code": "MECH400A",
+  "title": "Capstone Design Proposal",
+  "description": "Development of a project brief suitable for a capstone design project. Includes client value proposition elucidation, project scoping, feasibility evaluation including Gantt chart and prototyping budget, development of user requirements and engineering specifications and preparation of a project proposal document.",
+  "notes": [
+    "Credit will be granted for only one of MECH 400A, ENGR 446."
+  ],
+  "credits": "1",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH350",
+      "ENGR002"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH360"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

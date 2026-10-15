@@ -1,0 +1,38 @@
+{
+  "pid": "Sylr7JF67N",
+  "code": "PSYC330",
+  "title": "Personality",
+  "description": "An introduction to personality theory and its applications. A survey of several major strategies followed in conceptualizing personality, e.g., psychoanalytic, dispositional plus emphasis on measurement of personality, current research, and approaches to personality change.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC201"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC231",
+          "PSYC260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

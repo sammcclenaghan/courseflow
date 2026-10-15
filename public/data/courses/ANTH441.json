@@ -1,0 +1,22 @@
+{
+  "pid": "HJFKTw6m4",
+  "code": "ANTH441",
+  "title": "Archaeological Theory",
+  "description": "In-depth exploration of the theoretical foundations of the discipline with an emphasis on points of conflict and consensus in archaeology today; ethical issues of archaeological practice are also addressed.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH240"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

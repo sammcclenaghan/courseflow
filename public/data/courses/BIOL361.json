@@ -1,0 +1,54 @@
+{
+  "pid": "HyeZSRDaQE",
+  "code": "BIOL361",
+  "title": "Molecular Genetics and Genomics",
+  "description": "Naturally occurring and induced genetic mutations leading to phenotypic variation within and among species in a diversity of eukaryotic taxa. Regulation of transcription and translation (including small regulatory RNAs), protein-protein interactions, molecular mechanisms of tumor formation, genome structure and mobile genetic elements, and functional genomics.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL230"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOC299"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOC300A",
+              "BIOC300B"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

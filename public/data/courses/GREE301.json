@@ -1,0 +1,35 @@
+{
+  "pid": "SkdNIdTmN",
+  "code": "GREE301",
+  "title": "Greek Epic",
+  "description": "Selected readings from Homer's Iliad, Odyssey and/or the hexameter corpus.",
+  "notes": [
+    "Credit will be granted for only one of GREE 301, GREE 390A, GREE 401 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GREE202",
+          "GREE325"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

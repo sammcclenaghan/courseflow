@@ -1,0 +1,24 @@
+{
+  "pid": "rJljPsu6m4",
+  "code": "LAW353A",
+  "title": "Environmental Law Centre Clinic - Intensive",
+  "description": "Provides opportunity to engage in public interest environmental lawyering in a supervised clinical setting working in a team environment and on multiple client projects. Students provide legal information and capacity to environmental, community and Indigenous organizations; and develop case and file management, client counselling, advocacy, and legal research and writing skills. Students meet with ELC staff and other students on a weekly basis, contribute to case development, and deliver client-centred projects on multiple files.",
+  "notes": [
+    "Credit will be granted for only one of LAW 353A, LAW 386A, LAW 386B."
+  ],
+  "credits": "1.5–2",
+  "hours": "4-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LAW353"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,29 @@
+{
+  "pid": "HkSsRabjw",
+  "code": "GNDR244",
+  "title": "Queer and Trans Film",
+  "description": "Surveys the ever-evolving genre of queer and trans film. Situates films amidst related readings covering historical and aesthetic moments; pays attention to the broader social and political implications of these works. Topics include identity construction, AIDS, the body, sexuality, political activism, geographical location, race, labour and form. Relies on the social construction of gender, sexuality and difference as tools for analysis.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 244, GNDR 344, WS 219 (if taken in the same topic), WS 347."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "GNDR 100 recommended prior to GNDR 244."
+  ]
+}

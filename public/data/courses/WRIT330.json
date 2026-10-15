@@ -1,0 +1,16 @@
+{
+  "pid": "H1wvbFaQN",
+  "code": "WRIT330",
+  "title": "Media and Culture",
+  "description": "A lecture course surveying theories and controversies in mass media and popular culture from a writer's perspective.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

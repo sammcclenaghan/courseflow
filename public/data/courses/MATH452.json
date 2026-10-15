@@ -1,0 +1,23 @@
+{
+  "pid": "ry8z3dTmV",
+  "code": "MATH452",
+  "title": "Stochastic Processes",
+  "description": "Introduction to the branch of probability theory which deals with the mathematical analysis of systems that evolve in time while undergoing chance fluctuations. Main topics include random walks, Markov chains, Poisson processes, birth and death processes, renewal theory. Examples illustrate wide applicability of stochastic processes in many branches of science and technology.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH352",
+      "STAT350"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,29 @@
+{
+  "pid": "SkSQLd6mV",
+  "code": "GNDR332",
+  "title": "Race, Gender, and Power",
+  "description": "An exploration of the constructed category of race. Using feminist theories and praxis, this course allows students to understand race’s role in institutions ranging from imperialism and settler colonialism to multiculturalism, xenophobia and more.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 332, WS 334."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Recommended prior to GNDR 333."
+  ]
+}

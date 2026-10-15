@@ -1,0 +1,23 @@
+{
+  "pid": "BkepQFwor",
+  "code": "EPHE340",
+  "title": "Pathology of Chronic Disease",
+  "description": "Examines the pathophysiology involved in selected chronic medical conditions such as cardiovascular disease, respiratory disease, metabolic disorders and cancer, as well as understand their effects on activities of daily living.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EPHE160",
+      "EPHE241"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

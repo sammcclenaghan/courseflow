@@ -1,0 +1,40 @@
+{
+  "pid": "SJuA5dkii",
+  "code": "PHYS329",
+  "title": "Intermediate Physics Laboratory",
+  "description": "Principals and techniques of experiment design and measurement, systematic and statistical uncertainties, data acquisition and analysis. Modelling, parameter estimation and hypothesis testing. Troubleshooting, repair, calibration and maintenance of apparatus. Experiments illustrate important techniques across the discipline.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "1-5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS229"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS248",
+          "CSC226",
+          "CSC349A",
+          "MATH248"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

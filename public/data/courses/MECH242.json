@@ -1,0 +1,72 @@
+{
+  "pid": "BJNvnOpXN",
+  "code": "MECH242",
+  "title": "Dynamics",
+  "description": "Kinematics and dynamics of rigid bodies; analysis of planar rigid body motion using translating and rotating axes; two-dimensional rigid body dynamics using force/acceleration, work/energy and impulse/momentum methods; applications to one and two degrees of freedom planar mechanisms.",
+  "notes": [
+    "Credit will be granted for only one of MECH 242, CIVE 242, CIVE 322."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR141"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC110",
+          "CSC111"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS110",
+          "PHYS120",
+          "PHYS122"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH204"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

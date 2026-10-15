@@ -1,0 +1,25 @@
+{
+  "pid": "SynEADT7N",
+  "code": "BIOL336",
+  "title": "Biology of Algae",
+  "description": "A survey of aquatic and terrestrial algal diversity, with special emphasis on marine algae. Evolution, ecology, physiology, cell biology, and technological applications of algae. Laboratories include observations of microscopic and macroscopic algal specimens, an individual project, and local field trips to coastal marine environments.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 336, BIOL 203, BIOL 323."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL215",
+      "BIOL225"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

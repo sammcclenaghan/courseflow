@@ -1,0 +1,69 @@
+{
+  "pid": "HkNgWKpX4",
+  "code": "THEA221",
+  "title": "Acting I",
+  "description": "Work in characterization and scene study.",
+  "notes": [
+    "Credit will be granted for only one of THEA 221, THEA 220."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "THEA103",
+              "THEA104",
+              "THEA105",
+              "THEA106",
+              "THEA120A",
+              "THEA206"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "THEA105",
+              "THEA120A",
+              "THEA132A",
+              "THEA236"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "THEA105",
+              "THEA112",
+              "THEA120"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

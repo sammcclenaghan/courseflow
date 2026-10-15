@@ -1,0 +1,34 @@
+{
+  "pid": "ryeEIO6mV",
+  "code": "GNDR400B",
+  "title": "Research Seminar for Independent Project",
+  "description": "Building on project begun in 400A, students meet weekly to discuss research challenges.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 400B, WS 400B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GNDR400A",
+          "WS400A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "declared Major in Gender Studies."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

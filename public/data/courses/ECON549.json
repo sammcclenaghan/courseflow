@@ -1,0 +1,13 @@
+{
+  "pid": "H1og-u67V",
+  "code": "ECON549",
+  "title": "Computational Methods in Economics and Econometrics",
+  "description": "An introduction to numerical methods and their application in economics and econometrics. Topics typically include: iterative fixed point methods, methods for solving problems of nonlinear equations, methods for solving initial value problems and boundary value problems, methods for solving static and dynamic optimization problems, Monte Carlo methods, resampling techniques and Gibbs sampling.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

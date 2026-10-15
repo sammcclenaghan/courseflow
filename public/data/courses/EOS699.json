@@ -1,0 +1,22 @@
+{
+  "pid": "HJxv1VuTmN",
+  "code": "EOS699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "20–40",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EOS693"
+    ]
+  },
+  "recommendations": []
+}

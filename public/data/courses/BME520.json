@@ -1,0 +1,16 @@
+{
+  "pid": "ryPszgHxL",
+  "code": "BME520",
+  "title": "Human Factors and Usability Engineering for Medical Devices",
+  "description": "Regulatory considerations for developing medical devices. Human factors associated with biomedical device design. Usability studies and clinical trials. Safety and Risk Assessment and Management in the usability engineering process to maximize safety. Design control concepts including Design History File and the Device Master Record. The life cycle of a medical device and quality managements systems, device performance and the continuous improvement process. Case studies. A final design project focused on developing a medical device.",
+  "notes": [
+    "Credit will be granted for only one of BME 520, BME 401C (if taken in the same topic), BME 420.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

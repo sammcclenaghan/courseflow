@@ -1,0 +1,15 @@
+{
+  "pid": "H1gR1eFpXN",
+  "code": "SENG480B",
+  "title": "Topics in Software Engineering",
+  "description": "Presents material in an emerging field or one not covered in regular offerings. Topics depend primarily on the interests of the instructor. Entrance is restricted to third- and fourth-year students who meet the prerequisite specified for the topic offered.\n* Lab hours may vary depending on the topic.",
+  "notes": [
+    "Credit will be granted for only one of SENG 480B, SENG 480A (if taken in the same topic), SENG 480C (if taken in the same topic), SENG 480D (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0*-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

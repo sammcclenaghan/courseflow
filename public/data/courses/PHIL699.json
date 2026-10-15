@@ -1,0 +1,22 @@
+{
+  "pid": "H1gBOAOpQE",
+  "code": "PHIL699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "18",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHIL693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

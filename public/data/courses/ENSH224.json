@@ -1,0 +1,39 @@
+{
+  "pid": "SkGmMf70c",
+  "code": "ENSH224",
+  "title": "Literary Modernism",
+  "description": "Surveys major works of fiction, poetry and drama from the modernist period (roughly 1900-45), with emphasis on the dynamic relation between revolutions in aesthetic form and social, psychological and intellectual developments that marked the early 20th century.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 224, ENGL 201."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirements satisfied."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ATWP135",
+          "ENGL146",
+          "ENGL147",
+          "ENSH101",
+          "ENSH102",
+          "ENSH103"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

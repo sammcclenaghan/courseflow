@@ -1,0 +1,27 @@
+{
+  "pid": "r1wDeYT74",
+  "code": "SOCW356",
+  "title": "Global Approaches to Human Development and Social Justice",
+  "description": "A global decolonial overview of human development with a focus on social justice and diversity related to gender, race, class, ethnicity, culture, sexual orientation and disability. In particular, focuses on how cultural, global, spiritual and natural experiences and histories inform our understanding of human development and the implications of this for social work practice. Strong focus on developing a critical approach to the subject.",
+  "notes": [
+    "Students not majoring in Social Work but in their third- or fourth year may request permission to register in the course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Bachelor of Social Work program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

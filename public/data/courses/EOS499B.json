@@ -1,0 +1,25 @@
+{
+  "pid": "rywpXu6X4",
+  "code": "EOS499B",
+  "title": "Honours Thesis II",
+  "description": "Continuation of a research project conducted under the direction of a faculty member.",
+  "notes": [
+    "Credit will be granted for only one of EOS 499B, EOS 499, EOS 499A.",
+    "Open to Honours students only. EOS 499A and EOS 499B are \"tied\" courses and must be taken in consecutive terms except with permission of the department. Credit for EOS 499A will be assigned only upon successful completion of both courses."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EOS499A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

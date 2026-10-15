@@ -1,0 +1,16 @@
+{
+  "pid": "SJB_JOamN",
+  "code": "COM351",
+  "title": "Marketing Principles and Management",
+  "description": "Students learn and apply basic marketing theory, concepts and tools to make and defend key marketing decisions relating to: market segmentation, positioning, product development and management, pricing, distribution management and marketing communications. Emphasis is placed on both the fundamental principles of marketing and their application in a variety of industry and international contexts.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to BCom program core."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

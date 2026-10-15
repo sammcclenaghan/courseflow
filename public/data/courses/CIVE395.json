@@ -1,0 +1,42 @@
+{
+  "pid": "HJUuqB8y3",
+  "code": "CIVE395",
+  "title": "Building Science Fundamentals",
+  "description": "Topics: heat transfer by conduction, convection and radiation; thermal mass; fluids in motion; air and moisture content; air flow; ventilation; weather data; thermal comfort; solar gains; daylight.",
+  "notes": [
+    "Credit will be granted for only CIVE 395, CIVE 295, MECH 295."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE210",
+          "CIVE285",
+          "MATH101"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE250",
+          "CIVE350"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

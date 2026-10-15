@@ -1,0 +1,28 @@
+{
+  "pid": "S1j_xFaXE",
+  "code": "SOCW506",
+  "title": "Advanced Practicum",
+  "description": "A minimum of 450 hours of advanced social work practice and demonstration of the application of critical analysis to practice are required. Faculty of Health regulations concerning practica apply to the MSW practicum.",
+  "notes": [
+    "Students must submit an application for this course. Summer and fall term applications must be submitted a minimum of 7.5 months before the start of the term. Spring term applications must be submitted a minimum of 8 months before the start of the term.",
+    "Field Education courses have two components: a placement in the field and an integrative practice seminar (online)."
+  ],
+  "credits": "4.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "6 units of core course requirements"
+      },
+      {
+        "type": "text",
+        "text": "admission to MSW Advanced program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

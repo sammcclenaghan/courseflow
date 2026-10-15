@@ -1,0 +1,26 @@
+{
+  "pid": "S1Xa6vpQN",
+  "code": "ART242",
+  "title": "Photography",
+  "description": "A continuation of 241, including both practical and theoretical aspects of digital and film-based contemporary art photography.",
+  "notes": [
+    "Credit will be granted for only one of ART 242, ART 240.",
+    "Students must supply their own digital or analogue camera. Normally class size is limited."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART140",
+      "ART241"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

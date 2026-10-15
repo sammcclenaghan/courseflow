@@ -1,0 +1,40 @@
+{
+  "pid": "HJyWnEt_gx",
+  "code": "CSC432",
+  "title": "Logic and Programming",
+  "description": "Application of logical systems to modeling and verification. Propositional logic, the satisfiability problem, first-order logic, satisfiability modulo theories, temporal logic and model checking, advanced topics. Automated verification and tools supporting automation.",
+  "notes": [
+    "Credit will be granted for only one of CSC 432, CSC 322"
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC320"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH122",
+          "PHIL203"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

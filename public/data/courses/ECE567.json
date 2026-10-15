@@ -1,0 +1,15 @@
+{
+  "pid": "BJgix_T7V",
+  "code": "ECE567",
+  "title": "Advanced Network Security",
+  "description": "Presents, from a practical perspective, underlying principles and techniques of network security. Students are exposed to ethical hacking and penetration testing. Various protection methods, used in practice to detect and respond to malicious network attacks, are presented. Students also learn how to implement successful security policies and defense mechanisms and strategies, with a particular focus on firewalls, intrusion detection and response, virtual private networks and biometrics technologies.",
+  "notes": [
+    "Credit will be granted for only one of ECE 567, ELEC 567."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

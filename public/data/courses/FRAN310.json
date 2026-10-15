@@ -1,0 +1,24 @@
+{
+  "pid": "S1B5Ed6mV",
+  "code": "FRAN310",
+  "title": "Literature, Media and Culture II",
+  "description": "A close reading and analysis of literary texts and media in French. Analytical and critical approaches to texts and media vary.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 310, FRAN 290."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "FRAN280"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

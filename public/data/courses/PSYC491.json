@@ -1,0 +1,31 @@
+{
+  "pid": "BJgeL1ta7E",
+  "code": "PSYC491",
+  "title": "Advanced Special Topics in Psychology",
+  "description": null,
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "additional prerequisites set by department depending upon topic."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

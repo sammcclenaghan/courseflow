@@ -1,0 +1,35 @@
+{
+  "pid": "ByNynOT7V",
+  "code": "MATH102",
+  "title": "Calculus for Students in the Social and Biological Sciences",
+  "description": "Calculus of one variable with applications to the social and biological sciences. Review of functions and graphs; limits; derivatives; techniques and applications of differentiation; antiderivatives; the definite integral and area; logarithmic and exponential functions.",
+  "notes": [
+    "Credit will be granted for only one of MATH 102, MATH 100, MATH 109.",
+    "See note 3 under \"Notes on Course Requirements\". MATH 102 does not prepare students for further study of calculus and will restrict future options by ruling out a range of courses which require MATH 100 or MATH 109."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "C",
+        "minGpa": null,
+        "courses": [
+          "MATH120"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Pre-Calculus 12"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

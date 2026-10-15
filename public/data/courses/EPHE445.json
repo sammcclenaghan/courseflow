@@ -1,0 +1,27 @@
+{
+  "pid": "BkO-VOaQV",
+  "code": "EPHE445",
+  "title": "Developmental and Adaptive Physical Activity",
+  "description": "Examination of physical and recreational activities for individuals with disabilities. Methods of assessing physical performance, adapting equipment and facilities and applying programming techniques are explored.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 445, PE 445."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "declaration of one of: BSc program in Kinesiology, BA program in Recreation and Health Education, Post-Degree Professional Program (Secondary) (Bachelor of Education) with physical education as a teaching area."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

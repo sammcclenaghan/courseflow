@@ -1,0 +1,35 @@
+{
+  "pid": "BJeOWWKa7V",
+  "code": "THEA331",
+  "title": "Directing I",
+  "description": "Introduction to directing for the stage, including historical examples of directors' work.",
+  "notes": [
+    "Credit will be granted for only one of THEA 331, THEA 330."
+  ],
+  "credits": "1.5",
+  "hours": "2-1-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA205",
+          "THEA206"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

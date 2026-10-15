@@ -1,0 +1,34 @@
+{
+  "pid": "ryero2_pX4",
+  "code": "MEDS301",
+  "title": "Introduction to Pharmacology",
+  "description": "A general survey of the mechanisms of action and therapeutic application of drugs in the management of human disease. Primarily focuses on the pathophysiologic basis of drug therapy. Topics include how drugs work in the systems of the body, their molecular mechanisms of action in relation to pathophysiology, evidence for their therapeutic use and future directions in pharmacology.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL150B",
+          "BIOL184",
+          "EPHE241",
+          "PSYC251"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

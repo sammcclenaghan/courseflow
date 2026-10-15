@@ -1,0 +1,24 @@
+{
+  "pid": "SyuwTwTQN",
+  "code": "ANTH318",
+  "title": "Ethnographic Research Methods",
+  "description": "Review of ethnographic methods used in the field by cultural anthropologists. Topics include the relationship between field methods and theory in anthropology, field experiences and techniques and qualitative data analysis.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 318, ANTH 390, ANTH 395 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH260"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

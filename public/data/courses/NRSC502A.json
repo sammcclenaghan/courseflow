@@ -1,0 +1,26 @@
+{
+  "pid": "rkOSTupm4",
+  "code": "NRSC502A",
+  "title": "Advanced Topics in Cellular Neuroscience II",
+  "description": "Seminar on current topics in Cellular Neuroscience.",
+  "notes": [
+    "Credit will be granted for only one of NRSC 502A, NRSC 602A",
+    "The course runs from September to April."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NRSC501A",
+      "NRSC501B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,35 @@
+{
+  "pid": "H1xSc0xu3",
+  "code": "ECON316",
+  "title": "Principles and Applications of Cost Benefit Analysis",
+  "description": "Principles of cost benefit analysis including consideration of welfare economics, the treatment of intangibles, nonefficiency considerations, time discounting, evaluation criteria, uncertainty and risk, selected applications in such areas as human resource economics, natural resource and recreation economics, economic development and urban planning.",
+  "notes": [
+    "Credit will be granted for only one of ECON 316, ECON 416."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON203"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON225",
+      "ENGR120",
+      "ENGR240"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

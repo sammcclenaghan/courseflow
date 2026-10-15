@@ -1,0 +1,60 @@
+{
+  "pid": "BkgPbWFa74",
+  "code": "THEA329",
+  "title": "Theatre Performance",
+  "description": "Supervised performance in department productions.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA105"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "THEA120A",
+              "THEA132A",
+              "THEA236"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "THEA112",
+              "THEA120"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

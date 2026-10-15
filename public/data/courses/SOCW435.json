@@ -1,0 +1,40 @@
+{
+  "pid": "r1aPeKpXN",
+  "code": "SOCW435",
+  "title": "Decolonial and Anti-oppressive Perspectives on Mental Health",
+  "description": "Provides a decolonial context to consider the historical and contemporary approaches to mental health policies and practices across cultures. In understanding and challenging the western biomedical approach to mental health, the range of diversity in terms of cultural understanding and approaches to mental health are exemplified.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW311",
+          "SOCW312"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW312A",
+          "SOCW312B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

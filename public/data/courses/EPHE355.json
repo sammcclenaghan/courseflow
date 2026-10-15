@@ -1,0 +1,44 @@
+{
+  "pid": "SkXb4damE",
+  "code": "EPHE355",
+  "title": "Functional Anatomy",
+  "description": "Explores the functional relationship of the musculoskeletal system and related neural structures with focus on functional applications. Emphasis on designing and implementing exercises to address muscle imbalances and injury prevention in healthy populations. Causes, prevention and rehabilitation of activity-related musculoskeletal disorders are examined.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 355, PE 355."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE141",
+          "EPHE201"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to BSc program in Kinesiology."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EPHE260",
+      "EPHE360"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

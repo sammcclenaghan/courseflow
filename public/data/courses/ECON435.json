@@ -1,0 +1,50 @@
+{
+  "pid": "rygyJbd6XN",
+  "code": "ECON435",
+  "title": "Financial Economics",
+  "description": "An introduction to the application of economics to finance, with an emphasis on the theory of asset pricing. Topics may include mean-variance portfolio analysis, the capital asset pricing model and arbitrage pricing theory, equity and fixed income securities, options and the Black-Scholes pricing formula and futures contracts.",
+  "notes": [
+    "Credit will be granted for only one of ECON 435, COM 446, MBA 525."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON305"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "B-",
+        "minGpa": null,
+        "courses": [
+          "ECON313"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON345",
+      "ECON365",
+      "STAT350"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

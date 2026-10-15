@@ -1,0 +1,33 @@
+{
+  "pid": "SJCeNuTQE",
+  "code": "EPHE311",
+  "title": "Physical Education for General Classroom Teachers II",
+  "description": "Extends and refines the knowledge and pedagogical skills included in EPHE 310. Overall focus is on broadening their application to a variety of different movement categories in the elementary physical education curriculum. Students learn to create inclusive unit and yearly plans that encourage children to incorporate physical activity as part of a healthy lifestyle. Includes a variety of teaching experiences with elementary school-age children.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 311, PE 247, PE 304, PE 311, EDUC 304."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE310"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to BEd program in Elementary Education."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

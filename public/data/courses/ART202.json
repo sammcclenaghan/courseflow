@@ -1,0 +1,27 @@
+{
+  "pid": "BkjnpvaXV",
+  "code": "ART202",
+  "title": "Drawing",
+  "description": "A continuation of 201. Students move towards a more independent way of working.",
+  "notes": [
+    "Credit will be granted for only one of ART 202, ART 200.",
+    "Normally class size is limited."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART101",
+      "ART101E",
+      "ART201"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

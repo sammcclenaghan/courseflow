@@ -1,0 +1,24 @@
+{
+  "pid": "SkoNEdamE",
+  "code": "ES380",
+  "title": "Topics in Political Ecology",
+  "description": "An in-depth systematic examination of specific environmental areas through seminars and projects; the development of appropriate responses to questions and problems within the selected areas; modes of interaction and communication with professional and community groups; application of theory to practice; qualitative vs. quantitative research methods. This course is conducted as a seminar and may include a field trip for which a fee is charged.\n* Contact hours may vary depending on the topic.",
+  "notes": [
+    "Credit will be granted for only one of ES 380, ES 300B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0*",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ES200"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

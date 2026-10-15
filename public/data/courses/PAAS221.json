@@ -1,0 +1,34 @@
+{
+  "pid": "SyNjp_aQV",
+  "code": "PAAS221",
+  "title": "Intermediate Indonesian II",
+  "description": "Continues the focus of 220 with increasingly-advanced readings, schema exercises to facilitate vocabulary building and longer written assignments. Emphasis on speaking, reading, writing and listening prepares students for immersion experiences and advanced language work.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 221, SEA 200, SEA 200B.",
+    "Limited to 25 students per section."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PAAS220"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

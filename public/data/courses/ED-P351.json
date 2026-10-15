@@ -1,0 +1,27 @@
+{
+  "pid": "SyeEPGdT74",
+  "code": "ED-P351",
+  "title": "Six-Week Practicum (Elementary Education)",
+  "description": null,
+  "notes": [
+    "Credit will be granted for only one of ED-P 351, ED-P 300A, ED-P 300B.",
+    "Normally takes place in the spring term."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-P251",
+      "ED-P350",
+      "EDCI330"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

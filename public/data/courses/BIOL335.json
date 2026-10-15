@@ -1,0 +1,35 @@
+{
+  "pid": "HJo4AD67E",
+  "code": "BIOL335",
+  "title": "Ichthyology",
+  "description": "The evolution and diversity of fishes. Emphasis on form and function, ecology, behaviour, sensory modes, fishery management, global crises in fisheries, and marine protected areas. Laboratories include identification of major groups of fishes, methodology and experimental approaches to the study of fishes.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 335, BIOL 431A, MRNE 412 (if taken prior to May 2011)."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "BIOL 307 recommended prior to BIOL 335."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "pid": "rklPYrd6mN",
+  "code": "GEOG699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "to be determined",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

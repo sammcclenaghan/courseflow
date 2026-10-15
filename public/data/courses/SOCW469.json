@@ -1,0 +1,51 @@
+{
+  "pid": "r1-_gtpX4",
+  "code": "SOCW469",
+  "title": "Intersectionality in Disability Theory, Policy and Practice",
+  "description": "Intersectional approach to diverse abilities, including visible and invisible disabilities, neurodiversity, LGBTQ2S+ identities and BIPOC perspectives. Focus on anti-ableist, decolonizing frameworks, prioritizing consumer autonomy and inclusive service delivery.",
+  "notes": [
+    "Credit will be granted for only one of SOCW 469, HSD 464."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Bachelor of Social Work program"
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SOCW311",
+              "SOCW312"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SOCW312A",
+              "SOCW312B"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

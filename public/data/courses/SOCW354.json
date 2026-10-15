@@ -1,0 +1,42 @@
+{
+  "pid": "Byg8vgtTXE",
+  "code": "SOCW354",
+  "title": "Introduction to Indigenous Perspectives on Social Work Practice",
+  "description": "Critically examines the historical process of colonization in Canada, the resulting barriers embedded in policy and practice, and alternative ways of viewing the social-psychological position of Indigenous people in Canadian Society. Contemporary issues and the movement toward self-determination are discussed in relation to social work theory and practice.",
+  "notes": [
+    "Credit will be granted for only one of SOCW 354, SOCW 454."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW311",
+          "SOCW312"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW312A",
+          "SOCW312B"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

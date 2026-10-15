@@ -1,0 +1,16 @@
+{
+  "pid": "rJcMHu67V",
+  "code": "GEOG222",
+  "title": "Introduction to GIS",
+  "description": "Introduces techniques and fundamentals of spatial data and analysis. Topics include: scale, map interpretation and Geographic Information Systems.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

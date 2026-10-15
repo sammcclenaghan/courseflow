@@ -1,0 +1,38 @@
+{
+  "pid": "ryGANf7Cc",
+  "code": "ENSH254",
+  "title": "American Literature",
+  "description": "A survey of American literature in some combination of poetry, prose and drama.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 254, ENGL 203."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirements satisfied."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ATWP135",
+          "ENGL146",
+          "ENGL147",
+          "ENSH101",
+          "ENSH102",
+          "ENSH103"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

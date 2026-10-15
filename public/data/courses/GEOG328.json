@@ -1,0 +1,52 @@
+{
+  "pid": "BkL7SOamV",
+  "code": "GEOG328",
+  "title": "GIS Analysis",
+  "description": "Focuses on analysis for digital mapping and modeling, developing and using geographic data to answer spatial research questions, conducting basic spatial interpolations and carrying-out multi-criteria modelling.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG222",
+          "GEOG228"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "GEOG226"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "1.5 units minimum 200 level STAT or equivalent"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

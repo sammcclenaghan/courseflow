@@ -1,0 +1,39 @@
+{
+  "pid": "Hymy-_T74",
+  "code": "ECON454",
+  "title": "Theory of Corporate Finance",
+  "description": "Corporate finance is the study of how firms attract capital to finance their operations. Surveys some corporate finance topics that are of particular interest to economists. Topics may include the determinants of capital structure, dividend policy, capital budgeting, the relation between firm finance and product market behaviour, contracting and firm incentives, the role of financial intermediaries, and mergers and takeovers.",
+  "notes": [
+    "Credit will be granted for only one of ECON 454, COM 445 (if taken prior to May 2021), MBA 524."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON305"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "B-",
+        "minGpa": null,
+        "courses": [
+          "ECON313"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

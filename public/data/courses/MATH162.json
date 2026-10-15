@@ -1,0 +1,35 @@
+{
+  "pid": "Bycy2_674",
+  "code": "MATH162",
+  "title": "Mathematics for Elementary School Teachers II",
+  "description": "Probability, including combinations and permutations. Basic algebra and functions. Basic geometry; measurement topics, including length, area and volume; compass and straight-edge constructions. Problem solving is emphasized throughout.",
+  "notes": [
+    "Credit will be granted for only one of MATH 162, MATH 160, MATH 160B.",
+    "Not open for credit to students with more than 3.0 units of credit in MATH courses numbered 100 or higher (excluding MATH 120) without prior permission of the department.",
+    "Intended for prospective Elementary Education students only."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH161"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

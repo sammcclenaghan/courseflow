@@ -1,0 +1,31 @@
+{
+  "pid": "r1JcyKaQV",
+  "code": "PSYC582",
+  "title": "Psychopathology: Adulthood",
+  "description": "Draws on models for understanding psychopathology developed in PSYC 581. Discussion of conceptual models used to understand psychopathology; presentation of various mental disorders from multiple theoretical perspectives; discussion of diagnostic issues emphasizing the impact of gender and culture in the expression of \"abnormal\" behaviour. Emphasis is on disorders that emerge during adulthood. Topics are considered from a scientist-practitioner perspective. Includes discussion of relevant professional issues in clinical psychology.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC581"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to a graduate program in Clinical Psychology."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

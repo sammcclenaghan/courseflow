@@ -1,0 +1,32 @@
+{
+  "pid": "BJZIyl-iN",
+  "code": "PHYS321B",
+  "title": "Classical Mechanics II",
+  "description": "Rigid body dynamics, an introduction to analytical mechanics including Lagrange's and Hamilton's equations, theory of small oscillations.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS321A"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH342",
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

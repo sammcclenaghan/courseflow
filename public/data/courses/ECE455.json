@@ -1,0 +1,26 @@
+{
+  "pid": "SygStl_p74",
+  "code": "ECE455",
+  "title": "Real Time Computer Systems Design Project",
+  "description": "Techniques to guarantee the completion of computations by their deadline. Scheduling for periodic and non-periodic tasks. Organization and functionality of real time system software and hardware. Working in teams, students must complete a project involving substantial real time design and implementation, partly based on the knowledge and skills acquired in earlier coursework. Learning outcomes are based on a progress review, presentation, demonstration, and final report of the prototype design.",
+  "notes": [
+    "Credit will be granted for only one of ECE 455, CENG 455."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE355",
+      "CENG355",
+      "CSC355"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,44 @@
+{
+  "pid": "SyxloXdaX4",
+  "code": "ENGR446",
+  "title": "Technical Report",
+  "description": "A major technical report demonstrating written communication and analytical skills. Includes development and approval of topic, adherence to reporting guidelines and management of time constraints.",
+  "notes": [],
+  "credits": "1",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR002"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "6 units of 400-level BME, CENG, CIVE, CSC, ELEC, ECE, ENGR, MECH, or SENG courses."
+      },
+      {
+        "type": "text",
+        "text": "declaration in a BEng Program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ENGR003"
+    ]
+  },
+  "recommendations": []
+}

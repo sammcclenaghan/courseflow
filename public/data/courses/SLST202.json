@@ -1,0 +1,34 @@
+{
+  "pid": "SkBbxFpm4",
+  "code": "SLST202",
+  "title": "Intermediate Russian II",
+  "description": "Furthers knowledge of grammar and vocabulary at the intermediate level with continued reading, writing, listening and speaking in Russian while learning about Russian life and culture.",
+  "notes": [
+    "Credit will be granted for only one of SLST 202, RUSS 200, RUSS 200B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SLST201",
+          "RUSS200A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,42 @@
+{
+  "pid": "BJs99u6m4",
+  "code": "IS350",
+  "title": "Methods, Ethics, Protocols",
+  "description": "Provides students with a comprehensive examination of critical research methods and ethics. Considers culturally appropriate research approaches, principles, ethics, methods and methodologies in conducting research that concerns Indigenous peoples. Topics include research ethics and protocols, community-based research practices, oral traditions, anti-oppressive research practices, Indigenous ways and relational accountability.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IS200",
+              "IS200B",
+              "IS201"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum second-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

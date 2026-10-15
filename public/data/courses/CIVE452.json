@@ -1,0 +1,49 @@
+{
+  "pid": "Sy7EkdaXN",
+  "code": "CIVE452",
+  "title": "Engineering for Earthquakes and Extreme Events",
+  "description": "Basics of earthquake engineering and seismic resistant design loads; fundamentals behind seismic hazard maps contained in building codes; ground motion time-histories for engineering analysis; risk analysis; an examination of natural disasters and their effects on the society; basic probabilistic modeling and simulation techniques and their applications to natural disaster problems; hazard and risk assessments, post-disaster rapid inspection of damaged structures.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1.5",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE250",
+          "CIVE350"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE385"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT254",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

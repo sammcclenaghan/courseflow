@@ -1,0 +1,47 @@
+{
+  "pid": "SyErc_pQN",
+  "code": "IED358",
+  "title": "Indigenous Language Mentorship III",
+  "description": "75-100 hours of mentorship with a fluent speaker or speakers to build oral fluency in an Indigenous language at the third-year level.",
+  "notes": [
+    "Subject to the \"Guidelines for Ethical Conduct\" and \"Regulations Concerning Practica\"."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IED256",
+              "IED258",
+              "IED259",
+              "LING256",
+              "LING258",
+              "LING259"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to one of BEd or Diploma program in Indigenous Language Revitalization, Certificate in Indigenous Language Proficiency, Certificate in Indigenous Language Revitalization"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

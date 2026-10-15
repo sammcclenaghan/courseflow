@@ -1,0 +1,42 @@
+{
+  "pid": "HJ9kJ_6XV",
+  "code": "CHEM437",
+  "title": "Biological and Medicinal Chemistry",
+  "description": "Chemical aspects of medicinally important biological systems and the small molecules that perturb them.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 437, CHEM 537.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM232",
+          "CHEM234"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOC299",
+          "BIOC300A"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

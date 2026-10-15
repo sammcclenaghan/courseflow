@@ -1,0 +1,25 @@
+{
+  "pid": "ByxW4kupQN",
+  "code": "CIVE444",
+  "title": "Water and Sanitation for Low Resource Contexts",
+  "description": "Principles of public health engineering for low-resource contexts. Appropriate technologies related to water supply/treatment and sanitation that are commonly utilized in development and humanitarian emergency contexts. Applied water and wastewater treatment to resource limited contexts. Overview of water- and excreta-related diseases, notions and techniques of water and sanitation (and related issues), introductory notions to hygiene, and an introduction to scientific literature.\n* Indicates a 3-hour laboratory taken by students on alternate weeks.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 444, CIVE 480B (if taken in the same topic), CIVE 544.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5*-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CIVE310"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

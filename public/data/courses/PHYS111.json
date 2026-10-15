@@ -1,0 +1,39 @@
+{
+  "pid": "S18Y0d6mE",
+  "code": "PHYS111",
+  "title": "Introductory Physics II",
+  "description": "Heat engines; harmonic motion; wave motion; geometric and wave optics; modern physics. Engineering and Physical Science applications.",
+  "notes": [
+    "Students with credit in PHYS 112, PHYS 125, or PHYS 130 may not take PHYS 111 for credit.",
+    "A basic course in physics for students planning a program of study in fields such as Physics, Astronomy, Chemistry, Earth and Ocean Sciences and Engineering.",
+    "Students with a strong interest in Physics or Astronomy are encouraged to consider registering in PHYS 130."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS110"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH100",
+      "MATH102",
+      "MATH109"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": [
+    "MATH 101 strongly recommended in conjunction with PHYS 111."
+  ]
+}

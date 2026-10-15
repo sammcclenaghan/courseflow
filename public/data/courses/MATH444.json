@@ -1,0 +1,39 @@
+{
+  "pid": "Sy83tG6T3",
+  "code": "MATH444",
+  "title": "Topics in Fluid Dynamics",
+  "description": "Possible topics include partial differential equations governing fluid flows, mathematical well posedness of fluid flow equations, turbulent flows, bounds on turbulent averages, geophysical fluid dynamics, linear and nonlinear stability of fluid flows, and wave dynamics.",
+  "notes": [
+    "Credit will be granted for only one of MATH 444, MATH 492 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH204"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "permission of the Department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Students interested in fluid dynamics may want to take one or more of MATH 444, EOS 431, MECH 495, PHYS 426, PHYS 441."
+  ]
+}

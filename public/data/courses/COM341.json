@@ -1,0 +1,51 @@
+{
+  "pid": "rkN_JO67E",
+  "code": "COM341",
+  "title": "Operations Management",
+  "description": "Introduction to both the broad strategic and tactical decisions of operations management. Project planning/management, process choice, process flow analysis, location and layout of facilities, capacity and resource planning, job design, inventory control, scheduling, supply chain management, quality management and quality control. The link between operations management and other functional areas of business are evaluated.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM232"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BCom program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM324",
+          "COM331",
+          "COM361"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "recommendations": []
+}

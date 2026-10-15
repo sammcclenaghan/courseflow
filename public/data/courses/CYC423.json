@@ -1,0 +1,18 @@
+{
+  "pid": "HJXreOpQN",
+  "code": "CYC423",
+  "title": "Research Literacy in CYC",
+  "description": "Introduces students to fundamental research concepts and diverse methods of inquiry in order to critically engage with research. Focuses on interpreting and evaluating the strengths, limitations and ethics of research and mobilizing research findings to benefit children, youth, families and the programs that serve them.",
+  "notes": [
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum third-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,41 @@
+{
+  "pid": "Hk8u1_TQE",
+  "code": "COM371",
+  "title": "Management Finance",
+  "description": "Introduction to corporate financial management with special reference to discounted cash flow techniques, valuation of financial assets, capital budgeting decisions, risk and return tradeoffs.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "COM232",
+              "COM315"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Admission to BCom program."
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the School."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

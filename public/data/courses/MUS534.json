@@ -1,0 +1,22 @@
+{
+  "pid": "HJrNaO6X4",
+  "code": "MUS534",
+  "title": "Advanced Research Forum in Musicology",
+  "description": "Core seminar in advanced research skills for second-year degree candidates in Musicology that provides an interactive forum for completion of major program requirements. Students conduct research in diverse areas of inquiry in musicology and gain professional experience through the preparation of a conference presentation. Candidates for the MA complete their Comprehensive Examinations and a formal Thesis Proposal, while PhD candidates complete their formal proposal for the Comprehensive Examinations in the context of the Forum.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MUS533"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

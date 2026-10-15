@@ -1,0 +1,42 @@
+{
+  "pid": "r1xB9AOaXE",
+  "code": "PHYS328",
+  "title": "Solid State Physics I",
+  "description": "Physics of solids including crystal structure and symmetry; thermal, electrical, elastic, and optical properties of solids.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 328, PHYS 428."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS323",
+          "PHYS326"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS301",
+          "MATH342",
+          "MATH346"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

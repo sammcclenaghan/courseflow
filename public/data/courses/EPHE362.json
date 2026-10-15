@@ -1,0 +1,44 @@
+{
+  "pid": "Bk_nRQQsH",
+  "code": "EPHE362",
+  "title": "Principles of Strength and Conditioning",
+  "description": "Focuses on the development of theoretical and practical knowledge of strength training and conditioning for programming over the entire healthy population from untrained individuals to elite athletes.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 362, EPHE 487 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "2-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE141"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE160",
+          "EPHE241"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum second-year standing"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

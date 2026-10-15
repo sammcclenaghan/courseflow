@@ -1,0 +1,35 @@
+{
+  "pid": "BJ4QnOT7V",
+  "code": "MATH538",
+  "title": "Complex Analysis",
+  "description": "Topics chosen from: conformal mappings, the Riemann mapping theorem, the maximum principle, infinite products, Picard's theorem, normal families, Hp-spaces, approximation by rational functions, the Riemann zeta function, analytic continuation and Riemann surfaces.",
+  "notes": [
+    "Students who have completed a course equivalent to MATH 438 may request permission to register in the course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH330B",
+          "MATH338",
+          "MATH438"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

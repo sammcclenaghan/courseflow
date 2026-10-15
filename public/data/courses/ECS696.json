@@ -1,0 +1,24 @@
+{
+  "pid": "Hkebq-rnR",
+  "code": "ECS696",
+  "title": "DEng Candidacy",
+  "description": "Preparation for their candidacy examinations.",
+  "notes": [
+    "Course registration begins at the time a student first enrolls in the DEng program and continues until candidacy requirements have been completed, normally at the end of the first year of program."
+  ],
+  "credits": "6",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECS601"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

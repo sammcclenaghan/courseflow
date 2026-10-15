@@ -1,0 +1,40 @@
+{
+  "pid": "r1oCxY6mE",
+  "code": "STAT450",
+  "title": "Mathematical Statistics II",
+  "description": "Brief introduction to decision theory, point and interval estimation, hypothesis testing; regression and correlation, analysis of variance. Emphasis on the mathematics of statistics.",
+  "notes": [
+    "Credit will be granted for only one of STAT 450, STAT 351."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT256",
+          "STAT261"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT350"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

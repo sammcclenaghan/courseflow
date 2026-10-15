@@ -1,0 +1,70 @@
+{
+  "pid": "S1tn7d6QE",
+  "code": "EOS314",
+  "title": "Descriptive Physical Oceanography",
+  "description": "An introduction to the geography of Earth's fluid ocean and the physics that govern it. Topics include fundamental physical variables and their distribution, air/sea interaction, water masses and their formation, large-scale ocean dynamics, equatorial and coastal physical oceanography, and interactions between physical, chemical, and biological processes in the ocean. Participation in a single-day oceanographic cruise is expected.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH101",
+          "MATH102",
+          "MATH109",
+          "MATH151"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS102A",
+              "PHYS102B"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS110",
+              "PHYS111"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS120",
+              "PHYS130"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

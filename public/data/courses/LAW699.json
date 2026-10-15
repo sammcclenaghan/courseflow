@@ -1,0 +1,22 @@
+{
+  "pid": "r1NYoOpmV",
+  "code": "LAW699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "21–36",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LAW693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

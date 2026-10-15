@@ -1,0 +1,35 @@
+{
+  "pid": "HyxBfb3z1e",
+  "code": "CNPY523",
+  "title": "Internship in Counselling",
+  "description": "Provides intensive practice in advanced counselling techniques and approaches under the supervision of a professional counsellor in community settings. Lectures focus on case presentations, models of consultation, supervisor-supervisee relationship, roles and responsibilities of health professionals, counsellor identity, professional organizations, record keeping. Two term course.",
+  "notes": [
+    "Credit will be granted for only one of CNPY 523, ED-D 523.",
+    "Students may repeat this course until practicum hourly requirements are met but credit will be granted only once.",
+    "Enrolment is limited due to availability of placements."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CNPY522"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to MA program in Counselling Psychology."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,55 @@
+{
+  "pid": "Ske2dxupmN",
+  "code": "ECE399",
+  "title": "Design Project I",
+  "description": "Focuses on engineering design using real-world, team-based projects, which are proposed by external clients and cover various electrical and computer engineering topics. Project deliverables include requirements specification, a technical literature review and a feasibility study.",
+  "notes": [
+    "Credit will be granted for only one of ECE 399, CENG 399,ELEC 399."
+  ],
+  "credits": "1.5",
+  "hours": "1-6-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECE299",
+              "CENG299",
+              "ELEC200",
+              "ELEC299"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ENGR001"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum third-year standing in the BEng program in Electrical or Computer Engineering"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

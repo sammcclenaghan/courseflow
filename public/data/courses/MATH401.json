@@ -1,0 +1,23 @@
+{
+  "pid": "HkgoZndamE",
+  "code": "MATH401",
+  "title": "Complex Analysis",
+  "description": "Principal results of complex analysis from a rigourous viewpoint. Conformal mappings, the Riemann mapping theorem, the maximum principle, infinite products, Picard's theorem, normal families, Hp-spaces, approximation by rational functions, the Riemann zeta function, analytic continuation and Riemann surfaces.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH306",
+      "MATH335"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

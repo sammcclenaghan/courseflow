@@ -1,0 +1,38 @@
+{
+  "pid": "rJb7D58-1x",
+  "code": "COM292",
+  "title": "Law and Ethics",
+  "description": "Examination of aspects of law and ethics that are particularly relevant to those who own, manage or are employed by a business enterprise. Subjects include ethical frameworks, personal ethics, common law doctrines (such as contract and negligence), legislation (such as the Business Corporations Act) and other legal and ethical principles that affect business decision making in a global environment.",
+  "notes": [
+    "Credit will be granted for only one of COM 292, COM 302, COM 402, ENGR 498."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to BCom program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM224",
+          "COM232",
+          "COM251"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "recommendations": []
+}

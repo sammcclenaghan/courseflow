@@ -1,0 +1,41 @@
+{
+  "pid": "Bko_gu67V",
+  "code": "ECE365",
+  "title": "Applied Electronics and Electrical Machines",
+  "description": "Characteristics of electronic devices including diodes, bipolar junction transistors and operational amplifiers; analysis of practical electronic circuits such as rectifiers, voltage regulators, amplifiers and filters; fundamentals of electromechanical energy conversion; transformers and actuators; operating principles of rotating electric machines: dc machines and ac machines.",
+  "notes": [
+    "Credit will be granted for only one of ECE 365, ELEC 365."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE216",
+          "ELEC216"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE250",
+          "ELEC250"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,39 @@
+{
+  "pid": "Hy2L0v674",
+  "code": "BIOL439",
+  "title": "Molecular Epidemiology",
+  "description": "Basic principles and applications of molecular epidemiology in epidemiological research on infectious and chronic diseases as well as risk factors in human populations. An overview of terminology and definitions, the use of statistics, and ethical consideration.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL225",
+          "BIOL230"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT255",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

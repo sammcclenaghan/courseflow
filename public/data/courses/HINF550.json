@@ -1,0 +1,13 @@
+{
+  "pid": "SysgO_TmV",
+  "code": "HINF550",
+  "title": "Health Information Systems Design",
+  "description": "Introduces the concepts and techniques of modern systems analysis and design in health care. Explores Systems Development Life Cycle (SDLC) comparing traditional approach versus object-orientated model. Offers experience in applying Unified Modeling Language (UML) diagrams in different scenarios. Reviews research and current trends in system development. Covers advanced modeling techniques.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

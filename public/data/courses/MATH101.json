@@ -1,0 +1,34 @@
+{
+  "pid": "r1N1hda7E",
+  "code": "MATH101",
+  "title": "Calculus II",
+  "description": "Volumes; arc length and surface area; techniques of integration with applications; polar coordinates and area; Taylor's formula; improper integrals; series and tests for convergence; power series and Taylor series; complex numbers.",
+  "notes": [
+    "See note 4 under Notes on Course Requirements."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH109"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

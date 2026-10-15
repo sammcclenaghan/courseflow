@@ -1,0 +1,51 @@
+{
+  "pid": "Syuhm_TmE",
+  "code": "EOS312",
+  "title": "Introductory Chemical Oceanography",
+  "description": "An introduction to the sources, distribution, and transformations of chemical constituents of the ocean, and their relation to biological, chemical, geological, and physical processes. Topics include: controls on average concentration of chemicals in the ocean; vertical and horizontal distributions of ocean constituents; air-sea interactions; production, export, and remineralization of organic matter; the ocean carbon cycle; human-induced changes; stable isotopes and trace elements.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-4-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS110",
+          "EOS314",
+          "EOS431"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM102"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH102",
+          "MATH109"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

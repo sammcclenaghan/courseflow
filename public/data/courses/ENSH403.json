@@ -1,0 +1,50 @@
+{
+  "pid": "HkwZ9JQ09",
+  "code": "ENSH403",
+  "title": "Digital Communication and Social Media",
+  "description": "Focus on the cultural, social and economic processes underlying digital media, particularly social media. Develops skills such as collaborative and document authoring applications, podcasting, digital writing, digital video production and blogging, which may be applied via community-engaged learning.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 403, ENGL 406 (if taken in the same topic), ENGL 407.",
+    "This is a Professional Communication course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "ENSH101",
+          "ENSH102",
+          "ENSH103",
+          "ENSH201",
+          "ENSH202",
+          "ENGL135",
+          "ENGL146",
+          "ENGL147",
+          "ENGL215",
+          "ENGL225",
+          "ATWP135",
+          "ECON225",
+          "ENGR240",
+          "MDIA200",
+          "WRIT204A",
+          "WRIT204B",
+          "WRIT215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

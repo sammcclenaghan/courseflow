@@ -1,0 +1,49 @@
+{
+  "pid": "SkMkeY6XV",
+  "code": "SENG360",
+  "title": "Security Engineering",
+  "description": "Cryptography, security protocols, access control, multilevel security, physical and environmental security, network security, application security, e-services security, human aspects and business continuity planning. Applications which need confidentiality, availability, integrity and covertness properties; mechanisms to incorporate and test properties in systems. Policy and legal issues.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG265"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC370"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC361",
+          "ECE363",
+          "ECE458"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

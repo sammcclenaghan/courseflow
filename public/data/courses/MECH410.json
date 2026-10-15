@@ -1,0 +1,38 @@
+{
+  "pid": "SJ2PnuTQE",
+  "code": "MECH410",
+  "title": "Computer-Aided Design and Engineering",
+  "description": "Fundamentals of computer graphics; geometric modeling of solids and curved surfaces of mechanical parts; part and assembly drawing generation; integrated CAD/CAE/CAM system for modelling, simulation, analysis using FEA and CFD, CNC tool path generation and design optimization; input and output of CAD systems, data management and customization of CAD/CAE/CAM systems.",
+  "notes": [
+    "Credit will be granted for only one of MECH 410, MECH 520.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH200",
+      "MECH200A",
+      "BME350",
+      "ECE299",
+      "ELEC299"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC349A"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

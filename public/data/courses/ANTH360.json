@@ -1,0 +1,24 @@
+{
+  "pid": "ryOOpDaQN",
+  "code": "ANTH360",
+  "title": "Zooarchaeology",
+  "description": "An introduction to the study of animal bones from archaeological sites, with a lecture component emphasizing general methodology and case studies from different regions and a laboratory component focusing on the analysis of Northwest Coast fauna.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 360, ANTH 390, ANTH 392 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "1-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH240"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

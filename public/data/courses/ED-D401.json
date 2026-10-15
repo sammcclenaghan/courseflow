@@ -1,0 +1,18 @@
+{
+  "pid": "HJQyz_TmV",
+  "code": "ED-D401",
+  "title": "Introduction to Psychology of Classroom Learning",
+  "description": "An introduction to the psychology of learning in the secondary school.",
+  "notes": [
+    "Credit will be granted for only one of ED-D 401, ED-D 403."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Registration in a program in Teacher Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

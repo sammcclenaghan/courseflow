@@ -1,0 +1,25 @@
+{
+  "pid": "SJsBNOTmN",
+  "code": "ES445",
+  "title": "Changing Nature",
+  "description": "Discusses responsible intervention in ecosystems undergoing rapid change, covering a wide range of contemporary issues from barcoding biodiversity to rewilding, all with the aim of pushing against boundaries of received knowledge about preservation, conservation and restoration of nature.",
+  "notes": [
+    "Credit will be granted for only one of ES 445, ES 482 (if taken in same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ES200",
+      "ES341"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

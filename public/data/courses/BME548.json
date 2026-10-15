@@ -1,0 +1,16 @@
+{
+  "pid": "HyR0QbHeL",
+  "code": "BME548",
+  "title": "Introduction to Musculoskeletal Mechanics",
+  "description": "Engineering principles applied to human musculoskeletal (MSk) system. MSk anatomy and nomenclature, biomechanical effects of muscle, bone, tendons and ligaments on the overall human MSk system. Biomechanical kinematic and force analysis are also studied using first principles and spatial transformations. Technologies commonly used to assess MSk variables.",
+  "notes": [
+    "Credit will be granted for only one of BME 548, BME 401D (if taken in the same topic), BME 448, MECH 448, MECH 450D (if taken in the same topic), MECH 548, MECH 580 (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

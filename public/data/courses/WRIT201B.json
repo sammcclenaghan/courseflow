@@ -1,0 +1,24 @@
+{
+  "pid": "rkNLWFa7V",
+  "code": "WRIT201B",
+  "title": "Poetry Workshop",
+  "description": "A workshop in the writing of poetry.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 201B, WRIT 201, CW 201."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "WRIT201A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

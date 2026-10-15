@@ -1,0 +1,18 @@
+{
+  "pid": "H1ek9g_6XV",
+  "code": "ECE496C",
+  "title": "Selected Topics in Electrical and Computer Engineering",
+  "description": "Presents material in an emerging field or one not covered in regular offerings. Some topics may require laboratory work as well as lectures. Entrance is restricted to third- and fourth-year students who meet the prerequisite specified for the topic offered. *Lab hours may vary depending on the topic.",
+  "notes": [
+    "Credit will be granted for only one of ECE 496C (if taken in the same topic), ECE 496A (if taken in the same topic), ECE 496B (if taken in the same topic), ECE 496D (if taken in the same topic), BME 401A (if taken in the same topic), BME 401B (if taken in the same topic), BME 401C (if taken in the same topic), BME 401D (if taken in the same topic), CENG 496 (if taken in the same topic), CENG 496A (if taken in the same topic), CENG 496B (if taken in the same topic), CENG 496C (if taken in the same topic), CENG 496D (if taken in the same topic), ELEC 496 (if taken in the same topic), ELEC 496A (if taken in the same topic), ELEC 496B (if taken in the same topic), ELEC 496C (if taken in the same topic), ELEC 496D (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0*-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Set by department depending upon topic."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

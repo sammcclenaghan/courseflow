@@ -1,0 +1,38 @@
+{
+  "pid": "BJO2RneRq",
+  "code": "ENSH481",
+  "title": "Advanced Special Topics Seminar",
+  "description": "A capstone course on advanced variable topics in a focused area of literary or cultural analysis (could focus on a specific author).",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class limited to Majors and Honours students except by permission of the instructor.",
+    "Credit granted for only one of ENSH 481, ENGL 480 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENSH200",
+          "ENSH301",
+          "ENGL209",
+          "ENGL310"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the instructor."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

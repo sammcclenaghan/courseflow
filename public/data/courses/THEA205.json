@@ -1,0 +1,64 @@
+{
+  "pid": "B1xggbYTmV",
+  "code": "THEA205",
+  "title": "Introduction to Production and Management Areas of the Theatre",
+  "description": "The basic principles and procedures of the major production and management areas of the theatre. Includes a practical assignment in a department or designated production(s).",
+  "notes": [
+    "Students enrolled in this course must consult the instructor before making evening or lunchtime engagements which might interfere with the schedule of practical assignments that may occur outside of regularly scheduled hours."
+  ],
+  "credits": "3",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA103",
+          "THEA104",
+          "THEA105",
+          "THEA106",
+          "THEA120A",
+          "THEA206"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA105",
+          "THEA120A",
+          "THEA132A",
+          "THEA236"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA105",
+          "THEA112",
+          "THEA120"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

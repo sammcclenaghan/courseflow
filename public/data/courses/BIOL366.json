@@ -1,0 +1,46 @@
+{
+  "pid": "rymHADpXV",
+  "code": "BIOL366",
+  "title": "Plant Physiology",
+  "description": "Principles of plant physiology: photosynthesis, water relations, ion uptake, translocation, carbohydrates, nitrogen and lipid metabolism, phenolics, phytohormones, tropisms, phytochromes.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 366, BIOL 331A, BIOL 331B."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL225"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOC299",
+          "BIOC300A",
+          "BIOC300B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": [
+    "BIOL 324 recommended prior to BIOL 366."
+  ]
+}

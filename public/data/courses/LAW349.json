@@ -1,0 +1,25 @@
+{
+  "pid": "SJlDvs_pXN",
+  "code": "LAW349",
+  "title": "Business Law Clinic",
+  "description": "Using a clinical approach, students apply knowledge gained in LAW 315 Business Associations and LAW 315I Transsystemic Business Associations as they assist small business owners and those who are considering going into business to assess their legal requirements. By working with the Clinic Counsel and with the mentors from the Victoria Bar, students develop practical legal skills and examine the role of the legal profession in the small business environment.",
+  "notes": [
+    "Priority will be given to students registering in the course for the first time."
+  ],
+  "credits": "1.5–3",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LAW315",
+      "LAW315I"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

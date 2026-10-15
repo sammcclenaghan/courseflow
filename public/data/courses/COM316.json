@@ -1,0 +1,36 @@
+{
+  "pid": "B1lZOJda74",
+  "code": "COM316",
+  "title": "Management Accounting",
+  "description": "Introduction to the managerial accounting tools and models available to managers for use in their planning, controlling and global decision-making functions. Behaviour of costs, the differential concept, short-run choice decisions, cost-volume-profit relationships, variance analysis and the management control process.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON103",
+          "COM315"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BCom program."
+      },
+      {
+        "type": "text",
+        "text": "or permission of the School."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

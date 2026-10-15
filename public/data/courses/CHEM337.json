@@ -1,0 +1,23 @@
+{
+  "pid": "r1xykdTX4",
+  "code": "CHEM337",
+  "title": "Bio-organic Chemistry",
+  "description": "Survey of electronic and medium effects on reactivity. Catalysis of organic reactions. Bio-organic reaction mechanisms and biomimetic model systems.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM232",
+      "CHEM234"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

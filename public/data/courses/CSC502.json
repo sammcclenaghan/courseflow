@@ -1,0 +1,16 @@
+{
+  "pid": "S1w37ooK4",
+  "code": "CSC502",
+  "title": "Systems for Massive Datasets",
+  "description": "Important and recent developments in database technology and systems for big data are covered in detail. Topics include: storage technology, algorithms for secondary storage, relational operators implementation, multidimensional data and indexes, data structures for Information Retrieval, distributed data analytics, social network analytics, mining massive datasets.",
+  "notes": [
+    "Credit will be granted for only one of CSC 502, CSC 402, CSC 485B (if taken in the same topic), CSC 571, SENG 480B (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

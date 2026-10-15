@@ -1,0 +1,24 @@
+{
+  "pid": "HJiUbYaQE",
+  "code": "WRIT218B",
+  "title": "Screenwriting Workshop",
+  "description": "A workshop in writing for the screen.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 218B, WRIT 218."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "WRIT218A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

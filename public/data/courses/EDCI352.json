@@ -1,0 +1,19 @@
+{
+  "pid": "BJeBd-OpmE",
+  "code": "EDCI352",
+  "title": "Multiliteracies Curriculum",
+  "description": "Prepares prospective secondary school teachers to develop understandings and approaches to integrating literacy processes and products into the subject disciplines. Examines multiple literacies and contemporary understandings of texts as they apply to learning across the curriculum.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 352, EDCI 343C, ED-B 344.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "text",
+    "text": "Professional Year Admission Requirements satisfied."
+  },
+  "recommendations": []
+}

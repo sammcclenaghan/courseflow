@@ -1,0 +1,51 @@
+{
+  "pid": "SykuiWan6",
+  "code": "MECH424",
+  "title": "Materials for Sustainability",
+  "description": "Systematic approach to materials selection for engineering design; design requirements and objectives; data-driven design tools; materials design concepts (materials performance index, eco-audit). Sustainable development trade-offs; economic, environmental and social capital. Project-based learning approach; team project to propose a new technology; United Nations (UN) sustainable development goals.",
+  "notes": [
+    "Credit will be granted for only one of MECH 424, MECH 450A (if taken in the same topic), MECH 450F (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1.5",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH220"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM101",
+          "CHEM150"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH285",
+          "BME320"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

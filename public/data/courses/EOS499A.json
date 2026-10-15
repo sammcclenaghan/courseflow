@@ -1,0 +1,19 @@
+{
+  "pid": "r1ITQ_aQN",
+  "code": "EOS499A",
+  "title": "Honours Thesis I",
+  "description": "The first stage of a research project conducted under the direction of a faculty member.",
+  "notes": [
+    "Credit will be granted for only one of EOS 499A, EOS 499, EOS 499B.",
+    "Open to Honours students only. EOS 499A and EOS 499B are \"tied\" courses and must be taken in consecutive terms except with permission of the department. Credit and final grade for EOS 499A will be assigned only upon successful completion of EOS 499B; if EOS 499B is not completed, a grade equivalent to N will be assigned to EOS 499A."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

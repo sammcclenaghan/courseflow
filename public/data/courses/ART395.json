@@ -1,0 +1,66 @@
+{
+  "pid": "SJPATwa7E",
+  "code": "ART395",
+  "title": "Visual Structures in the Imaginative Realm I",
+  "description": "Cross-disciplinary independent projects within a studio-centred context. Sculpture, painting and installation form core areas for creative research within a broad experimental approach.",
+  "notes": [
+    "Team taught by faculty from Visual Arts and other disciplines; includes seminar component."
+  ],
+  "credits": "6",
+  "hours": "1.5-4.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART150"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART150E"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": {
+              "units": 3
+            },
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART155",
+              "ART156"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "9 units of 200-level Visual Arts courses"
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

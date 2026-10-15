@@ -1,0 +1,44 @@
+{
+  "pid": "ByvqCuTXN",
+  "code": "PHYS411",
+  "title": "Time Series Analysis",
+  "description": "Continuous and discrete Fourier transforms, convolution and correlation, autocorrelation, spectral density estimation, deconvolution, linear filtering, frequency domain and two-dimensional filtering. Digital data processing and computer analysis are stressed.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS340",
+          "EOS431",
+          "PHYS321A",
+          "PHYS323",
+          "PHYS326",
+          "PHYS340",
+          "PHYS441"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH211",
+          "MATH346"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

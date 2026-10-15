@@ -1,0 +1,42 @@
+{
+  "pid": "B1l-ubKaX4",
+  "code": "WRIT418",
+  "title": "Advanced Screenwriting Workshop",
+  "description": "Workshop in writing for the screen.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "WRIT318",
+          "WRIT320"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Declared Major in Writing"
+      },
+      {
+        "type": "text",
+        "text": "Fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "Permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

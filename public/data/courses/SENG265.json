@@ -1,0 +1,35 @@
+{
+  "pid": "r1l00yY67E",
+  "code": "SENG265",
+  "title": "Software Development Methods",
+  "description": "Systematic methods for designing, coding, testing and documenting medium-sized programs. Tools and techniques to promote programming productivity and software quality. Specifications, code review, testing and debugging methods and tools, version control, file system navigation, object-oriented languages, user interface prototyping, software tools, environments and the fundamentals of software configuration management.",
+  "notes": [
+    "Credit will be granted for only one of SENG 265, CSC 265."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC115",
+      "CSC116"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC120",
+      "ENGR130"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

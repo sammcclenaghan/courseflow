@@ -1,0 +1,37 @@
+{
+  "pid": "ry6KpvT74",
+  "code": "ANTH460",
+  "title": "Ethnographic Mapping and Indigenous Cartographies",
+  "description": "Skills-based seminar on land use and occupancy mapping (also called Traditional Use Study mapping) of indigenous territories in respect of land claims and resource rights, and critically evaluating power relations, knowledge practices, and ontologies of 'counter-mapping' and other contemporary indigenous cartographies.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 460, ANTH 520A (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ANTH200",
+          "IS201"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "One of ANTH 311, ANTH 336, ANTH 340 strongly recommended prior to ANTH 460."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "pid": "HJe2GH_67E",
+  "code": "GEOG272",
+  "title": "Climatology and Hydrology",
+  "description": "An investigation of the fundmental processes controlling climate and hydrology. Explores various factors and interactions that determine the spatial and temporal variations of individual climate elements. Focuses on the mutual interaction of climate with the Earth's surface and the role that ground surface type or cover plays in moderating local climate and hydrology.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG103",
+      "GEOG110",
+      "GEOG130",
+      "EOS110",
+      "EOS130"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

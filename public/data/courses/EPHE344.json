@@ -1,0 +1,40 @@
+{
+  "pid": "SyebE_6m4",
+  "code": "EPHE344",
+  "title": "Care and Prevention of Athletic Injuries",
+  "description": "An introduction to general athletic training practices. Topics include safe environments, identifying risk factors associated with specific sports, legal responsibilities and documentation, developing and implementing emergency protocols for crisis procedures and basic taping and strapping techniques. May include a practical field experience.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 344, PE 344.",
+    "Current certification in a minimum of Standard First Aid (including CPR Level C) is required prior to taking this course."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE241",
+          "EPHE241B",
+          "EPHE160"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to BSc program in Kinesiology"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the School"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

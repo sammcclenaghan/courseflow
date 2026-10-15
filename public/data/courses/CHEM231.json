@@ -1,0 +1,23 @@
+{
+  "pid": "HkVACvpXV",
+  "code": "CHEM231",
+  "title": "Introduction to Organic Chemistry",
+  "description": "Understanding structure, stereochemistry and mechanism; nucleophiles, substitutions, eliminations and additions. In the tutorials examples illustrate concepts and relevant spectroscopy.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM101",
+      "CHEM150"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

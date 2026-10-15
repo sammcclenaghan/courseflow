@@ -1,0 +1,24 @@
+{
+  "pid": "ByLWSHnnr",
+  "code": "IS300",
+  "title": "Community-based Cultural Production",
+  "description": "Explores many modes of Indigenous individual and community self-representation and knowledge transmission, including memoir, documentary film, poetry and performance, pod-casting and YouTube videos, beadwork and weaving. Students are asked to think of themselves as transmitters and creators of knowledge as well as receivers and to take up the responsibility of the knowledges they gain.",
+  "notes": [
+    "Credit will be granted for only one of IS 300, IS 391A (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IS201"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

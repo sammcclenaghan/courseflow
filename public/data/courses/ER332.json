@@ -1,0 +1,27 @@
+{
+  "pid": "B1lwm4upXE",
+  "code": "ER332",
+  "title": "Selection and Propagation of Native Plants for Ecological Restoration",
+  "description": "An introduction to the principles of native plant selection and propagation to meet site-specific objectives for ecosystem restoration. Topics include native plant propagation techniques; the role of artificial propagation in ecosystem rehabilitation and restoration; criteria for species selection; scientific and ethical principles for the collection of propagation materials; site stabilization; site preparation; out-planting; and bio-engineering.",
+  "notes": [
+    "Credit will be granted for only one of ER 332, ER 338 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Certificate or Diploma program in Restoration of Natural Systems"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,13 @@
+{
+  "pid": "HyaceB2kc",
+  "code": "ECE556",
+  "title": "Deep Reinforcement Learning",
+  "description": "Introduces fundamental concepts and essential algorithms of deep reinforcement learning, such as the basics of machine learning/deep learning, reinforcement learning, Markov decision process, dynamic programing, tabular methods, including Monte-Carlo and temporal difference, value-function approximation, policy gradient methods, and sample advanced algorithms, including deep Q-networks (DQN) and deep deterministic policy gradient (DDPG). Students are required to complete a project.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

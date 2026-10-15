@@ -1,0 +1,41 @@
+{
+  "pid": "B1937dT7E",
+  "code": "EOS316",
+  "title": "Igneous and Metamorphic Geology",
+  "description": "The physical and chemical processes governing changes that rocks undergo as they equilibrate at different pressure and temperature conditions within the Earth. Melting, crystallization and sub-solidus recrystallization as a function of bulk composition. The role of different plate tectonic settings in controlling the pressure-temperature-composition conditions of formation of different igneous and metamorphic rocks.",
+  "notes": [
+    "Credit will be granted for only one of EOS 316, EOS 310, EOS 320."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS205"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS240",
+          "PHYS217",
+          "PHYS317"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

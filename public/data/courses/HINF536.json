@@ -1,0 +1,13 @@
+{
+  "pid": "ByPx_O67N",
+  "code": "HINF536",
+  "title": "Controlled Terminology Standards",
+  "description": "Examines the adoption and management of controlled terminologies in health care organizations. Terminology adoption covers the planning, design, implementation, use, support and evaluation of terminologies in health IT applications. Terminology management covers the development, publishing, distribution and maintenance of terminology content, services and tools as organizational assets. Examples of terminologies to be covered include SNOMED CT, ICD-10-CA/CCI and LOINC.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

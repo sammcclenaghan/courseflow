@@ -1,0 +1,42 @@
+{
+  "pid": "HkC0gYpmN",
+  "code": "STAT457",
+  "title": "Time Series Analysis",
+  "description": "Stationary time series; Box-Jenkins methodology; autoregressive, moving-average and ARIMA models; smoothing; time series regression; spectral analysis and linear filters.",
+  "notes": [
+    "Students with credit for STAT 454 require permission of the department."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON366",
+          "STAT350"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT350",
+          "STAT353"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

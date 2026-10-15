@@ -1,0 +1,25 @@
+{
+  "pid": "BkgCM1tTX4",
+  "code": "PSYC260",
+  "title": "Introduction to Mental Health and Well-Being",
+  "description": "Examines theory and research related to mental health and well-being in adulthood. Topics address various aspects of psychological distress (such as mood and anxiety disorders, personality disorders, substance use, and schizophrenia) and psychological well-being. Biological, learning, developmental, humanistic, and cross-cultural perspectives are used to understand the definitions and etiology of mental disorders and psychological well-being.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 260, PSYC 360, PSYC 430."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC100A",
+      "PSYC100B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

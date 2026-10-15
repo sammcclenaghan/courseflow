@@ -1,0 +1,18 @@
+{
+  "pid": "HkVVWqcf0",
+  "code": "AHVS495",
+  "title": "Research Workshop",
+  "description": "A capstone course offering advanced training in art history and visual studies. Includes a student-chosen individual research project.",
+  "notes": [
+    "Credit will only be granted for one of AHVS 495, AHVS 498, AHVS 499."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum fourth year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

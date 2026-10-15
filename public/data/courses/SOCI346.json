@@ -1,0 +1,15 @@
+{
+  "pid": "B1DLEirsP",
+  "code": "SOCI346",
+  "title": "Sociology of Surveillance",
+  "description": "An introduction to the sociological aspects of historical and contemporary surveillance practices. Explores how surveillance is a routine feature of everyday life, emphasizing the importance of information and communication technologies. Topics may include policing, marketing, social media, national security and public health.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "SOCI 206 recommended prior to SOCI 346."
+  ]
+}

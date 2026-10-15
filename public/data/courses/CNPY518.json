@@ -1,0 +1,27 @@
+{
+  "pid": "SyKzHrHM1g",
+  "code": "CNPY518",
+  "title": "Advanced Seminar in Theories of Counselling Psychology",
+  "description": "Contemporary theories and approaches to counselling and psychotherapy for individuals, couples, and families across the lifespan.",
+  "notes": [
+    "Credit will be granted for only one of CNPY 518, ED-D 518."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to MA program in Counselling Psychology"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,20 @@
+{
+  "pid": "ByFXTd67N",
+  "code": "MUS480D",
+  "title": "Jazz and Creative Music Ensemble",
+  "description": "Rehearses and performs music with an emphasis on community and collaboration, including jazz, improvisation and soundtracks for silent film.",
+  "notes": [
+    "Credit will be granted for only one of MUS 480D, MUS 480.",
+    "Open to all students by audition.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

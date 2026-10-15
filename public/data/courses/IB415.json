@@ -1,0 +1,63 @@
+{
+  "pid": "HJWN9OpQE",
+  "code": "IB415",
+  "title": "Cross-National Management",
+  "description": "An analysis of the influence of national culture on managerial practices, including the issues surrounding the transferability of such managerial practices.",
+  "notes": [
+    "Credit will be granted for only one of IB 415, IB 302."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IB301",
+              "COM220"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Minimum fourth-year standing"
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM321",
+          "COM361",
+          "COM316",
+          "COM315",
+          "COM322",
+          "COM331",
+          "COM341",
+          "COM351",
+          "COM371",
+          "COM362"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Permission of the school"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

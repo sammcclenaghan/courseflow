@@ -1,0 +1,27 @@
+{
+  "pid": "BktcR_67N",
+  "code": "PHYS422",
+  "title": "Electromagnetic Theory",
+  "description": "Potential theory, Maxwell's equations, electromagnetic waves.",
+  "notes": [
+    "Intended for Honours students."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS326",
+      "MATH301",
+      "MATH342",
+      "MATH346"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

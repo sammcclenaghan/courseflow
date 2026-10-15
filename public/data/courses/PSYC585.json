@@ -1,0 +1,16 @@
+{
+  "pid": "B1l5JKam4",
+  "code": "PSYC585",
+  "title": "Clinical Assessment: Psychosocial Functioning",
+  "description": "Introduction to theory and practice in the psychological assessment of social, emotional and personality functioning.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a graduate program in Clinical Psychology."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

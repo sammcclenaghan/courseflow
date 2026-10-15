@@ -1,0 +1,53 @@
+{
+  "pid": "ryeu3gdTQ4",
+  "code": "ECON204",
+  "title": "Intermediate Macroeconomics",
+  "description": "Theories of aggregate economic behaviour; the determination of national income and employment, consumption, investment, inflation, growth and fluctuations, economic policy.",
+  "notes": [
+    "Credit will be granted for only one of ECON 204, ECON 301, ECON 303, ECON 304B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON103",
+          "ECON103C",
+          "ECON180"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON104"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH102",
+          "MATH109"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

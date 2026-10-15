@@ -1,0 +1,47 @@
+{
+  "pid": "HJ7aGEmjr",
+  "code": "EPHE450",
+  "title": "Musculoskeletal Pathology and Exercise Management",
+  "description": "Examines the pathophysiology of select musculoskeletal conditions and their effect on activities of daily living. Advanced understanding and skills in designing and implementing exercises programs to address musculoskeletal conditions. Emphasis is on integrating health status screening into safe and effective assessment and implementation of individualized exercise prescription for each condition discussed.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE355",
+          "EPHE242"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE260",
+          "EPHE360"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "admission to BSc program in Kinesiology."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

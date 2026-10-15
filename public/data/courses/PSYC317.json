@@ -1,0 +1,24 @@
+{
+  "pid": "ryl7mJYpXE",
+  "code": "PSYC317",
+  "title": "Sensation and Perception",
+  "description": "Discusses the construction of our perceptual world from sensory input, with an emphasis on visual experience. Functional models of the sensory system and measurement of sensory experiences such as stimulus detection and discrimination are examined. Topics include the perception of motion, form, colour, and individual differences in perceptual experience.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 317, PSYC 317A, PSYC 317B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC251"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

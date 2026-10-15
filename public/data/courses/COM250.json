@@ -1,0 +1,20 @@
+{
+  "pid": "HypP1uTm4",
+  "code": "COM250",
+  "title": "Marketing in the Modern World",
+  "description": "Key marketing concepts and decisions needed to practice marketing in small and large organizations. Segmentation, positioning, marketing strategy, and marketing mix decisions such as pricing, distribution, and communication strategy. Apply concepts to make effective marketing decisions.",
+  "notes": [
+    "Not available for supplemental.",
+    "Not open to BCom students; not intended for students seeking entry to Bachelor of Commerce program.",
+    "Credit will not be granted toward the Bachelor of Commerce program."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,35 @@
+{
+  "pid": "r13jpdTX4",
+  "code": "PAAS305",
+  "title": "Religions of East Asia",
+  "description": "A survey of the religious literature and systematic thought of the traditions of China and Japan, including Confucianism, Daoism, Buddhism and Shinto.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 305, RCS 361, RS 361."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PAAS204",
+          "RCS200B",
+          "RS200B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

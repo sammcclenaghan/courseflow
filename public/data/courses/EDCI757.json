@@ -1,0 +1,28 @@
+{
+  "pid": "BJYRZOamV",
+  "code": "EDCI757",
+  "title": "Curriculum and Instruction in Secondary School Mathematics",
+  "description": "Helps students develop the pedagogical content knowledge needed to teach secondary school mathematics. This includes knowledge about: the goals, content and sequence of the 8-12 mathematics curriculum, how students learn mathematics, how to plan instructional activities, lessons and units that are meaningful and mathematically correct, teaching strategies that instill in all students enthusiasm and satisfaction in learning and using mathematics, and how to develop and apply appropriate assessment and evaluation techniques. Explores how to establish classroom environments that facilitate problem solving; conceptual understanding, autonomy and issues related to equity and multi-culturalism in teaching mathematics.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 757, ED-E 761.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Professional Year or Post Degree Professional program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

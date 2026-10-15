@@ -1,0 +1,37 @@
+{
+  "pid": "HyUXM-v05",
+  "code": "ENSH231",
+  "title": "Literature and Psychology",
+  "description": "Literature in relation to a selection of influential psychological theories, concepts and issues. May include study of literature’s influence on psychological theory as well as how and why psychological theories help inform a number of literary works.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirements satisfied."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ATWP135",
+          "ENGL146",
+          "ENGL147",
+          "ENSH101",
+          "ENSH102",
+          "ENSH103"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

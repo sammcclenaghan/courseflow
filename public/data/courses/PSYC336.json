@@ -1,0 +1,25 @@
+{
+  "pid": "Sk5Q1KTQV",
+  "code": "PSYC336",
+  "title": "Adolescent Development",
+  "description": "Overview of important developments during adolescence, including neurological development and biological changes, physical growth, cognitive social, and emotional processes, psychopathology and the social-cultural context of adolescent development.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 336, PSYC 333A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC243"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

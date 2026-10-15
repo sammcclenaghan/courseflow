@@ -1,0 +1,34 @@
+{
+  "pid": "rk6OJY6QE",
+  "code": "PSYC546B",
+  "title": "Advanced Neuropsychology: Adults",
+  "description": "In depth examination of typical neurodevelopment and associated acquired and neurodegenerative disorders of adults, including a discussion of cognitive and behavioural profiles and the techniques of neuropsychological assessment.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC506B",
+          "PSYC540",
+          "PSYC545",
+          "PSYC584"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to a doctoral program in Clinical Psychology."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,16 @@
+{
+  "pid": "r1t-JOTQE",
+  "code": "CHEM645",
+  "title": "Electrochemistry and its Applications",
+  "description": "Introduction to equilibrium and kinetics of electrochemical processes including their applications in energy and analytical chemistry.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 645, CHEM 475.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

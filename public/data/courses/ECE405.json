@@ -1,0 +1,19 @@
+{
+  "pid": "SJAdxuamN",
+  "code": "ECE405",
+  "title": "Error Control Coding",
+  "description": "The channel coding problem. Coding approaches and characteristics. Linear block codes. Bounds on codes. Finite fields. Cyclic, BCH and Reed-Solomon codes. Convolutional codes and the Viterbi algorithm. Error control in data storage and transmission systems.",
+  "notes": [
+    "Credit will be granted for only one of ECE 405, ECE 511, ELEC 405, ELEC 511.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "7.5 units of 200-level courses with any of the ECE, SENG, BME, or CSC designations"
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

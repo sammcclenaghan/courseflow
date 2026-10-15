@@ -1,0 +1,19 @@
+{
+  "pid": "rkJdDdEC1x",
+  "code": "ECS501",
+  "title": "Professional Practice and Careers",
+  "description": "Role of professionalism in society. Professional engineering practice, responsibility, and ethics. Labour market research. Cultural intelligence and equity, diversity and inclusion (EDI) in the workplace. Resumes and interviews. Technical and business communication for engineers. Occupational health and safety at the workplace. Understanding professional competencies and engaging in reflective learning.",
+  "notes": [
+    "Credit will be granted for only one of ECS 501, ECE 591, ELEC 591.",
+    "This course will be offered by the Engineering and Computer Science Co-op and Career Services."
+  ],
+  "credits": "1",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to MEng program in Aerospace Systems Engineering, Applied Data Science, Biomedical Systems, Building Envelopes and Structures, Industrial Ecology, or Telecommunications and Information Security."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

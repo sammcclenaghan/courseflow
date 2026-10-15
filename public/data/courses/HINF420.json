@@ -1,0 +1,51 @@
+{
+  "pid": "SkH1O_pXN",
+  "code": "HINF420",
+  "title": "Societal Implications of Information Technology",
+  "description": "Reflects on the societal and ethical implications of health information technologies (IT). Provides an examination of some of the systemic and societal issues related to the IT revolution. Examines how IT has affected, and will continue to affect, the human condition as seen from individual and community perspectives.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF310",
+          "HINF320",
+          "HINF371"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF001",
+          "CSC001"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF002",
+          "CSC002"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,53 @@
+{
+  "pid": "HkLpjupmN",
+  "code": "LING476",
+  "title": "Seminar and Practicum in Applied Linguistics",
+  "description": "Contemporary issues in second language teaching and acquisition. Requires participation in seminars and successful completion of the practicum, including assignments by the sponsor teacher and the supervising instructor, and the student's practicum report. Subject to the \"Guidelines for Ethical Conduct\" and \"Regulations Concerning Practica\".",
+  "notes": [
+    "Credit will be granted for only one of LING 476, LING 376.",
+    "Students with credit in LING 374 prior to 2004-2005 must consult the instructor to arrange for second language classroom observation."
+  ],
+  "credits": "1.5",
+  "hours": "2-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "LING373"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "declared Honours or Major in Applied Linguistics"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LING375",
+      "LING475"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

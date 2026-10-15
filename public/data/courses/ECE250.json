@@ -1,0 +1,41 @@
+{
+  "pid": "B18dxO6QV",
+  "code": "ECE250",
+  "title": "Linear Circuits I",
+  "description": "Circuit analysis and design techniques. Resistors, sources, Kirchoff's voltage and current laws. Theorems: linearity, superposition, Thevenin, Norton. Node and loop analysis. Capacitors and inductors, series and parallel connections, stored energies. Analysis of first- and second-order circuits. Forced and natural responses. Phasors, impedance and admittance. Network theorems using phasors. Series and parallel resonance. RMS quantities, complex power. Maximum power transfer. Three-phase circuits, Y- and Delta-loads.",
+  "notes": [
+    "Credit will be granted for only one of ECE 250, ELEC 250."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH101"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS111",
+          "PHYS125",
+          "PHYS130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,33 @@
+{
+  "pid": "rkrcyFTmN",
+  "code": "PSYC595",
+  "title": "Cognitive Behavioural Therapy",
+  "description": "An advanced psychotherapy course that provides students with an understanding of the theory and clinical skills associated with Cognitive-Behavioural Therapy. Theory and specific techniques are explored through readings, class discussion, class assignments and role-plays.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 595, PSYC 594 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC589"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to a doctoral program in Clinical Psychology."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

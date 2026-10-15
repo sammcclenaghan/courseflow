@@ -1,0 +1,27 @@
+{
+  "pid": "HyGd2u6X4",
+  "code": "MECH446",
+  "title": "Introduction to Ocean Engineering",
+  "description": "Application of mechanical engineering principles to the mathematical modeling, analysis, simulation and design of floating offshore infrastructure. Ocean wave kinematics: Airy wave theory, wave spectra, sea-state descriptions. Rigid body dynamics: Euler angle transformations, Newton-Euler equations of motion. Hydrostatics: buoyancy, metacentric height, waterplane moments. Hydrodynamics: added mass, drag, Cummins equation for radiation damping, wave excitation. Use of potential flow solvers for the calculation of hydrodynamic coefficients.",
+  "notes": [
+    "Credit will be granted for only one of MECH 446, MECH 450A (if taken in the same topic), MECH 450B (if taken in the same topic), MECH 450C (if taken in the same topic), MECH 450D (if taken in the same topic), MECH 450E (if taken in the same topic), MECH 450F (if taken in the same topic), CIVE 446, MECH 546."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1.5",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH242",
+      "MECH330",
+      "MECH345",
+      "CSC349A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

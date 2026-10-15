@@ -1,0 +1,25 @@
+{
+  "pid": "S1ZWWpvTXN",
+  "code": "AE303B",
+  "title": "Intermediate Ceramics Studio Explorations",
+  "description": "Advanced development of studio practice of wheel, glazing and hand forming techniques. Explores issues of design, content, form and surface. Investigation of historical and contemporary ceramic perspectives and connections to Art Education curriculum.",
+  "notes": [
+    "Credit will be granted for only one of AE 303B, AE 303."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "AE303A",
+      "AE309"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

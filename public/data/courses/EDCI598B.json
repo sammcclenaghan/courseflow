@@ -1,0 +1,35 @@
+{
+  "pid": "HJ5abuTQ4",
+  "code": "EDCI598B",
+  "title": "Project",
+  "description": "The project proposal approved in 598A is completed and includes the approved literature review, an analytic and professional reflection on the contributions of the project. A project may be presented in any appropriate form - prose, performance, multimedia, or exhibition for example - but must include a written submission of moderate length. The successful completion of the project requires the approval of the course instructor and the student's program supervisor.",
+  "notes": [
+    "Students who have completed equivalent prerequisites may request permission to register in the course.",
+    "Students who do not complete the course requirements may register a second time for the course. Incomplete course requirements in the second term will result in a request to the Faculty of Graduate Studies for withdrawal from the program. There are appeal procedures for extenuating circumstances."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EDCI598A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

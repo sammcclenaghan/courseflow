@@ -1,0 +1,36 @@
+{
+  "pid": "Hk2RyvR-c",
+  "code": "GEOG318",
+  "title": "Indigenous Geographies",
+  "description": "An examination of the development of Indigenous approaches, praxis, and thought in the field of geography historically and contemporaneously, through a critical engagement with the works of Indigenous scholars in the field of geography and related disciplines, alongside a critical analysis of broader developments in geography and its implications for Indigenous peoples.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 318, GEOG 391 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG209",
+          "GEOG211",
+          "GEOG218"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Or permission of the instructor."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

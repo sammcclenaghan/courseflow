@@ -1,0 +1,25 @@
+{
+  "pid": "rJeZOkO6XV",
+  "code": "COM317",
+  "title": "Management Accounting I",
+  "description": "Introduces the development and use of accounting information for management planning and control and the development of cost information for financial reports.",
+  "notes": [
+    "Credit will be granted for only one of COM 317, COM 210, COM 270.",
+    "Not eligible for supplemental examination. Not open to BCom students; not intended for students seeking entry to Bachelor of Commerce program. Credit will not be granted toward Bachelor of Commerce program."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "COM202"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,15 @@
+{
+  "pid": "HJIcnuTXN",
+  "code": "MECH601",
+  "title": "Engineering Analysis",
+  "description": "Introduction to mathematical methods used in engineering analyses with focus on the application to engineering problems rather than the rigorous proofs of mathematical concepts. Topics can include: integral transformations including Laplace and Fourier transforms; complex analysis including analytic functions, theory of residues and conformal mapping; calculus of variations as applied to optimal control, finite element methods and wave equations; linear algebra including least squares problems, eigenproblems and matrix decompositions.",
+  "notes": [
+    "Credit will be granted for only one of MECH 601, MECH 580 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

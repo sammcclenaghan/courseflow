@@ -1,0 +1,45 @@
+{
+  "pid": "r1Xq0vTmV",
+  "code": "BME499",
+  "title": "Design Project",
+  "description": "A significant technical design project in Biomedical Engineering completed under the supervision of a faculty member. This design experience is based on the knowledge and skills acquired in earlier coursework. Projects may originate from faculty members, students, or external sources. They may have a diverse nature and serve diverse needs. Multi-disciplinary projects are encouraged.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "1-9-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BME350",
+          "MECH350"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BME320",
+          "BME335",
+          "ENGR002",
+          "MECH345"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum fourth-year standing in the Biomedical Engineering program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

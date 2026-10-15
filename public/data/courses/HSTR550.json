@@ -1,0 +1,18 @@
+{
+  "pid": "Hy0g9dTXN",
+  "code": "HSTR550",
+  "title": "Research Methods for Masters Project",
+  "description": null,
+  "notes": [
+    "Credit will be granted for only one of HSTR 550, HIST 550."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

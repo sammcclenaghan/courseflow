@@ -1,0 +1,25 @@
+{
+  "pid": "rkahaDaQ4",
+  "code": "ART211E",
+  "title": "Painting",
+  "description": "A studio introduction to painting and related areas from an Indigenous perspective.",
+  "notes": [
+    "E-designated courses are offered only through the En'owkin Certificate Program in Indigenous Fine Arts located in Penticton, BC."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART100E",
+      "ART103"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

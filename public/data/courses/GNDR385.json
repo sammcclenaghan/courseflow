@@ -1,0 +1,36 @@
+{
+  "pid": "BJBngx38i",
+  "code": "GNDR385",
+  "title": "Sex, Gender and the Body in Japanese Culture",
+  "description": "Examines representations of sex, gender, sexuality and bodies in modern and contemporary Japanese literature, media and popular cultures.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 385, JAPA 358 (if taken in the same topic), JAPA 359 (if taken in the same topic), PAAS 385."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Minimum third-year standing"
+          },
+          {
+            "type": "text",
+            "text": "Academic Writing Requirement satisfied"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

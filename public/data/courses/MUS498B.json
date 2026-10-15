@@ -1,0 +1,36 @@
+{
+  "pid": "SJID_Cm_i",
+  "code": "MUS498B",
+  "title": "Music Research II",
+  "description": "Supervised completion of a capstone musicology project.",
+  "notes": [
+    "Credit will be granted for only one of MUS 498B, MUS 498."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "declared major in Musicology and Sound Studies;"
+      },
+      {
+        "type": "text",
+        "text": "permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MUS498A"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

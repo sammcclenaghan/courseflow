@@ -1,0 +1,25 @@
+{
+  "pid": "H1ibEuTX4",
+  "code": "EPHE456",
+  "title": "Occupational Ergonomics",
+  "description": "The application of ergonomic principles to industrial settings, work site job analysis, assessing biomechanical risk factors and the development of risk prevention programs. Specific emphasis is placed on understanding the relevant Canadian occupational health and safety legislation and ergonomic standards.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 456, PE 456."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EPHE201",
+      "EPHE260"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

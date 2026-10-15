@@ -1,0 +1,16 @@
+{
+  "pid": "rkhqU_6XE",
+  "code": "GS502",
+  "title": "Approved Exchange",
+  "description": "University of Victoria students attending courses under approved exchange agreements are required to register in this course to maintain their UVic registration status.",
+  "notes": [],
+  "credits": "1.5–3",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the faculty."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,37 @@
+{
+  "pid": "S1P8ZWwR9",
+  "code": "ENSH211",
+  "title": "How Fiction Works",
+  "description": "Surveys a selection of stories and novels in English with a focus on the ways in which fiction explores human experience. Includes core concepts and a common vocabulary for discussing fiction.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirements satisfied."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ATWP135",
+          "ENGL146",
+          "ENGL147",
+          "ENSH101",
+          "ENSH102",
+          "ENSH103"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,27 @@
+{
+  "pid": "ryMTTvaXE",
+  "code": "ART241",
+  "title": "Photography",
+  "description": "An introduction to analog black and white photography. Students learn basic camera techniques and darkroom procedures as well as being given projects that explore contemporary issues in art photography.",
+  "notes": [
+    "Credit will be granted for only one of ART 241, ART 140.",
+    "Students must supply their own SLR manual camera with a 50 mm lens. Digital cameras are not accepted for this course. Normally class size is limited."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART100",
+      "ART105",
+      "ART105E"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

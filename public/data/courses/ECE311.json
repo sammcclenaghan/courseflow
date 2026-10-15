@@ -1,0 +1,35 @@
+{
+  "pid": "BkYjfqkKll",
+  "code": "ECE311",
+  "title": "Foundations of Machine Learning",
+  "description": "Overview of main principles and methods underlying machine learning. The design cycle of a traditional machine learning system. Data collection, feature selection, model selection, training, testing and evaluation. Supervised and unsupervised learning paradigms. Overfitting and underfitting. No free lunch theorem, ugly duckling and inductive bias. Bayesian decision theory. Non-parametric classifiers, linear classifiers and support vector machines. Multi-layer neural networks. Backpropagation, loss, optimization via gradient descent and batch normalization. Evaluation and performance analysis of machine learning systems.",
+  "notes": [
+    "Credit will be granted for only one of ECE 311, SENG 474."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH110",
+      "MATH200"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "STAT254",
+      "STAT260"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

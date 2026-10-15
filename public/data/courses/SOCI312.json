@@ -1,0 +1,15 @@
+{
+  "pid": "rk3meta7E",
+  "code": "SOCI312",
+  "title": "White-Collar Crime",
+  "description": "An examination of the neglected problem of white-collar crime. Topics include corporate crime, financial fraud, occupational crime, cybercrime, worker safety, environmental crime, consumer victimization, professional misconduct, and the corruption of science.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "SOCI 100A and SOCI 100B recommended prior to SOCI 312."
+  ]
+}

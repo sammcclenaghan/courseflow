@@ -1,0 +1,31 @@
+{
+  "pid": "BJMgpuT7N",
+  "code": "MUS256B",
+  "title": "Introduction to Instrumental and Choral Conducting II",
+  "description": "Continuation of 256A.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS256A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

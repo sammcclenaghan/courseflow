@@ -1,0 +1,55 @@
+{
+  "pid": "BkwYnSAl-l",
+  "code": "FRAN181",
+  "title": "Level B2.1 French",
+  "description": "Acquisition of upper-intermediate language and intercultural skills, with a strong focus on cultural expression and communicative competencies in writing, reading, speaking and listening. By end of course, reaches the B2.1 level of the Common European Framework of Reference for Languages. Includes a variety of spoken French and cultural expression throughout the Francophone world.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 181, FRAN 180."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "FRAN170"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "FRAN171",
+              "FRAN172"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "French immersion to Grade 12"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

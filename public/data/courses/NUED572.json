@@ -1,0 +1,24 @@
+{
+  "pid": "B1ZLpdp74",
+  "code": "NUED572",
+  "title": "Intersectoral Course and Curriculum Design in Nursing Education",
+  "description": "Students apply theoretical and critical knowledge in the development of nursing curriculum, courses and learning activities for intersectoral nursing education practice.",
+  "notes": [
+    "Credit will be granted for only one of NUED 572, NURA 532."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NUED570"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

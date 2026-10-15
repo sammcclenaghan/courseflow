@@ -1,0 +1,24 @@
+{
+  "pid": "HkTf6uaQN",
+  "code": "MUS406A",
+  "title": "Advanced Sound Recording Techniques",
+  "description": "Advanced study of the theory and practice of sound recording and audio technology, studio techniques and procedures. Includes concert hall acoustics, perceptual coding, high-resolution formats, electro-acoustic measurements, studio design and acoustics, and surround sound microphone techniques. Practical work includes the recording of School of Music concerts, post-production editing and working with the School of Music concert archive.",
+  "notes": [
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MUS306"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

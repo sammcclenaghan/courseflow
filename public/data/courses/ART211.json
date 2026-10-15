@@ -1,0 +1,27 @@
+{
+  "pid": "B1T3TPa7E",
+  "code": "ART211",
+  "title": "Painting",
+  "description": "A studio introduction to painting and related areas.",
+  "notes": [
+    "Credit will be granted for only one of ART 211, ART 110.",
+    "Normally class size is limited."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART100",
+      "ART100E",
+      "ART103"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

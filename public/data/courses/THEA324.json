@@ -1,0 +1,24 @@
+{
+  "pid": "S1xSZZFTQ4",
+  "code": "THEA324",
+  "title": "Voice and Speech in the Theatre II",
+  "description": "A continuation of 323. Work in voice and speech as related to specific theatrical genres, styles or periods.",
+  "notes": [
+    "Credit will be granted for only one of THEA 324, THEA 350."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "THEA323"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

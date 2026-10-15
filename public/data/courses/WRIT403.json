@@ -1,0 +1,61 @@
+{
+  "pid": "SJ3wZt6XN",
+  "code": "WRIT403",
+  "title": "Advanced Playwriting Workshop",
+  "description": "Workshop in writing for the stage.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class.",
+    "Normally offered in the spring term."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": {
+              "units": 3
+            },
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "WRIT305"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "WRIT305",
+              "WRIT325"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Declared Major in Writing"
+      },
+      {
+        "type": "text",
+        "text": "Fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "Permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

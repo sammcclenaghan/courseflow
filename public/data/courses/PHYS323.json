@@ -1,0 +1,54 @@
+{
+  "pid": "Hk45CO6QE",
+  "code": "PHYS323",
+  "title": "Quantum Mechanics I",
+  "description": "Introduction to quantum mechanics, historical review, postulates, development of the theory and applications.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 323, PHYS 413A."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS215",
+          "MATH204"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS248",
+          "CSC226",
+          "CSC349A",
+          "MATH248"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS301",
+      "MATH342",
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

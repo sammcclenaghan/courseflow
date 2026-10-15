@@ -1,0 +1,16 @@
+{
+  "pid": "HJ-Sx3yzB",
+  "code": "ECE527",
+  "title": "Photovoltaics",
+  "description": "Photovoltaic materials and device technology. Operating principles of solar cells: Charge excitation, separation and collection. Standard and emerging photovoltaic technologies. Conversion efficiencies, loss mechanisms, systems and manufacturing costs. Photovoltaic technology in the context of worldwide energy demand. Students are required to complete a project.",
+  "notes": [
+    "Credit will be granted for only one of ECE 527, ECE 427.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

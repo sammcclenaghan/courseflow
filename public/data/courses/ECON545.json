@@ -1,0 +1,13 @@
+{
+  "pid": "BJKx-u6XN",
+  "code": "ECON545",
+  "title": "Econometric Analysis",
+  "description": "The basics of estimation and hypothesis testing in the classical linear regression model, with empirical exercises using economic data. Topics typically include: testing and imposing linear restrictions; dummy variables; specification error; multicollinearity; measurement error; serial correlation; heteroskedasticity; and simultaneity.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

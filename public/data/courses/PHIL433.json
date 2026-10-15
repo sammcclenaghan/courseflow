@@ -1,0 +1,35 @@
+{
+  "pid": "SkBDAupQV",
+  "code": "PHIL433",
+  "title": "Advanced Social and Political Philosophy",
+  "description": "Investigation of problems in contemporary social and political philosophy. Topics may include: theories of distributive justice, the relationship between law and morality, theories of democracy, the nature of rights, liberty, political legitimacy, community and culture, interrelationships among forms of economic, class, racial and gender oppression.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHIL335",
+          "PHIL336",
+          "PHIL339"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

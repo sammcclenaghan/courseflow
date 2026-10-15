@@ -1,0 +1,18 @@
+{
+  "pid": "H1pWbtTQN",
+  "code": "THEA344",
+  "title": "Selected Topics",
+  "description": "An investigation of a special aspect or area of Theatre.",
+  "notes": [
+    "Credit will only be granted for one of THEA 344, THEA 390 (if taken in the same topic), THEA 391 (if taken in the same topic), THEA 392 (if taken in the same topic), THEA 393 (if taken in the same topic), THEA 394 (if taken in the same topic), THEA 395 (if taken in the same topic),THEA 396 (if taken in the same topic), THEA 397 (if taken in the same topic), THEA 398 (if taken in the same topic)."
+  ],
+  "credits": "1.5 or 3",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

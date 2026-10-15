@@ -1,0 +1,18 @@
+{
+  "pid": "B1WPWFpQV",
+  "code": "WRIT311",
+  "title": "Structure in Stage Drama",
+  "description": "A lecture course surveying the structural characteristics of stage drama.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 311, CW 311."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

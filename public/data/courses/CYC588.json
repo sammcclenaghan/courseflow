@@ -1,0 +1,33 @@
+{
+  "pid": "HyhZXFwA2",
+  "code": "CYC588",
+  "title": "Seminar on Project or Thesis Completion",
+  "description": "An interactive MA thesis/project writing seminar. Activities include developing thesis/project outline in accordance with program learning outcomes, writing and presenting on research and key findings, peer and faculty review, symposia for student-faculty knowledge exchange, and planning for knowledge mobilization activities.",
+  "notes": [
+    "Course runs online from September-April with mandatory monthly synchronous class meetings."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC558"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,19 @@
+{
+  "pid": "S1HJkOa7N",
+  "code": "CHEM399",
+  "title": "Research Experience",
+  "description": "Experimental research under the direction of department members. For students who wish to gain some experience in chemical research. Students are advised to make arrangements for 399 projects as early as possible. Ideally, projects should be discussed with potential supervisors before the term in which the research will be undertaken. Interested students should contact the course coordinator by the first week of classes.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 399, CHEM 498.",
+    "Cannot be taken simultaneously with CHEM 499A or CHEM 499B."
+  ],
+  "credits": "1.5",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

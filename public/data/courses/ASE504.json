@@ -1,0 +1,16 @@
+{
+  "pid": "SymSvnQs0",
+  "code": "ASE504",
+  "title": "Aircraft Design",
+  "description": "Next generation Urban Air Mobility (UAM) vehicle design, performance, operation. Concepts in UAM aerodynamic and aeroacoustic design: UAM propulsion; powertrain and structural analysis of UAM wings; rotor supports; landing gear; vehicle stability; trajectory optimization; maneuverability and flight control including coordination with ground infrastructure. Categorization and comparison of vehicle typologies; evaluation of technical and regulatory requirements per mission; social considerations of UAM integration into urban environments including optimal vertiport layout based on mission and urban environment constraints.",
+  "notes": [
+    "Credit will be granted for only one of ASE 504, MECH 475, MECH 538.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

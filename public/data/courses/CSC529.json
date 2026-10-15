@@ -1,0 +1,16 @@
+{
+  "pid": "HkhayOT74",
+  "code": "CSC529",
+  "title": "Cryptography",
+  "description": "Paradigms and principles of modern cryptography. Topics include: review of classical and information-theoretic cryptography; block ciphers; DES, Cryptanalysis of DES, modes of operation, AES; Cryptographic hash functions and message authentication codes; public key cryptography, RSA, EIGamal and other public key systems, signature schemes; introduction to security protocols; secret sharing schemes and zero knowledge techniques.",
+  "notes": [
+    "Credit will be granted for only one of CSC 529, CSC 429.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

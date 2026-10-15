@@ -1,0 +1,39 @@
+{
+  "pid": "ByDJWupmN",
+  "code": "ECON481",
+  "title": "Economic Theory of Environmental Regulation",
+  "description": "A technical treatment of the theory of environmental regulation, including a comparison of policy instruments and regulatory approaches in the presence of uncertainty and asymmetric information.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON313"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON225",
+          "ENGR120",
+          "ENGR240"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

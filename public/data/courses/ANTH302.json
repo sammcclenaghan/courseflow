@@ -1,0 +1,16 @@
+{
+  "pid": "ByZwpwam4",
+  "code": "ANTH302",
+  "title": "Globalization, Health, and the Environment",
+  "description": "A comparative framework for understanding the relationship between global processes, the environment and health. Topics may include the origin and evolution of infectious diseases with human societies, social and economic inequalities, violence, gender, diet, health policies, technologies, pandemics, climate change, and health care industries. Emphasis on how local experiences of health are linked to global processes via the environment.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

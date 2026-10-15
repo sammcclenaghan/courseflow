@@ -1,0 +1,42 @@
+{
+  "pid": "HyPoSDq3a",
+  "code": "MECH441",
+  "title": "Ship Hydrostatics and Dynamics",
+  "description": "Introduction to naval architecture with a focus on the physics of ship stability and hydrostatics at sea and in port; hydrodynamic concepts for marine vessel stability in waves, statical and dynamic stability; principles of vessel design for stability in dynamic environments; aspects of buoyancy forces, equilibrium and stability of weight, buoyancy and direct thrust, flotation and trim; external loading by gravity; rigid body dynamics and stability calculations for floating and grounded vessels.",
+  "notes": [
+    "Credit will be granted for only one of MECH 441, MECH 450C (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH242",
+          "MECH345",
+          "CSC349A"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH200",
+          "MECH200A"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

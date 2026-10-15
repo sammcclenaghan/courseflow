@@ -1,0 +1,28 @@
+{
+  "pid": "HyD0bu6mN",
+  "code": "EDCI747",
+  "title": "Curriculum and Instruction in Secondary School English",
+  "description": "Prepares students to instruct and assess secondary English language arts. Explores a variety of teaching and assessment strategies, resources and current research into the challenges and possibilities of teaching English language arts.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 747, ED-B 753.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Professional Year or Post Degree Professional program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

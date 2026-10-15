@@ -1,0 +1,51 @@
+{
+  "pid": "B1qTluTmV",
+  "code": "ECON327",
+  "title": "Economic History of North America",
+  "description": "North American economic history from the time before Europeans arrived to the recent past, with most attention paid to the mid18th to mid-20th centuries. Topics include Indigenous economies pre and post-European contact, land expansion, mass migrations, slavery and the civil war, railroads and industrialization, Great Depression and Recovery, WWII and the increased role of governments, labour markets and human capital, natural resources and the environment, civil rights, race and gender, cities and (sub)urbanization, health and demographics.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON103",
+          "ECON103C",
+          "ECON180"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON104"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON225",
+          "ENGR120",
+          "ENGR240"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

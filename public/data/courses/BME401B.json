@@ -1,0 +1,16 @@
+{
+  "pid": "H1be9RvaXE",
+  "code": "BME401B",
+  "title": "Special Topics in Biomedical Engineering",
+  "description": "Presents material in an emerging field or one not covered in regular offerings that includes an engineering design component. Entrance is restricted to third- and fourth-year students who meet the prerequisite specified for the offered topic.\n*Lab hours may vary depending on the topic.",
+  "notes": [
+    "Credit will be granted for only one of BME 401B, BME 401A (if taken in the same topic), BME 401C (if taken in the same topic), BME 401D (if taken in the same topic), BME580 (if taken in the same topic), ECE 496A (if taken in the same topic), ECE 496B (If taken in the same topic), ECE 496C (if taken in the same topic), ECE 496D (if taken in the same topic), MECH 450A (if taken in the same topic), MECH 450B (if taken in the same topic), MECH 450C (if taken in the same topic), MECH 450D (if taken in the same topic), MECH 450E (if taken in the same topic), and MECH 450F (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0*-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

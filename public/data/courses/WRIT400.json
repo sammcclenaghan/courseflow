@@ -1,0 +1,40 @@
+{
+  "pid": "SkcPbFTQN",
+  "code": "WRIT400",
+  "title": "Special Genres Workshop",
+  "description": "A workshop that focuses exclusively on a particular sub-genre, such as the prose poem, docudrama, dystopian fiction, lyric novel, or radio play.",
+  "notes": [
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "1-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": {
+          "units": 3
+        },
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "WRIT303",
+          "WRIT304",
+          "WRIT305",
+          "WRIT316",
+          "WRIT318",
+          "WRIT320"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

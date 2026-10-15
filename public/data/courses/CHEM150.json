@@ -1,0 +1,50 @@
+{
+  "pid": "BybRRv6XV",
+  "code": "CHEM150",
+  "title": "Engineering Chemistry",
+  "description": "Atomic and molecular structure; periodicity, chemical bonding; gases, liquids, and solids; phase equilibria; equilibrium; thermochemistry; chemical thermodynamics; electrochemistry.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 150, CHEM 100, CHEM 101.",
+    "Students who have completed an advanced mathematics course equivalent to Pre-Calculus 12 or Principles of Mathematics 12 may request permission to register in the course."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "CHEM090"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Chemistry 11"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Pre-Calculus 12 or Principles of Mathematics 12"
+      },
+      {
+        "type": "text",
+        "text": "admission to BEng or BSEng program"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Chemistry 12 recommended prior to CHEM 150."
+  ]
+}

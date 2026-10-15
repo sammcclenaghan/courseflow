@@ -1,0 +1,27 @@
+{
+  "pid": "BJazh_Tm4",
+  "code": "MATH493",
+  "title": "Topics in Pure Mathematics",
+  "description": "Possible topics include advanced complex analysis, functional analysis, introduction to manifolds, and mathematical logic.",
+  "notes": [
+    "Credit will be granted for only one of MATH 493, MATH 491B (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "additional prerequisites set by department depending upon topic."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

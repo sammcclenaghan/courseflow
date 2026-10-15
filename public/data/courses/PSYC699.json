@@ -1,0 +1,22 @@
+{
+  "pid": "r1lzo1Fp7E",
+  "code": "PSYC699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "15–30",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC693"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

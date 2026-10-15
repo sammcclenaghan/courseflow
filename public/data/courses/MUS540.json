@@ -1,0 +1,16 @@
+{
+  "pid": "Sk_Eadpm4",
+  "code": "MUS540",
+  "title": "Individual Tuition",
+  "description": "Lessons in instrument or voice.",
+  "notes": [],
+  "credits": "0.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the school."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

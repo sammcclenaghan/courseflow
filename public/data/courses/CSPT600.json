@@ -1,0 +1,27 @@
+{
+  "pid": "SyKbeOpmN",
+  "code": "CSPT600",
+  "title": "Advanced Topics in Cultural, Social and Political Thought",
+  "description": "An interdisciplinary PhD Seminar on selected topics in Cultural, Social and Political Thought.",
+  "notes": [
+    "Content will vary from term to term."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to a graduate program in Social Sciences or Humanities"
+      },
+      {
+        "type": "text",
+        "text": "permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,45 @@
+{
+  "pid": "r1oIZKaXV",
+  "code": "WRIT218A",
+  "title": "Introduction to Screenwriting Workshop",
+  "description": "A lecture and seminar in the writing and workshopping of screenwriting.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 218A, WRIT 218."
+  ],
+  "credits": "1.5",
+  "hours": "1-2-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": "B",
+            "minGpa": null,
+            "courses": [
+              "WRIT100",
+              "CW100E",
+              "CW102E"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to the Writing Major"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

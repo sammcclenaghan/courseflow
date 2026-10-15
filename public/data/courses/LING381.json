@@ -1,0 +1,31 @@
+{
+  "pid": "Hy73jO6X4",
+  "code": "LING381",
+  "title": "Physiology of Speech Production",
+  "description": "The physiology of the human speech production mechanism including aspects of the respiratory, laryngeal and supralaryngeal articulatory systems, as well as neurological control systems.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "LING200"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

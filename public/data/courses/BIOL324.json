@@ -1,0 +1,41 @@
+{
+  "pid": "B1DECwTXE",
+  "code": "BIOL324",
+  "title": "Biology of Land Plants",
+  "description": "Plant diversity in an evolutionary perspective. Anatomy, morphology, phylogeny and ecology of bryophytes, pteridophytes, gymnosperms and angiosperms. Laboratories emphasize local plants and include field trips.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 324, BIOL 204."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL184",
+          "BIOL190B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL186",
+          "BIOL190A"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

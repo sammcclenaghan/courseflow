@@ -1,0 +1,23 @@
+{
+  "pid": "B1VPGuT74",
+  "code": "ED-P301",
+  "title": "Internship/Community Experience",
+  "description": "Practical work in the form of a minimum of 40 hours of volunteer experience in a community organization is the focus of this course. These experiences are self-selected and arranged by the student and take place in informal and non-formal environments to match the student's future intentions.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EDCI335",
+      "EDUC100"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

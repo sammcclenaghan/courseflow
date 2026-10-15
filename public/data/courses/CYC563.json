@@ -1,0 +1,22 @@
+{
+  "pid": "HJ1Lx_Tm4",
+  "code": "CYC563",
+  "title": "Specialized Practicum in Child and Youth Care",
+  "description": "In consultation with a faculty adviser, students select a special setting for advanced work and training. In some settings, this may take the form of a clinical internship. Students work under supervision and consult regularly with both the practicum supervisor and faculty course instructor. Students may be required to complete a specialized theory or intervention course in their area of focus prior to undertaking the specialized practicum. Students are required to complete a minimum of 200 hours.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CYC553"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

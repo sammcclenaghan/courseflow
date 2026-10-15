@@ -1,0 +1,37 @@
+{
+  "pid": "rJqyTvTQV",
+  "code": "ADMN556",
+  "title": "Managing Public Policy",
+  "description": "Examines the theory and practice of public policy emphasizing the strategic aspects of problem identification, policy design, decision making, implementation and evaluation. Designed to provide students a thorough understanding of public policy and dynamics of the policy process and to apply this knowledge to important policy issues. Policy development is examined within the context of multi-level and multi-sector governance, and addresses the involvement of key players such as the courts, media, and other prominent stakeholders.",
+  "notes": [
+    "Credit will be granted for only one of ADMN 556, PADR 505."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ADMN502A",
+          "ADMN504",
+          "ADMN509",
+          "ADMN512",
+          "ADMN550"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

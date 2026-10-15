@@ -1,0 +1,24 @@
+{
+  "pid": "SkgBCDa7E",
+  "code": "BIOL355",
+  "title": "Evolution",
+  "description": "Evolutionary processes and the spatial and temporal patterns they produce. Natural selection, genetic drift and other microevolutionary processes; the basis of morphological and molecular change; species and speciation; macroevolution; phylogeny reconstruction; origin of life.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 355, BIOL 455."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL230"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

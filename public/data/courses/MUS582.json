@@ -1,0 +1,16 @@
+{
+  "pid": "ByvqxCdOw",
+  "code": "MUS582",
+  "title": "Ensemble Direction",
+  "description": "Provides conducting students in the MMus in Performance – Conducting with opportunities to understand and demonstrate musical direction and leadership through participation in ensemble environments.",
+  "notes": [],
+  "credits": "1",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to MMus in Performance – Conducting."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

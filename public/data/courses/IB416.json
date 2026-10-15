@@ -1,0 +1,51 @@
+{
+  "pid": "ByMN9OpQ4",
+  "code": "IB416",
+  "title": "International Marketing",
+  "description": "Opportunities, characteristics, and trends in foreign markets as well as strategies and problems of adapting marketing concepts and methods in international settings.",
+  "notes": [
+    "Credit will be granted for only one of IB 416, IB 401."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IB301",
+              "COM250"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "COM351",
+              "COM361"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "and minimum fourth-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

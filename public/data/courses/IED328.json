@@ -1,0 +1,22 @@
+{
+  "pid": "H1UIjK-Us",
+  "code": "IED328",
+  "title": "Creative and Constructive Language Sharing",
+  "description": "An examination and production within the target language, of traditional and contemporary literature, art, music or other creative expression in a particular Indigenous Language.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IED359"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

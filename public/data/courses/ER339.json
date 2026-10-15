@@ -1,0 +1,27 @@
+{
+  "pid": "S1j77i7Kxx",
+  "code": "ER339",
+  "title": "Climate Change in Ecological Restoration",
+  "description": "Examines how climate change shapes ecological restoration through a blend of Western science and Indigenous knowledge. Access and interpret climate data, assess vulnerability and risk, and apply adaptive responses culminating in practical tools like the Resist-Accept-Direct (RAD) framework to guide action in a changing world.",
+  "notes": [
+    "Credit will be granted for only one of ER 339, ER 338A (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Certificate or Diploma program in Restoration of Natural Systems"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

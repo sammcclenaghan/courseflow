@@ -1,0 +1,19 @@
+{
+  "pid": "ryhhmOaQV",
+  "code": "EOS350",
+  "title": "Understanding the Oceans",
+  "description": "Provides an interdisciplinary introduction to oceanography, with a focus on societally relevant issues, and use of technology to explore the ocean. Topics may include earthquakes and tsunamis, ocean pollution, deoxygenation, ocean acidification, marine conservation and climate change. Introduces community engagement and science communication in an oceanography context.",
+  "notes": [
+    "Credit will be granted for only one of EOS 350, EOS 110 (if taken prior to May 2011), GEOG 110.",
+    "Credit for this course will not be counted toward program requirements in Earth and Ocean Sciences (if taken prior to May 2011 or after May 2017), but Earth and Ocean Sciences students may take this course as an elective."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

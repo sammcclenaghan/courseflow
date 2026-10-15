@@ -1,0 +1,56 @@
+{
+  "pid": "SyXpaBLy2",
+  "code": "CIVE270",
+  "title": "Construction and Project Management",
+  "description": "Introduction to project and construction management. Planning, estimating, scheduling, risk and safety management, project delivery. Engineering economics.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 270, CIVE 370."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR120"
+        ]
+      },
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ENGR121"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ENGR240",
+              "ENSH202"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

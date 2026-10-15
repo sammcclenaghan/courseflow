@@ -1,0 +1,19 @@
+{
+  "pid": "S13eNuT7V",
+  "code": "EPHE310",
+  "title": "Physical Education for General Classroom Teachers I",
+  "description": "Assists generalist teachers in planning and implementing physical education programs for the elementary grades. Students develop the knowledge and pedagogical skills necessary to help children incorporate physical activity as part of a healthy lifestyle. Overall focus is on the learning of movement skills and on the developing child as a learner. Includes a variety of teaching experiences with elementary school-age children.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 310, PE 247, PE 304, PE 310, EDUC 304.",
+    "Students with credit for EPHE 310 and/or EPHE 311 may not receive credit for EPHE 312."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to BEd program in Elementary Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

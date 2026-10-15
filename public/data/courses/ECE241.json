@@ -1,0 +1,15 @@
+{
+  "pid": "B1SdgO6mN",
+  "code": "ECE241",
+  "title": "Digital Design",
+  "description": "Binary numbers. Boolean algebra and logic gates. Combinational circuits, gate-level minimization. Synchronous finite-state machines. Registers and counters. Synchronous sequential logic circuits. Implementation technologies.",
+  "notes": [
+    "Credit will be granted for only one of ECE 241, CENG 241, CENG 290."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,15 @@
+{
+  "pid": "HJZgL2DNi",
+  "code": "TCA415",
+  "title": "Adaptation Planning and the Built Environment",
+  "description": "Focuses on skills and strategies for urban and regional planning in the context of a rapidly-changing climate, including appropriate use of downscaled climate models to guide adaptation planning.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "TCA 210 recommended prior to or in conjunction with TCA 415."
+  ]
+}

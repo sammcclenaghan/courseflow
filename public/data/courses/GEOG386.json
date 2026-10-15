@@ -1,0 +1,18 @@
+{
+  "pid": "BygHr_amV",
+  "code": "GEOG386",
+  "title": "Contemporary Geopolitics",
+  "description": "An overview of global geopolitics and the transformation of the world political map. Examination of key concepts and approaches to contemporary geopolitics through a series of regional case studies.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 386, GEOG 348."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

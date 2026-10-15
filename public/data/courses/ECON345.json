@@ -1,0 +1,78 @@
+{
+  "pid": "S1ATgdT7N",
+  "code": "ECON345",
+  "title": "Applied Econometrics I",
+  "description": "Regression analysis, including the properties of OLS estimators and test statistics under alternative model assumptions. Additional topics may include functional form, binary variables, F -tests of linear restrictions, heteroskedasticity, instrumental variables estimation and the implications of estimating regression models with time series data.",
+  "notes": [
+    "Credit will be granted for only one of ECON 345, ECON 365 (if taken prior to September 2023), ECON 445 (if taken prior to September 2023)."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON103",
+          "ECON103C",
+          "ECON180"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON104"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON246",
+          "STAT261"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON225",
+          "ENGR120",
+          "ENGR240"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH102",
+          "MATH109"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "ECON 203 and ECON 204 recommended prior to ECON 345."
+  ]
+}

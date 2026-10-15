@@ -1,0 +1,70 @@
+{
+  "pid": "r1t-EO6mE",
+  "code": "EPHE452",
+  "title": "Strategies for Games in Physical Education",
+  "description": "Methods of teaching game activities to students in secondary schools and related groups. Field experience is required.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 452, PE 452."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": {
+          "units": 1.5
+        },
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE104",
+          "EPHE105",
+          "EPHE106",
+          "EPHE109",
+          "EPHE113",
+          "EPHE116",
+          "EPHE117",
+          "EPHE120",
+          "EPHE121",
+          "EPHE122",
+          "EPHE123",
+          "EPHE124",
+          "EPHE126",
+          "EPHE133",
+          "EPHE134",
+          "EPHE137",
+          "EPHE362",
+          "EPHE436",
+          "EPHE437",
+          "EPHE439"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "text",
+            "text": "admission to the School of Exercise Science, Physical and Health Education"
+          },
+          {
+            "type": "text",
+            "text": "declared Physical Health Education minor"
+          },
+          {
+            "type": "text",
+            "text": "permission of the school."
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Recommended that students take EPHE 352 before register in EPHE 452"
+  ]
+}

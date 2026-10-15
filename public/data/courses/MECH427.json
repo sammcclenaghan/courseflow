@@ -1,0 +1,25 @@
+{
+  "pid": "ByE914k2ex",
+  "code": "MECH427",
+  "title": "Exergy Conversion and Storage",
+  "description": "Methods for assessing energy technologies and systems. Exergy and exergy balances. Technoeconomic metrics for components and systems. Energy conversion systems of interest today and for the future. Physical principles of electrochemical energy conversion and storage.",
+  "notes": [
+    "Credit will be granted for only one of MECH 427, MECH 450C (if taken in the same topic), MECH 527, MECH 580 (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH390"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

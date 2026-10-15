@@ -1,0 +1,39 @@
+{
+  "pid": "ryh9yzv0q",
+  "code": "ENSH482",
+  "title": "Community-Engaged Learning and Public Humanities",
+  "description": "A capstone course organized around opportunities for community engagement and experiential learning in an applied situation with an emphasis on public-facing literary or cultural writing in various digital and/or print media; students apply their research and writing skills in a community setting. Possible engagements include working with local literacy initiatives, independent theatre or social justice organizations.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 482, ENGL 448 (if taken Jan-Apr 2020).",
+    "Limited to Majors and Honours students except by permission of the instructor.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENSH200",
+          "ENSH301",
+          "ENGL209",
+          "ENGL310"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

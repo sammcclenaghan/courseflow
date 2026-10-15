@@ -1,0 +1,31 @@
+{
+  "pid": "B1lbIeY67V",
+  "code": "SOCI515",
+  "title": "Qualitative Research",
+  "description": "Key issues and methods in the systematic study of the social world through qualitative sociological research. Examination of the relationship between analytical perspective and methodological decisions, methods of gathering data and analysis. Includes issues of language, representation, politics, social organization and participation.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCI374"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

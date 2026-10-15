@@ -1,0 +1,25 @@
+{
+  "pid": "B155sOTQE",
+  "code": "LING187",
+  "title": "Special Topics in Language Revitalization",
+  "description": "An intensive study of some aspect of language preservation and/or revitalization.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to one of BEd or Diploma program in Indigenous Language Revitalization, Certificate in Indigenous Language Proficiency, Certificate in Indigenous Language Revitalization"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

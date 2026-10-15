@@ -1,0 +1,52 @@
+{
+  "pid": "Sy8ntaLTS",
+  "code": "IED404",
+  "title": "Curriculum and Instruction in Indigenous-focused Social Studies",
+  "description": "Curriculum organization and techniques of instruction in elementary and middle school social studies. Examples are drawn from local Indigenous perspectives alongside a variety of content areas: history, geography, anthropology, sociology, political science, and/or economics, with emphasis on participatory citizenship, culture and traditions in a pluralistic society.",
+  "notes": [
+    "Credit will be granted for only one of IED 404, ED-E 746, EDCI 404, EDUC 404.",
+    "Another approved Canadian Studies course that meets the Ministry of Education criteria may be used to satisfy prerequisites with permission of the department."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "CS102",
+              "CS201",
+              "ECON100",
+              "HSTR230A",
+              "HSTR230B",
+              "IED371",
+              "IS201",
+              "POLI101",
+              "POLI201",
+              "SOCI103"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Admission to BEd in Indigenous Language Revitalization or to the BEd post-degree professional program in Indigenous Education – Elementary"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission from the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

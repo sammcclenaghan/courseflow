@@ -1,0 +1,37 @@
+{
+  "pid": "rkxyF2uT7V",
+  "code": "MECH498",
+  "title": "Honours Thesis",
+  "description": "Provides an opportunity to carry out a major design or research project under the supervision of a faculty member. The project requires independent study of the current technical literature and independent research or design work. Each student presents a complete report at the end of the term and makes an oral presentation of the findings.",
+  "notes": [
+    "Credit will be granted for only one of MECH 498, BME 490, BME 498, CIVE 499, MECH 497, MECH 499."
+  ],
+  "credits": "3",
+  "hours": "2-18-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR002"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum GPA of 6.0 in all courses of the Year 3 Mechanical Engineering Program"
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

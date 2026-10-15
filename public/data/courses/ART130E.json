@@ -1,0 +1,25 @@
+{
+  "pid": "rylwh6wp74",
+  "code": "ART130E",
+  "title": "Printmaking",
+  "description": "An introductory course in printmaking techniques which prepares the student for more advanced printmaking courses.",
+  "notes": [
+    "ART (E) courses are offered only through the En'owkin Certificate Program in Indigenous Fine Arts."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART100E",
+      "ART101E"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

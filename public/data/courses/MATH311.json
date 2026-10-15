@@ -1,0 +1,40 @@
+{
+  "pid": "rkDlhuT7N",
+  "code": "MATH311",
+  "title": "Linear Algebra",
+  "description": "Vector spaces and linear transformations, the canonical forms, inner product spaces and the spectral theorem.",
+  "notes": [
+    "Credit will be granted for only one of MATH 311, MATH 333C."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH212"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

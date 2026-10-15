@@ -1,0 +1,34 @@
+{
+  "pid": "Sye5tavpXV",
+  "code": "ANTH450",
+  "title": "Seminar in Primate Cognition and Behaviour",
+  "description": "Seminar course focused on in-depth exploration of topics related to primate behavioural ecology such as feeding ecology, socio-ecology, reproductive ecology, communication, tool use, conservation, non-human primate cultures, and methodologies and theoretical approaches within the field. Multi-species comparative approaches are used.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 450, ANTH 394 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ANTH350"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Permission of the program"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

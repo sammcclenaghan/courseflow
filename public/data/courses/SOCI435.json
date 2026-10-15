@@ -1,0 +1,38 @@
+{
+  "pid": "S1PreFaQV",
+  "code": "SOCI435",
+  "title": "Issues in Gender, Sexuality and Trans Communities",
+  "description": "In-depth examination of issues relating to gender, sexuality and trans communities. Specific topics vary from year to year.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Minimum fourth-year standing"
+          },
+          {
+            "type": "text",
+            "text": "declared Honours or Major in Sociology"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "SOCI 281 and/or SOCI 382 recommended prior to SOCI 435."
+  ]
+}

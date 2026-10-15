@@ -1,0 +1,15 @@
+{
+  "pid": "BJ8i-tpmN",
+  "code": "ECE596D",
+  "title": "Selected Topics in Electrical and Computer Engineering",
+  "description": "Presents material in an emerging field or one not covered in regular offerings. Some topics may require laboratory work as well as lectures. Entrance is restricted to students who meet the prerequisites specified for the topic to be offered.",
+  "notes": [
+    "Credit will be granted for only one of ECE 596D, ECE 596A (if taken in the same topic), ECE 596B (if taken in the same topic), ECE 596C (if taken in the same topic), ECE 596E (if taken in the same topic), ECE 596F (if taken in the same topic), ECE 596G (if taken in the same topic), ECE 596H (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

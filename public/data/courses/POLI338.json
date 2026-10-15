@@ -1,0 +1,27 @@
+{
+  "pid": "B1z0ROTX4",
+  "code": "POLI338",
+  "title": "Approaches to Political Analysis (Seminar Course)",
+  "description": "An examination of the ways in which political analysts generalize about politics. Addresses types of theory in the discipline (normative, empirical, public choice, critical discourse) and the assumptions that underpin them.",
+  "notes": [
+    "Required for Honours students in their third year."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Declared Honours in Political Science"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

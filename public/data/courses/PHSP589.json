@@ -1,0 +1,42 @@
+{
+  "pid": "Hk-adROpmN",
+  "code": "PHSP589",
+  "title": "Practicum",
+  "description": "Integrates classroom learning and practice into a public health setting. Students contribute to the resources of a setting and gain experience addressing a public health issue while enhancing the skills and knowledge necessary to be a public health professional. A planned, supervised and evaluated experience with a practicum supervisor from the organization and a practicum instructor from the program. Includes 450 hours at an approved organization as well as an accompanying online course.",
+  "notes": [
+    "May be taken full-time (3.0 units) in the Spring term (Jan-Apr) or part-time (3.0 units) as a full year course (Sept-Apr).",
+    "Students who register in the part time option (Sept-Apr) may enrol in PHSP 506 concurrently.",
+    "Students must pass both PHSP 589 and PHSP 508B. If one or both of PHSP 589 or PHSP 508B are failed, both must be repeated.",
+    "Practicum must be completed in Canada."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHSP501",
+      "PHSP502",
+      "PHSP503",
+      "PHSP504",
+      "PHSP505",
+      "PHSP506"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHSP508B",
+      "PHSP599"
+    ]
+  },
+  "recommendations": []
+}

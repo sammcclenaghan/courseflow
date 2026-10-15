@@ -1,0 +1,15 @@
+{
+  "pid": "B12kad6X4",
+  "code": "MUS207",
+  "title": "Music, Science and Computers",
+  "description": "An investigation into the historical relationships among music, science and technology, leading to current possibilities in computers and music. Focuses on the use of computers in music composition, analysis and synthesis of sound. Open to all students.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Some musical and/or mathematical background extremely recommended."
+  ]
+}

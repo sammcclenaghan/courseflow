@@ -1,0 +1,55 @@
+{
+  "pid": "rkK9Au6mE",
+  "code": "PHYS421",
+  "title": "Statistical Mechanics",
+  "description": "Boltzmann, Bose-Einstein and Fermi-Dirac statistics.",
+  "notes": [
+    "Intended for Honours students."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS217",
+          "PHYS317"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS323",
+          "MATH301"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS301",
+          "MATH342",
+          "MATH346"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "PHYS 321B strongly recommended prior to PHYS 421."
+  ]
+}

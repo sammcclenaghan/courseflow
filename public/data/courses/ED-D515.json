@@ -1,0 +1,25 @@
+{
+  "pid": "BJwWGd6mV",
+  "code": "ED-D515",
+  "title": "Advanced Assessment in Special Education",
+  "description": "An intensive course specializing in Level B assessment techniques and intervention-based academic assessment methods, including curriculum-based measurement, to support the educational programming of students with special needs.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to MA or MEd in Educational Psychology Masters program in Special Education"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

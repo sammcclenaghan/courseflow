@@ -1,0 +1,35 @@
+{
+  "pid": "H11LadpXE",
+  "code": "NRSC699",
+  "title": "PhD Dissertation",
+  "description": "A dissertation containing an original scientific study which adds new knowledge to the field of neuroscience.",
+  "notes": [
+    "Students who have completed equivalent prerequisites may request permission to register in the course.",
+    "Students possessing a BSc will require 30 units in the dissertation course to fulfill the program requirements.",
+    "Students possessing a MSc will require 21 units in the dissertation course to fulfill the program requirements."
+  ],
+  "credits": "21–39",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NRSC693"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

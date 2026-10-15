@@ -1,0 +1,33 @@
+{
+  "pid": "H1lpUWKamV",
+  "code": "WRIT303",
+  "title": "Poetry Workshop",
+  "description": "A workshop in the writing of poetry.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": "B-",
+        "minGpa": null,
+        "courses": [
+          "WRIT201",
+          "WRIT201B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,42 @@
+{
+  "pid": "B1qrTDtE2",
+  "code": "MUS202B",
+  "title": "Theories of Musical Texture",
+  "description": "Examines musical texture, timbre and polyphony as notated and non-notated elements of music practice across a variety of genres. Considers related musical systems and techniques from theoretical, historical and cognitive perspectives for practising musicians.",
+  "notes": [
+    "Credit will only be granted for one of MUS202B, MUS 201B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS101A",
+          "MUS101B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS102A",
+          "MUS102B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,19 @@
+{
+  "pid": "rkiw-_aXE",
+  "code": "EDCI306A",
+  "title": "Music in the Elementary Classroom I",
+  "description": "An introduction to music education, designed to give students with little or no music background a foundation for teaching music and evaluating musical learning in the elementary classroom. Musical concepts developed through singing, listening, playing, moving, dramatizing, composing, improvising, reading and writing. Music reading skills developed through the playing of classroom instruments.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 306A, EDCI 306, EDCI 313, EDUC 306, ME 204, ME 206, ME 304.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to Bachelor degree or Post Degree Professional program in Elementary Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

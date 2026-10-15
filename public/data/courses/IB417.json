@@ -1,0 +1,51 @@
+{
+  "pid": "r1zEcOpXE",
+  "code": "IB417",
+  "title": "International Finance",
+  "description": "Financial problems of multinational business; international financial environment; long-term capital commitment to an international venture; financial techniques for firm operation.",
+  "notes": [
+    "Credit will be granted for only one of IB 417, IB 403."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IB301",
+              "COM240"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "COM361",
+              "COM371"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "and minimum fourth-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

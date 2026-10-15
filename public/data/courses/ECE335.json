@@ -1,0 +1,50 @@
+{
+  "pid": "BkgKOgOamE",
+  "code": "ECE335",
+  "title": "Biosensors and Instrumentation",
+  "description": "Principles of biomedical devices and instrumentation: sensors and transducers (such as voltage sensors, optical sensors, displacement/pressure sensors and accelerometers, and acoustic sensors); signal filtering and amplification (Bode plots, passive and active filters, noise in electrical circuits); data acquisition and signal processing (sampling theory and signal aliasing, analogue-to-digital conversion); ECG; EEG; hearing aids; wearable and implanted devices; instrument/device safety.",
+  "notes": [
+    "Credit will be granted for only one of ECE 335, BME 335, ELEC 335."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE260",
+          "ECE265"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE250"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE330",
+      "ECE365"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

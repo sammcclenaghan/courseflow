@@ -1,0 +1,27 @@
+{
+  "pid": "rJKjVda7E",
+  "code": "FRAN499",
+  "title": "Honours Graduating Essay",
+  "description": "During the final year of the Honours program, students write a graduating essay in French of approximately 7,500 to 10,000 words under the direction of a member of the school; the topic is approved by the Honours Committee. The essay must conform to acceptable standards of style and format and be submitted before the end of second term classes. An oral examination in French covering the topic of the essay is conducted by a committee of three persons (normally, the faculty supervisor, the second reader, and the school Honours Adviser).",
+  "notes": [
+    "Credit will be granted for only one of FRAN 499, FREN 499."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Declared Honours program"
+      },
+      {
+        "type": "text",
+        "text": "Permission of the schoo"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

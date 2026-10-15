@@ -1,0 +1,28 @@
+{
+  "pid": "rkKRb_67V",
+  "code": "EDCI761",
+  "title": "Curriculum and Instruction in Secondary School Music",
+  "description": "Designed to provide students with practical strategies that will inform and enhance professional practice in the secondary music classroom. Through teaching opportunities, presentations, readings and discussion, this course develops personal knowledge related to pedagogical issues in music, curriculum design and implementation, program management, assessment strategies and professional portfolio building.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 761, ED-A 762.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Professional Year or Post Degree Professional program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

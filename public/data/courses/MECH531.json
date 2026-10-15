@@ -1,0 +1,13 @@
+{
+  "pid": "S1UF3ua7V",
+  "code": "MECH531",
+  "title": "Fluid Mechanics",
+  "description": "Governing principles; continuity, momentum, energy, stress, constitutive relations. Viscous incompressible flow; exact solutions of Navier-Stokes equations. Boundary-layer theory. Potential flow. Stability and turbulence.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

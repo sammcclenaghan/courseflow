@@ -1,0 +1,13 @@
+{
+  "pid": "S1hFnOTXE",
+  "code": "MECH550",
+  "title": "Advanced Control Theory",
+  "description": "State-space representation of dynamics systems. Linear time-invariant systems. State-space realization of transfer functions and canonical forms. Controllability and observability. Design of state-space controllers, including pole-placement and optimal control. Linear observers. Kalman filters. Digital control systems.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

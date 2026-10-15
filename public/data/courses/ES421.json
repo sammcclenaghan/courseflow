@@ -1,0 +1,25 @@
+{
+  "pid": "HyxNr4dpm4",
+  "code": "ES421",
+  "title": "Ethnobotany: Plants and Human Cultures",
+  "description": "An introduction to the study of the relationship between plants and human cultures, with a focus on the Indigenous peoples and environments of northwestern North America. Use of plants as foods, materials and medicines, plant nomenclature and folk classification, and the role of plants in religion and mythology are topics covered. There are one or more field trips.",
+  "notes": [
+    "Credit will be granted for only one of ES 421, ES 416."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ES200",
+      "ES321"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

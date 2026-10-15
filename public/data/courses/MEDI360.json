@@ -1,0 +1,25 @@
+{
+  "pid": "BJeeo3_pXV",
+  "code": "MEDI360",
+  "title": "Selected Topics in Medieval Culture",
+  "description": "An interdisciplinary investigation of a selected topic in the evolution of medieval culture, with an emphasis to be placed on artistic, intellectual, or spiritual life of the time.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

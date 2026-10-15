@@ -1,0 +1,26 @@
+{
+  "pid": "SJSLjdaX4",
+  "code": "LAW326B",
+  "title": "Labour Law",
+  "description": "An introduction to labour law focusing on the decisions of courts, arbitrators and administrators in a collective bargaining setting based on legislation. Collective bargaining for public servants and essential services employees under specific legislative regimes. The tension between industrial pluralism and human rights in collective bargaining is examined.",
+  "notes": [
+    "Credit will be granted for only one of LAW 326B, LAW 326."
+  ],
+  "credits": "1.5 or 2",
+  "hours": "3-0-0 or 4-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LAW105",
+      "LAW105I",
+      "LAW108A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

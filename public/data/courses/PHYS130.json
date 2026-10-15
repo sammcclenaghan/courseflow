@@ -1,0 +1,36 @@
+{
+  "pid": "SJYtA_TXE",
+  "code": "PHYS130",
+  "title": "Physics II",
+  "description": "Rotational and simple harmonic motion; wave motion and sinusoidal waves; reflection, refraction, and interference; optics; sound and the Doppler effect; de Broglie waves and the hydrogen atom; radioactivity and principles of quantum mechanics.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 130, PHYS 111, PHYS 125.",
+    "Credit will be granted for only PHYS 112 (3.0 units) or two of PHYS 120, PHYS 130, PHYS 122, PHYS 125 (1.5 units each).",
+    "An enriched course in physics primarily intended for students who are planning a career in Physics or Astronomy.",
+    "This course may include tours of local physics research institutions."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS120"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH101"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "HyVrAv6QE",
+  "code": "BIOL400",
+  "title": "History of Biology",
+  "description": "The historical development of the major techniques and ideas of biology, including the significance of the important historical contributors to biology.",
+  "notes": [
+    "Only one of BIOL 400 and BIOL 489 may be counted as an upper-level credit toward degree programs in Biology."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum third-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

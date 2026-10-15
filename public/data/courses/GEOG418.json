@@ -1,0 +1,27 @@
+{
+  "pid": "SkxBHHupXN",
+  "code": "GEOG418",
+  "title": "Advanced Spatial Analysis and Geo-statistics",
+  "description": "Explores advanced topics in the numerical analysis of points, lines, areas, and surfaces in discrete and continuous space, drawing on methodologies from geo-statistics, spatial analysis, regional sciences and landscape ecology. Includes coverage of spatial systems modelling and simulation, spatio-temporal analysis, exploratory spatial analysis and spatial data mining.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "2-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG328",
+      "GEOG329"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "GEOG 328 and GEOG 329 recommended prior to GEOG 418."
+  ]
+}

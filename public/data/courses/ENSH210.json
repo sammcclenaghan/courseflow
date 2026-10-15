@@ -1,0 +1,37 @@
+{
+  "pid": "r1pZZbD05",
+  "code": "ENSH210",
+  "title": "How Poetry Works",
+  "description": "Surveys poems in English from different periods and places, in various genres and styles, with a focus on the pleasurable uses of poetic language and meaning and the core concepts and common vocabulary used to discuss poetry.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ATWP135",
+          "ENGL146",
+          "ENGL147",
+          "ENSH101",
+          "ENSH102",
+          "ENSH103"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

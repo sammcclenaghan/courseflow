@@ -1,0 +1,16 @@
+{
+  "pid": "Skg-PpvpmN",
+  "code": "ANTH304",
+  "title": "Technology and Culture",
+  "description": "Critical approaches to the reciprocal relationship between technology and culture. Anthropological analysis of technological systems as sites of meaning, power and social practice. Draws on case studies from the full spectrum of human technological practices, from material culture to digital domains.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

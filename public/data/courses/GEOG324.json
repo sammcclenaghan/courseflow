@@ -1,0 +1,16 @@
+{
+  "pid": "H1H7Bd6XV",
+  "code": "GEOG324",
+  "title": "Directions in Geography",
+  "description": "Explores changing perspectives, approaches, and traditions in geography, focusing on the discipline’s rich history as well as its potential future directions. Introduces students to current leaders in the field of geography and considers how students can contribute to shaping the future of the discipline through their own personal life directions.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "4.5 units of 100- or 200-level GEOG courses."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

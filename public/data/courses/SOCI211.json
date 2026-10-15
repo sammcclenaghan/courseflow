@@ -1,0 +1,25 @@
+{
+  "pid": "rkQmxYp7E",
+  "code": "SOCI211",
+  "title": "Introduction to Sociological Research",
+  "description": "Introduction to the key concepts, strategies, and techniques of social research, including conceptualization and measurement, research design, sampling, the collection and analysis of qualitative and quantitative data.",
+  "notes": [
+    "Credit will be granted for only one of SOCI 211, SOCI 209, SOCI 375, SOCI 375A, SOCI 375B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCI100A",
+      "SOCI100B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

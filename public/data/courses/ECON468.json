@@ -1,0 +1,52 @@
+{
+  "pid": "HkLy-d6Q4",
+  "code": "ECON468",
+  "title": "Financial Econometrics",
+  "description": "An introduction to time series econometrics through the medium of financial applications, the lognormal model of asset returns and the random walk model of stock prices. variance ratio tests of the random walk/martingale hypothesis, stationary versus nonstationary stochastic processes, autocorrelations and tests for temporal dependence, trend stationary versus difference stationary models of nonstationarity, ARMA models for stationary variables, GARCH models of volatility clustering, unit root tests and cointegration.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECON305",
+              "COM240"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECON345",
+              "ECON365",
+              "STAT350",
+              "STAT353"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "ECON 435 recommended prior to ECON 468."
+  ]
+}

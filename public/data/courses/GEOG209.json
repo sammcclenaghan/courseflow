@@ -1,0 +1,53 @@
+{
+  "pid": "BJPfS_pXN",
+  "code": "GEOG209",
+  "title": "Environmental Management",
+  "description": "Critically interrogates approaches to the management or governance of environments and natural resources. Themes may include parks and protected areas, fisheries, forestry, water and energy management; environmental impact assessment; comprehensive land-use and marine spatial planning; and urban sustainability, all in the context of profound political and environmental change, colonialism, and Indigenous resurgence.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 209, GEOG 350, GEOG 350A, GEOG 350B, ES 316."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG101A",
+          "GEOG103"
+        ]
+      },
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "GEOG103",
+              "GEOG130",
+              "EOS110",
+              "EOS130"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "declared Honours or Major in Climate Science."
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

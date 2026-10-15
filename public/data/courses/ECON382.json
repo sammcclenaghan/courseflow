@@ -1,0 +1,24 @@
+{
+  "pid": "S1WCl_6QV",
+  "code": "ECON382",
+  "title": "Natural Resource Economics I",
+  "description": "Introduces students to economic issues and public policies specific to the use and management of natural resources. Explores economic principles for the efficient allocation of renewable and nonrenewable natural resources over time. Topics typically include a review of current natural resource issues affecting Canada, with particular focus on British Columbia, and policies for the management of forests, water, mineral, petroleum and marine resources, and the conservation of biological diversity.",
+  "notes": [
+    "Credit will be granted for only one of ECON 382, ECON 430A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON203"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

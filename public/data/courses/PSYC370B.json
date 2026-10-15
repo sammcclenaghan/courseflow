@@ -1,0 +1,34 @@
+{
+  "pid": "Hkz4yKT7V",
+  "code": "PSYC370B",
+  "title": "Child Language Acquisition",
+  "description": "The biological bases of language; the stage by stage acquisition of the phonology, morphology, syntax, and semantics of the child's first language; the child's developing metalinguistic abilities; and the child's growing awareness of the form and function of speech acts, as well as the discourse rules governing conversations.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 370B, PSYC 369, LING 369, LING 370B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC100A",
+          "PSYC100B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

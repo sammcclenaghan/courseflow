@@ -1,0 +1,28 @@
+{
+  "pid": "HyrFtg3n3",
+  "code": "PHYS304",
+  "title": "Physics of Science Fiction",
+  "description": "Explores the principles of physics, as seen through the lens of science fiction media. Critical analysis of depictions of physics in television and movies, and discussion of how to produce more accurate representations of nature. Emphasis on the physics of motion, energy, heat, and waves, as well as nuclear and particle physics. Focusses on conceptual understanding of the physical world; a non-mathematical approach.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 304, PHYS 280 (if taken in the same topic).",
+    "Credit for this course will not be counted towards any Physics or Astronomy program requirement except as an elective."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

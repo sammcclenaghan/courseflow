@@ -1,0 +1,33 @@
+{
+  "pid": "SkwIclnTn",
+  "code": "THEA358",
+  "title": "Assisting the Designer on the Mainstage",
+  "description": "Students assist designers on productions on the mainstage in any theatre sub-discipline.",
+  "notes": [],
+  "credits": "1.5–3",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA251",
+          "THEA252",
+          "THEA261"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

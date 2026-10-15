@@ -1,0 +1,16 @@
+{
+  "pid": "BkGzV2G4p",
+  "code": "MDIA325",
+  "title": "Current Topics in Media Studies",
+  "description": "Study of current topics in Media Studies conducted in a large discussion environment. Emphasis on experiential learning and community-based media practice.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

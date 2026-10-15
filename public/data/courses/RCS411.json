@@ -1,0 +1,27 @@
+{
+  "pid": "Sk00zKS0ge",
+  "code": "RCS411",
+  "title": "West Coast Spirituality",
+  "description": "Explores the Pacific Northwest's distinctive approach to the institutions, ideas, and practices associated with religion, culture and spirituality. Uses humanistic and social scientific approaches to reflect on why this \"bio-region\" seems to be so unusual in North America. Examines secularization, syncretism, Indigenous revitalization and new forms of post- or extra-institutional spirituality. Emphasizes diverse forms of experiential learning.",
+  "notes": [
+    "Credit will be granted for only one of RCS 411, RCS 401 (if taken in the same topic), RS 401 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,44 @@
+{
+  "pid": "ByPQ6O6Q4",
+  "code": "MUS462A",
+  "title": "Seminar in Performance of New Music",
+  "description": "This seminar/workshop provides intensive professional training for performers who work together with composers in the creation, performance and production of new music. Performers prepare new works composed specifically for them by the composers registered simultaneously in MUS 462B. Training in contemporary notation and performance practices, extended techniques, instrumentation, analysis, conducting techniques, communication skills and concert production. The final project is a festival. Open to third- and fourth-year music students.",
+  "notes": [
+    "A combined undergraduate and graduate course (MUS 562A - Graduate Seminar in Performance of New Music)."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MUS201B",
+              "MUS202A",
+              "MUS202B"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum third-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

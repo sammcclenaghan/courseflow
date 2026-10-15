@@ -1,0 +1,24 @@
+{
+  "pid": "r1VIoda7V",
+  "code": "LAW326A",
+  "title": "The Individual Employment Relationship",
+  "description": "The law relating to the individual employment relationship. Covers the legal background and contemporary context of employment, the formation of the employment relationship, the rights and obligations of employers and employees under the contract of employment and protective legislation, the termination of employment and enforcement mechanisms. Although British Columbia is the focus, there is a comparative dimension.",
+  "notes": [],
+  "credits": "1.5 or 2",
+  "hours": "3-0-0 or 4-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LAW105",
+      "LAW105I",
+      "LAW108A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,56 @@
+{
+  "pid": "S1UvbtamV",
+  "code": "WRIT324",
+  "title": "Writing Interactive Narrative",
+  "description": "A workshop/seminar in writing for digital media, hyper-literature, video games, interactive installations and experiences.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-1-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": {
+          "units": 3
+        },
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "WRIT201",
+          "WRIT202",
+          "WRIT203",
+          "WRIT204",
+          "WRIT215",
+          "WRIT218",
+          "WRIT326"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": {
+          "units": 1.5
+        },
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "WRIT201B",
+          "WRIT202B",
+          "WRIT203B",
+          "WRIT204B",
+          "WRIT218B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,38 @@
+{
+  "pid": "B13QJuT7E",
+  "code": "CIVE351",
+  "title": "Design of Steel and Timber Structures",
+  "description": "Topics: design of metal structures; behaviour of members and their connections; shear lag, block shear, local plate buckling, lateral torsional buckling, inelastic strength and stability. Design of tension members and cables, beams, columns, simple bolted and welded connections. Mechanical properties of wood; effects of moisture content and loading on strength and durability; engineered woods; design of connections, beams, and columns; design of buildings, bridges other wood structures. Life cycle analysis of structures.\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [],
+  "credits": "2",
+  "hours": "3-1.5*-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE210"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE250",
+          "CIVE350"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

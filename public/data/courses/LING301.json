@@ -1,0 +1,16 @@
+{
+  "pid": "S1UsjOpmE",
+  "code": "LING301",
+  "title": "Topics in the Structure of an Indigenous Language Family",
+  "description": "A study of selected topics in the linguistic structures of a particular family of Indigenous languages. May focus on a particular language within this family, and include discussion of oral and written literature and related cultural topics. Language revitalization in Indigenous communities associated with this family of languages is discussed. Topics may include Salish, Dene (Athabaskan) or Wakashan, major language families of British Columbia.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum third-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "HyVzAXikF",
+  "code": "STAT469",
+  "title": "Machine Learning",
+  "description": "An introduction to machine learning methods including: Supervised learning methods (linear regression models, elastic net, LDA, QDA, KNN, decision tree, random forest, splines, GAM, and multi-task predictions); Unsupervised learning methods in dimension reduction (PCA, t-SNE, UMAP) and in clustering (K-means, clustering, mixture models); and Ensemble learning methods (bagging, boosting, stacking).",
+  "notes": [
+    "Credit will be granted for only one of STAT 469, STAT 454 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT353"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or Permission of the Department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

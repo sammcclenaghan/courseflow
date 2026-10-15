@@ -1,0 +1,22 @@
+{
+  "pid": "S1X2BYbUs",
+  "code": "IED300",
+  "title": "Knowledge Sharing in Community",
+  "description": "Practical application of building language proficiency in reciprocal settings within the community over 75 hours.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IED259"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,53 @@
+{
+  "pid": "Sy4SCwTXE",
+  "code": "BIOL370",
+  "title": "Conservation Biology",
+  "description": "Diversity of organisms, functioning of ecosystems, and the impact of human activities on these. Topics include the nature of biological diversity; extinction and its cause; habitat alteration and fragmentation; effects of exotic species; economic and ethical considerations; practical applications and analytical tools; and legal frameworks for conserving species and habitats.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 370, ER 313, ES 318, ES 320, ES 348.",
+    "May be counted toward the Concentration in Marine Biology if it has substantial marine content and with permission of the Biology Department."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL186",
+          "BIOL190A"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL215",
+          "BIOL230"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT255",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

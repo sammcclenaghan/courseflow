@@ -1,0 +1,35 @@
+{
+  "pid": "H15_eOp74",
+  "code": "ECE340",
+  "title": "Applied Electromagnetics and Photonics",
+  "description": "Field concept, Maxwell's equations, power, and energy. Plane wave propagation, polarization, and reflection and transmission at material interfaces. Introduction to waveguides, antennas, and photonic structures. Engineering electromagnetics design concepts and examples with emphasis on impedance transformers and shielding structures.",
+  "notes": [
+    "Credit will be granted for only one of ECE 340, ELEC 340."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0.5",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE216",
+      "ELEC216"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH201",
+      "MATH204"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

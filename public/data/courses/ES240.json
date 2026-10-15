@@ -1,0 +1,15 @@
+{
+  "pid": "Bkg-EVOa7V",
+  "code": "ES240",
+  "title": "Ecological Processes",
+  "description": "An introduction to the discipline of ecology with a focus on understanding biotic processes as they relate to contemporary environmental challenges.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "ES 200 recommended prior to or in conjunction with ES 240."
+  ]
+}

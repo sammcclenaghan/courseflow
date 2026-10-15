@@ -1,0 +1,33 @@
+{
+  "pid": "B1bN6d674",
+  "code": "MUS506B",
+  "title": "Sound Recording Seminar",
+  "description": "Advanced study of sound recording and music production techniques using the production of a full length CD or DVD as a model. Topics include techniques in audio post-production and editing with advanced equipment, music production, location recording and readings of current research and technical papers. Requires the completion of a full length CD or DVD project.",
+  "notes": [
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS506A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,52 @@
+{
+  "pid": "rkZlhsCLi",
+  "code": "ENSH309",
+  "title": "Fashion Communication",
+  "description": "Focus on communication practices in the fashion industry, including media and public relations, marketing and promotions, and retail and e-commerce. Traces fashion communication across print and digital environments, drawing from theories of communication, media representation and cultural studies. Prepares students to address issues in local and global fashion industries and cultures such as sustainable production, ethical consumption, decolonization, and the inclusion of diverse identities, abilities and sizes.",
+  "notes": [
+    "This is a Professional Communication course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "ENSH101",
+          "ENSH102",
+          "ENSH103",
+          "ENSH201",
+          "ENSH202",
+          "ENSH203",
+          "ENGL135",
+          "ENGL146",
+          "ENGL147",
+          "ENGL215",
+          "ENGL225",
+          "ATWP135",
+          "ECON225",
+          "ENGR240",
+          "MDIA200",
+          "WRIT204A",
+          "WRIT204B",
+          "WRIT215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Professional Communication students should take this course in their third or fourth year."
+  ]
+}

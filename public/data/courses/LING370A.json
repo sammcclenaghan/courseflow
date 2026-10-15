@@ -1,0 +1,18 @@
+{
+  "pid": "r1Rji_T7E",
+  "code": "LING370A",
+  "title": "Psycholinguistics",
+  "description": "The psychology of language, examining key aspects of language and cognition, including biological foundations of language, neurolinguistics and the processing of speech sounds, words, sentences and conversational discourse.",
+  "notes": [
+    "Credit will be granted for only one of LING 370A, LING 370, PSYC 370, PSYC 370A."
+  ],
+  "credits": "1.5",
+  "hours": "2-0-1",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum third-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

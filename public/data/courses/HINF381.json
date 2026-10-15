@@ -1,0 +1,42 @@
+{
+  "pid": "HJlk1u_TXE",
+  "code": "HINF381",
+  "title": "Epidemiology, Population Health and Public Health",
+  "description": "Introduction to principles and methods of epidemiology particularly as they apply to population health. Measurements of disease occurrence, study designs (cohort, case-control, randomized clinical trials), surveillance systems, population health, public health information systems for infectious and chronic diseases, health promotion and disease prevention issues.",
+  "notes": [
+    "Credit will be granted for only one of HINF 381, HINF 380, HLTH 254, HLTH 480 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF001",
+          "CSC001"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Complete 1.5 units of: STAT courses"
+      },
+      {
+        "type": "text",
+        "text": "admission to BSc in Health Information Science or Combined BSc in Health Information Science and Computer Science"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

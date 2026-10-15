@@ -1,0 +1,13 @@
+{
+  "pid": "HyMhCdaQ4",
+  "code": "PHYS540",
+  "title": "Medical Imaging",
+  "description": "Fundamental theory and application of medical imaging, including radiology, computed tomography, magnetic resonance imaging, ultrasound and nuclear medicine imaging. Basic principles, image formation and reconstruction, imaging instrumentation and hardware and current trends of each imaging modality are given.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

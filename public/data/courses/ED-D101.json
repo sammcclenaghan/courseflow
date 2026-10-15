@@ -1,0 +1,18 @@
+{
+  "pid": "SysC-O6XN",
+  "code": "ED-D101",
+  "title": "Learning Strategies for University Success",
+  "description": "An examination of learning behaviours and motivations to improve academic success. Introduces educational psychology theories, principles and research with a focus on self-regulation - the science of strategic, reflective, and adaptive learning. Students are required to master knowledge and apply concepts related to learning, motivation, collaboration, academic performance, and procrastination. Taken as an elective course by students across almost all faculties on campus. Computers are used extensively for applied lab work and assignments.",
+  "notes": [
+    "Students must attend both the lecture (1.5hrs) and a lab (1.5hrs) each week."
+  ],
+  "credits": "1.5",
+  "hours": "1.5-1.5-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "text",
+    "text": "1.5 units of any course numbered 100 or higher."
+  },
+  "recommendations": []
+}

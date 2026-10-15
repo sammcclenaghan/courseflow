@@ -1,0 +1,27 @@
+{
+  "pid": "rkf19OpXN",
+  "code": "HSTR496",
+  "title": "Approaches to History",
+  "description": "The history of history and the nature of history as an intellectual discipline.",
+  "notes": [
+    "Credit will be granted for only one of HSTR 496, HIST 480."
+  ],
+  "credits": "3",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Declared Honours in History"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,39 @@
+{
+  "pid": "BynZUm7R5",
+  "code": "ENSH233",
+  "title": "The Bible as Literature",
+  "description": "Surveys basic stories and books in the Old and New Testaments with a focus on their literary features. Familiarizes students with important biblical stories, genres and references in literature and religious discourse.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 233, ENGL 260, ENGL 365 (if taken prior to December 1983), ENGL 409, RCS 260, RS 260."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirements satisfied."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ATWP135",
+          "ENGL146",
+          "ENGL147",
+          "ENSH101",
+          "ENSH102",
+          "ENSH103"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

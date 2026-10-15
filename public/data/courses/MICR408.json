@@ -1,0 +1,41 @@
+{
+  "pid": "HJj2ndamN",
+  "code": "MICR408",
+  "title": "Bacterial Pathogens and Disease",
+  "description": "Advanced study of bacterial pathogens. Emphasis on molecular mechanisms of pathogenesis including antigenic variation, host cell parasitism, evasion of host immune defences and mimicry of eukaryotic structures.",
+  "notes": [
+    "Credit will be granted for only one of MICR 408, MICR 301."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MICR302",
+          "BIOL361"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MICR303",
+          "BIOL360"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

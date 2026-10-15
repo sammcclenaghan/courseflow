@@ -1,0 +1,25 @@
+{
+  "pid": "S1LExdTXV",
+  "code": "CYC350",
+  "title": "Applying CYC Practice in Child Welfare Contexts",
+  "description": "Learners have opportunities to practice theoretical and legal foundations gained from the prerequisite law course. Students critically engage and explore issues of power and authority, dynamics of law, child and youth care practice in both child protection and child welfare contexts. Ethical, appropriate and responsive development of reflexive practice frameworks that integrate specific skills, such as interviewing, documentation, contextual analysis and applying practice standards in child welfare and protection frameworks.",
+  "notes": [
+    "Credit will be granted for only one of CYC 350, CYC 350B.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CYC250"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

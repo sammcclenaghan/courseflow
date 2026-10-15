@@ -1,0 +1,49 @@
+{
+  "pid": "ryJNRP6XN",
+  "code": "BIOL309",
+  "title": "Developmental Biology",
+  "description": "Cellular and molecular mechanisms underlying animal development: fertilization, gastrulation, body axis formation and patterning, formation of the eye, nervous system, neural crest, limb, germ cells and gonads. Emphasis on human developmental disorders, experimental design and hypothesis testing. Laboratory is divided into wet labs (model organisms and embryological techniques) and dry labs (analysis of primary literature).",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL225",
+          "BIOC299"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL230"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOC300B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

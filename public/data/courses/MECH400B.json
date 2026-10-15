@@ -1,0 +1,24 @@
+{
+  "pid": "HJcPRhrsj",
+  "code": "MECH400B",
+  "title": "Capstone Design Project",
+  "description": "Complete design of a product or a system in a team environment: finalization of client project brief; conceptual to detailed design including iteration; formal engineering analysis; selection of materials, parts and fabrication methods; design documentation including fabrication drawings, rapid prototyping data files and software; project logistical and financial management. As appropriate to project topic and scope, may include iterative prototyping and testing to verify performance analysis and targets.",
+  "notes": [
+    "Credit will be granted for only one of MECH 400B, MECH 400, MECH 464."
+  ],
+  "credits": "3",
+  "hours": "2-6-3",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH400A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

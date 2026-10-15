@@ -1,0 +1,43 @@
+{
+  "pid": "HJx6CZaa3",
+  "code": "ENSH307",
+  "title": "Effective Communication in Health Professions",
+  "description": "Explores the production of clinical and professional health communication as applied across communication contexts and written, oral and visual formats. Topics such as: bias and self-reflexivity in clinical communication practice; effective organizational and leadership communication; issues in public health and crisis communication; health and media literacies; knowledge translation and science communication; and conducting profiles and assessments in diverse communities.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "ENSH101",
+          "ENSH102",
+          "ENSH103",
+          "ENSH201",
+          "ENSH202",
+          "ENSH203",
+          "ATWP135",
+          "ECON225",
+          "ENGR240",
+          "MDIA200",
+          "WRIT204A",
+          "WRIT204B",
+          "WRIT215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

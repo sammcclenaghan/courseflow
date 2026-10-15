@@ -1,0 +1,25 @@
+{
+  "pid": "S18To_TmV",
+  "code": "LING475",
+  "title": "Current Issues in Applied Linguistics",
+  "description": "Current issues in applied linguistics with theoretical and practical significance for second and foreign language teaching and learning. Topics vary and may include, but are not limited to, pronunciation, grammar, discourse and pragmatics, interactive and socio-cultural approaches to language teaching and learning, form-focused instruction and technology-mediated language learning.",
+  "notes": [
+    "Credit will be granted for only one of LING 475, LING 375."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LING373",
+      "LING374"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

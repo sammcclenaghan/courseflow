@@ -1,0 +1,24 @@
+{
+  "pid": "rynJnOpQE",
+  "code": "MATH200",
+  "title": "Calculus III",
+  "description": "Vectors and vector functions; solid analytic geometry; partial differentiation; directional derivatives and the gradient vector; Lagrange multipliers; multiple integration with applications; cylindrical and spherical coordinates; change of variables; surface area; introduction to line and surface integrals.",
+  "notes": [
+    "Credit will be granted for only one of MATH 200, MATH 202, MATH 205."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH101"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "BJ4SkXa83",
+  "code": "PAAS226",
+  "title": "Intermediate Filipino II",
+  "description": "Increasingly advanced readings, schema exercises to facilitate vocabulary building and longer written assignments. Emphasis on speaking, reading, writing and listening prepares for immersion experiences and advanced language work.",
+  "notes": [
+    "Not open to fluent speakers of Filipino."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "PAAS225"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,15 @@
+{
+  "pid": "rkzj0OpQ4",
+  "code": "PHYS500A",
+  "title": "Quantum Mechanics",
+  "description": "Topics may include angular momentum and symmetries, perturbation theory, scattering theory, density operators, quantum statistical mechanics.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 500, PHYS 500A."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

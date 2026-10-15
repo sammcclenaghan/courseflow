@@ -1,0 +1,51 @@
+{
+  "pid": "S1HDrCib1l",
+  "code": "COM251",
+  "title": "Marketing in Motion Strategies for a Digital World",
+  "description": "Introduction to the critical variables organizations face in an evolving market landscape. Insights into customer behaviour, market segmentation, product development, management, and innovation, use of digital and social media, and the importance of these channels in today's marketing mix, strategies for effective promotion, leveraging data-driven insights to engage customers in meaningful ways.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM100"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BCom program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM224",
+          "COM232",
+          "COM292"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "recommendations": []
+}

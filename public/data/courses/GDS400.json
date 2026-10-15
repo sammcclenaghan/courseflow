@@ -1,0 +1,38 @@
+{
+  "pid": "B1g3bBOTQN",
+  "code": "GDS400",
+  "title": "Recasting and Rethinking Global Development",
+  "description": "An advanced interdisciplinary seminar on contemporary issues and debates in global development. Engages with theoretical and real-world policy challenges while rethinking conventional approaches to development grounded in western assumptions of progress. Topics may include gender, human rights, decolonization, environmental sustainability, migration, political economy of resource extraction, labour, ethical trade, south-south trade, food security and eco-tourism. Assignments include applied learning, interdisciplinary projects and research.",
+  "notes": [
+    "Credit will be granted for only one of GDS 400, POLI 426."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GDS201",
+          "POLI217"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

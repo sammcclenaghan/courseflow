@@ -1,0 +1,51 @@
+{
+  "pid": "ByoyOOTmN",
+  "code": "HINF461",
+  "title": "System Evaluation and Quality Improvement",
+  "description": "Examination of key concepts, methods and approaches in the field of evaluation. Topics may include: formative and summative evaluation; quantitative and qualitative methods; developing performance metrics; total quality management (TQM); core principles of clinical quality improvement (CQI); balanced scorecards and dashboards.",
+  "notes": [
+    "Credit will be granted for only one of HINF 461, HINF 460."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF381"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF001",
+          "CSC001"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF002",
+          "CSC002"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

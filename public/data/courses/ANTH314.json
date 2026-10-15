@@ -1,0 +1,19 @@
+{
+  "pid": "S1Sw6v6XN",
+  "code": "ANTH314",
+  "title": "Economic Anthropology",
+  "description": "A comparative analysis of the social context of production, distribution and exchange systems in local and global contexts.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 314, ANTH 393 (if taken in the same topic).",
+    "Not open to students with credit in ANTH 405."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

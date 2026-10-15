@@ -1,0 +1,16 @@
+{
+  "pid": "Hy7EGd67N",
+  "code": "ED-D610",
+  "title": "Contemporary Issues in Higher Education",
+  "description": "Critically examines the problems and issues that dominate current thought and discussion in higher education in Canada and internationally. Topics considered include globalization and internationalization, university governance, teaching and learning, the nature of academic work, corporatization of postsecondary institutions, credentialism and relations between higher education and the state.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

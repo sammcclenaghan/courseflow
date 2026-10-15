@@ -1,0 +1,23 @@
+{
+  "pid": "SyKsmME7v",
+  "code": "HINF112",
+  "title": "Introduction to Health Information Analysis",
+  "description": "Explores a range of approaches and emerging methods for health data analysis for improving healthcare. Detailed preparation and integration of health data across a range of health information systems. Describes the application of data analysis methods for improving health care processes in a variety of settings, including clinical applications and use of health data for health informatics practice, research and education.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "HINF115",
+      "CSC110"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

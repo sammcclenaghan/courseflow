@@ -1,0 +1,54 @@
+{
+  "pid": "rJCZAvpQN",
+  "code": "BIOC300A",
+  "title": "General Biochemistry I",
+  "description": "BIOC 300A and 300B are intended to provide detailed coverage of foundation topics for students majoring in biochemistry or microbiology and must be taken sequentially. Protein structure and function, enzymes and enzyme kinetics, carbohydrates, lipids, biological membranes and bioenergetics.",
+  "notes": [
+    "Credit will be granted for only one of BIOC 300A, BIOC 300."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL225",
+          "BME200"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM231"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM232",
+          "CHEM234",
+          "CHEM235"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "A minimum grade of C+ in all prerequisites recommended."
+  ]
+}

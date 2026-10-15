@@ -1,0 +1,38 @@
+{
+  "pid": "Bku2RZwRq",
+  "code": "ENSH480",
+  "title": "Special Topics in Advanced Theory and Methods",
+  "description": "A capstone course offering intensive training in various methods of interpretation and theoretical approaches to literature, culture and media. May include experiential learning in Special Collections or a computer lab.",
+  "notes": [
+    "Limited to Majors and Honours students except by permission of the instructor.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENSH200",
+          "ENSH301",
+          "ENGL209",
+          "ENGL310"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

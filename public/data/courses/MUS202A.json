@@ -1,0 +1,42 @@
+{
+  "pid": "ByYFYPK4n",
+  "code": "MUS202A",
+  "title": "Theories of Musical Form",
+  "description": "Examines musical phrasing and form as notated and non-notated elements of music practice across a variety of genres. Considers related musical systems and techniques from theoretical, historical and cognitive perspectives for practising musicians.",
+  "notes": [
+    "Credit will only be granted for one of MUS202A, MUS201A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS101A",
+          "MUS101B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS102A",
+          "MUS102B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

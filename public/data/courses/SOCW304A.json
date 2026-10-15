@@ -1,0 +1,43 @@
+{
+  "pid": "rkbvgFaQV",
+  "code": "SOCW304A",
+  "title": "Social Work Practicum by Prior Learning Assessment (PLA)",
+  "description": "Students with significant work or volunteer experience in social work may complete the first BSW practicum by Prior Learning Assessment. Students present evidence of their prior learning and practice which specifically demonstrates their anti-oppressive practice and their acquisition of the skills and knowledge required in SOCW 304.",
+  "notes": [
+    "Credit will be granted for only one of SOCW 304A, SOCW 304.",
+    "Students must submit an application for this course 6 months in advance of the start of the term."
+  ],
+  "credits": "4.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW311",
+          "SOCW312"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW312A",
+          "SOCW312B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

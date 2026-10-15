@@ -1,0 +1,31 @@
+{
+  "pid": "rkPZMOTX4",
+  "code": "ED-D516",
+  "title": "Advanced Intervention in Special Education",
+  "description": "An intensive course specializing in academic interventions for students with special needs. Intervention design, implementation and monitoring are involved within the context of special education service delivery.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ED-D515"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

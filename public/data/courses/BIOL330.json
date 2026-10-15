@@ -1,0 +1,46 @@
+{
+  "pid": "HkdEADp7N",
+  "code": "BIOL330",
+  "title": "Study Design and Data Analysis",
+  "description": "An introduction to the statistical analysis of biological data, experimental design and sampling design. Laboratories emphasize computer-based analysis of biological data.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 330, ES 310, ES 344 (if taken prior to September 2023)."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT255",
+          "STAT260"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL215",
+          "BIOL225",
+          "BIOL230"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

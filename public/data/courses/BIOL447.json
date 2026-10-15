@@ -1,0 +1,23 @@
+{
+  "pid": "H11D0wp7V",
+  "code": "BIOL447",
+  "title": "Ion Channels and Disease",
+  "description": "Structure and function of major voltage- and ligand-gated ion channels in neurons. Channel-related diseases and how alterations in ion channel function can contribute to nervous system disorders such as nicotine addiction and epilepsy. Mechanisms of ligand binding, gating and ion selectivity. Bioinformatic tools to analyze ion channel sequence, functional domains and structure, and electrophysiological, fluorescence and crystallography techniques to study channel structure and function. Critical discussions of the primary literature is emphasized.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL365",
+      "BIOL367"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

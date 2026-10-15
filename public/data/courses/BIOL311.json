@@ -1,0 +1,109 @@
+{
+  "pid": "ByeEAPTQV",
+  "code": "BIOL311",
+  "title": "Biological Oceanography",
+  "description": "An introduction to the ways in which physical, chemical and biological processes interact to regulate structure and productivity of marine ecosystems. Lectures focus primarily on planktonic ecosystems. Participation in a one-day oceanographic cruise is required.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 311, BIOL 311B, EOS 311."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM101",
+          "CHEM150"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM102"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH101",
+          "MATH102",
+          "MATH109",
+          "MATH151"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS102"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS102A",
+              "PHYS102B"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS110",
+              "PHYS111"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS120",
+              "PHYS130"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "BIOL 215 and EOS 110 recommended prior to BIOL 311."
+  ]
+}

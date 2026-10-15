@@ -1,0 +1,16 @@
+{
+  "pid": "Hy7oawamV",
+  "code": "ANTH552E",
+  "title": "Advanced Topics in Biological Anthropology",
+  "description": null,
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,16 @@
+{
+  "pid": "rkeckF67E",
+  "code": "PSYC584",
+  "title": "Clinical Assessment: Cognitive Functioning",
+  "description": "Introduction to theory and practice in the assessment of cognitive functioning and academic achievement, including test administration, scoring, interpretation and report writing. Individual case study interpretation is required during formal laboratory experiences.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a graduate program in Clinical Psychology."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

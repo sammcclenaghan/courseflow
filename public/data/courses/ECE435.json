@@ -1,0 +1,25 @@
+{
+  "pid": "ry-FxOaQ4",
+  "code": "ECE435",
+  "title": "Medical Image Processing",
+  "description": "Image processing and understanding techniques applied in medical imaging technologies such as CT, MRI, ultrasound, X-ray. Design of computer aided diagnosis systems. Algorithms for filtering, edge detection, segmentation, registration and 3D visualization of medical data.",
+  "notes": [
+    "Credit will be granted for only one of ECE 435, BME 403, ELEC 435."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE265",
+      "ECE310"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

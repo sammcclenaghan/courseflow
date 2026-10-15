@@ -1,0 +1,22 @@
+{
+  "pid": "rJ71ADpQ4",
+  "code": "ASL200A",
+  "title": "American Sign Language III",
+  "description": "Providing essentials of fundamental structures for everyday interaction. Develops appropriate grammatical features and facial grammar including non-manual signals in addition to receptive and expressive signing skills. Presents insight into the Deaf community and Deaf Culture.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "4-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ASL100B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

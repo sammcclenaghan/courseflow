@@ -1,0 +1,63 @@
+{
+  "pid": "rJs3Qu6QN",
+  "code": "EOS340",
+  "title": "Atmospheric Physics",
+  "description": "An introduction to the study of the atmosphere as a physical system. Equations of motion, force balances, thermodynamics, phase changes of water, radiative transfer,, waves and instabilities, predictability.",
+  "notes": [
+    "Credit will be granted for only one of EOS 340, PHYS 340."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-2",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS102A",
+          "PHYS102B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS110",
+          "PHYS111"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS120",
+          "PHYS130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EOS325",
+      "MATH204"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

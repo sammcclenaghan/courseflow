@@ -1,0 +1,13 @@
+{
+  "pid": "HJeUylupQV",
+  "code": "CSC575",
+  "title": "Music Retrieval Techniques",
+  "description": "A comprehensive advanced overview of the emerging research area of Music Information Retrieval (MIR). Topics include techniques from signal processing, machine learning, information retrieval, human-computer interaction and software engineering that are applied in the design and development of MIR algorithms and systems. Integration of knowledge from different research areas to solve concrete problems.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

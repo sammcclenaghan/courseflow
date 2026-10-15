@@ -1,0 +1,22 @@
+{
+  "pid": "BJgWU6OTmE",
+  "code": "NUED573",
+  "title": "Nurse Educator Practice I",
+  "description": "Students have opportunities to further integrate their evolving knowledge of Advanced Practice Nursing: Nurse Educator option through working with expert teachers in clinical, academic, and/or community settings.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NUED570"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "BygK5gdamE",
+  "code": "ECE537",
+  "title": "Applied Data Analysis",
+  "description": "Theory and application of modern data analysis and machine learning methodologies to larger scale real-world data analytics problems. Impacts of outliers, normalization processes, feature selection and extraction, data set biases, and noise on analysis quality. Implications of stationarity, ergodicity, and adversaries on data analysis processes. Students are required to complete a project.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE485",
+          "ECE535",
+          "ELEC485",
+          "ELEC535"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

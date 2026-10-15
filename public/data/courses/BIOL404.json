@@ -1,0 +1,24 @@
+{
+  "pid": "SyIrAvpQ4",
+  "code": "BIOL404",
+  "title": "Sensory Biology",
+  "description": "Explores the neural mechanisms underlying sensory systems: sensory receptor coding logic; signal transduction; neuronal circuitry; comparative analysis of model organisms. Related clinical disorders and therapeutic strategies are also discussed. A large emphasis is placed on the primary literature highlighting major advances in the field, aimed at building skills for designing experiments to test specific hypotheses.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL365",
+      "BIOL367",
+      "BIOL409A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

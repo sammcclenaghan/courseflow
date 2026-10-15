@@ -1,0 +1,24 @@
+{
+  "pid": "rkz8sdpm4",
+  "code": "LAW322",
+  "title": "Family Law",
+  "description": "The institution of the family, both in its social and legal contexts. Specific reference to law relating to marriage, divorce, custody, matrimonial property and the role of the lawyer in the resolution of family problems. Ideally suited to interdisciplinary team teaching in order that the course may helpfully illustrate the impact of legal decision making on the social unit of the family.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LAW105",
+      "LAW105I",
+      "LAW108A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

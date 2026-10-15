@@ -1,0 +1,25 @@
+{
+  "pid": "Byyo3upm4",
+  "code": "MEDI304",
+  "title": "Encountering the Middle Ages",
+  "description": "An introduction to the interdisciplinary study of the medieval world and thus to Medieval Studies, through direct encounters with primary sources (objects, images, texts, music). Emphasizes the question of evidence in relation to interdisciplinary principles, methods and problems, involving where possible cross-cultural comparison.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

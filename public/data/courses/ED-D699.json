@@ -1,0 +1,22 @@
+{
+  "pid": "ryiEfda74",
+  "code": "ED-D699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "30",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-D693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

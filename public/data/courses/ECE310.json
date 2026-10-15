@@ -1,0 +1,25 @@
+{
+  "pid": "Byd_gu6QE",
+  "code": "ECE310",
+  "title": "Digital Signal Processing I",
+  "description": "Discrete-time signals and systems. Signal properties and basic signal transformations. System properties. Linear time-invariant systems and convolution. Discrete-time Fourier series. The Fourier transform and spectral analysis. The z transform and its use in system analysis. The relationship between the Fourier and z transforms. Sampling. Analysis and design of discrete-time systems. Solving difference equations with the z transform.",
+  "notes": [
+    "Credit will be granted for only one of ECE 310, ELEC 310."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0.5",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE260",
+      "ELEC260"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

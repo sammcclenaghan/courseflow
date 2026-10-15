@@ -1,0 +1,16 @@
+{
+  "pid": "B1gsLjOpmN",
+  "code": "LAW343",
+  "title": "Contemporary Issues in Law",
+  "description": "Contemporary and problematic legal issues are examined in the light of existing legal rules, social and related implications, the legal process, and possible reform.",
+  "notes": [],
+  "credits": "0.5–7.5",
+  "hours": "1-0-0 to 15-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Set by department depending upon topic."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

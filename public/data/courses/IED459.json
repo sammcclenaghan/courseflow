@@ -1,0 +1,45 @@
+{
+  "pid": "Sk3r5OaQE",
+  "code": "IED459",
+  "title": "Indigenous Language IV",
+  "description": "Learning of an Indigenous language at the fourth-year level.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IED356",
+              "IED358",
+              "IED359",
+              "LING356",
+              "LING358",
+              "LING359"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to one of BEd or Diploma program in Indigenous Language Revitalization, Certificate in Indigenous Language Proficiency, Certificate in Indigenous Language Revitalization"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

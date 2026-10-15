@@ -1,0 +1,25 @@
+{
+  "pid": "S1WlvEuamN",
+  "code": "FA300",
+  "title": "Interdisciplinary Studies",
+  "description": "Emphasizes an interdisciplinary approach to contemporary artistic concerns. In each year, coursework focuses on a particular issue.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "additional prerequisites set by faculty depending upon topic."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

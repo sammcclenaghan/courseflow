@@ -1,0 +1,33 @@
+{
+  "pid": "HJjW6upQV",
+  "code": "MUS339A",
+  "title": "Instrumental Techniques for Middle and Secondary Schools",
+  "description": "Practical introductory level instrumental ensemble experience (band/strings). Emphasis is on beginning instrumental methods and techniques.",
+  "notes": [
+    "Credit will be granted for only one of MUS 339A, ME 216, ME 309A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS256A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BMus in Music Education or permission of the school."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

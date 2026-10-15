@@ -1,0 +1,50 @@
+{
+  "pid": "Hy4556bRq",
+  "code": "ENSH302",
+  "title": "Copy Editing",
+  "description": "Introduces principal tasks of copy editing non-fiction print and electronic manuscripts to ensure they are correct, consistent, coherent and concise. Covers the copy editor's role, spelling, punctuation, editorial style features, usage and writing style. Practice in the skills of the professional copy editor, including using manual editing marks, copy editing manuscripts drawn from a variety of non-fiction sources and preparing an editorial style sheet.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 302, ENGL 303, ENGL 216 (if taken in the same topic).",
+    "This is a Professional Communication course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "ENSH101",
+          "ENSH102",
+          "ENSH103",
+          "ENSH201",
+          "ENSH202",
+          "ENGL135",
+          "ENGL146",
+          "ENGL147",
+          "ENGL215",
+          "ENGL225",
+          "ATWP135",
+          "ECON225",
+          "ENGR240",
+          "MDIA200",
+          "WRIT204A",
+          "WRIT204B",
+          "WRIT215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "BkPHh3J30",
+  "code": "PHYS333",
+  "title": "Introductory Quantum Computing",
+  "description": "Elementary introduction to quantum mechanics with special attention to two-level systems and entanglement. Manipulation of quantum systems. Quantum computing algorithms. Experiential learning component using commercially available quantum clouds.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 333, PHYS 223."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH110",
+      "MATH211"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "r14sa_T74",
+  "code": "PAAS220",
+  "title": "Intermediate Indonesian I",
+  "description": "A continuation of 121 for students who wish to improve their skills in Indonesian. Includes advanced grammar and use of simple newspaper materials to stimulate students' ability to read and discuss a variety of topics.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 220, SEA 200, SEA 200A.",
+    "Limited to 25 students per section."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "PAAS121"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

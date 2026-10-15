@@ -1,0 +1,15 @@
+{
+  "pid": "rkO7IMJDF",
+  "code": "SOCI356",
+  "title": "International Crimes and Social Justice",
+  "description": "Focuses on understanding international crimes, such as genocide and crimes against humanity, from sociological and criminological perspectives. It unpacks the historical formations of international crimes through the lenses of race/ethnicity, gender, and class, examines the key socio-legal concepts, and analyzes case studies. Topics may include the Residential School System in Canada, war crimes and international justice systems, and the internment of Japanese Canadians during the Second World War.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "SOCI 206 recommended prior to SOCI 356."
+  ]
+}

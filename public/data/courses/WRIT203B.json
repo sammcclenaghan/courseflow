@@ -1,0 +1,24 @@
+{
+  "pid": "S1PUbYpQV",
+  "code": "WRIT203B",
+  "title": "Playwriting Workshop",
+  "description": "A workshop in writing for the stage.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 203B, WRIT 203, CW 203."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "WRIT203A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

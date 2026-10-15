@@ -1,0 +1,16 @@
+{
+  "pid": "ryHv0lDR5",
+  "code": "ENSH311",
+  "title": "Crime and Detective Fiction",
+  "description": "Study of crime fiction and detective fiction. May include short stories, novels, film or other genres.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

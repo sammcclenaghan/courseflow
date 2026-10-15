@@ -1,0 +1,22 @@
+{
+  "pid": "Hy3WJO6mE",
+  "code": "CHEM699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "37–39",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM693"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

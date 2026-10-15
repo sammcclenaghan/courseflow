@@ -1,0 +1,39 @@
+{
+  "pid": "SJTQ1OaQ4",
+  "code": "CIVE352",
+  "title": "Reinforced Concrete Structural Design",
+  "description": "Strength and design of reinforced concrete structures; fundamental behaviour under various stresses; design of compression and flexural members, and use of innovative materials in reinforced concrete structures.\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [],
+  "credits": "2",
+  "hours": "3-1.5*-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE210",
+          "CIVE285"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE250",
+          "CIVE350"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

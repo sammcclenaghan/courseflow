@@ -1,0 +1,22 @@
+{
+  "pid": "Sytwli-Lo",
+  "code": "IED338",
+  "title": "Language Curriculum Development",
+  "description": "Introduces how to build effective indigenous language curriculum, looking at successful models locally and around the world, and applying these to different language learning and teaching contexts.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IED359"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

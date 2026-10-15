@@ -1,0 +1,26 @@
+{
+  "pid": "Hy6fwOhfh",
+  "code": "SENG477",
+  "title": "Safety and Assurance",
+  "description": "Methods for assuring safety and dependability in software-intensive systems, including: system safety; hazard analysis; formal specification; verification; model checking; theorem proving; temporal logic; assurance cases.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SENG275",
+      "SENG360"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Credit will be granted for only one of SENG 477, CSC 577, CSC 586C (if taken in same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ]
+}

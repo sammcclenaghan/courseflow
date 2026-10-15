@@ -1,0 +1,15 @@
+{
+  "pid": "BksQLYhyyl",
+  "code": "PHYS562",
+  "title": "MSc Student Seminar",
+  "description": "Seminar participants take turns presenting a paper on recent or historically relevant research.",
+  "notes": [
+    "This is a continuing course that is taken throughout the Masters program, but credit is not granted until completion of the program."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

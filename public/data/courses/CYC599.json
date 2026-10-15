@@ -1,0 +1,31 @@
+{
+  "pid": "ryVLeda7E",
+  "code": "CYC599",
+  "title": "Thesis",
+  "description": "Specialized research on a topic chosen in consultation with the student's supervisory committee. The thesis should be an original piece of research that would be suitable for publication in a professional journal or presentation at a professional meeting.",
+  "notes": [],
+  "credits": "4.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC558"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

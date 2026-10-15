@@ -1,0 +1,16 @@
+{
+  "pid": "BkgyFUdTXV",
+  "code": "GRS501",
+  "title": "Greek Literature",
+  "description": null,
+  "notes": [],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Complete 3.0 units of 300 or 400 level GREE courses or equivalent."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

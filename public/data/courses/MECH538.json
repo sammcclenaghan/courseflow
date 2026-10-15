@@ -1,0 +1,15 @@
+{
+  "pid": "r1_thuTQN",
+  "code": "MECH538",
+  "title": "Advanced Aircraft Design",
+  "description": "Unmanned Air Vehicles and related systems. Aircraft multidisciplinary design optimization. Development, manufacturing and operating processes and procedures. Flight test principles, instrumentation, planning, and operation of aerospace vehicle flight testing. Flight test measurements, static-system calibration, rate-of-climb performance, and determination of vehicle flight dynamics.",
+  "notes": [
+    "Credit will be granted for only one of MECH 538, MECH 475, MECH 580 (if taken in the same topic), ASE 504."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

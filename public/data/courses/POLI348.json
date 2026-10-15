@@ -1,0 +1,31 @@
+{
+  "pid": "B180Rua7V",
+  "code": "POLI348",
+  "title": "Security, War and Mass Violence in International Politics",
+  "description": "Conceptual and practical issues of security in international politics, including such topics as the causes of violent international conflict, maritime security, non-military threats to security, national security policies, co-operative international security, and alternatives to state-centred security.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "POLI240"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,28 @@
+{
+  "pid": "SkcMoKt_F",
+  "code": "ATWP250",
+  "title": "Genres of Business Communication",
+  "description": "Introduces conventional business communication genres, such as proposals, recommendation reports, letters, memos and email. Focus on writing for multiple audiences across varied cultural and organizational contexts. Emphasis on skills in business communication including collaborative writing, self-assessment, writing to inform, writing to persuade and professional standards.",
+  "notes": [
+    "Restricted to Pre-Core BCOM students"
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Complete 1.5 units of: an AWR-designated course"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

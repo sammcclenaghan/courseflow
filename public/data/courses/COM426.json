@@ -1,0 +1,44 @@
+{
+  "pid": "HkxFu1da7V",
+  "code": "COM426",
+  "title": "Management Accounting II",
+  "description": "Focuses on key management accounting tools for decision making, examining both quantitative and qualitative aspects of effective management control systems. Topics include cost behavior, costing systems (including process costing and activity-based costing), cost allocation methods, flexible budgeting, variance analysis, balanced scorecard, variable and absorption costing models and inventory management systems.",
+  "notes": [
+    "Credit will be granted for only one of COM 426, COM 450 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": "C+",
+            "minGpa": null,
+            "courses": [
+              "COM270",
+              "COM316",
+              "COM317"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum third-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

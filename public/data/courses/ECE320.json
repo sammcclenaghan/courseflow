@@ -1,0 +1,56 @@
+{
+  "pid": "S1FOe_6QV",
+  "code": "ECE320",
+  "title": "Electronic Devices I",
+  "description": "Operation and design of modern solid-state electronic devices and semiconductor integrated circuit technology. Electronic properties of silicon. Charge transport and carrier dynamics. Metal-semiconductor and pn junctions. Diodes. Operation and properties of bipolar and field-effect transistors, including metal-oxide-semiconductor (MOS) structures. Small-signal models and equivalent circuits. Ideal and non-ideal device behaviour. Design considerations with respect to device performance.",
+  "notes": [
+    "Credit will be granted for only one of ECE 320, ELEC 320."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE220",
+          "BME320"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH201",
+          "MATH204"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS110",
+          "PHYS111"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "with a minimum GPA of 3.0 over MATH 201 or 204, PHYS 110 and 111."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

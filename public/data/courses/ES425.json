@@ -1,0 +1,36 @@
+{
+  "pid": "Hy8SNO6QE",
+  "code": "ES425",
+  "title": "Flowering Plant Diversity",
+  "description": "A regional and worldwide survey of flowering plants, including morphological diversity and adaptations; plant evolution and phylogeny; species concepts; modern classification and nomenclature; and experimental approaches to the study of plant diversity. Labs emphasize identification and use of keys. Lab projects include the option of a pressed plant collection. Contact instructor for details and collecting equipment.",
+  "notes": [
+    "Credit will be granted for only one of ES 425, BIOL 449, BIOL 318."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL184",
+          "BIOL186"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "and minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "BIOL 324 recommended prior to ES 425."
+  ]
+}

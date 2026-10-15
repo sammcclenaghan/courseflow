@@ -1,0 +1,42 @@
+{
+  "pid": "r1OPlYT74",
+  "code": "SOCW391",
+  "title": "Indigenous Approaches to Healing and Helping",
+  "description": "Through direct interaction with Indigenous elders, political leaders and human service workers, students explore traditional and contemporary approaches used by Indigenous peoples to help and heal in their communities. Students are challenged to integrate these approaches into their own lives and social work practices",
+  "notes": [
+    "Limited to Indigenous students of North America or with permission of the department."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW311",
+          "SOCW312"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW312A",
+          "SOCW312B"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

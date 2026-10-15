@@ -1,0 +1,18 @@
+{
+  "pid": "ry6v9Kpael",
+  "code": "MLSC498",
+  "title": "Research Experience",
+  "description": "Experimental research under the direction of department members. For fourth-year students who wish to gain some experience in biochemical or microbiological research. Interested students should contact the course coordinator by the first week of classes.",
+  "notes": [
+    "Credit will be granted for only one of MLSC 498, BCMB 498."
+  ],
+  "credits": "0",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

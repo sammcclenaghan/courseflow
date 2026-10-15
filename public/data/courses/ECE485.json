@@ -1,0 +1,26 @@
+{
+  "pid": "Sk2tgOaQE",
+  "code": "ECE485",
+  "title": "Data Analysis and Pattern Recognition",
+  "description": "Statistical data analysis and random processes, ergodicity and stationarity, feature extraction and selection, Bayesian decision procedures, parametric and non-parametric pattern classification and clustering techniques. Applications to big data, data science, and computer security problems.",
+  "notes": [
+    "Credit will be granted for only one of ECE 485, ECE 535, ELEC 485, ELEC 535.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "STAT254",
+      "STAT260"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

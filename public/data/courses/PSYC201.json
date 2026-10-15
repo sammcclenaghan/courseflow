@@ -1,0 +1,35 @@
+{
+  "pid": "ByxKzJKpXV",
+  "code": "PSYC201",
+  "title": "Research Methods in Psychology",
+  "description": "Introduction to basic research techniques in psychology; emphasis on the conceptual rather than the statistical rationale underlying various research strategies. Areas include the nature of variables, types of measurement, how to generate and test hypotheses, types of validity, and how to interpret and report results. Laboratory exercises and class demonstrations on the processes involved in conducting empirical research.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 201, PSYC 200."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC100A",
+      "PSYC100B"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ATWP135",
+      "ATWP110"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

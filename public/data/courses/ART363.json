@@ -1,0 +1,67 @@
+{
+  "pid": "SJUVtDo-Wx",
+  "code": "ART363",
+  "title": "Advanced Digital Art",
+  "description": "Advanced focus on the expanded field of contemporary digital art practice. Explores experimental animation, creative coding, generative art, VR, AR, gaming software and net.art. Explorations align with individual interests.",
+  "notes": [],
+  "credits": "3",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART150"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART150E"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": {
+              "units": 3
+            },
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART155",
+              "ART156"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ART261",
+          "ART262"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

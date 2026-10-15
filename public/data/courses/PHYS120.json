@@ -1,0 +1,41 @@
+{
+  "pid": "H1vtCd6QV",
+  "code": "PHYS120",
+  "title": "Physics I",
+  "description": "Particle dynamics and curvilinear motion; force and momentum; rotational dynamics and angular momentum; kinetic and potential energy; special relativity.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 120, PHYS 110, PHYS 122.",
+    "Credit will be granted for only PHYS 112 (3.0 units) or two of PHYS 120, PHYS 130, PHYS 122, PHYS 125 (1.5 units each).",
+    "An enriched course in physics primarily intended for students who are planning a career in Physics or Astronomy.",
+    "This course may include tours of local physics research institutions."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "1.5 units of 100-level PHYS"
+      },
+      {
+        "type": "text",
+        "text": "Completed Physics 12 with a minimum grade of B (73%)"
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH100",
+      "MATH109"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

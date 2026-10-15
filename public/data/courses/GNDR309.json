@@ -1,0 +1,27 @@
+{
+  "pid": "By6M8_aX4",
+  "code": "GNDR309",
+  "title": "Masculinities",
+  "description": "Examines the various ways the question - who is a man? - can be answered by taking into account the intersections of race, sexualities, class and nationalism. Explores how these intersections are expressed in specific societal/historical contexts through power dynamics between \"hegemonic masculinities\" and a variety of subordinate manhoods.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 309, GNDR 329 (if taken in the same topic), WS 329 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

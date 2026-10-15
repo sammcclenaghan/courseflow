@@ -1,0 +1,24 @@
+{
+  "pid": "S19P3Op74",
+  "code": "MECH390",
+  "title": "Energy Conversion",
+  "description": "Thermal power generation, vapour and gas cycles, refrigeration and heat pumps. Compressible flow. Non reacting gas mixtures and psychometrics. Reacting mixtures, combustion. Exergy (ability to produce work) and second law analysis.",
+  "notes": [
+    "Indicates four 3 hour lab sessions."
+  ],
+  "credits": "1.5",
+  "hours": "3-1*-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH240"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

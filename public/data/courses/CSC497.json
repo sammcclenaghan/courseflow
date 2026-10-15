@@ -1,0 +1,16 @@
+{
+  "pid": "SJ8TJ_a74",
+  "code": "CSC497",
+  "title": "Interdisciplinary Project",
+  "description": "Research under the direction of a faculty member. The student is required to pursue an interdisciplinary project, prepare a written report and to present a seminar describing the work.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "0-0-6",
+  "prerequisites": {
+    "type": "text",
+    "text": "Fourth-year standing in a Computer Science Combined Program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

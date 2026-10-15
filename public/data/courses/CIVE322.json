@@ -1,0 +1,104 @@
+{
+  "pid": "HJ9NrnPPn",
+  "code": "CIVE322",
+  "title": "Dynamics",
+  "description": "Topics include: Kinematics and dynamics of rigid bodies; analysis of planar rigid body motion using translating and rotating axes; two-dimensional rigid body dynamics using force/acceleration, work/energy and impulse/momentum methods; applications to one degree of freedom planar mechanisms and vibrations; introduction to three-dimensional rigid body dynamics.\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 322, CIVE 242, MECH 242."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5*-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE250",
+          "CIVE350"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC110",
+          "CSC111"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR141"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH101"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS110",
+          "PHYS120"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH200",
+          "MATH201",
+          "MATH204"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

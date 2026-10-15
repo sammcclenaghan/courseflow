@@ -1,0 +1,25 @@
+{
+  "pid": "rkQM0PT7N",
+  "code": "BIOC409",
+  "title": "Mass Spectrometry in the Life Sciences",
+  "description": "Introduction to mass spectrometry for biological applications. Includes review of mass analyzers and ionization methods; analytical strategies for the detection, characterization and quantification of proteins and metabolites; use of tandem mass spectrometry to determine protein sequence and metabolite structure; identification and localization of protein post-translational modifications; application of proteomics methods to drug development, clinical screening and characterizing molecular interactions; introductory informatics; and use of metabolomics and proteomics in health research.",
+  "notes": [
+    "Credit will be granted for only one of BIOC 409, BCMB 489 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOC300A",
+      "BIOC300B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,42 @@
+{
+  "pid": "S1IOhup7E",
+  "code": "MECH458",
+  "title": "Mechatronics",
+  "description": "Introduction to mechatronic systems, modelling of mixed mechatronic systems, microcontroller programming and interfacing, data acquisition, sensors and actuators, control architectures and case studies in mechatronics systems.\n*Indicates a 2 hour laboratory taken by students on alternate weeks.",
+  "notes": [
+    "Credit will be granted for only one of MECH 458, MECH 355, MECH 405, MECH 486, MECH 554.",
+    "A combined undergraduate and graduate course"
+  ],
+  "credits": "1.5",
+  "hours": "3-1*-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC110",
+          "CSC111"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE216",
+          "ELEC216"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

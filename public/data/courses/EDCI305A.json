@@ -1,0 +1,19 @@
+{
+  "pid": "B1gqvWdpm4",
+  "code": "EDCI305A",
+  "title": "Drama Education as a Medium for Learning I",
+  "description": "An overview of the theory and practice of drama in education based on the current curriculum in elementary and middle school. Through a workshop format, students explore the principles and methods of instruction for initial classroom implementation.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 305A, EDCI 305, EDCI 313, DE 204, DE 304, EDUC 305.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a program in Teacher Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

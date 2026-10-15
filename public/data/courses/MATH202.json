@@ -1,0 +1,25 @@
+{
+  "pid": "Sk6kh_am4",
+  "code": "MATH202",
+  "title": "Intermediate Calculus for CSC and EOS",
+  "description": "Vectors, curves, and surfaces in space; partial differentiation; directional derivatives and the gradient vector; Taylor's theorem for a function of two variables; introduction to differential equations.",
+  "notes": [
+    "Credit will be granted for only one of MATH 202, MATH 200, MATH 205.",
+    "Not open to students with credit in MATH 201 or MATH 204."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH101"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

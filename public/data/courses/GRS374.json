@@ -1,0 +1,15 @@
+{
+  "pid": "rkgsP8da7V",
+  "code": "GRS374",
+  "title": "Pompeii and Herculaneum",
+  "description": "Explores two well-preserved ancient cities and their environs, in an effort to determine what they reveal about urban life in Roman Italy. Attention is given to urban planning and infrastructure, domestic architecture, the messages of graffiti, commercial and industrial life, and the daily activities of inhabitants.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "GRS 203 or GRS 372 recommended prior to GRS 374."
+  ]
+}

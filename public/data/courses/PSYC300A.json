@@ -1,0 +1,34 @@
+{
+  "pid": "B1yQkK6QE",
+  "code": "PSYC300A",
+  "title": "Statistical Methods in Psychology",
+  "description": "Brief review of research methodology; univariate description, bivariate description and an introduction to probability and inferential statistics as applied in Psychology. Introduction to microcomputer software and computer based analyses of the statistical procedures covered in the course.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 300A, PSYC 300.",
+    "See \"Credit Limit - Beginning Level Statistics Courses\"."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC201"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

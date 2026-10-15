@@ -1,0 +1,51 @@
+{
+  "pid": "SJeN7r_aXE",
+  "code": "GEOG323",
+  "title": "Digital Mapping",
+  "description": "Introduces thematic mapping. Emphasis on cartographic data manipulation, generalization and symbolization; map design, visualization and communication.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG222"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "GEOG226"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "1.5 units minimum 200 level STAT or equivalent"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

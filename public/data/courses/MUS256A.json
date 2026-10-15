@@ -1,0 +1,53 @@
+{
+  "pid": "rJfgpOTmN",
+  "code": "MUS256A",
+  "title": "Introduction to Instrumental and Choral Conducting I",
+  "description": "Emphasis on school-based repertoire.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MUS101A",
+              "MUS101B",
+              "MUS102A",
+              "MUS102B",
+              "MUS111"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 2,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MUS170A",
+              "MUS170B",
+              "MUS171A",
+              "MUS171B"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

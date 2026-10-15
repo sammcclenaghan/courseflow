@@ -1,0 +1,26 @@
+{
+  "pid": "ryEEV_6XN",
+  "code": "ES312",
+  "title": "Environmental Economics",
+  "description": "An introduction to the economic analysis of environmental problems. Topics typically include a review of externalities, an introduction to policy intervention and the measurement of environmental costs and benefits. The application of these concepts to environmental problems in developed and developing countries and at the global level.",
+  "notes": [
+    "Credit will be granted for only one of ES 312, ECON 330, ECON 381."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON103",
+      "ECON103C",
+      "ECON180"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

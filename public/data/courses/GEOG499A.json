@@ -1,0 +1,28 @@
+{
+  "pid": "HyDwHupQV",
+  "code": "GEOG499A",
+  "title": "Honours Thesis",
+  "description": "Students prepare the first part of an honours thesis under the direction of a faculty member from the department.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 499A, GEOG 499, GEOG 499B.",
+    "GEOG 499A and B are \"tied\" courses and must be taken in consecutive terms except with permission of the department. Credit and final grade for GEOG 499B will be assigned only upon completion of both courses; if 499B is not completed, a grade equivalent to N will be assigned to 499A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "declared Honours in Geography."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

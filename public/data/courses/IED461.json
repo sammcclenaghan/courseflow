@@ -1,0 +1,24 @@
+{
+  "pid": "S1w9R6UaB",
+  "code": "IED461",
+  "title": "Final Elementary Practicum",
+  "description": "Deepening the practice of making professional choices for teaching and learning in holistic, Indigenous, integrative and culturally reflective ways, developing inter-professional practices with families and in community. A full-time practicum in a BC ministry approved school meeting the requirements for certification.",
+  "notes": [
+    "Credit will be granted for only one of IED 461, ED-P 400A, ED-P 400B, ED-P 400C, ED-P 400D, ED-P 461."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IED361"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

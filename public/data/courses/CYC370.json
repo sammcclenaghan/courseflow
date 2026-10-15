@@ -1,0 +1,47 @@
+{
+  "pid": "rJ3EeO674",
+  "code": "CYC370",
+  "title": "Applying Assessment and Case Planning in CYC Practice",
+  "description": "An advanced focus on the continued development of interpersonal and communication strategies for working with children, youth, families and their communities. Students practice intake interviewing, assessments, intervention planning and implementation, case management and reporting and integrate decolonizing and social justice perspectives, ethical practice approaches and developmental and contextual analyses into all aspects of their work, and in that way, continue to develop their CYC praxis skills.",
+  "notes": [
+    "Credit will be granted for only one of CYC 370, CYC 474.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC210",
+          "CYC210A",
+          "CYC211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC205",
+          "CYC206"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to an undergraduate program in the School of Child and Youth Care."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

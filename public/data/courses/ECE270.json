@@ -1,0 +1,48 @@
+{
+  "pid": "rJxkc44Ka",
+  "code": "ECE270",
+  "title": "Cyber-Physical Systems and Internet of Things",
+  "description": "Core OS services and constructs, embedded platforms, power budgets, computational efficiency, hardware-software interplay, cyber-security and privacy considerations, and system life cycles.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC230",
+      "ECE255"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG265"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE260",
+          "ECE265"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

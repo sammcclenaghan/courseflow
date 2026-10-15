@@ -1,0 +1,25 @@
+{
+  "pid": "S1G_0DamE",
+  "code": "BIOL499B",
+  "title": "Honours Thesis II",
+  "description": "Continuation of a research project conducted under the direction of a faculty member.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 499B, BIOL 499.",
+    "Open to Honours students only. BIOL 499A and BIOL 499B are \"tied\" courses and must be taken in consecutive terms except with permission of the department. Credit for BIOL 499A will be assigned only upon successful completion of both courses."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL499A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

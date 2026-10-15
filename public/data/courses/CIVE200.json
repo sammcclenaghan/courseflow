@@ -1,0 +1,39 @@
+{
+  "pid": "ByeIm1_a74",
+  "code": "CIVE200",
+  "title": "Engineering Drawing",
+  "description": "Engineering drawing: sketching; orthographic projections; multiple views; sectional views; isometric and perspective projections; dimensions and tolerances; working drawings. Computer aided design relevant to Civil Engineering projects.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC110",
+          "CSC111"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

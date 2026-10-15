@@ -1,0 +1,53 @@
+{
+  "pid": "H1cVBupmN",
+  "code": "GEOG370",
+  "title": "Methods in Hydrology",
+  "description": "An overview of hydrological processes, measurement techniques and data analysis. The movement of water in the hydrologic cycle via precipitation, interception, evapotranspiration, surface runoff, infiltration, soil moisture, groundwater flow and streamflow generation are examined. Applied aspects and local examples are discussed. Involves laboratory assignments and a field trip.",
+  "notes": [
+    "Note: EOS 340 can be taken as a prerequisite or a corequisite."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "GEOG272"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "EOS340"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "1.5 units 100 level Math"
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

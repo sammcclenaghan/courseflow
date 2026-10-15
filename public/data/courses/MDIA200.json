@@ -1,0 +1,16 @@
+{
+  "pid": "HyVj9LZJi",
+  "code": "MDIA200",
+  "title": "Media in the 21st Century",
+  "description": "Surveys the cultural and material roles media play around the world in the 21st century. Emphasis on building a common vocabulary for studying media as well as understanding how audio, images, video, and text mediate people’s relation to culture.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "corequisites": null,
+  "recommendations": []
+}

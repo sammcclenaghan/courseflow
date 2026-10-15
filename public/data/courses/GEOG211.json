@@ -1,0 +1,33 @@
+{
+  "pid": "SkgvGHOpQN",
+  "code": "GEOG211",
+  "title": "Political and Economic Geography",
+  "description": "Examines the major thematic concerns that have traditionally shaped the sub-disciplines of political and economic geography, while also engaging with emerging issues that are likely to become focal points in shaping future debates. Explores the co-constitutive relationship between politics, economics and space.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 211, GEOG 201A, GEOG 201B."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG101B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum second-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

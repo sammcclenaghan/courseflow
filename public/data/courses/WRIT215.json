@@ -1,0 +1,24 @@
+{
+  "pid": "HyetIZY6QE",
+  "code": "WRIT215",
+  "title": "Journalism and Professional Writing",
+  "description": "The theory and practice of journalism, publishing, and media studies.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 215, WRIT 205."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "WRIT102"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

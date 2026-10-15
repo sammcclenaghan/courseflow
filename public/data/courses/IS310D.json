@@ -1,0 +1,30 @@
+{
+  "pid": "HJCpMYSRr",
+  "code": "IS310D",
+  "title": "LE,NONET Preparation Seminar",
+  "description": "Introduces Indigenous (First Nations, Métis, Inuit, non-status) students to knowledge and skills necessary for working with Indigenous communities and organizations, or with campus-based academic researchers, through a Research Apprenticeship or Community Internship. Provides an introduction to Western and Indigenous research methodologies.",
+  "notes": [
+    "Credit will be granted for only one of IS 310D, IS 220, IS 310, 310A, IS 310B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "permission of the LE,NONET program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "One of IS 101, IS 201, CYC 230, GNDR 203, POLI 263, ANTH 201, SOCI 103 recommended prior to IS 310D.",
+    "LE,NONET courses are reserved for Indigenous students."
+  ]
+}

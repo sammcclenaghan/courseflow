@@ -1,0 +1,26 @@
+{
+  "pid": "S1Gg6utNw",
+  "code": "MECH442",
+  "title": "Heating, Ventilation and Air Conditioning",
+  "description": "Theory and analysis of standard HVAC components and systems. Review of thermodynamics and multimode heat and mass transfer. Thermal comfort, sensible heat and heating and cooling loads for buildings. HVAC system needs and classifications. Review of fluid mechanics, fan and duct design, energy conservation and green design principles.",
+  "notes": [
+    "Credit will be granted for only one of MECH 442, MECH 450A (if taken in the same topic), MECH 450B (if taken in the same topic), MECH 450C (if taken in the same topic), MECH 450D (if taken in the same topic), MECH 450E (if taken in the same topic), MECH 450F (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH240",
+      "MECH345",
+      "MECH395"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

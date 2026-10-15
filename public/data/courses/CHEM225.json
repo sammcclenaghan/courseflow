@@ -1,0 +1,25 @@
+{
+  "pid": "BkxoZYT7V",
+  "code": "CHEM225",
+  "title": "Introduction to Inorganic Chemistry",
+  "description": "Models and tools for understanding periodicity, structure, bonding and reactivity. In the tutorials examples illustrate concepts and relevant spectroscopy.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 222, CHEM 225.",
+    "Students with credit in CHEM 232 should register in CHEM 222."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM102"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

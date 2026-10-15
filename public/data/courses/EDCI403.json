@@ -1,0 +1,19 @@
+{
+  "pid": "B1jdWOp74",
+  "code": "EDCI403",
+  "title": "Curriculum and Instruction in Elementary or Middle School Science",
+  "description": "A study of the curriculum organization, instructional strategies and assessment practices in elementary or middle school science. Includes consideration of the nature of science, the interactions of science, technology, society and environment and the content, processes and attitudes prescribed in the provincial curriculum.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 403, EDCI 413, ED-E 745, EDUC 403, IED 403.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a program in Teacher Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

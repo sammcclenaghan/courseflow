@@ -1,0 +1,28 @@
+{
+  "pid": "HJWS5dp7N",
+  "code": "IED250",
+  "title": "Indigenous Language Teaching Preparation Seminar",
+  "description": "Designed to support a language field experience. Orients to multiple roles and responsibilities of school and community language practitioners as well as exploring different methods of knowledge and language mobilization. Preparation through lesson development, unit planning, linking outcomes to delivery and assessment for language teaching, movement and language, and language in community contexts.",
+  "notes": [
+    "Credit will be granted for only one of IED 250, IED 287 (if taken in the same topic).",
+    "Planning may be done in pairs as a co-teaching model when possible."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Registration in Diploma program in Indigenous Language Revitalization"
+      },
+      {
+        "type": "text",
+        "text": "or permission from the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

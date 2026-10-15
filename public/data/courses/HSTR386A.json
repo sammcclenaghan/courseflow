@@ -1,0 +1,27 @@
+{
+  "pid": "SJzz5hR_Y",
+  "code": "HSTR386A",
+  "title": "Ocean History and Changing Human Relationships with the Sea",
+  "description": "From surf culture to saving the whales, dominant views of the ocean have evolved over time. Investigates values that societies have associated with the ocean over time, the origin of these values and issues of power and exclusion from ocean spaces. Material spans the time period 14,000 BCE to present, with a focus on the development of 20th-century perspectives on ocean sustainability, such as marine mammal conservation, fisheries management and ecosystem recovery.​",
+  "notes": [
+    "Credit will be granted for only one of HSTR 386A, ES 345, ES 382 (if taken in the same topic), HSTR 371 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

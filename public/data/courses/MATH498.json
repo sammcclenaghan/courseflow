@@ -1,0 +1,16 @@
+{
+  "pid": "r1gaM3uTmN",
+  "code": "MATH498",
+  "title": "Seminar and Independent Project",
+  "description": "Seminar and research project under the direction of a faculty member. The student is required to pursue an independent project, to prepare a written report and to present a seminar describing the work. The seminar is open to attendance by all students, faculty and academic visitors of the department. Only available in areas of faculty interest.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "1.5-4.5-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

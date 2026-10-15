@@ -1,0 +1,29 @@
+{
+  "pid": "BJS4gdaQ4",
+  "code": "CYC310A",
+  "title": "Practicum II by Prior Learning Assessment (PLA)",
+  "description": "Third-year practicum challenge. Present evidence of significant prior learning and practice experience in the form of a portfolio which specifically demonstrates the learning objectives and outcomes required in CYC310/311.",
+  "notes": [
+    "Credit will be granted for only one of CYC 310A, CYC 310, CYC 311.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites.",
+    "Students with significant work and/or volunteer experience in Child and Youth Care may complete this practicum by Prior Learning Assessment."
+  ],
+  "credits": "4.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to an undergraduate program in the School of Child and Youth Care"
+      },
+      {
+        "type": "text",
+        "text": "Academic writing requirement satisfied"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,26 @@
+{
+  "pid": "SylR2dTXN",
+  "code": "MRNE475",
+  "title": "Applied Data Analysis in Marine Science",
+  "description": "Principles of study design and data analysis illustrated by lecture material, current research and research seminars. Students acquire experience using the statistical computing language R.",
+  "notes": [
+    "This is a field course offered at the Bamfield Marine Sciences Centre for upper level Biology credit. Please visit the Bamfield Marine Sciences Centre website for more information."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL215",
+      "BIOL225",
+      "BIOL230"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

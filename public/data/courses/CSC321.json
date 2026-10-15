@@ -1,0 +1,66 @@
+{
+  "pid": "S12P0cHRkx",
+  "code": "CSC321",
+  "title": "Introduction to Artificial Intelligence",
+  "description": "An introduction to the basic concepts and techniques of Artificial Intelligence. Topics include heuristics, searching, knowledge representation, neural networks and feature spaces.",
+  "notes": [
+    "Credit will be granted for only one of CSC 321, CSC 421, CENG 420, ECE 470."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC226"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC120",
+          "ENGR130"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG226",
+          "PSYC300A",
+          "STAT252",
+          "STAT254",
+          "STAT255",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

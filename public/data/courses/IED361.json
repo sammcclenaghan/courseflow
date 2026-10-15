@@ -1,0 +1,36 @@
+{
+  "pid": "r1WYsn8pr",
+  "code": "IED361",
+  "title": "Six-Week Practicum",
+  "description": "6-week full-time placement designed for gaining practicum experience in aligning Indigenous pedagogical decisions with diverse contexts and learners.",
+  "notes": [
+    "Credit will be granted for only one of IED 361, ED-P 300A, ED-P 300B, ED-P 361."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to BEd in Indigenous Language Revitalization or to the BEd post-degree professional program in Indigenous Education – Elementary"
+      },
+      {
+        "type": "text",
+        "text": "or permission from the department."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IED360"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

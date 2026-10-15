@@ -1,0 +1,45 @@
+{
+  "pid": "r10WCPpmV",
+  "code": "BIOC300B",
+  "title": "General Biochemistry II",
+  "description": "BIOC 300A and 300B are intended to provide detailed coverage of foundation topics for students majoring in biochemistry or microbiology. Metabolic processes and their control, as well as structure and function of DNA, RNA and genes.",
+  "notes": [
+    "Credit will be granted for only one of BIOC 300B, BIOC 300."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOC300A",
+          "BIOL225",
+          "CHEM231"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM232",
+          "CHEM234",
+          "CHEM235"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "A minimum grade of C+ in all prerequisites recommended."
+  ]
+}

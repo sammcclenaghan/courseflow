@@ -1,0 +1,40 @@
+{
+  "pid": "BkeG1xYpmE",
+  "code": "SENG365",
+  "title": "Software Systems Development",
+  "description": "Specification, design, construction, testing and evolution of modern software systems using software tooling, within the context of socially and professionally relevant domains.",
+  "notes": [
+    "Credit will be granted for only one of SENG 365, CSC 365."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG265"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC120",
+          "ENGR130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

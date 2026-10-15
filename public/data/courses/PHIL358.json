@@ -1,0 +1,27 @@
+{
+  "pid": "SyULROTXN",
+  "code": "PHIL358",
+  "title": "Theory of Perception",
+  "description": "A study of philosophical issues that pertain both to the psychology of perception and the theory of knowledge. Includes the respective merits of realist, representationalist and phenomenalist theories of perception.",
+  "notes": [
+    "Credit will be granted for only one of PHIL 358, PHIL 418, PHIL 453."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "4.5 units of PHIL courses"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

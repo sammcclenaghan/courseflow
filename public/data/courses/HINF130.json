@@ -1,0 +1,15 @@
+{
+  "pid": "Hye_aPu6mE",
+  "code": "HINF130",
+  "title": "Introduction to Health Information Technology",
+  "description": "Health information systems are comprised of computer programs generated using a variety of data manipulation and management techniques. Covers the general application of databases and spreadsheets to health information management. In addition, many specific health care applications such as electronic health records, mobile health applications, medical graphics, multi-media medical information systems, public health information systems, decision support systems, networked systems, wearable health applications and bioinformatics are addressed.",
+  "notes": [
+    "Credit will be granted for only one of HINF 130, HINF 172."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

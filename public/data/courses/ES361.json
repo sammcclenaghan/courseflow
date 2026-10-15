@@ -1,0 +1,38 @@
+{
+  "pid": "SyFE4d6mN",
+  "code": "ES361",
+  "title": "The Biodiversity of British Columbia",
+  "description": "An overview of British Columbia's globally significant biodiversity. We examine species distribution patterns, use and conservation, including academic and government research and management. Lectures and field trips include synthesis of patterns of biodiversity, management success and failure and future biodiversity conservation and use in BC. Course goals include developing a deep understanding of the patterns of biodiversity in BC, explaining the reasons for these patterns and identifying numerous species and their importance.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ES200"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ES240",
+          "BIOL215"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

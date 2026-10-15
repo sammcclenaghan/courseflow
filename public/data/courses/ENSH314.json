@@ -1,0 +1,18 @@
+{
+  "pid": "HybL4bwCc",
+  "code": "ENSH314",
+  "title": "Young Adult Fiction",
+  "description": "Study of fiction created for young adult readers.",
+  "notes": [
+    "Credit will only be granted for one of ENSH 314, ENGL 230 (if taken 202001)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

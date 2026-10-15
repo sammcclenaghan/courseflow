@@ -1,0 +1,19 @@
+{
+  "pid": "BJFEaPa7V",
+  "code": "AHVS460",
+  "title": "Seminar in Modern Art I (1870-1945)",
+  "description": "Intensive study of artistic practice in the modern period. Geographic and cultural area and choice of issue may vary depending on instructor.\nRevising MTO to reflect policy language.",
+  "notes": [
+    "Credit will be granted for only one of AHVS 460, HA 460 (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum fourth-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,50 @@
+{
+  "pid": "rybPwn_T7V",
+  "code": "MECH330",
+  "title": "Introduction to Mechanical Vibrations",
+  "description": "Vibrations of single degree of freedom systems; free undamped and damped vibration characteristics, harmonic forcing, frequency response functions, Fourier series method for periodic forcing. Multi degree of freedom systems; frequencies and modes analysis, matrix methods, and orthogonality of modes. Free and forced vibration characteristics of undamped and damped multi degree of freedom systems. Applications in vibration isolation and control.\n*Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1.5*-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH220",
+          "MECH242"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH201",
+          "MATH204"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

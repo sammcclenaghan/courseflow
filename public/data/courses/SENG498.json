@@ -1,0 +1,31 @@
+{
+  "pid": "HyexlK6mN",
+  "code": "SENG498",
+  "title": "Honours Thesis",
+  "description": "A major engineering design and research project under the supervision of a faculty member. The work involves independent study of the current literature and independent research and design. At the end of the term, each student submits a report and discusses the findings in an oral presentation.",
+  "notes": [
+    "Normally taken over two terms. This course may only be taken once replacing two technical electives."
+  ],
+  "credits": "3",
+  "hours": "2-18-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "All required 300-level courses in the Software Engineering Program"
+      },
+      {
+        "type": "text",
+        "text": "minimum GPA of 7.0 over all required 3rd year courses"
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

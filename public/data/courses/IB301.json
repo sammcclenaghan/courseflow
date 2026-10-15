@@ -1,0 +1,19 @@
+{
+  "pid": "rk5X9O6mE",
+  "code": "IB301",
+  "title": "The International Environment of Business",
+  "description": "Aspects of the global business environment with emphasis on the reasons for international trade, economic structure of the world marketplace, and the important trading relations among nations.",
+  "notes": [
+    "Not open to students registered in or with credit in COM 361.",
+    "Not available for supplemental. Not open to BCom students; not intended for students seeking entry to Bachelor of Commerce program. Credit will not be granted toward the Bachelor of Commerce program."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum third-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

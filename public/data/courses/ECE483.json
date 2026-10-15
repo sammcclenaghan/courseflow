@@ -1,0 +1,26 @@
+{
+  "pid": "r1sFxuTmV",
+  "code": "ECE483",
+  "title": "Digital Video Processing",
+  "description": "Representation of digital video. Image formation models. Spatio-temporal sampling and sampling structure conversion. Two- and three-dimensional motion estimation techniques. Optical flow, block-based and pel-recursive methods for motion estimation. Still image and video compression methods and standards. Interframe compression and model-based methods for video compression. Digital video systems and applications.",
+  "notes": [
+    "Credit will be granted for only one of ECE 483, ECE 583, ELEC 483, ELEC 583.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE310",
+      "ECE315"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

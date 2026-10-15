@@ -1,0 +1,33 @@
+{
+  "pid": "S1uTvO67N",
+  "code": "HINF115",
+  "title": "Programming for Health Care",
+  "description": "Computer programming for health care information technology and systems development are covered. Topics include languages for scripting, programming, and data exchange and visualization in health care information systems. Examples and techniques tailored to health care applications are emphasized, such as programming for health decision support, electronic health records and mobile health applications. Open source system programming and prototyping for health care are also covered.",
+  "notes": [
+    "Credit will be granted for only one of HINF 115, CSC 130.",
+    "Students not Majoring in Health Information Science may request permission to register in the course."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Foundations of Math 12"
+      },
+      {
+        "type": "text",
+        "text": "Mathematics 12"
+      },
+      {
+        "type": "text",
+        "text": "Pre-calculus 12"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

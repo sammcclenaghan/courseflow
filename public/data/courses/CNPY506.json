@@ -1,0 +1,27 @@
+{
+  "pid": "S1ofng3GJe",
+  "code": "CNPY506",
+  "title": "Ethics and Legal Issues in Counselling",
+  "description": "An examination of professional, ethical and legal issues related to practice and research in counselling. Personal beliefs, values and biases are examined, as well as the professional codes and literature of the discipline.",
+  "notes": [
+    "Credit will be granted for only one of CNPY 506, ED-D 519C, ED-D 591 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to MA program in Counselling Psychology"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

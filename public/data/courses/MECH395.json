@@ -1,0 +1,23 @@
+{
+  "pid": "SyiD3u6Q4",
+  "code": "MECH395",
+  "title": "Heat Transfer",
+  "description": "Heat transfer modes. Analysis of steady and transient conduction in solids. Principles of convection: heat transfer under laminar and turbulent flow over flat plates and around bodies; convective heat transfer inside pipes. Thermal radiation physics and radiation between multiple black and gray surfaces.\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1.5*-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH240",
+      "MECH345"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

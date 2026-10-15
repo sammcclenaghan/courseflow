@@ -1,0 +1,23 @@
+{
+  "pid": "HJxADOpmN",
+  "code": "HINF265",
+  "title": "Health Care Delivery Organizational Models",
+  "description": "An introduction to the ways in which health organizations are managed and financed to deliver health care. Topics may include: organization theory, power and culture, division of labour, command and control in health care versus other industries, governance structures and integrated delivery system models.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "HINF140",
+      "HINF230"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

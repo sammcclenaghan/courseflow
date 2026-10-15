@@ -1,0 +1,37 @@
+{
+  "pid": "BkZRtO6XE",
+  "code": "HSTR450",
+  "title": "The Holocaust",
+  "description": "Examines the origins, progression, central characters and legacies of the Nazi genocide. Focuses on Jewish experiences of Nazi terror and investigates how Nazi racial policy targeted other social and ethnic groups. Considers the post-1945 representation of the Holocaust in film, museum exhibits and memorials.",
+  "notes": [
+    "Credit will be granted for only one of HSTR 450, HSTR 520, GMST 580, HIST 387, HIST 389 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HSTR240A",
+          "HSTR240B",
+          "HSTR344B",
+          "HSTR350B",
+          "GMST354"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,26 @@
+{
+  "pid": "B1PJ40dzH",
+  "code": "CIVE458",
+  "title": "Timber Structures",
+  "description": "Timber structures; physical and mechanical properties of wood; engineered wood products and systems; design requirements of timber structures; design of timber beams, columns, shear walls and diaphragms; connections and cross laminated timber structures.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 458, CIVE 480F (if taken in the same topic), CIVE 558.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CIVE285",
+      "CIVE351"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

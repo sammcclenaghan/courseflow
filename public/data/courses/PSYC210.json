@@ -1,0 +1,23 @@
+{
+  "pid": "Hk9MyKpm4",
+  "code": "PSYC210",
+  "title": "Conceptual Foundations of Psychology",
+  "description": "Provides students with the background necessary to facilitate a full appreciation of upper-level courses. Current problems in psychology are examined with reference to outstanding past and present persons and issues.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC100A",
+      "PSYC100B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

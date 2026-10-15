@@ -1,0 +1,37 @@
+{
+  "pid": "rkl5lWtamE",
+  "code": "THEA261",
+  "title": "Costume Design I",
+  "description": "An introduction to the design principles, drawing techniques, and materials of costume design for the stage and other media.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "1-2-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA103",
+          "THEA104",
+          "THEA105",
+          "THEA106",
+          "THEA120A",
+          "THEA206"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

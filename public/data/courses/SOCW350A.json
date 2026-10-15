@@ -1,0 +1,28 @@
+{
+  "pid": "ByVvlY67E",
+  "code": "SOCW350A",
+  "title": "Social Work, Social Justice and the Law",
+  "description": "Examines theoretical, legal and critical perspectives of Indigenous law and Canadian law including the legal system and the legal processes that have an impact on professional social work practice. Critically examines the interplay between marginalization, structural inequalities, social work, social justice, Indigenous legal orders and Canadian law. Focuses on developing skills in critical reflection, intersectional analysis and socially just social work practice.",
+  "notes": [
+    "Credit will be granted for only one of SOCW 350A, SOCW 350, CYC 350A.",
+    "Students not majoring in Social Work but in their third- or fourth year may request permission to register in the course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Bachelor of Social Work program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

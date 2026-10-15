@@ -1,0 +1,16 @@
+{
+  "pid": "Byep8od6XE",
+  "code": "LAW343E",
+  "title": "Topics in Experiential Learning",
+  "description": "Provides experiential learning opportunities such as field schools, clinical placements and intensive courses that respond to contemporary legal problems.",
+  "notes": [],
+  "credits": "0.5–7.5",
+  "hours": "1-0-0 to 15-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Set by department depending upon topic."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

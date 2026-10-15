@@ -1,0 +1,32 @@
+{
+  "pid": "BkZPTu67V",
+  "code": "NURA518",
+  "title": "Health Policy and Praxis",
+  "description": "Provides an applied approach to the concepts, conceptual frameworks, procedures and techniques of evidence-based health policy and politics. Through learning activities and in collaboration with a field guide, students engage in a minimum of 104 practice hours to enhance understanding of policy-making processes and how evidence can integrate with policy in the health sector and advanced practice nursing.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURA516"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

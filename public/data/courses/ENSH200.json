@@ -1,0 +1,28 @@
+{
+  "pid": "rk2ryv6ks",
+  "code": "ENSH200",
+  "title": "Foundations of Writing Literary Criticism",
+  "description": "Introduces basic categories and problems of literary criticism. Skills include close reading, using critical vocabulary, using textual evidence and contextual information, and writing confidently about literature.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 200, ENGL 209."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ENGL146",
+      "ENGL147",
+      "ENSH101",
+      "ENSH102",
+      "ENSH103"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

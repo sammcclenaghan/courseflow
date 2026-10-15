@@ -1,0 +1,24 @@
+{
+  "pid": "rkzYZOpQN",
+  "code": "EDCI428",
+  "title": "Adapting Mathematics Curriculum and Instruction",
+  "description": "Development and use of instructional methods and materials appropriate for children with learning difficulties in mathematics. Ways of adapting curricula and instruction in other content areas and technological support for children with special education needs are also considered.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 428, EDCI 424B, EDUC 422, EDUC 422B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-D420"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,15 @@
+{
+  "pid": "Hkbn6ZV3U",
+  "code": "CIVE503",
+  "title": "Simulation and Optimization of Designs and Flows",
+  "description": "Simulation and optimization tools for modeling design performance and configuring designs and operation modes. Numerical and analytical simulation, machine learning methods, meta-heuristic optimization (e.g. genetic algorithms) and linear programming. Literature and Python-based computational tools are applied to a specific problem; results are assessed and communicated in a conference-style paper.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 503, CIVE 580 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

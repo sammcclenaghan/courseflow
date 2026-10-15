@@ -1,0 +1,45 @@
+{
+  "pid": "HkIo1OaXN",
+  "code": "CSC423",
+  "title": "Randomized Algorithms",
+  "description": "Basic techniques in design and analysis of randomized algorithms moments and deviations, Markov chains and random walks, martingales and algebraic techniques. The probabilistic method. Random structures and complexity. Parallel algorithm. Routing networks. Combinatorial optimization. Data structure. Approximate solutions to intractable problems. Cryptography. Pattern matching and computational geometry.",
+  "notes": [
+    "Credit will be granted for only one of CSC 423, CSC 523.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "B+",
+        "minGpa": null,
+        "courses": [
+          "CSC226"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "SyRd5O6mN",
+  "code": "INGH452",
+  "title": "Indigenous Understandings of Healing and Wellness",
+  "description": "Expands students’ understanding of Indigenous epistemologies and practices related to health and wellness. Particular emphasis is placed on the role of spirituality and ceremony as well as that of Elders and traditional healers. Students gain insights into how traditional practices are used within diverse Indigenous communities.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "HLTH 253"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

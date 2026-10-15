@@ -1,0 +1,35 @@
+{
+  "pid": "BJAhmuaQE",
+  "code": "EOS403",
+  "title": "Global Biogeochemical Cycles",
+  "description": "Organic matter is studied from its formation (primary production) through its transformation and destruction during transport, depositional, and diagenetic remineralization processes. Global carbon, nitrogen, phosphorous, and sulphur cycles are discussed. Emphasis is placed on describing the fluxes of nutrients and other major compounds within and across the interface of soils, and the sedimentary and water columns.",
+  "notes": [
+    "Normally offered in alternate years.",
+    "Students are advised to consult with the department to determine when this is offered."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS240",
+          "EOS335"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,40 @@
+{
+  "pid": "B1Y4yuaXN",
+  "code": "CIVE485",
+  "title": "Foundation Engineering",
+  "description": "Soil Investigation Programs. Soil Classification Analyses. Failure modes and bearing capacity of shallow foundations. Vertical stress distribution below a shallow foundation. Primary consolidation settlement of shallow foundations on cohesive and non-cohesive soils. Pile foundations under vertical and lateral loads. Analytical techniques for shallow and deep foundation systems design, lope stability and retaining walls design.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 485, CIVE 480A (if taken in the same topic), CIVE 480B (if taken in the same topic), CIVE 480C (if taken in the same topic), CIVE 480D (if taken in the same topic), CIVE 480E (if taken in the same topic), CIVE 480F (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE220",
+          "MECH220"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE285"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

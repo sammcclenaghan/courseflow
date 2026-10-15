@@ -1,0 +1,18 @@
+{
+  "pid": "HyVPTwpmV",
+  "code": "ANTH311",
+  "title": "Introduction to Engaged and Practicing Anthropology",
+  "description": "Introduction to anthropologically-informed approaches to research engaged with finding solutions to practical problems of contemporary significance. Surveys applications of anthropological research to various fields such as public policy, environment, education, law, medicine and heritage resource management. Discusses the burgeoning professional practice of anthropology outside academic institutions.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 311, ANTH 211."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

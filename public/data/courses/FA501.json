@@ -1,0 +1,36 @@
+{
+  "pid": "HyPGbNIIa",
+  "code": "FA501",
+  "title": "Introduction to Professional Practice",
+  "description": "Introduction to workplace professional practice expectations in preparation for Fine Arts co-op work terms. Includes preparation of cover letters and résumés, skills assessment and analysis, networking and interview skill development, and career planning.",
+  "notes": [
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "0",
+  "hours": "0-0-1.5",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Admission to the Faculty of Graduate Studies"
+          },
+          {
+            "type": "text",
+            "text": "Admission to the Humanities and Fine Arts co-op program"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Or permission of the co-op program coordinator."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

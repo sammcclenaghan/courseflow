@@ -1,0 +1,38 @@
+{
+  "pid": "SkahXbDRq",
+  "code": "ENSH310",
+  "title": "Speculative Fiction",
+  "description": "Study of fiction that imagines alternate histories, futures or worlds (such as science fiction, fantasy, utopian, dystopian, and post-apocalyptic).",
+  "notes": [
+    "Credit will be granted for only one of ENSH 310, ENGL 395 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ATWP135",
+          "ENGL146",
+          "ENGL147",
+          "ENSH101",
+          "ENSH102"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,33 @@
+{
+  "pid": "r1fb-Z6Fr",
+  "code": "FRAN407",
+  "title": "Canadian Francophonie and Linguistic Ideologies",
+  "description": "Explores the main linguistic ideologies about French in Canada (especially in minority settings), their shaping and influence on language policies and their manifestations among French speakers, including attitudes, beliefs and linguistic insecurity. Debunks language stereotypes.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "FRAN200"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,47 @@
+{
+  "pid": "HJ1w0v67V",
+  "code": "BIOL449",
+  "title": "Flowering Plant Diversity",
+  "description": "A regional and worldwide survey of flowering plants, including morphological diversity and adaptations; plant evolution and phylogeny; species concepts; modern classification and nomenclature; and experimental approaches to the study of plant diversity. Labs emphasize identification and use of keys. Lab projects include the option of a pressed plant collection. Contact instructor for details and collecting equipment.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 449, BIOL 318, ES 425."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL184",
+          "BIOL190B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL186",
+          "BIOL190A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "BIOL 324 recommended prior to BIOL 449."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "pid": "By50xt6QV",
+  "code": "STAT355",
+  "title": "Statistical Methods in Health Sciences",
+  "description": "Rates and comparison of rates: case-control studies; odds ratios; regression models; Poisson and logistic regression; dose-response models; Cox's regression analysis.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "1.5 units of STAT course."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

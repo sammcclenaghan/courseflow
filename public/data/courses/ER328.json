@@ -1,0 +1,25 @@
+{
+  "pid": "SySQVOa7V",
+  "code": "ER328",
+  "title": "Forest Restoration and Sustainable Forestry",
+  "description": "Basic concepts of forest ecology and succession following natural and human disturbance. \"Old Growth\": definition and characteristics. Forest practices from a restoration viewpoint: the ecoforestry model. Planning and restoration strategies for hydro-riparian zones. Analysis of silvicultural prescriptions and terrain issues (slope stability, road building) from an ecological perspective.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Certificate or Diploma program in Restoration of Natural Systems"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

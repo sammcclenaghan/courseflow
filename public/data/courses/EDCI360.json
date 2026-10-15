@@ -1,0 +1,19 @@
+{
+  "pid": "HJudZu6Q4",
+  "code": "EDCI360",
+  "title": "Field Experience Seminar (Elementary or Middle Years Post Degree)",
+  "description": "Focus is on planning and implementing the curriculum, addressing the diversity found in classrooms and schools and acquiring strategies for orchestrating the many demands and responsibilities inherent in the role of educators.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 360, ED-P 300A, ED-P 300B, ED-P 360, IED 360.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to Post Degree Professional program in Elementary or Middle Years Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "SkrMVbPC9",
+  "code": "ENSH312",
+  "title": "Horror",
+  "description": "Study of horror, textual and visual; the evolution of horror tropes and their adaptation to anxieties about social change, shifting ideas of race and gender, technological advancement and political impotence; horror as cultural commentary. May include short stories, novels, film or other genres.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 312, ENGL 330 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

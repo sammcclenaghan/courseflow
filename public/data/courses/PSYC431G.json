@@ -1,0 +1,54 @@
+{
+  "pid": "Hy4BJt6m4",
+  "code": "PSYC431G",
+  "title": "Self-Regulation and Goals",
+  "description": "An examination of the ways people select and prioritize goals: how they are pursued; factors that lead to success or failure in achieving particular aims; and consequences for individual functioning and well-being. Contemporary theoretical, conceptual and methodological issues. Emphasis on social-cognitive approaches to goals and self-regulation.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 431G, PSYC 491 (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A",
+          "PSYC385"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC330",
+          "PSYC375",
+          "PSYC376",
+          "PSYC386",
+          "PSYC387"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

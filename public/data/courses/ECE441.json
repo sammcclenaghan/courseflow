@@ -1,0 +1,27 @@
+{
+  "pid": "rkXFxOTXE",
+  "code": "ECE441",
+  "title": "Design of Digital and VLSI Systems",
+  "description": "Advanced combinational and sequential logic design. Optimization of finite state machines; timing methodologies and synchronization issues. Hardware description languages (HDL): structural and behavioural descriptions, simulation and testbenches, coding styles, design with HDL and FPGA implementation. Design for test: testing concepts, scan-based design and built-in self-test (BIST). Design for high speed: timing analysis, pipelining and retiming. Design for low power: sources of power dissipation, design transformations.",
+  "notes": [
+    "Credit will be granted for only one of ECE 441, ECE 543, CENG 440, CENG 441, CENG 465, ELEC 543.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE241",
+      "CENG241",
+      "CENG290"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

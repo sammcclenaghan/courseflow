@@ -1,0 +1,15 @@
+{
+  "pid": "HkUg06FiH",
+  "code": "GEOG104",
+  "title": "Our Digital Earth",
+  "description": "Introduces students to how geospatial technologies influence our daily lives and shape the world around us. Students learn how to collect and utilize location-based data, develop web maps and mobile mapping apps, create technologies to respond to environmental disasters and humanitarian crises, and think spatially in order to improve our understanding of our planet.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 104, GEOG 100 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

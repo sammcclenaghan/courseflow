@@ -1,0 +1,22 @@
+{
+  "pid": "S1Xvn_p7E",
+  "code": "MECH240",
+  "title": "Thermodynamics",
+  "description": "Systems, states and processes, equilibrium and non-equilibrium processes; first law of thermodynamics, energy, work, heat; second law of thermodynamics, entropy irreversibility; energy conversion and the second law, thermal efficiency, irreversible work losses; properties and property relations for simple substance; reversible processes in closed systems; Carnot, Otto, Diesel and Atkinson cycles; processes in open systems, pumps, compressors, turbines etc; Rankine cycle, Brayton cycle, heat pump/refrigeration cycles.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH101"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

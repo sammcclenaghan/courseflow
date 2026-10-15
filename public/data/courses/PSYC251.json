@@ -1,0 +1,39 @@
+{
+  "pid": "B1AM1Fa7E",
+  "code": "PSYC251",
+  "title": "Introduction to Mind and Brain",
+  "description": "Examines how neural activity in the brain gives rise to mental experiences that constitute the human mind. Basic principles of cognition and methods used to reveal those principles are presented. The influence of brain injury on mental functioning is also considered.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC100A"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC100B",
+          "BIOL184",
+          "BIOL186"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,37 @@
+{
+  "pid": "HytcJuaQV",
+  "code": "CSC226",
+  "title": "Algorithms and Data Structures II",
+  "description": "Intermediate algorithm design and analysis. Divide-and-conquer algorithm design, including advanced sorting and selection. Advanced data structures, such as weighted graphs and disjoint set forests. Dynamic programming and greedy heuristic algorithms applied to weighted graph problems. Optimization problems, including maximum flow problems on networks. Hashing schemes and the impact of randomization. Introduction to the classes P and NP and the concept of NP-completeness.",
+  "notes": [
+    "Credit will be granted for only one of CSC 226, CSC 326."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC225"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG226",
+      "PSYC300A",
+      "STAT254",
+      "STAT255",
+      "STAT260"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

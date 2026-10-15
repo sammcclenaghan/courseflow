@@ -1,0 +1,37 @@
+{
+  "pid": "B1SBqMaL3",
+  "code": "SCIE501",
+  "title": "Introduction to Professional Practice",
+  "description": "Introduction to workplace professional practice expectations in preparation for Science co-op work terms. Includes preparation of cover letters and resumes, skills assessment and analysis, networking and interview skill development, and career planning.",
+  "notes": [
+    "Credit will be granted for only one of SCIE 501, SCIE 201.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "0",
+  "hours": "0-0-1",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "admission to the Faculty of Graduate Studies"
+          },
+          {
+            "type": "text",
+            "text": "admission to a Science co-op program"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of co-op program coordinator"
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

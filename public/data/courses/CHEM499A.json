@@ -1,0 +1,19 @@
+{
+  "pid": "Hywx1uamN",
+  "code": "CHEM499A",
+  "title": "Honours Thesis I",
+  "description": "The first stage of a research project conducted under the direction of a faculty member.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 499A, CHEM 498A, CHEM 499.",
+    "Enrollment in 499A and 499B does not automatically confer Honours program status. Students are advised to make arrangements for 499 projects as early as possible. Ideally, projects should be discussed with potential supervisors before the semester in which the research will be undertaken. Interested students should contact the course coordinator by the first week of classes. CHEM 499A and CHEM 499B are \"tied\" courses and must be taken in consecutive terms except with permission of the department. Credit for CHEM 499A will be assigned only upon successful completion of CHEM 499B."
+  ],
+  "credits": "1.5",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Declared Honours in one of the Chemistry programs."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

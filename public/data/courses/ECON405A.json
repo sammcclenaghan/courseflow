@@ -1,0 +1,53 @@
+{
+  "pid": "S1BAeupX4",
+  "code": "ECON405A",
+  "title": "International Trade Theory",
+  "description": "The study of international trade theory and policy with emphasis on general equilibrium analysis. Topics include the factor proportions theory of trade, technological determinants of trade, the theory of tariffs and trade policy, models of strategic interaction between countries.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON203"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON306",
+          "ECON313",
+          "ECON350"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON225",
+          "ENGR120",
+          "ENGR240"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "ECON306 recommended prior to ECON 405A."
+  ]
+}

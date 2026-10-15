@@ -1,0 +1,24 @@
+{
+  "pid": "SylQ4NOa7V",
+  "code": "ES302",
+  "title": "Capitalism, Justice and Sustainability",
+  "description": "Examines how the global capitalist economy is transforming ecosystems, and how social and environmental challenges are in turn beginning to transform capitalism. Economic alternatives are examined in local and global contexts (e.g. the social economy, steady state economies and Indigenous economic practices).",
+  "notes": [
+    "Credit will be granted for only one of ES 302, ES 402, ES 400A (if taken in Sep 1989 - Apr 1994), ES 402, ES 420."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ES200"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

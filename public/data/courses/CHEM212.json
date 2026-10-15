@@ -1,0 +1,24 @@
+{
+  "pid": "Syz0CvTmE",
+  "code": "CHEM212",
+  "title": "Introduction to Quantitative Analysis",
+  "description": "Introduction to quantitative analytical chemistry, data analysis, and chemical equilibrium and buffers. Application of analytical techniques for sampling, chemical separations and quantification. Laboratory focuses on quantitative measurements and their application to introductory analytical and physical chemistry experiments.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 212, CHEM 312."
+  ],
+  "credits": "1.5",
+  "hours": "3-4-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM102"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

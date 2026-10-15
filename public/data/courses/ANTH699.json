@@ -1,0 +1,22 @@
+{
+  "pid": "SJynaDaXE",
+  "code": "ANTH699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "20",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

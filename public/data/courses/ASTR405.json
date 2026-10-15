@@ -1,0 +1,33 @@
+{
+  "pid": "SysJ0v6X4",
+  "code": "ASTR405",
+  "title": "Introduction to Cosmology",
+  "description": "Observations and theory of the expanding universe; the cosmic microwave background and observations of light nuclear elements; the growth of structure leading to the creation of stars and galaxies; studies of dark matter and dark energy; the impact of galaxy evolution on observational cosmology.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ASTR250"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": [
+    "ASTR 303 strongly recommended prior to ASTR 405."
+  ]
+}

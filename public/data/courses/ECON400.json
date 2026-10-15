@@ -1,0 +1,53 @@
+{
+  "pid": "SkX0x_6QE",
+  "code": "ECON400",
+  "title": "Advanced Topics in Microeconomic Theory",
+  "description": null,
+  "notes": [
+    "Credit will be granted for only one of ECON 400, ECON 440."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECON313"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECON350",
+              "MATH204"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "declared Honours in Economics (BSc)"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

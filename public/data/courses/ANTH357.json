@@ -1,0 +1,29 @@
+{
+  "pid": "B1xwuavaQE",
+  "code": "ANTH357",
+  "title": "Evolutionary Biology of Contemporary Health",
+  "description": "Introduction to human evolutionary biology. Explores how evolutionary forces have shaped human anatomy, biology and behaviour. Examines patterns of human biological variation and the genetic and environmental factors that contribute to this variation, and how biological plasticity of humans both shapes this variation and contributes to potential health problems.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 357, ANTH 394 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH250",
+      "ANTH251",
+      "BIOL184",
+      "BIOL190B",
+      "BIOL230",
+      "BME201"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

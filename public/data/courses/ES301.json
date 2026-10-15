@@ -1,0 +1,40 @@
+{
+  "pid": "rJ7ENOaXE",
+  "code": "ES301",
+  "title": "Political Ecology",
+  "description": "An introduction to the various socio-political and philosophical issues associated with the concept of a sustainable society. Emphasis is placed on the analysis of the complex relationships between social and biophysical systems. Examines how communities and environments are being impacted by the globalization of economies and cultures, technologies and ideologies, as well as responses from a variety of local, non-governmental and international agencies.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": "B-",
+            "minGpa": null,
+            "courses": [
+              "ES200"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum second-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

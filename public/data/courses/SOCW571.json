@@ -1,0 +1,26 @@
+{
+  "pid": "rkKteYpmE",
+  "code": "SOCW571",
+  "title": "MSW Capstone",
+  "description": "A culminating educational experience to consolidate learning and demonstrate preparation for advanced social work practice. Students integrate, articulate, and evaluate learning from the courses and practica in the MSW program within the context of their other professional activities and prior academic experiences.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Completion of all required coursework in the MSW program (excluding SOCW 506 or SOCW 506A)."
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCW506",
+      "SOCW506A"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,33 @@
+{
+  "pid": "S1KjOdkcS",
+  "code": "FRAN426",
+  "title": "Indigenous Literatures of Canada or the Francophone World",
+  "description": "Focuses on works of First Nations, Métis and Inuit writers published in French in Canada and studies them in their historical, political, sociological and cultural context. May also cover Indigenous literature written in French in other geographical areas, such as the Maghreb and the Pacific Ocean, connecting them with issues of resistance and resurgence as they appear in Canada.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "FRAN310"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

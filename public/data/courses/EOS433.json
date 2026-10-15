@@ -1,0 +1,27 @@
+{
+  "pid": "HyG67_aQN",
+  "code": "EOS433",
+  "title": "Physics of Climate",
+  "description": "Examines the physics that determines Earth's climate and controls how climate changes. May include study of Earth’s atmosphere, ocean and cryosphere, and comparison to other Earth-like planets. Analyses climate data and examines a hierarchy of climate models, from idealised mathematical models to complex Global Climate Models.",
+  "notes": [
+    "Credit will be granted for only one of EOS 433, PHYS 433.",
+    "May be offered as a joint undergraduate and graduate class.",
+    "Normally offered in alternate years; consult with the School of Earth and Ocean Sciences to determine schedule."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EOS340",
+      "PHYS340"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,28 @@
+{
+  "pid": "BkEA6vpXE",
+  "code": "ART360",
+  "title": "Extended Media Practices",
+  "description": "Interdisciplinary studio course focused on hybridization of traditional disciplines and emergent intermedia practices such as sound art, light art and projection, artists' books and multiples, generative systems and conceptual art.",
+  "notes": [
+    "Concurrent registration in two sections of ART 360 is permitted, normally with two different instructors.",
+    "Normally class size is limited."
+  ],
+  "credits": "3",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "12 units of 100- or 200-level ART courses"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

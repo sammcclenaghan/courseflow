@@ -1,0 +1,25 @@
+{
+  "pid": "Skwu2dTmV",
+  "code": "MECH459",
+  "title": "Fundamentals of Hybrid Electric Vehicles",
+  "description": "Advance of hybrid electric propulsion technology; hybrid electric powertrain system and key components, engines, fuel cells, transmissions, energy storage systems; and electric drives; modeling and simulation of vehicle performance, energy efficiency and emissions using advanced modeling tools; design and control optimization of hybrid electric propulsion systems for vehicles and marine vessels.",
+  "notes": [
+    "Credit will be granted for only one of MECH 459, MECH 450A (if taken in the same topic) MECH 450B (if taken in the same topic), MECH 450C (if taken in the same topic), MECH 450D (if taken in the same topic), MECH 450E (if taken in the same topic), MECH 450F (if taken in the same topic), MECH 558."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH201",
+      "MATH204"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

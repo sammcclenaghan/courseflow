@@ -1,0 +1,35 @@
+{
+  "pid": "ByT5eFpm4",
+  "code": "SPAN350A",
+  "title": "Upper Intermediate Spanish I",
+  "description": "Acquisition of upper-intermediate language and intercultural competencies equivalent to the B1.1 level of the Common European Framework of Reference for Languages. Taught in Spanish.",
+  "notes": [
+    "Credit will be granted for only one of SPAN 350A, SPAN 350.",
+    "Not open to native or near-native speakers of Spanish."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SPAN249",
+          "SPAN250B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

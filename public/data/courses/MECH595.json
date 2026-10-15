@@ -1,0 +1,16 @@
+{
+  "pid": "Bkr93u6XE",
+  "code": "MECH595",
+  "title": "Seminar",
+  "description": "Participation in a program of seminars by internal and external speakers on current research topics. All MASc students are required to give a seminar on their thesis research during the second year of the program.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to MASc program in Mechanical Engineering."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

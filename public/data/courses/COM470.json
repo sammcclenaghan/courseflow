@@ -1,0 +1,16 @@
+{
+  "pid": "Hkadyu67E",
+  "code": "COM470",
+  "title": "Business Research",
+  "description": "Business research project for students participating in INTEP. While overseas on exchange, students conduct a research project on a specific business and management topic related to the country they are visiting. Projects must be planned and approved by the instructor prior to departure. Upon return, a written report is required.",
+  "notes": [],
+  "credits": "0.5–1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to Business Exchange program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,28 @@
+{
+  "pid": "H1pO3ic1bg",
+  "code": "PSYC529",
+  "title": "Social Psychology and Personality Seminar",
+  "description": "Focuses on key topics and approaches in contemporary social and personality psychology.",
+  "notes": [
+    "Weekly seminar September to April, involving faculty and graduate students in the Social Psychology concentration.",
+    "Seminar participants take turns hosting the meeting, typically by presenting a paper on recent or ongoing social psychology and personality research."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to a graduate program in Psychology"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

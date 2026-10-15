@@ -1,0 +1,35 @@
+{
+  "pid": "H1GLOSe0gg",
+  "code": "MLSC301B",
+  "title": "Lab Techniques and Projects II",
+  "description": "Practical and analytical laboratory skills application to increasingly complex laboratory projects. Develops time management skills, apply knowledge to new problems and learn to communicate scientific results. Acquired laboratory techniques may include: enzyme inhibition; gel electrophoresis; immunodetection; microbial quantification and characterization; molecular cloning; transposon mutagenesis; and culturing HeLa cells.",
+  "notes": [
+    "Credit will be granted for only one of MLSC 301B, BCMB 301B, BIOC 301."
+  ],
+  "credits": "1.5",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MLSC301A",
+      "BCMB301A"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOC300A",
+      "BIOC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

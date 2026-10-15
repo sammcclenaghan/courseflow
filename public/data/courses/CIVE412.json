@@ -1,0 +1,33 @@
+{
+  "pid": "HyxNkOTmN",
+  "code": "CIVE412",
+  "title": "Infrastructure Engineering for Indigenous Communities",
+  "description": "Engineering techniques to accelerate the sustainable design, building, operations and maintenance of infrastructure systems in Indigenous and rural communities including housing, renewable energy, electrical grids, transportation, water supply, sewage treatment, asset management, environmental assessments and telecommunications. The complex historic, sociopolitical, legal, economic and systemic considerations that drive engineering within Canadian Indigenous communities. The environmental and economic context and multi-disciplinary engineering approaches when working with the unique situations of Indigenous and rural communities.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 412, CIVE 480E (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR003"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

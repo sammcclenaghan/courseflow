@@ -1,0 +1,35 @@
+{
+  "pid": "Hy55C_pQ4",
+  "code": "PHYS424",
+  "title": "Particle Physics",
+  "description": "Topics in particle physics.",
+  "notes": [
+    "Normally open to Honours students only, others by permission of the department.",
+    "Normally offered in alternate years.",
+    "Students are advised to consult the department to determine when the course is offered."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS423"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

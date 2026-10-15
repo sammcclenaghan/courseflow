@@ -1,0 +1,26 @@
+{
+  "pid": "SkjB6vaXV",
+  "code": "AHVS509",
+  "title": "Workshop in Art Historical Writing",
+  "description": null,
+  "notes": [
+    "Credit will be granted for only one of AHVS 509, HA 509.",
+    "A compulsory workshop."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "AHVS501",
+      "HA501"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

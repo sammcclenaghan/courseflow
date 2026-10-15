@@ -1,0 +1,15 @@
+{
+  "pid": "SJxLlO_aQ4",
+  "code": "HINF535",
+  "title": "Health Information Standards",
+  "description": "The study of health information standards deployed and used in Canada and elsewhere. The standards examined are controlled terminology and data exchange standards that include SNOMED CT, ICD-10-CA/CCI, LOINC, nursing terminologies, information modeling, HL7V2.x, HL7V3/CDA, FHIR and IHE. Topics include the nature of standards, their historical evolution and lifecycles for standards from initial development, distribution to maintenance.",
+  "notes": [
+    "Credit will be granted for only one of HINF 535, HINF 591 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

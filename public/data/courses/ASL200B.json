@@ -1,0 +1,22 @@
+{
+  "pid": "BygmJRv6Q4",
+  "code": "ASL200B",
+  "title": "American Sign Language IV",
+  "description": "Develops vocabulary and appropriate signing registers as well as skills for role-shifting and point of view when narrating in sign language, including the use of three-dimensional space and placement. Builds knowledge and understanding of Deaf culture.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "4-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ASL200A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

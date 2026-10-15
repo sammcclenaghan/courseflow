@@ -1,0 +1,24 @@
+{
+  "pid": "S1MJgKpX4",
+  "code": "SENG350",
+  "title": "Software Architecture and Design",
+  "description": "Introduction to analysis and design of software architectures with architecture description languages and their subsequent synthesis at the program level. Topics include requirements analysis, analysis and design of static and dynamic view points of architectures and model driven engineering. Architectural styles and tactics are introduced and applied as solutions to recurring design problems. Familiarized with component reuse, event-driven programming and computer-aided software engineering tools. Includes a major design project.",
+  "notes": [
+    "Credit will be granted for only one of SENG 350, SENG 271, SENG 299."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SENG275"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

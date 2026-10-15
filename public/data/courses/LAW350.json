@@ -1,0 +1,27 @@
+{
+  "pid": "BkPDo_TQN",
+  "code": "LAW350",
+  "title": "Clinical Term",
+  "description": "Students receive training in interviewing, counselling, negotiation, mediation, advocacy before Provincial Court and administrative tribunals, and drafting. Represent numerous clients who present with problems related to the criminal law, corrections law, family law, human rights law, and variety of civil law issues. Develop awareness of legal and social problems of economically disadvantaged, significantly ill, liberty challenged, indigenous and aged members of society.",
+  "notes": [
+    "Registration priority will be given to students who have completed one or more of LAW 303, LAW 309, LAW 322."
+  ],
+  "credits": "7.5",
+  "hours": "6-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Complete 7 units from LAW 300 - 499"
+      },
+      {
+        "type": "text",
+        "text": "permission of the faculty."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

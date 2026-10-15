@@ -1,0 +1,35 @@
+{
+  "pid": "S1YzBuy6R",
+  "code": "GREE325",
+  "title": "Advanced Ancient Greek Grammar and Reading",
+  "description": "Continuation of GREE 225. Focuses on reading and translating progressively more challenging passages of ancient Greek, while providing advanced vocabulary and rules of grammar.",
+  "notes": [
+    "Credit will be granted for only one of GREE 325, GREE 201, GREE 202."
+  ],
+  "credits": "1.5",
+  "hours": "4-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GREE102",
+          "GREE225"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

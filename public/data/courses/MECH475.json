@@ -1,0 +1,26 @@
+{
+  "pid": "BysO2uTQN",
+  "code": "MECH475",
+  "title": "Aircraft Design",
+  "description": "Flight vehicle conceptual and preliminary design. Market analysis. Mission requirements, sizing, trade-offs. Aircraft general arrangement, fuselage, wing, empennage, landing gear design. Weight and balance. Stability and control. Drag polar. Aircraft structural arrangement, maneuvering envelope. Project.",
+  "notes": [
+    "Credit will be granted for only one of MECH 475, MECH 538, MECH 580 (if taken in the same topic) ASE 504.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH342",
+      "MECH345"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

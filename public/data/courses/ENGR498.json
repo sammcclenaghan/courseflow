@@ -1,0 +1,45 @@
+{
+  "pid": "HyzimuT7N",
+  "code": "ENGR498",
+  "title": "Engineering Law",
+  "description": "Sources and classification of law; professional engineering legislation, registration and discipline; introduction to tort law including negligence; introduction to contract law including employment law. Ethics in professional practice.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR003"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Declaration in a BEng Program."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BME499",
+      "CIVE401",
+      "CIVE402",
+      "ECE499",
+      "MECH400A",
+      "SENG499"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

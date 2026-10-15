@@ -1,0 +1,40 @@
+{
+  "pid": "Hkfbhda7E",
+  "code": "MATH346",
+  "title": "Introduction to Partial Differential Equations",
+  "description": "Partial differential equations in physics (wave, heat and Laplace equations), solution by separation of variables, method of characteristics for first-order partial differential equations, boundary value problems, orthogonal functions, Fourier series, transform methods (Laplace and Fourier transforms), numerical methods.",
+  "notes": [
+    "Credit will be granted for only one of MATH 346, MATH 323B, MATH 326."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH204"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

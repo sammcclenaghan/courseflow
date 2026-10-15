@@ -1,0 +1,27 @@
+{
+  "pid": "BJrgwA7dj",
+  "code": "MUS498A",
+  "title": "Music Research I",
+  "description": "Training in musicological research and writing.",
+  "notes": [
+    "Credit will be granted for only one of MUS 498A, MUS 398."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Declared Major in Musicology and Sound Studies"
+      },
+      {
+        "type": "text",
+        "text": "permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

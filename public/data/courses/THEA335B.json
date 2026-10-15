@@ -1,0 +1,18 @@
+{
+  "pid": "Skuhil6ID",
+  "code": "THEA335B",
+  "title": "Socially Engaged Theatre",
+  "description": "Devising and facilitation of theatre that focuses on outreach and social justice initiatives.",
+  "notes": [
+    "Credit will be granted for only one of THEA 335B, THEA 335."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "or permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

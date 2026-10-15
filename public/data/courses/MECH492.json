@@ -1,0 +1,26 @@
+{
+  "pid": "SkTdh_TQE",
+  "code": "MECH492",
+  "title": "Transport Phenomena",
+  "description": "Conservation and balance laws, properties and property relations, entropy and 2nd law, entropy generation and work loss, classical irreversible thermodynamics, cross effects and Onsager conditions; constitutive equations for simple fluids and mixtures, jump and slip boundary conditions, shocks and flames, evaporation problems; kinetic theory of gases: hydrodynamic limit, extended thermodynamics, rarefaction effects",
+  "notes": [
+    "Credit will be granted for only one of MECH 492, MECH 540.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH345",
+      "MECH395"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

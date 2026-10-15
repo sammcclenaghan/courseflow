@@ -1,0 +1,43 @@
+{
+  "pid": "ByC2edaQN",
+  "code": "ECON305",
+  "title": "Money and Banking",
+  "description": "The principles of money, credit creation and banking; organization, operation and control of the banking system; and the relationship between the quantity of money and the level of economic activity.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON103",
+          "ECON103C",
+          "ECON180"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON104"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

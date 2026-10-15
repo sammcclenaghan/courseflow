@@ -1,0 +1,53 @@
+{
+  "pid": "S17Z3dTXE",
+  "code": "MATH352",
+  "title": "Introduction to Probability",
+  "description": "Probability spaces, combinatorial analysis, inclusion-exclusion, conditional probability, independence, random variables, expectation, discrete and continuous distributions, limit theorems. Additional topics may include probabilistic method, Markov chains.",
+  "notes": [
+    "Credit will be granted for only one of MATH 352, STAT 350."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH151",
+          "MATH222"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH200"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT252",
+          "STAT254",
+          "STAT255",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

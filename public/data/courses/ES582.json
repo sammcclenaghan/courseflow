@@ -1,0 +1,15 @@
+{
+  "pid": "r1BLE_a7N",
+  "code": "ES582",
+  "title": "Seminar in Ecological Restoration",
+  "description": "Flexible topics course offered in a seminar format.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

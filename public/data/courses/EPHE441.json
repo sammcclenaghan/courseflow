@@ -1,0 +1,40 @@
+{
+  "pid": "HkIZVOTm4",
+  "code": "EPHE441",
+  "title": "Exercise Physiology",
+  "description": "Physiological responses and adaptation of the human body to acute and chronic exercise.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 441, PE 441."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE160",
+          "EPHE241"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE242"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

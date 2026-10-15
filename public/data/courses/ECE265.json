@@ -1,0 +1,38 @@
+{
+  "pid": "Hy3nS8hy9",
+  "code": "ECE265",
+  "title": "Continuous-Time and Discrete-Time Signals and Systems",
+  "description": "Signal properties and basic signal transformations. Elementary signals including the Dirac delta function. System properties. Fourier series and transforms. Laplace and z transforms. Linear time-invariant systems and convolution. Sampling and the sampling theorem. Frequency analysis.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH101"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

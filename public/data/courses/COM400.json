@@ -1,0 +1,67 @@
+{
+  "pid": "H18uyuaXE",
+  "code": "COM400",
+  "title": "Strategic Management",
+  "description": "A series of integrative management case studies that illustrate the application and integration of management functions. Focuses on organizational strategy and strategic management including the process of choosing and defining goals, formulating and implementing strategies, and monitoring strategic performance.",
+  "notes": [
+    "Normally students are required to take this course in their final academic term."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "COM315",
+              "COM316",
+              "COM321",
+              "COM322",
+              "COM331",
+              "COM341",
+              "COM351",
+              "COM361",
+              "COM362",
+              "COM371"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "COM224",
+              "COM232",
+              "COM251",
+              "COM292",
+              "COM316",
+              "COM324",
+              "COM331",
+              "COM341",
+              "COM361",
+              "COM371"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the School."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

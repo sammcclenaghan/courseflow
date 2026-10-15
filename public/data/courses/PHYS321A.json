@@ -1,0 +1,79 @@
+{
+  "pid": "H1X9R_pX4",
+  "code": "PHYS321A",
+  "title": "Classical Mechanics I",
+  "description": "Oscillatory motion, motion under a central force, dynamics of a system of particles, gravitational potential theory.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS110",
+              "PHYS111"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS120",
+              "PHYS130"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH204"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS248",
+          "CSC226",
+          "CSC349A",
+          "MATH248"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS301",
+      "MATH342",
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

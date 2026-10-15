@@ -1,0 +1,41 @@
+{
+  "pid": "H1CqR_p74",
+  "code": "PHYS432",
+  "title": "Medical Physics",
+  "description": "Introduction to medical physics. Production and measurement of x-rays and charged particles for nuclear medicine, interaction of radiation with biological materials, radiation dosimetry, radiation safety, physics of medical imaging, magnetic resonance imaging.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS313",
+          "PHYS314",
+          "PHYS323"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BME335",
+          "MATH204"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

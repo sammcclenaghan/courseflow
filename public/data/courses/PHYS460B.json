@@ -1,0 +1,22 @@
+{
+  "pid": "rkexiRuTQ4",
+  "code": "PHYS460B",
+  "title": "Colloquium II",
+  "description": "Weekly physics and astronomy colloquium.",
+  "notes": [],
+  "credits": "0",
+  "hours": "2-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS460A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

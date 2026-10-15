@@ -1,0 +1,25 @@
+{
+  "pid": "HkGagvqnT",
+  "code": "MECH422",
+  "title": "Advanced Materials and Processes",
+  "description": "Advanced materials with new functionalities or improved properties. Structural and functional materials such as superalloys, composites, superelastic and shape-memory materials, high entropy alloys, nanomaterials, high temperature materials and semiconductors. Principles, techniques and applications of advanced processes such as rapid solidification, subtractive, joining and additive manufacturing, powder metallurgy, physical and chemical vapour deposition.",
+  "notes": [
+    "Credit will be granted for only one of MECH 422, MECH 450A (if taken in the same topic),MECH 450E (if taken in the same topic), MECH 450F (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH285",
+      "BME320"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

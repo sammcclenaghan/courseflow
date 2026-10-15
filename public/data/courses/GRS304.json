@@ -1,0 +1,15 @@
+{
+  "pid": "SJ_PARN5gg",
+  "code": "GRS304",
+  "title": "Ecocriticism and the Ancient World",
+  "description": "Explores productive and destructive interactions with nature in Greek and Roman antiquity. Examines literary, artistic, philosophical, religious and scientific constructions of the natural world. Topics may include myth and the environment, nature writing, visual depictions of the natural world, views on and treatment of non-human animals, ethics of consumption, human harm to the environment, natural disasters and apocalypticism.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "GRS 101 or GRS 102 recommended prior to GRS 304."
+  ]
+}

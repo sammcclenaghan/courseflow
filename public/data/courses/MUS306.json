@@ -1,0 +1,31 @@
+{
+  "pid": "HJ6e6uTmE",
+  "code": "MUS306",
+  "title": "Sound Recording Techniques",
+  "description": "Introduction to the theory and practice of sound recording and audio technology, including microphones, mixers and other studio components. Also introduces the use of computers in modern studio recording and processing. Practical work includes recording sessions and work in a studio.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-0-1.5",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS207"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

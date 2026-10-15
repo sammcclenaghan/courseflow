@@ -1,0 +1,25 @@
+{
+  "pid": "r1no1OamN",
+  "code": "CSC449",
+  "title": "Numerical Linear Algebra",
+  "description": "Gaussian elimination and its variants; sparse positive definite linear systems; sensitivity of linear systems: norms, condition, stability, scaling, iterative refinement; orthogonal matrices and least squares; eigenvalues and eigenvectors; the QR algorithm; the singular value decomposition.",
+  "notes": [
+    "Credit will be granted for only one of CSC 449, CSC 540.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": "B",
+    "minGpa": null,
+    "courses": [
+      "CSC349A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

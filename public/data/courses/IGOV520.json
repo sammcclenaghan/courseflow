@@ -1,0 +1,16 @@
+{
+  "pid": "B1Aw5OamE",
+  "code": "IGOV520",
+  "title": "Foundations of Indigenous Governance",
+  "description": "Introduction to the authors, theories, texts and key works that comprise the field of Indigenous Governance and Resurgence. Shared language and foundational knowledge of the field.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to MA program in Indigenous Governance."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

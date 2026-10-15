@@ -1,0 +1,29 @@
+{
+  "pid": "Bylp6DpXE",
+  "code": "ART222",
+  "title": "Sculpture",
+  "description": "Continue to develop the study of contemporary sculptural practices, with an increasing focus on the ability to undertake independent work.",
+  "notes": [
+    "Credit will be granted for only one of ART 222, ART 220.",
+    "Normally class size is limited."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART100E",
+      "ART104",
+      "ART120",
+      "ART221",
+      "ART221E"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,22 @@
+{
+  "pid": "By0ggdTmN",
+  "code": "CSC699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "33–34.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

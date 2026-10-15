@@ -1,0 +1,16 @@
+{
+  "pid": "SygXS_TmV",
+  "code": "GEOG306",
+  "title": "Geography of Canada",
+  "description": "Explores the physical, historical, cultural, and political geography of Canada. Topics may include: human / environment relationships; settlement and development patterns; colonialism and Indigenous resurgence; national identity and conflict; and current issues in the Canadian context.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

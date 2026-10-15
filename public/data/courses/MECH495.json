@@ -1,0 +1,25 @@
+{
+  "pid": "ByyYnuT74",
+  "code": "MECH495",
+  "title": "Computational Fluid Dynamics and Heat Transfer",
+  "description": "Methods of predictions and historical perspective; governing differential equations of heat transfer and fluid flow; finite difference methods; discretization schemes; application to heat conduction problems; introduction to control volume formulation for fluid flow and to turbulence modelling; accuracy and convergence considerations. Individual term projects using a CFD program.\n*Indicates four 1.5 hour laboratories.",
+  "notes": [
+    "Credit will be granted for only one of MECH 495, MECH 535."
+  ],
+  "credits": "1.5",
+  "hours": "3-1*-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH345",
+      "MECH395"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

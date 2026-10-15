@@ -1,0 +1,36 @@
+{
+  "pid": "SJU2fmFgo",
+  "code": "CE300",
+  "title": "Working in the Community",
+  "description": "An interdisciplinary community service learning course combining classroom study of community organizations, civic engagement and related philosophical and ethical issues; the development of professional competencies needed to work effectively in the community; a practicum consisting of a minimum of 40 hours of voluntary work with a community organization or on a community project; and critical reflection from social science perspectives on the practicum experience.",
+  "notes": [
+    "Credit will only be granted for one of CE 300, SOSC 300.",
+    "Since the class meets once a week and involves community partnerships, joining the course after the second week may compromise learning and securing community placements.",
+    "Permission to register in this course is by application. To apply, please send an email to soscassist@uvic.ca including your student number, major, resume or CV, term you are applying for, and a 2-3 paragraph response to the following question: \"What is your motivation to take this community-engaged learning course? Please share an experience or two that have prepared you for this type of learning experience?\" In your application, please indicate whether you are a domestic or international student and if you have declared or intend to declare the Community Engagement Option as part of your degree.",
+    "International students interested in this community-engaged learning course should contact the International Centre for Students (ICS) to discuss potential work authorization requirements for the experiential learning component of this course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied"
+      },
+      {
+        "type": "text",
+        "text": "permission of the Faculty"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "It is recommended that students take CE 200 prior to enrolling in CE 300."
+  ]
+}

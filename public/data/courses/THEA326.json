@@ -1,0 +1,24 @@
+{
+  "pid": "SJ8WWYTQ4",
+  "code": "THEA326",
+  "title": "Stage Movement II",
+  "description": "A continuation of 325. Intermediate stage movement.",
+  "notes": [
+    "Credit will be granted for only one of THEA 326, THEA 360."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "THEA325"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

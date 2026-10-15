@@ -1,0 +1,29 @@
+{
+  "pid": "rJcaod6QN",
+  "code": "LING499",
+  "title": "Honours Thesis",
+  "description": "The Honours thesis is based on research carried out by the student during the final year, under the supervision of a faculty member in the School of Languages, Linguistics and Cultures. The student will normally submit a thesis proposal early in the fall term, and a complete draft of the thesis by March 1. Regular meetings will take place between the student and the supervisor throughout the course.",
+  "notes": [],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "minimum GPA of 6.0 in 300- and 400-level LING courses"
+      },
+      {
+        "type": "text",
+        "text": "declared Honours in Linguistics."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

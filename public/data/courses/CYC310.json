@@ -1,0 +1,91 @@
+{
+  "pid": "S1B4e_TmN",
+  "code": "CYC310",
+  "title": "Supervised Practicum II",
+  "description": "Work directly in a practice setting over two terms to foster professional skills and praxis when working with children, youth, families and field supervisors. Supported to develop a flexible decolonizing praxis focusing on core practicum and emergent practice skills and understandings. Further knowledge in critical ethical decision making, explore and apply knowledge, skills and analysis on emergent challenges from the field.",
+  "notes": [
+    "Credit will be granted for only one of CYC 310, CYC 310A, CYC 311.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites.",
+    "Students are required to complete a minimum of 300 hours."
+  ],
+  "credits": "4.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC152"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC210",
+          "CYC210A",
+          "CYC211"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "Academic writing requirement satisfied"
+      },
+      {
+        "type": "text",
+        "text": "admission to an undergraduate program in the School of Child and Youth Care."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC110"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC205",
+          "CYC206"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC338",
+          "CYC320"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

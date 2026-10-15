@@ -1,0 +1,36 @@
+{
+  "pid": "HJA4bdvPv",
+  "code": "WRIT345",
+  "title": "Advanced Environmental Journalism",
+  "description": "A seminar that engages with people and communities impacted by climate change to document their experiences. Includes publishing, broadcasting and presenting the resulting stories with major media and cultural partners.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 345, ES 355, ES 381 (if offered in the same topic).",
+    "Students who took WRIT 345 in January to April 2022 may repeat the course with permission of instructor."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "WRIT344",
+          "ES354"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

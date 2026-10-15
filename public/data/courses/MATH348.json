@@ -1,0 +1,80 @@
+{
+  "pid": "B1xG-2_T7E",
+  "code": "MATH348",
+  "title": "Numerical Methods",
+  "description": "Error analysis (round off and truncation errors), roots of equations (bisection, Newton, secant), systems of linear equations (Gauss elimination and LU factorization), function approximation (interpolation, least squares, orthogonal polynomials), numerical differentiation, numerical integration (Newton-Cotes, Gauss), numerical solution of ordinary differential equations (Euler, Taylor, Runge-Kutta, Adams), and a selection of additional topics, such as numerical optimization, finite difference methods for linear partial differential equations, iterative methods for linear systems.",
+  "notes": [
+    "Credit will be granted for only one of MATH 348, CSC 340, CSC 349A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH248",
+          "PHYS248",
+          "CSC115",
+          "CSC116"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH200"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH200",
+              "MATH204"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH202"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

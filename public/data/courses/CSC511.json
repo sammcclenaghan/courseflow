@@ -1,0 +1,16 @@
+{
+  "pid": "S1dp1uaXE",
+  "code": "CSC511",
+  "title": "Information Visualization",
+  "description": "An introduction to visualization, or the use of interactive visual representations of data to support human cognition. Principles of visualization design are presented from a human perceptual and cognitive standpoint. Topics include: design, interaction, perception and cognition, evaluation and applications.",
+  "notes": [
+    "Credit will be granted for only one of CSC 511, CSC 411, CSC 485D (if taken in the same topic), SENG 480D (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

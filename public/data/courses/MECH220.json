@@ -1,0 +1,25 @@
+{
+  "pid": "SJmv2O6X4",
+  "code": "MECH220",
+  "title": "Mechanics of Solids I",
+  "description": "Review of bending moment and shear force diagrams for beams. Introduction of stress and strain; axial loading, torsion, pure bending and transverse loading. Status failure and factors of safety. Stress and strain transformation in two dimensions. Mohr's circle. Beam deflection, stability of columns. Energy methods.\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [
+    "Credit will be granted for only one of MECH 220, CIVE 220."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5*-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ENGR141",
+      "MATH200"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "r1tvWuT7N",
+  "code": "EDCI300",
+  "title": "Mathematical Processes A",
+  "description": "The application of effective teaching practices (establishing goals, reasoning, problem solving, representation, connections, discourse, questioning, building fluency, supporting struggle, assessing understanding) to the teaching and learning of Elementary and Middle School number and computational fluency concepts.",
+  "notes": [
+    "May be offered in English or French"
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a program in Teacher Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

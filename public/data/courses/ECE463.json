@@ -1,0 +1,26 @@
+{
+  "pid": "rkldFx_TmV",
+  "code": "ECE463",
+  "title": "Design and Analysis of Computer Networks",
+  "description": "Markov chains and techniques for studying their transient and steady-state behaviour. Queuing theory and discrete time queues. Queuing models for media access, error control and traffic management protocols. Quality of service. Modelling of traffic and inter-arrival time. Self similar distributions and traffic. Analysis and design of switching fabrics. Switch design alternatives and performance modelling. Simulation of networks.",
+  "notes": [
+    "Credit will be granted for only one of ECE 463, ECE 514, CENG 461, ELEC 514.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "STAT254",
+      "STAT260"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

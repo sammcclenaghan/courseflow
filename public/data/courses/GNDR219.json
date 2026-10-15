@@ -1,0 +1,17 @@
+{
+  "pid": "r1Hz8dp74",
+  "code": "GNDR219",
+  "title": "Topics in Gender Studies",
+  "description": "Variable content course on aspects of Gender Studies.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 219, WS 219 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "GNDR 100 recommended prior to GNDR 219."
+  ]
+}

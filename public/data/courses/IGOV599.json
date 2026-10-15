@@ -1,0 +1,27 @@
+{
+  "pid": "H1U_9daX4",
+  "code": "IGOV599",
+  "title": "Thesis",
+  "description": "Specialized research on a topic area chosen in consultation with the student's supervisory committee.",
+  "notes": [],
+  "credits": "6",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IGOV510",
+      "IGOV520",
+      "IGOV530",
+      "IGOV550",
+      "IGOV570",
+      "IGOV575"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

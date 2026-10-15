@@ -1,0 +1,59 @@
+{
+  "pid": "HyhyeYT7E",
+  "code": "SENG468",
+  "title": "Software System Scalability",
+  "description": "Introduction to scalability issues within modern distribution software systems. Middleware and cloud-based systems. Workload and system performance characterization, modelling, and testing. Identification and resolution of bottlenecks. Completion of a project is required.",
+  "notes": [
+    "Credit will be granted for only one of SENG 468, SENG 462."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC360",
+          "CSC370"
+        ]
+      },
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECE356",
+              "ECE476"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "CENG460",
+              "ECE363",
+              "ECE458"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

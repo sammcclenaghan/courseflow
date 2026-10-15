@@ -1,0 +1,43 @@
+{
+  "pid": "SyqmTUrz1g",
+  "code": "SJS400",
+  "title": "Social Justice in Action",
+  "description": "An advanced interdisciplinary exploration of key action-oriented approaches, strategies and tactics for engaging with contemporary social justice movements.",
+  "notes": [
+    "Credit will be granted for one of SJS 400, SJS 400A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SJS100",
+              "SJS300"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum third-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

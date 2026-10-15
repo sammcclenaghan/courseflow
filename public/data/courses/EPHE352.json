@@ -1,0 +1,68 @@
+{
+  "pid": "HJf-Ed6mV",
+  "code": "EPHE352",
+  "title": "Introduction to Physical Activity Instructional Techniques",
+  "description": "Methods of instruction in physical activities for school and related groups. Field experience may be required as part of this course.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 352, PE 352."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": {
+          "units": 1.5
+        },
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE104",
+          "EPHE105",
+          "EPHE106",
+          "EPHE109",
+          "EPHE113",
+          "EPHE116",
+          "EPHE117",
+          "EPHE120",
+          "EPHE121",
+          "EPHE122",
+          "EPHE123",
+          "EPHE124",
+          "EPHE126",
+          "EPHE133",
+          "EPHE134",
+          "EPHE137",
+          "EPHE362",
+          "EPHE436",
+          "EPHE437",
+          "EPHE439"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "text",
+            "text": "admission to School of Exercise Science, Physical and Health Education"
+          },
+          {
+            "type": "text",
+            "text": "declared Physical Health Education minor"
+          },
+          {
+            "type": "text",
+            "text": "permission of the school."
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

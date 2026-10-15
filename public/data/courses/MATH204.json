@@ -1,0 +1,25 @@
+{
+  "pid": "r16khd6X4",
+  "code": "MATH204",
+  "title": "Calculus IV",
+  "description": "Vector fields; div, grad and curl operators; line integrals; Green's Theorem; surface integrals; flux; Divergence Theorem; Stokes' Theorem; multivariate Taylor series; Fourier series; first and second order differential equations with applications; variation of parameters; reduction of order; power series solutions about ordinary points; Laplace transform.",
+  "notes": [
+    "Credit will be granted for only one of MATH 201, MATH 204, MATH 300."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH200",
+      "MATH205"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "Hkk_Wu6XN",
+  "code": "EDCI307B",
+  "title": "Art in the Elementary Classroom II",
+  "description": "Advanced further concepts and methods of instruction that are appropriate for elementary students in classroom settings. Involves continued work in developing student competence and confidence in studio art and building general knowledge, both cultural and historical, and contemporary art and art practice.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 307B, EDCI 307, AE 103, AE 103A, AE 103B, AE 204, EDUC 307.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EDCI307A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to a program in Teacher Education."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

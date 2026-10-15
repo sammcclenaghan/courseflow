@@ -1,0 +1,25 @@
+{
+  "pid": "rygucdpXE",
+  "code": "IGOV570",
+  "title": "Indigenous Feminism and Resistance",
+  "description": "Explores how Indigenous women and LGBTQ2+ community activists engage traditional Indigenous philosophies, governance and ways of being as a form of resistance to colonialism.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to MA program in Indigenous Governance"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

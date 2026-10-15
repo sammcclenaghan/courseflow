@@ -1,0 +1,119 @@
+{
+  "pid": "Hkg4JWdTXN",
+  "code": "ECON457",
+  "title": "Computational Economics",
+  "description": "An introduction to numerical methods and their application in economics.",
+  "notes": [
+    "Credit will be granted for only one of ECON 457, ECON 353."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON203",
+          "ECON204"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON225",
+          "ENGR120",
+          "ENGR240"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON246",
+          "STAT261"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON350",
+          "MATH204"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC105",
+          "CSC110",
+          "CSC111"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH208"
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "MATH101",
+                  "MATH200"
+                ]
+              },
+              {
+                "type": "courses",
+                "need": 1,
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "MATH110",
+                  "MATH211"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,40 @@
+{
+  "pid": "SJzk5jsX5",
+  "code": "ECON346",
+  "title": "Applied Econometrics II",
+  "description": "The application of econometric methods to practical data analysis problems, with emphasis on the correct interpretation of empirical evidence. Topics include hypothesis testing, panel data, time series, causality, as well as further econometric methods applied to a range of empirical problems. Assessment may include an empirical project.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON225",
+          "ENGR120",
+          "ENGR240"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON345",
+          "ECON365"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

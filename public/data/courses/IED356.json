@@ -1,0 +1,45 @@
+{
+  "pid": "H1NSq_TXN",
+  "code": "IED356",
+  "title": "Self-Directed Immersive Language Learning III",
+  "description": "Equips and supports students to find, create and engage in immersive, communicative learning contexts for their own Indigenous languages at third-year level through participation in self-directed language activities. Students log 75-100 hours of communicative Indigenous language learning through a variety of self-directed methods.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IED256",
+              "IED258",
+              "IED259",
+              "LING256",
+              "LING258",
+              "LING259"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to one of BEd or Diploma program in Indigenous Language Revitalization, Certificate in Indigenous Language Proficiency, Certificate in Indigenous Language Revitalization"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

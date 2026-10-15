@@ -1,0 +1,41 @@
+{
+  "pid": "r1AUTDam4",
+  "code": "ANTH250",
+  "title": "Biological Anthropology",
+  "description": "An introduction to human biological evolution. Topics include the study of non-human primates, investigation of the human fossil record, human skeletal variation, population genetics, growth and development and morphological variation.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ANTH100"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "completed a minimum of 12 units"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

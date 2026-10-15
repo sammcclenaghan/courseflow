@@ -1,0 +1,31 @@
+{
+  "pid": "By697OamV",
+  "code": "ENGR240",
+  "title": "Technical Writing",
+  "description": "Searching and referencing methods used in dealing with scientific and technical literature and on the characteristics of effective technical and scientific style. The emphasis throughout is on clarity, precision and consistency. Students acquire practical experience in the writing of short technical documents such as memoranda, letters and abstracts, longer forms such as reports, papers, and theses, and instructional forms such as manuals, brochures and specifications.",
+  "notes": [
+    "Credit will be granted for only one of ENGR 240, ENGR 120, ENGL 225, ENGL 226, ENGL 240."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ATWP135",
+      "ENGR110",
+      "ENGR111",
+      "ENGL135",
+      "ENGL146",
+      "ENGL147",
+      "ENSH101",
+      "ENSH102"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

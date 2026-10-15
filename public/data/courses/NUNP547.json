@@ -1,0 +1,41 @@
+{
+  "pid": "S1xFUaua7E",
+  "code": "NUNP547",
+  "title": "Primary Health Care III (Older Adult Theory)",
+  "description": "Advanced practice nursing with persons experiencing episodic illness conditions, chronic diseases and complex health challenges. Particular attention is paid to theoretical perspectives and skill development related to nurse practitioner core competencies with culturally and gender diverse older adults and families. Selected concepts, theories and research associated with health promotion and maintenance, illness prevention, chronic disease management and end-of-life care are explored within the community context.",
+  "notes": [
+    "Credit will be granted for only one of NUNP 547, NUNP 534, NUNP 550.",
+    "Students must pass both theory and practice corequisites to advance to the next set of corequisite theory and practice courses. If students fail one corequisite they may be required to complete both corequisites again the next time they are offered. Students may be required to demonstrate knowledge and skills obtained in the prerequisite courses listed below if 12 months or more have elapsed between completing prerequisite courses and enrolling in this course.",
+    "Students must pass the midterm and final with a combined 73% (or a “B”) in order to pass the course. Failure to complete all requirements will result in a failing grade even where a grade of “B” or higher is achieved."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NUNP531",
+      "NUNP532",
+      "NUNP540",
+      "NUNP541",
+      "NUNP543",
+      "NUNP545",
+      "NUNP549"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NUNP548"
+    ]
+  },
+  "recommendations": []
+}

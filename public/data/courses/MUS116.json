@@ -1,0 +1,15 @@
+{
+  "pid": "B1KR3OaX4",
+  "code": "MUS116",
+  "title": "Music Appreciation",
+  "description": "A historical music survey focused on terminology, composers and styles, and critical listening skills.",
+  "notes": [
+    "Credit will be granted for only one of MUS 116, MUS 110, MUS 110A, MUS 110B, MUS 115, MUS 120A, MUS 120B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,50 @@
+{
+  "pid": "S1QzbpeCq",
+  "code": "ENSH303",
+  "title": "Writing for Business and the Private Sector",
+  "description": "Essential skills of modern technical and business writing, particularly usability, style and structure. Technology as part of the research, writing, revision and presentation processes. Proposals, reports, descriptions, writing for general audiences.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 303, ENGL 301.",
+    "This is a Professional Communication course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "ENSH101",
+          "ENSH102",
+          "ENSH103",
+          "ENSH201",
+          "ENSH202",
+          "ENGL135",
+          "ENGL146",
+          "ENGL147",
+          "ENGL215",
+          "ENGL225",
+          "ATWP135",
+          "ECON225",
+          "ENGR240",
+          "MDIA200",
+          "WRIT204A",
+          "WRIT204B",
+          "WRIT215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

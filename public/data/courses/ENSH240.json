@@ -1,0 +1,39 @@
+{
+  "pid": "BkgqzbvR9",
+  "code": "ENSH240",
+  "title": "Introduction to a Major Author",
+  "description": "Focuses on several works by a single major author.",
+  "notes": [
+    "May be taken more than once for credit in different topics to a maximum of 3 units."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirements satisfied."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ATWP135",
+          "ENGL146",
+          "ENGL147",
+          "ENSH101",
+          "ENSH102",
+          "ENSH103"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

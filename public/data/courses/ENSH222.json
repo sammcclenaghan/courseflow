@@ -1,0 +1,39 @@
+{
+  "pid": "SJzNQWD09",
+  "code": "ENSH222",
+  "title": "Erotic Literature",
+  "description": "Surveys erotic writing in English or within Anglophone traditions of Britain and Ireland. May include comparative analysis of ancient and non-Anglophone texts and traditions in translation. Focuses on what counted as erotic in different historical contexts and how different sexualities are represented.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 222, ENGL 230 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ATWP135",
+          "ENGL146",
+          "ENGL147",
+          "ENSH101",
+          "ENSH102",
+          "ENSH103"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

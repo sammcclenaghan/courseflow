@@ -1,0 +1,27 @@
+{
+  "pid": "rJy2AP6Q4",
+  "code": "CD512",
+  "title": "Program Evaluation for Community Development",
+  "description": "Provides an overview of program evaluation within the community development sector. Examines key evaluation approaches and frameworks examining design, data collection and analysis, as well as appropriate data dissemination. Focus will be on evaluation informed by the social, historical, political and cultural context with attention given to challenges and opportunities unique to the sector.",
+  "notes": [
+    "Credit will be granted for only one of CD 512, ADMN 437, ADMN 537."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Masters in Community Development program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

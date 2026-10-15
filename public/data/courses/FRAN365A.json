@@ -1,0 +1,50 @@
+{
+  "pid": "SJiK4AGvkx",
+  "code": "FRAN365A",
+  "title": "Directed Experiential Learning",
+  "description": "Present a project based on work, research or volunteering in a French-speaking environment, in Canada or abroad. Includes ethical issues pertinent to the experiential learning context; methods of recording and reflection on this experience; and forms of knowledge mobilization such as report writing, research papers, creative projects, blogging, community-based events.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 365A, FRAN 250, FRAN 365.",
+    "Open only to students who are completing the experience requirement for a degree in French."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "FRAN180"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "FRAN182"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

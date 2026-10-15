@@ -1,0 +1,24 @@
+{
+  "pid": "BJ2Z2O67N",
+  "code": "MATH413",
+  "title": "Applied Algebra",
+  "description": "A survey of the applications of algebraic structures in computer science, applied mathematics, and electrical engineering. Topics may include: cryptography, switching circuits, finite state machines, state diagrams, machine homomorphism, group and matrix codes, Polya-Burnside enumeration, Latin squares, primality testing.",
+  "notes": [
+    "Credit will be granted for only one of MATH 413, MATH 433D."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH212"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

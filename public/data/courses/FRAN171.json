@@ -1,0 +1,42 @@
+{
+  "pid": "rJjhirClWg",
+  "code": "FRAN171",
+  "title": "Level B1.1 French",
+  "description": "Introduction to the development of intermediate language skills and intercultural competencies to facilitate communication and interaction in everyday and diverse contexts (school, leisure), through oral and written practice. Exploration of differences and cultural diversities in French-speaking regions and countries. Advances to a B1 level of the European Common Framework for Languages. Prepares for intermediate (B1.2) study upon completion.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 171, FRAN 170."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0 ",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "FRAN120"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "immersion up to Grade 10"
+      },
+      {
+        "type": "text",
+        "text": "French 12"
+      },
+      {
+        "type": "text",
+        "text": "permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

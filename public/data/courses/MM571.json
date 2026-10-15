@@ -1,0 +1,34 @@
+{
+  "pid": "HJFv4X6zkx",
+  "code": "MM571",
+  "title": "Investments",
+  "description": "Principles of securities traded in international financial markets; market structure; information efficiency; asset pricing models; valuation and trading of stocks, bonds, options and futures.",
+  "notes": [
+    "Credit will only be granted for one of MM 571, COM 446.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MM510"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to the MM program and the concentration in Sustainable Finance."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

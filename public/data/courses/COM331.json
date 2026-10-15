@@ -1,0 +1,51 @@
+{
+  "pid": "SyXO1_T7N",
+  "code": "COM331",
+  "title": "Technology Management",
+  "description": "The use of computer-based information systems in achieving the information objectives of the organization. Fundamentals of hardware, software, networks, electronic commerce and business applications. Focus is on the responsible use of information systems and technology to support business strategy, operations and decision making. Includes the use of, but not instruction in, computer-based productivity tools.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM232"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BCom program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM324",
+          "COM341",
+          "COM361"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "recommendations": []
+}

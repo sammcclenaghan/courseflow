@@ -1,0 +1,16 @@
+{
+  "pid": "B1uE6_6mE",
+  "code": "MUS545",
+  "title": "Major Instrument Study",
+  "description": "Individual tuition and master class.",
+  "notes": [],
+  "credits": "1",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to MMus in Performance."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

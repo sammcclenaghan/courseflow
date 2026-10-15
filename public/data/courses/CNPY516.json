@@ -1,0 +1,29 @@
+{
+  "pid": "SkGvax3z1l",
+  "code": "CNPY516",
+  "title": "Career Development and Counselling Across the Lifespan",
+  "description": "Lifespan and career development as a dynamic and holistic enterprise. Theories and techniques of career development, assessment, and consultation are explored. The practice of career counselling for diverse populations including work-related issues.",
+  "notes": [
+    "Credit will be granted for only one of CNPY 516, ED-D 519H, ED-D 591 (if taken in the same topic).",
+    "Students who have counselling or related background may request permission to register in the course.",
+    "The majority of seats in this course are reserved for students in the counselling psychology graduate program. Enrolment for students outside of the counselling psychology graduate program is limited."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to the Counselling Psychology graduate program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

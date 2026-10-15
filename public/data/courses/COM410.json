@@ -1,0 +1,43 @@
+{
+  "pid": "HJudydp7E",
+  "code": "COM410",
+  "title": "Leadership Strategies",
+  "description": "An examination of leadership in a variety of environments: corporate, the military, and the public sector. Identifies the characteristics of a leader and instills an interest in and awareness of this vital organizational skill. Includes a review of leadership research from a historical perspective as well as current theory on transformational leadership. Experiential exercises, case studies and role playing techniques are employed to demonstrate leadership skills.",
+  "notes": [
+    "Credit will be granted for only one of COM 410, MBA 521."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "COM220",
+              "COM321"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum fourth-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

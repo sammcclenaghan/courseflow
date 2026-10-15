@@ -1,0 +1,28 @@
+{
+  "pid": "r1KHB_67N",
+  "code": "GEOG428",
+  "title": "Advanced Topics in Geographic Information Sciences",
+  "description": "Contemporary research topics in the geographic information sciences. Topic varies annually, but are selected from one of the following: spatial decision support; visualization; business demographics; environmental modeling; or spatial analysis.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 428, GEOG 423.",
+    "International students interested in taking GEOG 428 should contact the International Centre for Students (ICS) to discuss potential work authorization requirements for the experiential learning component of this course."
+  ],
+  "credits": "1.5",
+  "hours": "2-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG328",
+      "GEOG329"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "GEOG 328 and GEOG 329 recommended prior to GEOG 428."
+  ]
+}

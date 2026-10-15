@@ -1,0 +1,16 @@
+{
+  "pid": "SyiUdOEC1l",
+  "code": "ECS502",
+  "title": "Professional Leadership and Community Engagement",
+  "description": "Role of leadership and community engagement in professional engineering. Leadership and engagement styles. In-depth discussion of case studies from different areas of practice. Professional standards, laws, and regulations. Community-involved decision-making. Sustainability and sustainable practice. Safety-awareness and practice review. Strategy development and risk management. Bias recognition, mitigation and avoidance. Communication with diverse audiences. De-colonization and truth and reconciliation.",
+  "notes": [],
+  "credits": "1",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to MEng program in Aerospace Systems Engineering, Applied Data Science, Biomedical Systems, Building Envelopes and Structures, Industrial Ecology, or Telecommunications and Information Security."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,24 @@
+{
+  "pid": "BkxLsOp7V",
+  "code": "LAW317",
+  "title": "Real Property Transactions",
+  "description": "Adopts a transactional perspective and analyzes the development of a real property transaction from its inception to post-completion problems. Specific reference to listing the property for sale and the responsibilities and obligations of the agent under the Real Estate Act, specific matters relating to the interim agreement, financing of the purchase and assessment of title, as well as preparation of the file for closing. Brief consideration is given to condominium law and landlord and tenant relations.",
+  "notes": [],
+  "credits": "1.5 or 2",
+  "hours": "3-0-0 or 4-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LAW105",
+      "LAW105I",
+      "LAW108A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

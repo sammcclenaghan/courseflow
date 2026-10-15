@@ -1,0 +1,27 @@
+{
+  "pid": "BJxL0uaQE",
+  "code": "PHIL331",
+  "title": "Biomedical Ethics",
+  "description": "An investigation into various ethical issues that arise in the delivery of health care. Lectures and discussions on topics such as informed consent, abortion, human experimentation, euthanasia, reproductive technologies, the health-care professional/client relationship. Emphasis on the ability to apply theoretical concepts to actual situations.",
+  "notes": [
+    "Credit for this course cannot be counted towards 300-level and 400-level requirements in Honours or Major programs in Philosophy."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

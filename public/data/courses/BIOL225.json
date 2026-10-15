@@ -1,0 +1,55 @@
+{
+  "pid": "SJxFXRvTXE",
+  "code": "BIOL225",
+  "title": "Principles of Cell Biology",
+  "description": "An introduction to cellular, subcellular, and molecular structure/function relationships in eukaryotic cells. Membrane structure and dynamics, membrane transport, protein sorting, vesicular transport, endocytic pathways, extracellular matrices, interactions with the cellular and acellular environments, endomembrane system, cytoskeleton and motility, cellular reproduction, mechanisms of cell signalling, techniques in cell biology.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 225, BIOL 200."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL186",
+          "BIOL190A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL184",
+          "BIOL190B",
+          "MICR200A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "HyIjT_amN",
+  "code": "PAAS238",
+  "title": "Intensive Pre-Intermediate Japanese",
+  "description": "Continuation of Beginner Japanese for those students who intend to practise their listening comprehension, speaking and reading abilities, and writing skills on a more advanced level.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 238, PAAS 131, JAPA 150, JAPA 200."
+  ],
+  "credits": "3",
+  "hours": "6-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "PAAS138",
+          "PAAS137"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

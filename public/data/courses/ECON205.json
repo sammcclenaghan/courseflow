@@ -1,0 +1,27 @@
+{
+  "pid": "B1Y3lup7N",
+  "code": "ECON205",
+  "title": "Managerial Economics",
+  "description": "Basic microeconomic theory and optimization techniques and their application to managerial decision making. Topics include demand, production, and cost analysis; market structure and pricing practices; and regulation. Course also examines estimation, forecasting, international implications, and case studies.",
+  "notes": [
+    "Credit will not be granted for ECON 205 if ECON 203 or ECON 302 has already been completed.",
+    "ECON 203 and ECON 205 cannot be taken concurrently."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON103",
+      "ECON103C",
+      "ECON180"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,52 @@
+{
+  "pid": "BkWlJOa7E",
+  "code": "CHEM476",
+  "title": "Polymer Chemistry",
+  "description": "Chemistry of polymers. Structure-property relationships and applications.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 476, CHEM 336, CHEM 676.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM222",
+          "CHEM225"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM232",
+          "CHEM234"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM245"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

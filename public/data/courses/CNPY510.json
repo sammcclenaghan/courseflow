@@ -1,0 +1,29 @@
+{
+  "pid": "S1kAeb3G1g",
+  "code": "CNPY510",
+  "title": "Diversity, Culture, and Counselling",
+  "description": "Theory and practice of counselling diverse clientele. Specific emphasis on awareness, knowledge and strategies for developing cultural competencies.",
+  "notes": [
+    "Credit will be granted for only one of CNPY 510, ED-D 519N, ED-D 591 (if taken in the same topic).",
+    "Students who have counselling or related background may request permission to register in the course.",
+    "The majority of seats in this course are reserved for students in the counselling psychology graduate program. Enrolment for students outside of the counselling psychology graduate program is limited."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to the Counselling Psychology graduate program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

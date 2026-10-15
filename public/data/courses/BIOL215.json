@@ -1,0 +1,50 @@
+{
+  "pid": "BkKQAv6X4",
+  "code": "BIOL215",
+  "title": "Principles of Ecology",
+  "description": "An introduction to factors controlling the distribution and abundance of plants and animals. Physical environments of organisms; biotic environments and interactions among species; factors influencing population growth; behavioural ecology; community ecology; succession; trophic levels and energy flow, island biogeography; biodiversity; human impact on global ecology; conservation ecology.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 215, BIOL 306."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOL184",
+              "BIOL190B"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOL186",
+              "BIOL190A"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,26 @@
+{
+  "pid": "Hk4mxt6mE",
+  "code": "SOCI271",
+  "title": "Introduction to Social Statistics",
+  "description": "Descriptive statistics, probability distributions, statistical inference, including estimation and significance tests, and an introduction to bivariate analysis. Computer assisted analysis of sociological data.",
+  "notes": [
+    "Credit will be granted for only one of SOCI 271, SOCI 371, SOCI 371A.",
+    "See \"Credit Limit - Beginning Level Statistics Courses\"."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCI100A",
+      "SOCI100B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

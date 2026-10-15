@@ -1,0 +1,41 @@
+{
+  "pid": "r1uCgFTXN",
+  "code": "STAT261",
+  "title": "Introduction to Probability and Statistics II",
+  "description": "Estimation and hypothesis testing; normal sampling distribution theory; analysis of variance and the design of experiments; regression and correlation; analysis of categorical data; distribution-free procedures. The mathematical foundations of statistical inference are introduced and illustrated with examples from a variety of disciplines.",
+  "notes": [
+    "Credit will be granted for only one of STAT 261, STAT 251, STAT 256."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT254",
+          "STAT260"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH101",
+          "MATH208"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

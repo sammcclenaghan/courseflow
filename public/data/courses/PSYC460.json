@@ -1,0 +1,51 @@
+{
+  "pid": "BypH1tpXV",
+  "code": "PSYC460",
+  "title": "Family Violence across the Lifespan",
+  "description": "In-depth examination in a seminar format of violence within the family including child abuse and neglect, intimate partner violence, dating violence, and elder abuse. Theory and research on causes and effects of family violence are examined. Special topics include definitional issues, case studies, research methods, prevention, treatment, and cultural, legal, and social issues.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 460, PSYC 391 (if taken in the same topic), PSYC 491 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A",
+          "PSYC365"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC332",
+          "PSYC338",
+          "PSYC366"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

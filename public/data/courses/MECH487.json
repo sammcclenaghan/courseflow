@@ -1,0 +1,52 @@
+{
+  "pid": "HyY5ivQQs",
+  "code": "MECH487",
+  "title": "Sensors and Actuators",
+  "description": "Principles of sensors and transduction of physical phenomena to measurable signals. Principles of advanced actuators and their transduction of signals to produce work. Design and fabrication of sensors and actuators. Introduction to microelectromechanical systems (MEMS) and micro-structures, micro-sensors, and micro-actuators. Topics include: optical sensors and digital image capture, laser-based sensors, ultrasonic systems, electrostatic and electromagnetic devices, piezoresistive devices, piezoelectric devices, and thermal-electric devices. Applications and case-studies of sensors and advanced actuators, and implementation into real products and systems.\n*indicates four 3 hour labs held over the course of the term.",
+  "notes": [
+    "Credit will be granted for only one of MECH 487, MECH 450F (if in the same topic), MECH 486."
+  ],
+  "credits": "1.5",
+  "hours": "3-1*-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE216",
+          "MECH220"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BME320",
+          "ECE220",
+          "MECH285"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR002"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

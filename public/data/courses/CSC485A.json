@@ -1,0 +1,15 @@
+{
+  "pid": "B1ep1_pXV",
+  "code": "CSC485A",
+  "title": "Topics in Systems",
+  "description": "Entrance is restricted to third- and fourth-year students who meet the prerequisite specified for the offered topic.\n* Lab hours may vary depending on the topic.",
+  "notes": [
+    "Credit will be granted for only one of CSC 485A, CSC 485B (if taken in the same topic), CSC 485 (if taken in the same topic), CSC 485C (if taken in the same topic), CSC 485D (if taken in the same topic), CSC 485E (if taken in the same topic), CSC 485F (if taken in the same topic), CSC 485G (if taken in the same topic), CSC 485H (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0*-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,36 @@
+{
+  "pid": "r1VblY6Q4",
+  "code": "SLST201",
+  "title": "Intermediate Russian I",
+  "description": "Expands and enhances spoken and written knowledge and skills. Grammatical features, vocabulary, sentence structure and insight into Russian life and culture.",
+  "notes": [
+    "Credit will be granted for only one of SLST 201, RUSS 200, RUSS 200A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SLST102",
+          "SLST110",
+          "RUSS100",
+          "RUSS100B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

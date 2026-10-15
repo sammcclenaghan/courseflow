@@ -1,0 +1,28 @@
+{
+  "pid": "rJgBRWu6X4",
+  "code": "EDCI706",
+  "title": "Curriculum and Instruction in Secondary School Art",
+  "description": "As the last formal stage in becoming an art teacher, this course prepares students for their practicum experience. It examines relationships between the practical and theoretical aspects of art education. Students are introduced to various teaching methodologies appropriate for implementing the curriculum, teaching styles are discussed and explored, and students design lessons and develop learning activities around specific concepts.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 706, ED-A 750.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Professional Year or Post Degree Professional program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

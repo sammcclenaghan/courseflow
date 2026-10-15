@@ -1,0 +1,16 @@
+{
+  "pid": "SJeNYhOamE",
+  "code": "MECH515",
+  "title": "Biomaterials and Tissue Engineering",
+  "description": "Types of biomaterials and their associated properties. Experimental characterization techniques including microscopy, detection of chemical compositions, protein adsorption and immunoreactivity. Methods for combining biomaterials with cells to engineer tissues.",
+  "notes": [
+    "Credit will be granted for only one of MECH 515, MECH 481, MECH 450 (if taken in the same topic), MECH 450A (if taken in the same topic), MECH 580 (if taken in the same topic), BME 481, BME 515.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

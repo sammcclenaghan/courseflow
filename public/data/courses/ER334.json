@@ -1,0 +1,27 @@
+{
+  "pid": "SygOX4dTX4",
+  "code": "ER334",
+  "title": "Soil Conservation and Restoration",
+  "description": "Physical, chemical and biological characteristics of soils and their relationship to restoration. Soil fertility; importance of soil flora and fauna, especially mycorrhizae. Comparison of characteristics of undisturbed soils. Types of soil disturbance in agriculture, forestry, mining and urban environments; soil restoration strategies; planning pre- and post-disturbance.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Certificate or Diploma program in Restoration of Natural Systems"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Background in physical geography such as GEOG 103 or equivalent strongly recommended prior to ER 334."
+  ]
+}

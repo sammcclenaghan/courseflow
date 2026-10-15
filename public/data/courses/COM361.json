@@ -1,0 +1,36 @@
+{
+  "pid": "ryr_k_6mV",
+  "code": "COM361",
+  "title": "International Business and Strategy",
+  "description": "Focuses on key aspects of doing business globally and introduces business strategy: forces of globalization; how business conditions and practices differ from country to country; free trade and protectionism; exporting, licensing, and foreign direct investment; exchange rates and the complications that arise when dealing with multiple currencies; and strategic and organizational issues for firms.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to the BCom program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM324",
+          "COM331",
+          "COM341"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "recommendations": []
+}

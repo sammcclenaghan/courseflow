@@ -1,0 +1,25 @@
+{
+  "pid": "ry1lz_674",
+  "code": "ED-D421",
+  "title": "Recognition and Assessment of Learning Needs",
+  "description": "Topics include administering and interpreting teacher directed/prepared assessment techniques and commercial tests; reading and writing reports; and developing various individualized educational plans.",
+  "notes": [
+    "Credit will be granted for only one of ED-D 421, EDUC 421."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-D420",
+      "EDUC420"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

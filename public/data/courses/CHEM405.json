@@ -1,0 +1,25 @@
+{
+  "pid": "SJfjZYamV",
+  "code": "CHEM405",
+  "title": "Professional Development and Societal Engagement for Chemists",
+  "description": "Develops the professional aspects of chemistry with a focus on the application of chemistry to societal settings. Project involves interactions with societal stakeholders.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "declared Chemistry Honours Program or Chemistry Major Program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

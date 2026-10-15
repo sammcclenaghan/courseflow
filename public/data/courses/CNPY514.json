@@ -1,0 +1,29 @@
+{
+  "pid": "BkyLdenMJg",
+  "code": "CNPY514",
+  "title": "Assessment in Counselling",
+  "description": "Testing, diagnosis and other aspects of assessment within a counselling perspective for adults, adolescents and children. Topics addressed include basic concepts in assessment, the relationship between counselling and assessment, ethical issues, diversity, reliability and validity, test selection and administration, test evaluation, a variety of assessments and assessment reports.",
+  "notes": [
+    "Credit will be granted for only one of CNPY 514, ED-D 514, ED-D 591 (if taken in the same topic).",
+    "Students who have Counselling or related background may request permission to register in the course.",
+    "The majority of seats in this course are reserved for students in the counselling psychology graduate program. Enrolment for students outside of the counselling psychology graduate program is limited."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to the Counselling Psychology graduate program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,22 @@
+{
+  "pid": "HyeMC1K6XN",
+  "code": "SDH699",
+  "title": "Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "15",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SDH693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

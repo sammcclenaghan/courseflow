@@ -1,0 +1,63 @@
+{
+  "pid": "rytnH9ZXp",
+  "code": "THEA323A",
+  "title": "Introduction to Voice and Speech in the Theatre",
+  "description": "Work in voice and speech as related to specific theatrical genres, styles or periods.",
+  "notes": [
+    "Credit will be granted for only one of THEA 323A, THEA 323, THEA 350."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "THEA205",
+                  "THEA221"
+                ]
+              },
+              {
+                "type": "text",
+                "text": "permission of the department."
+              }
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "THEA205",
+              "THEA206",
+              "THEA222",
+              "THEA223",
+              "THEA347"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

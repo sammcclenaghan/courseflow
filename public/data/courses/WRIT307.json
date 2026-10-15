@@ -1,0 +1,18 @@
+{
+  "pid": "r11DZYpX4",
+  "code": "WRIT307",
+  "title": "Basic Forms and Techniques in Poetry",
+  "description": "A lecture course surveying the functions of specific poetic techniques in a representative group of poems. Aspects of poetics discussed include prosody, sound patterns, diction and figurative language.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 307, CW 307."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

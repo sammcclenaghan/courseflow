@@ -1,0 +1,24 @@
+{
+  "pid": "BkbA27OamV",
+  "code": "EOS416",
+  "title": "High Temperature Petrology",
+  "description": "The thermodynamic and kinetic principles controlling the origin and behaviour of rocks at high temperatures and pressures. Thermodynamic and kinetic relations in igneous and metamorphic systems applied to understanding the petrogenesis of magmatic and metamorphic rock suites. Applications to the geodynamic, hydrothermal and tectonic evolution of the Earth and terrestrial planets.",
+  "notes": [
+    "Normally offered in alternate years. Students are advised to consult with the department to determine when this is offered."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EOS316"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

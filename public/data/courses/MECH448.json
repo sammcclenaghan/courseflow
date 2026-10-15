@@ -1,0 +1,42 @@
+{
+  "pid": "H1QSYyxvB",
+  "code": "MECH448",
+  "title": "Introduction to Musculoskeletal Biomechanics",
+  "description": "Engineering analysis of musculoskeletal (MSk) systems. Study of basic MSk anatomy and nomenclature, effects of muscle, bone, tendons, and ligaments on MSk biomechanics. Biomechanical kinematic and force via first principles and spatial transformation methods. Technologies and methods used to assess MSk biomechanical variables. Applications of above concepts to computer assisted surgery and computational modelling.",
+  "notes": [
+    "Credit will be granted for only one of MECH 448, MECH 450D (if taken in the same topic), MECH 580 (if taken in the same topic), BME 401D (if taken in the same topic), BME 448, BME 548.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH220",
+          "MECH242"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH350",
+          "BME350"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

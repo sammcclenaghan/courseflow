@@ -1,0 +1,18 @@
+{
+  "pid": "By31bF6QN",
+  "code": "THEA120A",
+  "title": "Introduction to the Art of Acting I",
+  "description": "An orientation to the art of acting and an introduction to the actor's creative process.",
+  "notes": [
+    "Credit will be granted for only one of THEA 120A, THEA 120."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a program in Theatre."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

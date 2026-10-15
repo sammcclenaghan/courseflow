@@ -1,0 +1,61 @@
+{
+  "pid": "Syl8jm_aQ4",
+  "code": "ENT402",
+  "title": "Entrepreneurship and Small Business for the Non-Specialist",
+  "description": "Using lean start-up methods as the foundation, aspects of new venture development are explored and practiced – opportunity recognition and quantification, customer development research, minimum viable product (MVP) design and testing, business model design, new venture marketing strategies, financing and funding, and intellectual property protection. Students select a business idea and work independently and with their team to examine and test the idea’s feasibility, culminating in development and presentation of a sound business model and launch plan.",
+  "notes": [
+    "Credit will be granted for only one of ENT 402, ENT 302, MECH 462.",
+    "Enrolment limited to students outside the Entrepreneurship area of specialization."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "some",
+            "count": 1,
+            "items": [
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "COM220",
+                  "COM250"
+                ]
+              },
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "COM321",
+                  "COM351"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Minimum fourth-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the Program Director."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

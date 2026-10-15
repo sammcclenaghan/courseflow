@@ -1,0 +1,71 @@
+{
+  "pid": "B1MrRPa74",
+  "code": "BIOL365",
+  "title": "Animal Physiology",
+  "description": "Fundamentals of animal physiological systems: principles of cellular and organismic homeostasis, nutrition, digestion, salt/water balance, respiration, circulation, muscle contraction, excitable membranes, sensory systems, brain functions, hormones, reproduction. Laboratory includes study of live animals.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 365, BIOL 305A, BIOL 305B."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOL184",
+              "BIOL186"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOL190B"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL225"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOC299",
+      "BIOC300A",
+      "BIOC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

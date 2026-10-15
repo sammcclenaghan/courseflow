@@ -1,0 +1,51 @@
+{
+  "pid": "ByzOgt6QE",
+  "code": "SOCW471",
+  "title": "Substance Use Theory, Policy and Practice in Social Work",
+  "description": "Critically examines drug policy and theories grounded in social work practice with people who use drugs. Inclusive of domestic historical and sociolegal contexts, spanning the beginning of prohibition policies in ‘Canada’ to topical themes such as harm reduction and drug user liberation in an overdose crisis setting. Students will ground broad understandings of substance use within social work practice.",
+  "notes": [
+    "Credit will be granted for only one of SOCW 471, SOCW 479."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Bachelor of Social Work program"
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SOCW311",
+              "SOCW312"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SOCW312A",
+              "SOCW312B"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

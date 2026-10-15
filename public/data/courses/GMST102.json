@@ -1,0 +1,34 @@
+{
+  "pid": "SJnRHdamV",
+  "code": "GMST102",
+  "title": "Beginning German II",
+  "description": "For students with limited previous knowledge of German who wish to acquire a better command of the spoken and written language, learn about German-speaking culture and acquire more advanced skills in daily interactions. Acquisition of a basic understanding of German and ability to read, write, speak and comprehend German at the advanced beginner's level.",
+  "notes": [
+    "Credit will be granted for only one of GMST 102, GMST 110, GER 100, GER 100B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GMST101",
+          "GER100A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

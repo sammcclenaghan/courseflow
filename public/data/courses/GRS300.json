@@ -1,0 +1,35 @@
+{
+  "pid": "rkWIUupXE",
+  "code": "GRS300",
+  "title": "Gods and Heroes in Ancient Epic",
+  "description": "An examination of epic genre in Greek and Latin literature. May include Homer's Iliad and Odyssey, Apollonius Rodius' Argonautica, Virgil’s Aeneid, and other Greek and Roman epics. Themes may include the nature of heroism, the role of the gods, fate and mortality.",
+  "notes": [
+    "Credit will be granted for only one of GRS 300, CLAS 300."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GRS100",
+          "GRS101",
+          "GRS200"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

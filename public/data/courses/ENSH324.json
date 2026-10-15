@@ -1,0 +1,18 @@
+{
+  "pid": "BkLDw-PAc",
+  "code": "ENSH324",
+  "title": "Comics and Graphic Novels",
+  "description": "Study of literature that combines text and image, from comics to graphic novels.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 324, ENGL 330 (if taken Sept-Dec 2020)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

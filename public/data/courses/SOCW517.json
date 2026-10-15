@@ -1,0 +1,34 @@
+{
+  "pid": "HJCuxKT7V",
+  "code": "SOCW517",
+  "title": "Research Seminar",
+  "description": "Focuses on specific methodological, analytical and/or theoretical aspects of research for the thesis. Is intended to support graduate students in the thesis research and writing that they undertake following the completion of their coursework. Content varies from year to year, depending on students' interests and needs.",
+  "notes": [
+    "Students who are completing a thesis may request permission to register in the course.",
+    "Registration in SOCW 517 is normally continued until the student's thesis proposal has been approved by the supervisory committee."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW516"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

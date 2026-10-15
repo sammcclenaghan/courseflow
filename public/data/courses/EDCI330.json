@@ -1,0 +1,25 @@
+{
+  "pid": "SyZd-dT7V",
+  "code": "EDCI330",
+  "title": "Elementary Field Experience Seminar II",
+  "description": "Focus is on planning and implementing the curriculum, addressing the diversity found in classrooms and schools, and acquiring strategies for orchestrating the many demands and responsibilities inherent in the role of educators.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 330, ED-P 300A, ED-P 300B, ED-P 350.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-P251"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

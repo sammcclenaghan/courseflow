@@ -1,0 +1,37 @@
+{
+  "pid": "By-wSupXE",
+  "code": "GEOG477",
+  "title": "Field Studies in Physical Geography",
+  "description": "The nature of scientific research in physical geography is examined through field and laboratory techniques. Includes a week-long field camp where basic approaches, methodologies and techniques are used to prepare a series of reports based on field data and collected samples. A field trip fee may be applied.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 477, GEOG 471D.",
+    "Permission of the department must be acquired by 15 March of previous Winter Session."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG358",
+          "GEOG370",
+          "GEOG373",
+          "GEOG376"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

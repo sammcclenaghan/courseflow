@@ -1,0 +1,22 @@
+{
+  "pid": "Bk5QxtaXV",
+  "code": "SOCI309",
+  "title": "Contemporary Social Theorizing",
+  "description": "An examination of major modes of theorizing that are influential in contemporary sociology. Covers important developments in social theory over the past 50 years and concepts such as power, ideology, rationality, social structure, agency, freedom, identity, gender, postcolonialism, and globalization. Emphasis is placed on developing students' abilities to theorize contemporary social issues.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCI210"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

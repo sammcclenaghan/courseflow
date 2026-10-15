@@ -1,0 +1,44 @@
+{
+  "pid": "HJRLz57lU",
+  "code": "MUS342",
+  "title": "Lyric Diction",
+  "description": "Basic phonetics and accepted principles of lyric diction of the most commonly used languages in concert and operatic repertoire: Italian; French; German; English. Emphasis on performance.",
+  "notes": [
+    "Credit will be granted for only one of MUS 342, MUS 142, MUS 542."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS140"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS170B",
+          "MUS171B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

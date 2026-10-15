@@ -1,0 +1,17 @@
+{
+  "pid": "rJwWEOTQN",
+  "code": "EPHE444",
+  "title": "Measurement and Evaluation in Exercise Science",
+  "description": "Use of laboratory and field tests in the assessment of physical performance and physique. Test administration and interpretation of results.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 444, PE 444."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "A background in physiology recommended prior to EPHE 444."
+  ]
+}

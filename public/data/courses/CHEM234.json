@@ -1,0 +1,26 @@
+{
+  "pid": "HJWiWKp7N",
+  "code": "CHEM234",
+  "title": "Organic Chemistry with Biological Applications",
+  "description": "The continuation of CHEM 231. Completion of the survey of functional groups with examples from aromatic and biological molecules, with emphasis on mechanisms and synthesis. In the tutorials, examples illustrate concepts and relevant spectroscopy.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 232, CHEM 234, CHEM 235.",
+    "Students with credit in CHEM 222 should register in CHEM 232."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM102",
+      "CHEM231"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

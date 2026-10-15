@@ -1,0 +1,16 @@
+{
+  "pid": "BksCn_6XV",
+  "code": "MUS140",
+  "title": "Individual Tuition",
+  "description": "Lessons in instrument or voice and weekly master class including discussion of repertoire, pedagogy and techniques of performance.",
+  "notes": [],
+  "credits": "1",
+  "hours": "1-1-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to BMus program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

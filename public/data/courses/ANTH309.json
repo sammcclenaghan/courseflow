@@ -1,0 +1,18 @@
+{
+  "pid": "ByXP6Pam4",
+  "code": "ANTH309",
+  "title": "Anthropology of Film and Video",
+  "description": "Examination of theoretical and methodological approaches to visual anthropological research in film and video.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 309, ANTH 390 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

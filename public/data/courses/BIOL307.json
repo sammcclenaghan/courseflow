@@ -1,0 +1,41 @@
+{
+  "pid": "Hkl0QCPT7E",
+  "code": "BIOL307",
+  "title": "Chordate Zoology",
+  "description": "Chordates: evolutionary history and adaptations. Major taxonomic groups, with emphasis on derived and defining characteristics; locomotion, feeding, sensory systems and reproduction. Laboratory exercises include observations of prepared specimens, dissections, written assignments and oral presentations.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 307, BIOL 207."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL184",
+          "BIOL190B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL186",
+          "BIOL190A"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

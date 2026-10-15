@@ -1,0 +1,25 @@
+{
+  "pid": "HJE4ydamE",
+  "code": "CIVE453",
+  "title": "Building and District Energy Simulation",
+  "description": "Building simulation skills developed for: climate analysis; geometric and building envelope design; daylight and solar gains, including glazing and shading; thermal comfort and building control; heating, ventilation and air-conditioning systems; air flow and natural ventilation; renewable energy and storage technologies and district-level energy systems; parametric analysis and computational design optimization energy flows in buildings and districts, and of the integrated nature of the building design process.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 453, CIVE 480F (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CIVE295",
+      "CIVE395"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

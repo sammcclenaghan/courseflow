@@ -1,0 +1,25 @@
+{
+  "pid": "HyFQJFpQE",
+  "code": "PSYC335",
+  "title": "Infant and Child Development",
+  "description": "Overview of developmental changes from conception through about 12 years of age; prenatal development, neurological development, physical growth, perceptual and motor development, cognitive, social, and emotional processes, language acquisition, personality development, parenting, and the socio-cultural context of development.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 335, PSYC 333A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC243"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

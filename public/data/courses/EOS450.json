@@ -1,0 +1,23 @@
+{
+  "pid": "Hy7p7daX4",
+  "code": "EOS450",
+  "title": "Quaternary Geology",
+  "description": "Methods and theory of Quaternary research, stressing the processes of interaction between the climate, cryosphere, geosphere and biosphere. Topics include dating methods, paleoenvironmental studies, glaciation and global change, geological hazards, interdisciplinary research and applied studies.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EOS201",
+      "GEOG376"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

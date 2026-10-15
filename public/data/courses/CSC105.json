@@ -1,0 +1,16 @@
+{
+  "pid": "HJZck_TmV",
+  "code": "CSC105",
+  "title": "Computers and Information Processing",
+  "description": "An introduction to business computing. Topics include the basic structure of digital computer systems, microcomputers, word processing, spreadsheets, database systems, communications, networks and introductory programming. In the laboratory, students receive hands-on experience with microcomputers and software packages for business applications.",
+  "notes": [
+    "Not open for credit to students registered in or with credit in CSC 106, CSC 110, CSC 111, CSC 212, HINF 130, HINF 171, HINF 172.",
+    "Intended primarily for students undertaking a degree in Business or Economics; students considering a Major in Computer Science should enrol in CSC 106 or CSC 110 rather than CSC 105."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

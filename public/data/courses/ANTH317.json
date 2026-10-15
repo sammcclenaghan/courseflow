@@ -1,0 +1,42 @@
+{
+  "pid": "BkwDavT7N",
+  "code": "ANTH317",
+  "title": "Quantitative Methods in Anthropological Research",
+  "description": "Introduces quantitative data analysis in Anthropology. Focus is on the application and interpretation of statistical techniques and information. Topics may include exploratory data analysis, parametric and nonparametric statistical tests, correlation and regression analysis, presentation of statistical information and an introduction to more specialized methods. Data analysis applications are computer based using freely available software.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 317, ANTH 417."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ANTH200",
+          "ANTH240",
+          "ANTH250"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ANTH260",
+          "ANTH316"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

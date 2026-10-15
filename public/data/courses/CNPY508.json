@@ -1,0 +1,27 @@
+{
+  "pid": "rJIVeZhf1g",
+  "code": "CNPY508",
+  "title": "Group Counselling",
+  "description": "The conceptualization and practice of group counselling and therapy. Leadership skills are examined. Particular attention is given to leadership skills and exploring the foundation and application of experiential learning in groups.",
+  "notes": [
+    "Credit will be granted for only one of CNPY 508, ED-D 519L, ED-D 591 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to MA program in Counselling Psychology"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

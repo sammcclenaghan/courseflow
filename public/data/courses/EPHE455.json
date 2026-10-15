@@ -1,0 +1,40 @@
+{
+  "pid": "Hklc-4uaXN",
+  "code": "EPHE455",
+  "title": "Nutrition for Exercise and Health",
+  "description": "The study of nutrition in the applied context of physical activity, exercise and sport performance. The role of macro- and micro-nutrient consumption, the effects of nutritional supplements and hydration strategies and the use of specialized diets for performance enhancement are examined.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 455, PE 455."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE155"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE160",
+          "EPHE241"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

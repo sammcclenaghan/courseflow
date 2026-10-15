@@ -1,0 +1,31 @@
+{
+  "pid": "Hk8NkFTXV",
+  "code": "PSYC391",
+  "title": "Special Topics in Psychology",
+  "description": "Intensive examination of a specific topic or area in Psychology. Topic(s) and information are provided in advance of registration.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC201"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "additional prerequisites set by department depending upon topic."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

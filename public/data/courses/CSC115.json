@@ -1,0 +1,25 @@
+{
+  "pid": "Hkm5kuT7V",
+  "code": "CSC115",
+  "title": "Fundamentals of Programming II",
+  "description": "Change the description to: “Definition, properties, representations and real-world applications of abstract data types. Including: design, tracing, implementation and analysis of common algorithms, software libraries, pointers, storage allocation and program traces. Introducing object-oriented programming concepts, abstraction, encapsulation, inheritance, polymorphism, generic programming, command-line interfaces, Big-O analysis, recursion and systematic test case design and analysis.",
+  "notes": [
+    "Credit will be granted for only one of CSC 115, CSC 116, CSC 160."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC110",
+      "CSC111"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,24 @@
+{
+  "pid": "BklqdhOamN",
+  "code": "MECH473",
+  "title": "Ferrous and Non-Ferrous Metals",
+  "description": "Mechanical, thermal, electrical, photonic and magnetic properties of materials, the iron-carbon and iron-cementite phase diagrams; nucleation and growth of microstructural constituents; the martensite phase transformation; time-temperature-transformation (TTT) curves; properties affected by quenching, tempering and annealing; alloy additions; structural, high strength and speciality steels; welding; tools and stainless steels; cast irons; superalloys; copper, aluminum, magnesium and titanium alloys; metal matrix composites.",
+  "notes": [
+    "Credit will be granted for only one of MECH 473, MECH 573."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH285"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

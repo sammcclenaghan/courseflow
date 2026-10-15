@@ -1,0 +1,25 @@
+{
+  "pid": "rkrzu1h62",
+  "code": "THEA106",
+  "title": "Ensemble Building",
+  "description": "Collaborative performance-making, from concept to realization.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to the BFA Major in Theatre;"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

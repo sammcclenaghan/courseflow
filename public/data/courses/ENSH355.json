@@ -1,0 +1,18 @@
+{
+  "pid": "Sk31qHwC9",
+  "code": "ENSH355",
+  "title": "Milton’s Major Works",
+  "description": "A study of Paradise Lost, as well as other major poems and selected prose.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 355, ENGL 369, RCS 369, RS 369."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

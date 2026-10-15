@@ -1,0 +1,25 @@
+{
+  "pid": "rkii2_pQE",
+  "code": "MGB181",
+  "title": "Language Skills II",
+  "description": "Further development of the language skills learned in 180.",
+  "notes": [
+    "Credit will be granted for only one of MGB 181, MGB 581.",
+    "May not be used for credit in any other undergraduate or graduate program."
+  ],
+  "credits": "1",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MGB180"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

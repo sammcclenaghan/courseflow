@@ -1,0 +1,22 @@
+{
+  "pid": "Sy8dC_6mV",
+  "code": "PHSP502",
+  "title": "Public Health Biostatistics",
+  "description": "Uses an approach grounded in population-based data. Builds upon PHSP 501, and focuses on understanding health inequities across diverse settings and populations using biostatistics and epidemiological data to understand the life course determinants of health. Includes an overview of design and analysis of health-related data collection methods including survey methods. The basic concepts and methods of epidemiological biostatistical analysis are covered.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHSP501"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

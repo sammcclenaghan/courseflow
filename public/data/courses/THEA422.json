@@ -1,0 +1,24 @@
+{
+  "pid": "rygQ-taQN",
+  "code": "THEA422",
+  "title": "Acting VI",
+  "description": "A continuation of 421. Advanced work in special challenges in acting.",
+  "notes": [
+    "Credit will be granted for only one of THEA 422, THEA 420."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "THEA421"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

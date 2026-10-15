@@ -1,0 +1,26 @@
+{
+  "pid": "SyXKlOpX4",
+  "code": "ECE449",
+  "title": "Computer Systems and Architecture",
+  "description": "Architecture and performance of modern processors, performance metrics; instruction set architectures and their impact on performance; instruction and arithmetic pipelines; pipeline hazards; exception handling; caches. Integral to the course is a Project Laboratory. Working in teams, students are expected to design and implement a processor based on a given specification of a simple instruction set. Student's progress is determined through a preliminary design review, a presentation, demonstration of the implementation and a final report.",
+  "notes": [
+    "Credit will be granted for only one of ECE 449, CENG 450."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE355",
+      "CENG355",
+      "CSC355"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,27 @@
+{
+  "pid": "SygtmIOaQN",
+  "code": "GNDR340",
+  "title": "Indigenous Cinema Decolonizing the Screen",
+  "description": "Intensive analysis of the work of Indigenous filmmakers with emphasis on Canada and the US. Topics include: de-colonizing the screen; identity, community and representation; the ethics of image-making; Indigenous womxn's filmmaking; Indigenous filmmaking as both an art form and a tool for social change. Indigenous gender diversity of directors is included. Examines the development of Indigenous cinema in Canada with special emphasis on documentaries, and looks at new directions in Indigenous cinema including experimental works and drama.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 340, WS 340."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

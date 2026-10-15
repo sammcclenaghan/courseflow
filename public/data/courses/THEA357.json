@@ -1,0 +1,35 @@
+{
+  "pid": "r14IY_LxL",
+  "code": "THEA357",
+  "title": "Ways of Seeing",
+  "description": "An introduction to the language of creativity and visual expression. A study of elements of design and their application in the theatre. Consists of theoretical discussion, historical analysis and practical design assignments.",
+  "notes": [
+    "Credit will only be granted for one of THEA 357, THEA 355, THEA 356."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA221",
+          "THEA235A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

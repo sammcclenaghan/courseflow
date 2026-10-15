@@ -1,0 +1,24 @@
+{
+  "pid": "S17XU-bQ0",
+  "code": "CIVE425",
+  "title": "Advanced Concrete Design",
+  "description": "Advanced analysis and design of slender concrete members for axial force and flexure. Beam analysis and design for torsion and the combined effects of shear and torsion. Special topics may include two-way slab system design, principles and methods of prestressed concrete construction, and fundamental analysis and design of prestressed concrete members.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 425, CIVE 480A (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CIVE352"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

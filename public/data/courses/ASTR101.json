@@ -1,0 +1,15 @@
+{
+  "pid": "HyVyRvpXN",
+  "code": "ASTR101",
+  "title": "Exploring the Night Sky",
+  "description": "A general course designed for non-science students. A tour of the solar system: the nature and origins of planets and moons, comets, asteroids, and the sun. Discoveries of recent space exploration and the history of our changing views of our place in the universe. Eclipses, seasons, climatic cycles, dangers posed by meteorite impacts. The possibility of extraterrestrial life. Practical work includes observations with campus telescopes.",
+  "notes": [
+    "Credit will be granted for only one of ASTR 101, ASTR 120."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

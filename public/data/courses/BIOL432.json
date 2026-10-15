@@ -1,0 +1,26 @@
+{
+  "pid": "rJedUCPTmE",
+  "code": "BIOL432",
+  "title": "Molecular Endocrinology",
+  "description": "Basic and molecular aspects of endocrinology. Brain hormones and their precursors, insulin and its receptor, gene-associated peptides, new glycoprotein hormones, growth factors, steroids, the superfamily of steroid and thyroid receptors, pheromones, oncogenes, immunoendocrinology and environmental endocrinology. Lectures and presentations of scientific papers.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL360",
+      "BIOL365",
+      "BIOC299",
+      "BIOC300A",
+      "BIOC300B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

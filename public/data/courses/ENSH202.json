@@ -1,0 +1,19 @@
+{
+  "pid": "Hk4AmXQRc",
+  "code": "ENSH202",
+  "title": "Technical Communications, Written and Verbal",
+  "description": "Assists planning for careers in business, government, public service and research institutions. Improves written and oral communication skills in a work environment. Develops practical skills (e.g., the preparation of business letters, internal memoranda and reports) supplemented by a theoretical outline of basic communication within an organizational structure. Offers experience of both individual and group problem-solving.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 202, ENGL 225, ENGR 120, ENGR 240.",
+    "This is a Professional Communication course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

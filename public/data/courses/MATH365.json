@@ -1,0 +1,39 @@
+{
+  "pid": "Sk8Z3OpX4",
+  "code": "MATH365",
+  "title": "Introduction to Topology",
+  "description": "Basic concepts in topology, including examples in Euclidean space, metric spaces, and topological spaces. Additional topics in geometric or differential topology.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH212"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH236",
+          "MATH335",
+          "MATH336"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

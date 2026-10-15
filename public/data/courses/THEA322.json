@@ -1,0 +1,24 @@
+{
+  "pid": "BkSWZtp7V",
+  "code": "THEA322",
+  "title": "Acting IV",
+  "description": "A continuation of THEA 321.",
+  "notes": [
+    "Credit will be granted for only one of THEA 322, THEA 320."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "THEA321"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

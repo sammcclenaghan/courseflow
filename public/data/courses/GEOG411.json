@@ -1,0 +1,45 @@
+{
+  "pid": "SJbmfM2Ot",
+  "code": "GEOG411",
+  "title": "Co-creating Research for Sustainable Futures",
+  "description": "Theory and practice of Community-based Participatory Research (CBPR) with a special focus on addressing community-identified research needs linked to the United Nations Sustainable Development Goals (UN SDG). Familiarizes students with the UN SDGs and explores CBPR as an important mechanism for bridging diverse and co-created knowledges into local action through community partnerships.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 411, GEOG 491 (if taken in the same topic), GEOG 511.",
+    "May be offered as a joint undergraduate and graduate course.",
+    "International students interested in taking GEOG 411 should contact the International Centre for Students (ICS) to discuss potential work authorization requirements for the experiential learning component of this course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "GEOG227"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Or permission of the instructor"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

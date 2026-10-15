@@ -1,0 +1,25 @@
+{
+  "pid": "SJhfJKamV",
+  "code": "PSYC231",
+  "title": "Introduction to Social Psychology",
+  "description": "Surveys key theories and empirical findings concerning the complex and reciprocal connections between aspects of people's psychology - such as attitudes, goals, values, group memberships, self and identity, culture, and personality - and their social contexts.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 231, PSYC 331."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC100A",
+      "PSYC100B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

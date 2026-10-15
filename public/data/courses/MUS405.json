@@ -1,0 +1,40 @@
+{
+  "pid": "SkpGpup74",
+  "code": "MUS405",
+  "title": "Music Composition III",
+  "description": "Individual and masterclass lessons with members of the Music Composition faculty. Majors complete and perform a graduating work of advanced and significant scope.",
+  "notes": [],
+  "credits": "3",
+  "hours": "2-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS123",
+          "MUS202A",
+          "MUS202B",
+          "MUS271A",
+          "MUS271B",
+          "MUS305"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to BMus program in Composition and Theory"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

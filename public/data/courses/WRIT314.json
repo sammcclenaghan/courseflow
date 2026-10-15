@@ -1,0 +1,18 @@
+{
+  "pid": "SJzPbKTXN",
+  "code": "WRIT314",
+  "title": "Changing Perspectives",
+  "description": "A lecture course surveying the different ways in which writers have tackled similar subject matter, taking its material from film scripts and/or English literature and other literature in translation.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 314, CW 314."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

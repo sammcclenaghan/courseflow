@@ -1,0 +1,22 @@
+{
+  "pid": "S1VkCw6X4",
+  "code": "ASL300B",
+  "title": "American Sign Language VI",
+  "description": "Focus on the production of classifiers, other complex grammatical structures and non-manual signals with an aim to achieve fluidity and fluency in narration. Practice in both formal and informal registers. Includes cross-cultural discussions of issues facing the Deaf community and non-Deaf signers.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "4-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ASL300A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

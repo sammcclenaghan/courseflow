@@ -1,0 +1,24 @@
+{
+  "pid": "B1ed_lFaQE",
+  "code": "SOCW492",
+  "title": "Protecting Indigenous Children",
+  "description": "An opportunity to explore the unique policy and practice considerations to providing child and family services in Indigenous communities in British Columbia. Students are challenged to synthesize the demands of provincial child welfare legislation with emerging Indigenous practices and policies in a way that protects the identity, cultures and social structure of Indigenous children and families.",
+  "notes": [
+    "Limited to Indigenous students of North America or with permission of the department."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCW391"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

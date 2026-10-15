@@ -1,0 +1,40 @@
+{
+  "pid": "ByVOlKpmV",
+  "code": "SOCW475",
+  "title": "Critical Practice in Child Welfare Contexts",
+  "description": "Students explore ways of practicing in child welfare contexts from a critical and intersectional lens including decolonizing, anti-racist and reflexive praxis integrating ethical decision-making and collaborative approaches to helping across difference. Students will engage with concepts of child and family wellbeing, parenting, and definitions of child abuse and neglect. This course centres the knowledge of Black, Indigenous, and People of Colour scholars and integrates Indigenous, critical race and queer theories.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW311",
+          "SOCW312"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW312A",
+          "SOCW312B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

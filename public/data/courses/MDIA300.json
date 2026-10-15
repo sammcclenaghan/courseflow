@@ -1,0 +1,34 @@
+{
+  "pid": "SyMpH_Z1j",
+  "code": "MDIA300",
+  "title": "Critical Media Practice",
+  "description": "A study of how audio, images, video, and text are produced around the world today. Emphasis on the values of media practice and applying such knowledge to critical, cultural and community-based work.",
+  "notes": [
+    "Credit will only be granted for one of MDIA300, MDIA490 (if taken in the same topic), MDIA 500.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MDIA200"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

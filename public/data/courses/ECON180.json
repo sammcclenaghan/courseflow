@@ -1,0 +1,33 @@
+{
+  "pid": "BJ82eua74",
+  "code": "ECON180",
+  "title": "Introduction to Economics and Financial Project Evaluation",
+  "description": "A concentrated introduction to principles of economics, project management, and financial project evaluation and selection for Engineering students. Economics topics include supply and demand, multipliers and tax incidence. Financial project evaluation topics include discounted cash flow, benefit-cost analysis, financial accounting, and decision-making considering depreciation, inflation, taxes and risk. Project management topics include work breakdown structures, the critical path method and crashing. Assumes competency in calculus, algebra and familiarity with computer spreadsheet software.",
+  "notes": [
+    "Credit will be granted for only one of ECON 180, ECON 103, ECON 103C."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH101"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to BEng or BSEng program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

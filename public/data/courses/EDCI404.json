@@ -1,0 +1,19 @@
+{
+  "pid": "Sk3_bua7V",
+  "code": "EDCI404",
+  "title": "Curriculum and Instruction in Elementary School Social Studies",
+  "description": "A study of the curriculum organization and techniques of instruction in elementary or middle school social studies. Examples are drawn from a variety of content areas: history; geography; anthropology; sociology; political science and/or economics. Emphasises participatory citizenship, culture and traditions in a pluralistic society.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 404, EDCI 414, ED-E 746, EDUC 404, IED 404.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a program in Teacher Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

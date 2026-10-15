@@ -1,0 +1,28 @@
+{
+  "pid": "BJQr0vpm4",
+  "code": "BIOL367",
+  "title": "Neurobiology: Molecules to Behaviour",
+  "description": "Cellular and molecular biology of excitable cells and mechanisms of intercellular communication. Evolution and functional organization of central nervous systems. Motor systems and mechanisms of coordination. Sensory biology. Interactions of genes, development, and experience in molding nervous systems and behaviour.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 367, BIOL 409A.",
+    "Students with credit in PSYC 345A or PSYC 323 may take BIOL 360 or BIOL 365 as a pre- or corequisite."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL360",
+      "BIOL365",
+      "BME200",
+      "BME201"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

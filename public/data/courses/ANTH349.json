@@ -1,0 +1,24 @@
+{
+  "pid": "By4OTwa74",
+  "code": "ANTH349",
+  "title": "Paleolithic Art",
+  "description": "Explores the evidence for the origins and development of cave art, personal adornment and symbol use in the Paleolithic and their role in the evolution of human cognition. Specific topics include the definition of art in an archeological context, dating and analysis techniques, contemporary examples of rock art, and possible meanings and functions of art and personal adornment during the Paleolithic.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 349, ANTH 390, ANTH 392 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH240"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

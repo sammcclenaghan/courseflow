@@ -1,0 +1,22 @@
+{
+  "pid": "rkRzNO6QV",
+  "code": "EPHE699",
+  "title": "PhD Dissertation Kinesiology",
+  "description": null,
+  "notes": [],
+  "credits": "18–33",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EPHE693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

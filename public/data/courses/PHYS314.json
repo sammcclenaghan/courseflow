@@ -1,0 +1,41 @@
+{
+  "pid": "H1Z5CdpQ4",
+  "code": "PHYS314",
+  "title": "Nuclear Physics and Radioactivity",
+  "description": "Applications of quantum physics to atomic nuclei; nuclear properties, structure, models and modes of decay. Radioactivity and applications in industry, medicine, archaeology and cosmology. Fission and fusion.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 314, PHYS 413B.",
+    "Normally offered in alternate years.",
+    "Students are advised to consult the department to determine when the course is offered."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS215",
+      "PHYS216",
+      "MATH204"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS301",
+      "MATH342",
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": [
+    "PHYS 323 strongly recommended prior to PHYS 314."
+  ]
+}

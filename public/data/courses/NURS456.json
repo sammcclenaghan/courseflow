@@ -1,0 +1,34 @@
+{
+  "pid": "S1qOau6mE",
+  "code": "NURS456",
+  "title": "Nursing within Communities and Health Systems",
+  "description": "Apply nursing knowledge, skills, judgements, and attributes where people intersect with communities, organizations and health systems. Students analyze and utilize evidence-informed data to: influence change, promote inter-professional collaboration to enhance continuity, address challenges and deliver safe, ethical, quality care, foster social justice, empowerment, and culturally competent practice, and provide leadership.",
+  "notes": [
+    "Credit will be granted for only one of NURS 456, NURS 351, NURS 431."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NURS350",
+      "NURS370"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NURS430"
+    ]
+  },
+  "recommendations": []
+}

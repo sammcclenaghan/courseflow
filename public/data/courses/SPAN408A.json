@@ -1,0 +1,23 @@
+{
+  "pid": "ByBolKaQV",
+  "code": "SPAN408A",
+  "title": "Advanced Topics in Spanish Culture",
+  "description": "Explores the artistic, literary, intellectual, social and political trends in Spain from the Middle Ages to the present.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SPAN350A",
+      "SPAN349"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

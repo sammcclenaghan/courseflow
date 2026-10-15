@@ -1,0 +1,16 @@
+{
+  "pid": "S1u93dTmE",
+  "code": "MECH695",
+  "title": "Seminar",
+  "description": "Participation in a program of seminars by internal and external speakers on current research topics. Normally, all PhD students are required to give two seminars on their thesis research within 16 months and 34 months of registration.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a doctoral program in Mechanical Engineering."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

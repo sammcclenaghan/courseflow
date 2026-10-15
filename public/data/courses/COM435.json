@@ -1,0 +1,43 @@
+{
+  "pid": "H1cu1OamE",
+  "code": "COM435",
+  "title": "Corporate Relations and Responsibilities",
+  "description": "Examines the relations of a corporation to its stakeholders - customers, stockholders, government, unions and society at large. Especially important are a firm's code of ethics and conduct, written and unwritten, which governs its relationships and spells out its responsibilities to its various publics. Students study and discuss a number of cases which illustrate how a variety of organizations have responded to this challenge.",
+  "notes": [
+    "Credit will be granted for only one of COM 435, COM 450 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "COM220",
+              "COM321"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum fourth-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

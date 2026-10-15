@@ -1,0 +1,49 @@
+{
+  "pid": "SJ4q4d6XN",
+  "code": "FRAN280",
+  "title": "Literature, Media and Culture I",
+  "description": "Analysis of a selection of major texts and media in French from different traditions, times and genres, illustrating the changing notion of literariness.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 280, FREN 286, FREN 287, FREN 288."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "FRAN180"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "FRAN182"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

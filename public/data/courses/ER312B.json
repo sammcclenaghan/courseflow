@@ -1,0 +1,40 @@
+{
+  "pid": "ryQmV_6QN",
+  "code": "ER312B",
+  "title": "Field Study in Ecological Restoration II",
+  "description": "An advanced field study course involving detailed site evaluation (prescription). May involve participation in a restoration project. With permission, the practicum can be undertaken at locations outside the province or internationally.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ER312A"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to Certificate or Diploma program in Restoration of Natural Systems"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

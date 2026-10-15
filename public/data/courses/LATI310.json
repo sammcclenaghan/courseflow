@@ -1,0 +1,35 @@
+{
+  "pid": "rk5lZLCXV",
+  "code": "LATI310",
+  "title": "Roman Love Poetry",
+  "description": "Selected readings from Catullus, Tibullus, Sulpicia, Propertius, and/or Ovid's Amores.",
+  "notes": [
+    "Credit will be granted for only one of LATI 310, LATI 401."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "LATI202",
+          "LATI325"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

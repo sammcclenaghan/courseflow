@@ -1,0 +1,27 @@
+{
+  "pid": "S15M8OTQN",
+  "code": "GNDR305",
+  "title": "Gender and International Human Rights",
+  "description": "An interdisciplinary examination of the ways in which international human rights theories, organizations, laws, and practice are gendered, racialized, sexualized, and class based, and their effects on freedom, equality, and dignity. Analyzes the history and development of ideas/definitions of \"rights\" and challenges to these definitions. Emphasizes the interconnectedness of the global and local through a multitude of topics, including culture, human security, bodily integrity, civil and political liberties, and human rights activism.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 305, WS 315, WS 319 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,26 @@
+{
+  "pid": "ByUwMua7N",
+  "code": "ED-P361",
+  "title": "Six-Week Practicum (Elementary or Middle Years Post Degree)",
+  "description": null,
+  "notes": [
+    "Credit will be granted for only one of ED-P 361, ED-P 300A, ED-P 300B, IED 361.",
+    "Normally takes place in the spring term."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-P360",
+      "EDCI360"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

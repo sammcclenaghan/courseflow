@@ -1,0 +1,37 @@
+{
+  "pid": "HyDv0vaQ4",
+  "code": "BIOL461",
+  "title": "Fisheries Ecology and Management",
+  "description": "An examination of the basic principles of fisheries ecology and population dynamics and how these are used as the basis for stock assessment and fisheries management. Topics include: current issues in BC, Canadian and global fisheries; growth, mortality, reproduction and recruitment; stock-recruitment and age-structured fisheries models; fisheries management tactics and strategies.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL330",
+          "BIOL370",
+          "ES320",
+          "ES344"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": [
+    "BIOL 335 recommended prior to BIOL 461."
+  ]
+}

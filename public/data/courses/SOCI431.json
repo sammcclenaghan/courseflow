@@ -1,0 +1,48 @@
+{
+  "pid": "B1UrgKa7N",
+  "code": "SOCI431",
+  "title": "Issues in Social Theorizing",
+  "description": "In-depth study of issues in social theory. Topics may include particular theories, theorists, current issues and debates.",
+  "notes": [
+    "Credit will be granted for only one of SOCI 431, SOCI 402, SOCI 412, SOCI 481."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SOCI210"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum fourth-year standing"
+          },
+          {
+            "type": "text",
+            "text": "declared Honours or Major in Sociology"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "SOCI 309 recommended prior to SOCI 431."
+  ]
+}

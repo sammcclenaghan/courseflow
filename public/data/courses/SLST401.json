@@ -1,0 +1,37 @@
+{
+  "pid": "HJsbgYaQN",
+  "code": "SLST401",
+  "title": "Advanced Russian Practice",
+  "description": "For advanced students of Russian. Stresses written composition, translation and stylistic analysis, and focuses on enhancing reading skills.",
+  "notes": [
+    "Credit will be granted for only one of SLST 401, RUSS 400A, RUSS 406."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SLST301",
+          "SLST303",
+          "RUSS300A",
+          "RUSS300B",
+          "RUSS303"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

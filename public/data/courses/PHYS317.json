@@ -1,0 +1,51 @@
+{
+  "pid": "H1fq0O6XV",
+  "code": "PHYS317",
+  "title": "Thermodynamics",
+  "description": "Ideal gas laws. Laws of Thermodynamics. Temperature and entropy. Thermodynamic potentials. Heat engines. Introductory statistical physics.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 317, PHYS 217."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-1",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS110",
+          "PHYS111"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS120",
+          "PHYS130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH204"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

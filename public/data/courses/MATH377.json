@@ -1,0 +1,51 @@
+{
+  "pid": "HkqWn_6mV",
+  "code": "MATH377",
+  "title": "Mathematical Modelling",
+  "description": "The formulation, analysis and interpretation of mathematical models in various areas of application. Both continuous and discrete deterministic and stochastic models are employed. Mathematical techniques used may include: differential and difference equations, matrix analysis, optimization, simple stochastic processes, decision theory, game theory and numerical methods. The phenomena modelled vary from year to year.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH204"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT252",
+          "STAT254",
+          "STAT255",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

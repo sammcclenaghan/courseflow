@@ -1,0 +1,34 @@
+{
+  "pid": "SJW6CdTm4",
+  "code": "POLI300A",
+  "title": "Ancient and Medieval Political Thought",
+  "description": "A survey of the main themes and assumptions of political theory in ancient Greece and medieval Europe, including study of Plato's Republic and Aristotle's Politics.",
+  "notes": [
+    "Credit will be granted for only one of POLI 300A, POLI 301, POLI 300 (if taken prior to Sep 1982 - Apr 1983)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "POLI103",
+          "POLI202"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

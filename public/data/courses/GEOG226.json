@@ -1,0 +1,29 @@
+{
+  "pid": "rJifB_aXE",
+  "code": "GEOG226",
+  "title": "Quantitative Methods in Geography",
+  "description": "Application of statistical techniques to the analysis of geographic problems. Topics include measurement, hypothesis formulation, sampling strategies, parametric and nonparametric statistical tests.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 226, GEOG 321.",
+    "See \"Credit Limit - Beginning Level Statistics Courses\"."
+  ],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Complete 3 units from GEOG 100 - 299"
+      },
+      {
+        "type": "text",
+        "text": "Complete 3 units from EOS 100 - 299"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

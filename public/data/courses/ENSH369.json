@@ -1,0 +1,18 @@
+{
+  "pid": "SyAbo-PR5",
+  "code": "ENSH369",
+  "title": "20th-Century Poetry in Britain and or Ireland",
+  "description": "A study of modern British or Irish poetry (or some combination). May be organized around a specific theme, topic, or cluster of authors.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 369, ENGL 433, ENGL 433A, ENGL 434, ENGL 434A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

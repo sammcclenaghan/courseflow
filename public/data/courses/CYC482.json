@@ -1,0 +1,34 @@
+{
+  "pid": "HycWWGGsr",
+  "code": "CYC482",
+  "title": "Leadership, Advocacy and Program Planning in the Early Years",
+  "description": "Focuses on developing students’ knowledge and skills in leadership in the early years sector, including policy engagement, advocacy, supervision, mentorship and the program planning cycle; encompassing needs assessment, stakeholder engagement, and program monitoring and evaluation. Students add to their professional portfolio, including creating a comprehensive program proposal.",
+  "notes": [
+    "Credit will be granted for only one of CYC 482, CYC 480 (if taken Jan-Apr 2020).",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC382"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

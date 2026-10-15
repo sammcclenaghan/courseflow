@@ -1,0 +1,18 @@
+{
+  "pid": "HJSn6WvC5",
+  "code": "ENSH380",
+  "title": "Margaret Atwood",
+  "description": "A study of major novels and other selected writings.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 380, ENGL 448 (if taken 201809)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

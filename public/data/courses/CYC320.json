@@ -1,0 +1,68 @@
+{
+  "pid": "BkUQ7E7MD",
+  "code": "CYC320",
+  "title": "Critical Identity Development",
+  "description": "Draws on an autoethnographic approach to applying theories of racial identity development across the lifespan exposing how colonialism contributes to the social construction of race, sexuality, gender, class and ability, and the persistent oppressions that come with these constructions. Applies critically reflective analysis of multiple and shifting social positionality through queer, anti-racism, intersectional and decolonizing theories. Trauma and violence-informed approaches and decolonizing and healing practices are a central theme.",
+  "notes": [
+    "Credit will be granted for only one of CYC 320, CYC 338.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC120",
+          "CYC166A",
+          "CYC166B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC152"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC210",
+          "CYC211"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to an undergraduate program in the School of Child and Youth Care."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CYC100A",
+      "CYC100B",
+      "CYC110"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

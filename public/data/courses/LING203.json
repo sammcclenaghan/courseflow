@@ -1,0 +1,25 @@
+{
+  "pid": "S135ju6XN",
+  "code": "LING203",
+  "title": "Introduction to Morphology and Syntax",
+  "description": "Introduction to word structure (morphology) and sentence structure (syntax). Practice in analyzing words and sentences; introduction of elements of morphological and syntactic theories.",
+  "notes": [
+    "Credit will be granted for only one of LING 203, LING 210, LING 210B, LING 252."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LING100A",
+      "LING181"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

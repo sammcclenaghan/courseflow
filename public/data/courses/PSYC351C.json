@@ -1,0 +1,23 @@
+{
+  "pid": "H1kN1t6XE",
+  "code": "PSYC351C",
+  "title": "Cognitive Neuroscience",
+  "description": "Emphasizes the study of mind-brain relationships using brain imaging techniques including functional MRI and electroencephalography as well as brain-based models of mental processes. Topic areas include perception and attention, object recognition, memory, cognitive control, decision-making and language.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC251"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

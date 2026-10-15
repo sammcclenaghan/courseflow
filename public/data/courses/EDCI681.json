@@ -1,0 +1,18 @@
+{
+  "pid": "Bk4AZdpXV",
+  "code": "EDCI681",
+  "title": "Advanced Research Design",
+  "description": "Explores research methodologies appropriate to specific research problems, questions, and contexts. An examination of the purposes of research, the role of literature review, educational theories, and design of a research question considering the relationship between question and research method.",
+  "notes": [
+    "Students who have completed a master's level research methods course may request permission to register in the course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the faculty."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

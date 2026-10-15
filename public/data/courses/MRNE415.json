@@ -1,0 +1,26 @@
+{
+  "pid": "SkY6hd6mE",
+  "code": "MRNE415",
+  "title": "Structure and Function in Animals",
+  "description": "Structure of marine animals, and their adaptations to the marine environment. Neurobiology, developmental biology, functional morphology and other topics.",
+  "notes": [
+    "This is a field course offered at the Bamfield Marine Sciences Centre for upper level Biology credit. Please visit the Bamfield Marine Sciences Centre website for more information."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL215",
+      "BIOL225",
+      "BIOL230"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

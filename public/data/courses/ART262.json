@@ -1,0 +1,24 @@
+{
+  "pid": "S14paDa7V",
+  "code": "ART262",
+  "title": "Digital Media Arts II",
+  "description": "Exploration of contemporary art practice using digital technology, research-creation, interactive installations and performance. Emphasis on how to convey and structure artistic ideas through digital media.",
+  "notes": [
+    "Credit will be granted for only one of ART 262, ART 260."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART261"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

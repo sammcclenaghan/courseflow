@@ -1,0 +1,25 @@
+{
+  "pid": "B17mG_6XE",
+  "code": "ED-D561B",
+  "title": "Project Designs and Methods in Leadership",
+  "description": "Designed to prepare students in Leadership Studies to design independent, scholarly projects so that they might fulfill the research requirements for the MEd degree in Leadership Studies. Students become familiar with different project designs that do not require ethical review by the UVic ethics review board, research and analytical methods and all aspects of proposal preparation.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to MA or MEd in Leadership Studies"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,24 @@
+{
+  "pid": "SyOP0Dp7V",
+  "code": "BIOL467",
+  "title": "Neural Development",
+  "description": "Neural induction, patterning, cell fate determination, axon guidance, synaptic development, circuit formation, neural stem cells, adult neurogenesis. Emphasis on molecular mechanisms, analysis of primary literature.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL309",
+      "BIOL360",
+      "BIOL367"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,27 @@
+{
+  "pid": "B1Ahpv6QN",
+  "code": "ART212",
+  "title": "Painting",
+  "description": "An extension of 211.",
+  "notes": [
+    "Credit will be granted for only one of ART 212, ART 210.",
+    "Normally class size is limited."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART110",
+      "ART211",
+      "ART211E"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "H1lLvHdaQV",
+  "code": "GEOG491",
+  "title": "Advanced Topics in Geography",
+  "description": "Examination of a specific topic or area in Geography. Topic(s) vary depending on faculty interests and availability. The seminar format of this course requires students to participate orally in class and to submit a term paper.\n* Contact hours may vary depending on the topic.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0*",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "additional prerequisites set by department depending upon topic."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

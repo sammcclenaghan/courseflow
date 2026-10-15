@@ -1,0 +1,16 @@
+{
+  "pid": "H12FADpXV",
+  "code": "BIOL567",
+  "title": "Neural Development",
+  "description": "Neural induction, patterning, cell fate determination, axon guidance, synaptic development, circuit formation, neural stem cells, adult neurogenesis. Emphasis on molecular mechanisms, analysis of primary literature.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 567, BIOL 467.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

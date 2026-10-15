@@ -1,0 +1,27 @@
+{
+  "pid": "Hk4d5upmN",
+  "code": "IGOV598",
+  "title": "Community Governance Project",
+  "description": "Provides a practical learning experience and opportunity for students to engage with real world challenges of Indigenous governance. Students work on a designated research or policy development project in an Indigenous organization, under the direction of a project management team that includes community leaders and IGOV faculty. Placements typically involve 100 hours of work in the community, a clearly defined deliverable and the completion of a comprehensive report.",
+  "notes": [],
+  "credits": "6",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IGOV510",
+      "IGOV520",
+      "IGOV530",
+      "IGOV550",
+      "IGOV570",
+      "IGOV575"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

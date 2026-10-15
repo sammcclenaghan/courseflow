@@ -1,0 +1,34 @@
+{
+  "pid": "r1BW2Oa7V",
+  "code": "MATH362",
+  "title": "Elementary Number Theory",
+  "description": "Divisibility, primes, congruences, arithmetic functions, primitive roots, quadratic residues, basic representation and decimals and a selection from the following topics: Pythagorean triples; representation as sums of squares; infinite descent; rational and irrational numbers; distribution of primes.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH122"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Complete 3.0 units of: 200-level MATH"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Recommended for students planning to enter a Bachelor degree program in Education with Mathematics teaching area.",
+    "One of MATH 212, 222, or 236 is recommended prior to taking this course."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "SktuyKTXV",
+  "code": "PSYC540",
+  "title": "History and Theory in Neuropsychology",
+  "description": "Survey of major topics and issues in clinical and experimental neuropsychology, including a historical introduction and recent material. Topics may include aphasia, agnosia, apraxia, agraphia, other clinical syndromes, and hemispheric specialization.",
+  "notes": [
+    "Students who have completed an equivalent undergraduate human neuropsychology course may request permission to register in the course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

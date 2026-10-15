@@ -1,0 +1,59 @@
+{
+  "pid": "BylLkZdaXV",
+  "code": "ECON471",
+  "title": "Labour Economics II",
+  "description": "Selected topics may include design of optimal compensation systems, labour markets internal to the firm, trade unions, unemployment, personnel economics, discrimination, and labour mobility.",
+  "notes": [
+    "Credit will be granted for only one of ECON 471, ECON 315, ECON 371."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECON203"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECON345",
+              "ECON365"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECON370"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

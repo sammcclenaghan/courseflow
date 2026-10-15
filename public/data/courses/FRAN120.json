@@ -1,0 +1,40 @@
+{
+  "pid": "B1lcN_pmE",
+  "code": "FRAN120",
+  "title": "Level A2 Intensive French",
+  "description": "Sequel to FRAN 100. Development of upper-beginner language skills and intercultural competencies to facilitate communication and interaction in simple, routine situations (description of background and needs; frequently used expressions), through oral and written practice. Exploration of differences and cultural diversities in French-speaking regions and countries. Advances to an A2 level of the European Common Framework for Languages. Prepares for intermediate (B1) study upon completion.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 120, FREN 106, FREN 107, FREN 160.",
+    "Normal entry point for students with French 11.",
+    "Not open to students with French 12 in the last two years, or French Immersion to Grade 8."
+  ],
+  "credits": "3",
+  "hours": "5-1-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "FRAN100"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "French 11"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

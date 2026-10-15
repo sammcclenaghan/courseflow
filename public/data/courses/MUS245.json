@@ -1,0 +1,18 @@
+{
+  "pid": "SyWgT_6QE",
+  "code": "MUS245",
+  "title": "Seminar in Performance",
+  "description": "Individual tuition and weekly class including discussion of repertoire, pedagogy, and techniques of ensemble performance.",
+  "notes": [
+    "Credit will be granted for only one of MUS 245, MUS 240."
+  ],
+  "credits": "1.5",
+  "hours": "1-1-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to BMus program in Performance."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,45 @@
+{
+  "pid": "HyZvlFpQ4",
+  "code": "SOCW304",
+  "title": "Social Work Practicum I",
+  "description": "Students practice social work under supervision in an agency setting. They apply, integrate and translate theories into practice, and experience the economic, political and policy constraints on practice. The practicum is 350 hours.",
+  "notes": [
+    "Credit will be granted for only one of SOCW 304, SOCW 304A.",
+    "Students must submit an application for this course 6 months in advance of the start of the term.",
+    "Social Work accreditation standards require that students spend the hours noted above in practice.",
+    "Field Education courses have two components: a placement in the field and an integrative practice seminar (online)."
+  ],
+  "credits": "4.5",
+  "hours": "1.5-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW311",
+          "SOCW312"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW312A",
+          "SOCW312B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

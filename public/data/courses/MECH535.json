@@ -1,0 +1,15 @@
+{
+  "pid": "rJDt2u6Q4",
+  "code": "MECH535",
+  "title": "Computational Fluid Dynamics and Heat Transfer",
+  "description": "Methods of prediction and historical perspective. Governing differential equations. Finite difference and finite volume discretization. Schemes for steady and unsteady multidimensional heat conduction problems. Stability analysis and convergence. Control volume formulation for fluid flow. Schemes for convection dominated flows. The SIMPLE algorithm. Computation of turbulent flows; wall functions; turbulence modelling. The course involves individual projects.",
+  "notes": [
+    "Credit will be granted for only one of MECH 535, MECH 495."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

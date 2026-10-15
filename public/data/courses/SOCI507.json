@@ -1,0 +1,34 @@
+{
+  "pid": "S1xUlYamE",
+  "code": "SOCI507",
+  "title": "Intermediate Social Statistics",
+  "description": "Statistical methods appropriate for quantitative sociological research, with an emphasis on regression models and their extensions and computer applications for these models.",
+  "notes": [
+    "Credit will be granted for only one of SOCI 507, SOCI 471, SOCI 371B (if taken prior to May 2011).",
+    "A combined undergraduate and graduate course (SOCI 471)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCI271"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

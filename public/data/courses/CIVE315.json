@@ -1,0 +1,22 @@
+{
+  "pid": "H1sm1_T74",
+  "code": "CIVE315",
+  "title": "Environmental Policy",
+  "description": "Introduction to environmental policy, law and governance and cultural and sociological implications of sustainable engineering. How policy is formed and changed. Civil engineering development in First Nations.",
+  "notes": [],
+  "credits": "1",
+  "hours": "2-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CIVE210"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

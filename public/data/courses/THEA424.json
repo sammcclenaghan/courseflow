@@ -1,0 +1,24 @@
+{
+  "pid": "SJZXbFT7E",
+  "code": "THEA424",
+  "title": "Voice and Speech in the Theatre IV",
+  "description": "A continuation of THEA 423. Advanced work in voice production and speech for the stage.",
+  "notes": [
+    "Credit will be granted for only one of THEA 424, THEA 450."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "THEA423"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

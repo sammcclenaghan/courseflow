@@ -1,0 +1,52 @@
+{
+  "pid": "HyhOlOamV",
+  "code": "ECE380",
+  "title": "Electronic Circuits II",
+  "description": "Power amplifiers. Linear and nonlinear distortion. High frequency models for transistors. Differential amplifiers. Operational amplifiers, their parameters and models. Negative feedback. Applications of operational amplifiers: instrumentation amplifiers, comparators, precision rectifiers. Oscillators and timers. Circuit design, simulation, implementation and testing.",
+  "notes": [
+    "Credit will be granted for only one of ECE 380, ELEC 380."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0.5",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE300",
+          "ELEC300"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE320",
+          "ELEC320"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE330",
+          "ELEC330"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

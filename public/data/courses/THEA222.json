@@ -1,0 +1,33 @@
+{
+  "pid": "rkNx-KaQ4",
+  "code": "THEA222",
+  "title": "Acting II",
+  "description": "Work in characterization and scene study.",
+  "notes": [
+    "Credit will be granted for only one of THEA 222, THEA 220."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA221"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "HyqAxY67V",
+  "code": "STAT354",
+  "title": "Sampling Techniques",
+  "description": "Principal steps in planning and conducting a sample survey. Sampling techniques including stratification, systematic sampling and multistage sampling. Practical survey designs with illustrations. Nonsampling errors.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT256",
+          "STAT261",
+          "STAT355",
+          "STAT359"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

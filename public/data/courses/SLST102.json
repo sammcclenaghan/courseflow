@@ -1,0 +1,34 @@
+{
+  "pid": "ryf-gYpXV",
+  "code": "SLST102",
+  "title": "Beginning Russian II",
+  "description": "Continuation of the development of basic reading, writing and conversational skills. Introduction to various aspects of everyday Russian life and culture through the language.",
+  "notes": [
+    "Credit will be granted for only one of SLST 102, SLST 110, RUSS 100, RUSS 100B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SLST101",
+          "RUSS100A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

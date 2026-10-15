@@ -1,0 +1,23 @@
+{
+  "pid": "SJjPlYpXV",
+  "code": "SOCW413",
+  "title": "Critical Social Work Practice",
+  "description": "Explores the application of critical social work practice from a decolonial, anti-racist, anti-oppressive social justice framework in various contexts. Students: deepen their critical self-reflection on how positionality informs practice; critically analyze social work practice- including the interrogation of mainstream practice approaches; enrich their understanding and application of various critical social work practice approaches that reflect the values and goals of decolonial equity; and contribute to a critically reflective, collaborative learning environment.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCW304",
+      "SOCW304A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,52 @@
+{
+  "pid": "SyS9AOpQV",
+  "code": "PHYS326",
+  "title": "Electricity and Magnetism",
+  "description": "Properties of electromagnetic fields using vector calculus, displacement current, Maxwell's equations, plane electromagnetic waves with applications, transmission lines, and transients in LRC circuits.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS216",
+          "MATH204"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS248",
+          "CSC226",
+          "CSC349A",
+          "MATH248"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS301",
+      "MATH342",
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

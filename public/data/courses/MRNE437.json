@@ -1,0 +1,26 @@
+{
+  "pid": "B1pTn_6QE",
+  "code": "MRNE437",
+  "title": "Marine Population Ecology and Dynamics",
+  "description": "An analytical approach to the study of marine ecology and marine populations. Intertidal and subtidal communities are examined, with emphasis on the biota of the Barkley Sound region.",
+  "notes": [
+    "This is a field course offered at the Bamfield Marine Sciences Centre for upper level Biology credit. Please visit the Bamfield Marine Sciences Centre website for more information."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL215",
+      "BIOL225",
+      "BIOL230"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

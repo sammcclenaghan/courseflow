@@ -1,0 +1,55 @@
+{
+  "pid": "HJb5JqU-1l",
+  "code": "COM232",
+  "title": "Business Analytics",
+  "description": "Introduction to the fundamental tools and techniques in business analytics, focusing on data-driven decision-making in business environments.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON246",
+          "STAT252",
+          "STAT254",
+          "STAT256",
+          "STAT260"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BCom program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM224",
+          "COM251",
+          "COM292"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "recommendations": []
+}

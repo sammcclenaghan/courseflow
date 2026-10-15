@@ -1,0 +1,53 @@
+{
+  "pid": "r1VrJFT7N",
+  "code": "PSYC431H",
+  "title": "Advanced Interpersonal Relationships",
+  "description": "An in-depth examination of social psychological research, methods, and theory on close relationships. Focuses on adult romantic relationships. Topics include the self and close relationships, commitment and interdependence, and attachment theory.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 431H, PSYC 491 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A",
+          "PSYC375"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC330",
+          "PSYC376",
+          "PSYC385",
+          "PSYC386",
+          "PSYC387"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

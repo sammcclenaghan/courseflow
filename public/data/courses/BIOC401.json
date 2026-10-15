@@ -1,0 +1,23 @@
+{
+  "pid": "r1xfCwpXV",
+  "code": "BIOC401",
+  "title": "RNA in Health and Disease",
+  "description": "Advanced study of RNA biology in eukaryotes, including RNA synthesis regulation from both single gene and genomic perspectives; RNA processing; and the functions of non-coding RNAs. Emphasis is on recent breakthroughs in RNA biology and the mechanisms driving development and human disease.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOC300A",
+      "BIOC300B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

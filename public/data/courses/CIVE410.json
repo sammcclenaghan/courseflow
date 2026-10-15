@@ -1,0 +1,22 @@
+{
+  "pid": "B1JNJ_6Q4",
+  "code": "CIVE410",
+  "title": "Solid Waste and Air Pollution",
+  "description": "Urban sources of air pollution, acute and chronic health effects of pollution taught through case studies; environmental quality standards and compliance criteria in BC and Canada; air quality modelling for prediction, introduction to software; integrated waste management and design, reduce, reuse, recycle, resource recovery and utilization, composting, fundamentals of waste degradation and disposal, geo-environmental aspects of landfill design, leachate and gas management at landfills.\n* Indicates a 3-hour laboratory taken by students on alternate weeks.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1.5*-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CIVE310"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

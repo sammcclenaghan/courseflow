@@ -1,0 +1,30 @@
+{
+  "pid": "BkmURda74",
+  "code": "PHIL339",
+  "title": "Theories of Justice",
+  "description": "An examination of problems in and approaches to contemporary political philosophy. Topics may include equality, freedom, structural injustice, the interrelationship between racial, gender, class and cultural oppression, injustices across borders and the coherence and cross-cultural justification of human rights",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "PHIL 236 - Introduction to Social and Political Philosophy (1.5)"
+      },
+      {
+        "type": "text",
+        "text": "4.5 units of PHIL courses"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

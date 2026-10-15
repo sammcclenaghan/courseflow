@@ -1,0 +1,24 @@
+{
+  "pid": "HkJAx_6QE",
+  "code": "ECON351",
+  "title": "Mathematical Economics II: An Introduction to Dynamic Methods",
+  "description": "Difference equations, differential equations, and dynamic optimization with applications to economics.",
+  "notes": [
+    "Credit will be granted for only one of ECON 351, ECON 251."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON350"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

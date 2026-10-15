@@ -1,0 +1,38 @@
+{
+  "pid": "BJlsQJ_aQN",
+  "code": "CIVE340",
+  "title": "Sustainable Water Resources",
+  "description": "Design and environmental integration of a water resource system using simulation and geomatics software. Introduction to hydrology, hydraulic engineering and water resources planning, environment and management of watersheds and ecosystems, risk and uncertainty, urban water systems and water quality, economic demand and supply principles, externalities.\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [],
+  "credits": "2",
+  "hours": "3-1.5*-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE202",
+          "GEOG103"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE210"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

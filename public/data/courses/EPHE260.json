@@ -1,0 +1,26 @@
+{
+  "pid": "BJuZwkz3H",
+  "code": "EPHE260",
+  "title": "Exercise Prescription",
+  "description": "Principles of fitness and the development of exercise programs to enhance health and/or performance of children, adults and special populations including athletes, the elderly and disabled; application of programs in a variety of settings; methods of evaluating physiological adaptation to exercise using laboratory and field experiences.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 260, EPHE 360, PE 360."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EPHE160",
+      "EPHE241",
+      "EPHE241B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

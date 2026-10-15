@@ -1,0 +1,15 @@
+{
+  "pid": "HJtFnd6XV",
+  "code": "MECH541",
+  "title": "Advanced Thermodynamics",
+  "description": "Principles of classical thermodynamics; postulates, conditions of equilibrium, some relationships and simple systems, reversible process, Legendre transformations, extremum principles, Maxwell relations, stability, first-order phase transitions. Thermodynamics of irreversible processes. Fundamentals of statistical thermodynamics.",
+  "notes": [
+    "Credit will be granted for only one of MECH 541, MECH 443."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

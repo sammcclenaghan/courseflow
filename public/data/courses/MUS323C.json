@@ -1,0 +1,48 @@
+{
+  "pid": "SyOuOmWwn",
+  "code": "MUS323C",
+  "title": "Topics in Musical Institutions",
+  "description": "Examines historical or contemporary repertoires that engage with musical institutions such as concert halls or media platforms.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MUS121",
+              "MUS123",
+              "MUS220A",
+              "MUS220B",
+              "MUS223"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Academic Writing Requirement satisfied"
+          },
+          {
+            "type": "text",
+            "text": "Minimum second year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

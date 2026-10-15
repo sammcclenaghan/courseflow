@@ -1,0 +1,26 @@
+{
+  "pid": "r1f_DDJ4i",
+  "code": "ANTH456",
+  "title": "Evolutionary Anthropology",
+  "description": "Explores evolutionary theory as applied to anthropological questions relevant to humans and non-human primates. Examines how foundational concepts and thinkers in Evolutionary Theory have shaped scientific and popular perceptions about humans and how evolutionary anthropologists are critically re-evaluating these models and their historical biases.",
+  "notes": [
+    "Credit will be granted for only one of ANTH456, ANTH484 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH250",
+      "ANTH251",
+      "ANTH357"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

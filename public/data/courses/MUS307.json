@@ -1,0 +1,31 @@
+{
+  "pid": "ByTe6uT7N",
+  "code": "MUS307",
+  "title": "Introduction to Computer Music",
+  "description": "Introduction to electroacoustic and computer music. Practical experience in a computer music studio, with synthesizers, samplers, MIDI, digital audio, musique concrète, Max/MSP and other computer music techniques.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS207"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

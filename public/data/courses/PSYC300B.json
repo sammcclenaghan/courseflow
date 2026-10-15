@@ -1,0 +1,24 @@
+{
+  "pid": "S1JQyFam4",
+  "code": "PSYC300B",
+  "title": "Statistical Methods in Psychology II",
+  "description": "Contains a brief review of the topics covered in 300A and deals with statistical analysis procedures for two-group and multi-group experimental designs. The focus is on t-tests and analysis of variance. The differences between repeated measures and independent groups designs and analyses are emphasized. Students are expected to analyze an experimental data set using the appropriate statistical procedures and to prepare a research report.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 300B, PSYC 300."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300A"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

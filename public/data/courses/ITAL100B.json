@@ -1,0 +1,33 @@
+{
+  "pid": "Byps9uamN",
+  "code": "ITAL100B",
+  "title": "Beginners' Italian II",
+  "description": "Acquisition of language and intercultural competencies equivalent to the A1.2 level of the Common European Framework of Reference for Languages.",
+  "notes": [
+    "Credit will be granted for only one of ITAL 100B, ITAL 100, ITAL 149."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ITAL100A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

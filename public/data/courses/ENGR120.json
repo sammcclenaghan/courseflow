@@ -1,0 +1,101 @@
+{
+  "pid": "HJesq7O67E",
+  "code": "ENGR120",
+  "title": "Design and Communication II",
+  "description": "Principles of engineering science and design applied to practical projects undertaken by student teams. Integrated development and demonstration of writing, research, design and presentation skills. Referencing methods for scientific and technical literature. Characteristics of effective technical and scientific style. Emphasis on clarity, precision, and consistency. Practical experience in writing short technical documents such as memoranda, letters, abstracts, reports, papers, manuals, brochures, and specifications.",
+  "notes": [
+    "Credit will be granted for only one of ENGR 120, ENGR 121, ENGR 240, ENGL 225, ENSH 202."
+  ],
+  "credits": "2.5",
+  "hours": "4-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ENGR110",
+              "ENGR111"
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "ENGR112"
+                ]
+              },
+              {
+                "type": "courses",
+                "need": 1,
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "ATWP135",
+                  "ENGL135"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "ELEC199"
+                ]
+              },
+              {
+                "type": "courses",
+                "need": 1,
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "ATWP135",
+                  "ENGL135"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC110",
+          "CSC111"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "CSC 110 or CSC 111 strongly recommended prior to ENGR 120."
+  ]
+}

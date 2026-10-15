@@ -1,0 +1,22 @@
+{
+  "pid": "Bkpq0DaX4",
+  "code": "BUS699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "15–24",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BUS693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

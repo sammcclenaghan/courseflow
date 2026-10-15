@@ -1,0 +1,13 @@
+{
+  "pid": "Hy7Kp5MO4",
+  "code": "PHYS555",
+  "title": "Advanced Computing and Machine Learning for Physics and Astronomy",
+  "description": "An introduction to the concepts and essential tools of advanced computing and machine learning, via hands-on application to diverse areas of physics and astronomy. Topics may include: advanced distributed, concurrent and parallel computing; big data tools and the use of structured and unstructured data; neural networks and machine learning, including supervised and unsupervised systems; data exploration and visualization.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

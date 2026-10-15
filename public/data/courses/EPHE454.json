@@ -1,0 +1,48 @@
+{
+  "pid": "HJ5-EuTXE",
+  "code": "EPHE454",
+  "title": "Marketing for Health and Social Change",
+  "description": "The study and application of social marketing concepts and strategies to address the health and social change opportunities for, and challenges facing, the recreation profession and provide a synthesis for the graduating student.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 454, PE 454."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "RHED001"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COOP001",
+          "RHED002"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "admission to BA Co-operative Education program in Recreation and Health Education."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

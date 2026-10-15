@@ -1,0 +1,25 @@
+{
+  "pid": "BkM_2_p7N",
+  "code": "MECH447",
+  "title": "Energy Systems",
+  "description": "Characteristics of energy systems: evolution, energy currencies, energy sources, dynamics of energy systems. Levelized cost of energy, screening curves. Electrification, system requirements, variability, generation mixtures, and dispatch. The role of storage: characteristics of storage technologies, analysis of storage impacts, cost. Issues associated with the delivery of energy services such as sustainability, emissions, cost and energy intensity.",
+  "notes": [
+    "Credit will be granted for only one of MECH 447, MECH 542."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON180",
+      "MECH390"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,36 @@
+{
+  "pid": "SyppAd6mV",
+  "code": "POLI321",
+  "title": "Introduction to Research Methods in Politics",
+  "description": "Advanced introduction to the key empirical research methods used in the study of politics, including interpretive, historical, participatory, quantitative, case study and comparative.",
+  "notes": [
+    "Not open for credit to students with credit in POLI 339."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "A minimum third year standing"
+          },
+          {
+            "type": "text",
+            "text": "declared Honours or Major in Political Science"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

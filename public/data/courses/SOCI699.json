@@ -1,0 +1,22 @@
+{
+  "pid": "S1sIxFa7N",
+  "code": "SOCI699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "21",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCI693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

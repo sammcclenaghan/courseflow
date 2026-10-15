@@ -1,0 +1,25 @@
+{
+  "pid": "SklvmytpXE",
+  "code": "PSYC333",
+  "title": "Consumer Psychology",
+  "description": "Psychological processes in consumers: marketing strategies and behaviour, cognition, comprehension, learning, perception, motivation, attitudes, values, and decision making; environmental, cultural, and subcultural influences; ethical issues.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 333, PSYC 334 (if taken in Sep 1970 - Apr 1972), PSYC 334B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC231",
+      "PSYC251"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

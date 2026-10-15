@@ -1,0 +1,18 @@
+{
+  "pid": "ByenmNuaXE",
+  "code": "ER390",
+  "title": "Environmental Restoration Project",
+  "description": "In consultation with the Academic Director, students select a restoration project in an area of intended specialization. May involve a field research component. Final report required. Normally taken in the second or subsequent years of study.",
+  "notes": [
+    "International students interested in this community-engaged learning course should contact the International Centre for Students (ICS) to discuss potential work authorization requirements for the experiential learning component of this course."
+  ],
+  "credits": "1.5 or 3",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to Certificate or Diploma program in Restoration of Natural Systems."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

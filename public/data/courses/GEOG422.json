@@ -1,0 +1,25 @@
+{
+  "pid": "BkvHSupmE",
+  "code": "GEOG422",
+  "title": "Advanced Topics in Remote Sensing",
+  "description": "Aspects of remote sensing including processing and classification of digital satellite and airborne data and digital elevation modelling. Emphasis on the processes of interpreting remotely sensed data, the enhancement of digital data for visual analysis and the integration of remotely sensed data with other spatial data.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG319",
+      "GEOG322"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "GEOG 319 and GEOG 322 recommended prior to GEOG 422."
+  ]
+}

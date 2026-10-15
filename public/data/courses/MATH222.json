@@ -1,0 +1,33 @@
+{
+  "pid": "Sye1xndp74",
+  "code": "MATH222",
+  "title": "Discrete and Combinatorial Mathematics",
+  "description": "A survey of fundamental topics involving properties and enumeration of discrete structures: graph theory; counting; combinatorial arguments and proofs; inclusion-exclusion; deriving and solving recurrence relations; generating functions; coding theory; algorithmic aspects of combinatorics.",
+  "notes": [
+    "Credit will be granted for only one of MATH222, MATH324, MATH422, MATH423."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH122"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

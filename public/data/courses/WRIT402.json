@@ -1,0 +1,44 @@
+{
+  "pid": "SJsDWtaXE",
+  "code": "WRIT402",
+  "title": "Advanced Fiction Workshop",
+  "description": "Workshop in the writing of fiction.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class.",
+    "Normally offered in the spring term."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": {
+          "units": 3
+        },
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "WRIT304"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Declared Major in Writing"
+      },
+      {
+        "type": "text",
+        "text": "Fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "Permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

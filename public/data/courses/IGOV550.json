@@ -1,0 +1,25 @@
+{
+  "pid": "B1J_cu674",
+  "code": "IGOV550",
+  "title": "Indigenous Peoples and Self Determination in a Global Context",
+  "description": "A focused analysis of current processes to decolonize the relationships between Indigenous peoples and states (as well as other colonial entities), with particular emphasis on questions of land tenure, sovereignty, nationhood, self-determination and treaty-making in a global comparative context.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to MA program in Indigenous Governance."
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

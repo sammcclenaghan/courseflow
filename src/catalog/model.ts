@@ -73,3 +73,20 @@ export type Section = {
 	waitlist: Seats;
 	meetings: Meeting[];
 };
+
+/** One course in a term file, with every section offered that term. */
+export type TermCourse = {
+	/** e.g. "CSC110" */
+	code: string;
+	/** Kuali's title, or the section title for courses Kuali lacks. */
+	title: string;
+	sections: Section[];
+};
+
+/** public/data/terms/<term>.json */
+export type TermFile = {
+	term: string;
+	/** When the sections, and so their seats, were fetched. */
+	importedAt: string;
+	courses: TermCourse[];
+};

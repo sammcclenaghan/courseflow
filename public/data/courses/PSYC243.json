@@ -1,0 +1,23 @@
+{
+  "pid": "HypMyK674",
+  "code": "PSYC243",
+  "title": "Introduction to Lifespan Development",
+  "description": "Surveys foundational concepts of lifespan development psychology, such as sensitive periods, developmental stages and transitions, and trajectories of change across the lifespan.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC100A",
+      "PSYC100B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

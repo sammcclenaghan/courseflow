@@ -1,0 +1,49 @@
+{
+  "pid": "r1XCxmHv2",
+  "code": "CIVE311",
+  "title": "Urban Design",
+  "description": "Principles of sustainable urban design; methods of environmental assessment; neighbourhood morphology and activity; transportation systems including pedestrian, cycling and transit design; green building design; urban microclimatology, water systems and vegetation; contaminants and waste streams; energy supply.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE200",
+          "CIVE210"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE202",
+          "GEOG103"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CIVE340",
+      "CIVE360"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

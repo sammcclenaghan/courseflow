@@ -1,0 +1,25 @@
+{
+  "pid": "HyssgY67N",
+  "code": "SPAN450A",
+  "title": "Advanced Spanish I",
+  "description": "Acquisition of advanced language and intercultural competencies equivalent to the B2.1 level of the Common European Framework of Reference for Languages. Taught in Spanish.",
+  "notes": [
+    "Credit will be granted for only one of SPAN 450A, SPAN 450.",
+    "Not open to native or near-native speakers of Spanish."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SPAN350B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

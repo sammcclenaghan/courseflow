@@ -1,0 +1,16 @@
+{
+  "pid": "SJr1k_pm4",
+  "code": "CHEM398",
+  "title": "Research Experience",
+  "description": "Experimental research under the direction of department members. For third-year students who wish to gain some experience in chemical research. Interested students should contact the course coordinator by the first week of classes.",
+  "notes": [],
+  "credits": "0",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

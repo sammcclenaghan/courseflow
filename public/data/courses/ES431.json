@@ -1,0 +1,39 @@
+{
+  "pid": "SkKrVOpmN",
+  "code": "ES431",
+  "title": "History, Science and Culture of Wine",
+  "description": "Documents the evolution of human civilization through the lens of wine, chronicles the transition from mysticism to industrial global commoditization. Workshops examine terroir, varietal, age, price, quality and value of viticulture and oenological traditions from around the world, and what \"sustainability\" means in this context.",
+  "notes": [
+    "Credit will be granted for only one of ES 431, ES 481 (if taken in the same topic).",
+    "Mandatory workshop fee is required, due the first week of class.",
+    "Registration to this class is reserved for those with experience in, or ambition to join, the wine community. In no more than 50 words, describe your motivation for taking this class and send via email to jpv@uvic.ca by June 1."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ES200"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

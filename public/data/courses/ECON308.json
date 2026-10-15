@@ -1,0 +1,48 @@
+{
+  "pid": "B1wiWFTQV",
+  "code": "ECON308",
+  "title": "Economics and the Law",
+  "description": "Application of economic principles and methodology, including transactions costs and the Coase Theorem, to different areas of law. Areas include the law of property, torts and contracts, criminal, family, and corporate law.",
+  "notes": [
+    "Credit will be granted for only one of ECON 308, ECON 408, ECON 408A, ECON 408B.",
+    "Not open for credit to students with credit in ECON 311A or ECON 311B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON103",
+          "ECON103C",
+          "ECON180"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON104"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "ECON 203 recommended prior to ECON 308."
+  ]
+}

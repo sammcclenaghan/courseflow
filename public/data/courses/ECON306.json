@@ -1,0 +1,41 @@
+{
+  "pid": "rkxAheOa7N",
+  "code": "ECON306",
+  "title": "International Economics",
+  "description": "Introduction to international trade and finance with selected topics including determinants of trade, balance of payments and contemporary policy issues; political economy of tariffs; bilateral and multilateral trade negotiations; trade and development.",
+  "notes": [
+    "Not open for credit to students registered in or with credit in ECON 405A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON103",
+          "ECON103C",
+          "ECON180"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON104"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

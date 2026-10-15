@@ -1,0 +1,19 @@
+{
+  "pid": "H14J6uTXN",
+  "code": "MUS180D",
+  "title": "Jazz and Creative Music Ensemble",
+  "description": "Rehearses and performs music with emphasis on community and collaboration, including jazz, improvisation and soundtracks for silent film.",
+  "notes": [
+    "Credit will be granted for only one of MUS 180D, MUS 180.",
+    "Open to all students by audition."
+  ],
+  "credits": "1",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

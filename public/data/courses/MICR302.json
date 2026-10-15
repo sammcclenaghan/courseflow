@@ -1,0 +1,54 @@
+{
+  "pid": "HyD33OaQE",
+  "code": "MICR302",
+  "title": "Molecular Microbiology",
+  "description": "Genetic, genomic, biochemical and molecular approaches to studying the structure and function of microbial cells. Use of microbial systems as laboratory tools, and as model organisms for investigating biological processes. Emphasis on the application of experimental techniques to scientific problem solving.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MICR200A",
+          "MICR200B"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOC299"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOC300A"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

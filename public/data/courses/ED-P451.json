@@ -1,0 +1,25 @@
+{
+  "pid": "S15DGdTQV",
+  "code": "ED-P451",
+  "title": "Final Practicum (Elementary Education)",
+  "description": "Full time final practicum experience in BC Ministry of Education approved school. Focussed on effective demonstration of the Professional Standards for BC Educators.",
+  "notes": [
+    "Credit will be granted for only one of ED-P 451, ED-P 400A, ED-P 400B, ED-P 400C, ED-P 400D.",
+    "Normally takes place in the spring term."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-P351"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,43 @@
+{
+  "pid": "By126_aQN",
+  "code": "PAAS318",
+  "title": "Intensive Intermediate Chinese",
+  "description": "Emphasis placed on acquiring new vocabulary and developing reading skills. Students have the opportunity to make more advanced classroom presentations and present longer written assignments in Chinese.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 318, PAAS 210, PAAS 211, CHIN 249, CHIN 249A, CHIN 249B, CHIN 300.",
+    "Not open to fluent speakers of Chinese."
+  ],
+  "credits": "3",
+  "hours": "6-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": "B",
+            "minGpa": null,
+            "courses": [
+              "PAAS218"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Academic Writing Requirement satisfied"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

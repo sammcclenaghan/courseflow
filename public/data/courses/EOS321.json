@@ -1,0 +1,54 @@
+{
+  "pid": "SkEo5kjKw",
+  "code": "EOS321",
+  "title": "Earth History",
+  "description": "The history of the Earth-ocean-atmosphere system is recorded in the igneous, metamorphic and sedimentary rock record. Investigates how the geological record is used to unravel the co-evolution of the solid Earth (e.g., tectonics and volcanism) and the ocean, atmosphere and biosphere. Focusses on the Phanerozoic Eon, as its geological record is most abundant and best understood.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS300"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "EOS210",
+              "EOS230",
+              "EOS261",
+              "EOS314",
+              "CSC110",
+              "CSC111",
+              "GEOG230",
+              "PHYS210"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "or permission of the school"
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

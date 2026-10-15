@@ -1,0 +1,16 @@
+{
+  "pid": "H1lx01_a74",
+  "code": "CSC546",
+  "title": "Operations Research II",
+  "description": "An introduction to model design using queuing theory and simulation techniques. Topics covered include a brief introduction to queuing theory, basic ideas in simulation, random number generators, sampling, critical event and time slice methods, organization of a simulation study, and basic concepts of simulation programming.",
+  "notes": [
+    "Credit will be granted for only one of CSC 546, CSC 446.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

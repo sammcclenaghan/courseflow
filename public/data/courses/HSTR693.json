@@ -1,0 +1,15 @@
+{
+  "pid": "HylfcdpX4",
+  "code": "HSTR693",
+  "title": "PhD Candidacy Examinations",
+  "description": "Students enrol in 693 for the duration of their preparations for their candidacy examinations. This begins at the time a student first enrols in the PhD program and continues until candidacy requirements have been completed.",
+  "notes": [
+    "Credit will be granted for only one of HSTR 693, HIST 693."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

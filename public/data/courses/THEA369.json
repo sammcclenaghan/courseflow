@@ -1,0 +1,33 @@
+{
+  "pid": "HkKMlxh6n",
+  "code": "THEA369",
+  "title": "Design Studio",
+  "description": "Application of technical, conceptual and creative skills on a common theme in the production of theatre and performance design projects. Will include different themes and projects each year.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "1.5-1.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA251",
+          "THEA252",
+          "THEA261"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,46 @@
+{
+  "pid": "S1-SfwOg1e",
+  "code": "MUS271A",
+  "title": "Advanced Musicianship I",
+  "description": "Explores musicianship skills in western and non-western musics using a variety of aural, gestural and vocalization techniques. Builds performance acuity by exploring sound, notational and human relationships such as intonation, information processing and interpersonal perception.",
+  "notes": [
+    "Credit will be granted for only one of MUS 271A, MUS 270, MUS 270A.",
+    "A continuation of MUS 171B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS170B",
+          "MUS171B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS101B",
+          "MUS102B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the School."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

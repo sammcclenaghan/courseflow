@@ -1,0 +1,24 @@
+{
+  "pid": "HyDioup7N",
+  "code": "LING312",
+  "title": "Phonology",
+  "description": "Study of sound systems using description, analysis, argumentation, and the theoretical bases of generative phonology. Develops skills of observation and analysis.",
+  "notes": [
+    "Credit will be granted for only one of LING 312, LING 440."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LING200"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

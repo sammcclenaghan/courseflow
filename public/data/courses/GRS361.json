@@ -1,0 +1,15 @@
+{
+  "pid": "S1YDLu6mN",
+  "code": "GRS361",
+  "title": "Minoan, Mycenaean, and Trojan Archaeology",
+  "description": "Material culture from the eastern Mediterranean, from the Neolithic period through the end of the Bronze Age. Focus on the Minoans on Crete and the Mycenaean Greeks. Also the Cyclades and the volcanic eruption of Thera, Troy and the Trojan War and the Hittite Kingdom in central Anatolia.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "GRS 203 or GRS 371 recommended prior to GRS 361."
+  ]
+}

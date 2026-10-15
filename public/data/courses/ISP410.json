@@ -1,0 +1,18 @@
+{
+  "pid": "BJFmt45iV",
+  "code": "ISP410",
+  "title": "Final Project in Intercultural Studies and Practice",
+  "description": "Provides an opportunity to demonstrate knowledge of both theory and practice in a selected area of intercultural studies.",
+  "notes": [
+    "Credit will be granted for only one of ISP 410, IET 410."
+  ],
+  "credits": "3",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum third-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

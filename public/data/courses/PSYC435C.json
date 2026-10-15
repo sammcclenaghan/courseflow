@@ -1,0 +1,48 @@
+{
+  "pid": "H1vHyYpmE",
+  "code": "PSYC435C",
+  "title": "Advanced Adolescent Development",
+  "description": "Seminar review of theory and research examining psychological processes during adolescence and in the transition to adulthood. Specific topics include brain development, biological maturation, cognitive development, social-emotional development, parent-adolescent relations, gender roles, sexuality and problem behaviour. Attention is given to the role of the social and cultural context in adolescent development.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A",
+          "PSYC336"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC335",
+          "PSYC339"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

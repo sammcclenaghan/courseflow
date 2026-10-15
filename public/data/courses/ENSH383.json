@@ -1,0 +1,18 @@
+{
+  "pid": "Syff0bPA5",
+  "code": "ENSH383",
+  "title": "Poetry in the United States",
+  "description": "A study of American poetry, primarily focused on the 20th century. May be organized around a specific theme, topic, or cluster of authors.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 383, ENGL 431, ENGL 431A, ENGL 431B, ENGL 432, ENGL 432A, ENGL 432B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

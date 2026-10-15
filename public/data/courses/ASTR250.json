@@ -1,0 +1,50 @@
+{
+  "pid": "BJDJ0D6Q4",
+  "code": "ASTR250",
+  "title": "Introduction to Astrophysics",
+  "description": "Provides the physical foundation and introduction of astronomical terminology that is used in subsequent courses. Topics include astronomical coordinate systems, telescopes, stellar distances and magnitudes, binary stars, spectral classification, stellar evolution, variable stars, stellar motions, star clusters, interstellar medium, structure and rotation of the galaxy, external galaxies.",
+  "notes": [
+    "Credit will be granted for only one of ASTR 250, ASTR 200B."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ASTR150",
+              "MATH101"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS110",
+              "PHYS120"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

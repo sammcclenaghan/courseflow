@@ -1,0 +1,22 @@
+{
+  "pid": "Bk2weAq-F",
+  "code": "SOCW462",
+  "title": "Indigenous Resistance, Resurgence and Decolonial Practice",
+  "description": "Provides students with a foundational knowledge of Indigenous resistance and resurgence efforts and movements with the aim of identifying implications and applications for decolonial social work practice. Specific attention is paid to social location, relational accountability, decolonial practice ethics and collectivist approaches to social change, and challenges the legacy of epistemic racism directed towards Indigenous peoples and contribute towards relationships of respect and reciprocity between social work and Indigenous communities.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCW354"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

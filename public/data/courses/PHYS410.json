@@ -1,0 +1,26 @@
+{
+  "pid": "rJU90Oam4",
+  "code": "PHYS410",
+  "title": "Topics in Mathematical Physics I",
+  "description": "Mathematical methods applied to solving physical problems. Topics include: Finite dimensional and complex linear spaces; dimensional analysis; theory of distributions and applications to Fourier transforms and Green's functions; variation and perturbation methods; nonlinear differential equations.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS321A",
+      "MATH211",
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": [
+    "One of PHYS 313, PHYS 314, PHYS 323, and PHYS 326 recommended prior to PHYS 410."
+  ]
+}

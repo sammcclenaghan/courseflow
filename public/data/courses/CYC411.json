@@ -1,0 +1,88 @@
+{
+  "pid": "r112YqujN",
+  "code": "CYC411",
+  "title": "Advanced Supervised Block Practicum",
+  "description": "Supervised practicum over one term focuses on a professional area of interest and provides an opportunity to apply advanced ethical decision-making, assessment, intervention and evaluation skills, and a sensitivity to diverse perspectives through a critical, relational and decolonizing lens. Professional consultation, clinical functioning and the integration of theory and practice are emphasized.",
+  "notes": [
+    "Credit will be given for one of CYC 411, CYC 410, CYC 410A.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites.",
+    "Students are required to complete a minimum of 300 hours. More hours may be required for Specializations."
+  ],
+  "credits": "4.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC310",
+          "CYC310A",
+          "CYC311"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC320",
+          "CYC338"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC300",
+          "CYC321"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC364",
+          "CYC464"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC356",
+          "CYC370",
+          "CYC423",
+          "CYC470",
+          "CYC475"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "admission to an undergraduate program in the School of Child and Youth Care."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

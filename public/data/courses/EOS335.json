@@ -1,0 +1,33 @@
+{
+  "pid": "S1xs2m_a7V",
+  "code": "EOS335",
+  "title": "Isotopes in Natural Sciences",
+  "description": "Basic principles controlling isotope distribution, including natural abundances, radiogenic decay, equilibrium and kinetic isotope effects. Applications of the principles in the fields of: Earth history - global processes and chronology; mineralization - diagenesis, catagenesis; hydrogeology and characterization of water and air masses; and biogeochemistry and biological fractionation isotopes.",
+  "notes": [
+    "Credit will be granted for only one of EOS 335, EOS 430."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS240"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

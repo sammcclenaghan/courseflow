@@ -1,0 +1,38 @@
+{
+  "pid": "r1x6TOpQN",
+  "code": "PAAS400",
+  "title": "Advanced Research Seminar",
+  "description": "Leads to the research, writing and presentation of an original paper on a theme relevant to Pacific and Asian Studies.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 400, PACI 490A.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PAAS300",
+          "PAAS301",
+          "PAAS302",
+          "PAAS304",
+          "PAAS315"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

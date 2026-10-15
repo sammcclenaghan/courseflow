@@ -1,0 +1,23 @@
+{
+  "pid": "rkJPAP6mE",
+  "code": "BIOL448",
+  "title": "Neuroethology",
+  "description": "Examination of the neural basis of behaviour. Insights into the neuronal organization of behaviour through examination of neural solutions that have evolved in animals to solve problems encountered in their particular environments. Examples in individual species are used to illustrate how neuronal systems integrate information to shape behaviour in a real-world context. Research papers and seminar presentations based on the primary literature are emphasized.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-2",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL345",
+      "BIOL365"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

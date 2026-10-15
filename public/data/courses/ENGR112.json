@@ -1,0 +1,25 @@
+{
+  "pid": "rJKqmuamV",
+  "code": "ENGR112",
+  "title": "Design I",
+  "description": "Introductory principles of engineering design processes through practical projects to be undertaken by teams of students.",
+  "notes": [
+    "Credit will be granted for only one of ENGR 112, ENGR 110, ENGR 111, ELEC 199."
+  ],
+  "credits": "1",
+  "hours": "1-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ATWP135",
+      "ENGL135"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

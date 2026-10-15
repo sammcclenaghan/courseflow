@@ -1,0 +1,26 @@
+{
+  "pid": "S1feznBho",
+  "code": "CSC427",
+  "title": "Advanced Topics in Bioinformatics",
+  "description": "Explores the application of computer and data science techniques in genomics, life sciences and clinical environments. Introduces approaches to analyzing vast amounts of DNA sequencing data efficiently and accurately.",
+  "notes": [
+    "Credit will be offered for one of CSC 427, CSC 482C (if taken in same topic), CSC 527, CSC 588A (if taken in same topic), CSC 589C (if taken in same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC226",
+      "SENG265"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

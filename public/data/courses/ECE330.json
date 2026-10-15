@@ -1,0 +1,55 @@
+{
+  "pid": "rkYuxOTmV",
+  "code": "ECE330",
+  "title": "Electronic Circuits I",
+  "description": "Nonlinear devices. Modelling and application of diodes: rectifiers; voltage regulators; waveform shaping circuits. Biasing of bipolar and field effect transistors. Small signal amplifiers. Multistage amplifiers. Nonlinear applications of transistors including digital circuits such as inverters, gates and flip-flops. Circuit design, simulation, implementation and testing.",
+  "notes": [
+    "Credit will be granted for only one of ECE 330, ELEC 330."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0.5",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE216",
+          "ELEC216"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE250",
+          "ELEC250"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH200"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "with a minimum GPA of 3.0 over all courses."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

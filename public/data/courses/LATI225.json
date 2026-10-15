@@ -1,0 +1,35 @@
+{
+  "pid": "SJ2O5pdhA",
+  "code": "LATI225",
+  "title": "Intermediate Latin",
+  "description": "Continuation of LATI 125. Focuses on reading and translating progressively more challenging passages of Latin, while providing intermediate vocabulary and rules of grammar.",
+  "notes": [
+    "Credit will be granted for only one of LATI 225, LATI 102."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "LATI101",
+          "LATI125"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

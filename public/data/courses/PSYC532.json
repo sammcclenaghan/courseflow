@@ -1,0 +1,15 @@
+{
+  "pid": "HJerdkF6XE",
+  "code": "PSYC532",
+  "title": "General Linear Model - Univariate",
+  "description": "Presents a model-comparison approach to the analysis of a single dependent variable. Topics include simple and multiple regression involving continuous independent variables, categorical independent variables (ANOVA designs) and mixtures of the two (covariance analysis). Also covered are logistic regression, data screening and outlier detection, testing of model assumptions, data transformation, and repeated measures models.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

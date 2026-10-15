@@ -1,0 +1,47 @@
+{
+  "pid": "rkk8jOpm4",
+  "code": "LAW315I",
+  "title": "Transsystemic Business Associations",
+  "description": "Introduces various legal forms for carrying on trade, recognizing that the corporation is of commercial and legal significance as an organizational form. Surveys sole proprietorship, partnership and related agency principles. Examines business development in an Indigenous legal context. Canvasses practical and meaningful strategies to dismantle systemic barriers to create economic benefits for Aboriginal people and communities, for the financial and business sectors, and for the economy and society of Canada.",
+  "notes": [
+    "Credit will be granted for only one of LAW 315I, LAW 315."
+  ],
+  "credits": "2.5–3",
+  "hours": "5-0-0 or 6-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "LAW105",
+          "LAW105I",
+          "LAW108A"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "LAW108C",
+          "LAW109",
+          "LAW109I"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to the JD/JID Program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

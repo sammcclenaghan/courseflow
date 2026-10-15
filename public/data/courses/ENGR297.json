@@ -1,0 +1,25 @@
+{
+  "pid": "ByAqmOpm4",
+  "code": "ENGR297",
+  "title": "Technology and Society",
+  "description": "Introduction to the effects of technology on society including the ethical, environmental, cultural, social, economic and political issues raised by technological change. The concepts of sustainability, civil society, engineering law (negligence and product liability torts, contract law and consumer protection statutes) and environmental stewardship are addressed in the context of systems engineering design.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ENGR120",
+      "ENGR240",
+      "ENGL225",
+      "ENSH202"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

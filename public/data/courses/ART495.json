@@ -1,0 +1,28 @@
+{
+  "pid": "HkcRaP674",
+  "code": "ART495",
+  "title": "Visual Structures in the Imaginative Realm II",
+  "description": "Enhanced education for the creation of objects and images within a studio context. Sculpture, painting and installation form core areas within a broad experimental approach. Cross-disciplinary knowledge and the relationship of studio production to the built environment guides students towards specific outcomes, including a portfolio for those continuing to professional practices or to graduate studies in visual art, design or architecture. Team taught by faculty from Visual Arts and other disciplines; includes seminar component.",
+  "notes": [],
+  "credits": "9",
+  "hours": "1.5-7.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "9 units of 300-level Visual Arts studio courses"
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "ART 395 recommended prior to ART 495.",
+    "ART 401 recommended to be taken with ART 495"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "pid": "ByI2A_aXE",
+  "code": "PHYS699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "33",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS693"
+    ]
+  },
+  "recommendations": []
+}

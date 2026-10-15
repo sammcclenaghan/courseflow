@@ -1,0 +1,44 @@
+{
+  "pid": "H1TLqmvTR",
+  "code": "MUS438A",
+  "title": "Instrumental Clinic for Secondary School",
+  "description": "Practical instrumental ensemble experience for secondary school. Topics include teaching techniques, conducting, repertoire and assessment practices.",
+  "notes": [
+    "Credit will be granted for only one of MUS 438A, MUS 439, ME 316, ME 409.",
+    "Offered in alternate years."
+  ],
+  "credits": "0.75",
+  "hours": "1.5-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS256A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BMus in Music Education or by permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MUS256B",
+      "MUS339A"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

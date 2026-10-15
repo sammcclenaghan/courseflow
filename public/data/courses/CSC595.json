@@ -1,0 +1,16 @@
+{
+  "pid": "SynelupXN",
+  "code": "CSC595",
+  "title": "Research Skills",
+  "description": "The main objective is to teach critical skills in order to be a successful researcher. This includes: choosing a research method, preparing for and presenting a research seminar talk, preparing a research proposal, doing literature search, and evaluating constructively research papers, proposals and/or presentations.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Registration in a graduate program in Computer Science."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

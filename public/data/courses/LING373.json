@@ -1,0 +1,26 @@
+{
+  "pid": "H1g2iOpQN",
+  "code": "LING373",
+  "title": "Second Language Acquisition",
+  "description": "An examination of the process of acquiring a second or additional language. Topics include the nature of learner language, individual differences in language acquisition, the role of input and interaction, similarities and differences in L1 and L2 acquisition, instructed acquisition and the relationship between acquisition research and second language teaching.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "1.5 units of LING course"
+      },
+      {
+        "type": "text",
+        "text": "or admission to Diploma program in Applied Linguistics."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

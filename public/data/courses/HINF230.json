@@ -1,0 +1,27 @@
+{
+  "pid": "ByyADOamN",
+  "code": "HINF230",
+  "title": "Organizational Behaviour and Change Management",
+  "description": "Techniques for the management of individual, group and intergroup behaviour in health care organizations, including decision making and problem solving, work groups, leadership, power and influence, labour relations, process engineering and risk management.",
+  "notes": [
+    "Credit will be granted for only one of HINF 230, COM 220."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to BSc in Health Information Science of Combined BSc in Health Information Science and Computer Science"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

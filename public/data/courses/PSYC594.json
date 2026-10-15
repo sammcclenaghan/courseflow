@@ -1,0 +1,16 @@
+{
+  "pid": "H1B5JYTmN",
+  "code": "PSYC594",
+  "title": "Special Topics in Clinical Intervention",
+  "description": "Introduction to any one or more specialized therapeutic techniques for working with individuals in clinical settings.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a doctoral program in Clinical Psychology."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

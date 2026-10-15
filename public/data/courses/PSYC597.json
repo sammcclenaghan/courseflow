@@ -1,0 +1,16 @@
+{
+  "pid": "r1L5yF6XE",
+  "code": "PSYC597",
+  "title": "Clinical Psychology Colloquium",
+  "description": "Weekly colloquium through the Winter session, involving faculty and graduate students in the Clinical Psychology Program. Colloquium participants take turns hosting the meeting, typically presenting on current clinical practice issues, cases, or research.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a graduate program in Clinical Psychology."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

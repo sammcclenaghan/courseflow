@@ -1,0 +1,42 @@
+{
+  "pid": "HJF1CwTQE",
+  "code": "ASTR304",
+  "title": "Planetary Science",
+  "description": "Astronomy and astrophysics of planets and planetary systems. The Solar System and extrasolar planetary systems. Planet formation, orbits, measurements of the properties of planets, detection, study of extrasolar planets, and the Earth-Moon system.",
+  "notes": [
+    "Credit will be granted for only one of ASTR 304, ASTR 255."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ASTR250",
+          "PHYS215",
+          "PHYS216"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS217",
+          "PHYS317"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

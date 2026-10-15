@@ -1,0 +1,40 @@
+{
+  "pid": "rJRCh7bv3",
+  "code": "MUS402",
+  "title": "Specialized Topics in Music Theory",
+  "description": "Advanced examination of a specialized topic in music theory, analysis and composition.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS201A",
+          "MUS201B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS202A",
+          "MUS202B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

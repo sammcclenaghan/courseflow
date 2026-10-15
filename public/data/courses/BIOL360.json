@@ -1,0 +1,71 @@
+{
+  "pid": "B1ZS0vpQN",
+  "code": "BIOL360",
+  "title": "Cell Biology",
+  "description": "Structure and function of animal and plant cells and tissues, membrane structure, transport, cellular compartments, cytoskeleton, cell growth and division, cell adhesion, extracellular matrix, tissue organization and renewal.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOL230"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BME200",
+              "BME201"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOC299"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOC300A",
+              "BIOC300B"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

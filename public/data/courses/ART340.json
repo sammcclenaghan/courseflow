@@ -1,0 +1,71 @@
+{
+  "pid": "Skx0pPpQN",
+  "code": "ART340",
+  "title": "Advanced Photography",
+  "description": "Development of more advanced skills in digital and/or film-based technologies as well as independent research and production pertaining to contemporary art photography.",
+  "notes": [
+    "Concurrent registration in two sections of ART 340 is permitted, normally with two different instructors.",
+    "Students must have their own digital or analogue SLR camera.",
+    "Normally class size is limited."
+  ],
+  "credits": "3",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART150"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART150E"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": {
+              "units": 3
+            },
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART155",
+              "ART156"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ART241",
+          "ART242"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

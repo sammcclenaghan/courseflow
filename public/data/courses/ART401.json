@@ -1,0 +1,65 @@
+{
+  "pid": "ryD06PpmE",
+  "code": "ART401",
+  "title": "Exhibition and Professional Practices in Contemporary Art",
+  "description": "Capstone experience of the BFA program. Engages collaborative planning and execution of a professional large-scale group exhibition. Includes presentations by living artists to highlight diverse professional practices.",
+  "notes": [
+    "Includes content from the Living Artists, Living Art Lecture Series with presentations by local, regional, national, and international artists.",
+    "Speaker content varies each term based on individual research and practice.",
+    "Practical skills include curation, documentation, catalogue design and funding, event planning and promotion, publicity, art handling, exhibition preparation, and professional installation and lighting of artworks.",
+    "*Indicates 1.5-hour tutorials involving artist lectures scheduled periodically throughout the term. Schedule of talk dates provided at the start of course."
+  ],
+  "credits": "3",
+  "hours": "0-3-1.5*",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": {
+              "units": 6
+            },
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART300",
+              "ART306",
+              "ART310",
+              "ART320",
+              "ART334",
+              "ART335",
+              "ART340",
+              "ART351",
+              "ART352",
+              "ART360",
+              "ART363",
+              "ART370",
+              "ART390",
+              "ART395"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum fourth-year standing"
+          },
+          {
+            "type": "text",
+            "text": "Declared Visual Arts Honours, Major, or Minor"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,32 @@
+{
+  "pid": "B1_cgKTmN",
+  "code": "SPAN280",
+  "title": "Spanish Immersion",
+  "description": "Taken in conjunction with SPAN 250A/B and/or SPAN 350A/B as part of the Study Abroad Program. Combines conversation with an introduction to the culture of Latin America or Spain.",
+  "notes": [],
+  "credits": "4.5",
+  "hours": "6-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SPAN100A",
+          "SPAN100B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

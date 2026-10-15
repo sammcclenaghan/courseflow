@@ -1,0 +1,33 @@
+{
+  "pid": "By4Q6_TQV",
+  "code": "MUS445",
+  "title": "Seminar in Performance",
+  "description": "Individual tuition, integrated performance seminar and weekly class including discussion of repertoire, pedagogy, and techniques of ensemble performance.",
+  "notes": [],
+  "credits": "2",
+  "hours": "1-1-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": {
+          "units": 4
+        },
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS345"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "declared Major in Performance."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

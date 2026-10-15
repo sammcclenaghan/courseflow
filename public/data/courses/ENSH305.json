@@ -1,0 +1,51 @@
+{
+  "pid": "HkhRgA-C5",
+  "code": "ENSH305",
+  "title": "Visual Rhetoric for Professional Writers",
+  "description": "Introduction to visual rhetoric as applied to the design of documents. Covers the fundamental concepts and practices of visual design in professional communications for both digital and print media. Using MS-Word and Adobe Creative Suite, experimentation with text styles and document structure, HTML and CSS, typography, composition, colour and digital image editing in support of effective communication.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 305, ENGL 305.",
+    "This is a Professional Communication course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "ENSH101",
+          "ENSH102",
+          "ENSH103",
+          "ENSH201",
+          "ENSH202",
+          "ENGL135",
+          "ENGL146",
+          "ENGL147",
+          "ENGL215",
+          "ENGL225",
+          "ATWP135",
+          "ECON225",
+          "ENGR240",
+          "MDIA200",
+          "WRIT204A",
+          "WRIT204B",
+          "WRIT215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

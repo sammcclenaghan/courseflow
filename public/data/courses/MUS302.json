@@ -1,0 +1,27 @@
+{
+  "pid": "H1dWYRjI3",
+  "code": "MUS302",
+  "title": "Topics in Music Theory",
+  "description": "Focus may vary between specific analytical methods and particular musical styles or genres.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 2,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MUS101A",
+      "MUS101B",
+      "MUS102A",
+      "MUS102B",
+      "MUS202A",
+      "MUS202B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

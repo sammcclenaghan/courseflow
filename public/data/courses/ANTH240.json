@@ -1,0 +1,41 @@
+{
+  "pid": "SkgRLTDaX4",
+  "code": "ANTH240",
+  "title": "Archaeology",
+  "description": "An introduction to archaeological research and problems of interpretation. Laboratories provide an opportunity to become familiar with archaeological materials and with some basic techniques of analysis.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ANTH100"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "completed a minimum of 12 units"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

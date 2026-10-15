@@ -1,0 +1,25 @@
+{
+  "pid": "r1AXJFTQ4",
+  "code": "PSYC351A",
+  "title": "Cognitive Psychology",
+  "description": "Emphasizes a detailed understanding of mental processes using studies of human behavior such as verbal reports and speeded responses. Particular topics vary depending on the course instructor but include domains such as attention, memory, object identification, language processing, embodied cognition, problem solving, reasoning and decision making.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 351A, PSYC 313, PSYC 313A, PSYC 313B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC251"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

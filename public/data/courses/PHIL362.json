@@ -1,0 +1,43 @@
+{
+  "pid": "ByP8AO6mE",
+  "code": "PHIL362",
+  "title": "Philosophy of Mind",
+  "description": "An intermediate survey of philosophy of mind, focusing on two broad questions: what are the natures of various mental (especially conscious) states (such as beliefs, perceptual experiences and emotions)? and what is the relationship between mind and body (or, is the mental part of the physical world).",
+  "notes": [
+    "Credit will be granted for only one of PHIL 362, PHIL 342A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHIL260"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "4.5 units of PHIL courses"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

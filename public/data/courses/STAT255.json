@@ -1,0 +1,21 @@
+{
+  "pid": "SkDAlYam4",
+  "code": "STAT255",
+  "title": "Statistics for Life Sciences I",
+  "description": "Descriptive statistics; probability; random variables and probability distributions; expectation; binomial, Poisson, and normal distributions; random sampling and sampling distributions; point and interval estimation; classical hypothesis testing and significance testing. Statistical examples and applications from life sciences are emphasized.",
+  "notes": [
+    "Credit will be granted for only one of STAT 255, STAT 252.",
+    "Not open to students registered in or with credit in one of STAT 254, STAT 250, STAT 260.",
+    "See \"Credit Limit - Beginning Level Statistics Courses\".",
+    "Intended primarily for students in Biology, Environmental Studies combined with a Science discipline, Kinesiology, Molecular Life Sciences, and Combined Computer Science and Health Information Science."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "1.5 units of MATH course numbered 100 or higher."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

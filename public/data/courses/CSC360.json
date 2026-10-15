@@ -1,0 +1,50 @@
+{
+  "pid": "SkWiJ_6mE",
+  "code": "CSC360",
+  "title": "Operating Systems",
+  "description": "Interrelationships between the operating system and the architecture of computer systems. Operating system structures, concurrent programming techniques, cpu scheduling, deadlocks, memory management, file systems and protection.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC225",
+          "SENG265"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC120",
+          "ENGR130"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC230",
+          "ECE255"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

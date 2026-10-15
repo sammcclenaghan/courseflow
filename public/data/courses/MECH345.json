@@ -1,0 +1,49 @@
+{
+  "pid": "B1Kv3Op7E",
+  "code": "MECH345",
+  "title": "Mechanics of Fluids",
+  "description": "Properties of fluids. Basic flow analysis techniques. Basic concepts: velocity field, stress; flow patterns; classification of fluid motion. Fluid statics: pressure distribution; hydrostatic forces on submerged surfaces; buoyancy and stability. Integral analysis of fluid motion: conservation of mass; momentum balance; energy balance. Dimensional Analysis and Similitude. Laminar and turbulent flow in pipes and pipe systems. Laminar and turbulent boundary layers, flow around bodies, lift and drag.\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1.5*-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH220",
+          "MECH242"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH240",
+          "MECH295"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH200"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

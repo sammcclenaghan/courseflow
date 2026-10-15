@@ -1,0 +1,16 @@
+{
+  "pid": "SJx7-kuaQ4",
+  "code": "CHEM577",
+  "title": "Computational Chemistry",
+  "description": "The benefits and limitations of applying different computational models to chemical phenomena, accounting for the relevant length and time scales and including the appropriate molecular behaviours.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 577, CHEM 477.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

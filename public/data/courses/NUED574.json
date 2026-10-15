@@ -1,0 +1,33 @@
+{
+  "pid": "rkZbUa_pQV",
+  "code": "NUED574",
+  "title": "Nursing Education Practice and Curriculum Design",
+  "description": "Students further integrate knowledge of Advanced Practice Nursing as a Nurse Educator through teaching practice and curriculum design in clinical, academic and/or community practice settings. In collaboration with a field guide, students engage in a minimum of 104 practice hours.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NUED570",
+          "NUED573"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

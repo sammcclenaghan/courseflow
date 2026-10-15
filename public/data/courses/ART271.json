@@ -1,0 +1,27 @@
+{
+  "pid": "rkHTpvpQV",
+  "code": "ART271",
+  "title": "Video Art",
+  "description": "An introduction to the basic technical and aesthetic concepts in video production. The film and video works of contemporary artists are explored.",
+  "notes": [
+    "Credit will be granted for only one of ART 271, ART 170.",
+    "Normally class size is limited."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART100",
+      "ART105",
+      "ART105E"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

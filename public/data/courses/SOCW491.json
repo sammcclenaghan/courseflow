@@ -1,0 +1,24 @@
+{
+  "pid": "B1ddet6mE",
+  "code": "SOCW491",
+  "title": "Integration of Indigenous Approaches to Healing and Helping",
+  "description": "Students continue to explore traditional and contemporary approaches to helping and healing in their communities that they began in 391. Indigenous elders, political leaders and human service workers again play a central role in this course. Students are also challenged to critically and holistically integrate these approaches into an examination, articulation and development of their own ethical perspectives.",
+  "notes": [
+    "Limited to Indigenous students of North America or with permission of the department."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCW391"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

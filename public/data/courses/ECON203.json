@@ -1,0 +1,44 @@
+{
+  "pid": "r1uhxdam4",
+  "code": "ECON203",
+  "title": "Intermediate Microeconomics I",
+  "description": "Theories of consumer demand, production and cost. The firm and market under conditions of perfect competition, monopoly and oligopoly. Basic game theory.",
+  "notes": [
+    "Credit will be granted for only one of ECON 203, ECON 300, ECON 302, ECON 304A.",
+    "ECON 203 cannot be taken concurrently with ECON 205."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON103",
+          "ECON103C",
+          "ECON180"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH102",
+          "MATH109"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

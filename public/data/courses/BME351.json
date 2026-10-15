@@ -1,0 +1,26 @@
+{
+  "pid": "B1dcRHvsxg",
+  "code": "BME351",
+  "title": "Engineering Design for Biomedical Systems",
+  "description": "Design methodology; recognizing and defining open-ended biomedical engineering problems, problem definition, concept generation, project planning, modelling, analysis, decision making, design synthesis, prototyping and testing. Teamwork and small group design projects.",
+  "notes": [
+    "Credit will be granted for only one of BME 351, BME 350, MECH 350."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BME201",
+      "MECH200A",
+      "MECH220"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

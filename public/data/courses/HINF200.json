@@ -1,0 +1,63 @@
+{
+  "pid": "BygjpD_674",
+  "code": "HINF200",
+  "title": "Principles of Health Database Design",
+  "description": "Addresses the issues facing a database designer in the development of database applications appropriate for health data of various kinds. Includes the elements of conceptual, implementation and physical database design to support health information systems. Topics include health care database management systems (DBMS) and their components, appropriate modeling techniques for database design, relational databases using standard tools and techniques, main trends, current technologies and management issues in database.",
+  "notes": [
+    "Credit will be granted for only one of HINF 200, HINF 300, CSC 370."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to BSc in Health Information Science or Combined BSc in Health Information Science and Computer Science"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF115",
+          "CSC110"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF130"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH151",
+          "MATH122"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

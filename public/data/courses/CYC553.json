@@ -1,0 +1,25 @@
+{
+  "pid": "SyTHld6QE",
+  "code": "CYC553",
+  "title": "Practicum in Child, Youth, Family and Community Studies",
+  "description": "The supervised field placement is designed to provide CYC students with an opportunity to apply their skills working with children, youth, families and communities in a supervised setting. Placements which involve individual, family and/or group counselling, can only be undertaken with qualified (i.e. Master's level) supervisors. Students are required to complete a minimum of 200 hours.",
+  "notes": [],
+  "credits": "1.5–3",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "9 units of 500-level CYC core courses"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

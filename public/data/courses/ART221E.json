@@ -1,0 +1,25 @@
+{
+  "pid": "H1166DaQV",
+  "code": "ART221E",
+  "title": "Sculpture",
+  "description": "An introduction to concerns and methods in contemporary sculpture from an Indigenous perspective. Students experience a broad range of studio practices and explore theoretical issues through short projects and critiques.",
+  "notes": [
+    "E-designated courses are offered only through the En'owkin Certificate Program in Indigenous Fine Arts located in Penticton, BC."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART100E",
+      "ART104"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

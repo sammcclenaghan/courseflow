@@ -1,0 +1,51 @@
+{
+  "pid": "SJI4RD6mV",
+  "code": "BIOL321",
+  "title": "Survey of Invertebrates",
+  "description": "Invertebrate diversity in an evolutionary perspective. Morphology, life histories, phylogeny and upper level systematics; selected aspects of behaviour and physiology. Laboratory exercises include study of live and preserved specimens.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 321, BIOL 206."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL186",
+          "BIOL190A"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL184",
+          "BIOL190B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL225"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

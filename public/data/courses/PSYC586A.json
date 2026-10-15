@@ -1,0 +1,33 @@
+{
+  "pid": "Hy-9kYp74",
+  "code": "PSYC586A",
+  "title": "Advanced Clinical Assessment",
+  "description": "Supervised practice in the psychological assessment of social, emotional and personality functioning.",
+  "notes": [
+    "Enrolment may be limited."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC585"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to a doctoral program in Clinical Psychology."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

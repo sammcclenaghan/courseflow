@@ -1,0 +1,35 @@
+{
+  "pid": "ry_nn_pmN",
+  "code": "MICR303",
+  "title": "Immunology",
+  "description": "An overview of the mammalian immune system and its function during health and disease. Recognition and response to diverse pathogens; immunological memory and vaccination; immune regulation and tolerance; immune responses and disease, experimental methods to measure and understand immune system functioning.",
+  "notes": [
+    "Credit will be granted for only one of MICR 303, MICR 403."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MICR200A",
+      "MICR200B"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOC299",
+      "BIOC300A"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

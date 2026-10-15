@@ -1,0 +1,36 @@
+{
+  "pid": "H1l7kytTQV",
+  "code": "POLI401",
+  "title": "Advanced Topics in Political Theory",
+  "description": "An advanced seminar on contemporary issues and problems in political theory.",
+  "notes": [
+    "Credit will be granted for only one of POLI 401, POLI 501 (if taken in the same topic), POLI 533 (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "POLI300A",
+          "POLI300B",
+          "POLI300C"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

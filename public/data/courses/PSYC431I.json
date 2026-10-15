@@ -1,0 +1,53 @@
+{
+  "pid": "HkSB1FpQN",
+  "code": "PSYC431I",
+  "title": "Psychology and Law",
+  "description": "Examination of how psychological theory and research inform crime investigation, courtroom dynamics and the legal system. Possible topics include eyewitness testimony, police practices, judge and jury decision making, lie detection and confessions, expert testimony. Focus on perspectives from social psychology and cognitive psychology.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 431I, PSYC 380."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC330",
+          "PSYC375",
+          "PSYC376",
+          "PSYC385",
+          "PSYC386",
+          "PSYC387"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

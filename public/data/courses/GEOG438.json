@@ -1,0 +1,23 @@
+{
+  "pid": "rkqHr_p7E",
+  "code": "GEOG438",
+  "title": "Aquaculture in British Columbia",
+  "description": "Introduction to the aquaculture industry in British Columbia: finfish, shellfish and seaweeds. Topics include the advantages and disadvantages of different production systems, technological innovations and marketing. Critical review will be made of the main environmental and social controversies surrounding aquaculture development in BC, as well as the participation of First Nations in seafood farming and industry regulation.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG304",
+      "GEOG353"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,41 @@
+{
+  "pid": "BJeUI0dpmN",
+  "code": "PHIL356",
+  "title": "Philosophy of Science",
+  "description": "An examination of problems in and approaches to science as a method of gaining knowledge about the world. Topics may include: the logic of explanation and the logic of confirmation; the ethics of experimentation; the social consequences of scientific knowledge or technology; community control of research.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHIL220"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "4.5 units of PHIL courses"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

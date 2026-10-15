@@ -1,0 +1,19 @@
+{
+  "pid": "HytwZd67V",
+  "code": "EDCI302",
+  "title": "Literacy and Language in Elementary or Middle School",
+  "description": "An overview of the teaching of language arts and the development of oral language and literacy in the elementary or middle school. An introduction to strategies for addressing the diverse needs of learners.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 302, EDCI 301, EDUC 302, ED-B 748, IED 302.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a program in Teacher Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

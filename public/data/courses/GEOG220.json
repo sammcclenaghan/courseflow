@@ -1,0 +1,31 @@
+{
+  "pid": "SJ11EdLRw",
+  "code": "GEOG220",
+  "title": "Weather and Climate",
+  "description": "An introduction to the physical processes that determine Earth’s weather and climate. Topics include atmospheric composition, flows of energy through the atmosphere, small-scale and large-scale winds, cloud and precipitation processes, climate change.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 220, EOS 220."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-2",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Complete 1.5 units of: 100 level PHYS"
+      },
+      {
+        "type": "text",
+        "text": "Complete 1.5 units of: 100 level MATH"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

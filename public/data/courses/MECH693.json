@@ -1,0 +1,24 @@
+{
+  "pid": "BJguc3uTmV",
+  "code": "MECH693",
+  "title": "Candidacy Examination",
+  "description": "PhD students enrol in 693 for the duration of their preparation for the candidacy examination. This begins at the time the PhD student first enrols in the PhD program and continues until the candidacy examination has been completed.",
+  "notes": [],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH501",
+      "MECH601",
+      "MECH602"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

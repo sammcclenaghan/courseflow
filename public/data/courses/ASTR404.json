@@ -1,0 +1,49 @@
+{
+  "pid": "r1o1CDpQV",
+  "code": "ASTR404",
+  "title": "Introduction to Stellar Astrophysics",
+  "description": "The structure and evolution of stars, stellar atmospheres, the production of stellar spectra, interstellar matter.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ASTR250",
+          "PHYS323",
+          "PHYS326"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS217",
+          "PHYS317"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

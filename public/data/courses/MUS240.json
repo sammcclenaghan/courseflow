@@ -1,0 +1,35 @@
+{
+  "pid": "S1Zx6_pm4",
+  "code": "MUS240",
+  "title": "Individual Tuition",
+  "description": "Lessons in instrument or voice and weekly master class including discussion of repertoire, pedagogy and techniques of performance.",
+  "notes": [
+    "Credit will be granted for only one of MUS 240, MUS 245."
+  ],
+  "credits": "1",
+  "hours": "1-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": {
+          "units": 2
+        },
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS140"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BMus program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

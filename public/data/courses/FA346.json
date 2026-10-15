@@ -1,0 +1,16 @@
+{
+  "pid": "HJXw4upXN",
+  "code": "FA346",
+  "title": "The Arts and Technology II",
+  "description": "A practice-oriented seminar, focusing on the use of computer technology in the arts. Areas for consideration may vary from year to year.",
+  "notes": [],
+  "credits": "1.5 or 3",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

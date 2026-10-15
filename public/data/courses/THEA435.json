@@ -1,0 +1,16 @@
+{
+  "pid": "rJV7ZKpQV",
+  "code": "THEA435",
+  "title": "Advanced Practices in Applied Theatre",
+  "description": "Advanced theoretical and practical engagement with applied theatre practices, including outreach initiatives in community centers or classroom environments.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "or permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

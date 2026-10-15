@@ -1,0 +1,39 @@
+{
+  "pid": "rJrRRvTQV",
+  "code": "CHEM245",
+  "title": "Introduction to Thermodynamics",
+  "description": "Introduction to the principles of thermodynamics. Applications to gas and solution reactions and phase transitions. The tutorials emphasize numerical problem solving.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM102"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH102",
+          "MATH109"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

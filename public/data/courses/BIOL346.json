@@ -1,0 +1,24 @@
+{
+  "pid": "H1JSAvpm4",
+  "code": "BIOL346",
+  "title": "Freshwater Ecosystems",
+  "description": "Provides a basic understanding of the geological, physical, chemical, and biological processes that form and maintain lake and reservoir ecosystems. Covers both theoretical and applied aspects of freshwater ecology, and discusses the studies and experiments that have been used to test important theories and applications. Also covers anthropogenic and environmental threats to and impacts on freshwater ecosystems.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL215",
+      "ES240",
+      "GEOG272"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "rJ76dHDRc",
+  "code": "ENSH354",
+  "title": "Shakespeare's Comedies and Romances",
+  "description": "A study of selected comedies and late romances.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 354, ENGL 366, ENGL 366A, ENGL 366C, ENGL 366E."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

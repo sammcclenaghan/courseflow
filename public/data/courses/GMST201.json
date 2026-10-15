@@ -1,0 +1,36 @@
+{
+  "pid": "Syy1IdpXN",
+  "code": "GMST201",
+  "title": "Intermediate German I",
+  "description": "Grammatical features and vocabulary and how to use them in sentences and texts. Further insights into the culture of German-speaking countries. Acquisition of an understanding of German that enables reading, writing, speaking and comprehension of German at the intermediate level.",
+  "notes": [
+    "Credit will be granted for only one of GMST 201, GER 149, GER 200."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GER100",
+          "GER100B",
+          "GMST102",
+          "GMST110"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

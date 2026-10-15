@@ -1,0 +1,24 @@
+{
+  "pid": "SkaVhr0g-e",
+  "code": "FRAN172",
+  "title": "Level B1.2 French",
+  "description": "Sequel to FRAN 171. Development of intermediate language skills and intercultural competencies to facilitate communication and interaction in everyday and diverse contexts (school, leisure), through oral and written practice. Exploration of differences and cultural diversities in French-speaking regions and countries. Advances to a B1 level of the European Common Framework for Languages. Prepares for intermediate (B2) study upon completion.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 172, FRAN 170."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "FRAN171"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

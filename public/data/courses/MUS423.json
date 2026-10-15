@@ -1,0 +1,52 @@
+{
+  "pid": "ry2KCQ-w2",
+  "code": "MUS423",
+  "title": "Advanced Musicology Topics",
+  "description": "Selected topics drawn from the current literature and practices in Musicology and Sound Studies.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS201B",
+          "MUS202A",
+          "MUS202B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS220B",
+          "MUS223"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied"
+      },
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

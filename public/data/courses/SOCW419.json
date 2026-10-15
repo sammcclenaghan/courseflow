@@ -1,0 +1,42 @@
+{
+  "pid": "Hk-w6q8ZF",
+  "code": "SOCW419",
+  "title": "Research for Social Change",
+  "description": "Introduces research as social justice work. Students learn about a range of qualitative and quantitative methodologies, with an emphasis on Indigenous, critical and anti-oppressive approaches. Students engage in critical analysis of what counts as knowledge, develop alternative ways of understanding social issues, redefine the relationship between researchers and participants, and develop skills in data collection, data analysis and proposal writing.",
+  "notes": [
+    "Credit will be granted for only one of SOCW 419, SOCW 318, SOCW 319."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW311",
+          "SOCW312"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW312A",
+          "SOCW312B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

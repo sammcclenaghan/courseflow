@@ -1,0 +1,43 @@
+{
+  "pid": "BkpaDO6mV",
+  "code": "HINF201",
+  "title": "Database Management and Development for Health Care Systems",
+  "description": "Provides students with hands-on lab experience with SQL and a sophisticated, full-scale multi-platform database management system such as Oracle. Using a set of accompanying tools, students 1) explore the architecture of a database management system, 2) design a database, 3) implement a database, 4) maintain and administer a database, 5) manage application security and 6) develop prototypes of database applications. Students are able to transfer this experience to other database management systems.",
+  "notes": [
+    "Credit will be granted for only one of HINF 201, HINF 301."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "HINF200",
+              "CSC370"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to BSc in Health Information Science or Combined BSc in Health Information Science and Computer Science"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

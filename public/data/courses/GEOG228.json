@@ -1,0 +1,16 @@
+{
+  "pid": "HkjGruTXE",
+  "code": "GEOG228",
+  "title": "Introduction to Remote Sensing",
+  "description": "Introduces the use of remotely sensed images to address information issues related to both physical and human geography. Students are exposed to a range of image types and resolutions, as well as methods and tools used for their analysis.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

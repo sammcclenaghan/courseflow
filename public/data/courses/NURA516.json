@@ -1,0 +1,32 @@
+{
+  "pid": "H1-P6OTQ4",
+  "code": "NURA516",
+  "title": "Advancing Nursing Practice",
+  "description": "Exploration of advanced practice nursing leadership roles and competencies with a focus on the patient/client and the nurses/nursing spheres of influence. Collaboration and consultation competencies as they relate to client-centred care and interprofessional/intersectoral teams and working with organizations are also explored.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURS520"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

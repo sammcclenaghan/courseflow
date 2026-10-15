@@ -1,0 +1,24 @@
+{
+  "pid": "By-d3OTQ4",
+  "code": "MECH443",
+  "title": "Advanced Thermodynamics",
+  "description": "Thermodynamic potentials: Maxwell relations; stability criteria. Barometric formula: applications to clouds; solar chimney; etc. Phase mixtures: chemical potential; osmosis; phase equilibrium; Gibbs phase rule; phase diagrams; fugacity and activity. Reacting mixtures: law of mass action and applications; enthalpy and entropy constants; heat of reaction; combustion; flames; adiabatic flame temperature; reaction rates. Thermodynamics of fuel cells: efficiency; causes of losses; comparison with heat engines.",
+  "notes": [
+    "Credit will be granted for only one of MECH 443, MECH 541."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH240"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

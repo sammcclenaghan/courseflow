@@ -1,0 +1,23 @@
+{
+  "pid": "BJ7hXOaQ4",
+  "code": "EOS201",
+  "title": "Sedimentary Geology",
+  "description": "The physical, chemical and biological nature of sediments at sea and on land. The process of sediment transport, deposition and diagenesis. The origin and internal stratigraphy of sedimentary basins in the context of plate tectonics. The sedimentary record as used to reconstruct past climates, geographies, and earth and ocean dynamics. The geological evolution of western Canada as deduced from its stratigraphic record.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EOS120",
+      "EOS205"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

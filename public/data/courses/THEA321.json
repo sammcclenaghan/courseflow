@@ -1,0 +1,58 @@
+{
+  "pid": "HyEZ-tTX4",
+  "code": "THEA321",
+  "title": "Acting III",
+  "description": "Acting as related to specific theatrical genres, styles or periods.",
+  "notes": [
+    "Credit will be granted for only one of THEA 321, THEA 320."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "THEA205",
+              "THEA221"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Permission of the department."
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA205",
+          "THEA206",
+          "THEA222",
+          "THEA223",
+          "THEA347"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

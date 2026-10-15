@@ -1,0 +1,36 @@
+{
+  "pid": "rJRp6uTXV",
+  "code": "PAAS484",
+  "title": "Identity in Animated Japanese Cinema",
+  "description": "Analysis of the arguments various Japanese animated films make about the theme of identity and its relationship to individual, social, national and spiritual dimensions of contemporary Japan. Also considers the identity of genre in works of art.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 484, PAAS 487 (if taken in Sep-Dec 2011), JAPA 324B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Minimum third-year standing"
+          },
+          {
+            "type": "text",
+            "text": "Academic Writing Requirement satisfied"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

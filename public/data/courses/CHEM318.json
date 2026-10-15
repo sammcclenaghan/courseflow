@@ -1,0 +1,22 @@
+{
+  "pid": "SJiA0PTmN",
+  "code": "CHEM318",
+  "title": "Instrumental Techniques of Analysis",
+  "description": "Theory and applications of the most generally applied methods of instrumental analysis.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM212"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

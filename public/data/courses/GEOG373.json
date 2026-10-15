@@ -1,0 +1,35 @@
+{
+  "pid": "Bk24BupmN",
+  "code": "GEOG373",
+  "title": "Applied Climatology",
+  "description": "A study of the application of physical principles to practical problems in climatology and the reciprocal interaction between climate and human activities. Topics include: urban effects on climate; air pollution; human bioclimatology; agricultural climatology; and methods of microclimatic modification.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG272"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "1.5 units 100 level MATH"
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

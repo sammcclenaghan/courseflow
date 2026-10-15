@@ -1,0 +1,31 @@
+{
+  "pid": "S123IJjRq",
+  "code": "HUMA480",
+  "title": "Sharing Humanities Research",
+  "description": "Practices professional techniques of sharing humanities research, including conference organization, blogging, podcasting and website creation.",
+  "notes": [
+    "Credit will be granted for only one of HUMA 480, HUMA495 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Third -year standing or above."
+      },
+      {
+        "type": "text",
+        "text": "Must be declared as a major or honours student in Humanities."
+      },
+      {
+        "type": "text",
+        "text": "Permission of the faculty."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

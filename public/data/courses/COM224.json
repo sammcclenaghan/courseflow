@@ -1,0 +1,51 @@
+{
+  "pid": "B1REN5LZye",
+  "code": "COM224",
+  "title": "Organizations, Community and Society I",
+  "description": "Examines approaches to addressing people-related issues and opportunities for individuals, teams and leaders, while braiding indigenous perspectives and sustainability to enhance organizational effectiveness. Leadership, culture, job design, human resource management, emphasizing frameworks for enhancing organizational practice and understanding similarities and differences in communities and societies in the work context.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM120"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to BCom program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM232",
+          "COM251",
+          "COM292"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "recommendations": []
+}

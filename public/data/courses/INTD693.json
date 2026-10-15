@@ -1,0 +1,22 @@
+{
+  "pid": "SydYqd6XN",
+  "code": "INTD693",
+  "title": "PhD Candidacy Examination",
+  "description": null,
+  "notes": [],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "INTD699"
+    ]
+  },
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "Byqketp7V",
+  "code": "SENG460",
+  "title": "Practice of Information Security and Privacy",
+  "description": "Aims to present a holistic view of various security engineering topics through practical case studies. Topics include enterprise security architecture, security threat and risk assessment, education and awareness, monitoring, investigation and forensics, application security, media handling and intellectual property, privacy, physical and environmental security and business continuity planning. Also introduces information security-related certification and relevant professional associations.",
+  "notes": [
+    "Credit will be granted for only one of SENG 460, ECE 574, ELEC 574.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SENG360"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

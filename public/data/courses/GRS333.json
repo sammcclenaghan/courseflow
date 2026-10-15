@@ -1,0 +1,15 @@
+{
+  "pid": "SJl2L8OpQ4",
+  "code": "GRS333",
+  "title": "Alexander and the Hellenistic Age",
+  "description": "The history of Alexander the Great's campaign to conquer the Persian empire and of the political, socio-economic, intellectual and cultural history of Hellenistic civilization in Greece, Asia Minor and the Near East.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "One of GRS 100, GRS 101, GRS 201, GRS 331, GRS 332 recommended prior to GRS 333."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "pid": "r1g5dedTXE",
+  "code": "ECE355",
+  "title": "Microprocessor-Based Systems",
+  "description": "Processor organization: general-purpose and application-specific processors, datapath and control implementation, pipelining concepts. Memory organization: static and dynamic semiconductor memory, optical and magnetic memory, memory hierarchy and caches. I/O organization: physical and logic interfaces, interrupts and interrupt services routines, direct memory access (DMA), device drivers. Buses and protocols: bus signalling and arbitration, examples of modern buses, communications protocol concepts. Computer networking: network topologies, protocol stack, examples of modern networks.",
+  "notes": [
+    "Credit will be granted for only one of ECE 355, CENG 355."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE241",
+          "CENG241",
+          "MATH122"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE255",
+          "CENG255",
+          "CSC230"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,15 @@
+{
+  "pid": "HkJM-WdqY",
+  "code": "MECH602",
+  "title": "Introduction to Continuum Mechanics",
+  "description": "Analysis of deformation, motion and stress in Cartesian coordinates. Thermodynamics of continua. Constitutive equations. Linear elasticity. Fluid flow. Special problems in linear elasticity and fluid mechanics.",
+  "notes": [
+    "Credit will be granted for only one of MECH 602, MECH 501."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

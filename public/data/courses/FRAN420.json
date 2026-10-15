@@ -1,0 +1,52 @@
+{
+  "pid": "HkgiNOpXN",
+  "code": "FRAN420",
+  "title": "Studies in Francophone Literatures and Cultures",
+  "description": "Topics in francophone African, Caribbean and Indian Ocean novels, poetry and drama.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 420, FREN 477 (if taken in the same topic), FREN 477A (if taken in the same topic), FREN 477B (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "FRAN275"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "FRAN310"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

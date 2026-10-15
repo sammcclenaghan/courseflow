@@ -1,0 +1,20 @@
+{
+  "pid": "HyQmSGkGv",
+  "code": "RCS305",
+  "title": "Magic, Mysticism and the Occult",
+  "description": "Survey of mysticism and the occult as found in the history and literature of various religious traditions; critical analysis of the nature and significance of mystical experience; an exploration of belief in occult forces and figures; probing the connection between the occult and mysticism and the relationship between mysticism, the occult, and knowledge.",
+  "notes": [
+    "Credit will be granted for only one of RCS 305, RS 305."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "RCS 200A or RCS 200B recommended prior to RCS 305."
+  ]
+}

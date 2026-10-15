@@ -1,0 +1,15 @@
+{
+  "pid": "ry4jC_Tm4",
+  "code": "PHYS502A",
+  "title": "Classical Electrodynamics",
+  "description": "The classical theory of electrodynamics. Topics may include: electrodynamics as a relativistic field theory; static and retarded potentials; waves and their propagation in dispersive media; radiation and scattering.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 502A, PHYS 502."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

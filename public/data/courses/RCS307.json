@@ -1,0 +1,20 @@
+{
+  "pid": "H1RXuM1zP",
+  "code": "RCS307",
+  "title": "Religion And The Environment",
+  "description": "Surveys of the influence religious beliefs and practices have had upon humanity's understanding of the environment (nature). a Consideration of the contributions that religious ethics can make to our reflection on specific environmental issues.",
+  "notes": [
+    "Credit will be granted in only one of RCS 307, RS 307."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "RCS 200A or RCS 200B recommended prior to RCS 307."
+  ]
+}

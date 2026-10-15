@@ -1,0 +1,25 @@
+{
+  "pid": "BJMVy_TQ4",
+  "code": "CIVE445",
+  "title": "Groundwater Hydrology",
+  "description": "Review of fundamental surface and subsurface hydrologic processes and equations. Aquifer geology, properties and conceptual models. Numerical modeling. Quantifying local to global groundwater resources and groundwater flow to wells. Groundwater-surface water interactions and ecohydrology. Groundwater sustainability from a multidisciplinary perspective including engineering, geoscience, policy and economics.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 445, CIVE 545.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CIVE340"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

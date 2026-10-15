@@ -1,0 +1,25 @@
+{
+  "pid": "rJM1k_TXN",
+  "code": "CHEM347",
+  "title": "Quantum Chemistry",
+  "description": "Introduction to quantum chemistry, molecular orbitals and bonding. The Schrödinger equation and its solutions for some simple systems. Molecular orbitals and bonding in diatomic and polyatomic molecules.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 347, CHEM 446."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM245",
+      "MATH101"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

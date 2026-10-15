@@ -1,0 +1,25 @@
+{
+  "pid": "rke5CvdTXV",
+  "code": "HINF350",
+  "title": "Human Aspects of Health Care Information Systems",
+  "description": "Human aspects of health informatics. Includes discussion of the use of technology to support clinical decision making and decrease the incidence of errors in health care. Topics include information retrieval and cognitive processes, decision making and reasoning, human-computer interaction and usability engineering, patient safety and error reduction, evidence-based medicine, mHealth, consumer informatics, eHealth literacy and workflow analysis.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to BSc in Health Information Science or Combined BSc in Health Information Science and Computer Science"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "rJurgYTm4",
+  "code": "SOCI438",
+  "title": "Issues in Contemporary Sociology",
+  "description": "In-depth examination of emerging research interests of various faculty members. Specific topics vary from year to year.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Minimum fourth-year standing"
+          },
+          {
+            "type": "text",
+            "text": "declared Honours or Major in Sociology"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

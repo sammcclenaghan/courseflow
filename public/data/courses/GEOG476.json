@@ -1,0 +1,24 @@
+{
+  "pid": "SkZvSupQV",
+  "code": "GEOG476",
+  "title": "Advanced Topics in Geomorphology",
+  "description": "Focuses on various geomorphologic themes, with completion of a major research project based on field work/data analysis to supplement lectures, seminars and field/lab projects.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 476, GEOG 471C."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG376"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

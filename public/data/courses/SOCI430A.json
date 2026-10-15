@@ -1,0 +1,36 @@
+{
+  "pid": "rkmitjrnL",
+  "code": "SOCI430A",
+  "title": "Issues in Racialization, Ethnicity and Decolonization",
+  "description": "In-depth examination of contemporary issues related to the sociology of racialization, ethnicity, and decolonization. Topics may include: racialization and racism, ethnicity and ethnocentrism, European colonialism, normalization of whiteness, domination, cultural imperialism, gender and racialization, gendered aspects of colonization, settler colonialism, decolonization, liberation.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Minimum fourth-year standing"
+          },
+          {
+            "type": "text",
+            "text": "declared Honours or Major in Sociology"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "SOCI 103, SOCI 235, and SOCI 384 are recommended prior to SOCI 430A."
+  ]
+}

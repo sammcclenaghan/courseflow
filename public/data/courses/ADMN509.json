@@ -1,0 +1,31 @@
+{
+  "pid": "BylfAhPpmE",
+  "code": "ADMN509",
+  "title": "Economics for Policy Analysis",
+  "description": "Familiarizes students with basic economic concepts and their application to the analysis and design of public policies in the context of social and environmental realities. Includes the principles of efficient allocations of resources, market failures, economic trade-off analyses, options for government intervention and policy evaluation techniques. Contemporary themes include the economic perspective of sustainability, ecological and climate change economics and behavioral economics. Illustrative policy examples are chosen from the experience of British Columbia and Canada.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ADMN504"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

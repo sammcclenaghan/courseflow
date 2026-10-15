@@ -1,0 +1,34 @@
+{
+  "pid": "Bk3j1sZCJl",
+  "code": "CSC120",
+  "title": "Society, Ethics, Professionalism and Computing",
+  "description": "Social, ethical and historical contexts for the practice of computer science and an introduction to ethical reasoning and critical analysis in the computing profession: privacy, security and civil liberties in different jurisdictions; ethics of artificial intelligence; disinformation and democracy; sustainability and the environment with information and computing technologies; inclusion, accessibility and equity in design; intellectual property; resources for understanding relevant law; professional responsibility and codes of ethics; Indigenous and global perspectives.",
+  "notes": [
+    "Credit will be granted for only one of CSC 120, SENG 401"
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC110",
+          "CSC111"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

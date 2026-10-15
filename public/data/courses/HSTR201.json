@@ -1,0 +1,18 @@
+{
+  "pid": "Hk1zRHk0d",
+  "code": "HSTR201",
+  "title": "Introduction to Historical Research",
+  "description": "Explores the wide range of methods, tools and approaches historians use to analyze the past. Familiarizes students with the ways scholars engage with and assess a variety of sources, narratives and evidence to cultivate historical understanding.",
+  "notes": [
+    "Required of History Major and Honours students."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Complete 1.5 units from HSTR 100 - 299"
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

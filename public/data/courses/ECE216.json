@@ -1,0 +1,63 @@
+{
+  "pid": "HySued6QN",
+  "code": "ECE216",
+  "title": "Electricity and Magnetism",
+  "description": "Electric charge, Coulomb's Law, electrostatic forces, electric field, Gauss's Law, electric potential, stored energy. Electric current, conduction in a vacuum and in material media, displacement current, magnetic field of a current, force on a current carrying wire, magnetic induction, electromotive force, energy stored in a magnetic field. Magnetism and magnetic circuits. Time varying fields. Capacitance, resistance, inductance, and their characterization. Transmission lines.* Indicates a 3 hour laboratory taken by students on alternate weeks",
+  "notes": [
+    "Credit will be granted for only one of ECE 216, ELEC 216, PHYS 216.",
+    "* Indicates a 3 hour laboratory taken by students on alternate weeks"
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH200"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS110",
+          "PHYS120",
+          "PHYS122"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS111",
+          "PHYS125",
+          "PHYS130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH204"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

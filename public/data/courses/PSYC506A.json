@@ -1,0 +1,16 @@
+{
+  "pid": "SkT8ytpXE",
+  "code": "PSYC506A",
+  "title": "Psychology Clinic Practice",
+  "description": "Supervised psychological practice in the Psychology Clinic, Department of Psychology.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a doctoral program in Clinical Psychology."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

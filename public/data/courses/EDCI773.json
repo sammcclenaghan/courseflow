@@ -1,0 +1,28 @@
+{
+  "pid": "ryxY0bup7N",
+  "code": "EDCI773",
+  "title": "Curriculum and Instruction in Secondary School Social Sciences",
+  "description": "Explores the area of Social Studies as a multidisciplinary subject that draws from the social sciences and humanities to study human interaction with natural and social environments. While there is a theoretical component to the course, the learning of best practices in social studies education dominates.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 773, ED-E 757.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Professional Year or Post Degree Professional program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,40 @@
+{
+  "pid": "SJiSVO6XE",
+  "code": "ES446",
+  "title": "Sustainable Fisheries",
+  "description": "A practical examination of sustainable fisheries from a variety of interdisciplinary perspectives. Examines sustainability issues for fisheries and aquaculture through an integrated study of fish biology/ecology, oceanography, hydrology, environmental impact assessment, natural resource management and environment and land use planning.",
+  "notes": [
+    "Credit will be granted for only one of ES 446, ES 400C, ES 426 (if taken in Sep 1992 - Apr 1996)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ES200"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ES321",
+          "ES341"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

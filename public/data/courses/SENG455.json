@@ -1,0 +1,55 @@
+{
+  "pid": "SylvCqylWx",
+  "code": "SENG455",
+  "title": "Startup Studio",
+  "description": "Fast-paced world of entrepreneurship. In startup-style team development. Prototyping innovative software products using AI, market validation and real customer problems. Guided by founders and industry mentors: lean startup methods: agile development; human-centered design; building launch-ready ventures: pitch to investors; demo products; create responsible, high-impact startups and/or innovate inside organizations.",
+  "notes": [
+    "Credit will be granted for only one of SENG 455, SENG 480A (if taken in the same topic), SENG 480B (if taken in the same topic), SENG 480C (if taken in the same topic), SENG 480D (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SENG265",
+              "SENG310"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SENG411",
+              "SENG435",
+              "SENG499",
+              "CSC411",
+              "CSC412",
+              "CSC413"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

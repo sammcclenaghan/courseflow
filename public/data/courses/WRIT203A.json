@@ -1,0 +1,64 @@
+{
+  "pid": "HkUUbFaQV",
+  "code": "WRIT203A",
+  "title": "Introduction to Playwriting Workshop",
+  "description": "A lecture and seminar in the writing and workshopping of scripts for the stage.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 203A, WRIT 203, CW 203."
+  ],
+  "credits": "1.5",
+  "hours": "1-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "some",
+            "count": 1,
+            "items": [
+              {
+                "type": "courses",
+                "need": 1,
+                "timing": "completed",
+                "minGrade": "B",
+                "minGpa": null,
+                "courses": [
+                  "WRIT100",
+                  "CW102E"
+                ]
+              },
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": 5,
+                "courses": [
+                  "THEA103",
+                  "THEA104",
+                  "THEA105",
+                  "THEA106",
+                  "THEA120A",
+                  "THEA206"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to the Theatre Major or Writing Major program"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

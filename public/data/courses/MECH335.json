@@ -1,0 +1,22 @@
+{
+  "pid": "SJODn_6X4",
+  "code": "MECH335",
+  "title": "Theory of Mechanisms",
+  "description": "Types of mechanisms. Analysis of the kinematics of closed loop linkages using graphical, vector and complex number methods. Follower motion synthesis and design of cam profiles. Gear terminology and the analysis of gear trains. Analysis of static and dynamic loading of mechanisms; flywheel design. Introduction to linkage synthesis, spatial open loop mechanisms with applications to manipulators.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1.5-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH242"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,13 @@
+{
+  "pid": "Hkcp2gZtN",
+  "code": "CSC501",
+  "title": "Algorithms and Data Models",
+  "description": "A comprehensive advanced overview of the main data structures and algorithms for data processing. Topics include: the running time of programs, the list data model, the tree data model, the hash-map data model, the graph data model, the relational data model, the processes of data transformation, cleaning, and visualization.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

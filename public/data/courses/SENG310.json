@@ -1,0 +1,41 @@
+{
+  "pid": "Syel1gK6mV",
+  "code": "SENG310",
+  "title": "Human Computer Interaction",
+  "description": "Understanding human behaviour as it applies to user interfaces: observational techniques; questionnaire administration and unobtrusive measures. Operating parameters of the human cognitive system, task analysis and their application to designing interfaces. Interaction design principles and prototyping techniques. Evaluation techniques including cognitive walkthroughs, usability studies and verbal protocol analysis are used to evaluate interface design. Case studies of specific user interfaces.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG221",
+          "SENG265",
+          "CENG241",
+          "ECE241"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC120",
+          "ENGR130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

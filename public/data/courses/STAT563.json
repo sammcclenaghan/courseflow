@@ -1,0 +1,13 @@
+{
+  "pid": "rybNkbKaX4",
+  "code": "STAT563",
+  "title": "Topics in Applied Statistics",
+  "description": "Survival analysis, generalized linear models, multivariate normal models, resampling methods, nonparametric and robust methods, meta-analysis, miscellaneous techniques.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

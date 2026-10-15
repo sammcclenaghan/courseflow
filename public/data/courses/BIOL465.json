@@ -1,0 +1,40 @@
+{
+  "pid": "BklDDCPamE",
+  "code": "BIOL465",
+  "title": "The Molecular Basis of Cancer",
+  "description": "Clinical terminology, concepts of cancer epidemiology, DNA mutation and repair, molecular basis of cell cycle regulation, cell proliferation and apoptosis. Special emphasis on chemotherapy, gene therapy, diet and cancer, and the immunology of cancer.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL225",
+          "BIOL230"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL360",
+          "BIOC300A",
+          "BIOC300B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

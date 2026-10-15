@@ -1,0 +1,25 @@
+{
+  "pid": "rkEpawa74",
+  "code": "ART261",
+  "title": "Digital Media Arts I",
+  "description": "Introduction to the concerns and methods of contemporary digital art practice. Focuses on the use of digital technology in the manipulation of images, sound and other signals.",
+  "notes": [
+    "Credit will be granted for only one of ART 261, ART 160."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART106",
+      "ART106E"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

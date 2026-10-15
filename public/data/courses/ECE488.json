@@ -1,0 +1,27 @@
+{
+  "pid": "By6YldTXV",
+  "code": "ECE488",
+  "title": "Electrical Power Systems",
+  "description": "Basic concepts of electric power systems illustrating usage of admittance and impedance matrices for load-flow solutions. Three-phase salient and round rotor synchronous machines. Three-phase transformer. Transmission line parameters. Representation and analysis of transmission lines including ABCD parameters. Symmetrical components and sequence networks. Symmetrical faults such as three phase faults. Unsymmetrical faults such as single line to ground, double line and double line to ground faults.",
+  "notes": [
+    "Credit will be granted for only one of ECE 488, ELEC 488."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE365",
+      "ECE370",
+      "ELEC365",
+      "ELEC370"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

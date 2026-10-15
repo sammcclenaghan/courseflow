@@ -1,0 +1,52 @@
+{
+  "pid": "B1W5CuaXE",
+  "code": "PHYS313",
+  "title": "Atomic, Molecular and Optical Physics",
+  "description": "Applications of quantum physics to atomic and molecular structure. Interaction of atoms with static and oscillating electromagnetic fields. Near-resonant coherent light-atom interactions and laser spectroscopy. Optical manipulation of atoms and molecules. Laser cooling, optical tweezers and degenerate ultracold matter.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 313, PHYS 413A, PHYS 413B.",
+    "Normally offered in alternate years.",
+    "Students are advised to consult the department to determine when the course is offered."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH204"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS323"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS301",
+          "MATH342",
+          "MATH346"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

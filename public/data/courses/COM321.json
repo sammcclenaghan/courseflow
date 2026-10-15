@@ -1,0 +1,18 @@
+{
+  "pid": "r1GO1OTQ4",
+  "code": "COM321",
+  "title": "Leading People and Organizations I",
+  "description": "Examines the behaviours of individuals, groups and organizations and the issues associated with managing the employment relationship. Topics include leadership, values, motivation, recruitment and hiring, feedback, communication, conflict management and teams.",
+  "notes": [
+    "Credit will be granted for only one of COM 321, COM 120."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to BCom Program core."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

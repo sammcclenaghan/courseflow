@@ -1,0 +1,18 @@
+{
+  "pid": "SyoNAvaQV",
+  "code": "BIOL334",
+  "title": "Plants and People",
+  "description": "Plants as sources of food, fibre, drugs, and industrial raw materials from historical and contemporary perspectives. Aspects of plant growth, development, physiology, genetics and pathology, particularly as they relate to the economic uses of plants.",
+  "notes": [
+    "Credit for this course will not be counted toward degree programs in Biology, but Biology students may take this course as an elective."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum third-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

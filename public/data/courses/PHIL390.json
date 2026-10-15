@@ -1,0 +1,25 @@
+{
+  "pid": "S1s8COp74",
+  "code": "PHIL390",
+  "title": "Topics in Philosophy",
+  "description": "Investigations of a selected philosophical topic.",
+  "notes": [],
+  "credits": "1.5–3",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "6 units of PHIL courses"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

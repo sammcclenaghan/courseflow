@@ -1,0 +1,18 @@
+{
+  "pid": "SkOZhMlah",
+  "code": "ANTH331",
+  "title": "Anthropology of Indigenous Health",
+  "description": "Explores Indigenous Peoples’ health in Canada through immersive and applied Indigenous practices. Focuses on anthropological understandings of culture to highlight contemporary ways that Indigenous Peoples are reclaiming and revitalizing their culture, healing, and health practices. Provides an introduction to anthropology’s role in colonization and the subsequent impacts on Indigenous Peoples’ health, focusing on the positive relationships between culture, health, language, identity, and the natural and spiritual world as a foundation for reclamation and revitalization.",
+  "notes": [
+    "Credit will be granted for only one of ANTH331, ANTH393 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing"
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,24 @@
+{
+  "pid": "B1FY6da7E",
+  "code": "NURS521",
+  "title": "Advanced Practice Nursing and Professional Identity",
+  "description": "Explores nursing as an academic field of study with emphasis on theories, including Indigenous perspectives that inform and shape the discipline of nursing, professional identity, and advanced practice nursing. Critique, expansion, and limits of theory are examined within a philosophical framework of ontological, epistemological, and ethical congruence.",
+  "notes": [
+    "Credit will be granted for only one of NURS 521, NURS 507, NURA 512, NURA 513."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NURS520"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

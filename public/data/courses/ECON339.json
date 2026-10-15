@@ -1,0 +1,54 @@
+{
+  "pid": "HkaTx_674",
+  "code": "ECON339",
+  "title": "Economics of the Family",
+  "description": "An introduction to the theoretical and empirical literature on the allocation of labour and resources within households, and its relation to labour force outcomes. Topics may include: human capital decisions; gender roles; household production; labour force participation; the economics of marriage and divorce; the valuation of unpaid work in national income accounting; child care; gender and development.",
+  "notes": [
+    "Credit will be granted for only one of ECON 339, ECON 439."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECON103",
+              "ECON103C",
+              "ECON180"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ECON104"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Academic Writing Requirement satisfied"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

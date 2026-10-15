@@ -1,0 +1,15 @@
+{
+  "pid": "rktgV_pmN",
+  "code": "EPHE245",
+  "title": "Motor Learning",
+  "description": "Neural and cognitive processes underlying human skilled action and the factors that influence learning and control of these actions. Ways in which the human motor system enables the acquisition and retention of complex movement skills and implications for the design of instructional situations to support retention and optimal performance of skilled actions.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 245, PE 245."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

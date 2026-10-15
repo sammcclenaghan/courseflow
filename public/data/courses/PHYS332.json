@@ -1,0 +1,53 @@
+{
+  "pid": "Sye0RRi-Jl",
+  "code": "PHYS332",
+  "title": "Introductory Biomedical Physics",
+  "description": "An introduction to biomedical physics. Interactions of photons with matter. Physics of biologically-relevant molecules and solids. Radioactivity and therapeutic applications of radiation. Medical imaging.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 332, PHYS 232."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS120",
+          "PHYS130"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS110",
+          "PHYS111"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS102A",
+          "PHYS102B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

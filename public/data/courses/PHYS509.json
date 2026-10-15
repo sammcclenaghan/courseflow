@@ -1,0 +1,15 @@
+{
+  "pid": "rJgdsRuaQN",
+  "code": "PHYS509",
+  "title": "Particle Physics and the Standard Model",
+  "description": "An introduction to fundamental particle physics, the Standard Model and its field theoretic structure. Topics may include symmetries and Lie groups, spontaneous symmetry breaking, the Higgs mechanism, aspects of the strong and electroweak interactions, and particle phenomenology.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 509, PHYS 506B."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

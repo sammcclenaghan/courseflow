@@ -1,0 +1,26 @@
+{
+  "pid": "Skte4FLdj",
+  "code": "MATH426",
+  "title": "Extremal Combinatorics",
+  "description": "Maximizing the size of a combinatorial structure subject to constraints. Extremal problems for set systems, graphs, hypergraphs, permutations, subsets of the integers and partially ordered sets and connections to other areas of mathematics.",
+  "notes": [
+    "Credit will be granted for only one of MATH 426, MATH 492 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH222"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "MATH 320 or MATH 322 or MATH 352 is recommended, prior to taking this course."
+  ]
+}

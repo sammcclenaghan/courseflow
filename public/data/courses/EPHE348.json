@@ -1,0 +1,24 @@
+{
+  "pid": "rJ-W4u67V",
+  "code": "EPHE348",
+  "title": "Psychology of Physical Activity",
+  "description": "An examination of the psychological concepts related to human physical activity behaviour, which includes engagement in and adherence to physical activity including exercise.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 348, PE 348."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC100B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,28 @@
+{
+  "pid": "r1gQmNdTXV",
+  "code": "ER313",
+  "title": "Biodiversity and Conservation Biology",
+  "description": "Biological organisms and ecosystems with particular reference to mechanisms of change and human impacts on the environment. Focuses on: biodiversity (definition, assessment methods, loss, and evaluation); population biology (concepts and research methods); habitat loss; species extinction; exotic species and their impacts; and possibilities for human intervention in alleviating trends in species loss and ecosystem degradation.",
+  "notes": [
+    "Credit will be granted for only one of ER 313, ES 318, ES 320, ES 348, BIOL 370."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "admission to Certificate or Diploma program in Restoration of Natural Systems"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

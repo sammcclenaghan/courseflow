@@ -1,0 +1,24 @@
+{
+  "pid": "HJgrL-t6QE",
+  "code": "WRIT202B",
+  "title": "Fiction Workshop",
+  "description": "A workshop in the writing of fiction.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 202B, WRIT 202, CW 202."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "WRIT202A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

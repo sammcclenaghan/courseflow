@@ -1,0 +1,15 @@
+{
+  "pid": "H1amfDzyZg",
+  "code": "BME503",
+  "title": "Imaging for Medical Device Design",
+  "description": "Fundamental physical principles and instrumentation. Applications of major medical imaging modalities, including X-ray, CT, MRI, and ultrasound. Selection of appropriate imaging technologies for various clinical applications. Recent advances in imaging, including the role of AI in imaging solutions.",
+  "notes": [
+    "Credit will be granted for only one of BME 503, BME 501."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

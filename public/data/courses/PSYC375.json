@@ -1,0 +1,23 @@
+{
+  "pid": "BkVNJYTm4",
+  "code": "PSYC375",
+  "title": "Interpersonal Relationships",
+  "description": "An introduction to social psychological research and theory on close relationships with a focus on adult romantic relationships. Topics include relationship formation, maintenance and dissolution.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC231"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

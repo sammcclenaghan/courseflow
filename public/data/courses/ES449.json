@@ -1,0 +1,26 @@
+{
+  "pid": "Hkvo3w7AA",
+  "code": "ES449",
+  "title": "Foundations of Restoration Ecology",
+  "description": "Examines ecological theories on topics including functional ecology, resilience and community assembly as classic ecological frameworks, as well as more complex socio-ecological contexts. Focuses on application of these concepts to environmental work, particularly ecological restoration. A reading course driven by student discussion and presentations aimed at graduate students and advanced undergraduates.",
+  "notes": [
+    "Credit will be granted for only one of ES 449, ES 482 (if taken in the same topic), ES 549, ES 582 (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ES200",
+      "ES341"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

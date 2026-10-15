@@ -1,0 +1,15 @@
+{
+  "pid": "BJ8Fnd6mN",
+  "code": "MECH528",
+  "title": "Global Optimization and Quantitative Reasoning Techniques",
+  "description": "Review of conventional engineering optimization methods, global optimization algorithms, introduction of metamodeling and metamodel-based global optimization techniques, multi-objective and multi-disciplinary optimizations; knowledge representation and reasoning, rule-based systems, fuzzy pattern clustering and recognition, and artificial neural networks; applications of metamodel-based global optimization and quantitative reasoning for computational design and optimal control.",
+  "notes": [
+    "Credit will be granted for only one of MECH 528, MECH 620."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

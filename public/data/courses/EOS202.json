@@ -1,0 +1,22 @@
+{
+  "pid": "H1V3XuTX4",
+  "code": "EOS202",
+  "title": "Structural Geology",
+  "description": "Geometric, kinematic and dynamic analysis of deformation structures in rock bodies at different scales, in both brittle and ductile regimes. Stress and strain in rocks and their relationship to geologic structures. Interpretation of the physical mechanisms of folding and faulting in rocks with structural data and geological maps. The origin of crustal deformation in the context of plate tectonics.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EOS120"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

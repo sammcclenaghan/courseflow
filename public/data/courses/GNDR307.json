@@ -1,0 +1,29 @@
+{
+  "pid": "ryxqf8_a7V",
+  "code": "GNDR307",
+  "title": "Sexuality and the Body in International Development",
+  "description": "Examines the variety of ways that bodies are positioned in international development discourse and policy. Topics include HIV/AIDS, reproductive rights, maternal health, disabled bodies, violated bodies, sexualities, techno-bodies and care labour.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 307, WS 317."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "GNDR 305 and/or GNDR 306 recommended prior to GNDR 307."
+  ]
+}

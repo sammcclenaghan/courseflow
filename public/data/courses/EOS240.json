@@ -1,0 +1,43 @@
+{
+  "pid": "S1UnQuTXN",
+  "code": "EOS240",
+  "title": "Geochemistry",
+  "description": "Thermodynamic and kinetic approaches to understanding the Earth system. Application of theory to practical questions such as mineral formation, weathering, water quality, and petroleum formation. Thermodynamic and kinetic approaches are applied to the general geochemistry of the oceans, atmosphere and solid earth.",
+  "notes": [
+    "Credit will be granted for only one of EOS 240, EOS 360 (if taken prior to September 1992)."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS120",
+          "EOS205",
+          "CHEM102"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH102",
+          "MATH109"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,27 @@
+{
+  "pid": "HJgyTTvaXV",
+  "code": "ART221",
+  "title": "Sculpture",
+  "description": "An introduction to concerns and methods in contemporary sculpture. Students experience a broad range of studio practices as well as explore theoretical issues. Short projects and critiques are the standard format for this class.",
+  "notes": [
+    "Credit will be granted for only one of ART 221, ART 120.",
+    "Normally class size is limited."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART100",
+      "ART100E",
+      "ART104"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,32 @@
+{
+  "pid": "H1-9p_TXE",
+  "code": "NURS602",
+  "title": "Epistemological Discourses in the Study of Nursing",
+  "description": "Explores the current state of theorizing that underpins nursing's disciplinary and knowledge claims.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURS601"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

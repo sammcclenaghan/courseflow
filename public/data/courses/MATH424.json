@@ -1,0 +1,33 @@
+{
+  "pid": "HyV-YOPzH",
+  "code": "MATH424",
+  "title": "Structural Graph Theory",
+  "description": "A study of various classes of graphs and digraphs that have nice structural properties and admit efficient algorithmic solutions to combinatorial and optimization problems. The focus is on the interrelationship between structures and algorithms.",
+  "notes": [
+    "Credit will be granted for only one of MATH 424, MATH 492 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH222"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Complete 1.5 units from MATH 300 - 499"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

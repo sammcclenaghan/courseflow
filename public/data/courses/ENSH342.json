@@ -1,0 +1,18 @@
+{
+  "pid": "SyK2zIwCc",
+  "code": "ENSH342",
+  "title": "Special Topics in a Genre, Movement or Theme",
+  "description": "Study of a specific genre (such as the novel, drama, poetry) or subgenre (such as illustrated fiction, periodical poetry, erotic literature), movement or theme. Topic is announced each year.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 342, ENGL 362 (if taken in the same topic), ENGL 391 (if taken in the same topic), GMST 462 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

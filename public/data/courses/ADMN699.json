@@ -1,0 +1,22 @@
+{
+  "pid": "B1Fgaw6QV",
+  "code": "ADMN699",
+  "title": "Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "30",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ADMN693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

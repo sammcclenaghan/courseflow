@@ -1,0 +1,53 @@
+{
+  "pid": "r1gfpedaQ4",
+  "code": "ECON313",
+  "title": "Intermediate Microeconomics II",
+  "description": "General equilibrium analysis, choice under uncertainty, market failure due to asymmetric information, externalities and public goods. Additional topics may include factor markets and imperfect competition.",
+  "notes": [
+    "Credit will be granted for only one of ECON 313, ECON 300."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "C",
+        "minGpa": null,
+        "courses": [
+          "ECON203"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON225",
+          "ENGR120",
+          "ENGR240"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH102",
+          "MATH109"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

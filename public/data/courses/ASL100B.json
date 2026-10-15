@@ -1,0 +1,22 @@
+{
+  "pid": "rkf1RvaXN",
+  "code": "ASL100B",
+  "title": "American Sign Language II",
+  "description": "Emphasis on increasing vocabulary, skills applying grammatical features, facial expression and receptive and expressive signing.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "4-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ASL100A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

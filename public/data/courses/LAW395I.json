@@ -1,0 +1,16 @@
+{
+  "pid": "HyROidpmV",
+  "code": "LAW395I",
+  "title": "Coast Salish Legal Studies and Language",
+  "description": "Examines Coast Salish laws and standards for the regulation of relationships, the adjudication and management of disputes, and legal institutions. Focuses on Coast Salish language skills and linguistic legal pedagogy.",
+  "notes": [],
+  "credits": "1.5 or 2",
+  "hours": "3-0-0 or 4-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to the JD/JID Program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

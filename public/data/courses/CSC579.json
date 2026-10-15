@@ -1,0 +1,16 @@
+{
+  "pid": "H13ye_pXE",
+  "code": "CSC579",
+  "title": "Overlay and Peer-to-Peer Networking",
+  "description": "Focuses on the recent developments and advanced research topics in Layer 3 and above and the control plane of the Internet. Topics include: overlay network architectures, peer-to-peer application models, end-to-end control mechanisms, inter- and intra-domain routing protocols, service provisioning, network measurement, and related best current practices on the Internet.",
+  "notes": [
+    "Credit will be granted for only one of CSC 579, CSC 466.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

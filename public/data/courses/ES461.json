@@ -1,0 +1,41 @@
+{
+  "pid": "rk3rVu6mE",
+  "code": "ES461",
+  "title": "Environmental Impact Assessment",
+  "description": "An introduction to the objectives, philosophy, concepts, methods and social implications of environmental impact assessment (EIA). A critical examination of EIA as an analytical tool in the context of resource management and public policy is undertaken. Examples are drawn from BC, Canada and other countries.",
+  "notes": [
+    "Credit will be granted for only one of ES 461, ES 410, ES 400A (if taken prior to September 1989), GEOG 301, GEOG 391 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ES200"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ES301",
+          "ES321",
+          "ES341"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

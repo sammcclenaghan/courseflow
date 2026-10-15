@@ -1,0 +1,22 @@
+{
+  "pid": "B1C9R_aXN",
+  "code": "PHYS438",
+  "title": "Solid State Physics II",
+  "description": "Nanoscale physics, including semiconductor nanostructures and devices, nanomagnetism and spintronics, nanophotonics, molecular electronics, and superconductivity.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS328"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,29 @@
+{
+  "pid": "BJeFAZ_TmV",
+  "code": "EDCI767",
+  "title": "Curriculum and Instruction in Secondary School Science",
+  "description": "A study of the curriculum organization, instructional strategies, and assessment practices in secondary sciences. Includes consideration of the nature of science, the interactions of science, technology, society and environment, the development of science literacy through constructivist approaches to teaching, and selected current trends and issues in science education such as meeting the needs of diverse students and the use of technology in the science classroom.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 767, ED-E 769.",
+    "Students with teaching areas in biology, chemistry, physics, or general will enrol in this course.",
+    "May be offered in English of French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Professional Year or Post Degree Professional program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

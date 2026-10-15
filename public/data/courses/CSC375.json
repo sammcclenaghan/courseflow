@@ -1,0 +1,55 @@
+{
+  "pid": "B1VoyOpm4",
+  "code": "CSC375",
+  "title": "Introduction to Systems Analysis",
+  "description": "Covers a range of methods and methodologies used in analyzing and designing various types of systems. Topics include; requirements gathering, specification and design; data and process modelling; user interface modelling and prototyping; and system testing, implementation and operation. Students gain practical experience as part of team designing and implementing a system as part of the course.",
+  "notes": [
+    "Credit will only be granted for one of CSC 375, SENG 321."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG265"
+        ]
+      },
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "HINF130"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "HINF140"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

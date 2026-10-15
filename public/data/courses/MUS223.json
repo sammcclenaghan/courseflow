@@ -1,0 +1,25 @@
+{
+  "pid": "BJVkjoFE2",
+  "code": "MUS223",
+  "title": "Western Music History",
+  "description": "Introduction to notated Western art music from ancient to contemporary times.",
+  "notes": [
+    "Credit will be granted for only one of MUS 223, MUS 220A, MUS 220B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MUS121",
+      "MUS123"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

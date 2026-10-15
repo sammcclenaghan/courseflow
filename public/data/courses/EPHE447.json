@@ -1,0 +1,40 @@
+{
+  "pid": "BJOZE_TQ4",
+  "code": "EPHE447",
+  "title": "Advanced Professionalism in Kinesiology",
+  "description": "Focuses on preparation for professional practice through aspects of health professional bioethics/code of conduct, 50 hour practicum with reflective practice, charting/professional reports, evidenced-based seminar, career planning, as well as resume development.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 447, PE 447."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE247",
+          "EPHE260",
+          "EPHE355",
+          "EPHE380"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "admission to BSc program in Kinesiology."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

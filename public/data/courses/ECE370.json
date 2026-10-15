@@ -1,0 +1,41 @@
+{
+  "pid": "H1hded6XV",
+  "code": "ECE370",
+  "title": "Electromechanical Energy Conversion",
+  "description": "Faraday's law of electromagnetic induction, transformers and generators. Magnetic circuits. Force on a current carrying wire and motors. Energy and coenergy in the derivation of torques and forces. Structures and performance characteristics of dc, induction and synchronous machines. Stepper motor and brushless dc machines. Introduction to electric drives.",
+  "notes": [
+    "Credit will be granted for only one of ECE 370, ELEC 370."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE216",
+          "ELEC216"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE250",
+          "ELEC250"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

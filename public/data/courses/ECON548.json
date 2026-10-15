@@ -1,0 +1,13 @@
+{
+  "pid": "HkeqgWu6QN",
+  "code": "ECON548",
+  "title": "Applied Econometric Modelling",
+  "description": "Advanced topics in econometrics with a focus on both theoretical foundations and practical applications. Topics may include bootstrap methods, model selection, time series analysis, forecasting, causal inference and other advanced contemporary econometric methods. Causal inference topics may include the potential outcomes framework, difference-in-differences, regression discontinuity, synthetic control, and causal machine learning models.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

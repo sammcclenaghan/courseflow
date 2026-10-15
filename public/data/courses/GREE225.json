@@ -1,0 +1,35 @@
+{
+  "pid": "HyYxgZChC",
+  "code": "GREE225",
+  "title": "Intermediate Ancient Greek",
+  "description": "Continuation of GREE 125. Focuses on reading and translating progressively more challenging passages of ancient Greek, while providing intermediate vocabulary and rules of grammar.",
+  "notes": [
+    "Credit will be granted for only one of GREE 225, GREE 102."
+  ],
+  "credits": "1.5",
+  "hours": "4-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GREE101",
+          "GREE125"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

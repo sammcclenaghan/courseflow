@@ -1,0 +1,40 @@
+{
+  "pid": "HkgsRgua74",
+  "code": "ECON423",
+  "title": "Economics and Indigenous Nations",
+  "description": "An introduction to economic theory and policy analysis relevant for Indigenous nations in Canada and elsewhere; draws on literature in development economics, health economics, economic history, and labour economics; applies economic principles to policy design in Indigenous contexts; introduces Indigenous research methods to economics students. Provides basic guidance on principles of conduct for working with Indigenous communities. Topics may include an economic history of specific Indigenous nations, self-governance, labour market outcomes and property rights.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON313"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON345",
+          "ECON365"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

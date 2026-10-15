@@ -1,0 +1,27 @@
+{
+  "pid": "ByV_CsDpR",
+  "code": "MUS235A",
+  "title": "Brass Pedagogy",
+  "description": "Fundamentals of brass pedagogy and playing technique through practical, theoretical, and method-based approaches.",
+  "notes": [
+    "Credit will be granted for only one of MUS235A, MUS331."
+  ],
+  "credits": "0.75",
+  "hours": "1.5-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to the BMUS Music Education"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the instructor."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

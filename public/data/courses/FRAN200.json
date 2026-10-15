@@ -1,0 +1,50 @@
+{
+  "pid": "S1MqEupmN",
+  "code": "FRAN200",
+  "title": "Introduction to French Linguistics",
+  "description": "The subject matter of linguistics as it relates to the French language. Focus on French phonetics, phonology and morphology.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 200, FREN 202, FREN 202A, FREN 202B.",
+    "May be taken concurrently with other 200-level courses including FRAN 275."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "FRAN180"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "FRAN182"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

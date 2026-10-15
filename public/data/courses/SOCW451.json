@@ -1,0 +1,22 @@
+{
+  "pid": "SyCDeKT7E",
+  "code": "SOCW451",
+  "title": "Indigenous Policy Analysis in Social Work",
+  "description": "Builds on the structural theories and perspectives of social work practice introduced in 354. Focuses on in-depth exploration and critical analysis of past and present policies of Canadian governments that affect the lives of Indigenous peoples. Contemporary responses and initiatives of Indigenous peoples through their own policies and practices are also discussed.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCW354"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,26 @@
+{
+  "pid": "SyPCgtTQV",
+  "code": "STAT260",
+  "title": "Introduction to Probability and Statistics I",
+  "description": "Descriptive statistics; elementary probability theory; random variables, discrete and continuous probability distributions, expectation, joint, marginal and conditional distributions; linear functions of random variables; random sampling and sampling distributions; point and interval estimation; classical hypothesis testing and significance testing. The mathematical foundations of statistical inference are introduced and illustrated with examples from a variety of disciplines.",
+  "notes": [
+    "Credit will be granted for only one of STAT 260, STAT 250, STAT 254.",
+    "See \"Credit Limit - Beginning Level Statistics Courses\"."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH101",
+      "MATH208"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

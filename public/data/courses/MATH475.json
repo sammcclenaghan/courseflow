@@ -1,0 +1,48 @@
+{
+  "pid": "BysG3OaX4",
+  "code": "MATH475",
+  "title": "Topics in Mathematical Biology",
+  "description": "Possible topics include population modelling, infectious disease dynamics, models of neuronal networks and models of gene regulatory networks.",
+  "notes": [
+    "Credit will be granted for only one of MATH 475, MATH 575.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH341",
+              "MATH342",
+              "MATH376"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "or permission of the department."
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Recommended for third- and fourth-year students in Mathematics, Statistics or Biology."
+  ]
+}

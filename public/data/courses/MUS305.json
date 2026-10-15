@@ -1,0 +1,45 @@
+{
+  "pid": "S13eTu67V",
+  "code": "MUS305",
+  "title": "Music Composition II",
+  "description": "Individual and masterclass lessons with members of the Music Composition faculty. Compositions for solo, small and large ensembles.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MUS102A",
+              "MUS102B",
+              "MUS117",
+              "MUS171A",
+              "MUS171B",
+              "MUS205"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to BMus program in Composition and Theory"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

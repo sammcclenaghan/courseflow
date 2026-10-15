@@ -1,0 +1,49 @@
+{
+  "pid": "HkO_guTQV",
+  "code": "ECE300",
+  "title": "Linear Circuits II",
+  "description": "Phasors. Design of complex loads for maximum power transfer. Coupled inductive circuits and ideal transformers. Laplace transform analysis and matrix characterization of loop and node circuits. Design of controlled source circuits and ideal operational amplifiers. Feedback in design. Driving point and transfer function analysis with design for pole and zero placement in simple passive circuits and second order resonant responses, design for stability or oscillation in active circuits. Bode plots. Two-port parameters.",
+  "notes": [
+    "Credit will be granted for only one of ECE 300, ELEC 300."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE250"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE260",
+          "ECE265"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH204"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

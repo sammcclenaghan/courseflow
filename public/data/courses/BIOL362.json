@@ -1,0 +1,35 @@
+{
+  "pid": "Sy-WHRv67E",
+  "code": "BIOL362",
+  "title": "Practical Skills in Genomics",
+  "description": "An introduction to advanced experimental techniques in molecular biology and genomics. Course includes nucleic acid (DNA) isolation, polymerase chain reaction (PCR), DNA quality control, next generation DNA sequencing, computer-based analysis of large scale nucleotide sequence data such as DNA sequence assembly and mapping, BLAST searches, multiple sequence alignment, taxonomic assignment, and phylogenetic analyses. Student-collected data from one or more lab projects will be used to develop skills in contemporary genomics research and in scientific manuscript writing.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "1-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL230"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOC299",
+      "BIOC300A",
+      "BIOC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": [
+    "BIOL 361 recommended prior to BIOL 362."
+  ]
+}

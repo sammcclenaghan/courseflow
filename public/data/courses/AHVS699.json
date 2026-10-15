@@ -1,0 +1,25 @@
+{
+  "pid": "BydIavTXV",
+  "code": "AHVS699",
+  "title": "PhD Dissertation",
+  "description": "Dissertation must embody original work and constitute a significant contribution to knowledge in the candidate’s field of study.",
+  "notes": [
+    "Credit will be granted for only one of AHVS 699, HA 699."
+  ],
+  "credits": "30",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "AHVS693",
+      "HA693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

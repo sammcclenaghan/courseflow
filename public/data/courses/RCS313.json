@@ -1,0 +1,27 @@
+{
+  "pid": "BkurbtHCxx",
+  "code": "RCS313",
+  "title": "Religion in the News",
+  "description": "Examines various topical religious issues covered in Canadian and global news media to cultivate awareness of key historical, cultural and social contexts and the way religion is often constructed in the public sphere. Includes historical to contemporary news sources and assorted print and electronic media. Engages with a diversity of religious traditions.",
+  "notes": [
+    "Credit will be granted for only one of RCS 313, RCS 310 (if taken in the same topic), RS 310 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

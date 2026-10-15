@@ -1,0 +1,18 @@
+{
+  "pid": "S1VBkLPCc",
+  "code": "ENSH365",
+  "title": "Romantic Period Poetry",
+  "description": "A study of Romantic period poetry.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 365, ENGL 382, ENGL 383, ENGL 430."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

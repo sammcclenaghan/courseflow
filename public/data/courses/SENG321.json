@@ -1,0 +1,24 @@
+{
+  "pid": "HJZ1xKTQN",
+  "code": "SENG321",
+  "title": "Requirements Engineering",
+  "description": "Combines a range of topics integral to the analysis of requirements, design, implementation, and testing of a medium-scale software system with the practical experience of implementing such a project as a member of a software engineering team. Introduces requirements engineering, specifications, software life cycle models and methods for requirements engineering.",
+  "notes": [
+    "Credit will be granted for only one of SENG 321, CSC 375."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SENG265"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,39 @@
+{
+  "pid": "ryh-fGio8",
+  "code": "EPHE480",
+  "title": "Selected Issues in Exercise Science, Physical Activity and Health",
+  "description": "Selected issues and research examining key topics in exercise science, physical activity and health.",
+  "notes": [
+    "Not open for credit to students with credit in any of EPHE 580, EPHE 581, EPHE 582, EPHE 583, EPHE 584, if EPHE 480 is in the same topic.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE357",
+          "STAT255"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "other prerequisites set by department depending on topic"
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

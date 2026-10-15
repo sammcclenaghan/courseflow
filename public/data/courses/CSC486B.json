@@ -1,0 +1,15 @@
+{
+  "pid": "ByVTJ_TXE",
+  "code": "CSC486B",
+  "title": "Topics in Graphics",
+  "description": "Entrance is restricted to third- and fourth-year students who meet the prerequisite specified for the offered topic.\n* Lab hours may vary depending on the topic.",
+  "notes": [
+    "Credit will be granted for only one of CSC 486B, CSC 486 (if taken in the same topic), CSC 486A (if taken in the same topic), CSC 486C (if taken in the same topic), CSC 486D (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0*-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

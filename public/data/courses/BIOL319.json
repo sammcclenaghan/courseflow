@@ -1,0 +1,39 @@
+{
+  "pid": "ByH4Cv6XE",
+  "code": "BIOL319",
+  "title": "Marine Ecology",
+  "description": "The agents that control the distribution of organisms and structure of marine communities, including the influence of environmental conditions on plant and animal populations, organic matter and nutrient cycling, consumer dynamics and competition, community stability and diversity.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL215",
+          "BIOL321"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT255",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

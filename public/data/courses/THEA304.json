@@ -1,0 +1,16 @@
+{
+  "pid": "HyplWYaQV",
+  "code": "THEA304",
+  "title": "Acting for the Camera",
+  "description": "Familiarizes students with the techniques necessary to deliver a truthful performance for the camera. The course also addresses set etiquette, finding an agent, cold reading, how to do a live audition and how to prepare a taped audition.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

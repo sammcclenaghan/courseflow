@@ -1,0 +1,40 @@
+{
+  "pid": "HJNC0rZ22",
+  "code": "MICR410",
+  "title": "Microbiota and Human Health",
+  "description": "Microbes and their role in health, with a focus on beneficial interactions. Topics will explore the human microbiome, with an emphasis on key members of the microbiota, tools and techniques to explore the microbiome, and the molecular mechanisms of host-microbe interactions. Lectures will focus on primary literature.",
+  "notes": [
+    "Credit will be granted for only one of MICR 410, BCMB 489 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MICR200A"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL362",
+          "MICR302"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

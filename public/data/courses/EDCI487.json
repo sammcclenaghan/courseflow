@@ -1,0 +1,15 @@
+{
+  "pid": "SJMcb_TQ4",
+  "code": "EDCI487",
+  "title": "Special Topics in Education",
+  "description": "Topics of current interest or concern.",
+  "notes": [
+    "May be offered in English or French."
+  ],
+  "credits": "1.5 or 3",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

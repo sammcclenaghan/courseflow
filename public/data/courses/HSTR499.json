@@ -1,0 +1,27 @@
+{
+  "pid": "H1r1q_6XN",
+  "code": "HSTR499",
+  "title": "Honours Thesis",
+  "description": "Under the direction of a member of the department students prepare an honours thesis, a research essay normally based on primary sources. After acceptance of the thesis by the supervising faculty member, the student defends it in an oral examination. The thesis is 7,500-10,000 words in length unless it is an expansion of a third-year honours essay (HSTR 497), in which case it is 15,000-20,000 words in length.",
+  "notes": [
+    "Credit will be granted for only one of HSTR 499, HIST 496, HIST 497."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Declared Honours in History"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

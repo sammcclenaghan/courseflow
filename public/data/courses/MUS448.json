@@ -1,0 +1,31 @@
+{
+  "pid": "BkSmadT7V",
+  "code": "MUS448",
+  "title": "Graduating Recital",
+  "description": null,
+  "notes": [],
+  "credits": "2",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS345"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to BMus program in Performance."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

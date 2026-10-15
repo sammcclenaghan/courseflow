@@ -1,0 +1,23 @@
+{
+  "pid": "B1lUV_aQV",
+  "code": "ES480",
+  "title": "Advanced Environmental Topics in Political Ecology",
+  "description": "A focused, in-depth systematic examination of specific environmental areas through seminars and projects; the development of appropriate responses to questions and problems within the selected areas; modes of interaction and communication with professional and community groups; application of theory to practice; and qualitative vs. quantitative research methods. These courses are conducted as seminars and may include a field trip for which a fee is charged.\n* Contact hours may vary depending on the topic.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0*",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ES200",
+      "ES301"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

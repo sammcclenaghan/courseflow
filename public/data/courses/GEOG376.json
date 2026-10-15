@@ -1,0 +1,52 @@
+{
+  "pid": "SypNB_a7V",
+  "code": "GEOG376",
+  "title": "Process Geomorphology",
+  "description": "An investigation of the physical processes that create and maintain landforms. Focus on measurement and analysis of morphodynamic processes in fluvial, aeolian, coastal, glacial, hillslope, and/or periglacial landscapes (e.g., sediment transport, erosion, wind/wave energy, river discharge, glacial dynamics, weathering rates).",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "GEOG276"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "EOS120",
+              "EOS201"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Complete 1.5 units from MATH 100 - 199"
+      },
+      {
+        "type": "text",
+        "text": "minimum third-level standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

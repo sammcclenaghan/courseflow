@@ -1,0 +1,28 @@
+{
+  "pid": "SyKXEuam4",
+  "code": "ER335B",
+  "title": "Restoration of Marine Aquatic Systems",
+  "description": "Provides students with an understanding of marine coastal systems and their restoration potential with a focus on ecological perspectives, with particular emphasis on the British Columbia/Washington coasts. Lectures that focus on broader scale marine ecosystem impacts and restoration issues are supplemented by hands-on field exercises and research activities focusing on local issues.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Certificate or Diploma program in Restoration of Natural Systems"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Background in Biology strongly recommended prior to ER 335B."
+  ]
+}

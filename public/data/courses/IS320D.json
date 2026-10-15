@@ -1,0 +1,25 @@
+{
+  "pid": "ByQuEjICB",
+  "code": "IS320D",
+  "title": "LE,NONET Research Apprenticeship D",
+  "description": "Practical experience within a university research setting. In consultation with the Experiential Learning Coordinator, Indigenous students identify an area of research interest in the category of Community and Land-Based Learning and undertake a minimum of 120 hours of research under the supervision of a faculty member from any department and submit a final project report.",
+  "notes": [
+    "Credit will be granted for only one of IS 320D, IS 320A, IS 320B, IS 320C.",
+    "LE,NONET courses are reserved for Indigenous students."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "IS310D"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

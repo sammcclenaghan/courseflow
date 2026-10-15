@@ -1,0 +1,42 @@
+{
+  "pid": "rJMn6dTQV",
+  "code": "PAAS338",
+  "title": "Intensive Intermediate Japanese",
+  "description": "A continuation of PAAS 238, aimed at a balanced development of listening, speaking, reading, and writing skills.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 338, PAAS 230, JAPA 249, JAPA 250, JAPA 300, JAPA 311."
+  ],
+  "credits": "3",
+  "hours": "6-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": "B",
+            "minGpa": null,
+            "courses": [
+              "PAAS238"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Academic Writing Requirement satisfied"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

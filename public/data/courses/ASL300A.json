@@ -1,0 +1,22 @@
+{
+  "pid": "rJm10D6XV",
+  "code": "ASL300A",
+  "title": "American Sign Language V",
+  "description": "Intermediate-level ASL. Develops skills in communicating complex concepts using appropriate grammatical structures. Emphasizes the use of directionality, placement and three-dimensional space in conjunction with role-shifting and the refinement of expressive and receptive skills. Continues to expand the knowledge and understanding of Deaf culture.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "4-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ASL200B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

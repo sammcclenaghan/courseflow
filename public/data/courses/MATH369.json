@@ -1,0 +1,40 @@
+{
+  "pid": "S1_Wh_TQV",
+  "code": "MATH369",
+  "title": "Differential Geometry in R3",
+  "description": "Curves in the plane and 3-dimensional space, curvature and torsion, Frenet-Serret apparatus, surfaces in 3-dimensional space, Gaussian and mean curvature, Theorema Egregium, Gauss-Bonnet theorem, elements of non-euclidean geometry.",
+  "notes": [
+    "Not open for credit to students with credit in MATH 436 or MATH 467."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH204"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

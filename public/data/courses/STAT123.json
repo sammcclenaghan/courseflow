@@ -1,0 +1,39 @@
+{
+  "pid": "SyBAlY6mV",
+  "code": "STAT123",
+  "title": "Data Science",
+  "description": "A marriage of computational and inferential thinking that enables analysts to use data to make good decisions. Introduces and develops the foundational skills required to tackle complex data science projects. Topics covered include: R programming, data visualization in R, data wrangling, statistical foundations and introductory regression modelling.",
+  "notes": [
+    "Not open for credit to students with credit in 300- or 400- level STAT course.",
+    "Cannot be counted towards the 3-unit credit limit for lower-level statistics courses."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "text",
+            "text": "Completed Pre-Calculus 12 with a minimum grade of C+ (67%)"
+          },
+          {
+            "type": "text",
+            "text": "Complete 1.5 units from MATH or STAT 100 - 499"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

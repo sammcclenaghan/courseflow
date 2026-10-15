@@ -1,0 +1,28 @@
+{
+  "pid": "rJO5idT7V",
+  "code": "LING183A",
+  "title": "Documentation and Recording for Indigenous Language Reclamation",
+  "description": "An examination of planning strategies, protocols and methods of data collection, analysis and organization appropriate for language documentation associated with language reclamation and revitalization. Topics include: elicitation methodologies; audio and video recording; digital file management; strategies for community involvement; project planning; protocols; ethical and intellectual property issues.",
+  "notes": [
+    "Credit will be granted for only one of LING 183A, LING 183."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to one of BEd or Diploma program in Indigenous Language Revitalization, Certificate in Indigenous Language Proficiency, Certificate in Indigenous Language Revitalization, Micro-certificate in Indigenous Language Documentation"
+      },
+      {
+        "type": "text",
+        "text": "permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

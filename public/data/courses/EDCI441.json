@@ -1,0 +1,42 @@
+{
+  "pid": "ryBKW_pQE",
+  "code": "EDCI441",
+  "title": "Supporting Learners Experiencing Difficulties with Literacy I",
+  "description": "Focus on assessment and instructional issues, practices and strategies for students who experience difficulties with reading and writing. A practical component involves administering and interpreting an informal reading assessment to a student who struggles with literacy, and planning an appropriate instructional intervention.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 441, EDCI 446, ED-B 442."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "EDCI402"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to an Education program"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the faculty."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

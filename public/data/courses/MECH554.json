@@ -1,0 +1,16 @@
+{
+  "pid": "SkTKhO6QV",
+  "code": "MECH554",
+  "title": "Mechatronics",
+  "description": "Introduction to mechatronic systems; modeling of mixed mechatronic systems; microcontroller programming and interfacing; theory, selection and implementation of sensors and actuators commonly used in mechatronic systems; control architectures and case studies in mechatronics systems.",
+  "notes": [
+    "Credit will be granted for only one of MECH 554, MECH 458, MECH 580 (if taken in the same topic).",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

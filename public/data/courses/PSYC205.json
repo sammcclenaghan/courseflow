@@ -1,0 +1,23 @@
+{
+  "pid": "HJcMJFTm4",
+  "code": "PSYC205",
+  "title": "Psychology of Diversity",
+  "description": "Introduction to the study of individual differences in psychology. Across core psychology topics (e.g., identity, cognition, socialization, behavior genetics, research methods), students reflect on their life experiences and explore how the core topics apply to others at different levels of analyses (e.g., individuals, communities, cultures). Instruction methods are grounded in indigenous principles of learning and include individual and small group exercises, as well as larger group discussion.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC100A",
+      "PSYC100B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

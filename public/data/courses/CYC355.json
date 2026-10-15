@@ -1,0 +1,54 @@
+{
+  "pid": "r1vBx-mzv",
+  "code": "CYC355",
+  "title": "All My Relations Practice with Indigenous Families",
+  "description": "Introduces students to culturally-congruent strategies for effective practice with diverse Indigenous families and kinship systems. The course offers an “all my relations” kinship framework that sees families and communities as nested in relations with land, other beings and ancestors. Activities and resources outline inter-generational, political, socio-cultural, ecological and economic issues impacting Indigenous families and introduce practice skills for supporting family wellbeing and community relationships.",
+  "notes": [
+    "Credit will be granted for only one of CYC 355, CYC 360 (if taken in the same topic).",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC100A",
+          "CYC100B",
+          "CYC110"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC120",
+          "CYC166A",
+          "CYC166B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC152"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

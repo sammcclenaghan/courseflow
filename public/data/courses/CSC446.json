@@ -1,0 +1,50 @@
+{
+  "pid": "HJqi1_pXE",
+  "code": "CSC446",
+  "title": "Simulations in Operations Research",
+  "description": "An introduction to discrete event simulation. Topics include; elementary queueing theory, basic techniques of discrete event simulation, generating random numbers, sampling from non-uniform distributions, simulation programming using general purpose languages and also special purpose simulation languages.",
+  "notes": [
+    "Credit will be granted for only one of CSC 446, CSC 448B, CSC 546.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC115",
+          "CSC116"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS342",
+          "STAT252",
+          "STAT254",
+          "STAT255",
+          "STAT260",
+          "GEOG226"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

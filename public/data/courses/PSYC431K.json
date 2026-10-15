@@ -1,0 +1,53 @@
+{
+  "pid": "H1UVEa44F",
+  "code": "PSYC431K",
+  "title": "The Psychology of Friendship",
+  "description": "In-depth examination of social psychological research, methods, and theory on friendships; topics include friendship development, friendship across the lifespan, and intergroup friendships.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 431K, PSYC 491 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A",
+          "PSYC375"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC330",
+          "PSYC376",
+          "PSYC385",
+          "PSYC386",
+          "PSYC387"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "H143gOT7N",
+  "code": "ECON103",
+  "title": "Principles of Microeconomics",
+  "description": "The principles of microeconomic analysis with special reference to the theory of demand, the theory of the firm and the theory of distribution.",
+  "notes": [
+    "Credit will be granted for only one of ECON 103, ECON 103C, ECON 180, ECON 201, ADMN 310, ENGR 280 (if taken prior to May 2012).",
+    "ECON 103 cannot be taken concurrently with ECON 100."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "One of MATH 120, Principles of Mathematics 12, Pre-Calculus 12 recommended prior to ECON 103."
+  ]
+}

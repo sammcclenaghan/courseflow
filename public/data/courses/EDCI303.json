@@ -1,0 +1,19 @@
+{
+  "pid": "r1qPZ_TmN",
+  "code": "EDCI303",
+  "title": "Historical and Philosophical Foundations of Canadian Education",
+  "description": "Focuses on historical events and philosophical ideas that have impacted learners and teachers in Canadian schools.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 303, EDUC 303, ED-B 420, ED-B 423, IED 303.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a program in Teacher Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

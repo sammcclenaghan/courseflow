@@ -1,0 +1,27 @@
+{
+  "pid": "Syws9OTX4",
+  "code": "IS391D",
+  "title": "Topics in Community and Land-Based Learning",
+  "description": null,
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum third year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "minimum of 1.5 units of IS courses."
+  ]
+}

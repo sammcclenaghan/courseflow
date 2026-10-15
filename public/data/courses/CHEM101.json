@@ -1,0 +1,56 @@
+{
+  "pid": "r1e06RP6XN",
+  "code": "CHEM101",
+  "title": "Fundamentals of Chemistry from Atoms to Materials",
+  "description": "Introduction to theories of atomic and molecular structure. Description of materials properties with a focus on phases, intermolecular forces, band structure and conductivity. Introduction to organic materials, including polymers. Laboratory emphasizes chemical techniques typically needed in a scientific environment including observing, recording and discussing experimental data.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 101, CHEM 100, CHEM 124, CHEM 140, CHEM 150."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Chemistry 11"
+          },
+          {
+            "type": "some",
+            "count": 1,
+            "items": [
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "MATH120"
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Pre-Calculus 12"
+              },
+              {
+                "type": "text",
+                "text": "Principles of Mathematics 12"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

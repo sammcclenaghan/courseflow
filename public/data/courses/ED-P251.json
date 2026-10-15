@@ -1,0 +1,26 @@
+{
+  "pid": "SyeDzd6XN",
+  "code": "ED-P251",
+  "title": "Three-Week Practicum (Elementary Education)",
+  "description": null,
+  "notes": [
+    "Credit will be granted for only one of ED-P 251, ED-P 200.",
+    "Normally takes place in the spring term."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-P250",
+      "EDCI250"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

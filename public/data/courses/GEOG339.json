@@ -1,0 +1,27 @@
+{
+  "pid": "HyumH_aXE",
+  "code": "GEOG339",
+  "title": "Disaster Management and Community Resilience",
+  "description": "Explores hazard events and the factors and conditions that lead to disasters. Covers such events as earthquakes, hurricanes, tsunamis, floods, droughts and examines their human and natural dimensions.Emphasis on understanding vulnerability and risk assessment, sustainable hazards mitigation and disaster management approaches to enhancing community resilience.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 339, GEOG 391 (if taken in the same topic), GEOG 472, GEOG 559.",
+    "May be offered as a joint undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG103",
+      "GEOG211",
+      "GEOG218"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

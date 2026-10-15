@@ -1,0 +1,34 @@
+{
+  "pid": "SkeOWVOamE",
+  "code": "EPHE449",
+  "title": "Parameters of Aging",
+  "description": "The anatomical and physiological changes associated with human aging and the relationships between hypokinetic (inactivity induced) disease, stress, and nutritional habits to aging and the merits of various intervention strategies.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 449, PE 449."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE160",
+          "EPHE241"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "H1bEFIquZg",
+  "code": "PHYS090",
+  "title": "Fundamentals of Physics",
+  "description": "An algebra-based introduction to core physics topics. Velocity and acceleration. One and two dimensional motion. Forces and Newton’s laws. Work and Energy. Assumes no prior exposure to Physics.",
+  "notes": [
+    "0.5 fee unit."
+  ],
+  "credits": "0",
+  "hours": "1.5-0-3",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Recommended for students without recent experience in secondary school physics courses.",
+    "Not recommended for students with university credit in PHYS."
+  ]
+}

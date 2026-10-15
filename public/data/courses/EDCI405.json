@@ -1,0 +1,34 @@
+{
+  "pid": "BJ3OZuaX4",
+  "code": "EDCI405",
+  "title": "Mathematical Processes B",
+  "description": "The application of effective teaching practices (establishing goals, reasoning, problem solving, representation, connections, discourse, questioning, building fluency, supporting struggle, assessing understanding) to the teaching and learning of Elementary and Middle School patterning, geometry, measurement, data, probability and financial literacy topics.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 405, EDCI 415, ED-E 743, EDUC 405, IED 405.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EDCI300"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to a program in Teacher Education."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

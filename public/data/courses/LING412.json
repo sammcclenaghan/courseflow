@@ -1,0 +1,26 @@
+{
+  "pid": "ByR3i_pmE",
+  "code": "LING412",
+  "title": "Advanced Phonological Analysis",
+  "description": "Surveys current issues in the analysis of phonological phenomena with particular emphasis on contemporary theories and cross-linguistic perspectives.",
+  "notes": [
+    "Credit will be granted for only one of LING 412, LING 441."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LING312"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "LING 204 recommended prior to LING 412."
+  ]
+}

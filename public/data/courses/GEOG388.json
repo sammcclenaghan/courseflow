@@ -1,0 +1,19 @@
+{
+  "pid": "ryZrHOamV",
+  "code": "GEOG388",
+  "title": "Topics in Regional Studies",
+  "description": "Geography of a selected region of the world from a systematic perspective. Topics may include: the physical and human landscape; settlement; economic, political and social geography; spatial variation in modernization and economic growth.",
+  "notes": [
+    "Not open to students with credit in GEOG 466 without permission of the department.",
+    "Credit will be granted for only one of GEOG 388, GEOG 288 (if taken in the same topic), GEOG 383 (if taken in the same topic), GEOG 383 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

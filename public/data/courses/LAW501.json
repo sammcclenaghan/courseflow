@@ -1,0 +1,16 @@
+{
+  "pid": "ryxKs_TQ4",
+  "code": "LAW501",
+  "title": "Graduate Seminar in Law and Society",
+  "description": "A critical introduction to theoretical perspectives on Law and Society. Designed to expose students to a range of substantive issues in advanced legal research, as a foundation for the development of each student's thesis research.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a graduate program in Law."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

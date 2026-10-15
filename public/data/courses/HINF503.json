@@ -1,0 +1,22 @@
+{
+  "pid": "SkAJ_damE",
+  "code": "HINF503",
+  "title": "Research Methods in Health Informatics and Digital Health",
+  "description": "Provides an overview of qualitative and quantitative designs specific to health informatics and digital health research. Includes experimental designs, observational qualitative studies and mixed methods studies. For each type of study design, appropriate participant, settings, contexts and methods are discussed.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "HINF572"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

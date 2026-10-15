@@ -1,0 +1,57 @@
+{
+  "pid": "By1_677GP",
+  "code": "CYC206",
+  "title": "Applying Change Theory in CYC Practice",
+  "description": "Learners are introduced to a range of theoretical frameworks that are designed to help practitioners work on change processes with children, youth, families and their communities. By critically reflecting on the fundamental assumptions embedded in these change theories, students engage in researching and understanding their own approaches to ethical, decolonizing praxis and integrate a range of strategies into their professional therapeutic relationships in order to develop an intentional approach to practice.",
+  "notes": [
+    "Credit will be granted for only one of CYC 206, CYC 205, CYC 301, CYC 351.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC120",
+          "CYC166A",
+          "CYC166B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC152"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to an undergraduate program in the School of Child and Youth Care"
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CYC100A",
+      "CYC100B",
+      "CYC110"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

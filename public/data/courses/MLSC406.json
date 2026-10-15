@@ -1,0 +1,68 @@
+{
+  "pid": "BJtZUre0xx",
+  "code": "MLSC406",
+  "title": "Applied Research Laboratory Techniques",
+  "description": "Develop research skills. Design, produce and characterize a protein. Techniques may include: primer-design for site-directed mutagenesis; cloning of DNA into a protein expression vector; and protein expression, purification and analysis. Emphasis is placed on experimental design, problem solving and self-directed research.",
+  "notes": [
+    "Credit will be granted for only one of MLSC 406, BCMB 406B, BIOC 406, MICR 406.",
+    "Limited enrolment.",
+    "Project spans the entire term."
+  ],
+  "credits": "1.5",
+  "hours": "0-7-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOC300A",
+              "BIOC300B",
+              "MICR302"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MLSC301A",
+              "BCMB301A"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MLSC301B",
+              "BCMB301B"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "declared Honours or Major in Molecular Life Sciences"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

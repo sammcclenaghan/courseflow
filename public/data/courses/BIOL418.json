@@ -1,0 +1,33 @@
+{
+  "pid": "SJl8RPamN",
+  "code": "BIOL418",
+  "title": "Forest Ecology",
+  "description": "Structure and function of forest ecosystems at the tree, stand and landscape scale, including: effects of the environment upon plant abundance, distribution and diversity; nutrient, carbon and water cycles; population and community ecology; disturbance; forest conservation; climate change and global forests.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "BIOL 324 recommended prior to BIOL 418."
+  ]
+}

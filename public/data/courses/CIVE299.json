@@ -1,0 +1,39 @@
+{
+  "pid": "SJqXkuaQE",
+  "code": "CIVE299",
+  "title": "Geomatics Engineering",
+  "description": "Introduction to collection, analysis and presentation of geomatic data in civil engineering including surveying, GIS and remote sensing. Fundamental concepts of horizontal and vertical angle measurement, levelling; area computation, earthworks computation, profiles and cross-sections, circular curves. Operation of field equipment used in surveying. Principles of Global Positioning Systems, data collection, map reading, scale and map projections. Principles behind geographic information systems, spatial data and analysis and basic geodesy. Remotely sensed data sources and associated errors.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "1.5-3-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH109"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR110",
+          "ENGR112"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,39 @@
+{
+  "pid": "B1TRAw6QV",
+  "code": "CHEM324",
+  "title": "Transition Metal Chemistry",
+  "description": "Coordination chemistry of the d-block metals. Electronic structure, properties, reactions, and applications of transition metal complexes.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM222"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM225",
+          "CHEM260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,20 @@
+{
+  "pid": "SJn5K1adle",
+  "code": "MEDI398",
+  "title": "Life and Death in the Viking World",
+  "description": "A detailed look at the nature and impact of the Viking expansion in the North Atlantic (including the British Isles, the Faroes, Iceland, Greenland and North America) in the period defined rather broadly from c. 800-1300 AD. The social and ecological consequences of migration are explored, drawing on a variety of sources including archaeological data, saga literature and historical sources. Misrepresentation of the Vikings in the modern world will be addressed.",
+  "notes": [
+    "Credit will be granted for only one of MEDI 398, ANTH 392 (if taken on the same topic), ANTH 398."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum third-year standing"
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "One of MEDI 100, MEDI 200, ANTH 100, or ANTH 240 recommended prior to MEDI 398."
+  ]
+}

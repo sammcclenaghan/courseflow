@@ -1,0 +1,68 @@
+{
+  "pid": "HkU9R_T74",
+  "code": "PHYS342",
+  "title": "Computational Modeling and Analysis",
+  "description": "A combined lecture and laboratory course designed to introduce numerical methods and data analysis techniques of use in the physical sciences. These include basic statistical methods, methods for solving differential equations, Monte Carlo simulation, error analysis, parameter estimation, hypothesis testing and data visualization.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 342, PHYS 242, CSC 242."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS110",
+              "PHYS111"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS120",
+              "PHYS130"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC110",
+          "CSC115"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH200"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

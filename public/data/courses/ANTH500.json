@@ -1,0 +1,16 @@
+{
+  "pid": "SJfcpv6mN",
+  "code": "ANTH500",
+  "title": "Seminar in Anthropological Theory",
+  "description": "Diverse perspectives in anthropological thought, focussing on epistemological issues, integrative practice among anthropology's subfields, the collaborative dimensions of anthropological research, and implications for ethically engaged community-based research.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": ""
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

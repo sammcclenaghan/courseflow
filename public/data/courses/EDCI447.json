@@ -1,0 +1,19 @@
+{
+  "pid": "BJ8YZuTmE",
+  "code": "EDCI447",
+  "title": "Principles of Teaching English Language Learning",
+  "description": "A survey of principles and theories for, and the teaching of English to second language learners. The examination of curriculum and methodology for use with English language learners in the elementary and secondary schools.",
+  "notes": [
+    "Credit will be granted for only one of EDCI 447, EDCI 457, ED-B 490, ED-B 491.",
+    "May be offered in English or French."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to an Education program or admission to a Diploma or major program in Applied Linguistics."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

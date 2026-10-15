@@ -1,0 +1,29 @@
+{
+  "pid": "HkTftOamE",
+  "code": "HLTH435",
+  "title": "Culminating Major Paper",
+  "description": "As a culmination of their practice experience students are required to complete a project that demonstrates a synthesis and integration of coursework and other learning experiences.",
+  "notes": [
+    "Students who have completed all core, area of focus and elective courses may request permission to register in the course.",
+    "HLTH 430 and 435 are only offered in Second Term of Winter Session.",
+    "Both HLTH 430 and 435 must be passed to be successful and if one or both courses are failed both must be repeated."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the school."
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "HLTH430"
+    ]
+  },
+  "recommendations": []
+}

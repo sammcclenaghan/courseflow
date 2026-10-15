@@ -1,0 +1,64 @@
+{
+  "pid": "rJlnSyF67V",
+  "code": "PSYC451C",
+  "title": "Topics in Advanced Cognitive Neuroscience",
+  "description": "Detailed analysis of a specific topic in cognitive neuroscience is presented. The topic varies with the course instructor but specializations include human memory, cognitive control, decision making, visual processes and embodied cognition. The focus of the course is on the connections between cognitive processes and their neural mechanisms.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PSYC351C"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 2,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PSYC351A",
+              "PSYC351B",
+              "PSYC351D"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

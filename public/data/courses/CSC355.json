@@ -1,0 +1,41 @@
+{
+  "pid": "rk-i1uTmV",
+  "code": "CSC355",
+  "title": "Digital Logic and Computer Organization",
+  "description": "Fundamentals of logic design, computer organization and hardware components of computers and embedded systems and the development of a structured design methodology. The use of ASIC and field programmable devices. An introduction to Hardware Description Languages and their implementation, finite state machines, the use of CAD algorithms and tools for system design, and the testing of digital systems. Topics include Boolean algebra, combinational and sequential circuits, memory organization, buses and arithmetic units, basic microprocessor design.",
+  "notes": [
+    "Credit will be granted for only one of CSC 355, CSC 250."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC230",
+          "CENG255",
+          "ECE255"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH122"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

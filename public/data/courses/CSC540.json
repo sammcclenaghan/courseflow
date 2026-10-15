@@ -1,0 +1,16 @@
+{
+  "pid": "BJCp1OT7V",
+  "code": "CSC540",
+  "title": "Numerical Analysis I",
+  "description": "Numerical Linear algebra. Topics include: Gaussian elimination and its variants; sparse positive definite linear systems; sensitivity of linear systems; condition and stability; orthogonal matrices and least squares; eigenvalues and eigenvectors; the QR algorithm; the singular value decomposition.",
+  "notes": [
+    "Credit will be granted for only one of CSC 540, CSC 449.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

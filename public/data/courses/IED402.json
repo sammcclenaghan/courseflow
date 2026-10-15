@@ -1,0 +1,33 @@
+{
+  "pid": "S1ttL686r",
+  "code": "IED402",
+  "title": "Instructional Principles of Reading Engagement",
+  "description": "Indigenous and theoretical perspectives on reading, the developmental nature of reading and complex issues, including societal and cultural factors that influence reading development. Topics of study include concepts and instructional strategies associated with cueing systems, word identification, comprehension and vocabulary. Ongoing assessment strategies and organizational structures for reading programs are also considered. Connecting reading relevance to cultural and ecological contexts to inform wholistic development.",
+  "notes": [
+    "Credit will be granted for only one of IED 402, ED-B 748, EDCI 402, EDUC 402."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "IED302"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of department."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

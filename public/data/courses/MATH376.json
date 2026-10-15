@@ -1,0 +1,51 @@
+{
+  "pid": "rkN9DI8_o",
+  "code": "MATH376",
+  "title": "Introduction to Mathematical Biology",
+  "description": "Model development, computation and analysis for problems in the life sciences. Models include differential equations, difference equations and stochastic formulations. Model evaluation and prediction. Applications are chosen from epidemiology, ecology, population biology, physiology and medicine.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH204"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT252",
+          "STAT254",
+          "STAT255",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

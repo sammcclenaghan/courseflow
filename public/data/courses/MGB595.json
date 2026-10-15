@@ -1,0 +1,18 @@
+{
+  "pid": "SyAurcYPE",
+  "code": "MGB595",
+  "title": "Special Topics in Global Business",
+  "description": null,
+  "notes": [
+    "May be taken more than once for credit in different topics with Permission of the Academic Program Director to a maximum of 6.0 units."
+  ],
+  "credits": "1.5–3",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission from the Academic Program Director."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

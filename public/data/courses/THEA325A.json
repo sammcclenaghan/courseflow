@@ -1,0 +1,63 @@
+{
+  "pid": "r1420sUQT",
+  "code": "THEA325A",
+  "title": "Introduction to Stage Movement",
+  "description": "Explores the basics of anatomy and the mechanics of movement. Includes a comprehensive warm-up sequence and focuses on the concepts and practices of Laban Movement Analysis.",
+  "notes": [
+    "Credit will be granted for only one of THEA 325A, THEA 225, THEA 360."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "THEA205",
+                  "THEA221"
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Permission of the department."
+              }
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "THEA205",
+              "THEA206",
+              "THEA222",
+              "THEA223",
+              "THEA347"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

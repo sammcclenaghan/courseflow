@@ -1,0 +1,27 @@
+{
+  "pid": "S1CME_TQN",
+  "code": "EPHE764",
+  "title": "Curriculum and Instruction in Secondary Physical Education",
+  "description": null,
+  "notes": [
+    "Credit will be granted for only one of EPHE 764, ED-C 764, PE 764."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Professional Year or Post Degree Professional program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

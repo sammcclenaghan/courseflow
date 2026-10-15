@@ -1,0 +1,33 @@
+{
+  "pid": "HJwQy_pX4",
+  "code": "CIVE220",
+  "title": "Mechanics of Solids I",
+  "description": "Review of bending moment and shear force diagrams for beams. Stress, strain, stress-strain relations, and factor of safety. Simple loadings: axial force, buckling of columns, torsion, and pure bending. Stresses in combined loadings. Stress and strain transformations in two dimensions. Mohr's circle. Beam deflection, stability of columns. Energy methods.\n* Indicates a 1-hour laboratory taken by students on alternate weeks.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 220, MECH 220."
+  ],
+  "credits": "1.5",
+  "hours": "3-1*-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ENGR141"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH200"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

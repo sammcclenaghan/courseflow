@@ -1,0 +1,25 @@
+{
+  "pid": "BJo9o_6QN",
+  "code": "LING200",
+  "title": "Introduction to Phonetics and Phonology",
+  "description": "Introduction to the phonetic properties of speech sounds and their organization into sound systems. Practice in recognizing, transcribing and describing sounds. Basic principles and methods of phonological analysis and theory.",
+  "notes": [
+    "Credit will be granted for only two of LING 200, LING 250, LING 251."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LING100A",
+      "LING181"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

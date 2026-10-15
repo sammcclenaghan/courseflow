@@ -1,0 +1,40 @@
+{
+  "pid": "B1NOlt6X4",
+  "code": "SOCW476",
+  "title": "Critical Policy Analysis in Child Welfare Contexts",
+  "description": "Students explore techniques in critical policy analysis and praxis focused on child, youth and family policies at the local, national and global level. Students will have opportunities to apply their learning within community contexts; centres the knowledge of Black, Indigenous, and People of Colour scholars and integrates Indigenous, critical race and queer theories.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW311",
+          "SOCW312"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW312A",
+          "SOCW312B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,27 @@
+{
+  "pid": "rJMmLd6mN",
+  "code": "GNDR325",
+  "title": "North American Asian Feminist Thought and Action",
+  "description": "Introduces emerging thought and practice in North American Asian Feminisms through texts, cultural products and community engagement.",
+  "notes": [
+    "Credit will be granted for only one of GNDR 325, WS 327A, WS 339 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,42 @@
+{
+  "pid": "S1qHE_pQV",
+  "code": "ES433",
+  "title": "Introduction to Permaculture Design",
+  "description": "The origins, theory and design methods of permaculture. Examines foundational texts that have influenced the development of permaculture, as well as contemporary permaculture texts. Critical examination of a range of designs and applications, including food systems, water systems, energy systems, appropriate technologies, place making, and the built environment.",
+  "notes": [
+    "Credit will be granted for only one of ES 433, ES 481 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ES200"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum third-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "SypdM79T0",
+  "code": "GEOG412",
+  "title": "Anti-Racism and Geography",
+  "description": "Examines the geographies of race, racism and anti-racism in different social and spatial contexts. Topics include the racialization of geographical space, racialized cultural landscapes, racism in higher education, police violence and anti-racist movements.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 412, GEOG 491 (if taken in the same topic)"
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "minimum third year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

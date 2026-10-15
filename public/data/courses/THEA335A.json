@@ -1,0 +1,18 @@
+{
+  "pid": "SJuAtlaLD",
+  "code": "THEA335A",
+  "title": "Theatre in Education",
+  "description": "Creates workshops and/or short performances to use in educational settings.Explores facilitation styles and devising techniques to engage communities and learners in topics pertinent to them.",
+  "notes": [
+    "Credit will be granted for only one of THEA 335A, THEA 335."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "or permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

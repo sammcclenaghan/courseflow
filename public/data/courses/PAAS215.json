@@ -1,0 +1,22 @@
+{
+  "pid": "HJM-HrOT9",
+  "code": "PAAS215",
+  "title": "Language, Media and Translation in PAAS",
+  "description": "Introduces approaches to language, media and translation in Pacific and Asian Studies, with an emphasis on reading critically for meaning, style, genre and context. Fosters an appreciation for the role of language in shaping our experience as human beings, both individually and collectively.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PAAS100"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

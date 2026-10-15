@@ -1,0 +1,50 @@
+{
+  "pid": "Hyuy__pXV",
+  "code": "HINF450",
+  "title": "Health Information System Design",
+  "description": "Students develop and demonstrate a systematic understanding of software systems design and its connection to requirements engineering, modelling, system analysis, system implementation and system verification. Provides coverage of the specific requirements of the development of contemporary and future information systems in health care. Covers the technical principles underlying such systems. Knowledge and skills required for the design, implementation, maintenance and replacement of complex information systems in health care are developed.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF200",
+          "CSC375"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF001",
+          "CSC001"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF002",
+          "CSC002"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

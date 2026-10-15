@@ -1,0 +1,48 @@
+{
+  "pid": "SJfS9dTmE",
+  "code": "IED258",
+  "title": "Indigenous Language Mentorship II",
+  "description": "A 100-hour mentorship with a fluent speaker or speakers to build oral fluency in an Indigenous language at the second-year level.",
+  "notes": [
+    "Credit will be granted for only one of IED258, LING 258.",
+    "Subject to the \"Guidelines for Ethical Conduct\" and \"Regulations Concerning Practica\""
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IED156",
+              "IED158",
+              "IED159",
+              "LING156",
+              "LING158",
+              "LING159"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to one of BEd or Diploma program in Indigenous Language Revitalization, Certificate in Indigenous Language Proficiency, Certificate in Indigenous Language Revitalization"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

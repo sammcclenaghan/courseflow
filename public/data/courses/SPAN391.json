@@ -1,0 +1,37 @@
+{
+  "pid": "H1bhWFTmN",
+  "code": "SPAN391",
+  "title": "Hispanic Literature II",
+  "description": "Introduces students to the literature of Spain from Medieval times to the present. Surveys the most representative male and female writers, works and movements in relation to their cultural, political and historical contexts.",
+  "notes": [
+    "Credit will be granted for only one of SPAN 391, SPAN 370, SPAN 375.",
+    "May be offered in alternate years.",
+    "Students are advised to consult the school to determine when the course is offered."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SPAN350A",
+          "SPAN349"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or Permission of the school."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

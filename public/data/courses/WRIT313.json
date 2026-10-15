@@ -1,0 +1,18 @@
+{
+  "pid": "SyMw-tTQN",
+  "code": "WRIT313",
+  "title": "Recurrent Themes",
+  "description": "A lecture course surveying recurrent themes in film and/or English literature and in other literatures in translation.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 313, CW 313."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

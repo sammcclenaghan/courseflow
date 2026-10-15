@@ -1,0 +1,31 @@
+{
+  "pid": "HJkNgvzFV",
+  "code": "MEDS433",
+  "title": "Animals and Human Health",
+  "description": "Emerging topics, current controversies and future directions at the intersection of animals, humans and the environment. Topics may include zoonotic diseases, environmental impact on animal and human health, research with animals, animals in service and entertainment, the human-animal bond, animals as sentinels for human and environmental health, animals as food and animals in culture.",
+  "notes": [
+    "Credit will be granted for only one of MEDS 433, MEDS 487 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "6.0 units of 300- or 400-level BIOL, EPHE, or MEDS courses"
+      },
+      {
+        "type": "text",
+        "text": "a minimum sessional GPA of 6.5 on the most recent applicable session"
+      },
+      {
+        "type": "text",
+        "text": "permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "ryiFgu6XV",
+  "code": "ECE484",
+  "title": "Audio Signal Processing",
+  "description": "Introduction to digital audio effects and applications. Parametric filters, shelving filters, time-varying filters. Delay structures, delay-based audio effects. Dynamics processing, non-linear processing. Spatial effects, 3D audio, reverberation. Time segment processing, pitch shifting, time stretching. Time-frequency processing, phase vocoder.",
+  "notes": [
+    "Credit will be granted for only one of ECE 484, ELEC 484."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE310",
+      "ECE315"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

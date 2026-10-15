@@ -1,0 +1,24 @@
+{
+  "pid": "rywsou6XN",
+  "code": "LING311",
+  "title": "Syntax",
+  "description": "Study of sentence grammar using description, analysis, argumentation and theoretical bases of generative syntax. Develops skills of observation and analysis.",
+  "notes": [
+    "Credit will be granted for only one of LING 311, LING 410A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LING203"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

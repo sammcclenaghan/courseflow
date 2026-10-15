@@ -1,0 +1,25 @@
+{
+  "pid": "SyWzRvpXN",
+  "code": "BIOC404",
+  "title": "Protein Structure and Molecular Interactions",
+  "description": "Detailed examination of protein structure and function emphasizing techniques for the determination of protein structure and the study of protein interactions in binding and catalysis.",
+  "notes": [
+    "Consists of formal lectures in addition to required readings."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOC300A",
+      "BIOC300B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

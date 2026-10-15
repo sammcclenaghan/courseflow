@@ -1,0 +1,24 @@
+{
+  "pid": "S1h3Z98j_",
+  "code": "MECH381",
+  "title": "Control Systems II",
+  "description": "Modelling dynamic systems in time domain (multi-input-multi-output, MIMO, control systems). State-space analysis of linear systems (controllability, observability, stability), compensator design for regulators, tracking and disturbance-rejection systems based on eigenvalue placement and integral-time-absolute-error (ITAE) criteria. Design of stable linear observers and observer-based compensators. Introduction to optimal control, optimization concept and cost functions, linear quadratic regulators (LQR). Implementation into simulation-based autonomous systems in laboratory exercises.",
+  "notes": [
+    "* Indicates four 3 hour lab sessions."
+  ],
+  "credits": "1.5",
+  "hours": "3-1*-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH380"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

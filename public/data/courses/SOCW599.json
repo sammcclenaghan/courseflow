@@ -1,0 +1,27 @@
+{
+  "pid": "HkeoKgtaQ4",
+  "code": "SOCW599",
+  "title": "Thesis",
+  "description": "Specialized research on a topic area chosen in consultation with the student's supervisory committee.",
+  "notes": [
+    "After 16 months of coursework, the student is required to have an approved proposal on file to maintain registration in SOCW 599."
+  ],
+  "credits": "6",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Completion of all required coursework in the MSW Advanced program (Thesis option)"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

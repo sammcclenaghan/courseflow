@@ -1,0 +1,22 @@
+{
+  "pid": "HJ7h3daX4",
+  "code": "MGB583",
+  "title": "Language, Communication and Global Business",
+  "description": "Provides a framework - in conjunction with students' language courses - to explore relationships among language, communication, and culture, a subject highly relevant to global companies. Considers the process of language interaction in global organizations and shows how foreign language learning adds value to businesses and careers. Also examines example global companies that have shaped their language policies (often towards using English as the lingua franca), impacting individual and organizational performance.",
+  "notes": [],
+  "credits": "1",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MGB180"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

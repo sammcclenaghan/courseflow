@@ -1,0 +1,60 @@
+{
+  "pid": "B1UmRDp7V",
+  "code": "BIOL186",
+  "title": "Physiology and Cell Biology",
+  "description": "An introductory course in the biological sciences. Biological chemistry, cellular diversity, membrane structure and function, energy transduction, DNA replication. Structure, growth, nutrition, and development of plants; principles of animal physiology including homeostatic mechanisms, circulation, gas exchange, osmoregulation, thermoregulation, defense systems, chemical signalling, reproduction and development.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 186, BIOL 190A.",
+    "BIOL 184 and BIOL 186 may be taken in any order. Students who have passed a placement exam may request permission to register in the course."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOL150A",
+              "BIOL150B",
+              "BIOL184"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Anatomy and Physiology 12"
+          },
+          {
+            "type": "text",
+            "text": "Biology 11"
+          },
+          {
+            "type": "text",
+            "text": "Biology 12"
+          },
+          {
+            "type": "text",
+            "text": "Life Sciences 11"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "One of Chemistry 11, Chemistry 12, CHEM 091, CHEM 101, CHEM 102, CHEM 150 recommended prior to BIOL 186."
+  ]
+}

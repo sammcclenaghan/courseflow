@@ -1,0 +1,38 @@
+{
+  "pid": "Hy41EMmRc",
+  "code": "ENSH253",
+  "title": "Canadian Literature",
+  "description": "A survey of Canadian literature in some combination of poetry, prose and drama.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 253, ENGL 202."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ATWP135",
+          "ENGL146",
+          "ENGL147",
+          "ENSH101",
+          "ENSH102",
+          "ENSH103"
+        ]
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

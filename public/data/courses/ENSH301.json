@@ -1,0 +1,27 @@
+{
+  "pid": "B1w1V_VR5",
+  "code": "ENSH301",
+  "title": "Practical Criticism (Honours)",
+  "description": "Two-semester seminar designed to extend awareness of how style and form contribute to meaning in literary works; poetic, narrative and dramatic technique; representative theoretical approaches and their application; the interdependency of literary technique and critical interpretation. Required for prospective Honours students, who register for ENSH 301 in their second or third year with the approval of the Honours Adviser.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 301, ENGL 310, ENGL 345."
+  ],
+  "credits": "3",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied."
+      },
+      {
+        "type": "text",
+        "text": "Permission from Department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

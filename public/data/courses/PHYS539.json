@@ -1,0 +1,13 @@
+{
+  "pid": "rJZ3CdpQN",
+  "code": "PHYS539",
+  "title": "Radiation Dosimetry",
+  "description": "The fundamentals of radiation dosimetry, ionization cavity theories and radiation dosimetry protocols. A variety of absolute and relative dosimetry techniques are also covered, with hands-on experience provided through a series of lab exercises on medical linear accelerators. Monte Carlo simulation of radiation transport for dosimetry applications is introduced.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

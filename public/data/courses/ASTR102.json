@@ -1,0 +1,15 @@
+{
+  "pid": "HkNkAPpmN",
+  "code": "ASTR102",
+  "title": "Exploring the Cosmos",
+  "description": "A general course designed for non-science students. An exploration of how astronomical observations guide and challenge our understanding of the fundamental laws of nature. Cosmology, and the elusive dark matter and dark energy that determine the universe's fate. Stars, galaxies, and relics left over by the Big Bang. Black holes and relativity; supernovae and neutron stars. Practical work includes observations with campus telescopes.",
+  "notes": [
+    "Credit will be granted for only one of ASTR 102, ASTR 120."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

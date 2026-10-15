@@ -1,0 +1,34 @@
+{
+  "pid": "r1gFqTOp7E",
+  "code": "PAAS121",
+  "title": "Introduction to Indonesian II",
+  "description": "Basic conversations and grammar in Indonesian and readings of a variety of elementary textual materials.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 121, SEA 100B.",
+    "Limited to 25 students per section."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "PAAS120"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,22 @@
+{
+  "pid": "BJgS_u5OH",
+  "code": "PSYC556",
+  "title": "Applied Clinical Assessment in Cognitive Functioning",
+  "description": "Introduction to a variety of cognitive assessment tools during laboratory sessions. Supervised administration and scoring of cognitive functioning assessment instruments to demonstrate proficiency.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "1.5-3-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC584"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,22 @@
+{
+  "pid": "H1F92O6QN",
+  "code": "MECH699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "27",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

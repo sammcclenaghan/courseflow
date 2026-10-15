@@ -1,0 +1,26 @@
+{
+  "pid": "HkUOTw6QV",
+  "code": "ANTH352",
+  "title": "Human Osteology",
+  "description": "Theoretical and methodological approaches to the study of human skeletal remains.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 352, ANTH 451."
+  ],
+  "credits": "1.5",
+  "hours": "2-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH250",
+      "ANTH251",
+      "BME201"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

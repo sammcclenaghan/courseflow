@@ -1,0 +1,20 @@
+{
+  "pid": "Bke__TwaQ4",
+  "code": "ANTH362",
+  "title": "Archaeology of Children",
+  "description": "Drawing on data from a wide range of disciplines, explores what can be learned about the lives of children in the past and through them, the values, beliefs, and behaviours of the cultures of which they were a part.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 362, ANTH 392 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "ANTH 240 recommended prior to ANTH 362."
+  ]
+}

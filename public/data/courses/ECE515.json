@@ -1,0 +1,15 @@
+{
+  "pid": "ryQ5lOa7E",
+  "code": "ECE515",
+  "title": "Information Theory",
+  "description": "Information theory and its relationship to probability, statistics, and data compression; entropy, relative entropy and mutual information; Huffman coding, arithmetic coding and Lempel-Ziv coding; channel capacity; group codes; generator and parity check matrices; Hamming codes and bound; bounds on the dimension of a linear code; random coding bounds; code construction.",
+  "notes": [
+    "Credit will be granted for only one of ECE 515, ELEC 515."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

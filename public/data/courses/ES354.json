@@ -1,0 +1,28 @@
+{
+  "pid": "HJey_yQP1x",
+  "code": "ES354",
+  "title": "Environmental Journalism",
+  "description": "A seminar that introduces techniques to document the experiences of people and communities impacted by climate change, including skills in trauma-informed journalism and testimony journalism.",
+  "notes": [
+    "Credit will be granted for only one of ES 354, ES 380 (if offered in the same topic), WRIT 344."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

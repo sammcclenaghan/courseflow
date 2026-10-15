@@ -1,0 +1,47 @@
+{
+  "pid": "rJeNwZtpm4",
+  "code": "WRIT320",
+  "title": "Writing and Film Production Workshop",
+  "description": "A seminar, focusing on teamwork in the development of screenplays into short motion pictures.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": "B-",
+            "minGpa": null,
+            "courses": [
+              "WRIT218",
+              "WRIT218B"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "WRIT326"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

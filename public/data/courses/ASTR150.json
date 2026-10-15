@@ -1,0 +1,51 @@
+{
+  "pid": "HySJ0P67N",
+  "code": "ASTR150",
+  "title": "Concepts in Modern Astronomy",
+  "description": "Introduces some of the great ideas and concepts in modern astronomy, as well as the basic physical principles required to understand these concepts. Topics include properties of the solar system, extrasolar planets, galaxies, expanding universe, big bang, origin of the elements, dark matter, dark energy, black holes, neutron stars.",
+  "notes": [
+    "Credit will be granted for only one of ASTR 150, ASTR 200A."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH100",
+              "MATH109"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHYS110",
+              "PHYS120"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

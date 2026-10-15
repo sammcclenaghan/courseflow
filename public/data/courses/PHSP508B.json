@@ -1,0 +1,39 @@
+{
+  "pid": "BketuCOTXN",
+  "code": "PHSP508B",
+  "title": "Culminating Report",
+  "description": "Students complete a report that demonstrates a synthesis and integration of coursework and other learning experiences in preparation for professional public health practice.",
+  "notes": [
+    "Credit will be granted for only one of PHSP 508B, PHSP 590 (if taken in the same topic).",
+    "Students must pass both PHSP 589 and PHSP 508B. If one or both of PHSP 589 or PHSP 508B are failed, both must be repeated."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHSP501",
+      "PHSP502",
+      "PHSP503",
+      "PHSP504",
+      "PHSP505",
+      "PHSP506"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHSP589"
+    ]
+  },
+  "recommendations": []
+}

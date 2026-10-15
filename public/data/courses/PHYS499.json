@@ -1,0 +1,28 @@
+{
+  "pid": "S1ZiAuTXV",
+  "code": "PHYS499",
+  "title": "Honours Thesis",
+  "description": "A research project conducted under the direction of faculty.",
+  "notes": [
+    "Not open for credit to students with credit in PHYS 429B or ASTR 429.",
+    "Normally only open to students declared in an Honours program offered by the department."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "declared in an Honours program offered by the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

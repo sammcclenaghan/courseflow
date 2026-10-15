@@ -1,0 +1,24 @@
+{
+  "pid": "Hk_UWtpmE",
+  "code": "WRIT204B",
+  "title": "Creative Nonfiction Workshop",
+  "description": "A workshop in the writing of creative nonfiction.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 204B, WRIT 204."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "WRIT204A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

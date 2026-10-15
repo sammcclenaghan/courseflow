@@ -1,0 +1,22 @@
+{
+  "pid": "SkP1EdaXV",
+  "code": "EOS693",
+  "title": "PhD Candidacy Examination",
+  "description": "Students must enrol in EOS 693 in their first term and remain enrolled until their candidacy requirements have been completed, normally within the first two years of a PhD program. A pre-candidacy committee meeting must precede the formal candidacy exam.",
+  "notes": [],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EOS699"
+    ]
+  },
+  "recommendations": []
+}

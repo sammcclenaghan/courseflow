@@ -1,0 +1,33 @@
+{
+  "pid": "ByyQTupXE",
+  "code": "MUS407",
+  "title": "Computer Music Seminar",
+  "description": "Advanced work in computer music, including study of software synthesis and analysis of digitized signals, interactive control of synthesizers, embedded systems and robotics. Extensive work in Max/MSP/jitter.",
+  "notes": [
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "3",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS307"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

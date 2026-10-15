@@ -1,0 +1,27 @@
+{
+  "pid": "HkwoTd6XE",
+  "code": "PAAS280",
+  "title": "A Taste of Japan",
+  "description": "A survey through film, TV dramas, literature and other readings of Japanese food and gastronomy: its nutritional value, its history, its relationship to art and aesthetics, entertainment, economy and the environment, and its role in the globalization of food culture.",
+  "notes": [
+    "No knowledge of Japanese required."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

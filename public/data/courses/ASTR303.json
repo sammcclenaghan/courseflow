@@ -1,0 +1,34 @@
+{
+  "pid": "B1KkAvTmE",
+  "code": "ASTR303",
+  "title": "Introductory Extragalactic Astronomy",
+  "description": "Kinematics and morphology of spiral (including the Milky Way), elliptical and irregular galaxies. Introduction to current theory for the formation and evolution of galaxies and the large-scale structure. Observations of active galactic nuclei, jets and quasi-stellar objects.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ASTR250",
+      "PHYS215",
+      "PHYS216"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS217",
+      "PHYS317"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

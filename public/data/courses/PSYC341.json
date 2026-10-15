@@ -1,0 +1,25 @@
+{
+  "pid": "HJn71tpQ4",
+  "code": "PSYC341",
+  "title": "Gender and Psychology",
+  "description": "Examines psychological theories and research on gender from individual identity to societal norms. Addresses gender stereotypes, sexism, misogyny and intersections with race, Indigeneity, sexuality, transgender identity, socioeconomic status and ability. Explores the social construction of sex and gender, gender-based violence and the experiences of women and marginalized genders in health, workplaces, relationships, parenting and media.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 341, PSYC 441, PSYC 441C."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC100A",
+      "PSYC100B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

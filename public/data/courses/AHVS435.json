@@ -1,0 +1,18 @@
+{
+  "pid": "r1wNawTQE",
+  "code": "AHVS435",
+  "title": "Seminar in Late Medieval and Early Renaissance Art, c. 1200-1500",
+  "description": "An intensive study of selected aspects of Late Medieval and Renaissance Art.",
+  "notes": [
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum fourth-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

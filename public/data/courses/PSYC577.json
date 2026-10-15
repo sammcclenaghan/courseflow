@@ -1,0 +1,25 @@
+{
+  "pid": "HkaKJYa7V",
+  "code": "PSYC577",
+  "title": "Cognitive Seminar",
+  "description": "Weekly seminar throughout the Winter session, involving faculty and graduate students in the Cognitive Psychology Program. Seminar participants take turns hosting the meeting, typically by presenting a paper on recent or ongoing cognitive psychological research.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to a graduate program in Cognitive Psychology"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

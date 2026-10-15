@@ -1,0 +1,27 @@
+{
+  "pid": "HyOI1hv6R",
+  "code": "MUS235B",
+  "title": "Woodwind Pedagogy",
+  "description": "Fundamentals of woodwind pedagogy and playing technique through practical, theoretical, and method-based approaches.",
+  "notes": [
+    "Credit will be granted for only one of MUS235B, MUS332."
+  ],
+  "credits": "0.75",
+  "hours": "1.5-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to BMUS Music Education"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the instructor."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

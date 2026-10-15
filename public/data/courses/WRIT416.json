@@ -1,0 +1,44 @@
+{
+  "pid": "r1bOWFaXV",
+  "code": "WRIT416",
+  "title": "Advanced Creative Nonfiction Workshop",
+  "description": "Workshop in the writing of creative nonfiction.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class.",
+    "Normally offered in the spring term."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": {
+          "units": 3
+        },
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "WRIT316"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Declared Major in Writing"
+      },
+      {
+        "type": "text",
+        "text": "Fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "Permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

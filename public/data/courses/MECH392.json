@@ -1,0 +1,24 @@
+{
+  "pid": "rJsPhOTXV",
+  "code": "MECH392",
+  "title": "Mechanics of Fluids II",
+  "description": "Differential analysis of fluid motion. Forces acting on a fluid element. Conservation of mass, momentum and energy. Boundary layer flows. Turbulence. Inviscid incompressible flow. Fluid flow about immersed bodies. Numerical and experimental techniques. Introduction to compressible flow. Turbo machinery.",
+  "notes": [
+    "* Indicates four 3 hour lab sessions."
+  ],
+  "credits": "1.5",
+  "hours": "3-1*-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH345"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

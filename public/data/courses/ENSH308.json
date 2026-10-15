@@ -1,0 +1,53 @@
+{
+  "pid": "rk3zBjRUs",
+  "code": "ENSH308",
+  "title": "Speech Communication for Public and Private Sectors",
+  "description": "Prepares future communication professionals for effective speech communication in the public and private sectors. Applies speech communication theories and best practices to professional scenarios. How to structure speeches to inform or persuade audiences and deliver confident, polished and effective presentations with the use of slide decks and other audiovisual aids, in both in-person and remote professional communications contexts.",
+  "notes": [
+    "This is a Professional Communication course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "ENSH101",
+          "ENSH102",
+          "ENSH103",
+          "ENSH201",
+          "ENSH202",
+          "ENSH203",
+          "ENGL135",
+          "ENGL146",
+          "ENGL147",
+          "ENGL215",
+          "ENGL225",
+          "ATWP135",
+          "ECON225",
+          "ENGR240",
+          "MDIA200",
+          "WRIT204A",
+          "WRIT204B",
+          "WRIT215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "To be taken in third or fourth year.",
+    "THEA 150 recommended prior to ENSH 308."
+  ]
+}

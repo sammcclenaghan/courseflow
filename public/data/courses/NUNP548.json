@@ -1,0 +1,40 @@
+{
+  "pid": "SkFLaOTXE",
+  "code": "NUNP548",
+  "title": "Primary Health Care III (Practicum)",
+  "description": "Students will apply the concepts and principles of assessment, diagnosis, management, and evaluation of patients in a supervised clinical practicum for advanced practice nursing, under the guidance of a course instructor and clinical preceptor. Integration of philosophical, theoretical, and methodological perspectives from core courses in the program is expected.",
+  "notes": [
+    "Credit will be granted for only one of NUNP 548, NUNP 534, NUNP 551.",
+    "Students must pass both theory and practice corequisites to advance to the next set of corequisite theory and practice courses. If students fail one corequisite they may be required to complete both corequisites again the next time they are offered. Students may be required to demonstrate knowledge and skills obtained in the prerequisite courses listed below if 12 months or more have elapsed between completing prerequisite courses and enrolling in this course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NUNP531",
+      "NUNP532",
+      "NUNP540",
+      "NUNP541",
+      "NUNP543",
+      "NUNP545",
+      "NUNP549"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NUNP547"
+    ]
+  },
+  "recommendations": []
+}

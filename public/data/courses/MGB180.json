@@ -1,0 +1,19 @@
+{
+  "pid": "HJjs3_pmV",
+  "code": "MGB180",
+  "title": "Language Skills I",
+  "description": "Provides language instruction for students to significantly advance their skill and knowledge in another language. The essential points of structure and vocabulary are taught, giving capability to function in everyday settings. Students learn to share information about themselves in the target language and ask basic questions of those around them.",
+  "notes": [
+    "Credit will be granted for only one of MGB 180, MGB 580.",
+    "May not be used for credit in any other undergraduate or graduate program."
+  ],
+  "credits": "1",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to MGB program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

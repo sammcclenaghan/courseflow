@@ -1,0 +1,119 @@
+{
+  "pid": "Hk35Qu6Q4",
+  "code": "ENGR121",
+  "title": "Design II",
+  "description": "Principles of engineering design with application to biomedical, civil, computer, electrical, mechanical and software engineering through practical projects to be undertaken by teams of students.",
+  "notes": [
+    "Credit will be granted for only one of ENGR 121, ENGR 120."
+  ],
+  "credits": "1",
+  "hours": "1-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ENGR110",
+              "ENGR111"
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "ENGR112"
+                ]
+              },
+              {
+                "type": "courses",
+                "need": 1,
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "ATWP135",
+                  "ENGL135"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "ELEC199"
+                ]
+              },
+              {
+                "type": "courses",
+                "need": 1,
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "ATWP135",
+                  "ENGL135"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR240",
+          "ENGL225",
+          "ENSH202"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "either",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "CSC110",
+              "CSC111"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "CSC 110 or CSC 111 strongly recommended prior to ENGR 121."
+  ]
+}

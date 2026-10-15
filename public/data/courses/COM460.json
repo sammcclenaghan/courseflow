@@ -1,0 +1,16 @@
+{
+  "pid": "SkaO1_6XV",
+  "code": "COM460",
+  "title": "Managing in Diverse Environments",
+  "description": "Conducted overseas as part of INTEP. An examination in an overseas setting of the development and trends in various business practices.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to Business Exchange program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

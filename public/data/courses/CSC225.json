@@ -1,0 +1,39 @@
+{
+  "pid": "Bk_cy_a7V",
+  "code": "CSC225",
+  "title": "Algorithms and Data Structures I",
+  "description": "Foundations of algorithm design and analysis, including the random-access model, the concepts of time and space complexity, worst-case analysis, mathematical modeling of applied problems and proofs of correctness. Fundamental algorithm problems, including searching and sorting. Fundamental abstract data structures, including sequences, dictionaries, priority queues and graphs. Tree-based structures, including self-balancing binary search trees and heaps. Fundamental graph algorithms, including traversals, topological sorting and connectivity testing.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC115",
+          "CSC116"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECE242",
+          "MATH122"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

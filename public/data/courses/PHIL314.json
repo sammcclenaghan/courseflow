@@ -1,0 +1,25 @@
+{
+  "pid": "r1sHCd67V",
+  "code": "PHIL314",
+  "title": "19th-Century Philosophy",
+  "description": "An examination of one or more figures or themes in 19th-century Philosophy.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "4.5 units of PHIL courses"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

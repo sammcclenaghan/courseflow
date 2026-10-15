@@ -1,0 +1,25 @@
+{
+  "pid": "Sk2sxu6mE",
+  "code": "ECE699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [
+    "Credit will be granted for only one of ECE 699, ELEC 699."
+  ],
+  "credits": "30–36",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE693",
+      "ELEC693"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

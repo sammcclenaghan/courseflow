@@ -1,0 +1,40 @@
+{
+  "pid": "r1U44_pmV",
+  "code": "ES321",
+  "title": "Ethnoecology",
+  "description": "Environmental knowledge systems of Indigenous and other local peoples are increasingly recognized as having relevance in understanding and documenting biological diversity and conservation and in undertaking ecological restoration. The different aspects of local and traditional ecological knowledge and their relationships to western academic knowledge are reviewed and the issues and requirements for applying local knowledge in environmental sustainability are explored.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": "B-",
+            "minGpa": null,
+            "courses": [
+              "ES200"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum second-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

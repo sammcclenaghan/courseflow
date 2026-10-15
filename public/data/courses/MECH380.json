@@ -1,0 +1,24 @@
+{
+  "pid": "r15vhOaQE",
+  "code": "MECH380",
+  "title": "Automatic Control Engineering",
+  "description": "Modelling dynamic systems (linear systems and feedback control). Transfer function based analysis and design (transfer functions, root-locus, stability, transient responses). Frequency characteristics design methods (frequency responses, stability, gain and phase margins, system compensation). State-space design methods (state transition matrix, state feedback and shaping dynamic responses; linear observers).\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [
+    "Credit will be granted for only one of MECH 380, MECH 435."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5*-1",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH330"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,40 @@
+{
+  "pid": "ByR84_80P",
+  "code": "EOS230",
+  "title": "Introduction to Environmental Data Analysis",
+  "description": "An introduction to using computer programming to analyze climate data. Topics include; fundamentals of programming, data visualization, analysis of spatial data, descriptive statistics, linear regression.",
+  "notes": [
+    "Credit will be granted for only one of EOS 230, GEOG 230."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-2",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Complete 1.5 units of: 100 level MATH"
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS110",
+          "EOS130",
+          "GEOG103",
+          "GEOG130"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

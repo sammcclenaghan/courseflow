@@ -1,0 +1,38 @@
+{
+  "pid": "r1x32HMDT",
+  "code": "EUS311",
+  "title": "Governments and Politics in Europe",
+  "description": "Historical backgrounds to, institutional framework for, and players involved in, political conflict in European countries. Consideration is given to contemporary policy issues and the process of European integration.",
+  "notes": [
+    "Credit will be granted for only one of EUS 311, EUS 300, POLI 311, POLI 379 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EUS100",
+          "EUS270",
+          "ECON270",
+          "POLI211",
+          "SLLC270"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,54 @@
+{
+  "pid": "HyIH2f02R",
+  "code": "MECH200A",
+  "title": "Introduction to Technical Drawing and Computer Aided Design",
+  "description": "Practices, rules and standards in computer-aided drawing and design; descriptive geometry including orthographic and isometric projections; generating and interpreting technical drawings: sectional views, dimensioning & tolerancing and assembly drawings; hands-on experience with essential software based tools for design, mechanical modeling, technical drawing and manufacture.",
+  "notes": [
+    "Credit will be granted for only one of MECH 200A, MECH 200."
+  ],
+  "credits": "1.5",
+  "hours": "2-2.5-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC110",
+          "CSC111",
+          "CSC115",
+          "CSC116"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR120",
+          "ENGR121"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

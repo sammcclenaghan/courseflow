@@ -1,0 +1,42 @@
+{
+  "pid": "HJe8yhOpX4",
+  "code": "MATH122",
+  "title": "Logic and Foundations",
+  "description": "Logic and quantifiers, basic set theory, mathematical induction and recursive definitions, divide and conquer recurrence relations, properties of integers, counting, functions and relations, countable and uncountable sets, asymptotic notation.",
+  "notes": [
+    "Credit will be granted for only one of MATH 122, MATH 224, CENG 245.",
+    "Not open for credit to students with credit in any of MATH 222, MATH 422, MATH 423."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH102",
+          "MATH109",
+          "MATH151"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Completed Pre-Calculus 12 with a minimum grade of (90%)"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the Department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

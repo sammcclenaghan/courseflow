@@ -1,0 +1,27 @@
+{
+  "pid": "BkPZgupQE",
+  "code": "CSPT500",
+  "title": "Topics in Cultural, Social and Political Thought",
+  "description": "An interdisciplinary seminar on topics such as language and social theory, tradition and modernity, democracy and freedom, global order and disorder, structuralism and post-structuralism, feminism and Marxism.",
+  "notes": [
+    "Content will vary from term to term."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to a graduate program in Social Sciences or Humanities"
+      },
+      {
+        "type": "text",
+        "text": "permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

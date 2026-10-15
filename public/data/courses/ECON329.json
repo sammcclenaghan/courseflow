@@ -1,0 +1,19 @@
+{
+  "pid": "r1iaeOpXN",
+  "code": "ECON329",
+  "title": "Development and Economics",
+  "description": "An introduction to current issues and problems faced by developing countries. Topics may include poverty alleviation, health, education, child and gender issues, urbanization and globalization. Roles of international aid, non-governmental organizations (e.g., micro credit) and social institutions in development may also be examined.",
+  "notes": [
+    "Credit for this course will not be counted toward upper-level requirements in Honours, Major or General Programs in Economics, but counts toward the Minor program in Economics.",
+    "Requires no prior knowledge of economics."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

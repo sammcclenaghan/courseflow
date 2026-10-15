@@ -1,0 +1,25 @@
+{
+  "pid": "HkGc6FfYE",
+  "code": "POLI385",
+  "title": "Gender, Race and Power",
+  "description": "Examination of conceptual and substantive debates in feminist political thought, including debates within and between radical, liberal, socialist feminists, as well as black, post-colonial and Indigenous feminist theorists. Issues discussed include violence against women, marriage and the family, women’s work, sexuality, representations of women in the media, intersectionality and the nature of oppression.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

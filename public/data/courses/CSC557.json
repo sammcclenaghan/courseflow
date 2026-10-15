@@ -1,0 +1,16 @@
+{
+  "pid": "B1I_Euzrn",
+  "code": "CSC557",
+  "title": "Quantum Algorithms and Software Engineering",
+  "description": "Quantum algorithms, hybrid quantum-classical techniques, quantum software engineering, quantum software development environments, quantum computing applications.",
+  "notes": [
+    "Credit will be granted for only one of CSC 557, CSC586C (if taken in same topic), SENG 457, SENG480C (if taken in same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

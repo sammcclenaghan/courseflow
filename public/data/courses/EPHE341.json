@@ -1,0 +1,53 @@
+{
+  "pid": "BkkZEdTQV",
+  "code": "EPHE341",
+  "title": "Biomechanics",
+  "description": "Focuses on the fundamental physical and mechanical laws that control human movement and relates these laws to the techniques used in a variety of motor skills. Teaches how optimal performances in motor skills are based on the best use of these laws.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 341, PE 341."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE201"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH100",
+          "MATH102",
+          "MATH109"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS102",
+          "PHYS102A",
+          "PHYS110"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

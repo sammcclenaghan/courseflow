@@ -1,0 +1,43 @@
+{
+  "pid": "BkLr0OpQE",
+  "code": "PHIL303",
+  "title": "Aristotle",
+  "description": "A study of one or more of the philosophical writings of Aristotle.",
+  "notes": [
+    "Credit will be granted for only one of PHIL 303, PHIL 422."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHIL207A"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "4.5 units of PHIL courses"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

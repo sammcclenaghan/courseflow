@@ -1,0 +1,19 @@
+{
+  "pid": "SktwJO6QE",
+  "code": "COM202",
+  "title": "Financial Accounting I",
+  "description": "Introduction to the construction and interpretation of financial statements prepared primarily for use by parties external to the issuing firm or other business entity. Emphasis on accounting policies and their underlying rationale as well as on accounting techniques.",
+  "notes": [
+    "Credit will be granted for only one of COM 202, COM 253, COM 270.",
+    "Not eligible for supplemental examination. Not open to BCom students; not intended for students seeking entry to Bachelor of Commerce program. Credit will not be granted toward Bachelor of Commerce program."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

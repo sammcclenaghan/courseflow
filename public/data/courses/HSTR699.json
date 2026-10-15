@@ -1,0 +1,24 @@
+{
+  "pid": "HJelM5Op7V",
+  "code": "HSTR699",
+  "title": "PhD Thesis",
+  "description": null,
+  "notes": [
+    "Credit will be granted for only one of HSTR 699, HIST 699."
+  ],
+  "credits": "25.5–36",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "HSTR693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

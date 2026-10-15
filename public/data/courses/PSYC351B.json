@@ -1,0 +1,25 @@
+{
+  "pid": "HkJ4yKTQE",
+  "code": "PSYC351B",
+  "title": "Human Neuropsychology",
+  "description": "Emphasizes insights into the relationship between mind and brain by studying the behavior of individuals who have suffered various forms of brain damage. Approaches to examining the brain-behaviour relationship (e.g. neuroimaging) are discussed. Covers the major domains of cognitive functioning (e.g. memory, language, executive skills) as well as neurological syndromes and disturbances resulting from brain damage in selected areas.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 351B, PSYC 315."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC251"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

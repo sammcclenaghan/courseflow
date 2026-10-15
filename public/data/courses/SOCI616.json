@@ -1,0 +1,33 @@
+{
+  "pid": "HJgFLltp7V",
+  "code": "SOCI616",
+  "title": "Advanced Strategies in Qualitative Research",
+  "description": "Explores applied techniques for coding and systematically analyzing qualitative data with the assistance of computer-aided qualitative data analysis software (CAQDAS). Examines different strategies for communicating qualitative research findings to other researchers and the general public.",
+  "notes": [
+    "Normally offered in alternate years."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCI515"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

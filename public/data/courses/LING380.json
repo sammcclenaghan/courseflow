@@ -1,0 +1,31 @@
+{
+  "pid": "H1lz2iOamE",
+  "code": "LING380",
+  "title": "Acoustic and Perceptual Phonetics",
+  "description": "Examines the acoustic properties of speech sounds and how these properties are perceived by listeners. Training in transcription using the International Phonetic Alphabet and in the use of instrumental tools and techniques for analyzing speech sounds.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "2-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "LING200"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

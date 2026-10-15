@@ -1,0 +1,25 @@
+{
+  "pid": "SJ-tlO6X4",
+  "code": "ECE434",
+  "title": "Biophotonics",
+  "description": "An overview of basic optics (including the principles of lasers), biology and photobiology. Practical applications are presented including bioimaging, biosensing and microarray technologies, flow cytometry, photodynamic therapy, tissue engineering (including laser surgery), and laser scissors and tweezers.",
+  "notes": [
+    "Credit will be granted for only one of ECE 434, BME 434, ELEC 434."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE340",
+      "ELEC340"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

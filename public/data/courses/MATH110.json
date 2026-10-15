@@ -1,0 +1,18 @@
+{
+  "pid": "SySy2dam4",
+  "code": "MATH110",
+  "title": "Matrix Algebra for Engineers",
+  "description": "Complex numbers, matrices and basic matrix operations, vectors, linear equations, determinants, eigenvalues and eigenvectors, linear dependence and independence, orthogonality.",
+  "notes": [
+    "Credit will be granted for only one of MATH 110, MATH 133, MATH 211, MATH 233A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to BEng or BSENG program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

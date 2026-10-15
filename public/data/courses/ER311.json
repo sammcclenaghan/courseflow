@@ -1,0 +1,27 @@
+{
+  "pid": "Syz7Eupm4",
+  "code": "ER311",
+  "title": "Principles and Concepts of Ecological Restoration",
+  "description": "An examination of how effective restoration depends on both ecological and cultural awareness, including the physical, chemical and biological characteristics of ecosystems from local to global scales; the impacts of human-induced change; the philosophical and ethical context for good restoration; the need for and significance of community involvement; the legal and policy frameworks that direct and influence restoration activities; and the importance of understanding essential ecosystem characteristics in restoration.",
+  "notes": [
+    "Credit will be granted for only one of ER 311, ES 341 (if taken prior to May 2015), ES 352, ES 400D (if taken in Sep-Dec 1995 or Jan-Apr 1996)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Certificate or Diploma program in Restoration of Natural Systems"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

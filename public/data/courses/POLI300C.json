@@ -1,0 +1,36 @@
+{
+  "pid": "Hy7TCuTQ4",
+  "code": "POLI300C",
+  "title": "Post-Enlightenment Political Thought",
+  "description": "An examination of basic texts and persistent themes in Western political thought from the Enlightenment to the late 19th century, including study of texts by such key thinkers as Rousseau, Hegel, Marx and J.S. Mill.",
+  "notes": [
+    "Credit will be granted for only one of POLI 300C, POLI 300."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "POLI103",
+          "POLI202"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "POLI 300A or POLI 300B recommended prior to POLI 300C."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "pid": "BkJEyOpQV",
+  "code": "CIVE411",
+  "title": "Resilient Smart Cities",
+  "description": "The resilient smart cities context and the relationship to urban sustainability; smart city tools, applications and systems; all hazards risk assessment and the evolving cyber-physical threat; operational and strategic urban resilience planning processes in general and for smart city systems.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 411, CIVE 511.",
+    "Students in other programs may request permission to register in the course.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum fourth-year standing in the Civil Engineering program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

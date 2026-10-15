@@ -1,0 +1,27 @@
+{
+  "pid": "rJ5wROpXN",
+  "code": "PHIL490",
+  "title": "Advanced Topics in Philosophy",
+  "description": "Advanced investigations of a selected philosophical topic.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5 or 3",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "3 units of 300- or 400-level PHIL courses"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

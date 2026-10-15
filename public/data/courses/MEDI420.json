@@ -1,0 +1,29 @@
+{
+  "pid": "ry9FHRHHr",
+  "code": "MEDI420",
+  "title": "Topics in Medieval Objects",
+  "description": "Approaches to material culture in the premodern world. Draws together methods and topics from various disciplines, including art history, archeology and digital humanities.",
+  "notes": [
+    "Credit will be granted for only one of MEDI 420, MEDI 401 (if taken in the same topic), MEDI 451 (if taken in the same topic), MEDI 452 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "MEDI 303 or MEDI 304 recommended."
+  ]
+}

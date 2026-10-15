@@ -1,0 +1,16 @@
+{
+  "pid": "SyTqDEVIi",
+  "code": "MM550",
+  "title": "Selected Topics in Management",
+  "description": "Reflects the interests of the faculty members and current issues in management and organizations.",
+  "notes": [],
+  "credits": "0.5–1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission from the Academic Program Director."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

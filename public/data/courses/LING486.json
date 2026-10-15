@@ -1,0 +1,26 @@
+{
+  "pid": "SyO6j_amV",
+  "code": "LING486",
+  "title": "Experimental Phonetics",
+  "description": "An expansion on topics covered in LING 380 and/or 381. Focus is on designing and conducting original studies in articulatory, acoustic and/or perceptual phonetics, implementing computer technology in both methodological design and data analysis.",
+  "notes": [
+    "Credit will be granted for only one of LING 486, LING 382."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LING380"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "LING 204 recommended prior to LING 486."
+  ]
+}

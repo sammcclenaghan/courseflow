@@ -1,0 +1,34 @@
+{
+  "pid": "SkhFsOp74",
+  "code": "LING100B",
+  "title": "Foundations in Linguistics II",
+  "description": "Explores foundational concepts in linguistics as applied to the study of language in society, language in the mind and brain, first and second language acquisition, language families, typological classification and historical language change.",
+  "notes": [
+    "Credit will be granted for only one of LING 100B, LING 100, LING 360, LING 362."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "LING100A",
+          "LING181"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

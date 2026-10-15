@@ -1,0 +1,16 @@
+{
+  "pid": "Bkln9lOaX4",
+  "code": "ECE548",
+  "title": "Cyber-System Security",
+  "description": "Introduction to abstract algebra and finite field arithmetic. Hardware attacks and mitigation techniques. Hardware trojans and hardware trojan detection techniques. Trusted design in FPGAs. Security in embedded systems. Design for hardware trust. Security and testing. Crypto-processors and design for security. Students are required to complete a project.",
+  "notes": [
+    "Credit will be granted for only one of ECE 548, ECE 448, CENG 448, ELEC 548.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

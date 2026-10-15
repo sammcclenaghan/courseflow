@@ -1,0 +1,38 @@
+{
+  "pid": "rJiRltTQE",
+  "code": "STAT359",
+  "title": "Data Analysis",
+  "description": "An introductory data analysis course for students who have had an introduction to descriptive statistics, probability distributions, estimation, hypothesis testing and confidence intervals. Emphasis is placed on proper use of computer software, interpretation of output and assumptions required for use of each statistical method. Topics may include: linear and nonlinear regression, time series analysis, analysis of variance, design of experiments, generalized linear models, repeated measures analysis, survival analysis, methods for multivariate data, and nonparametric methods.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT252",
+          "STAT254",
+          "STAT255",
+          "STAT260",
+          "ECON245",
+          "GEOG226",
+          "PSYC300A",
+          "SOCI371A"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,51 @@
+{
+  "pid": "BJWHJt6Q4",
+  "code": "PSYC431B",
+  "title": "Social Cognition",
+  "description": "Intensive examination of the social psychological literature emphasizing how people think about and make sense of their social experience. Topics may include how people create and maintain a sense of identity, close relationships, attitudes, persuasion, applications of social psychology.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC330",
+          "PSYC375",
+          "PSYC376",
+          "PSYC385",
+          "PSYC386",
+          "PSYC387"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

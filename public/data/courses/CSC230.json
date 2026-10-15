@@ -1,0 +1,25 @@
+{
+  "pid": "HJeY5kOpXN",
+  "code": "CSC230",
+  "title": "Introduction to Computer Architecture",
+  "description": "The architecture of computer systems including concepts such as CPU, memory, buses, I/O, cache, instruction sets and interrupt processing. Families of processors, CISC, RISC. Memory organization and management. Computer arithmetic. Assembly language programming and its interface with a high-level language (C). An introduction to basic networking concepts.",
+  "notes": [
+    "Credit will be granted for only one of CSC 230, CENG 255, ECE 255."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC115",
+      "CSC116"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

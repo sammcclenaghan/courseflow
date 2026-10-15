@@ -1,0 +1,49 @@
+{
+  "pid": "rkP2aoaTll",
+  "code": "MLSC301A",
+  "title": "Lab Techniques and Projects I",
+  "description": "Fundamental biochemical, microbiological and molecular biological laboratory techniques are applied to the development of practical and analytical laboratory skills in projects run as multi-week labs. Acquired laboratory techniques may include: bioinformatics; buffers; SDS-PAGE; protein purification; ELISA; Western blot; culturing hybridomas; enzyme kinetics.",
+  "notes": [
+    "Credit will be granted for only one of MLSC 301A, BCMB 301A, BIOC 301.",
+    "Limited enrolment."
+  ],
+  "credits": "1.5",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MICR200A",
+          "MICR200B"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "declared Honours or Major in Biochemistry or Microbiology, or Honours or Major in Molecular Life Sciences"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOC300A",
+      "BIOC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

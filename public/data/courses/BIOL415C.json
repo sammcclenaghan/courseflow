@@ -1,0 +1,27 @@
+{
+  "pid": "rJk80vaXN",
+  "code": "BIOL415C",
+  "title": "Mycology",
+  "description": "The diversity and ecology of fungi. Topics include: fungal molecular genetics, the role of fungi in ecosystem function, beneficial and pathogenic fungi in forests, and the importance of fungal biochemistry in industrial processes and human activities.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 415C, BIOL 415, BIOL 415A, BIOL 415B, BIOL 470 (if taken in the same topic), FORB 515.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL215",
+      "BIOL225",
+      "BIOL230"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,43 @@
+{
+  "pid": "rJLHAdpX4",
+  "code": "PHIL301",
+  "title": "Plato",
+  "description": "A philosophical examination of one or more Platonic dialogues.",
+  "notes": [
+    "Credit will be granted for only one of PHIL 301, PHIL 421."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHIL207A"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "4.5 units of PHIL courses"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

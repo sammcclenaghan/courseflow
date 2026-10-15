@@ -1,0 +1,64 @@
+{
+  "pid": "HyOVx_pQN",
+  "code": "CYC356",
+  "title": "Developing CYC Praxis with Diverse Families",
+  "description": "Learners develop intentional practice frameworks and integrate theories for responsive, ethical and effective praxis for children, youth and families in a variety of diverse contexts. Students examine discourses that include equity deserving groups and are able to engage with a variety of strategies, approaches and practices that will assist and support learners in understanding and responding to the diversity and complexity of family issues, patterns and processes in local and international contexts.",
+  "notes": [
+    "Credit will be granted for only one of CYC 356, CYC 266, CYC 351, CYC 466.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC100A",
+          "CYC100B",
+          "CYC110"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC120",
+          "CYC166A",
+          "CYC166B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC152"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CYC205",
+      "CYC206"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

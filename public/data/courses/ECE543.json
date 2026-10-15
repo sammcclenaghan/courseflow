@@ -1,0 +1,16 @@
+{
+  "pid": "Syo5gOam4",
+  "code": "ECE543",
+  "title": "Design of Digital and VLSI Systems",
+  "description": "Advanced combinational and sequential logic design. Optimization of finite state machines; timing methodologies and synchronization issues. Hardware description languages (HDL): structural and behavioural descriptions, simulations and testbenches, coding styles, design with HDL and FPGA implementation. Design for test: testing concepts, scan-based design and built-in self-test (BIST). Design for high speed: timing analysis, pipelining and retiming. Design for low power: sources of power dissipation, design transformations. Students are required to complete a project.",
+  "notes": [
+    "Credit will be granted for only one of ECE 543, ECE 441, CENG 441, ELEC 543.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

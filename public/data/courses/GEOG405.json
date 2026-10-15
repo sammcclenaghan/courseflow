@@ -1,0 +1,26 @@
+{
+  "pid": "BJKt515cS",
+  "code": "GEOG405",
+  "title": "Dynamics of the Cryosphere",
+  "description": "Explores the dynamics of the four main elements of the Earth's cryosphere - glaciers, snow cover, floating ice and permafrost - in physical, climatological, hydrological and Earth system contexts. A field trip fee may be applied.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 405, GEOG 491 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG370",
+      "GEOG373",
+      "EOS340"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

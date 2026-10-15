@@ -1,0 +1,32 @@
+{
+  "pid": "B1xM2upm4",
+  "code": "MATH435",
+  "title": "Real Analysis II",
+  "description": "Lebesgue measure and integration, Lp spaces, Stone-Weierstrass theorem, Arzela- Ascoli theorem. Hilbert space and Fourier series.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH306",
+          "MATH335"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

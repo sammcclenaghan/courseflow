@@ -1,0 +1,19 @@
+{
+  "pid": "SJZuRvamN",
+  "code": "BIOL499A",
+  "title": "Honours Thesis I",
+  "description": "The first stage of a research project conducted under the direction of a faculty member.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 499A, BIOL 499.",
+    "Open to Honours students only. BIOL 499A and BIOL 499B are \"tied\" courses and must be taken in consecutive terms except with permission of the department. Credit and final grade for BIOL 499A will be assigned only upon successful completion of BIOL 499B; if BIOL 499B is not completed, a grade equivalent to N will be assigned to BIOL 499A."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

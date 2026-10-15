@@ -1,0 +1,56 @@
+{
+  "pid": "HklZqVO6XV",
+  "code": "FRAN180",
+  "title": "Level B2 Intensive French",
+  "description": "Development of upper-intermediate language skills and intercultural competencies to achieve greater fluency and spontaneity, enabling effortless interactions with native speakers. Production of clear, detailed text and conversations on a wide range of concrete and abstract topics. Advances to a B2 level of the European Common Framework for Languages. Prepares for advanced (C1) study upon completion.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 180, FRAN 181, FRAN 182, FREN 175, FREN 180, FREN 181, FREN 182, FREN 190, FREN 195.",
+    "Normal entry point for student with French Immersion to Grade 12."
+  ],
+  "credits": "3",
+  "hours": "6-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "FRAN170"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "FRAN171",
+              "FRAN172"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "French immersion to Grade 12."
+      },
+      {
+        "type": "text",
+        "text": "permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,33 @@
+{
+  "pid": "SkxI22u6X4",
+  "code": "MICR200B",
+  "title": "Introductory Microbiology II",
+  "description": "Broad introduction to the field of microbiology. Microbial genetics and genomics; genetic engineering, biotechnology and industrial microbiology; environmental and applied microbiology; immunology; and infectious diseases.",
+  "notes": [
+    "Credit will be granted for only one of MICR 200B, MICR 200."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MICR200A"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MLSC103"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

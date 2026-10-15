@@ -1,0 +1,19 @@
+{
+  "pid": "B1ElJPPAq",
+  "code": "ENSH341",
+  "title": "Special Topics in Theories and Methods",
+  "description": "Study of specific critical theories, methods and methodologies for literary studies. Topic is announced each year.",
+  "notes": [
+    "Topic is announced each year.",
+    "Credit granted for only one of ENSH 341, ENGL 462 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,44 @@
+{
+  "pid": "SkPQ6ua7E",
+  "code": "MUS462B",
+  "title": "Seminar in Contemporary Composition and Performance",
+  "description": "Professional training for composers who work together with performers in the creation, performance and production of new music. Composers create new works composed specifically for the performers registered simultaneously in MUS 462A. Training in contemporary notation and performance practices, extended techniques, instrumentation, analysis, conducting techniques, communication skills and concert production. The final project is a festival. Open to third- and fourth-year music students.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MUS201B",
+              "MUS202A",
+              "MUS202B"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum third-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

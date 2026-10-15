@@ -1,0 +1,34 @@
+{
+  "pid": "HyNGGDMXkg",
+  "code": "PAAS137",
+  "title": "Beginner Japanese II",
+  "description": "Non-intensive Japanese language course for beginners who have prior some background with emphasis on listening, speaking, reading and writing.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 137, PAAS 138."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "PAAS136"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

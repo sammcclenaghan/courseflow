@@ -1,0 +1,25 @@
+{
+  "pid": "Hyu0svdekl",
+  "code": "MUS271B",
+  "title": "Advanced Musicianship II",
+  "description": "A continuation of MUS 271A. Reinforces musicianship skills with an emphasis on performance, improvisational and compositional activity. Encourages diverse perspectives that complement and develop personal and collaborative expression and artistry. Introduces higher order music concepts related to space, frequency and timbre.",
+  "notes": [
+    "Credit will be granted for only one of MUS 271B, MUS 270, MUS 270B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MUS270A",
+      "MUS271A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

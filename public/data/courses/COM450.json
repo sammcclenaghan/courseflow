@@ -1,0 +1,25 @@
+{
+  "pid": "Hk3ukupX4",
+  "code": "COM450",
+  "title": "Advanced Management Topics",
+  "description": "Content reflects the interests of the faculty members and current issues in business and industry. Topics may include non-traditional forms of work organizations, leadership, organizational development and development of managerial skills.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

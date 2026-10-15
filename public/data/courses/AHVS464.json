@@ -1,0 +1,19 @@
+{
+  "pid": "r1eYETP6mV",
+  "code": "AHVS464",
+  "title": "Seminar in Contemporary Art",
+  "description": "An intensive examination of artistic practices (including but not necessarily limited to painting and sculpture) operating since World War II. Cultural area may vary depending on the instructor.",
+  "notes": [
+    "Credit will be granted for only one of AHVS 464, HA 464 (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum fourth-year standing"
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

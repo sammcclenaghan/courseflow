@@ -1,0 +1,24 @@
+{
+  "pid": "SJ-3aPa7E",
+  "code": "ART101E",
+  "title": "Drawing",
+  "description": "An introduction to concerns and methods in contemporary drawing. Students gain experience in a range of studio practices as well as theoretical issues through projects and critiques.",
+  "notes": [
+    "ART (E) courses are offered only through the En'owkin Certificate Program in Indigenous Fine Arts."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART100E"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

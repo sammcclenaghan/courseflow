@@ -1,0 +1,33 @@
+{
+  "pid": "SkOIluTmN",
+  "code": "CYC693",
+  "title": "Candidacy Exams",
+  "description": "Students are expected to complete two candidacy papers (one focused on the substantive area of interest including related theories, and the other on methodology related to their area and topic of interest) and an oral examination before qualifying to undertake PhD research and a dissertation.",
+  "notes": [
+    "Within thirty-six months of registration as a provisional doctoral student and at least six months before the final oral examination, a student must pass a candidacy examination."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC680"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school"
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

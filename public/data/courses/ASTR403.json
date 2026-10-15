@@ -1,0 +1,53 @@
+{
+  "pid": "r1okAPpXN",
+  "code": "ASTR403",
+  "title": "Introduction to Astrophysical Processes",
+  "description": "Topics may include: fundamentals of radiative transfer; radiation processes (e.g., bremsstrahlung, synchrotron radiation, Compton scattering), atomic and molecular spectra; the basics of plasma physics, gas dynamics (e.g., shocks, accretion flows and winds), collisional processes (ionization, excitation); photo-ionization; line transfer effects (e.g., fluorescence, charge exchange).",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ASTR250",
+          "PHYS323",
+          "PHYS326"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS217",
+          "PHYS317"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS301",
+      "MATH342",
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": [
+    "ASTR 303 strongly recommended prior to ASTR 403."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "SkUKg_aQV",
+  "code": "ECE456",
+  "title": "Wireless and Mobile Communications",
+  "description": "Path loss, fading and shadowing models; digital transmission over fading channels; diversity transmission/reception; adaptive modulation; multicarrier transmission/OFDM; spread spectrum and multiple access (FDMA/TDMA/CDMA) for mobile communications; capacity estimation and coverage analysis, with applications to WiFi and beyond 3G cellular systems.",
+  "notes": [
+    "Credit will be granted for only one of ECE 456, ELEC 456."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE350",
+      "ELEC350"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,26 @@
+{
+  "pid": "rkwFe_TQ4",
+  "code": "ECE460",
+  "title": "Control Theory and Systems II",
+  "description": "Sampling in control systems. The z transform and responses between sampling instants. Analysis of sampled data systems and stability testing. State-space analysis and design of continuous and discrete systems. Controllability, observability and zero input stability analysis. Pole placement techniques.",
+  "notes": [
+    "Credit will be granted for only one of ECE 460, ELEC 460."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE360",
+      "ELEC360",
+      "MECH380"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

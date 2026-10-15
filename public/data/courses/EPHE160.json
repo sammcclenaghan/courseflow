@@ -1,0 +1,24 @@
+{
+  "pid": "r1NeIkznS",
+  "code": "EPHE160",
+  "title": "Introduction to Human Systemic Physiology",
+  "description": "The study of the integrated functions of physiological systems with emphasis on the nervous, endocrine, muscular, cardiovascular and respiratory systems.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 160, EPHE 241, EPHE 241B, PE 241B."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EPHE141"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,32 @@
+{
+  "pid": "ryo9AupQN",
+  "code": "PHYS426",
+  "title": "Fluid Mechanics",
+  "description": "Flow kinematics, vorticity, the Navier-Stokes equations, Bernoulli's theorem, irrotational flow, viscous flow, dynamic similarity. Application to aerodynamics, water waves, low Reynolds number (very viscous) flow and other selected topics.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS248",
+      "PHYS321A"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

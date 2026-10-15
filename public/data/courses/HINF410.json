@@ -1,0 +1,50 @@
+{
+  "pid": "rkzy__TQV",
+  "code": "HINF410",
+  "title": "Information Management and Technology",
+  "description": "Critically examines the application of state-of-the-art IM&T principles and methods in the public and private sectors and the degree to which they apply to Canadian health care organizations. Provides students with a background in health information management and information technology (IT) strategy from a private and public sector organizational perspective. Students identify strategies and approaches to ensuring managers, clinicians, patients and the public receive information at the right time in a cost-effective manner.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF310",
+          "HINF351"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF001",
+          "CSC001"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF002",
+          "CSC002"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

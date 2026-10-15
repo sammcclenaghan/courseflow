@@ -1,0 +1,22 @@
+{
+  "pid": "Hkg8Ds_aXE",
+  "code": "LAW346B",
+  "title": "International Taxation",
+  "description": "Builds upon the concepts studied in Taxation (345) and is concerned primarily with the international tax system as it functions in respect of Canadian income tax treatment of non-residents (both individuals and corporations) on Canadian source income and tax treatment of foreign source income of Canadian residents. Includes the study of Canada's tax treaties, taxation of Canadian corporations on income of foreign subsidiaries and branches, and other aspects of international taxation.",
+  "notes": [],
+  "credits": "1 or 1.5",
+  "hours": "2-0-0 or 3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LAW345"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

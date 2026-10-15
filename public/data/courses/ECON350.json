@@ -1,0 +1,75 @@
+{
+  "pid": "H1lCalu6m4",
+  "code": "ECON350",
+  "title": "Mathematical Economics I: An Introduction to Static Methods",
+  "description": "An introduction to the application of calculus and linear algebra to selected problems in microeconomic and macroeconomic theory.",
+  "notes": [
+    "Credit will be granted for only one of ECON 350, ECON 250."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "MATH208"
+        ]
+      },
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH101"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH110",
+              "MATH211"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH200"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON203"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

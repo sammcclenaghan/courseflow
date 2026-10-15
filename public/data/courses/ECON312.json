@@ -1,0 +1,26 @@
+{
+  "pid": "SyzTldaX4",
+  "code": "ECON312",
+  "title": "Urban Land Economics",
+  "description": "Applications of economic principles to the economic role of cities and the spatial structure of urban areas. Topics include land use and the built environment, urban external effects and land use, land use planning and the urban land market, and the role of cities as centres of consumption and production.",
+  "notes": [
+    "Credit will be granted for only one of ECON 312, ECON 412, ADMN 445."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON103",
+      "ECON103C",
+      "ECON180"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

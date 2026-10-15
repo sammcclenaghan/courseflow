@@ -1,0 +1,29 @@
+{
+  "pid": "B1j66OTQN",
+  "code": "PAAS459",
+  "title": "Directed Readings in Chinese Linguistics",
+  "description": "Advanced course taught in Mandarin. Intended for students who are prepared to read and discuss extensively in Mandarin. Covers aspects of the Chinese language within the general framework of modern linguistics. Topics covered may include Mandarin sound system, pinyin romanization, writing system, word formations, sentence structures, dialect research and language planning.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 459, CHIN 461.",
+    "Offered in Mandarin Chinese for first-language or fluent speakers."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement satisfied"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

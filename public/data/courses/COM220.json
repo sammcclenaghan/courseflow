@@ -1,0 +1,19 @@
+{
+  "pid": "r1hDyuTQE",
+  "code": "COM220",
+  "title": "Organizational Behaviour",
+  "description": "Introduction to behavioural concepts and tools that assist the manager in both understanding behaviour in organizations and improving organizational effectiveness. Topics include individual motivation, perception and communication, managerial roles, schools of management theories, group processes and team work, leadership, supervision and introduction to organizational structure, processes and culture.",
+  "notes": [
+    "Credit will be granted for only one of COM 220, COM 120, HINF 230, PSYC 334, PSYC 334A, SOCI 323, SOCI 324.",
+    "Not available for supplemental. Not open to BCom students; not intended for students seeking entry to Bachelor of Commerce program. Credit will not be granted toward the Bachelor of Commerce program."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

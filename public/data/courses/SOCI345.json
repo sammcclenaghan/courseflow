@@ -1,0 +1,15 @@
+{
+  "pid": "SyLNgK6QN",
+  "code": "SOCI345",
+  "title": "Sociology of Mental Health",
+  "description": "Topics may include: theoretical foundations of the sociology of mental health; the social conditions that influence mental well-being; the experience and social meaning of mental illness and its treatment; the social construction of mental disorders; and the processes of institutionalization and deinstitutionalization.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "SOCI 285 recommended prior to SOCI 345.Recommended prior to SOCI 445."
+  ]
+}

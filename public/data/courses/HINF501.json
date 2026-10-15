@@ -1,0 +1,15 @@
+{
+  "pid": "SJpJOd6XV",
+  "code": "HINF501",
+  "title": "Health Database Design",
+  "description": "Addresses the issues facing a database designer in the development of database applications appropriate for health data of various kinds. The content includes the elements of database application design and implementation for health information systems. Explores research advances in the design of databases for health.",
+  "notes": [
+    "Credit will be granted for only one of HINF 501, HINF 591 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

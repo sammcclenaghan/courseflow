@@ -1,0 +1,19 @@
+{
+  "pid": "r1Bz6OTX4",
+  "code": "MUS380D",
+  "title": "Jazz and Creative Music Ensemble",
+  "description": "Rehearses and performs music with an emphasis on community and collaboration, including jazz, improvisation and soundtracks for silent film.",
+  "notes": [
+    "Credit will be granted for only one of MUS 380D, MUS 380.",
+    "Open to all students by audition."
+  ],
+  "credits": "1",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

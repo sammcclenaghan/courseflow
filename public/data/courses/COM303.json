@@ -1,0 +1,35 @@
+{
+  "pid": "rkNYwOC8j",
+  "code": "COM303",
+  "title": "Intermediate Business Topics",
+  "description": "Explores topics relevant to building and maintaining organizations.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "COM100"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Minimum third-year standing."
+      },
+      {
+        "type": "text",
+        "text": "or permission of the School."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

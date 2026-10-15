@@ -1,0 +1,13 @@
+{
+  "pid": "HkA2mhmj0",
+  "code": "ASE501",
+  "title": "Autonomous Aircraft Systems Guidance, Navigation and Control",
+  "description": "Principles of Guidance, Navigation and Control (GNC) systems analysis, design for autonomous aircraft systems. Introduction to fundamental concepts of Autonomous Air Vehicles (AAVs): mathematical tools for dynamic modeling and simulation of GNC systems; hierarchies of flight control and common strategies used in aeronautics. Project: evaluate and design alternative control solutions for stability augmentation; attitude control; path following.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

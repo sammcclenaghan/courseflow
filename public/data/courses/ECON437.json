@@ -1,0 +1,41 @@
+{
+  "pid": "rJgybuamV",
+  "code": "ECON437",
+  "title": "Philosophical Problems in Contemporary Economics",
+  "description": "Selected problems with the neoclassical paradigm, with emphasis on the relationship of happiness and well-being to economics. Topics may include rational choice and human agency, cognition and neuroeconomics, gender, social institutions, economic development and economic justice. In this largely seminar course, prominent non-mainstream views of economics are read.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ECON313"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON345",
+      "ECON365"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

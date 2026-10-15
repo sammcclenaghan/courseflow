@@ -1,0 +1,43 @@
+{
+  "pid": "HJirgKTXE",
+  "code": "SOCI471",
+  "title": "Intermediate Social Statistics",
+  "description": "An introduction to multivariate relationships, including multiple regression and correlation, analysis of variance and covariance and other topics of the general linear model. Computer-assisted analysis of sociological data.",
+  "notes": [
+    "Credit will be granted for only one of SOCI 471, SOCI 371B, SOCI 372.",
+    "May be offered as a joint undergraduate and graduate class. If space permits, other students may be permitted to register."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "SOCI271"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Declared Honours, Major, or General Program in Sociology, or admission to MA program in Leisure Service Administration"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

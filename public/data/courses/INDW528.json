@@ -1,0 +1,36 @@
+{
+  "pid": "ryzJ-zZkT",
+  "code": "INDW528",
+  "title": "Intergenerational Learning Seminar III",
+  "description": "A pivotal learning opportunity for students during the thesis and project phases of their MN studies. Championing a community-led and intergenerational mentorship approach, enhanced focus will be directed toward topics pertaining to the development and execution of independent scholarly work. Complexities associated with transitioning into advanced practice roles are also addressed.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "INDW526",
+          "INDW527"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to Master of Nursing: Indigenous Wellness stream"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

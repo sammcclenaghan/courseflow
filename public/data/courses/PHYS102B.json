@@ -1,0 +1,28 @@
+{
+  "pid": "BJVFCOp7N",
+  "code": "PHYS102B",
+  "title": "General Physics II",
+  "description": "Introductory algebra-based survey of physics including heat, sound, wave motion, light, electricity, magnetism, and modern physics. Life Science applications.",
+  "notes": [
+    "Not open for credit to students registered in or with credit in any of PHYS 102, PHYS 111, PHYS 112, PHYS 125, PHYS 130."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS102A",
+      "PHYS110",
+      "PHYS120"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "One of MATH 100, MATH 102, MATH 109 recommended prior to or in conjunction with PHYS 102B."
+  ]
+}

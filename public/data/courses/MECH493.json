@@ -1,0 +1,23 @@
+{
+  "pid": "ByCd3uTQV",
+  "code": "MECH493",
+  "title": "Design of Thermo-Fluid Systems",
+  "description": "An advanced design course in thermofluids systems. Groups of three or four students select project topics that involve the design of thermofluids systems such as power generation and refrigeration cycles, pump and piping systems, heat exchangers and heat exchanger networks, and air-conditioning and heating systems. Alternatively, students can propose their own projects in other areas of thermofluid systems.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH345",
+      "MECH395"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

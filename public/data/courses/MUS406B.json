@@ -1,0 +1,24 @@
+{
+  "pid": "SyazpdTXN",
+  "code": "MUS406B",
+  "title": "Sound Recording Seminar",
+  "description": "Advanced work in sound recording and music production techniques including classical music recording and editing, classical music production, popular music production, multi-track recording and editing, contemporary post-production techniques, multi-track mixing and audio mastering. Practical work includes the recording of School of Music concerts, post-production editing and working with the School of Music concert archive. This course requires the completion of a major recording project.",
+  "notes": [
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MUS406A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

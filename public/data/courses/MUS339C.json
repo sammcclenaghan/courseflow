@@ -1,0 +1,19 @@
+{
+  "pid": "B1RDCODpR",
+  "code": "MUS339C",
+  "title": "General Elementary School Music Methods",
+  "description": "Elementary K-7 school music education methods and materials.",
+  "notes": [
+    "Credit will be granted for only one of MUS 339C, MUS 237, ME 207, ME 403.",
+    "Includes a field experience in K-7 schools."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "admission to BMus in Music Education."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

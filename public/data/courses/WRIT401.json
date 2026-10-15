@@ -1,0 +1,43 @@
+{
+  "pid": "B1jvbt6mV",
+  "code": "WRIT401",
+  "title": "Advanced Poetry Workshop",
+  "description": "Workshop on the writing of poetry.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": {
+          "units": 3
+        },
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "WRIT303"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Declared Major in Writing"
+      },
+      {
+        "type": "text",
+        "text": "Fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "Permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,64 @@
+{
+  "pid": "r1FwetpXE",
+  "code": "SOCW402",
+  "title": "Social Work Practicum II",
+  "description": "Students have a further opportunity to develop, refine and apply generalist practice knowledge, skills, values and ethics under supervision in an agency setting. Generalist practice can include individual family, group and community work, organizational development and policy change. The practicum is 350 hours.",
+  "notes": [
+    "Credit will be granted for only one of SOCW 402, SOCW 404, SOCW 404A.",
+    "Students must submit an application for this course 6 months in advance of the start of the term.",
+    "Social Work accreditation standards require that students spend the hours noted above in practice.",
+    "Field Education courses have two components: a placement in the field and an integrative practice seminar (online)."
+  ],
+  "credits": "4.5",
+  "hours": "1.5-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW319",
+          "SOCW419"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW350A",
+          "SOCW354"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW304",
+          "SOCW304A"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCW413"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

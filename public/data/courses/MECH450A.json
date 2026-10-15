@@ -1,0 +1,18 @@
+{
+  "pid": "ByEdnup7N",
+  "code": "MECH450A",
+  "title": "Special Topics",
+  "description": "Presents material in an emerging field or one not covered in regular offerings. Some topics may require laboratory work as well as lectures. Entrance is restricted to third- and fourth-year students who meet the prerequisite specified for the topic to be offered.\n*Lab and tutorial hours may vary depending on the topic.",
+  "notes": [
+    "Credit will be granted for only one of MECH 450A, BME 401A (if taken in the same topic), BME 401B (if taken in the same topic), BME 401C (if taken in the same topic), BME 401D (if taken in the same topic), ECE 496A (if taken in the same topic), ECE 496B (if taken in the same topic), ECE 496C (if taken in the same topic), ECE 496D (if taken in the same topic), MECH 450B (if taken in the same topic), MECH 450C (if taken in the same topic), MECH 450D (if taken in the same topic), MECH 450E (if taken in the same topic), MECH 450F (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0*-0*",
+  "prerequisites": {
+    "type": "text",
+    "text": "Set by department depending upon topic."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

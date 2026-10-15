@@ -1,0 +1,38 @@
+{
+  "pid": "SySN1F6Q4",
+  "code": "PSYC385",
+  "title": "Motivation, Emotion, and Well-Being",
+  "description": "Contemporary cognitive and social perspectives regarding the psychological forces that activate, organize and direct emotions and behaviours. Emphasis on factors and processes involved in self-regulation and well-being.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC201"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC231",
+          "PSYC260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

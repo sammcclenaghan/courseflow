@@ -1,0 +1,27 @@
+{
+  "pid": "H14h0lWkp",
+  "code": "INDW526",
+  "title": "Intergenerational Learning Seminar I",
+  "description": "Provides a unique opportunity to develop relationships with Indigenous community, students and faculty in urban, remote or isolated areas that will be sustained throughout the program. Using a peer-led and intergenerational mentorship approach, issues related to integrating Indigenous knowledge of wellness and advanced nursing knowledge and practice are explored and discussed.",
+  "notes": [
+    "Course registration is limited to students enrolled in Master of Nursing: Indigenous Wellness stream, or with permission of the department."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to Master of Nursing : Indigenous Wellness stream"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

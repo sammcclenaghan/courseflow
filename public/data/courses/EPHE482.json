@@ -1,0 +1,36 @@
+{
+  "pid": "Hy-DyrXir",
+  "code": "EPHE482",
+  "title": "Neuromotor Conditions and Exercise Management",
+  "description": "Understanding how the neural control of movement is disrupted in neurological disorders such as stroke, Parkinson's disease, multiple sclerosis, spinal cord injury. Focus on exercise prescription in the management of select neurological conditions with an emphasis on pre-participation health screening and exercise prescription for each condition. Laboratory component focuses on the practical application of safe and effective assessment and implementation of exercise programs for those living with neurological conditions.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE242",
+          "EPHE380"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "admission to BSc program in Kinesiology."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

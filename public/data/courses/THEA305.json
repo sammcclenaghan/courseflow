@@ -1,0 +1,33 @@
+{
+  "pid": "SJ6eWYTXV",
+  "code": "THEA305",
+  "title": "Advanced Production and Management",
+  "description": "Students are instructed and given practical experience in one or more of the major production and management areas of the theatre.",
+  "notes": [
+    "Enrolment limited."
+  ],
+  "credits": "1.5 or 3",
+  "hours": "0-6-2",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA205"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

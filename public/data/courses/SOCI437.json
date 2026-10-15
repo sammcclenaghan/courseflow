@@ -1,0 +1,36 @@
+{
+  "pid": "SkOrlK6XN",
+  "code": "SOCI437",
+  "title": "Issues in Environmental Sociology and Climate Change",
+  "description": "In-depth examination of sociological explanations of the causes and social consequences of environmental degradation and climate change with a focus on solutions and alternatives. Topics may include: social movements around environmental justice, climate change and climate justice, alternative and diverse economies including food sovereignty, \"fair trade\" and ethical consumption, and ecological feminisms.",
+  "notes": [
+    "Credit will be granted for only one of SOCI 437, SOCI 465."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Minimum fourth-year standing"
+          },
+          {
+            "type": "text",
+            "text": "declared Honours or Major in Sociology"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

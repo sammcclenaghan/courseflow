@@ -1,0 +1,22 @@
+{
+  "pid": "rJL3CdTmV",
+  "code": "PHYS662",
+  "title": "Research Seminar",
+  "description": "Presentation of the research that comprises the major portion of the student's PhD thesis work in physics and astronomy in a departmental seminar, plus attendance at seminars given by other students. Students enroll in PHYS 662 during their preparation for the research seminar. This begins in the term immediately following completion of PHYS 693 and continues until the research seminar has been completed.",
+  "notes": [],
+  "credits": "0",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

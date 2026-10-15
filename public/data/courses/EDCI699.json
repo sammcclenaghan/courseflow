@@ -1,0 +1,22 @@
+{
+  "pid": "S1r0-dTXN",
+  "code": "EDCI699",
+  "title": "PhD Dissertation - Curriculum and Instruction",
+  "description": null,
+  "notes": [],
+  "credits": "30",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "EDCI693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

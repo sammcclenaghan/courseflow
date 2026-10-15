@@ -1,0 +1,22 @@
+{
+  "pid": "HybGuOaXE",
+  "code": "HINF699",
+  "title": "Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "30",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "HINF693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

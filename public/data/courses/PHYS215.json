@@ -1,0 +1,49 @@
+{
+  "pid": "Sy2t0O6m4",
+  "code": "PHYS215",
+  "title": "Introductory Quantum Physics",
+  "description": "Experimental basis of quantum mechanics. Atomic structure and wave properties of matter. Time-independent Schroedinger equation - wavefunctions and probability. Introduction to the Hydrogen atom.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS110",
+          "PHYS111"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS120",
+          "PHYS130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH204"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,27 @@
+{
+  "pid": "SJzU0dTQ4",
+  "code": "PHIL335",
+  "title": "Contemporary Moral Philosophy",
+  "description": "An inquiry into basic issues and theoretical perspectives in moral philosophy. Some classic texts in moral philosophy are studied but emphasis is on contemporary literature and debates. Topics may include consequentialism, Kantianism, contractarianism and contractualism.",
+  "notes": [
+    "Credit will be granted for only one of PHIL 335, PHIL 302."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "4.5 units of PHIL courses"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

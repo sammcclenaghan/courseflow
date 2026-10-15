@@ -1,0 +1,25 @@
+{
+  "pid": "BynsvhuMS",
+  "code": "CIVE470",
+  "title": "Case Studies in Construction Management",
+  "description": "Current topics in the construction industry and management of projects. Includes: identification; evaluation of solutions for construction site operations; factors affecting productivity and safety; measurement of on-site performance.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 470, CIVE 480C (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CIVE270",
+      "CIVE370"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

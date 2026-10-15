@@ -1,0 +1,52 @@
+{
+  "pid": "H1p5ku6XV",
+  "code": "CSC305",
+  "title": "Introduction to Computer Graphics",
+  "description": "Introduction to computer graphics. Principles of raster image generation. Example of a graphics API. Graphics primitives, data structures. Coordinate systems, affine transformations and viewing of graphical objects. Introduction to rendering, such as colour, shading models, ray tracing and volume rendering techniques. Introduction to modelling, such as polygon meshes, subdivision and parametric curves and surfaces.",
+  "notes": [
+    "Credit will be granted for only one of CSC 305, CSC 405."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC225",
+          "SENG265"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC120",
+          "ENGR130"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

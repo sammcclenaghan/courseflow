@@ -1,0 +1,26 @@
+{
+  "pid": "Bkgu7r_pQ4",
+  "code": "GEOG340",
+  "title": "Cities and Planning",
+  "description": "Overview of key thematic areas related to cities and planning in the North American context. Includes a critical examination of the history of urban planning and contemporary issues in urban geography to foster a deeper appreciation of the spatial politics of the urban experience.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 340, GEOG 340B, GEOG 349, GEOG 540.",
+    "May be offered as a joint undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG211",
+      "GEOG218"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

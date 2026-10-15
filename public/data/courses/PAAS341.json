@@ -1,0 +1,43 @@
+{
+  "pid": "SyQhpuTQE",
+  "code": "PAAS341",
+  "title": "Advanced Japanese",
+  "description": "Readings in modern Japanese, designed to broaden acquaintance with the Japanese writing system, expand working vocabulary and provide a firmer grounding to general knowledge of the language.",
+  "notes": [
+    "Credit will be granted for only one of PAAS 341, PAAS 331, JAPA 312, JAPA 400.",
+    "Course content may vary from year to year."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": "B+",
+            "minGpa": null,
+            "courses": [
+              "PAAS338"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Academic Writing Requirement satisfied"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

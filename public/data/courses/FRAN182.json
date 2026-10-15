@@ -1,0 +1,24 @@
+{
+  "pid": "rJTRnHAeZl",
+  "code": "FRAN182",
+  "title": "Level B2.2 French",
+  "description": "Sequel to FRAN 181. Development of upper-intermediate language skills and intercultural competencies to achieve greater fluency and spontaneity, enabling effortless interactions with native speakers. Production of clear, detailed text and conversations on a wide range of concrete and abstract topics. Advances to a B2.2 level of the European Common Framework for Languages. Prepares for advanced (C1) study upon completion.",
+  "notes": [
+    "Credit will be granted for only one of FRAN 182, FRAN 180."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "FRAN181"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

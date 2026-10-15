@@ -1,0 +1,34 @@
+{
+  "pid": "rytv1uTQN",
+  "code": "COM204",
+  "title": "Introduction to Professional Practice",
+  "description": "Preparation and training to undertake Commerce co-op work terms. Includes preparation of cover letters and resumés, skills assessment and analysis, networking and interview skill development and career planning.",
+  "notes": [],
+  "credits": "0",
+  "hours": "0-0-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Minimum second-year standing"
+          },
+          {
+            "type": "text",
+            "text": "admission to BCom program"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

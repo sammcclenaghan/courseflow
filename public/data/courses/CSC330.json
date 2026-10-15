@@ -1,0 +1,47 @@
+{
+  "pid": "SJJokdTQ4",
+  "code": "CSC330",
+  "title": "Programming Languages",
+  "description": "Basic concepts behind modern programming languages with an emphasis on functional programming and its contrast to other paradigms such as object-oriented programming. Inference typing, strong and dynamic typing and data types.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG265"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC230",
+          "ECE255"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC320"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

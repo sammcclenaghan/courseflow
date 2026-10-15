@@ -1,0 +1,25 @@
+{
+  "pid": "SyGeqFIej",
+  "code": "ENSH699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [
+    "Credit will be granted for only ENSH 699, ENGL 699."
+  ],
+  "credits": "21–33",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ENSH693",
+      "ENGL693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

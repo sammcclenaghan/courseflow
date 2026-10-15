@@ -1,0 +1,25 @@
+{
+  "pid": "SJwDhuTQE",
+  "code": "MECH320",
+  "title": "Mechanics of Solids II",
+  "description": "Theory of stress and infinitesimal strain in three dimensions, stress and strain tensors and equilibrium equations. Theory of elasticity in Cartesian polar coordinates and its application to curved beams, torsion of prismatic bars, thick walled cylinders, axisymmetrical loaded disks, and plate theory. Introduction to fracture mechanics and to finite element analysis of frames and trusses.",
+  "notes": [
+    "Not open to students with credit in MECH 280.",
+    "*Indicates four 3 hour lab sessions."
+  ],
+  "credits": "1.5",
+  "hours": "3-1*-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH220"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

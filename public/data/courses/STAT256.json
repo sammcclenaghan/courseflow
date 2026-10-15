@@ -1,0 +1,28 @@
+{
+  "pid": "HkgDAlF6XE",
+  "code": "STAT256",
+  "title": "Statistics for Life Sciences II",
+  "description": "Estimation and hypothesis testing; analysis of variance and the design of experiments; regression and correlation; analysis of categorical data; distribution-free procedures. Statistical examples and applications from life sciences are emphasized.",
+  "notes": [
+    "Credit will be granted for only one of STAT 256, STAT 251, STAT 261.",
+    "Intended primarily for students in Biology, Environmental Studies, and Molecular Life Sciences."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "STAT252",
+      "STAT254",
+      "STAT255",
+      "STAT260"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

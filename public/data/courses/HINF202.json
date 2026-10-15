@@ -1,0 +1,25 @@
+{
+  "pid": "S1CaPOaQ4",
+  "code": "HINF202",
+  "title": "Introduction to Professional Practice",
+  "description": "Discusses the nature of co-operative education experiential education expectations, how to bring learning into the co-op experience, and the services provided by the Health Information Science Co-op Office. Preparation and training to undertake Health Information Science co-op work terms. Includes preparation of cover letters and resumes, skills assessment and analysis, networking and interview skills development and career planning.",
+  "notes": [],
+  "credits": "0",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to BSc in Health Information Science or Combined BSc in Health Information Science and Computer Science"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

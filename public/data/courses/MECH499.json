@@ -1,0 +1,35 @@
+{
+  "pid": "Hkgtn_6mE",
+  "code": "MECH499",
+  "title": "Technical Project",
+  "description": "Provides an opportunity to carry out a design or research project of a technical level similar to 4th year electives, under the supervision of a faculty member. Requires independent study of current technical literature. When feasible, the design should be assessed in the laboratory. A complete report must be presented at the end of the term.",
+  "notes": [
+    "Credit will be granted for only one of MECH 499, BME 490, BME 498, CIVE 499, MECH 497, MECH 498."
+  ],
+  "credits": "1.5",
+  "hours": "1-9-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MECH350",
+          "MECH360",
+          "ENGR002"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "and permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

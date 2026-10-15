@@ -1,0 +1,25 @@
+{
+  "pid": "r1xC0gFTmV",
+  "code": "STAT458",
+  "title": "Generalized Linear Models",
+  "description": "Nonlinear regression models; logit and probit models for binomial responses; log-linear models for counts; quasi-likelihoods and generalized estimating equations for non-normal data.",
+  "notes": [
+    "Students with credit for STAT 454 require permission of the department."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "STAT350",
+      "STAT353"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

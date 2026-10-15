@@ -1,0 +1,24 @@
+{
+  "pid": "BJRZDyevB",
+  "code": "MECH431",
+  "title": "Advanced Fluid Mechanics",
+  "description": "Development of advanced understanding of the laws of fluid mechanics. Theoretical models for problems involving laminar and turbulent viscous flows. Rotational and irrotational flows. Flow lines. Vorticity transport. Potential flow solutions. Boundary layer theory. Concepts and analysis of turbulent flows.",
+  "notes": [
+    "Credit will be granted for only one of MECH 431, MECH 450E (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH392"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

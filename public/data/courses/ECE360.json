@@ -1,0 +1,25 @@
+{
+  "pid": "rki_e_pQ4",
+  "code": "ECE360",
+  "title": "Control Theory and Systems I",
+  "description": "Characterization of systems: linearity; time invariance; and causality. General feedback theory. Time and frequency domain analysis of feedback control systems. Routh-Hurwitz and Nyquist stability criteria. Root locus methods. Modelling of dc servos. Design specifications and system performance. Design of PID controllers. Lead and lag compensators. Introduction to state-space methods.",
+  "notes": [
+    "Credit will be granted for only one of ECE 360, ELEC 360."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE260",
+      "ECE265"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

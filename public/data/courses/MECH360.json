@@ -1,0 +1,22 @@
+{
+  "pid": "Hycw3O674",
+  "code": "MECH360",
+  "title": "Design of Mechanical Elements",
+  "description": "Quantitative design methods; review of stress analysis, load determination and static failure theories; fatigue failure arising from time-varying loads; design of specific machine elements: shafts, bearings, gears, screws and fasteners, clutches and brakes; life cycle design methods.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH220"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

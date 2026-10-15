@@ -1,0 +1,27 @@
+{
+  "pid": "Hy1MvzU6A",
+  "code": "IED191",
+  "title": "LE,NONET Transition Seminar",
+  "description": "Introduces Indigenous (First Nations, Métis, Inuit, non-status) students in their first year of postsecondary study to skills, tools and resources that support academic success in a holistic way. Topics include study, research and communication skills, time management and wellness.",
+  "notes": [
+    "Credit will be granted for only one of IED 191, IED 199 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "First-year standing"
+      },
+      {
+        "type": "text",
+        "text": "permission of the LE,NONET First Year Coordinator."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

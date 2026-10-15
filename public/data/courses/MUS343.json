@@ -1,0 +1,18 @@
+{
+  "pid": "rJa5HI8X1x",
+  "code": "MUS343",
+  "title": "Advanced Music Lessons Non-Specialization",
+  "description": "Lessons in an instrument, voice, conducting or composition.",
+  "notes": [
+    "1.5 fee units"
+  ],
+  "credits": "0.5",
+  "hours": "0-0.5-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the school."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

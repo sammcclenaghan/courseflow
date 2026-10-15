@@ -1,0 +1,22 @@
+{
+  "pid": "ByqK6Dp7E",
+  "code": "ANTH449",
+  "title": "Archaeology of the Northwest Coast",
+  "description": "Study of problems of interpreting Northwest Coast archaeological data. Field trips are scheduled.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH240"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

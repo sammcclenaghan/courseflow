@@ -1,0 +1,16 @@
+{
+  "pid": "S1Mb1daQE",
+  "code": "CHEM555",
+  "title": "Statistical Thermodynamics",
+  "description": "Relationship of macroscopic properties to molecular energy levels; the molecular basis of entropy and irreversibility. Probabilities, ensembles and fluctuations. Illustration of these ideas for selected applications",
+  "notes": [
+    "Credit will be granted for only one of CHEM 555, CHEM 458.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

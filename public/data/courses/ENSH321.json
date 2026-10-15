@@ -1,0 +1,18 @@
+{
+  "pid": "ByF_Ubv05",
+  "code": "ENSH321",
+  "title": "Special Topics in Authors on Screen",
+  "description": "Study of screen adaptations of a particular author’s or set of authors’ works. Topic is announced each year.",
+  "notes": [
+    "May be taken more than once for credit in different topics."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

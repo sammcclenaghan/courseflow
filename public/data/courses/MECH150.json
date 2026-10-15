@@ -1,0 +1,16 @@
+{
+  "pid": "HJKqpS6vV",
+  "code": "MECH150",
+  "title": "3D Printing, Rapid Prototyping and Design",
+  "description": "Introduces 3D printing and rapid prototyping technologies. Engineering drawing, dimensions and tolerances. 3D modeling with computer aided design software. 3D scanning and data processing techniques. Hands on instruction for extrusion 3D printing and laser cutting. Additive manufacturing technologies: stereolithography; bioprinting; advanced materials. Includes self directed project using 3D modeling and 3D printing.",
+  "notes": [
+    "Credit for this course will not be counted towards any Engineering program or elective requirement.",
+    "*Indicates four 3-hour lab sessions for hands-on project."
+  ],
+  "credits": "1.5",
+  "hours": "3-1*-1",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

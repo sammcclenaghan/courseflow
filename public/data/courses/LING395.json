@@ -1,0 +1,16 @@
+{
+  "pid": "ryPhouamN",
+  "code": "LING395",
+  "title": "Language and Society",
+  "description": "A study of language in its social context, covering aspects of linguistic variation within and across speech communities. Topics may include language and class, gender, age, situation and ethnicity; languages in contact (pidgin and creole languages), codeswitching and standardization; rules of conversation and respectful address; societal features of language change.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

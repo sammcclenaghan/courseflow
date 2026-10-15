@@ -1,0 +1,25 @@
+{
+  "pid": "HJRYlF67N",
+  "code": "SOSC390",
+  "title": "Selected Topics in Social Sciences",
+  "description": "Interdisciplinary examination of selected topics of interest to two or more disciplines in Social Sciences.",
+  "notes": [],
+  "credits": "1.5 or 3",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "additional prerequisites set by department depending upon topic."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

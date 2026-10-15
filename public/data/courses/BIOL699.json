@@ -1,0 +1,22 @@
+{
+  "pid": "B1aKRDa7N",
+  "code": "BIOL699",
+  "title": "PhD Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "24–39",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL693"
+    ]
+  },
+  "recommendations": []
+}

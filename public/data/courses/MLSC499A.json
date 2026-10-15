@@ -1,0 +1,20 @@
+{
+  "pid": "BkTQooa6xg",
+  "code": "MLSC499A",
+  "title": "Undergraduate Thesis I",
+  "description": "First stage of a research project conducted under the direction of a faculty member.",
+  "notes": [
+    "Credit will be granted for only one of MLSC 499A, BCMB 499A, BCMB 499B, BIOC 499, BIOC 499A, BIOC 499B, MICR 499, MICR 499A, MICR 499B.",
+    "Open to Honours students only. MLSC 499A and MLSC 499B are \"tied\" courses and must be taken in consecutive terms except with permission of the department. Credit and final grade for MLSC 499A will be assigned only upon successful completion of MLSC 499B; if MLSC 499B is not completed, a grade equivalent to N will be assigned to MLSC 499A.",
+    "Students are required to attend departmental seminars."
+  ],
+  "credits": "1.5",
+  "hours": "1-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "ryI1-ww0c",
+  "code": "ENSH330",
+  "title": "Literature and the Bible",
+  "description": "Examines the relationship between the Bible and literature in English, and especially intertextual relationships between biblical and literary texts. Topics include the history of biblical translation, the Bible and popular culture, the combination of biblical and classical mythologies in the creation of Western cultural ideals, the impact of biblical interpretation on literary theory.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 330, ENGL 365 (if taken prior to September 1983), ENGL 409, ENGL 464, RCS 464, RS 464."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

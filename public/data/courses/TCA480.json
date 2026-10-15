@@ -1,0 +1,15 @@
+{
+  "pid": "Bk15bBuEo",
+  "code": "TCA480",
+  "title": "Special Topics in Transformative Climate Action",
+  "description": "Presents selected topics in an emerging field related to transformative climate action or one not covered in regular offerings.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "TCA 210 recommended prior to or in conjunction with TCA 480."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "pid": "Sk48xdaQN",
+  "code": "CYC598",
+  "title": "Applied Research Project",
+  "description": "The student undertakes an applied research project which could, for example, include: (1) program development, (2) program needs assessment, (3) development of an assessment tool/protocol for clients, (4) evaluation of an existing program, (5) cost/benefit analysis of program models, or (6) secondary analysis of existing agency data. The research project should be developed in consultation with the student's supervisory committee.",
+  "notes": [],
+  "credits": "4.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC558"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

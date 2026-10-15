@@ -1,0 +1,43 @@
+{
+  "pid": "Byg2LavTXN",
+  "code": "ANTH200",
+  "title": "Cultural and Social Anthropology",
+  "description": "Introduction to the analysis of sociocultural systems. Major topics include subsistence, production and distribution, social organization, politics, religion, kinship, symbolic systems and cultural change from an international perspective.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 200, ANTH 200A, ANTH 200B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ANTH100"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "completed a minimum of 12 units"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

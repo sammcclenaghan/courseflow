@@ -1,0 +1,18 @@
+{
+  "pid": "SJYJEjOiN",
+  "code": "ISP400",
+  "title": "Practicum in Intercultural Studies and Practice",
+  "description": "Focuses on an area of professional interest and provides an opportunity to consider intercultural principles and issues in a practical setting. Placements are arranged through the program office with an approved institution or organization. Involves a minimum of 100 hours of activity.",
+  "notes": [
+    "Credit will be granted for only one of ISP 400, IET 400."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum third-year standing"
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

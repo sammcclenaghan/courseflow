@@ -1,0 +1,44 @@
+{
+  "pid": "BkvqcuTQN",
+  "code": "IS301",
+  "title": "Critical Indigenous Theory",
+  "description": "Introduces students to central theoretical concepts in the field of Indigenous Studies from a variety of Indigenous perspectives. Important disciplinary questions are explored, including colonialism, whiteness, sexuality and gender, sovereignty, self-determination, recognition, reconciliation, decolonization and resurgence. Focuses on Indigenous-centered philosophies and theories that are culturally innovative, relevant and transformative.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IS101",
+              "IS200",
+              "IS200A",
+              "IS200B",
+              "IS201"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum second-year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

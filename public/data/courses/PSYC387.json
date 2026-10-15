@@ -1,0 +1,23 @@
+{
+  "pid": "Hy1DF1muK",
+  "code": "PSYC387",
+  "title": "Stereotyping, Prejudice and Discrimination",
+  "description": "Examines theoretical and empirical approaches to studying stereotyping, prejudice and discrimination from a social psychological perspective. Considers intergroup attitudes and discrimination from the perspective of both the perceivers and the targets. Strategies for improving intergroup relations are also considered.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC231"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

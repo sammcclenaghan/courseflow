@@ -1,0 +1,16 @@
+{
+  "pid": "S16LWY6QE",
+  "code": "WRIT302",
+  "title": "Special Study in Craft",
+  "description": "A workshop/seminar in which students focus on particular elements of writing applicable to more than one genre.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "1-2-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

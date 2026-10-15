@@ -1,0 +1,24 @@
+{
+  "pid": "B1wU4cLou",
+  "code": "MECH342",
+  "title": "Dynamics II",
+  "description": "Kinematics and Dynamics of rigid bodies in three dimensional motion; spatial kinematics including rotation matrices, angular velocity and acceleration and time derivatives of vectors using a moving reference frame; three-dimensional equations of motion for a rigid body; numerical methods to solve for equilibrium conditions and calculating transient responses; stability of equilibria; work/energy and impulse/momentum methods in three-dimensional problems.",
+  "notes": [
+    "*Indicates four 3 hour lab sessions."
+  ],
+  "credits": "1.5",
+  "hours": "3-1*-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MECH242"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

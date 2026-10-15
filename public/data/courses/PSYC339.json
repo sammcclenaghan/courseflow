@@ -1,0 +1,25 @@
+{
+  "pid": "rJjQ1KpQ4",
+  "code": "PSYC339",
+  "title": "Adult Development and Aging",
+  "description": "Overview of research examining psychological processes during adulthood and aging. Topics include biological processes, perceptual and cognitive processes, personality and social processes, sources of stress, psychopathology and death.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 339, PSYC 333B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC243"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

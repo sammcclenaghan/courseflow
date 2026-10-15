@@ -1,0 +1,31 @@
+{
+  "pid": "BJg_4RvpX4",
+  "code": "BIOL329",
+  "title": "Biology of the Vertebrates of British Columbia",
+  "description": "Factors that influence the organization, distribution and diversity of vertebrates in BC. Topics include: natural history, systematics, sample design, biodiversity and conservation initiatives. Course goals are to appreciate the diversity of vertebrates and understand life histories and species-at-risk issues. The lab focuses on identification of over 400 species of vertebrates by using calls, digital images, and study skins. Optional field trips. Attendance at the Annual Vertebrate Symposium is mandatory.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

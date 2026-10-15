@@ -1,0 +1,24 @@
+{
+  "pid": "BJbxYUKFC",
+  "code": "BIOL388",
+  "title": "Applied Molecular Biology",
+  "description": "Applications of molecular biology in a range of fields such as forensics, genetic counselling, environmental DNA (eDNA), large-scale industrial drug and protein production.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 388, BIOL 470 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL230"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

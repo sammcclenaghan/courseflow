@@ -1,0 +1,48 @@
+{
+  "pid": "BknRlF6QE",
+  "code": "STAT453",
+  "title": "The Design and Analysis of Experiments",
+  "description": "An introduction to the principles of experimental design and the techniques of analysis of variance. A discussion of experimental error, randomization, replication, and local control. Analysis of variance is developed for single factor and multifactor experiments. The use of concomitant observations. Multiple comparisons and orthogonal contrasts.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "STAT251",
+              "STAT256",
+              "STAT261"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "STAT353"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

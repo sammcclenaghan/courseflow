@@ -1,0 +1,52 @@
+{
+  "pid": "rklKdpOaXV",
+  "code": "NURS431",
+  "title": "Nursing Practice VII: Engaging in Leadership",
+  "description": "Provides opportunities to further develop competencies in the areas of leadership, influencing and managing change, and using research to promote the health of individuals, families, communities and society within the context of the Canadian health care system. Focus on participants' growth as nursing professionals; opportunities to explore inter-professional practices and nursing leadership in the context of emerging Canadian and global health issues and trends.",
+  "notes": [
+    "Credit will be granted for only one of NURS 431, NURS 456.",
+    "Normally, a student must pass both theory and practice co-requisites in the same term to advance in the program. If a student fails one co-requisite but achieves a minimum grade of B (73-76%) or higher in the second the student may not be required to complete both co-requisites again the next time they are offered."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURS350",
+          "NURS351"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURS345",
+          "NURS350",
+          "NURS351"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NURS430"
+    ]
+  },
+  "recommendations": []
+}

@@ -1,0 +1,15 @@
+{
+  "pid": "HycFkKTX4",
+  "code": "PSYC574C",
+  "title": "Cognitive Methods: Computational Modelling",
+  "description": "Exploration of methods of computational modelling of cognitive processes. Methods covered may include mathematical models, symbolic models and neural network models. Theoretical foundations, procedures for fitting models, and applications to cognitive psychology and cognitive neuroscience are considered.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 574C, PSYC 576B (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

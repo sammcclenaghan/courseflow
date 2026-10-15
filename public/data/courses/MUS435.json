@@ -1,0 +1,33 @@
+{
+  "pid": "B1C4XOD6C",
+  "code": "MUS435",
+  "title": "Perspectives in Music Education",
+  "description": "Music education history, philosophy, sociology, psychology in Canada and British Columbia K-12 schools.",
+  "notes": [
+    "Credit will be granted for only one of MUS 435, MUS 231, ME 201."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS131"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to BMus in Music Education Secondary or permission of the school."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,35 @@
+{
+  "pid": "HkFsyupX4",
+  "code": "CSC429",
+  "title": "Cryptography",
+  "description": "Fundamentals of modern cryptography. Topics include: review of classical and information-theoretic cryptography; block ciphers, DES, cryptanalysis of DES, modes of operation, AES; cryptographic hash functions and message authentication codes; public key cryptography, RSA, EIGamal and other public key systems, signature schemes; introduction to security protocols.",
+  "notes": [
+    "Credit will be granted for only one of CSC 429, CSC 529.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC320",
+          "MATH222"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

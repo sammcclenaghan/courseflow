@@ -1,0 +1,26 @@
+{
+  "pid": "BJUOgupQV",
+  "code": "ECE242",
+  "title": "Discrete Structures in Engineering",
+  "description": "Introduction to the use of recurrence relations and generating functions in engineering problems. Engineering modeling with graphs. Graph representation and traversal techniques, and their computational complexity. Use of branch-and-bound, divide-and-conquer, greedy, network flow, dynamic programming, approximation, and heuristic algorithms in Electrical and Computer Engineering applications.",
+  "notes": [
+    "Credit will be granted for only one of ECE 242, CENG 242.",
+    "May not be counted for credit towards a Computer Science degree program."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH101",
+      "MATH110"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "HJglPC_6XN",
+  "code": "PHIL420",
+  "title": "Advanced Topics in Philosophy of Science",
+  "description": "Investigation of the methodology, epistemology and ontology of science. Topics may include the logic of explanation, the logic of confirmation, the rationality of theory acceptance, the rationality of scientific revolutions, the unity of science, or the reality of theoretical entities.",
+  "notes": [
+    "Credit will be granted for only one of PHIL 420, PHIL 222A, PHIL 320.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHIL356"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

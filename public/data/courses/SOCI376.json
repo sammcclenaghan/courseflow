@@ -1,0 +1,25 @@
+{
+  "pid": "H1giExKp7V",
+  "code": "SOCI376",
+  "title": "Quantitative Research Methods",
+  "description": "Introduces quantitative research techniques in sociological research, particularly survey research. Topics may include: research design, measurement, questionnaire construction, data collection methods, sampling theory, and data analysis techniques.",
+  "notes": [
+    "Credit will be granted for only one of SOCI 376, SOCI 375, SOCI 375B."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCI211",
+      "SOCI271"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

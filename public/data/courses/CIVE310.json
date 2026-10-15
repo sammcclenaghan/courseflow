@@ -1,0 +1,55 @@
+{
+  "pid": "rkiXJuamN",
+  "code": "CIVE310",
+  "title": "Introduction to Environmental Engineering",
+  "description": "Environmental systems analysis techniques for natural and engineered systems. Sources, characteristics, transport, and effects of air and water contaminants; biological, chemical, and physical processes in water; unit operations for air and water quality control; water and wastewater treatment processes; solid waste management; environmental quality standards. Design, planning, and management of engineered environmental systems.\n* Indicates a 3 hour laboratory taken by students on alternate weeks.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1.5*-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE210"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "CIVE202",
+              "GEOG103"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "EOS110",
+              "EOS120"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

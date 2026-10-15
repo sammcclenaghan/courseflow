@@ -1,0 +1,31 @@
+{
+  "pid": "r1SYRd67V",
+  "code": "PHYS110",
+  "title": "Introductory Physics I",
+  "description": "Newton's laws; particle dynamics and curvilinear motion; force and momentum; kinetic and potential energy; circular and rotational motion; thermal physics; gravitational and electric forces. Engineering and Physical Science applications.",
+  "notes": [
+    "Students with credit for PHYS 112, PHYS 120, or PHYS 122 may not take PHYS 110 for credit.",
+    "A basic course in physics for students planning a program of study in fields such as Physics, Astronomy, Chemistry, Earth and Ocean Sciences and Engineering.",
+    "Students with a strong interest in Physics or Astronomy are encouraged to consider registering in PHYS 120."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH100",
+      "MATH102",
+      "MATH109"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": [
+    "A background equivalent to BC Physics 12 is strongly recommended prior to PHYS 110.",
+    "Either MATH 100 or MATH 109 is strongly recommended in conjunction with PHYS 110."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "pid": "HJqQAwTX4",
+  "code": "BIOL230",
+  "title": "Principles of Genetics",
+  "description": "Introduction to principles of inheritance. Classical genetic theory; meiosis, mitosis, recombination, population genetics and evolution, genotype, phenotype, random assortment, dominance, DNA structure, function, replication and molecular basis of inheritance. RNA and protein synthesis, regulation of transcription and gene organization. Introduction to DNA technologies.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 230, BIOL 300."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL225"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM231"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": [
+    "BIOC 299 recommended prior to BIOL 230."
+  ]
+}

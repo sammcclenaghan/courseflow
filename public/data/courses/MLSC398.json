@@ -1,0 +1,19 @@
+{
+  "pid": "S1yDvFaTgl",
+  "code": "MLSC398",
+  "title": "Research Experience",
+  "description": "Experimental research under the direction of department members.",
+  "notes": [
+    "Credit will be granted for only one of MLSC 398, BCMB 398.",
+    "For third-year students who wish to gain some experience in biochemical or microbiological research. Interested students should contact the course coordinator by the first week of classes."
+  ],
+  "credits": "0",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

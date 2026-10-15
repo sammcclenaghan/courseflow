@@ -1,0 +1,26 @@
+{
+  "pid": "Hk6-APpQE",
+  "code": "BIOC299",
+  "title": "Biochemistry for Non-Majors",
+  "description": "An introduction to the concepts of biochemistry intended for students not majoring in biochemistry or microbiology. Properties of bio-molecules, basic enzymology and metabolism. Bioenergetics, nucleic acid structure and synthesis. Protein synthesis. Structure and properties of membranes.",
+  "notes": [
+    "Credit will be granted for only one of BIOC 299, BIOC 200.",
+    "Not open for credit to students registered in, or with credit in any third-year BIOC course.",
+    "Students without a background in cell biology may find they are required to do additional reading to fully understand some aspects of this course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM231"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

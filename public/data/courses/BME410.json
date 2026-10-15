@@ -1,0 +1,42 @@
+{
+  "pid": "rku2l5Mvo",
+  "code": "BME410",
+  "title": "Bioprinting and 3D Printing Human Body Parts",
+  "description": "Revolutionizing available medical treatments with 3D printing and bioprinting. Collaboration between biomedical engineers, scientists and critically – clinicians. Ethical considerations and ramifications of technological advances. Includes a design project",
+  "notes": [
+    "Credit will be granted for only one of BME 410, BME 401B (if taken in the same topic), BME 510.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BME350",
+          "ECE399",
+          "MECH350"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "ENGR002"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

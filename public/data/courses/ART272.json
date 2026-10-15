@@ -1,0 +1,26 @@
+{
+  "pid": "Bkra6wTQN",
+  "code": "ART272",
+  "title": "Video Art",
+  "description": "A continuation of 271; alternative imaging concepts, projection systems, computer displays and installation techniques are discussed. Video is dealt with as an extension of a contemporary art practice.",
+  "notes": [
+    "Credit will be granted for only one of ART 272, ART 270.",
+    "Normally class size is limited."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ART170",
+      "ART271"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

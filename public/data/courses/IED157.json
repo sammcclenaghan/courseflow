@@ -1,0 +1,27 @@
+{
+  "pid": "SyJrqO6mN",
+  "code": "IED157",
+  "title": "Supporting Indigenous Language Learning",
+  "description": "Supports students learning their Indigenous language by examining effective strategies for adult L2 (second language) learners. Students explore what is known about becoming successful language learners, considering individual learning styles and the human and other resources available to learners.",
+  "notes": [
+    "Credit will only be granted for only one of IED 157, LING 157."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to one of BEd or Diploma program in Indigenous Language Revitalization, Certificate in Indigenous Language Proficiency, Certificate in Indigenous Language Revitalization"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "r1T3QOaQE",
+  "code": "EOS365",
+  "title": "Climate and Society",
+  "description": "A survey of the climate system and its interaction with past, present and future societies. Topics include: climate change and the onset of agriculture/domestication, climate change and the rise and fall of early civilizations, the anthropocene and global warming. The interplay between science, media, public relations and public policy is also addressed.",
+  "notes": [
+    "Credit will be granted for only one of EOS 365, ES 365."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum third-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

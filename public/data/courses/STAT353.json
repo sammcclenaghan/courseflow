@@ -1,0 +1,48 @@
+{
+  "pid": "rJYCgt6m4",
+  "code": "STAT353",
+  "title": "Applied Regression Analysis",
+  "description": "An outline of linear regression theory with applications; multiple linear regression, polynomial regression, model adequacy checking, variable transformation, variable selection, indicator variable, diagnostics for leverage and influential observations, multicollinearity problem, model selection, stepwise regression, prediction and inference",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "STAT256",
+              "STAT261"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MATH110",
+              "MATH211"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "Hyv5juTmV",
+  "code": "LING182",
+  "title": "Language Learning, Language Revitalization and Social Action",
+  "description": "Examination of formal and informal approaches to language teaching and learning in Indigenous community settings. Topics include forms of language acquisition, Indigenous teaching and learning strategies, how strategies are related to community needs and goals and the role of community and community members in teaching and learning. Emphasis on strategies for mobilizing social and political forces for language maintenance and revival.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to one of BEd or Diploma program in Indigenous Language Revitalization, Certificate in Indigenous Language Proficiency, Certificate in Indigenous Language Revitalization"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

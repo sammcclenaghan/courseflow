@@ -1,0 +1,46 @@
+{
+  "pid": "H17W9MpGJx",
+  "code": "CNPY522",
+  "title": "Skills and Practice for Counselling",
+  "description": "Provides basic counselling interventions with an emphasis on the therapeutic relationship. Extensive opportunity to role play and to self-reflect on role as counsellor and issues related to boundaries and power. Sequenced skill training, with extensive counselling simulation and supervision of practice in a field setting. Includes direct client contact under the supervision of a qualified professional with diverse client populations.",
+  "notes": [
+    "Credit will be granted for only one of CNPY 522, ED-D 522.",
+    "Students may repeat this course until practicum hourly requirements are met but credit will be granted only once."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to MA program in Counselling Psychology."
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CNPY510",
+          "CNPY518"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CNPY506",
+          "CNPY508"
+        ]
+      }
+    ]
+  },
+  "recommendations": []
+}

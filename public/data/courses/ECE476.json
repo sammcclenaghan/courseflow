@@ -1,0 +1,25 @@
+{
+  "pid": "ryQaoBV2xg",
+  "code": "ECE476",
+  "title": "Engineering System Software",
+  "description": "System software principles, components, usage, protection, and their relation to hardware and engineering systems. Modern operating systems characteristics and engineering applications; portable operating system interface standard. Requirements, design, development, and maintenance of complex software for portable devices, real-time and multi-processor systems.",
+  "notes": [
+    "Credit will be granted for only one of ECE 476, ECE 356, CENG 356.",
+    "May not be counted for credit towards a Computer Science degree program."
+  ],
+  "credits": "1.5",
+  "hours": "3-1.5-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE255"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

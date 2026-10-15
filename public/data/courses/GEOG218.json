@@ -1,0 +1,22 @@
+{
+  "pid": "ryYfrdT74",
+  "code": "GEOG218",
+  "title": "Social and Cultural Geography",
+  "description": "Introduction to current themes and issues in social and cultural geography with a focus on the interpretation of cultural landscapes, place-making and the spatial expression of dynamic social identities. Lab assignments involve original field observations, honing quality academic writing skills and innovative approaches to reflecting on the relation between popular culture, society and landscape.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG101B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

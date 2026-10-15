@@ -1,0 +1,42 @@
+{
+  "pid": "rkXkkOTmE",
+  "code": "CHEM362",
+  "title": "Inorganic Chemistry Laboratory",
+  "description": "Emphasizes synthesis and characterization of inorganic compounds.",
+  "notes": [
+    "A total of 1.5 units of credit will be granted for only one of CHEM 362, CHEM 323, CHEM 324 (if taken prior to September 2001)."
+  ],
+  "credits": "1.5",
+  "hours": "0-6-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM213",
+          "CHEM222"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM225",
+          "CHEM260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,35 @@
+{
+  "pid": "rylhIx2pn",
+  "code": "THEA440",
+  "title": "Ensemble Creation",
+  "description": "Results in a studio production of an existing play or an original work of collective devising. Capstone for the Performance Focus.",
+  "notes": [],
+  "credits": "3",
+  "hours": "3-1.5-1.5",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA331",
+          "THEA332",
+          "THEA335A",
+          "THEA335B",
+          "THEA435"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,25 @@
+{
+  "pid": "SkJ_GuTmN",
+  "code": "ED-P781",
+  "title": "Six-Week Practicum (Secondary Post-Degree)",
+  "description": null,
+  "notes": [
+    "Normally takes place in the spring term."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ED-P780",
+      "EDCI780"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

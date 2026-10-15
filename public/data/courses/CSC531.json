@@ -1,0 +1,16 @@
+{
+  "pid": "B1SVNlJEs",
+  "code": "CSC531",
+  "title": "Machine Learning Theory",
+  "description": "Theoretical foundations of machine learning, including learning paradigms and techniques for analyzing the performance of machine learning algorithms for problems in statistical (batch) learning and online (sequential) learning.",
+  "notes": [
+    "Credit will be offered for only one of CSC 531, CSC 431, CSC 482A (if offered in same topic), CSC 581A (if offered in same topic), CSC 581B (if offered in same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,34 @@
+{
+  "pid": "BkOPRP6XN",
+  "code": "BIOL466",
+  "title": "Frontiers in Marine Biology",
+  "description": "Explores new advances in topics related to ocean biology, focussing on ocean change and responses in biological systems. Topics range from novel approaches to ocean discovery both in theory and in the field, to the role of humans in ocean change and mitigation. Content is based in ocean processes and ecological interactions ranging from microbes to ecosystem and from coasts to the deep sea.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL311",
+      "BIOL319",
+      "EOS311"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL330",
+      "ES344"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "pid": "S1Engd67E",
+  "code": "ECON104",
+  "title": "Principles of Macroeconomics",
+  "description": "The principles of macroeconomic analysis with special reference to fluctuations in income and prices, monetary and fiscal policies for economic stabilization.",
+  "notes": [
+    "Credit will be granted for only one of ECON 104, ECON 202.",
+    "ECON 104 cannot be taken concurrently with ECON 100."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "One of MATH 120, Principles of Mathematics 12, Pre-Calculus 12 recommended prior to ECON 104."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "pid": "S13ZTOpXN",
+  "code": "MUS340",
+  "title": "Individual Tuition",
+  "description": "Lessons in instrument or voice and weekly master class including discussion of repertoire, pedagogy, and techniques of performance.",
+  "notes": [
+    "Credit will be granted for only one of MUS 340, MUS 345."
+  ],
+  "credits": "1",
+  "hours": "1-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS240"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 3,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS102A",
+          "MUS102B",
+          "MUS171A",
+          "MUS171B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MUS116",
+          "MUS117"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

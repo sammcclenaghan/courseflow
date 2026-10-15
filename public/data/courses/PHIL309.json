@@ -1,0 +1,30 @@
+{
+  "pid": "SkcHAOam4",
+  "code": "PHIL309",
+  "title": "Kant",
+  "description": "Studies Kant's epistemology and metaphysics, principally as presented in The Critique of Pure Reason.",
+  "notes": [
+    "Credit will be granted for only one of PHIL 309, PHIL 310."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "4.5 units of PHIL courses"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "PHIL 306 or PHIL 308 strongly recommended prior to PHIL 309."
+  ]
+}

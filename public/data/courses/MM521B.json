@@ -1,0 +1,22 @@
+{
+  "pid": "SJEXXRiJWe",
+  "code": "MM521B",
+  "title": "Collaborative Leadership and Team Dynamics",
+  "description": "Development of interpersonal and collaborative skills for effective leadership and contribution within diverse teams; examination of team dynamics, communication styles and cultural influences on collaboration; coverage of trust-building, inclusion, feedback and constructive conflict management; emphasis on frameworks balancing individual strengths with shared accountability; experiential activities for practicing effective communication and teamwork strategies; preparation for organizational success and leadership in multicultural environments.",
+  "notes": [],
+  "credits": "0.5–1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MM521A"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,44 @@
+{
+  "pid": "rkbW2u6XE",
+  "code": "MATH342",
+  "title": "Intermediate Ordinary Differential Equations",
+  "description": "Picard-Lindelöf and Peano existence theorems, series solutions near regular singular points, Frobenius method, systems of first order linear equations, complex and repeated eigenvalues, nonhomogeneous linear systems, qualitative theory for nonlinear systems; Lyapunov stability theory; periodic solutions; introduction to bifurcations and chaos.",
+  "notes": [
+    "Credit will be granted for only one of MATH 342, MATH 323, MATH 323A, MATH 325, MATH 379."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH204"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

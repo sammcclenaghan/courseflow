@@ -1,0 +1,24 @@
+{
+  "pid": "S11lhuTmN",
+  "code": "MATH212",
+  "title": "Introduction to Algebra",
+  "description": "Definitions and examples of groups, rings, fields, and integral domains; rational numbers, real numbers, and complex numbers; polynomials and their factorization; permutations. Additional topics chosen from Boolean algebras and lattices, and transfinite arithmetic.",
+  "notes": [
+    "Credit will be granted for only one of MATH 212, MATH 233C."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH122"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

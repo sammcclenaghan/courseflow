@@ -1,0 +1,16 @@
+{
+  "pid": "BJvyCDpm4",
+  "code": "ASTR201",
+  "title": "The Search for Life in the Universe",
+  "description": "A general science course designed to be accessible to students not majoring in science. An overview of modern scientific thought on the possibility of life beyond Earth and the current research being done to find it; the likeliest locations of life in our Solar System; the hunt for planets around other stars; the search for extraterrestrial intelligence (SETI). Laboratories on alternate weeks; practical work includes observations with campus telescopes.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,27 @@
+{
+  "pid": "BJk3bKpm4",
+  "code": "NRSC500A",
+  "title": "Fundamentals of Cellular Neuroscience",
+  "description": "Provides a foundational basis in neuroscience. Comprehensive instruction in cellular molecular and systems neuroscience.",
+  "notes": [
+    "Credit will be granted for only one of NRSC 500A, NRSC 500, NRSC 600, NRSC 600A."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to the Neuroscience program"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,41 @@
+{
+  "pid": "HyCt0wpmE",
+  "code": "BME200",
+  "title": "Molecular and Cellular Physiology for Engineers",
+  "description": "Examines the basic structures and processes that make up cells and tissues, including protein synthesis, cellular tissues, and control of cellular processes, using principles from engineering kinetics and transport processes. Includes wet lab exercises.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1.5-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM101",
+          "CHEM150"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS111",
+          "PHYS112",
+          "PHYS125",
+          "PHYS130"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

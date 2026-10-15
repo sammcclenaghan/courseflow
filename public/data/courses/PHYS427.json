@@ -1,0 +1,36 @@
+{
+  "pid": "rks50O6XE",
+  "code": "PHYS427",
+  "title": "Geophysics",
+  "description": "Principles of seismology, gravity, geomagnetism, heat flow, and how they contribute to our understanding of whole Earth structure and plate tectonics.",
+  "notes": [
+    "Credit will be granted for only one of PHYS 427, EOS 427.",
+    "Normally offered in alternate years.",
+    "Students are advised to consult with the department to determine when the course is offered."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PHYS321A",
+      "PHYS326"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "MATH346"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

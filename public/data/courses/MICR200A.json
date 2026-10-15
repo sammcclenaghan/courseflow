@@ -1,0 +1,27 @@
+{
+  "pid": "Sk83huaXV",
+  "code": "MICR200A",
+  "title": "Introductory Microbiology I",
+  "description": "A broad introduction to the field of microbiology. Prokaryotic and eukaryotic cell structure and function; physiology and growth of microorganisms; control of microbial growth; viruses; molecular taxonomy of microorganisms.",
+  "notes": [
+    "Credit will be granted for only one of MICR 200A, MICR 200."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

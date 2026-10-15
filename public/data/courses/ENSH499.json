@@ -1,0 +1,27 @@
+{
+  "pid": "r1P10seR5",
+  "code": "ENSH499",
+  "title": "Honours Graduating Essay",
+  "description": "Graduating essay written under the guidance of an individual instructor, usually in the Honours student’s final year.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 499, ENGL 499."
+  ],
+  "credits": "1.5",
+  "hours": "0-0-2",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum fourth-year standing"
+      },
+      {
+        "type": "text",
+        "text": "declared Honours in English."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

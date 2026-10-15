@@ -1,0 +1,22 @@
+{
+  "pid": "r1pPs_a74",
+  "code": "LAW356",
+  "title": "Advocacy",
+  "description": "Involves a critical analysis of the trial process including the demonstration and evaluation of various techniques of advocacy and their relationship to the law of evidence and procedure. In particular, the objectives and techniques of pretrial motions, examinations for discovery, examination and cross examination of witnesses, exhibits and the presentation of legal argument are considered.",
+  "notes": [],
+  "credits": "1.5 or 2",
+  "hours": "3-0-0 or 4-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LAW309"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

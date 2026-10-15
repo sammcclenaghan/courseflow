@@ -1,0 +1,38 @@
+{
+  "pid": "HyimJd6Q4",
+  "code": "CIVE345",
+  "title": "Fluid Mechanics",
+  "description": "Properties of fluids. Basic flow analysis techniques. Basic concepts: velocity field; stress; flow patterns; classification of fluid motion. Fluid statics: pressure distribution; hydrostatic forces on submerged surfaces; buoyancy and stability. Integral analysis of fluid motion: conservation of mass; momentum balance; energy balance. Dimensional analysis and similitude. Laminar and turbulent flow in pipes and pipe systems. Flow measurement.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-1-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH200"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE220",
+          "MECH220"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

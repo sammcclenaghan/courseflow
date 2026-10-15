@@ -1,0 +1,41 @@
+{
+  "pid": "B1FBR_TQN",
+  "code": "PHIL306",
+  "title": "The Rationalists",
+  "description": "Examines in depth representative figures of the so-called continental rationalists, and relates them to each other. Emphasis is on the rationalists' preoccupation with a priori necessary truths and the principle of sufficient reason vis-à-vis their theories of perception and knowledge.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PHIL210"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "4.5 units of PHIL courses"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

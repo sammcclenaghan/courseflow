@@ -1,0 +1,71 @@
+{
+  "pid": "Byo37Oam4",
+  "code": "EOS330",
+  "title": "Paleobiology",
+  "description": "Processes and patterns in the evolution of microscopic and macroscopic life through time: extinction, evolution and diversification as recognized from the fossil record. Major events in the history of life. The relationship of biotas to depositional systems: paleoecology, biostratigraphy and paleobiogeography. The use of statistical approaches to describe, and test hypotheses about, the fossil record. Laboratories and field trips provide illustrative fossil examples.",
+  "notes": [
+    "Credit will be granted for only one of EOS 330, EOS 360."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "EOS120"
+            ]
+          },
+          {
+            "type": "some",
+            "count": 1,
+            "items": [
+              {
+                "type": "text",
+                "text": "Anatomy and Physiology 12"
+              },
+              {
+                "type": "text",
+                "text": "Biology 12"
+              },
+              {
+                "type": "courses",
+                "need": 1,
+                "timing": "completed",
+                "minGrade": null,
+                "minGpa": null,
+                "courses": [
+                  "BIOL150A",
+                  "BIOL184"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Completed Academic Writing Requirement"
+          },
+          {
+            "type": "text",
+            "text": "Minimum third year standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

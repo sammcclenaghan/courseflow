@@ -1,0 +1,27 @@
+{
+  "pid": "Sy-VJFa74",
+  "code": "PSYC366",
+  "title": "Psychological Disorders of Childhood and Adolescence",
+  "description": "Examines research and theory in clinical child psychology and developmental psychopathology. Discusses a variety of mental health challenges with respect to their description, etiology, treatment, and prevention. Multiple theoretical perspectives are covered to understand risk and protective factors across childhood and adolescence.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 366, PSYC 436."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC260"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "Prior course in developmental or child psychology, and prior volunteer experience with a community agency recommended."
+  ]
+}

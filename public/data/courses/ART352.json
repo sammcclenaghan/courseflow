@@ -1,0 +1,66 @@
+{
+  "pid": "BkmRpwTQN",
+  "code": "ART352",
+  "title": "Audain Studio Seminar",
+  "description": "Led by the Audain Professor of Contemporary Art Practice of the Pacific Northwest; course content varies in accord with the area of expertise of the Audain Professor.",
+  "notes": [
+    "Normally class size is limited."
+  ],
+  "credits": "1.5 or 3",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART150"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART150E"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": {
+              "units": 3
+            },
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "ART155",
+              "ART156"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "12 units of 100- or 200-level ART courses"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

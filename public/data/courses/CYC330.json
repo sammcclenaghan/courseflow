@@ -1,0 +1,33 @@
+{
+  "pid": "rkSNxupmN",
+  "code": "CYC330",
+  "title": "Applied Practice in Indigenous Contexts",
+  "description": "Examines systems of working in meaningful and reciprocal relationships with Indigenous communities. It explores Indigenous epistemologies - ways of knowing, doing, being. Emphasis on the development of positive and effective practice frameworks and practical strategies that support healing, wellness, resilience in Indigenous contexts are central.",
+  "notes": [
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC250"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

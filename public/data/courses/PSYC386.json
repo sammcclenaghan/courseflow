@@ -1,0 +1,23 @@
+{
+  "pid": "rkHN1KpXN",
+  "code": "PSYC386",
+  "title": "Cultural Psychology",
+  "description": "Explores how cultural context shapes cognition, motivation, emotion, self, personality, and development.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC201",
+      "PSYC231"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

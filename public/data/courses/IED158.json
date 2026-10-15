@@ -1,0 +1,27 @@
+{
+  "pid": "r1kr5OpmV",
+  "code": "IED158",
+  "title": "Indigenous Language Mentorship I",
+  "description": "75-100 hours of mentorship with a fluent speaker or speakers to build oral fluency in an Indigenous language at the introductory level.",
+  "notes": [
+    "Subject to the \"Guidelines for Ethical Conduct\" and \"Regulations Concerning Practica\"."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Admission to one of BEd or Diploma program in Indigenous Language Revitalization, Certificate in Indigenous Language Proficiency, Certificate in Indigenous Language Revitalization"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

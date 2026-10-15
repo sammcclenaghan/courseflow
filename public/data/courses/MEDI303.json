@@ -1,0 +1,25 @@
+{
+  "pid": "H10chOTXN",
+  "code": "MEDI303",
+  "title": "The Medieval World",
+  "description": "An interdisciplinary introduction to the Middle Ages through a comparative overview of medieval cultures and civilizations until about CE 1500, with a focus on the formation of medieval Christian Europe and its relations with Judaism, Byzantine Christianity and Islam. Both material and intellectual culture (e.g., architecture, art, music, literature) are studied.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum second-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,26 @@
+{
+  "pid": "Sy3a3uamV",
+  "code": "MRNE425",
+  "title": "Ecological Adaptations of Seaweeds",
+  "description": "Morphological, physiological, genetic and reproductive adaptations of seaweeds to their natural and human-altered environments.",
+  "notes": [
+    "This is a field course offered at the Bamfield Marine Sciences Centre for upper level Biology credit. Please visit the Bamfield Marine Sciences Centre website for more information."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL215",
+      "BIOL225",
+      "BIOL230"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

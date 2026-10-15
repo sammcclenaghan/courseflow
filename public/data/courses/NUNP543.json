@@ -1,0 +1,39 @@
+{
+  "pid": "HJ_UTupQN",
+  "code": "NUNP543",
+  "title": "Primary Health Care I (Adult Theory)",
+  "description": "Advanced practice nursing with persons who experience episodic illness conditions, chronic diseases and complex health challenges. Particular attention is paid to theoretical perspectives and skill development related to nurse practitioner core competencies with culturally and gender diverse young to middle-aged adults and families. Selected concepts, theories, and research associated with health promotion and maintenance, and illness prevention are explored within the community context.",
+  "notes": [
+    "Credit will be granted for only one of NUNP 543, NUNP 534, NUNP 550.",
+    "Students must pass both theory and practice corequisites to advance to the next set of corequisite theory and practice courses. If students fail one corequisite they may be required to complete both corequisites again the next time they are offered. Students may be required to demonstrate knowledge and skills obtained in the prerequisite courses listed below if 12 months or more have elapsed between completing prerequisite courses and enrolling in this course.",
+    "Students must pass the midterm and final with a combined 73% (or a “B”) in order to pass the course. Failure to complete all requirements will result in a failing grade even where a grade of “B” or higher is achieved."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NUNP531",
+      "NUNP532",
+      "NUNP540",
+      "NUNP541"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NUNP545",
+      "NUNP549"
+    ]
+  },
+  "recommendations": []
+}

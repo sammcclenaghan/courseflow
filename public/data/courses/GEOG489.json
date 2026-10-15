@@ -1,0 +1,51 @@
+{
+  "pid": "SJdwEI0AD",
+  "code": "GEOG489",
+  "title": "Climate Solutions",
+  "description": "Identification of a specific climate change issue in partnership with community and/or research organization partners, followed by evaluation of climate change vulnerabilities and potential adaptation/mitigation strategies using skills in data processing and knowledge of climate change information. Culminates in oral presentation and written product for community partners.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG230",
+          "EOS230"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG373",
+          "EOS340",
+          "PHYS340"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG314",
+          "EOS365"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

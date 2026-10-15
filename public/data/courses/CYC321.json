@@ -1,0 +1,59 @@
+{
+  "pid": "SymckUTu5",
+  "code": "CYC321",
+  "title": "Advancing Social Justice Praxis in CYC",
+  "description": "Focuses on developing social justice practices through engaged experiential learning that challenge socially constructed ideologies. Interrogates normative social practices and policies that have resulted in systemic discrimination and exclusion evident in contemporary practice settings. Critical theories, including queer, anti-racism, intersectionality and decolonization are advanced in order to consider social justice action in the multiple CYC contexts students encounter. Accountable practitioner self-enquiry is applied when working with marginalized communities.",
+  "notes": [
+    "Credit will be granted for only one of CYC 321, CYC 300.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC110",
+          "CYC100A",
+          "CYC100B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC120",
+          "CYC166A",
+          "CYC166B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC152",
+          "CYC320"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

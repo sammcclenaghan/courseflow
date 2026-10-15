@@ -1,0 +1,70 @@
+{
+  "pid": "ByrEBuTQE",
+  "code": "GEOG358",
+  "title": "Landscape Ecology",
+  "description": "Landscape ecology emphasizes the interaction between spatial pattern and ecological processes. Focus is on the role of spatial heterogeneity in affecting the distribution and abundance of organisms, mass and energy transfers, and alterations of this structure by natural or anthropogenic forces. Implications for wildlife management and conservation are discussed.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "GEOG101A",
+          "GEOG103"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "GEOG226"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "1.5 units minimum 200 level STAT or equivalent"
+          }
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL215",
+          "ES240",
+          "ES348"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "1.5 units 100 level MATH"
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "GEOG 274 recommended prior to GEOG 358."
+  ]
+}

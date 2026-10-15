@@ -1,0 +1,39 @@
+{
+  "pid": "B1JPTwpmE",
+  "code": "ANTH260",
+  "title": "Introduction to Anthropological Research",
+  "description": "Introduction to the diverse methods of inquiry and interpretation used in anthropological research, and key debates about the status of anthropological data and knowledge, the conditions of their production and innovative directions in the development of anthropological research. Focuses on the relationship between methodology and theory, ethics, research design, and qualitative and quantitative data collection and analysis.",
+  "notes": [
+    "Credit will be granted for only one of ANTH 260, ANTH 316, ANTH 416."
+  ],
+  "credits": "1.5",
+  "hours": "2-0-2",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ANTH200",
+      "ANTH240",
+      "ANTH250"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ATWP110",
+      "ATWP135",
+      "ENSH101",
+      "ENSH102",
+      "ENSH103"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

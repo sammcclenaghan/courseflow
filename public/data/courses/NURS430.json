@@ -1,0 +1,76 @@
+{
+  "pid": "BJYd6uaQN",
+  "code": "NURS430",
+  "title": "Professional Practice V: Leadership in Nursing",
+  "description": "Investigates knowledge of leadership for nursing practice in the promotion of health for individuals, families, groups and communities. Topics include nurses' roles in the Canadian health care system, nurses' influence in change, impacts of global trends and issues, collaborative and ethical approaches for working within institutional philosophies and frameworks and issues facing nurses in current work environments. Students engage in leadership experiences to integrate theory and practice of leadership competencies.",
+  "notes": [
+    "Normally, a student must pass both theory and practice co-requisites in the same term to advance in the program. If a student fails one co-requisite but achieves a minimum grade of B (73-76%) or higher in the second the student may not be required to complete both co-requisites again the next time they are offered."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURS350",
+          "NURS351"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURS350"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURS345",
+          "NURS350",
+          "NURS351"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURS431"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "concurrent",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "NURS456"
+        ]
+      }
+    ]
+  },
+  "recommendations": []
+}

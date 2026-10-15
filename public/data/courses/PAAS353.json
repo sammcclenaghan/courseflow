@@ -1,0 +1,51 @@
+{
+  "pid": "HkU2TdamE",
+  "code": "PAAS353",
+  "title": "Survey of Classical Chinese Literature",
+  "description": "Introduces major topics and masterpieces in classical Chinese literature from earliest times to the Qing Dynasty (1644-1911). Readings are in both Chinese and English. Basic knowledge of Chinese language is required.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "all",
+            "items": [
+              {
+                "type": "courses",
+                "need": "all",
+                "timing": "completed",
+                "minGrade": "B",
+                "minGpa": null,
+                "courses": [
+                  "PAAS318"
+                ]
+              },
+              {
+                "type": "text",
+                "text": "Academic Writing Requirement (AWR) satisfied"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "permission of the department."
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Academic Writing Requirement (AWR) satisfied."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

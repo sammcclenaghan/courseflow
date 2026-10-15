@@ -1,0 +1,47 @@
+{
+  "pid": "rylICvOam4",
+  "code": "HINF335",
+  "title": "Health Information Standards",
+  "description": "Health information standards being deployed and used in Canada and elsewhere. The standards examined include data, messaging and terminology standards such as HL7v2.X, HL7v3, HL7-CDA, IHE, FHIR, ICD10, LOINC, SNOMED CT and nursing terminologies. Topics include the nature of standards, their historical evolution and lifecycles for standards from initial development, distribution to maintenance. Emphasis is on practical knowledge and skills in how to work with standards.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF001",
+          "CSC001"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF130",
+          "HINF280"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to BSc in Health Information Science or Combined BSc in Health Information Science and Computer Science"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

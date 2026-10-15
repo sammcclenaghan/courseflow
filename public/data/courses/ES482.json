@@ -1,0 +1,25 @@
+{
+  "pid": "Syx-UNdTQE",
+  "code": "ES482",
+  "title": "Advanced Environmental Topics in Ecological Restoration",
+  "description": "A focused, in-depth systematic examination of specific environmental areas through seminars and projects; the development of appropriate responses to questions and problems within the selected areas; modes of interaction and communication with professional and community groups; application of theory to practice; qualitative vs. quantitative research methods. These courses are conducted as seminars and may include a field trip for which a fee is charged.\n* Contact hours may vary depending on the topic.",
+  "notes": [
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0*",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ES200",
+      "ES341"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

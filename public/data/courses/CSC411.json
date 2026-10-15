@@ -1,0 +1,25 @@
+{
+  "pid": "SJCKCpvSv",
+  "code": "CSC411",
+  "title": "Information Visualization",
+  "description": "Design and implement static and interactive visualizations. Select appropriate visualization methods according to data type and intended analysis task. Create variations of visual representations. Critique designs. Assess visual representations according to design and perceptual principles.",
+  "notes": [
+    "Credit will be granted for only one of CSC 411, CSC 485D (if taken in the same topic), CSC 511, SENG 480D (if taken in the same topic).",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SENG310"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

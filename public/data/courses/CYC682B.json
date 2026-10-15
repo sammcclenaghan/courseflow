@@ -1,0 +1,33 @@
+{
+  "pid": "SJDIeuamV",
+  "code": "CYC682B",
+  "title": "Applied Internship in CYFCS",
+  "description": "Applied internship experience in CYFCS provides opportunities for students to be actively involved and supervised in a practice setting. Students will have the opportunity to gain hands-on experience in their chosen field of practice. Focuses on elements of developing leadership skills, understanding policy, and conducting applied research. Provides a valuable opportunity for students to apply their knowledge in practical settings and develop a deeper appreciation for the practical application of theoretical concepts within the field of CYFCS.",
+  "notes": [
+    "Learners may not be paid for work during the time that they are undertaking the applied internship for university credit."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC641"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the school"
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

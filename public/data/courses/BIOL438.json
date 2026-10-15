@@ -1,0 +1,50 @@
+{
+  "pid": "Byes8CD674",
+  "code": "BIOL438",
+  "title": "Nutrient Cycling and Prokaryotes",
+  "description": "An introduction to prokaryotes (bacteria and archaea) and their role in nutrient cycling in forests, lakes and oceans. Diversity and evolution of populations and communities of prokaryotes and their role in the major biogeochemical cycles: carbon, nitrogen, sulfur. Genetic, biochemical, physiological and ecological aspects of processes such as nitrogen fixation and methanogenesis; design of experimental approaches to assess cycling of elements in forests, lakes and oceans by prokaryotes.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": 2,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "BIOL215",
+              "BIOL225",
+              "BIOL230"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "MICR200A",
+              "MICR200B"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

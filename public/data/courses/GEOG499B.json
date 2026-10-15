@@ -1,0 +1,25 @@
+{
+  "pid": "BJdPru674",
+  "code": "GEOG499B",
+  "title": "Honours Thesis",
+  "description": "Students complete their honours thesis under the direction of a faculty member from the department. After acceptance of the thesis by the supervising faculty member, an oral presentation and defence are scheduled during the exam period.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 499B, GEOG 499, GEOG 499A.",
+    "GEOG 499A and B are \"tied\" courses and must be taken in consecutive terms except with permission of the department. Credit for GEOG 499B will be assigned only upon completion of both courses."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG499A"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

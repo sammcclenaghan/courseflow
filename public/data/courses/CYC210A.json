@@ -1,0 +1,19 @@
+{
+  "pid": "BJaTYK_oE",
+  "code": "CYC210A",
+  "title": "Supervised Practicum I by Prior Learning Assessment (PLA)",
+  "description": "Second-year practicum challenge. Present sufficient evidence of growing knowledge of CYC practice and prior practice experience which specifically demonstrates the learning objectives and outcomes required in CYC211.",
+  "notes": [
+    "Credit will be granted for only one of CYC 210A, CYC 210, CYC 211.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to an undergraduate program in the School of Child and Youth Care"
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,54 @@
+{
+  "pid": "S1aylKTX4",
+  "code": "SENG474",
+  "title": "Data Mining",
+  "description": "An introduction to data mining. Data preparation, model building, and data mining techniques such as clustering, decisions trees and neural networks are discussed and applied to case studies. Data-mining software tools are reviewed and compared.",
+  "notes": [
+    "Credit will be granted for only one of SENG 474, CSC 503, CSC 578D (if taken in same topic), ECE 311.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG265"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "STAT252",
+          "STAT254",
+          "STAT255",
+          "STAT260"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

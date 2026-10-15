@@ -1,0 +1,34 @@
+{
+  "pid": "BkVZ1Ezmye",
+  "code": "PAAS377",
+  "title": "Modern Asia through Narrative",
+  "description": "Examines modern Asian History through literature, including novels, short stories, memoirs and graphic novels by Asian and Asian-diaspora authors. Analyzes the interplay between history and narrative, focusing on themes such as war, colonialism, migration, gender and trauma in Asian contexts.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "text",
+            "text": "Academic Writing Requirement satisfied"
+          },
+          {
+            "type": "text",
+            "text": "Minimum second-year Standing"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

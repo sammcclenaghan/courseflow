@@ -1,0 +1,26 @@
+{
+  "pid": "B1Eb4_6Q4",
+  "code": "EPHE358",
+  "title": "Management in Recreation and Health",
+  "description": "A review of general administrative and organizational theories with particular reference to their application in recreation and health related service agencies. Topics include: the nature of administration, structure of organizations, policy making, human resource development, change management, meetings, strategic planning and the advancement of partnerships.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 358, EPHE 354A, PE 354A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "COOP001",
+      "RHED001",
+      "KINE001"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

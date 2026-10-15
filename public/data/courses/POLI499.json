@@ -1,0 +1,45 @@
+{
+  "pid": "Hk9gJtTmV",
+  "code": "POLI499",
+  "title": "Honours Seminar and Essay",
+  "description": "Students prepare an in-depth examination of a selected topic in Political Science, working closely with a faculty supervisor. The seminar meets on occasion in fall and spring terms for student presentations of essay proposals and work in progress. The essay should be approximately 15,000 words, must conform to acceptable standards of style and format, and must be submitted before the end of second term classes. An oral presentation and defence of the final essay is scheduled during exam period in April.",
+  "notes": [],
+  "credits": "3",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "POLI321",
+              "POLI338"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "minimum fourth-year standing"
+          },
+          {
+            "type": "text",
+            "text": "declared Honours in Political Science"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

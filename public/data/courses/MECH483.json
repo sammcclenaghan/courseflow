@@ -1,0 +1,16 @@
+{
+  "pid": "SJhO3uTmV",
+  "code": "MECH483",
+  "title": "Mechanics and Energy Conversion in Living Cells",
+  "description": "Engineering introduction to cell architecture. Cell components and their functions. Families of molecules used by cells. The role of water in cell architecture. Proteins - the machine systems of cells. DNA. Energy conversion and the control of metabolic processes. Mechanics of the cytoskeleton and cell membranes. Developments in diagnostic and treatment systems based on cell mechanobiology. Readings in bio-inspired engineering systems, biotechnology, tissue regeneration, molecular diagnostics and targeted drug delivery.",
+  "notes": [
+    "Credit will be granted for only one of MECH 483, MECH 450A (if taken in the same topic), MECH 450B (if taken in the same topic), MECH 450C (if taken in the same topic), MECH 450D (if taken in the same topic), MECH 450E (if taken in the same topic), MECH 450F (if taken in the same topic), MECH 510, BME 525.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

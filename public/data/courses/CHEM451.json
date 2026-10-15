@@ -1,0 +1,26 @@
+{
+  "pid": "rkgGo-FTQN",
+  "code": "CHEM451",
+  "title": "Nuclear Magnetic Resonance and its Applications",
+  "description": "The use of Nuclear Magnetic Resonance (NMR) in synthetic and mechanistic chemistry.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 451, CHEM 551.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CHEM213",
+      "CHEM260"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

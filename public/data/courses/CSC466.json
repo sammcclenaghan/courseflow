@@ -1,0 +1,29 @@
+{
+  "pid": "r1l21daXE",
+  "code": "CSC466",
+  "title": "Overlay and Peer-to-Peer Networking",
+  "description": "Focuses on Layer 3 and above and the control plane of the Internet. Topics include: overlay network architectures, peer-to-peer application models, end-to-end control mechanisms, inter- and intra-domain routing protocols, service provisioning, network measurement and related best current practices on the Internet.",
+  "notes": [
+    "Credit will be granted for only one of CSC 466, CSC 579.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC361",
+      "CSC450",
+      "CENG460",
+      "ECE363",
+      "ECE458"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

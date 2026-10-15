@@ -1,0 +1,31 @@
+{
+  "pid": "BJFc0wpQV",
+  "code": "BUS641",
+  "title": "Qualitative Research Methods",
+  "description": "Provides students access to both the theory and practice of qualitative research. This course is an introduction to, and overview of, qualitative research methods, including research design, data collection and interpretation and writing qualitative research for publication in academic journals. While the specific focus of the course is on the application of qualitative methods for research in organizations and management, the readings and exercises are designed for broad application in the social sciences more generally.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BUS640"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the Program Director."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

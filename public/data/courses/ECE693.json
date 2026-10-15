@@ -1,0 +1,24 @@
+{
+  "pid": "SJnsxdp7E",
+  "code": "ECE693",
+  "title": "PhD Candidacy Examination",
+  "description": "The PhD Candidacy Examination consists of an oral examination. This examination should be taken and passed not later than three years from initial PhD registration. Required of all PhD students every term of their program until the oral examination is passed.",
+  "notes": [
+    "Credit will be granted for only one of ECE 693, ELEC 693."
+  ],
+  "credits": "3",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "concurrent",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECE699"
+    ]
+  },
+  "recommendations": []
+}

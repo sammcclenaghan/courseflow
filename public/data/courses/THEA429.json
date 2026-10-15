@@ -1,0 +1,16 @@
+{
+  "pid": "SkzQbYamE",
+  "code": "THEA429",
+  "title": "Theatre Performance",
+  "description": "Supervised performance in department productions.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "permission of the department."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

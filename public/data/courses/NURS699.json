@@ -1,0 +1,22 @@
+{
+  "pid": "SJrca_aQ4",
+  "code": "NURS699",
+  "title": "Dissertation",
+  "description": "All doctoral students are required to prepare a dissertation upon which a public examination and defense is conducted. The dissertation must qualify as a significant and original contribution to disciplinary knowledge.",
+  "notes": [],
+  "credits": "30",
+  "hours": null,
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "NURS693"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

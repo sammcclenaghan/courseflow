@@ -1,0 +1,25 @@
+{
+  "pid": "B1IpC_aQ4",
+  "code": "POLI309",
+  "title": "Democracy and Disobedience",
+  "description": "Political thought and case studies about organized disobedience to law and policy as a form of political protest; connection between disobedience and legal and social change in contemporary states.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

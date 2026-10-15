@@ -1,0 +1,69 @@
+{
+  "pid": "Hk9nQOp7V",
+  "code": "EOS325",
+  "title": "Earth System Modelling",
+  "description": "An introduction to the construction, analysis and interpretation of quantitative models of the Earth System and its components, with a particular emphasis on the use of computers in scientific problem solving. Both process models and statistical models are discussed. Topics may include simple models of the carbon cycle, seawater chemistry, mountain building, reaction kinetics, global energy balance, ecosystem dynamics, the geothermal gradient.",
+  "notes": [
+    "Credit will be granted for only one of EOS 325, EOS 225."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH202",
+          "MATH204"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PHYS102B",
+          "PHYS111",
+          "PHYS130"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "EOS210",
+              "EOS230",
+              "EOS261",
+              "EOS314",
+              "CSC110",
+              "CSC111",
+              "GEOG230",
+              "PHYS210"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "or permission of the school"
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

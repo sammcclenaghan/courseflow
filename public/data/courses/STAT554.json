@@ -1,0 +1,13 @@
+{
+  "pid": "SklbkbtT7V",
+  "code": "STAT554",
+  "title": "Time Series Analysis",
+  "description": "Stationary time series; non-stationary time series; transformation; smoothing techniques; autoregressive moving average models; integrated models for non-stationary data; multiplicative seasonal ARIMA models; spectral analysis; linear filters.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

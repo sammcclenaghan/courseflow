@@ -1,0 +1,24 @@
+{
+  "pid": "Hyt6xOTXE",
+  "code": "ECON325",
+  "title": "Public Economics",
+  "description": "Introduction to the role of government in the economy. Topics include: examination of public goods, externalities, and information asymmetries; market failures resulting from these conditions and policies to address those market failures; taxes, expenditures, and collective decision-making under majority voting. Policy applications include welfare, education, health care spending, and tax policies such as income taxes, consumption taxes, and taxes on carbon emissions.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON103",
+      "ECON103C",
+      "ECON180"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

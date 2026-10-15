@@ -1,0 +1,23 @@
+{
+  "pid": "HyrTs_aX4",
+  "code": "LING473",
+  "title": "Advanced Topics in Second Language Acquisition",
+  "description": null,
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "LING373",
+      "LING374"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

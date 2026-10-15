@@ -1,0 +1,50 @@
+{
+  "pid": "B1nku_TmV",
+  "code": "HINF470",
+  "title": "Trends in Health Informatics",
+  "description": "Exposes students to the changing topics in health informatics and the emerging trends in health information technology. Topics may include: electronic health records; consumer health informatics; personalized health records; mobile technology; telemedicine; bioinformatics; precision medicine; business intelligence and big data. Students have the chance to review current published work and speak to experts in the field. Culminates with a capstone project.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF001",
+          "CSC001"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF002",
+          "CSC002"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF112",
+          "CSC110"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

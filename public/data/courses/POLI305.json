@@ -1,0 +1,25 @@
+{
+  "pid": "HJxNTR_T7N",
+  "code": "POLI305",
+  "title": "The Politics of Diversity",
+  "description": "Examines the political theories of diversity and pluralism from multiculturalism and minority rights to animal rights and eco-pluralism.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "text",
+        "text": "Minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

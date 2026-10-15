@@ -1,0 +1,37 @@
+{
+  "pid": "HkmMkzWJp",
+  "code": "INDW527",
+  "title": "Intergenerational Learning Seminar II",
+  "description": "Facilitates the continuation of relationships formed in Term 1 and INDW 526 with fellow students, faculty, and the community. Championing a community-led and intergenerational mentorship approach, complexities and strengths related to Indigenous nurse-led research and knowledge gathering for practice will be discussed. Includes a land-based immersion experience, fostering a deeper understanding of the interconnectedness of Indigenous Knowledges and Indigenous research methodologies.",
+  "notes": [
+    "Credit will be granted for only one of INDW 527, INDW 527A, INDW 527B"
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "INDW526"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Admission to Master of Nursing: Indigenous Wellness stream"
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

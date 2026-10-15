@@ -1,0 +1,27 @@
+{
+  "pid": "H1AGHOpmE",
+  "code": "GEOG303",
+  "title": "Conservation and Ecology of Whales",
+  "description": "Examines the fundamental biology, evolution and ecology of the modern whale species. Discusses the history and the spectrum of the human relationships with whales. Current topics in the marine mammal sphere are critically examined.",
+  "notes": [
+    "Credit will be granted for only one of GEOG 303, GEOG 391 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "GEOG274",
+      "BIOL150A",
+      "BIOL184",
+      "BIOL190B"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,40 @@
+{
+  "pid": "r1BWVupX4",
+  "code": "EPHE380",
+  "title": "Motor Control",
+  "description": "An examination of the neural processes involved in the maintenance of posture, the control of movement, and issues related to understanding the cerebral organization of goal-directed movement. Includes discussion of certain movement disorders and the relationship of disturbances to stages in the sequence of information processing.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 380, PE 380, PE 442."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE160",
+          "EPHE241"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EPHE245"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

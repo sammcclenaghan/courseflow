@@ -1,0 +1,66 @@
+{
+  "pid": "r1nBkF674",
+  "code": "PSYC451B",
+  "title": "Advanced Neuropsychology",
+  "description": "Examines brain behaviour relationships by studying qualitative changes in cognitive performance following focal brain damage. Topics include localization of function, aphasia, agnosia, apraxia and amnesia. Methods of clinical testing and diagnosis are presented.",
+  "notes": [
+    "Credit will be granted for only one of PSYC 451B, PSYC 415A, PSYC 415."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "PSYC300A"
+        ]
+      },
+      {
+        "type": "some",
+        "count": 1,
+        "items": [
+          {
+            "type": "courses",
+            "need": "all",
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PSYC351B"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 2,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "PSYC351A",
+              "PSYC351C",
+              "PSYC351D"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "PSYC300B"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,19 @@
+{
+  "pid": "Byn9kUtVT",
+  "code": "ENSH340K",
+  "title": "Franz Kafka",
+  "description": "An introduction to the writings of Franz Kafka, whose unique short stories and novels define the modern era and whose influence extends to contemporary fiction.",
+  "notes": [
+    "Credit will be granted for only one of ENSH 340K, ENGL 392 (if taken in the same topic), GMST 367, GMST 480 (if taken in the same topic).",
+    "No knowledge of German required."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "AWR Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

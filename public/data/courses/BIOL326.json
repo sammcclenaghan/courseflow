@@ -1,0 +1,24 @@
+{
+  "pid": "rJOE0vaXN",
+  "code": "BIOL326",
+  "title": "Development and Genetics of Model Plants",
+  "description": "The genetic basis of anatomy, development, physiology and ecology in model plants such as poplar and Arabidopsis. Labs emphasize phenotypic and genetic analysis of plant mutants.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL215",
+      "BIOL225",
+      "BIOL230"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

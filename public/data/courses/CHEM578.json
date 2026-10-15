@@ -1,0 +1,16 @@
+{
+  "pid": "rymF8EldE",
+  "code": "CHEM578",
+  "title": "Industrial Chemistry",
+  "description": "A comparative discussion of a number of chemical industries and the details of the processes.",
+  "notes": [
+    "Credit will be granted for only one of CHEM 678, CHEM 478.",
+    "A combined undergraduate and graduate course."
+  ],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

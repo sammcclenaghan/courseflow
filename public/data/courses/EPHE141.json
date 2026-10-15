@@ -1,0 +1,15 @@
+{
+  "pid": "Sy7xNdaQE",
+  "code": "EPHE141",
+  "title": "Human Anatomy",
+  "description": "Systematic study of human anatomy emphasizing the relationship between structure and anatomical function. Involves detailed examination of human tissues, organs, and structural components of all physiological systems (neural, muscular, skeletal, integument, cardiovascular, respiratory, digestive, renal, lymphatic, endocrine, reproductive) emphasizing those involved in human movement. Mandatory system-focused weekly laboratories using human skeletons, fresh tissue dissections, computer graphics, anatomical charts, and plastinated models complement lectures to provide an understanding of the structural organization of the human body.",
+  "notes": [
+    "Credit will be granted for only one of EPHE 141, PE 141."
+  ],
+  "credits": "1.5",
+  "hours": "3-2-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

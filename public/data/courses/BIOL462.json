@@ -1,0 +1,32 @@
+{
+  "pid": "SJwvCPaQE",
+  "code": "BIOL462",
+  "title": "Community and Ecosystem",
+  "description": "An examination of the development of, and approaches to, ecological research, including theoretical and empirical advances. Topics include scale, biodiversity ecosystem function, diversity stability, trophic interactions, food webs, ecological networks, macroecology, and resilience, as well as an introduction to programming and ecological modeling in R.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-1",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL215"
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "BIOL330",
+      "ES344"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

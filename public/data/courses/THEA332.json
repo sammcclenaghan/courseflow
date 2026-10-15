@@ -1,0 +1,24 @@
+{
+  "pid": "Bydb-YTX4",
+  "code": "THEA332",
+  "title": "Directing II",
+  "description": "Fundamental textual analysis, stage composition, movement and rhythm, methods of rehearsal procedure, and basic techniques of working with the actor.",
+  "notes": [
+    "Credit will be granted for only one of THEA 332, THEA 330."
+  ],
+  "credits": "1.5",
+  "hours": "1-2-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "THEA331"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

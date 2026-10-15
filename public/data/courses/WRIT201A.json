@@ -1,0 +1,45 @@
+{
+  "pid": "SyNUWK6mE",
+  "code": "WRIT201A",
+  "title": "Introduction to Poetry Workshop",
+  "description": "A lecture and seminar in the writing and workshopping of poetry.",
+  "notes": [
+    "Credit will be granted for only one of WRIT 201A, WRIT 201, CW 201."
+  ],
+  "credits": "1.5",
+  "hours": "1-2-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": "B",
+            "minGpa": null,
+            "courses": [
+              "WRIT100",
+              "CW100E",
+              "CW102E"
+            ]
+          },
+          {
+            "type": "text",
+            "text": "admission to the Writing Major"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

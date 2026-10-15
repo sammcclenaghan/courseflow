@@ -1,0 +1,19 @@
+{
+  "pid": "rk96nFY7p",
+  "code": "MDIA360",
+  "title": "Game Studies",
+  "description": "Games as both culture and material. Surveys approaches to play and games around the world, from board and tabletop games to video games, alternate reality games and even sports. Emphasis on experiential learning in UVic Libraries and local communities.",
+  "notes": [
+    "Credit will only be granted for one of MDIA360, MDIA490 (if taken in the same topic), MDIA560.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Academic Writing Requirement satisfied."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

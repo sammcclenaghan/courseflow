@@ -1,0 +1,16 @@
+{
+  "pid": "ByAY1Yam4",
+  "code": "PSYC581",
+  "title": "Psychopathology: Childhood and Adolescence",
+  "description": "Discussion of conceptual models used to understand psychopathology; presentation of various mental disorders from multiple theoretical perspectives; discussion of diagnostic issues emphasizing the impact of gender and culture in the expression of \"abnormal\" behaviour. Emphasis on disorders that emerge during childhood and adolescence. Topics are considered from a scientist-practitioner perspective. Includes discussion of relevant professional issues in clinical psychology.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to a graduate program in Clinical Psychology."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,15 @@
+{
+  "pid": "SyOk3uTmN",
+  "code": "MATH151",
+  "title": "Finite Mathematics",
+  "description": "Permutations and combinations, basic laws of probability, conditional probability, independence, tree diagrams, Bayes' formula, random variables and their probability distributions (including binomial and hypergeometric), expectation, Markov chains, geometric approach to linear programming, matrices, systems of linear equations, and Gauss-Jordan elimination.",
+  "notes": [
+    "Not open for credit to students with credit in MATH 352 or STAT 350."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

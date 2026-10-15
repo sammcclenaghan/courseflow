@@ -1,0 +1,53 @@
+{
+  "pid": "Skzwy3C8s",
+  "code": "ENSH406",
+  "title": "Strategic Communication in Arts, Culture and Tourism Sectors",
+  "description": "Focus on principles of intentional and ethical strategic communication and their practical application to the arts, cultural and tourism sectors. Topics may include: developing organizational mandates; maintaining effective internal communications; undertaking media, public and member relations; advocating to public officials; liaising with sponsors and funding bodies; and creating impactful promotional content across platforms.",
+  "notes": [
+    "This is a Professional Communication course."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 2,
+        "timing": "completed",
+        "minGrade": "B",
+        "minGpa": null,
+        "courses": [
+          "ENSH101",
+          "ENSH102",
+          "ENSH103",
+          "ENSH201",
+          "ENSH202",
+          "ENSH203",
+          "ENSH307",
+          "ENGL146",
+          "ENGL147",
+          "ENGL215",
+          "ENGL225",
+          "ATWP135",
+          "ECON225",
+          "ENGR240",
+          "MDIA200",
+          "WRIT204A",
+          "WRIT204B",
+          "WRIT215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the department."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "To be taken in third or fourth year."
+  ]
+}

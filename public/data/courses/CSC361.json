@@ -1,0 +1,50 @@
+{
+  "pid": "ryzikO6QN",
+  "code": "CSC361",
+  "title": "Computer Communications and Networks",
+  "description": "An introduction to concepts in computer communication and networks. Topics include layered network architectures, packet switching networks, local area networks, protocol design and network security.",
+  "notes": [
+    "Credit will be granted for only one of CSC 361, CSC 450, CENG 460, ECE 458."
+  ],
+  "credits": "1.5",
+  "hours": "3-1-1",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SENG265"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC230",
+          "CENG255",
+          "ECE255"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "CSC226"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

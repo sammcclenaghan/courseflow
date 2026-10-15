@@ -1,0 +1,24 @@
+{
+  "pid": "BJgH6eOamN",
+  "code": "ECON318",
+  "title": "Health Economics",
+  "description": "Economic analysis of health-affecting behaviours and of actors within the health care system. Topics may include: health insurance and its private and public provision, physician behaviour, social determinants of health, equity and efficiency in health care, and the economics of behaviors such as smoking, alcohol use, and risky sex.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": 1,
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "ECON103",
+      "ECON103C",
+      "ECON180"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

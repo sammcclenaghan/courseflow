@@ -1,0 +1,45 @@
+{
+  "pid": "Hke7WY6QN",
+  "code": "THEA423",
+  "title": "Voice and Speech in the Theatre III",
+  "description": "Advanced work in voice production and speech for the stage.",
+  "notes": [
+    "Credit will be granted for only one of THEA 423, THEA 450."
+  ],
+  "credits": "1.5",
+  "hours": "0-4.5-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA321",
+          "THEA324",
+          "THEA326",
+          "THEA329"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "THEA322",
+          "THEA324",
+          "THEA326"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

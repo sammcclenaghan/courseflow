@@ -1,0 +1,40 @@
+{
+  "pid": "Skdj9_T74",
+  "code": "IS450",
+  "title": "Indigenous Studies in the Field",
+  "description": "The application of central theoretical concepts in Indigenous Studies to field-based practice. Students will have the opportunity to learn about traditional Indigenous teachings and practices through community- and land-based opportunities.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "IS310",
+          "IS310A",
+          "IS310B",
+          "IS350"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing"
+      },
+      {
+        "type": "text",
+        "text": "declared Major in Indigenous Studies."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": [
+    "IS 301 and IS 350 prior to IS 450."
+  ]
+}

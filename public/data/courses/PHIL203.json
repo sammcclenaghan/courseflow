@@ -1,0 +1,15 @@
+{
+  "pid": "B1O4COa7N",
+  "code": "PHIL203",
+  "title": "Elementary Formal Logic",
+  "description": "Explores the fundamentals of good reasoning by means of symbolic techniques in both propositional and predicate logic. Students learn to translate English sentences into logical notation, as well as how to use truth tables and derivations to demonstrate the validity of arguments.",
+  "notes": [
+    "Designed as a first course in logic for students with little or no symbolic orientation. May be taken before or after PHIL 201."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

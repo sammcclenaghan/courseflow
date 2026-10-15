@@ -1,0 +1,24 @@
+{
+  "pid": "Sy9EgYaX4",
+  "code": "SOCI374",
+  "title": "Qualitative Research Methods",
+  "description": "Strategies of qualitative research design. Possible topics include: indepth interviews, narrative analysis, field work, evaluation, historical research, and textual analysis.",
+  "notes": [
+    "Credit will be granted for only one of SOCI 374, SOCI 375, SOCI 375A."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "completed",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "SOCI211"
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

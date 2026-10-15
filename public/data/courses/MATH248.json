@@ -1,0 +1,51 @@
+{
+  "pid": "HyVe3daQV",
+  "code": "MATH248",
+  "title": "Computer Assisted Mathematics",
+  "description": "Use of a high-level computer language for mathematical and scientific experimentation, simulation, and calculation. Programming of mathematics using available functions and routines and also writing short programs for symbolic and numerical computations, visualization, graphical output, and data management. The goal is to become competent with a high-level programming language and to practice programming in such a language. Emphasis on hands-on coding for experimentation in a variety of mathematical and applied contexts.",
+  "notes": [
+    "Credit will be granted for only one of MATH 248, PHYS 248."
+  ],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH110",
+          "MATH211"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH200"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CSC110",
+          "CSC111"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

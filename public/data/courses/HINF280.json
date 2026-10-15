@@ -1,0 +1,58 @@
+{
+  "pid": "Skf0v_TQ4",
+  "code": "HINF280",
+  "title": "Biomedical Fundamentals",
+  "description": "Presents the principles of biochemistry, organ physiology and selected examples of pathology in order to provide the fundamentals required for understanding in future studies. All body systems are briefly reviewed and discussions of medical case studies are conducted. Emerging topics in health informatics including bioinformatics and genomics are discussed.",
+  "notes": [
+    "Credit will be granted for only one of HINF 280, HINF 180."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "text",
+        "text": "Biology 12"
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOC102",
+          "BIOL150A",
+          "BIOL150B",
+          "BIOL186",
+          "EPHE141",
+          "MLSC102"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "HINF130",
+          "HINF140"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or permission of the director."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

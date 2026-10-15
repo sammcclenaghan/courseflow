@@ -1,0 +1,40 @@
+{
+  "pid": "BJOveKaQ4",
+  "code": "SOCW400",
+  "title": "Introduction to Social Work in the Health Care Sector",
+  "description": "Examines the knowledge and skills required for social workers to be effective advocates while carrying out a range of responsibilities in the health sector within a practice framework that focuses on the social determinants of health. The challenges and opportunities of the cultural and organizational contexts of practice are an important focus while examining inter-professional practice. Particular aspects of practice such as appropriate documentation, informed consent and community development are included.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW311",
+          "SOCW312"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "SOCW312A",
+          "SOCW312B"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

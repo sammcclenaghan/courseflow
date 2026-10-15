@@ -1,0 +1,49 @@
+{
+  "pid": "Bydscd67N",
+  "code": "IS400",
+  "title": "Research Seminar in Indigenous Studies",
+  "description": "An interdisciplinary investigation of a selected research topic.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "all",
+        "items": [
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IS200",
+              "IS200B",
+              "IS201"
+            ]
+          },
+          {
+            "type": "courses",
+            "need": 1,
+            "timing": "completed",
+            "minGrade": null,
+            "minGpa": null,
+            "courses": [
+              "IS301",
+              "IS350"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "or Permission of the program."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

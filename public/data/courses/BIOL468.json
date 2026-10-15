@@ -1,0 +1,33 @@
+{
+  "pid": "H1ldvCDpXV",
+  "code": "BIOL468",
+  "title": "Food Web Ecology",
+  "description": "Characterizing food web interactions is fundamental to ecology. Provides a comprehensive introduction to the most important methods used to characterize food web interactions in terrestrial and aquatic ecosystems. Topics include: isotopic ecology, ecological stoichiometry, nutritional geometry, lipid tracers and molecular tracers.",
+  "notes": [
+    "Credit will be granted for only one of BIOL 468, BIOL 470 (if taken in the same topic)."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "BIOL215"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "minimum third-year standing."
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

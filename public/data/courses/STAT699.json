@@ -1,0 +1,22 @@
+{
+  "pid": "rJPy-YT7N",
+  "code": "STAT699",
+  "title": "Dissertation",
+  "description": null,
+  "notes": [],
+  "credits": "21–30",
+  "hours": null,
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "courses",
+    "need": "all",
+    "timing": "either",
+    "minGrade": null,
+    "minGpa": null,
+    "courses": [
+      "STAT693"
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

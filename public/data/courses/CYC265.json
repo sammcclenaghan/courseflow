@@ -1,0 +1,59 @@
+{
+  "pid": "S1m4xOTmN",
+  "code": "CYC265",
+  "title": "Introduction to Group Work in Child and Youth Care Practice",
+  "description": "Learners focus on the development of diverse ethical skills, knowledge and strategies required for child and youth care practice with groups. Students learn a variety of approaches and techniques, plan and facilitate groups in a blended experiential learning environment. Learners have opportunities to engage in ethical practice in a diverse field and develop a decolonizing lens in work with both equity deserving and general groups.",
+  "notes": [
+    "Credit will be granted for only one of CYC 265, CYC 465.",
+    "Students who have completed equivalent prerequisites may request permission to register in the course.",
+    "Students in the Bachelor of Child and Youth Care program must earn a minimum grade of C+ in all pre- or co-requisites."
+  ],
+  "credits": "1.5",
+  "hours": "0-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC100A",
+          "CYC100B",
+          "CYC110"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC120",
+          "CYC166A",
+          "CYC166B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CYC152"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "admission to an undergraduate program in the School of Child and Youth Care"
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

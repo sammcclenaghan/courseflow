@@ -1,0 +1,36 @@
+{
+  "pid": "S1Uh11KfS",
+  "code": "CIVE448",
+  "title": "Drinking Water Contaminants",
+  "description": "Chemistry in water with a focus on metals or other contaminants, drinking water treatment technologies, toxicology, materials flow and life-cycle thinking, regulations, and an understanding of function in an industrial process.",
+  "notes": [
+    "Credit will be granted for only one of CIVE 448, CIVE 480B (if taken in the same topic), CIVE 548.",
+    "May be offered as a joint undergraduate and graduate class."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": null,
+  "preOrCorequisites": {
+    "type": "some",
+    "count": 1,
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "either",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CIVE310",
+          "CHEM324"
+        ]
+      },
+      {
+        "type": "text",
+        "text": "Permission of Department of Civil Engineering."
+      }
+    ]
+  },
+  "corequisites": null,
+  "recommendations": []
+}

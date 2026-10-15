@@ -1,0 +1,51 @@
+{
+  "pid": "BJKhh_aQN",
+  "code": "MICR402",
+  "title": "Viral Pathogenesis",
+  "description": "Advanced consideration of the molecular aspects of viruses. Emphasis is placed on the animal viruses with respect to infection process, replication cycle, interactions with the host cell, mechanisms of pathogenicity and vaccines.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MICR200A",
+          "MICR200B"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MICR303",
+          "BIOL360"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MICR302",
+          "BIOC299",
+          "BIOC300A"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,16 @@
+{
+  "pid": "Sk1OWFaQE",
+  "code": "WRIT410",
+  "title": "Special Genres Lecture",
+  "description": "An examination of craft in a particular genre, such as nature writing, travel narrative, the prose poem or children's literature.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Minimum second-year standing."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

@@ -1,0 +1,40 @@
+{
+  "pid": "r18zn_aQV",
+  "code": "MATH451",
+  "title": "Probability",
+  "description": "Language of formal probability, laws of large numbers and applications (Weierstrass approximation), central limit theorem, Borel-Cantelli laws, large deviations estimates, Chernoff bounds, number-theoretic applications, coupling of random variables, the probabilistic method (first and second moment methods), combinatorial applications. Additional topics may include: Martingales in discrete probability and applications.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH204",
+          "MATH236",
+          "MATH300"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": 1,
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "MATH352",
+          "STAT350"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

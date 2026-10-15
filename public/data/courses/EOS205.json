@@ -1,0 +1,37 @@
+{
+  "pid": "HJB27uaXN",
+  "code": "EOS205",
+  "title": "Mineralogy",
+  "description": "Introduction to the fundamental principles and concepts of mineralogy and optical mineralogy. A practical and systematic treatment of the common rock-forming minerals and mineral groups. Emphasis is placed on understanding the behaviour of minerals in relation to changing physical and chemical conditions in igneous, metamorphic, and sedimentary environments.",
+  "notes": [],
+  "credits": "1.5",
+  "hours": "3-3-0",
+  "prerequisites": {
+    "type": "all",
+    "items": [
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "EOS120"
+        ]
+      },
+      {
+        "type": "courses",
+        "need": "all",
+        "timing": "completed",
+        "minGrade": null,
+        "minGpa": null,
+        "courses": [
+          "CHEM102"
+        ]
+      }
+    ]
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

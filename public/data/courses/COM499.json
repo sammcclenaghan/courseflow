@@ -1,0 +1,18 @@
+{
+  "pid": "Hk1YkOp74",
+  "code": "COM499",
+  "title": "International Management and Environment",
+  "description": "Conducted overseas as part of INTEP. Provides students with an opportunity to understand how a country's unique cultural, economic, geographical, historical, legal and political environments affect the way business is done in that country.",
+  "notes": [
+    "Credit will be granted for only one of COM 499, ENT 499, HOS 499, IB 410, IB 499, TRM 499."
+  ],
+  "credits": "1.5",
+  "hours": "3-0-0",
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to Business Exchange program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}

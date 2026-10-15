@@ -1,0 +1,18 @@
+{
+  "pid": "ryhH6OT7E",
+  "code": "NRSC599",
+  "title": "MSc Thesis",
+  "description": "A thesis comprising an original scientific study and/or scientific analysis of a problem germane to contemporary neuroscience.",
+  "notes": [
+    "Students who have completed equivalent prerequisites may request permission to register in the course."
+  ],
+  "credits": "9–15",
+  "hours": null,
+  "prerequisites": {
+    "type": "text",
+    "text": "Admission to the Neuroscience program."
+  },
+  "preOrCorequisites": null,
+  "corequisites": null,
+  "recommendations": []
+}
