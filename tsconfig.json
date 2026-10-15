@@ -1,14 +1,10 @@
 {
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["src", "scripts", "worker-configuration.d.ts"],
   "compilerOptions": {
     "target": "ES2022",
-    "jsx": "react-jsx",
     "module": "ESNext",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
+    "lib": ["ES2022"],
+    "types": ["node"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
