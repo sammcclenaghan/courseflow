@@ -7,7 +7,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync
 import { z } from "zod";
 import { parseSection } from "../src/catalog/banner.ts";
 import { parseCourse } from "../src/catalog/kuali.ts";
-import type { Course, TermCourse, TermFile } from "../src/catalog/model.ts";
+import type { Course, Meeting, TermCourse, TermFile } from "../src/catalog/model.ts";
 
 const RAW = "data/raw";
 const OUT = "public/data";
@@ -64,6 +64,12 @@ function buildTerm(term: string): TermFile {
     if (section.term !== term) throw new Error(`${term}: CRN ${section.crn} is in ${section.term}`);
     if (crns.has(section.crn)) throw new Error(`${term}: duplicate CRN ${section.crn}`);
     crns.add(section.crn);
+    // A meeting that never happens would be invisible on the calendar.
+    for (const meeting of section.meetings) {
+      if (meeting.start !== null && !occursOnce(meeting)) {
+        throw new Error(`${term}: CRN ${section.crn} has a meeting that never occurs`);
+      }
+    }
   }
 
   // A term that shrinks by more than a tenth is almost certainly a bad fetch.
@@ -103,6 +109,15 @@ function parse<T>(parser: (raw: unknown) => T, raw: unknown, what: string): T {
   } catch (error) {
     throw new Error(`Can't parse ${what}`, { cause: error });
   }
+}
+
+// Whether any of the meeting's weekdays falls within its date range.
+function occursOnce({ days, startDate, endDate }: Meeting): boolean {
+  const day = (iso: string) => Date.parse(`${iso}T00:00:00Z`) / 86_400_000;
+  const first = day(startDate);
+  const span = day(endDate) - first;
+  // Day 0 of the epoch was a Thursday.
+  return days.some((weekday) => (weekday - ((first + 4) % 7) + 7) % 7 <= span);
 }
 
 function field(raw: unknown, key: string): string {
