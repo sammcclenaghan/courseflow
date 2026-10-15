@@ -1,0 +1,36 @@
+{
+	"term": "202701",
+	"crn": "24307",
+	"subject": "EDCI",
+	"courseNumber": "591",
+	"section": "A01",
+	"title": "SELECTED TOPICS: Researching Educational Policy",
+	"scheduleType": "Lecture Topic",
+	"instructionalMethod": "Face-to-face with some Online",
+	"partOfTerm": "1",
+	"credits": 1.5,
+	"linkId": null,
+	"crossList": null,
+	"crossListAvailable": null,
+	"seats": {
+		"enrolled": 0,
+		"capacity": 25,
+		"available": 25
+	},
+	"waitlist": {
+		"enrolled": 0,
+		"capacity": 0,
+		"available": 0
+	},
+	"meetings": [
+		{
+			"days": [
+				2
+			],
+			"start": 990,
+			"end": 1160,
+			"startDate": "2027-01-06",
+			"endDate": "2027-04-07"
+		}
+	]
+}
