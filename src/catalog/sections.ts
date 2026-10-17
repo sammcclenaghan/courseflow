@@ -23,19 +23,19 @@ export function defaultSections(
   schedule: readonly Section[] = [],
 ): Section[] {
   const sorted = course.sections.toSorted((a, b) =>
-    a.section < b.section ? -1 : 1,
+    a.number < b.number ? -1 : 1,
   );
   if (sorted.length === 0) return [];
-  const leadType = sorted[0].scheduleType;
-  const leads = sorted.filter((s) => s.scheduleType === leadType);
-  const otherTypes = [...new Set(sorted.map((s) => s.scheduleType))].filter(
+  const leadType = sorted[0].type;
+  const leads = sorted.filter((s) => s.type === leadType);
+  const otherTypes = [...new Set(sorted.map((s) => s.type))].filter(
     (type) => type !== leadType,
   );
   const partners = (lead: Section) =>
     otherTypes
       .map((type) =>
         sorted.filter(
-          (s) => s.scheduleType === type && linkGroup(s) === linkGroup(lead),
+          (s) => s.type === type && linkGroup(s) === linkGroup(lead),
         ),
       )
       .filter((options) => options.length > 0);
@@ -77,11 +77,11 @@ export function checkLinks(course: TermCourse) {
   for (const section of course.sections) {
     const group = linkGroup(section);
     if (group === null) continue;
-    if (section.linkId?.[0] !== section.section[0])
+    if (section.linkId?.[0] !== section.number[0])
       throw new Error(
-        `${course.code} ${section.section}: link ID ${section.linkId}`,
+        `${course.code} ${section.number}: link ID ${section.linkId}`,
       );
-    types.set(group, (types.get(group) ?? new Set()).add(section.scheduleType));
+    types.set(group, (types.get(group) ?? new Set()).add(section.type));
   }
   for (const [group, inGroup] of types) {
     if (inGroup.size < 2)

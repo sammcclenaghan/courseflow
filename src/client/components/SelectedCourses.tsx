@@ -31,7 +31,7 @@ export function SelectedCourses() {
             <ul>
               {sections.map((s) => (
                 <li key={s.crn}>
-                  {s.section} · {s.scheduleType} · CRN {s.crn}
+                  {s.number} · {s.type} · CRN {s.crn}
                   {s.title !== course.title && ` · ${s.title}`}
                   {s.note && (
                     <p>

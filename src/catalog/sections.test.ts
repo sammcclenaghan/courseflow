@@ -10,8 +10,8 @@ const TYPES: Record<string, string> = { A: "Lecture", B: "Lab", T: "Tutorial" };
 const section = (spec: string, days?: string, time?: string): Section => {
   const [code, linkId = null] = spec.split("=");
   return testSection(`crn-${code}`, {
-    section: code,
-    scheduleType: TYPES[code[0]],
+    number: code,
+    type: TYPES[code[0]],
     linkId,
     meetings: days && time ? [meeting(days, time)] : [],
   });
@@ -23,7 +23,7 @@ const course = (...sections: Section[]): TermCourse => ({
   sections,
 });
 
-const codes = (sections: Section[]) => sections.map((s) => s.section);
+const codes = (sections: Section[]) => sections.map((s) => s.number);
 const picked = (specs: string) =>
   codes(
     defaultSections(course(...specs.split(" ").map((spec) => section(spec)))),

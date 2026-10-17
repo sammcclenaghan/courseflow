@@ -9,9 +9,9 @@ export const testSection = (
   crn,
   subject: "CSC",
   courseNumber: "110",
-  section: "A01",
+  number: "A01",
   title: "Fundamentals of Programming I",
-  scheduleType: "Lecture",
+  type: "Lecture",
   instructionalMethod: "Face-to-face",
   partOfTerm: "1",
   credits: 1.5,
@@ -30,7 +30,6 @@ const minutes = (time: string) => {
   return h * 60 + m;
 };
 
-/** meeting("Mon Wed", "10:30-11:20") for the fall term; dates can be overridden. */
 export const meeting = (
   days: string,
   time: string | null,

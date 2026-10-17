@@ -7,9 +7,9 @@ const section = (crn: string, code: string, number: string): BannerSection => ({
   crn,
   subject: code.replace(/\d.*/, ""),
   courseNumber: code.replace(/^\D+/, ""),
-  section: number,
+  number,
   title: "Fundamentals of Programming I",
-  scheduleType: "Lecture",
+  type: "Lecture",
   instructionalMethod: "Face-to-face",
   partOfTerm: "1",
   credits: 1.5,
@@ -27,10 +27,10 @@ const notes = parseNotes({
   sections: {
     "10712": {
       course: "CSC110",
-      section: "A01",
+      number: "A01",
       note: "Reserved for students in a Computer Science program.",
     },
-    "10713": { course: "CSC110", section: "A02", note: "Engineering only." },
+    "10713": { course: "CSC110", number: "A02", note: "Engineering only." },
   },
 });
 

@@ -1,9 +1,7 @@
 import { z } from "zod";
 import type { BannerSection, Meeting } from "./model";
 
-// Every value seen across Summer 2026, Fall 2026 and Spring 2027, plus
-// Seminar, which Banner's own lookup lists.
-const scheduleType = z.enum([
+const sectionType = z.enum([
   "Lecture",
   "Lab",
   "Lecture Topic",
@@ -28,7 +26,6 @@ const instructionalMethod = z.enum([
 
 const count = z.number().int().nonnegative();
 
-// In Date.getDay() order, so a day's index is its getDay() number.
 const DAYS = [
   "sunday",
   "monday",
@@ -99,7 +96,7 @@ const bannerSection = z
       .refine((title) => !/&[a-zA-Z]+;/.test(title), {
         message: "unknown HTML entity in title",
       }),
-    scheduleTypeDescription: scheduleType,
+    scheduleTypeDescription: sectionType,
     instructionalMethodDescription: instructionalMethod,
     partOfTerm: z.string().regex(/^(\d|\d[A-Z]|[A-Z]\d)$/),
     creditHours: z.number().nonnegative().nullable(),
@@ -126,9 +123,9 @@ const bannerSection = z
     crn: raw.courseReferenceNumber,
     subject: raw.subject,
     courseNumber: raw.courseNumber,
-    section: raw.sequenceNumber,
+    number: raw.sequenceNumber,
     title: raw.courseTitle,
-    scheduleType: raw.scheduleTypeDescription,
+    type: raw.scheduleTypeDescription,
     instructionalMethod: raw.instructionalMethodDescription,
     partOfTerm: raw.partOfTerm,
     credits: raw.creditHours,

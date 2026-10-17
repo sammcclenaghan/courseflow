@@ -10,7 +10,7 @@ const notesFile = z.strictObject({
     z.string().regex(/^\d{5}$/),
     z.strictObject({
       course: z.string().min(1),
-      section: z.string().regex(/^[A-Z]\d\d$/),
+      number: z.string().regex(/^[A-Z]\d\d$/),
       note: z.string().min(1),
     }),
   ),
@@ -34,7 +34,7 @@ export function attachNotes(
     const entry = notes?.sections[section.crn];
     const same =
       entry?.course === section.subject + section.courseNumber &&
-      entry.section === section.section;
+      entry.number === section.number;
     return { ...section, note: same ? entry.note : null };
   });
 }

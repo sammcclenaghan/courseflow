@@ -132,7 +132,7 @@ function buildTerm(term: string): TermFile {
     .map(([code, sections]) => ({
       code,
       title: courses.get(code)?.title ?? sections[0].title,
-      sections: sections.sort((a, b) => a.section.localeCompare(b.section)),
+      sections: sections.sort((a, b) => a.number.localeCompare(b.number)),
     }))
     .sort((a, b) => a.code.localeCompare(b.code, "en", { numeric: true }));
   for (const course of termCourses) {
