@@ -1,9 +1,9 @@
 import { displayCode } from "../../catalog/code.ts";
 import { catalog } from "../catalog.ts";
-import { removeCourse, selected } from "../schedule.ts";
+import { removeCourse, selectedCourses } from "../schedule.ts";
 
 export function SelectedCourses() {
-  const courses = selected.value;
+  const courses = selectedCourses.value;
   const c = catalog.value;
   // Notes are a June snapshot, so they always say how old they are.
   const notesAsOf =
@@ -15,16 +15,27 @@ export function SelectedCourses() {
       : null;
   return (
     <section>
-      <h2>Your courses</h2>
+      <h2>Selected courses</h2>
       {courses.length === 0 && <p>No courses added yet.</p>}
       <ul>
-        {courses.map(({ course, sections }) => (
+        {courses.map(({ course, sections, colour }) => (
           <li key={course.code}>
+            <span
+              aria-hidden="true"
+              style={{
+                display: "inline-block",
+                width: 10,
+                height: 10,
+                marginRight: 6,
+                borderRadius: 2,
+                background: `var(--color-course-${colour}-ring)`,
+              }}
+            />
             <strong>{displayCode(course.code)}</strong> {course.title}{" "}
             <button
               type="button"
               aria-label={`Remove ${displayCode(course.code)}`}
-              onClick={() => removeCourse(course)}
+              onClick={() => removeCourse(course.code)}
             >
               Remove
             </button>

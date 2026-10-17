@@ -1,6 +1,6 @@
 import { displayCode } from "../../catalog/code.ts";
 import { catalog } from "../catalog.ts";
-import { addCourse, addedCodes } from "../schedule.ts";
+import { addCourse, selectedCodes } from "../schedule.ts";
 import { query, results } from "../search.ts";
 
 export function Search() {
@@ -24,7 +24,7 @@ export function Search() {
       )}
       <ul>
         {results.value.map((course) => {
-          const added = addedCodes.value.has(course.code);
+          const added = selectedCodes.value.has(course.code);
           return (
             <li key={course.code}>
               {displayCode(course.code)} · {course.title}{" "}

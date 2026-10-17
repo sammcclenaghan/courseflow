@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Section, TermCourse } from "./model";
-import { checkLinks, defaultSections } from "./sections";
+import { checkLinks, defaultSectionSet } from "./sections";
 import { meeting, testSection } from "./testing";
 
 const TYPES: Record<string, string> = { A: "Lecture", B: "Lab", T: "Tutorial" };
@@ -26,10 +26,10 @@ const course = (...sections: Section[]): TermCourse => ({
 const codes = (sections: Section[]) => sections.map((s) => s.number);
 const picked = (specs: string) =>
   codes(
-    defaultSections(course(...specs.split(" ").map((spec) => section(spec)))),
+    defaultSectionSet(course(...specs.split(" ").map((spec) => section(spec)))),
   );
 
-describe("defaultSections", () => {
+describe("defaultSectionSet", () => {
   it("picks the one section of a lecture-only course", () => {
     expect(picked("A01")).toEqual(["A01"]);
   });
@@ -65,14 +65,14 @@ describe("defaultSections", () => {
 });
 
 // Real 202609 timetables where the lowest lab or tutorial overlaps the lecture.
-describe("defaultSections around conflicts", () => {
+describe("defaultSectionSet around conflicts", () => {
   it("skips a lab that overlaps its own lecture (CSC110)", () => {
     const csc110 = course(
       section("A01=A1", "Tue Wed Fri", "09:30-10:20"),
       section("B01=B1", "Tue", "08:30-10:20"),
       section("B02=B1", "Tue", "10:30-12:20"),
     );
-    expect(codes(defaultSections(csc110))).toEqual(["A01", "B02"]);
+    expect(codes(defaultSectionSet(csc110))).toEqual(["A01", "B02"]);
   });
 
   it("skips a tutorial that overlaps its own lecture (MATH100)", () => {
@@ -81,7 +81,7 @@ describe("defaultSections around conflicts", () => {
       section("T01=T1", "Mon", "12:30-13:20"),
       section("T02=T1", "Mon", "08:30-09:20"),
     );
-    expect(codes(defaultSections(math100))).toEqual(["A01", "T02"]);
+    expect(codes(defaultSectionSet(math100))).toEqual(["A01", "T02"]);
   });
 
   it("backtracks when the first lab leaves no tutorial that fits", () => {
@@ -91,7 +91,7 @@ describe("defaultSections around conflicts", () => {
       section("B02", "Tue", "10:30-12:20"),
       section("T01", "Mon", "11:30-12:20"),
     );
-    expect(codes(defaultSections(c))).toEqual(["A01", "B02", "T01"]);
+    expect(codes(defaultSectionSet(c))).toEqual(["A01", "B02", "T01"]);
   });
 
   it("moves to the next lecture when nothing fits the lowest one", () => {
@@ -100,7 +100,7 @@ describe("defaultSections around conflicts", () => {
       section("A02", "Wed", "10:30-11:20"),
       section("B01", "Tue", "10:30-12:20"),
     );
-    expect(codes(defaultSections(c))).toEqual(["A02", "B01"]);
+    expect(codes(defaultSectionSet(c))).toEqual(["A02", "B01"]);
   });
 
   it("falls back to the lowest sections when nothing can avoid a conflict", () => {
@@ -109,7 +109,7 @@ describe("defaultSections around conflicts", () => {
       section("B01", "Tue", "10:30-12:20"),
       section("B02", "Tue", "11:00-12:00"),
     );
-    expect(codes(defaultSections(c))).toEqual(["A01", "B01"]);
+    expect(codes(defaultSectionSet(c))).toEqual(["A01", "B01"]);
   });
 
   const csc110 = course(
@@ -124,19 +124,19 @@ describe("defaultSections around conflicts", () => {
     const math = testSection("20001", {
       meetings: [meeting("Tue", "11:00-11:50")],
     });
-    expect(codes(defaultSections(csc110, [math]))).toEqual(["A01", "B03"]);
+    expect(codes(defaultSectionSet(csc110, [math]))).toEqual(["A01", "B03"]);
     const early = testSection("20002", {
       meetings: [meeting("Wed", "09:30-10:20")],
     });
     // A01 conflicts, so A02 (Mon/Thu) leads, and B01 no longer overlaps it.
-    expect(codes(defaultSections(csc110, [early]))).toEqual(["A02", "B01"]);
+    expect(codes(defaultSectionSet(csc110, [early]))).toEqual(["A02", "B01"]);
   });
 
   it("still adds the course when nothing fits around the schedule", () => {
     const busy = testSection("20003", {
       meetings: [meeting("Mon Tue Wed Thu Fri", "08:00-15:00")],
     });
-    expect(codes(defaultSections(csc110, [busy]))).toEqual(["A01", "B02"]);
+    expect(codes(defaultSectionSet(csc110, [busy]))).toEqual(["A01", "B02"]);
   });
 });
 

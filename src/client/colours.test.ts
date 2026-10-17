@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { COLORS, nextColor, type Color } from "./colours";
+import { COLORS, type Color, nextColor } from "./colours";
 
 describe("nextColour", () => {
   it("hands out every colour once before repeating", () => {

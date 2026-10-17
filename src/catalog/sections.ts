@@ -14,7 +14,7 @@ const linkGroup = (section: Section) => section.linkId?.slice(1) ?? null;
  * but never refuses: if nothing fits, it falls back to the course alone, and
  * if even that can't avoid a conflict, to the lowest sections, conflict and all.
  */
-export function defaultSections(
+export function defaultSectionSet(
   course: TermCourse,
   schedule: readonly Section[] = [],
 ): Section[] {
@@ -67,7 +67,7 @@ function firstFit(
   return null;
 }
 
-/** Throws if a course's link IDs don't fit the convention defaultSections relies on. */
+/** Throws if a course's link IDs don't fit the convention defaultSectionSet relies on. */
 export function checkLinks(course: TermCourse) {
   const types = new Map<string, Set<string>>();
   for (const section of course.sections) {
