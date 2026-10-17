@@ -1,5 +1,5 @@
+import { displayCode } from "../../catalog/code.ts";
 import { catalog } from "../catalog.ts";
-import { displayCode } from "../format.ts";
 import { addCourse, addedCodes } from "../schedule.ts";
 import { query, results } from "../search.ts";
 

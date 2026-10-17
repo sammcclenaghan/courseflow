@@ -1,3 +1,4 @@
+import { parseCode } from "./code.ts";
 import type { TermCourse } from "./model.ts";
 
 export type SearchEntry = {
@@ -28,13 +29,11 @@ const titleWords = (title: string) => {
 export function indexCourses(courses: TermCourse[]): SearchEntry[] {
   return courses
     .map((course) => {
-      const code = course.code.replace(/[^A-Z0-9]/g, "");
-      const match = /^[A-Z]+(\d{3}[A-Z]?)$/.exec(code);
-      if (!match) throw new Error(`Unexpected course code: ${course.code}`);
+      const { subject, number } = parseCode(course.code);
       return {
         course,
-        code,
-        number: match[1],
+        code: subject.replaceAll("-", "") + number,
+        number,
         words: titleWords(course.title),
       };
     })

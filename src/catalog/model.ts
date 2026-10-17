@@ -55,7 +55,8 @@ export type Requisites = Pick<
   "prerequisites" | "preOrCorequisites" | "corequisites" | "recommendations"
 >;
 
-export type Section = {
+/** One section as Banner's bulk search returns it. */
+export type BannerSection = {
   term: string;
   crn: string;
   subject: string;
@@ -74,6 +75,11 @@ export type Section = {
   meetings: Meeting[];
 };
 
+export type Section = BannerSection & {
+  /** Free text from the June 2026 Banner 8 scrape, e.g. "Reserved for students in an Engineering program." */
+  note: string | null;
+};
+
 /** One course in a term file, with every section offered that term. */
 export type TermCourse = {
   /** e.g. "CSC110" */
@@ -88,5 +94,7 @@ export type TermFile = {
   term: string;
   /** When the sections, and so their seats, were fetched. */
   importedAt: string;
+  /** When the section notes were scraped; null for terms without a notes snapshot. */
+  notesAsOf: string | null;
   courses: TermCourse[];
 };

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { Meeting, Section } from "./model";
+import type { BannerSection, Meeting } from "./model";
 
 // Every value seen across Summer 2026, Fall 2026 and Spring 2027, plus
 // Seminar, which Banner's own lookup lists.
@@ -152,7 +152,7 @@ const bannerSection = z
     ).sort(byDateThenTime),
   }));
 
-export function parseSection(raw: unknown): Section {
+export function parseSection(raw: unknown): BannerSection {
   return bannerSection.parse(raw);
 }
 

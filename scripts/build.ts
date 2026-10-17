@@ -1,15 +1,25 @@
-// Turns data/raw/ into public/data/, offline. Throws on anything it hasn't
-// seen before, and writes nothing unless every term passes.
-//
-//   nub run catalog:build
-
-import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import {
+  existsSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { z } from "zod";
 import { parseSection } from "../src/catalog/banner.ts";
 import { parseCourse } from "../src/catalog/kuali.ts";
-import type { Course, Meeting, TermCourse, TermFile } from "../src/catalog/model.ts";
+import type {
+  Course,
+  Meeting,
+  TermCourse,
+  TermFile,
+} from "../src/catalog/model.ts";
+import { attachNotes, parseNotes } from "../src/catalog/notes.ts";
+import { checkLinks } from "../src/catalog/sections.ts";
 
 const RAW = "data/raw";
+const NOTES = "data/notes";
 const OUT = "public/data";
 
 const kuali = z
@@ -17,8 +27,13 @@ const kuali = z
   .parse(readJson(`${RAW}/kuali.json`));
 const courses = new Map<string, Course>();
 for (const raw of kuali.courses) {
-  const course = parse(parseCourse, raw, `Kuali course ${field(raw, "__catalogCourseId")}`);
-  if (courses.has(course.code)) throw new Error(`Duplicate course ${course.code}`);
+  const course = parse(
+    parseCourse,
+    raw,
+    `Kuali course ${field(raw, "__catalogCourseId")}`,
+  );
+  if (courses.has(course.code))
+    throw new Error(`Duplicate course ${course.code}`);
   courses.set(course.code, course);
 }
 
@@ -52,22 +67,32 @@ function buildTerm(term: string): TermFile {
     })
     .parse(readJson(`${RAW}/banner-${term}.json`));
   const sections = banner.rows.map((row) =>
-    parse(parseSection, row, `${term} CRN ${field(row, "courseReferenceNumber")}`),
+    parse(
+      parseSection,
+      row,
+      `${term} CRN ${field(row, "courseReferenceNumber")}`,
+    ),
   );
 
   if (sections.length === 0) throw new Error(`${term}: no sections`);
   if (sections.length !== banner.totalCount) {
-    throw new Error(`${term}: ${sections.length} of ${banner.totalCount} sections`);
+    throw new Error(
+      `${term}: ${sections.length} of ${banner.totalCount} sections`,
+    );
   }
   const crns = new Set<string>();
   for (const section of sections) {
-    if (section.term !== term) throw new Error(`${term}: CRN ${section.crn} is in ${section.term}`);
-    if (crns.has(section.crn)) throw new Error(`${term}: duplicate CRN ${section.crn}`);
+    if (section.term !== term)
+      throw new Error(`${term}: CRN ${section.crn} is in ${section.term}`);
+    if (crns.has(section.crn))
+      throw new Error(`${term}: duplicate CRN ${section.crn}`);
     crns.add(section.crn);
     // A meeting that never happens would be invisible on the calendar.
     for (const meeting of section.meetings) {
       if (meeting.start !== null && !occursOnce(meeting)) {
-        throw new Error(`${term}: CRN ${section.crn} has a meeting that never occurs`);
+        throw new Error(
+          `${term}: CRN ${section.crn} has a meeting that never occurs`,
+        );
       }
     }
   }
@@ -83,12 +108,25 @@ function buildTerm(term: string): TermFile {
       )
     : new Set<string>();
   if (crns.size < previous.size * 0.9) {
-    throw new Error(`${term}: ${crns.size} sections, down from ${previous.size}`);
+    throw new Error(
+      `${term}: ${crns.size} sections, down from ${previous.size}`,
+    );
   }
   const added = [...crns].filter((crn) => !previous.has(crn)).length;
   const removed = [...previous].filter((crn) => !crns.has(crn)).length;
 
-  const byCode = Map.groupBy(sections, (section) => section.subject + section.courseNumber);
+  // Only some terms have a notes snapshot; the rest get null notes.
+  const notesPath = `${NOTES}/${term}.json`;
+  const notes = existsSync(notesPath)
+    ? parse(parseNotes, readJson(notesPath), notesPath)
+    : null;
+  const withNotes = attachNotes(sections, notes);
+  const noted = withNotes.filter((section) => section.note !== null).length;
+
+  const byCode = Map.groupBy(
+    withNotes,
+    (section) => section.subject + section.courseNumber,
+  );
   const termCourses: TermCourse[] = [...byCode]
     .map(([code, sections]) => ({
       code,
@@ -96,11 +134,23 @@ function buildTerm(term: string): TermFile {
       sections: sections.sort((a, b) => a.section.localeCompare(b.section)),
     }))
     .sort((a, b) => a.code.localeCompare(b.code, "en", { numeric: true }));
+  for (const course of termCourses) {
+    try {
+      checkLinks(course);
+    } catch (error) {
+      throw new Error(`${term}: unexpected link IDs`, { cause: error });
+    }
+  }
 
   console.log(
-    `${term}: ${termCourses.length} courses, ${sections.length} sections (+${added} -${removed})`,
+    `${term}: ${termCourses.length} courses, ${sections.length} sections (+${added} -${removed}), ${noted} with notes`,
   );
-  return { term, importedAt: banner.fetchedAt, courses: termCourses };
+  return {
+    term,
+    importedAt: banner.fetchedAt,
+    notesAsOf: notes?.scrapedAt ?? null,
+    courses: termCourses,
+  };
 }
 
 function parse<T>(parser: (raw: unknown) => T, raw: unknown, what: string): T {
