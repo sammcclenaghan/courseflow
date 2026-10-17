@@ -5,6 +5,7 @@ export type SearchEntry = {
   course: TermCourse;
   code: string;
   number: string;
+  graduate: boolean;
   words: string[];
 };
 
@@ -34,16 +35,13 @@ export function indexCourses(courses: TermCourse[]): SearchEntry[] {
         course,
         code: subject.replaceAll("-", "") + number,
         number,
+        graduate: Number(number.slice(0, 3)) >= 500,
         words: titleWords(course.title),
       };
     })
     .sort((a, b) => (a.code < b.code ? -1 : a.code > b.code ? 1 : 0));
 }
 
-/**
- * Ranks code prefix ("csc 1"), then number prefix ("110"), then titles where
- * every query word starts some title word ("intro prog"). Code order within a rank.
- */
 export function searchCourses(
   index: SearchEntry[],
   query: string,
@@ -53,14 +51,20 @@ export function searchCourses(
   if (words.length === 0) return [];
   const compact = words.join("");
 
-  const ranks: TermCourse[][] = [[], [], []];
+  // Two buckets per rank: undergraduate, then graduate.
+  const buckets: TermCourse[][] = Array.from({ length: 6 }, () => []);
   for (const entry of index) {
-    if (entry.code.startsWith(compact)) ranks[0].push(entry.course);
-    else if (entry.number.startsWith(compact)) ranks[1].push(entry.course);
-    else if (
-      words.every((word) => entry.words.some((title) => title.startsWith(word)))
-    )
-      ranks[2].push(entry.course);
+    const rank = entry.code.startsWith(compact)
+      ? 0
+      : entry.number.startsWith(compact)
+        ? 1
+        : words.every((word) =>
+              entry.words.some((title) => title.startsWith(word)),
+            )
+          ? 2
+          : -1;
+    if (rank >= 0)
+      buckets[rank * 2 + (entry.graduate ? 1 : 0)].push(entry.course);
   }
-  return ranks.flat().slice(0, limit);
+  return buckets.flat().slice(0, limit);
 }

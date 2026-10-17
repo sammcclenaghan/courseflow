@@ -77,6 +77,38 @@ describe("searchCourses", () => {
   });
 });
 
+// Real 202609 courses: without this, "statistics" led with BIOL 563.
+describe("searchCourses with graduate courses", () => {
+  const mixed = indexCourses([
+    course("BIOL563", "Statistics for Biologists"),
+    course("STAT563", "Statistics Seminar"),
+    course("ECON245", "Descriptive Statistics and Probability"),
+    course("STAT255", "Statistics for Life Sciences I"),
+    course("CSC579", "Overlay and Peer-to-Peer Networking"),
+    course("CSC466", "Overlay and Peer-to-Peer Networking"),
+    course("CSC501", "Algorithms and Data Models"),
+    course("CSC110", "Fundamentals of Programming I"),
+  ]);
+  const find = (query: string) =>
+    searchCourses(mixed, query).map((c) => c.code);
+
+  it("lists undergraduate courses before graduate ones within a rank", () => {
+    expect(find("statistics")).toEqual([
+      "ECON245",
+      "STAT255",
+      "BIOL563",
+      "STAT563",
+    ]);
+    expect(find("networking")).toEqual(["CSC466", "CSC579"]);
+  });
+
+  it("still ranks a better match above an undergraduate one", () => {
+    expect(find("csc")).toEqual(["CSC110", "CSC466", "CSC501", "CSC579"]);
+    // STAT 563 matches by code, so it beats ECON 245's title match.
+    expect(find("stat")).toEqual(["STAT255", "STAT563", "ECON245", "BIOL563"]);
+  });
+});
+
 // Real UVic codes and titles with unusual spelling or punctuation.
 describe("searchCourses on awkward real titles", () => {
   const real = indexCourses([
