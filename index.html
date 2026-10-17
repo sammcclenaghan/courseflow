@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 		<title>CourseFlow</title>
+		<!-- Same file as TERM in src/client/catalog.ts; starts it downloading before the JS runs. -->
+		<link rel="preload" href="/data/terms/202609.json" as="fetch" crossorigin />
+
 	</head>
 	<body>
 		<div id="app"></div>
