@@ -8,6 +8,7 @@ import {
 } from "node:fs";
 import { z } from "zod";
 import { parseSection } from "../src/catalog/banner.ts";
+import { dayNumber, weekday } from "../src/catalog/dates.ts";
 import { parseCourse } from "../src/catalog/kuali.ts";
 import type {
   Course,
@@ -163,11 +164,9 @@ function parse<T>(parser: (raw: unknown) => T, raw: unknown, what: string): T {
 
 // Whether any of the meeting's weekdays falls within its date range.
 function occursOnce({ days, startDate, endDate }: Meeting): boolean {
-  const day = (iso: string) => Date.parse(`${iso}T00:00:00Z`) / 86_400_000;
-  const first = day(startDate);
-  const span = day(endDate) - first;
-  // Day 0 of the epoch was a Thursday.
-  return days.some((weekday) => (weekday - ((first + 4) % 7) + 7) % 7 <= span);
+  const first = dayNumber(startDate);
+  const span = dayNumber(endDate) - first;
+  return days.some((day) => (day - weekday(first) + 7) % 7 <= span);
 }
 
 function field(raw: unknown, key: string): string {

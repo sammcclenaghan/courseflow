@@ -36,7 +36,9 @@ export const addedCodes = computed(
 
 export function addCourse(course: TermCourse) {
   if (addedCodes.value.has(course.code)) return;
-  picks.value = [...picks.value, ...defaultSections(course).map((s) => s.crn)];
+  const schedule = selected.value.flatMap(({ sections }) => sections);
+  const sections = defaultSections(course, schedule);
+  picks.value = [...picks.value, ...sections.map((s) => s.crn)];
 }
 
 export function removeCourse(course: TermCourse) {
