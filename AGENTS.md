@@ -26,9 +26,13 @@ This repository is a VERY EARLY WIP. Proposing sweeping changes that improve lon
 ## Core Priorities
 
 1. Performance
-2. Free tier first: Every architectural decision must keep us inside Cloudflare's free tier.
+2. Free tier first: Every architectural decision must keep us inside Cloudflare's free tier/2. Embrace solving for constraints, don't work around them.
 3. Correctness over features: Schedule conflicts, term codes, CRN lookups, prereq rendering should always be 100% accurate. A wrong schedule is worse than no schedule.
 
 ## Maintainability
 
 Long term maintainability is a core priority. If you add new functionality, first check if there is shared logic that can be extracted to a seperate module. Consistent duplicate logic across multiple files is a code smell and should be avoided. Don't be afraid to change existing code. Don't take shortcuts just by adding local logic to solve a problem.
+
+## Learning
+
+@LEARNING.MD
