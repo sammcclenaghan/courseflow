@@ -1,4 +1,4 @@
-import { type Occurrence, occurrences } from "./clashes.ts";
+import { type Occurrence, occurrences } from "./conflicts.ts";
 import type { Section } from "./model.ts";
 
 /** Where a class sits in its day column, as fractions of the column's width. */
@@ -19,7 +19,7 @@ const MAX_INDENT = 0.6;
  * Google Calendar's rule. Classes that overlap form a cluster. Within it,
  * classes starting less than 30 minutes after a group's first class share the
  * width side by side; a later group is indented 40% (at most 60%) and drawn
- * on top, so a staggered clash visibly lands partway through. Classes that
+ * on top, so a staggered conflict visibly lands partway through. Classes that
  * only touch (10:20 end, 10:20 start) don't overlap and get the full width.
  */
 export function layoutDay<T extends { start: number; end: number }>(

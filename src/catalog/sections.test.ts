@@ -65,7 +65,7 @@ describe("defaultSections", () => {
 });
 
 // Real 202609 timetables where the lowest lab or tutorial overlaps the lecture.
-describe("defaultSections around clashes", () => {
+describe("defaultSections around conflicts", () => {
   it("skips a lab that overlaps its own lecture (CSC110)", () => {
     const csc110 = course(
       section("A01=A1", "Tue Wed Fri", "09:30-10:20"),
@@ -103,7 +103,7 @@ describe("defaultSections around clashes", () => {
     expect(codes(defaultSections(c))).toEqual(["A02", "B01"]);
   });
 
-  it("falls back to the lowest sections when nothing can avoid a clash", () => {
+  it("falls back to the lowest sections when nothing can avoid a conflict", () => {
     const c = course(
       section("A01", "Tue", "10:30-11:20"),
       section("B01", "Tue", "10:30-12:20"),
@@ -128,7 +128,7 @@ describe("defaultSections around clashes", () => {
     const early = testSection("20002", {
       meetings: [meeting("Wed", "09:30-10:20")],
     });
-    // A01 clashes, so A02 (Mon/Thu) leads, and B01 no longer overlaps it.
+    // A01 conflicts, so A02 (Mon/Thu) leads, and B01 no longer overlaps it.
     expect(codes(defaultSections(csc110, [early]))).toEqual(["A02", "B01"]);
   });
 

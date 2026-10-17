@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { findClashes } from "./clashes";
+import { findConflicts } from "./conflicts";
 import { dayNumber } from "./dates";
 import { layoutDay, weekDays } from "./layout";
 import { meeting, testSection } from "./testing";
@@ -121,12 +121,12 @@ describe("weekDays", () => {
     expect(weekDays(november, dayNumber("2026-11-02"))[0]).toHaveLength(1);
   });
 
-  it("places what the clash check reports as a clash side by side", () => {
+  it("places what the conflict check reports as a conflict side by side", () => {
     const sections = [
       testSection("10001", { meetings: [meeting("Mon", "10:30-11:20")] }),
       testSection("10002", { meetings: [meeting("Mon", "10:30-11:20")] }),
     ];
-    expect(findClashes(sections)[0].days).toContain(monday);
+    expect(findConflicts(sections)[0].days).toContain(monday);
     expect(weekDays(sections, monday)[0].map((o) => o.width)).toEqual([
       0.5, 0.5,
     ]);

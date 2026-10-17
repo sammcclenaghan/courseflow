@@ -1,22 +1,18 @@
-import { clashChecker } from "./clashes.ts";
+import { conflictChecker } from "./conflicts.ts";
 import type { Section, TermCourse } from "./model.ts";
 
-// UVic link IDs are a section letter plus a group number: lecture A1 goes with
-// lab B1 and tutorial T1, A2 with B2. Banner's own rules aren't in the bulk
-// search results, so this is inferred, and checkLinks makes the build fail if
-// the data ever stops fitting it.
 const linkGroup = (section: Section) => section.linkId?.slice(1) ?? null;
 
 /**
  * The lowest-numbered sections that work together: a lead section (usually
  * the lowest lecture) plus the lowest of each other type in its link group,
- * skipping any that clash with what's already picked. CSC110's A01 gets B02,
+ * skipping any that conflict with what's already picked. CSC110's A01 gets B02,
  * since B01 overlaps it. MECH580's A01 (A1) gets B01 (B1) but no tutorial,
  * since its only tutorials link to other lectures.
  *
  * Given the rest of a schedule, it prefers sections that also fit around it,
  * but never refuses: if nothing fits, it falls back to the course alone, and
- * if even that can't avoid a clash, to the lowest sections, clash and all.
+ * if even that can't avoid a conflict, to the lowest sections, conflict and all.
  */
 export function defaultSections(
   course: TermCourse,
@@ -49,7 +45,7 @@ export function defaultSections(
     return null;
   };
   return (
-    (schedule.length > 0 ? search(clashChecker([...schedule])) : null) ??
+    (schedule.length > 0 ? search(conflictChecker([...schedule])) : null) ??
     search() ?? [leads[0], ...partners(leads[0]).map((options) => options[0])]
   );
 }
@@ -62,9 +58,9 @@ function firstFit(
   busy?: (section: Section) => Section[],
 ): Section[] | null {
   if (options.length === 0) return chosen;
-  const clashesWith = clashChecker(chosen);
+  const conflictsWith = conflictChecker(chosen);
   for (const candidate of options[0]) {
-    if (clashesWith(candidate).length || busy?.(candidate).length) continue;
+    if (conflictsWith(candidate).length || busy?.(candidate).length) continue;
     const found = firstFit([...chosen, candidate], options.slice(1), busy);
     if (found) return found;
   }

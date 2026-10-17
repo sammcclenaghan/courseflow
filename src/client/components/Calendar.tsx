@@ -1,5 +1,5 @@
-import type { Occurrence } from "../../catalog/clashes.ts";
 import { displayCode } from "../../catalog/code.ts";
+import type { Occurrence } from "../../catalog/conflicts.ts";
 import type { Placed } from "../../catalog/layout.ts";
 import {
   colorByCrn,
