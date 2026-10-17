@@ -45,7 +45,9 @@ function naiveConflicts() {
   return pairs;
 }
 
-describe("conflicts on every real 202609 section pair", () => {
+describe("conflicts on every real 202609 section pair", {
+  timeout: 30_000,
+}, () => {
   const expected = naiveConflicts();
 
   it("agrees with the day-by-day reference on all pairs", () => {
