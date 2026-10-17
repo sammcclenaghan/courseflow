@@ -3,13 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "wrangler dev",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "vitest run",
     "format": "biome format",
     "lint": "biome lint",
     "check": "biome check",
     "typecheck": "tsc --noEmit",
-    "deploy": "wrangler deploy",
+    "deploy": "vite build && wrangler deploy",
     "cf-typegen": "wrangler types",
     "catalog:fetch": "node scripts/fetch.ts",
     "catalog:build": "node scripts/build.ts",
@@ -22,16 +24,22 @@
     "deps:update": "nub update --latest --exact"
   },
   "dependencies": {
-    "hono": "4.13.13"
+    "@preact/signals": "2.11.3",
+    "hono": "4.13.13",
+    "preact": "11.0.1"
   },
   "devDependencies": {
+    "@babel/core": "7.29.7",
     "@biomejs/biome": "2.5.9",
+    "@cloudflare/vite-plugin": "1.63.1",
+    "@preact/preset-vite": "2.10.6",
     "@types/jsdom": "30.0.0",
     "@types/node": "22.20.0",
     "jsdom": "28.1.0",
     "typescript": "6.0.3",
+    "vite": "8.3.4",
     "vitest": "4.1.11",
-    "wrangler": "4.125.0",
+    "wrangler": "4.149.0",
     "zod": "4.4.3"
   },
   "allowScripts": {

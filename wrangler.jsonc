@@ -1,31 +1,32 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "course-flow-v4",
-	"compatibility_date": "2026-06-23",
-	"main": "src/index.ts",
-	"assets": {
-		"directory": "public"
-	},
-	// Empty rather than omitted: without the key, deploys keep existing crons.
-	"triggers": {
-		"crons": []
-	},
-	"observability": {
-		"enabled": true,
-		"head_sampling_rate": 0.1,
-		"logs": {
-			"head_sampling_rate": 0.1
-		},
-		"traces": {
-			"head_sampling_rate": 0.1
-		}
-	},
-	"d1_databases": [
-		{
-			"binding": "DB",
-			"database_name": "course-flow-v4",
-			"database_id": "a5fe7d9c-7715-4a4f-a715-8e0fb49a58ec",
-			"migrations_dir": "migrations"
-		}
-	]
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "course-flow-v4",
+  "compatibility_date": "2026-06-23",
+  "main": "src/index.ts",
+  "assets": {
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"],
+  },
+  // Empty rather than omitted: without the key, deploys keep existing crons.
+  "triggers": {
+    "crons": [],
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1,
+    "logs": {
+      "head_sampling_rate": 0.1,
+    },
+    "traces": {
+      "head_sampling_rate": 0.1,
+    },
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "course-flow-v4",
+      "database_id": "a5fe7d9c-7715-4a4f-a715-8e0fb49a58ec",
+      "migrations_dir": "migrations",
+    },
+  ],
 }
