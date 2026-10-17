@@ -1,5 +1,7 @@
 import { render } from "preact";
 import { catalog } from "./catalog.ts";
+import { Search } from "./components/Search.tsx";
+import { SelectedCourses } from "./components/SelectedCourses.tsx";
 import { health } from "./health.ts";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         {c.kind === "ok" &&
           `${c.data.courses.length.toLocaleString()} courses loaded for ${c.data.term}`}
       </p>
+      <SelectedCourses />
+      <Search />
     </>
   );
 }
