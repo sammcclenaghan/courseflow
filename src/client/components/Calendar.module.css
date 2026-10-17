@@ -1,0 +1,137 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+  overflow: clip;
+  background: var(--color-surface);
+  border-radius: var(--radius-panel);
+  box-shadow: var(--shadow-ring);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-2);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.arrows {
+  display: flex;
+}
+
+.title {
+  margin: 0 0 0 var(--spacing-2);
+  font-size: var(--text-md);
+  line-height: var(--leading-event);
+  font-weight: var(--font-weight-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+/* The day names and the grid share one set of columns. */
+.days,
+.columns {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.top {
+  display: flex;
+  border-bottom: 1px solid var(--color-line);
+  scrollbar-gutter: stable;
+}
+
+.dayName {
+  padding: var(--spacing-1_5) var(--spacing-2);
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+}
+
+.day {
+  position: relative;
+}
+
+.dayName + .dayName,
+.day + .day {
+  border-left: 1px solid var(--color-line);
+}
+
+.gutter {
+  width: 56px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--color-line);
+}
+
+/* 8 AM to 8 PM exactly fills the panel; later classes make it scroll. */
+.body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+.canvas {
+  display: flex;
+  height: calc(100% * var(--hours) / 12);
+}
+
+.hours {
+  position: relative;
+}
+
+.hour {
+  position: absolute;
+  right: var(--spacing-2);
+  transform: translateY(-50%);
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.columns {
+  flex: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent calc(100% - 1px),
+    var(--color-line-subtle) 0
+  );
+  background-size: 100% calc(100% / var(--hours));
+}
+
+/* An event's slot: 1px clear above and below, so back-to-back classes separate. */
+.slot {
+  position: absolute;
+  padding: 1px var(--spacing-0_5) 1px 1px;
+}
+
+.event {
+  height: 100%;
+  min-height: 22px;
+  overflow: clip;
+  padding: var(--spacing-1) var(--spacing-1_5);
+  border-radius: var(--radius-key);
+  line-height: var(--leading-event);
+}
+
+/* A later-starting class drawn over an earlier one gets a white edge. */
+.slot[data-on-top] .event {
+  box-shadow: 0 0 0 2px var(--color-surface);
+}
+
+.line {
+  display: flex;
+  gap: var(--spacing-1_5);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.course {
+  font-weight: var(--font-weight-medium);
+}
+
+.quiet {
+  color: var(--color-on-tint);
+  font-variant-numeric: tabular-nums;
+}
