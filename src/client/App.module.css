@@ -1,0 +1,31 @@
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: var(--spacing-4);
+  height: 100dvh;
+  padding: var(--spacing-4);
+  background: var(--color-surface-subtle);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.status {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+/* Narrow screens stack, with the calendar a fixed height. Phones get their own design later. */
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+    grid-template-rows: 640px auto;
+    height: auto;
+  }
+}
