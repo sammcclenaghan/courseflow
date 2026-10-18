@@ -1,39 +1,12 @@
 import { dayNumber, mondayOf, weekday } from "./dates.ts";
 import type { Section } from "./model.ts";
-
-/** One class on a real date: `day` from dayNumber, times in minutes after midnight. */
-export type Occurrence = {
-  section: Section;
-  day: number;
-  start: number;
-  end: number;
-};
-
-// Catalog sections never change once loaded, so each is expanded once.
-const expanded = new WeakMap<Section, Occurrence[]>();
-
-export function occurrences(section: Section): Occurrence[] {
-  const cached = expanded.get(section);
-  if (cached) return cached;
-  const out: Occurrence[] = [];
-  for (const { days, start, end, startDate, endDate } of section.meetings) {
-    if (start === null || end === null) continue;
-    const first = dayNumber(startDate);
-    const last = dayNumber(endDate);
-    for (const day of days) {
-      for (let d = first + ((day - weekday(first) + 7) % 7); d <= last; d += 7)
-        out.push({ section, day: d, start, end });
-    }
-  }
-  out.sort((a, b) => a.day - b.day || a.start - b.start);
-  expanded.set(section, out);
-  return out;
-}
+import { occurrences } from "./occurrences.ts";
 
 // A block is one weekday and time, with a bit for each week it meets.
 type Block = { day: number; start: number; end: number; weeks: number };
 type Blocks = { firstWeek: number; blocks: Block[] };
 
+// Keep the bitmask's week encoding local to the conflict hot path.
 const FIRST_MONDAY = dayNumber("1970-01-05");
 const weekOf = (day: number) => (mondayOf(day) - FIRST_MONDAY) / 7;
 const dateOf = (week: number, weekday: number) =>
@@ -126,18 +99,6 @@ export function findConflicts(sections: Section[]): Conflict[] {
     }
   return found;
 }
-
-/** Whether a class overlaps another section's class in the same day's list. */
-export const overlapsAnother = (
-  o: Occurrence,
-  sameDay: readonly Occurrence[],
-) =>
-  sameDay.some(
-    (other) =>
-      other.section.crn !== o.section.crn &&
-      other.start < o.end &&
-      o.start < other.end,
-  );
 
 /** The schedule's sections that conflict with a candidate, for a section picker. */
 export function conflictChecker(schedule: readonly Section[]) {

@@ -1,7 +1,8 @@
 import { computed, signal } from "@preact/signals";
-import { findConflicts, occurrences } from "../../shared/conflicts.ts";
+import { findConflicts } from "../../shared/conflicts.ts";
 import { dayNumber, mondayOf, weekday } from "../../shared/dates.ts";
 import { type DayEvent, weekDays } from "../../shared/layout.ts";
+import { occurrences } from "../../shared/occurrences.ts";
 import { catalog } from "../catalog.ts";
 import { selectedCourses, selectedSections } from "../schedule/schedule.ts";
 
@@ -66,10 +67,6 @@ export const colorByCrn = computed(
     ),
 );
 
-/**
- * The grid runs 8 AM to 8 PM, and later only when a selected weekday class
- * ends after 8 PM somewhere in the term.
- */
 export const gridEnd = computed(() => {
   let latest = 20 * 60;
   for (const section of selectedSections.value)

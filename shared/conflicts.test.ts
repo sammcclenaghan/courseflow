@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { conflictChecker, findConflicts, occurrences } from "./conflicts";
+import { conflictChecker, findConflicts } from "./conflicts";
 import { dayNumber, weekday } from "./dates";
 import type { Section } from "./model";
 import { meeting, testSection } from "./testing";
@@ -78,7 +78,6 @@ describe("findConflicts", () => {
 
   it("never conflicts a meeting without a set time", () => {
     const untimed = at("10001", meeting("Mon", null));
-    expect(occurrences(untimed)).toEqual([]);
     expect(
       conflictDays(untimed, at("10002", meeting("Mon", "10:30-11:20"))),
     ).toEqual([]);

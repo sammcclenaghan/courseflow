@@ -1,13 +1,10 @@
-import { type Occurrence, occurrences, overlapsAnother } from "./conflicts.ts";
 import type { Section } from "./model.ts";
+import { type Occurrence, occurrences } from "./occurrences.ts";
 
-/** Where a class sits in its day column, as fractions of the column's width. */
 type Placed<T> = T & {
   left: number;
   width: number;
-  /** Later-starting groups draw on top. */
   z: number;
-  /** Something starting later sits on this class, so only a strip shows. */
   covered: boolean;
 };
 
@@ -66,6 +63,15 @@ function placeCluster<T extends { start: number; end: number }>(
 
 /** A class on the grid, flagged when it conflicts with another on its date. */
 export type DayEvent = Placed<Occurrence & { conflicting: boolean }>;
+
+/** Whether a class overlaps another section's class in the same day's list. */
+const overlapsAnother = (event: Occurrence, sameDay: readonly Occurrence[]) =>
+  sameDay.some(
+    (other) =>
+      other.section.crn !== event.section.crn &&
+      other.start < event.end &&
+      event.start < other.end,
+  );
 
 /**
  * The week starting `monday` (a dayNumber) as five laid-out day columns,
