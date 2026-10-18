@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { dayNumber } from "../catalog/dates";
+import { dayNumber } from "../shared/dates";
 import { formatHour, formatTime, formatTimeRange, formatWeek } from "./time";
 
 const at = (time: string) => {

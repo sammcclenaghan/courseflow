@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { BannerSection } from "./model";
+import type { BannerSection } from "../../shared/model";
 import { attachNotes, parseNotes } from "./notes";
 
 const section = (crn: string, code: string, number: string): BannerSection => ({

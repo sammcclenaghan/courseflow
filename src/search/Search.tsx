@@ -1,7 +1,7 @@
-import { displayCode } from "../../catalog/code.ts";
+import { displayCode } from "../../shared/code.ts";
 import { catalog } from "../catalog.ts";
-import { addCourse, selectedCodes } from "../schedule.ts";
-import { query, results } from "../search.ts";
+import { addCourse, selectedCodes } from "../schedule/schedule.ts";
+import { query, results } from "./search.ts";
 
 export function Search() {
   const typed = query.value.trim() !== "";

@@ -1,6 +1,6 @@
 import { JSDOM } from "jsdom";
 import { z } from "zod";
-import type { Course, Requirement } from "./model";
+import type { Course, Requirement } from "../../shared/model";
 
 const { document } = new JSDOM().window;
 

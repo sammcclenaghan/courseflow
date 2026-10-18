@@ -1,9 +1,9 @@
 import styles from "./App.module.css";
+import { Calendar } from "./calendar/Calendar.tsx";
 import { catalog } from "./catalog.ts";
-import { Calendar } from "./components/Calendar.tsx";
-import { Search } from "./components/Search.tsx";
-import { SelectedCourses } from "./components/SelectedCourses.tsx";
 import { health } from "./health.ts";
+import { SelectedCourses } from "./schedule/SelectedCourses.tsx";
+import { Search } from "./search/Search.tsx";
 
 export function App() {
   const h = health.value;

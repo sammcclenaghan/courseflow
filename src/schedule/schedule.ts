@@ -1,7 +1,7 @@
 import { computed, signal } from "@preact/signals";
-import type { Section, TermCourse } from "../catalog/model.ts";
-import { defaultSectionSet, pickSection } from "../catalog/sections.ts";
-import { courseByCode } from "./catalog.ts";
+import type { Section, TermCourse } from "../../shared/model.ts";
+import { defaultSectionSet, pickSection } from "../../shared/sections.ts";
+import { courseByCode } from "../catalog.ts";
 import { type Color, nextColor } from "./colours.ts";
 
 export type SelectedCourse = {

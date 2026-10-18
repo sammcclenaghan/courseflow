@@ -1,17 +1,17 @@
 import { useEffect } from "preact/hooks";
-import { displayCode } from "../../catalog/code.ts";
-import type { Meeting, Section } from "../../catalog/model.ts";
-import { collapsed, revealed, toggleCourse } from "../panel.ts";
+import { displayCode } from "../../shared/code.ts";
+import type { Meeting, Section } from "../../shared/model.ts";
+import { formatTime, period } from "../time.ts";
+import { Button } from "../ui/Button.tsx";
+import { ChevronDown, Close, Info } from "../ui/icons.tsx";
+import { collapsed, revealed, toggleCourse } from "./panel.ts";
+import styles from "./SelectedCourses.module.css";
 import {
   changeSection,
   clearSchedule,
   removeCourse,
   selectedCourses,
-} from "../schedule.ts";
-import { formatTime, period } from "../time.ts";
-import { Button } from "../ui/Button.tsx";
-import { ChevronDown, Close, Info } from "../ui/icons.tsx";
-import styles from "./SelectedCourses.module.css";
+} from "./schedule.ts";
 
 const PLURAL: Record<string, string> = {
   Lecture: "Lectures",

@@ -1,7 +1,17 @@
 import { useRef } from "preact/hooks";
-import { displayCode } from "../../catalog/code.ts";
-import type { Occurrence } from "../../catalog/conflicts.ts";
-import type { Placed } from "../../catalog/layout.ts";
+import { displayCode } from "../../shared/code.ts";
+import type { Occurrence } from "../../shared/conflicts.ts";
+import type { Placed } from "../../shared/layout.ts";
+import { revealSection } from "../schedule/panel.ts";
+import {
+  formatHour,
+  formatTime,
+  formatTimeRange,
+  formatWeek,
+} from "../time.ts";
+import { Button } from "../ui/Button.tsx";
+import { ChevronLeft, ChevronRight, Grid } from "../ui/icons.tsx";
+import styles from "./Calendar.module.css";
 import {
   colorByCrn,
   conflicts,
@@ -14,17 +24,7 @@ import {
   showPreviousWeek,
   showToday,
   week,
-} from "../calendar.ts";
-import { revealSection } from "../panel.ts";
-import {
-  formatHour,
-  formatTime,
-  formatTimeRange,
-  formatWeek,
-} from "../time.ts";
-import { Button } from "../ui/Button.tsx";
-import { ChevronLeft, ChevronRight, Grid } from "../ui/icons.tsx";
-import styles from "./Calendar.module.css";
+} from "./calendar.ts";
 import { WeeksOverlay } from "./WeeksOverlay.tsx";
 
 const DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri"];

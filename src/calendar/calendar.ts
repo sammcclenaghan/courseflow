@@ -3,11 +3,11 @@ import {
   findConflicts,
   type Occurrence,
   occurrences,
-} from "../catalog/conflicts.ts";
-import { dayNumber, mondayOf, weekday } from "../catalog/dates.ts";
-import { weekDays } from "../catalog/layout.ts";
-import { catalog } from "./catalog.ts";
-import { selectedCourses, selectedSections } from "./schedule.ts";
+} from "../../shared/conflicts.ts";
+import { dayNumber, mondayOf, weekday } from "../../shared/dates.ts";
+import { weekDays } from "../../shared/layout.ts";
+import { catalog } from "../catalog.ts";
+import { selectedCourses, selectedSections } from "../schedule/schedule.ts";
 
 const now = new Date();
 const today = dayNumber(

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { BannerSection, Section } from "./model.ts";
+import type { BannerSection, Section } from "../../shared/model.ts";
 
 // data/notes/<term>.json: section notes recovered from the old Banner 8
 // scrape. They can't be refetched, so the file is the source of truth.

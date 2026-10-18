@@ -1,7 +1,8 @@
 import type { RefObject } from "preact";
 import { useRef } from "preact/hooks";
-import type { Occurrence } from "../../catalog/conflicts.ts";
-import type { Placed } from "../../catalog/layout.ts";
+import type { Occurrence } from "../../shared/conflicts.ts";
+import type { Placed } from "../../shared/layout.ts";
+import { formatWeek } from "../time.ts";
 import {
   colorByCrn,
   GRID_START,
@@ -11,8 +12,7 @@ import {
   thisWeek,
   week,
   weeks,
-} from "../calendar.ts";
-import { formatWeek } from "../time.ts";
+} from "./calendar.ts";
 import styles from "./WeeksOverlay.module.css";
 
 /** Every week of the term at a glance; weeks with a conflict are ringed in red. */

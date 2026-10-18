@@ -1,6 +1,8 @@
 {
   "include": [
     "src",
+    "shared",
+    "worker",
     "scripts",
     "worker-configuration.d.ts",
     "vite.config.ts",

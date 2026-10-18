@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { BannerSection, Meeting } from "./model";
+import type { BannerSection, Meeting } from "../../shared/model";
 
 const sectionType = z.enum([
   "Lecture",

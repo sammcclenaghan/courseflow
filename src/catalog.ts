@@ -1,5 +1,5 @@
 import { computed } from "@preact/signals";
-import type { TermCourse, TermFile } from "../catalog/model.ts";
+import type { TermCourse, TermFile } from "../shared/model.ts";
 import { loadJson } from "./loadable.ts";
 
 export const TERM = "202609";

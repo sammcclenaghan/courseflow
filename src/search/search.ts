@@ -1,6 +1,6 @@
 import { computed, signal } from "@preact/signals";
-import { indexCourses, searchCourses } from "../catalog/search.ts";
-import { catalog } from "./catalog.ts";
+import { indexCourses, searchCourses } from "../../shared/search.ts";
+import { catalog } from "../catalog.ts";
 
 export const query = signal("");
 

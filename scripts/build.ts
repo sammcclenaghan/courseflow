@@ -7,17 +7,12 @@ import {
   writeFileSync,
 } from "node:fs";
 import { z } from "zod";
-import { parseSection } from "../src/catalog/banner.ts";
-import { dayNumber, weekday } from "../src/catalog/dates.ts";
-import { parseCourse } from "../src/catalog/kuali.ts";
-import type {
-  Course,
-  Meeting,
-  TermCourse,
-  TermFile,
-} from "../src/catalog/model.ts";
-import { attachNotes, parseNotes } from "../src/catalog/notes.ts";
-import { checkLinks } from "../src/catalog/sections.ts";
+import { dayNumber, weekday } from "../shared/dates.ts";
+import type { Course, Meeting, TermCourse, TermFile } from "../shared/model.ts";
+import { checkLinks } from "../shared/sections.ts";
+import { parseSection } from "./catalog/banner.ts";
+import { parseCourse } from "./catalog/kuali.ts";
+import { attachNotes, parseNotes } from "./catalog/notes.ts";
 
 const RAW = "data/raw";
 const NOTES = "data/notes";
