@@ -18,43 +18,38 @@ export function defaultSectionSet(
   course: TermCourse,
   schedule: readonly Section[] = [],
 ): Section[] {
-  const sorted = course.sections.toSorted((a, b) =>
-    a.number < b.number ? -1 : 1,
-  );
-  if (sorted.length === 0) return [];
+  const byType = Map.groupBy(byNumber(course.sections), (s) => s.type);
   const lead = leadType(course);
-  const leads = sorted.filter((s) => s.type === lead);
-  const otherTypes = [...new Set(sorted.map((s) => s.type))].filter(
-    (type) => type !== lead,
-  );
-  const partners = (lead: Section) =>
-    otherTypes
-      .map((type) =>
-        sorted.filter(
-          (s) => s.type === type && linkGroup(s) === linkGroup(lead),
-        ),
-      )
-      .filter((options) => options.length > 0);
+  if (lead === undefined) return [];
+  // Each lead section's options: itself, then each other type in its link group.
+  const candidates =
+    byType.get(lead)?.map((leadSection) => [
+      [leadSection],
+      ...[...byType]
+        .filter(([type]) => type !== lead)
+        .map(([, sections]) =>
+          sections.filter((s) => linkGroup(s) === linkGroup(leadSection)),
+        )
+        .filter((options) => options.length > 0),
+    ]) ?? [];
 
-  const search = (busy?: (section: Section) => Section[]) => {
-    for (const lead of leads) {
-      if (busy?.(lead).length) continue;
-      const found = firstFit([lead], partners(lead), busy);
+  const conflictsWithSchedule = conflictChecker(schedule);
+  const fitsSchedule = (s: Section) => conflictsWithSchedule(s).length === 0;
+  for (const allowed of [fitsSchedule, () => true]) {
+    for (const options of candidates) {
+      const found = firstFit([], options, allowed);
       if (found) return found;
     }
-    return null;
-  };
-  return (
-    (schedule.length > 0 ? search(conflictChecker([...schedule])) : null) ??
-    search() ?? [leads[0], ...partners(leads[0]).map((options) => options[0])]
-  );
+  }
+  return candidates[0].map((options) => options[0]);
 }
 
-// Fills one section of each remaining type, lowest first, backtracking when a
-// choice leaves a later type nothing that fits.
+const byNumber = (sections: readonly Section[]) =>
+  sections.toSorted((a, b) => (a.number < b.number ? -1 : 1));
+
 /** The type a section set is built around: the course's lowest section's, usually Lecture. */
 export const leadType = (course: TermCourse) =>
-  course.sections.toSorted((a, b) => (a.number < b.number ? -1 : 1))[0]?.type;
+  byNumber(course.sections)[0]?.type;
 
 /** Picking a section swaps out the picked section of the same type. */
 export function pickSection(
@@ -64,16 +59,18 @@ export function pickSection(
   return [section, ...picked.filter((s) => s.type !== section.type)];
 }
 
+/** One section from each list, lowest first, backtracking when a choice leaves a later list nothing that fits. */
 function firstFit(
   chosen: Section[],
   options: Section[][],
-  busy?: (section: Section) => Section[],
+  allowed: (section: Section) => boolean,
 ): Section[] | null {
   if (options.length === 0) return chosen;
+  const [first, ...rest] = options;
   const conflictsWith = conflictChecker(chosen);
-  for (const candidate of options[0]) {
-    if (conflictsWith(candidate).length || busy?.(candidate).length) continue;
-    const found = firstFit([...chosen, candidate], options.slice(1), busy);
+  for (const candidate of first) {
+    if (!allowed(candidate) || conflictsWith(candidate).length > 0) continue;
+    const found = firstFit([...chosen, candidate], rest, allowed);
     if (found) return found;
   }
   return null;
