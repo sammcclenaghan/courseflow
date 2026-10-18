@@ -19,6 +19,9 @@ export function Search() {
         />
       </label>
       {typed && catalog.value.kind === "loading" && <p>Loading courses…</p>}
+      {catalog.value.kind === "error" && (
+        <p>Courses failed to load: {catalog.value.reason}</p>
+      )}
       {typed && catalog.value.kind === "ok" && results.value.length === 0 && (
         <p>No courses match “{query.value.trim()}”.</p>
       )}
