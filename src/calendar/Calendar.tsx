@@ -17,6 +17,8 @@ import {
   days,
   GRID_START,
   gridEnd,
+  gridPercent,
+  hourLines,
   isFirstWeek,
   isLastWeek,
   showNextWeek,
@@ -30,11 +32,6 @@ const DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 
 export function Calendar() {
   const weeksDialog = useRef<HTMLDialogElement>(null);
-  const span = gridEnd.value - GRID_START;
-  const hours = Array.from(
-    { length: span / 60 - 1 },
-    (_, i) => GRID_START + (i + 1) * 60,
-  );
   return (
     <section class={styles.panel} aria-label="Calendar">
       <header class={styles.header}>
@@ -89,13 +86,16 @@ export function Calendar() {
       </div>
 
       <div class={styles.body}>
-        <div class={styles.canvas} style={{ "--hours": span / 60 }}>
+        <div
+          class={styles.canvas}
+          style={{ "--hours": (gridEnd.value - GRID_START) / 60 }}
+        >
           <div class={`${styles.gutter} ${styles.hours}`} aria-hidden="true">
-            {hours.map((minutes) => (
+            {hourLines.value.map((minutes) => (
               <span
                 key={minutes}
                 class={styles.hour}
-                style={{ top: `${((minutes - GRID_START) / span) * 100}%` }}
+                style={{ top: `${gridPercent(minutes)}%` }}
               >
                 {formatHour(minutes)}
               </span>
@@ -108,7 +108,6 @@ export function Calendar() {
                   <Event
                     key={`${event.section.crn}-${event.start}`}
                     event={event}
-                    span={span}
                   />
                 ))}
               </div>
@@ -120,7 +119,7 @@ export function Calendar() {
   );
 }
 
-function Event({ event, span }: { event: DayEvent; span: number }) {
+function Event({ event }: { event: DayEvent }) {
   const { section, start, end, left, width, z, covered } = event;
   const course = displayCode(section.subject + section.courseNumber);
   // Narrow or partly covered: course on top, then section and start time.
@@ -130,8 +129,8 @@ function Event({ event, span }: { event: DayEvent; span: number }) {
       class={styles.slot}
       data-on-top={z > 1 || undefined}
       style={{
-        top: `${((start - GRID_START) / span) * 100}%`,
-        height: `${((end - start) / span) * 100}%`,
+        top: `${gridPercent(start)}%`,
+        height: `${gridPercent(end) - gridPercent(start)}%`,
         left: `${left * 100}%`,
         width: `${width * 100}%`,
         zIndex: z,

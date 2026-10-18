@@ -4,8 +4,7 @@ import type { DayEvent } from "../../shared/layout.ts";
 import { formatWeek } from "../time.ts";
 import {
   colorByCrn,
-  GRID_START,
-  gridEnd,
+  gridPercent,
   showWeek,
   thisWeek,
   week,
@@ -88,7 +87,6 @@ export function WeeksOverlay({
 }
 
 function Thumbnail({ days }: { days: DayEvent[][] }) {
-  const span = gridEnd.value - GRID_START;
   return (
     <span class={styles.days} style={{ display: "grid" }}>
       {days.map((events, i) => (
@@ -107,8 +105,8 @@ function Thumbnail({ days }: { days: DayEvent[][] }) {
                 key={`${event.section.crn} ${event.start}`}
                 class={styles.block}
                 style={{
-                  top: `${((event.start - GRID_START) / span) * 100}%`,
-                  height: `max(3px, ${((event.end - event.start) / span) * 100}%)`,
+                  top: `${gridPercent(event.start)}%`,
+                  height: `max(3px, ${gridPercent(event.end) - gridPercent(event.start)}%)`,
                   left: `calc(${event.left * 100}% + 2px)`,
                   width: `calc(${event.width * 100}% - 4px)`,
                   background: fill,

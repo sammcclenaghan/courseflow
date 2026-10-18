@@ -81,6 +81,17 @@ export const gridEnd = computed(() => {
 
 export const GRID_START = 8 * 60;
 
+/** The hour lines between the grid's top and bottom, in minutes. */
+export const hourLines = computed(() => {
+  const lines: number[] = [];
+  for (let m = GRID_START + 60; m < gridEnd.value; m += 60) lines.push(m);
+  return lines;
+});
+
+/** How far down the grid a time sits, as a percentage. */
+export const gridPercent = (minutes: number) =>
+  ((minutes - GRID_START) / (gridEnd.value - GRID_START)) * 100;
+
 /** The Monday of today's week, for "This week". */
 export const thisWeek = mondayOf(today);
 
