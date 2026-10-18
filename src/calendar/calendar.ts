@@ -1,11 +1,7 @@
 import { computed, signal } from "@preact/signals";
-import {
-  findConflicts,
-  type Occurrence,
-  occurrences,
-} from "../../shared/conflicts.ts";
+import { findConflicts, occurrences } from "../../shared/conflicts.ts";
 import { dayNumber, mondayOf, weekday } from "../../shared/dates.ts";
-import { weekDays } from "../../shared/layout.ts";
+import { type DayEvent, weekDays } from "../../shared/layout.ts";
 import { catalog } from "../catalog.ts";
 import { selectedCourses, selectedSections } from "../schedule/schedule.ts";
 
@@ -113,30 +109,10 @@ export const showWeek = (monday: number) => {
 /** Every week you can move to, laid out, for the Weeks overlay. */
 export const weeks = computed(() => {
   const { first, last } = weekRange.value;
-  const out: { monday: number; days: ReturnType<typeof weekDays> }[] = [];
+  const out: { monday: number; days: DayEvent[][] }[] = [];
   for (let monday = first; monday <= last; monday += 7)
     out.push({ monday, days: weekDays(selectedSections.value, monday) });
   return out;
 });
 
 export const conflicts = computed(() => findConflicts(selectedSections.value));
-
-const keyOf = (o: Occurrence) => `${o.section.crn} ${o.day} ${o.start}`;
-
-/** The classes that overlap another on their date, as keys for `isConflicting`. */
-const conflicting = computed(() => {
-  const keys = new Set<string>();
-  for (const { a, b, days } of conflicts.value) {
-    const shared = new Set(days);
-    for (const x of occurrences(a))
-      if (shared.has(x.day))
-        for (const y of occurrences(b))
-          if (y.day === x.day && x.start < y.end && y.start < x.end) {
-            keys.add(keyOf(x));
-            keys.add(keyOf(y));
-          }
-  }
-  return keys;
-});
-
-export const isConflicting = (o: Occurrence) => conflicting.value.has(keyOf(o));

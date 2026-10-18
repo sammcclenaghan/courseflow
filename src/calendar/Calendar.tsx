@@ -1,7 +1,6 @@
 import { useRef } from "preact/hooks";
 import { displayCode } from "../../shared/code.ts";
-import type { Occurrence } from "../../shared/conflicts.ts";
-import type { Placed } from "../../shared/layout.ts";
+import type { DayEvent } from "../../shared/layout.ts";
 import { revealSection } from "../schedule/panel.ts";
 import {
   formatHour,
@@ -121,7 +120,7 @@ export function Calendar() {
   );
 }
 
-function Event({ event, span }: { event: Placed<Occurrence>; span: number }) {
+function Event({ event, span }: { event: DayEvent; span: number }) {
   const { section, start, end, left, width, z, covered } = event;
   const course = displayCode(section.subject + section.courseNumber);
   // Narrow or partly covered: course on top, then section and start time.

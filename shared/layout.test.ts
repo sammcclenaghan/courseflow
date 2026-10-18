@@ -131,4 +131,30 @@ describe("weekDays", () => {
       0.5, 0.5,
     ]);
   });
+
+  it("flags classes that overlap another section's", () => {
+    const sections = [
+      testSection("10001", { meetings: [meeting("Mon", "10:30-11:20")] }),
+      testSection("10002", { meetings: [meeting("Mon", "11:00-12:20")] }),
+      testSection("10003", { meetings: [meeting("Mon", "12:20-13:10")] }),
+    ];
+    expect(
+      weekDays(sections, monday)[0].map((o) => [o.section.crn, o.conflicting]),
+    ).toEqual([
+      ["10001", true],
+      ["10002", true],
+      ["10003", false],
+    ]);
+  });
+
+  it("doesn't flag a section's own overlapping meetings", () => {
+    // ASTR 101's night labs list 18:30-21:20 and 20:30-23:20 on the same date.
+    const lab = testSection("10001", {
+      meetings: [meeting("Mon", "18:30-21:20"), meeting("Mon", "20:30-23:20")],
+    });
+    expect(weekDays([lab], monday)[0].map((o) => o.conflicting)).toEqual([
+      false,
+      false,
+    ]);
+  });
 });

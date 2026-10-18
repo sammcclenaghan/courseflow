@@ -1,13 +1,11 @@
 import type { RefObject } from "preact";
 import { useRef } from "preact/hooks";
-import type { Occurrence } from "../../shared/conflicts.ts";
-import type { Placed } from "../../shared/layout.ts";
+import type { DayEvent } from "../../shared/layout.ts";
 import { formatWeek } from "../time.ts";
 import {
   colorByCrn,
   GRID_START,
   gridEnd,
-  isConflicting,
   showWeek,
   thisWeek,
   week,
@@ -50,7 +48,9 @@ export function WeeksOverlay({
     <dialog ref={dialog} class={styles.overlay} aria-label="Weeks">
       <div class={styles.grid} ref={grid}>
         {weeks.value.map(({ monday, days }, i) => {
-          const conflict = days.some((day) => day.some(isConflicting));
+          const conflict = days.some((day) =>
+            day.some((event) => event.conflicting),
+          );
           return (
             <button
               key={monday}
@@ -87,7 +87,7 @@ export function WeeksOverlay({
   );
 }
 
-function Thumbnail({ days }: { days: Placed<Occurrence>[][] }) {
+function Thumbnail({ days }: { days: DayEvent[][] }) {
   const span = gridEnd.value - GRID_START;
   return (
     <span class={styles.days} style={{ display: "grid" }}>
@@ -96,10 +96,10 @@ function Thumbnail({ days }: { days: Placed<Occurrence>[][] }) {
           {events.map((event) => {
             const color = colorByCrn.value.get(event.section.crn);
             // At this size a pale tint can't say "conflict", so conflicts are solid red.
-            const fill = isConflicting(event)
+            const fill = event.conflicting
               ? "var(--color-conflict-solid)"
               : `var(--color-course-${color})`;
-            const ring = isConflicting(event)
+            const ring = event.conflicting
               ? "var(--color-conflict-solid)"
               : `var(--color-course-${color}-ring)`;
             return (

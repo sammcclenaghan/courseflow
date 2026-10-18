@@ -1,4 +1,4 @@
-import { type Occurrence, occurrences } from "./conflicts.ts";
+import { type Occurrence, occurrences, overlapsAnother } from "./conflicts.ts";
 import type { Section } from "./model.ts";
 
 /** Where a class sits in its day column, as fractions of the column's width. */
@@ -64,6 +64,9 @@ function placeCluster<T extends { start: number; end: number }>(
   });
 }
 
+/** A class on the grid, flagged when it conflicts with another on its date. */
+export type DayEvent = Placed<Occurrence & { conflicting: boolean }>;
+
 /**
  * The week starting `monday` (a dayNumber) as five laid-out day columns,
  * Monday to Friday. Weekend classes and untimed meetings aren't on the grid.
@@ -71,7 +74,7 @@ function placeCluster<T extends { start: number; end: number }>(
 export function weekDays(
   sections: readonly Section[],
   monday: number,
-): Placed<Occurrence>[][] {
+): DayEvent[][] {
   const days: Occurrence[][] = [[], [], [], [], []];
   for (const section of sections) {
     for (const occurrence of occurrences(section)) {
@@ -79,5 +82,7 @@ export function weekDays(
       if (i >= 0 && i < 5) days[i].push(occurrence);
     }
   }
-  return days.map(layoutDay);
+  return days.map((day) =>
+    layoutDay(day.map((o) => ({ ...o, conflicting: overlapsAnother(o, day) }))),
+  );
 }

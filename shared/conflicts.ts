@@ -127,6 +127,18 @@ export function findConflicts(sections: Section[]): Conflict[] {
   return found;
 }
 
+/** Whether a class overlaps another section's class in the same day's list. */
+export const overlapsAnother = (
+  o: Occurrence,
+  sameDay: readonly Occurrence[],
+) =>
+  sameDay.some(
+    (other) =>
+      other.section.crn !== o.section.crn &&
+      other.start < o.end &&
+      o.start < other.end,
+  );
+
 /** The schedule's sections that conflict with a candidate, for a section picker. */
 export function conflictChecker(schedule: readonly Section[]) {
   return (candidate: Section): Section[] =>
