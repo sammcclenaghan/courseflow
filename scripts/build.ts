@@ -138,13 +138,16 @@ function buildTerm(term: string): TermFile {
     }
   }
 
+  const dates = usualDates(sections);
+
   console.log(
-    `${term}: ${termCourses.length} courses, ${sections.length} sections (+${added} -${removed}), ${noted} with notes`,
+    `${term}: ${dates.startDate} to ${dates.endDate}, ${termCourses.length} courses, ${sections.length} sections (+${added} -${removed}), ${noted} with notes`,
   );
   return {
     term,
     importedAt: banner.fetchedAt,
     notesAsOf: notes?.scrapedAt ?? null,
+    ...dates,
     courses: termCourses,
   };
 }
@@ -155,6 +158,21 @@ function parse<T>(parser: (raw: unknown) => T, raw: unknown, what: string): T {
   } catch (error) {
     throw new Error(`Can't parse ${what}`, { cause: error });
   }
+}
+
+// Most classes run the full term, so the most common date range is the term's.
+function usualDates(sections: { meetings: Meeting[] }[]) {
+  const counts = new Map<string, number>();
+  for (const { meetings } of sections)
+    for (const { start, startDate, endDate } of meetings)
+      if (start !== null) {
+        const range = `${startDate}/${endDate}`;
+        counts.set(range, (counts.get(range) ?? 0) + 1);
+      }
+  const [common] = [...counts].sort((a, b) => b[1] - a[1]);
+  if (!common) throw new Error("No timed meetings");
+  const [startDate, endDate] = common[0].split("/");
+  return { startDate, endDate };
 }
 
 // Whether any of the meeting's weekdays falls within its date range.

@@ -14,32 +14,14 @@ const today = dayNumber(
   ].join("-"),
 );
 
-/** The term's usual dates: the most common meeting date range ("Sep 9 – Dec 7"). */
-const termDates = computed(() => {
-  const c = catalog.value;
-  if (c.kind !== "ok") return null;
-  const counts = new Map<string, number>();
-  for (const course of c.data.courses)
-    for (const section of course.sections)
-      for (const { start, startDate, endDate } of section.meetings)
-        if (start !== null) {
-          const range = `${startDate}/${endDate}`;
-          counts.set(range, (counts.get(range) ?? 0) + 1);
-        }
-  const [common] = [...counts].sort((a, b) => b[1] - a[1]);
-  if (!common) return null;
-  const [first, last] = common[0].split("/").map(dayNumber);
-  return { first, last };
-});
-
 /**
  * The Mondays you can move between: the term's weeks, stretched to cover
  * any selected class that runs outside them.
  */
 export const weekRange = computed(() => {
-  const term = termDates.value;
-  let first = term?.first ?? today;
-  let last = term?.last ?? today;
+  const c = catalog.value;
+  let first = c.kind === "ok" ? dayNumber(c.data.startDate) : today;
+  let last = c.kind === "ok" ? dayNumber(c.data.endDate) : today;
   for (const section of selectedSections.value)
     for (const { day } of occurrences(section)) {
       if (day < first) first = day;

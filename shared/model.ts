@@ -81,5 +81,8 @@ export type TermFile = {
   term: string;
   importedAt: string;
   notesAsOf: string | null;
+  /** The usual first and last day of classes, "2026-09-09". */
+  startDate: string;
+  endDate: string;
   courses: TermCourse[];
 };
