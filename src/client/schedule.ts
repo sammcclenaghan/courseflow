@@ -1,6 +1,6 @@
 import { computed, signal } from "@preact/signals";
-import type { TermCourse } from "../catalog/model.ts";
-import { defaultSectionSet } from "../catalog/sections.ts";
+import type { Section, TermCourse } from "../catalog/model.ts";
+import { defaultSectionSet, pickSection } from "../catalog/sections.ts";
 import { courseByCode } from "./catalog.ts";
 import { type Color, nextColor } from "./colours.ts";
 
@@ -42,4 +42,20 @@ export function addCourse(course: TermCourse) {
 
 export function removeCourse(code: string) {
   selected.value = selected.value.filter((c) => c.code !== code);
+}
+
+/** Picks `section` for its course; sections from another link group are un-picked, never re-picked. */
+export function changeSection(code: string, section: Section) {
+  const entry = selectedCourses.value.find(
+    ({ course }) => course.code === code,
+  );
+  if (!entry) return;
+  const crns = pickSection(entry.sections, section).map((s) => s.crn);
+  selected.value = selected.value.map((c) =>
+    c.code === code ? { ...c, crns } : c,
+  );
+}
+
+export function clearSchedule() {
+  selected.value = [];
 }

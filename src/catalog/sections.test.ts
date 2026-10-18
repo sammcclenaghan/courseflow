@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Section, TermCourse } from "./model";
-import { checkLinks, defaultSectionSet } from "./sections";
+import { checkLinks, defaultSectionSet, pickSection } from "./sections";
 import { meeting, testSection } from "./testing";
 
 const TYPES: Record<string, string> = { A: "Lecture", B: "Lab", T: "Tutorial" };
@@ -137,6 +137,25 @@ describe("defaultSectionSet around conflicts", () => {
       meetings: [meeting("Mon Tue Wed Thu Fri", "08:00-15:00")],
     });
     expect(codes(defaultSectionSet(csc110, [busy]))).toEqual(["A01", "B02"]);
+  });
+});
+
+describe("pickSection", () => {
+  const c = course(
+    section("A01"),
+    section("A02"),
+    section("B01"),
+    section("B02"),
+  );
+  const [a01, a02, b01, b02] = c.sections;
+
+  it("swaps the picked section of the same type, keeping the rest", () => {
+    expect(codes(pickSection([a01, b01], b02)).sort()).toEqual(["A01", "B02"]);
+    expect(codes(pickSection([a01, b01], a02)).sort()).toEqual(["A02", "B01"]);
+  });
+
+  it("adds a type that wasn't picked", () => {
+    expect(codes(pickSection([a01], b01)).sort()).toEqual(["A01", "B01"]);
   });
 });
 

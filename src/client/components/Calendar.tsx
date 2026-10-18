@@ -13,6 +13,7 @@ import {
   showToday,
   week,
 } from "../calendar.ts";
+import { revealSection } from "../panel.ts";
 import {
   formatHour,
   formatTime,
@@ -118,27 +119,32 @@ function Event({ event, span }: { event: Placed<Occurrence>; span: number }) {
         zIndex: z,
       }}
     >
-      <div
+      <button
+        type="button"
         class={styles.event}
         style={{
           background: `var(--color-course-${colorByCrn.value.get(section.crn)})`,
         }}
+        aria-label={`${course} ${section.number}, ${formatTimeRange(start, end)}`}
+        onClick={() =>
+          revealSection(section.subject + section.courseNumber, section.crn)
+        }
       >
-        <div class={styles.line}>
+        <span class={styles.line}>
           <span class={styles.course}>{course}</span>
           {!compact && <span class={styles.quiet}>{section.number}</span>}
-        </div>
+        </span>
         {compact ? (
-          <div class={styles.line}>
+          <span class={styles.line}>
             <span class={styles.course}>{section.number}</span>
             <span class={styles.quiet}>{formatTime(start)}</span>
-          </div>
+          </span>
         ) : (
-          <div class={`${styles.line} ${styles.quiet}`}>
+          <span class={`${styles.line} ${styles.quiet}`}>
             {formatTimeRange(start, end)}
-          </div>
+          </span>
         )}
-      </div>
+      </button>
     </div>
   );
 }

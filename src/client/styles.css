@@ -85,3 +85,9 @@ select {
   font: inherit;
   color: inherit;
 }
+
+/* One keyboard focus ring everywhere; white would vanish on white panels. */
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}

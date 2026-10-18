@@ -106,7 +106,15 @@
   padding: 1px var(--spacing-0_5) 1px 1px;
 }
 
+/* A flex column, because buttons centre their contents vertically by default. */
 .event {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
   height: 100%;
   min-height: 22px;
   overflow: clip;
@@ -134,4 +142,8 @@
 .quiet {
   color: var(--color-on-tint);
   font-variant-numeric: tabular-nums;
+}
+
+.event:hover {
+  filter: brightness(0.97);
 }

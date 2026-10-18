@@ -4,7 +4,7 @@
 const MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" ");
 
 const hour12 = (minutes: number) => ((Math.floor(minutes / 60) + 11) % 12) + 1;
-const period = (minutes: number) => (minutes < 720 ? "AM" : "PM");
+export const period = (minutes: number) => (minutes < 720 ? "AM" : "PM");
 
 /** 570 → "9:30" */
 export const formatTime = (minutes: number) =>

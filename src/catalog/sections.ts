@@ -22,10 +22,10 @@ export function defaultSectionSet(
     a.number < b.number ? -1 : 1,
   );
   if (sorted.length === 0) return [];
-  const leadType = sorted[0].type;
-  const leads = sorted.filter((s) => s.type === leadType);
+  const lead = leadType(course);
+  const leads = sorted.filter((s) => s.type === lead);
   const otherTypes = [...new Set(sorted.map((s) => s.type))].filter(
-    (type) => type !== leadType,
+    (type) => type !== lead,
   );
   const partners = (lead: Section) =>
     otherTypes
@@ -52,6 +52,18 @@ export function defaultSectionSet(
 
 // Fills one section of each remaining type, lowest first, backtracking when a
 // choice leaves a later type nothing that fits.
+/** The type a section set is built around: the course's lowest section's, usually Lecture. */
+export const leadType = (course: TermCourse) =>
+  course.sections.toSorted((a, b) => (a.number < b.number ? -1 : 1))[0]?.type;
+
+/** Picking a section swaps out the picked section of the same type. */
+export function pickSection(
+  picked: readonly Section[],
+  section: Section,
+): Section[] {
+  return [section, ...picked.filter((s) => s.type !== section.type)];
+}
+
 function firstFit(
   chosen: Section[],
   options: Section[][],
