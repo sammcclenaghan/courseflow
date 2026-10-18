@@ -1,4 +1,4 @@
-export type Seats = {
+type Seats = {
   enrolled: number;
   capacity: number;
   available: number;
@@ -38,11 +38,6 @@ export type Course = {
   corequisites: Requirement | null;
   recommendations: string[];
 };
-
-export type Requisites = Pick<
-  Course,
-  "prerequisites" | "preOrCorequisites" | "corequisites" | "recommendations"
->;
 
 export type BannerSection = {
   term: string;

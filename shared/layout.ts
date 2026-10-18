@@ -2,7 +2,7 @@ import { type Occurrence, occurrences, overlapsAnother } from "./conflicts.ts";
 import type { Section } from "./model.ts";
 
 /** Where a class sits in its day column, as fractions of the column's width. */
-export type Placed<T> = T & {
+type Placed<T> = T & {
   left: number;
   width: number;
   /** Later-starting groups draw on top. */

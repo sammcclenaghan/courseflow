@@ -48,8 +48,7 @@ const byNumber = (sections: readonly Section[]) =>
   sections.toSorted((a, b) => (a.number < b.number ? -1 : 1));
 
 /** The type a section set is built around: the course's lowest section's, usually Lecture. */
-export const leadType = (course: TermCourse) =>
-  byNumber(course.sections)[0]?.type;
+const leadType = (course: TermCourse) => byNumber(course.sections)[0]?.type;
 
 /** Picking a section swaps out the picked section of the same type. */
 export function pickSection(

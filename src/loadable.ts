@@ -1,6 +1,6 @@
 import { type Signal, signal } from "@preact/signals";
 
-export type Loadable<T> =
+type Loadable<T> =
   | { kind: "loading" }
   | { kind: "ok"; data: T }
   | { kind: "error"; reason: string };

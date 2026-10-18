@@ -2,7 +2,7 @@ import { computed } from "@preact/signals";
 import type { TermCourse, TermFile } from "../shared/model.ts";
 import { loadJson } from "./loadable.ts";
 
-export const TERM = "202609";
+const TERM = "202609";
 
 export const catalog = loadJson<TermFile>(`/data/terms/${TERM}.json`);
 

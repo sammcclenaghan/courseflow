@@ -1,25 +1,14 @@
 import { describe, expect, it } from "vitest";
-import type { BannerSection } from "../../shared/model";
-import { attachNotes, parseNotes } from "./notes";
+import type { BannerSection } from "../../shared/model.ts";
+import { testSection } from "../../shared/testing.ts";
+import { attachNotes, parseNotes } from "./notes.ts";
 
-const section = (crn: string, code: string, number: string): BannerSection => ({
-  term: "202609",
-  crn,
-  subject: code.replace(/\d.*/, ""),
-  courseNumber: code.replace(/^\D+/, ""),
-  number,
-  title: "Fundamentals of Programming I",
-  type: "Lecture",
-  instructionalMethod: "Face-to-face",
-  partOfTerm: "1",
-  credits: 1.5,
-  linkId: null,
-  crossList: null,
-  crossListAvailable: null,
-  seats: { enrolled: 0, capacity: 0, available: 0 },
-  waitlist: { enrolled: 0, capacity: 0, available: 0 },
-  meetings: [],
-});
+const section = (crn: string, code: string, number: string) =>
+  testSection(crn, {
+    subject: code.replace(/\d.*/, ""),
+    courseNumber: code.replace(/^\D+/, ""),
+    number,
+  });
 
 const notes = parseNotes({
   source: "test",

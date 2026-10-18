@@ -1,7 +1,7 @@
 import { parseCode } from "./code.ts";
 import type { TermCourse } from "./model.ts";
 
-export type SearchEntry = {
+type SearchEntry = {
   course: TermCourse;
   code: string;
   number: string;

@@ -4,7 +4,7 @@ import { defaultSectionSet, pickSection } from "../../shared/sections.ts";
 import { courseByCode } from "../catalog.ts";
 import { type Color, nextColor } from "./colors.ts";
 
-export type SelectedCourse = {
+type SelectedCourse = {
   code: string;
   crns: string[];
   color: Color;

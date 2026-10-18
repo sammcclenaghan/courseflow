@@ -18,7 +18,7 @@ const today = dayNumber(
  * The Mondays you can move between: the term's weeks, stretched to cover
  * any selected class that runs outside them.
  */
-export const weekRange = computed(() => {
+const weekRange = computed(() => {
   const c = catalog.value;
   let first = c.kind === "ok" ? dayNumber(c.data.startDate) : today;
   let last = c.kind === "ok" ? dayNumber(c.data.endDate) : today;

@@ -98,7 +98,7 @@ function conflictDays(a: Section, b: Section): number[] {
   return [...days].sort((p, q) => p - q);
 }
 
-export type Conflict = {
+type Conflict = {
   a: Section;
   b: Section;
   days: number[];

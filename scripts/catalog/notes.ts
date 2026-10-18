@@ -16,7 +16,7 @@ const notesFile = z.strictObject({
   ),
 });
 
-export type NotesFile = z.infer<typeof notesFile>;
+type NotesFile = z.infer<typeof notesFile>;
 
 export function parseNotes(raw: unknown): NotesFile {
   return notesFile.parse(raw);
