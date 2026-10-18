@@ -42,4 +42,13 @@ describe("formatWeek", () => {
       "Dec 28, 2026 – Jan 1, 2027",
     );
   });
+
+  it("leaves the year out when asked", () => {
+    expect(formatWeek(dayNumber("2026-09-28"), { year: false })).toBe(
+      "Sep 28 – Oct 2",
+    );
+    expect(formatWeek(dayNumber("2026-12-28"), { year: false })).toBe(
+      "Dec 28 – Jan 1",
+    );
+  });
 });

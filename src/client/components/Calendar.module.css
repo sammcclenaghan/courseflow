@@ -147,3 +147,20 @@
 .event:hover {
   filter: brightness(0.97);
 }
+
+.weeks {
+  position: relative;
+  margin-left: auto;
+}
+
+/* Some week of the term has a conflict. */
+.dot {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--color-conflict-solid);
+  box-shadow: 0 0 0 2px var(--color-surface);
+}

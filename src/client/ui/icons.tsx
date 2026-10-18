@@ -55,3 +55,12 @@ export const Info = () => (
     <path d="M12 16v-4M12 8h.01" />
   </Icon>
 );
+
+export const Grid = () => (
+  <Icon>
+    <rect x="3" y="3" width="7" height="7" rx="1.5" />
+    <rect x="14" y="3" width="7" height="7" rx="1.5" />
+    <rect x="3" y="14" width="7" height="7" rx="1.5" />
+    <rect x="14" y="14" width="7" height="7" rx="1.5" />
+  </Icon>
+);

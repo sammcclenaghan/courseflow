@@ -1,0 +1,127 @@
+/* Full screen over a dark, blurred page, so the white labels stay readable. */
+.overlay {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 48px var(--spacing-4);
+  border: 0;
+  background: transparent;
+  overflow-y: auto;
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.overlay::backdrop {
+  background: rgb(10 10 10 / 60%);
+  backdrop-filter: blur(12px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 28px 20px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.week {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.card {
+  padding: var(--spacing-2);
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+  box-shadow:
+    0 0 0 1px rgb(0 0 0 / 8%),
+    0 8px 24px -8px rgb(0 0 0 / 35%);
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+  transition: outline-color 160ms;
+}
+
+.week[data-conflict] .card {
+  box-shadow:
+    0 0 0 2px var(--color-conflict-solid),
+    0 8px 24px -8px rgb(0 0 0 / 35%);
+  outline-offset: 5px;
+}
+
+/* Focus is white, never red, so it can't be mistaken for a conflict. */
+.week:focus-visible {
+  outline: none;
+}
+.week:focus-visible .card,
+.week:hover .card {
+  outline-color: #ffffff;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  height: 112px;
+}
+
+.day {
+  position: relative;
+  overflow: hidden;
+}
+
+.day + .day {
+  border-left: 1px solid var(--color-line-subtle);
+}
+
+.block {
+  position: absolute;
+  border-radius: 2px;
+}
+
+.label {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-1_5);
+  margin-top: var(--spacing-2);
+  color: #ffffff;
+}
+
+.number {
+  font-weight: var(--font-weight-semibold);
+}
+
+.soft {
+  color: rgb(255 255 255 / 85%);
+  font-variant-numeric: tabular-nums;
+}
+
+.now {
+  margin-left: auto;
+}
+
+.hints {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-4);
+  margin-top: 32px;
+}
+
+.hint {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+.key {
+  min-width: 20px;
+  padding: 1px 5px;
+  border-radius: var(--radius-key);
+  background: rgb(255 255 255 / 15%);
+  color: #ffffff;
+  font: inherit;
+  text-align: center;
+}

@@ -21,14 +21,18 @@ export function formatTimeRange(start: number, end: number) {
     : `${formatTime(start)} ${period(start)}–${formatTime(end)} ${period(end)}`;
 }
 
-/** The Monday-to-Friday span: "Sep 14 – 18, 2026", "Sep 28 – Oct 2, 2026". */
-export function formatWeek(monday: number) {
+/** The Monday-to-Friday span: "Sep 14 – 18, 2026", or "Sep 14 – 18" without the year. */
+export function formatWeek(monday: number, { year = true } = {}) {
   const from = new Date(monday * 86_400_000);
   const to = new Date((monday + 4) * 86_400_000);
   const day = (d: Date) => `${MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}`;
   if (from.getUTCFullYear() !== to.getUTCFullYear())
-    return `${day(from)}, ${from.getUTCFullYear()} – ${day(to)}, ${to.getUTCFullYear()}`;
+    return year
+      ? `${day(from)}, ${from.getUTCFullYear()} – ${day(to)}, ${to.getUTCFullYear()}`
+      : `${day(from)} – ${day(to)}`;
   const end =
     from.getUTCMonth() === to.getUTCMonth() ? String(to.getUTCDate()) : day(to);
-  return `${day(from)} – ${end}, ${to.getUTCFullYear()}`;
+  return year
+    ? `${day(from)} – ${end}, ${to.getUTCFullYear()}`
+    : `${day(from)} – ${end}`;
 }

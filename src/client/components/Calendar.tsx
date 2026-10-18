@@ -1,8 +1,10 @@
+import { useRef } from "preact/hooks";
 import { displayCode } from "../../catalog/code.ts";
 import type { Occurrence } from "../../catalog/conflicts.ts";
 import type { Placed } from "../../catalog/layout.ts";
 import {
   colorByCrn,
+  conflicts,
   days,
   GRID_START,
   gridEnd,
@@ -21,12 +23,14 @@ import {
   formatWeek,
 } from "../time.ts";
 import { Button } from "../ui/Button.tsx";
-import { ChevronLeft, ChevronRight } from "../ui/icons.tsx";
+import { ChevronLeft, ChevronRight, Grid } from "../ui/icons.tsx";
 import styles from "./Calendar.module.css";
+import { WeeksOverlay } from "./WeeksOverlay.tsx";
 
 const DAY_NAMES = ["Mon", "Tue", "Wed", "Thu", "Fri"];
 
 export function Calendar() {
+  const weeksDialog = useRef<HTMLDialogElement>(null);
   const span = gridEnd.value - GRID_START;
   const hours = Array.from(
     { length: span / 60 - 1 },
@@ -57,7 +61,22 @@ export function Calendar() {
         <h2 class={styles.title} aria-live="polite">
           {formatWeek(week.value)}
         </h2>
+        <Button
+          variant="primary"
+          class={styles.weeks}
+          aria-label={
+            conflicts.value.length > 0
+              ? "Weeks, schedule has conflicts"
+              : "Weeks"
+          }
+          onClick={() => weeksDialog.current?.showModal()}
+        >
+          <Grid />
+          Weeks
+          {conflicts.value.length > 0 && <span class={styles.dot} />}
+        </Button>
       </header>
+      <WeeksOverlay dialog={weeksDialog} />
 
       <div class={styles.top}>
         <div class={styles.gutter} />

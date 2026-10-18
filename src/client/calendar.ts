@@ -1,5 +1,9 @@
 import { computed, signal } from "@preact/signals";
-import { occurrences } from "../catalog/conflicts.ts";
+import {
+  findConflicts,
+  type Occurrence,
+  occurrences,
+} from "../catalog/conflicts.ts";
 import { dayNumber, mondayOf, weekday } from "../catalog/dates.ts";
 import { weekDays } from "../catalog/layout.ts";
 import { catalog } from "./catalog.ts";
@@ -98,3 +102,41 @@ export const gridEnd = computed(() => {
 });
 
 export const GRID_START = 8 * 60;
+
+/** The Monday of today's week, for "This week". */
+export const thisWeek = mondayOf(today);
+
+export const showWeek = (monday: number) => {
+  chosen.value = monday;
+};
+
+/** Every week you can move to, laid out, for the Weeks overlay. */
+export const weeks = computed(() => {
+  const { first, last } = weekRange.value;
+  const out: { monday: number; days: ReturnType<typeof weekDays> }[] = [];
+  for (let monday = first; monday <= last; monday += 7)
+    out.push({ monday, days: weekDays(selectedSections.value, monday) });
+  return out;
+});
+
+export const conflicts = computed(() => findConflicts(selectedSections.value));
+
+const keyOf = (o: Occurrence) => `${o.section.crn} ${o.day} ${o.start}`;
+
+/** The classes that overlap another on their date, as keys for `isConflicting`. */
+const conflicting = computed(() => {
+  const keys = new Set<string>();
+  for (const { a, b, days } of conflicts.value) {
+    const shared = new Set(days);
+    for (const x of occurrences(a))
+      if (shared.has(x.day))
+        for (const y of occurrences(b))
+          if (y.day === x.day && x.start < y.end && y.start < x.end) {
+            keys.add(keyOf(x));
+            keys.add(keyOf(y));
+          }
+  }
+  return keys;
+});
+
+export const isConflicting = (o: Occurrence) => conflicting.value.has(keyOf(o));
