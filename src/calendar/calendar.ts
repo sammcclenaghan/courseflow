@@ -78,12 +78,12 @@ export const days = computed(() =>
   weekDays(selectedSections.value, week.value),
 );
 
-/** Each selected section's colour, from its course. */
+/** Each selected section's color, from its course. */
 export const colorByCrn = computed(
   () =>
     new Map(
-      selectedCourses.value.flatMap(({ sections, colour }) =>
-        sections.map((s) => [s.crn, colour] as const),
+      selectedCourses.value.flatMap(({ sections, color }) =>
+        sections.map((s) => [s.crn, color] as const),
       ),
     ),
 );

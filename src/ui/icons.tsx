@@ -1,4 +1,4 @@
-// 16px line icons on a 24-unit grid, drawn in the text colour.
+// 16px line icons on a 24-unit grid, drawn in the text color.
 import type { ComponentChildren } from "preact";
 
 function Icon({

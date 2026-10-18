@@ -2,23 +2,23 @@ import { computed, signal } from "@preact/signals";
 import type { Section, TermCourse } from "../../shared/model.ts";
 import { defaultSectionSet, pickSection } from "../../shared/sections.ts";
 import { courseByCode } from "../catalog.ts";
-import { type Color, nextColor } from "./colours.ts";
+import { type Color, nextColor } from "./colors.ts";
 
 export type SelectedCourse = {
   code: string;
   crns: string[];
-  colour: Color;
+  color: Color;
 };
 
 export const selected = signal<SelectedCourse[]>([]);
 
 /** Each selected course with its catalog data and chosen sections, for display. */
 export const selectedCourses = computed(() =>
-  selected.value.flatMap(({ code, crns, colour }) => {
+  selected.value.flatMap(({ code, crns, color }) => {
     const course = courseByCode.value.get(code);
     if (!course) return [];
     const sections = course.sections.filter((s) => crns.includes(s.crn));
-    return [{ course, sections, colour }];
+    return [{ course, sections, color }];
   }),
 );
 
@@ -33,10 +33,10 @@ export const selectedCodes = computed(
 export function addCourse(course: TermCourse) {
   if (selectedCodes.value.has(course.code)) return;
   const sections = defaultSectionSet(course, selectedSections.value);
-  const colour = nextColor(selected.value.map((c) => c.colour));
+  const color = nextColor(selected.value.map((c) => c.color));
   selected.value = [
     ...selected.value,
-    { code: course.code, crns: sections.map((s) => s.crn), colour },
+    { code: course.code, crns: sections.map((s) => s.crn), color },
   ];
 }
 
