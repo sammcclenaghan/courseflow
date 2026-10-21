@@ -1,0 +1,32 @@
+/* Button styles shared across the app: class={button.secondary}. */
+.secondary,
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-1_5);
+  height: var(--spacing-control);
+  padding-inline: var(--spacing-3);
+  border: 0;
+  border-radius: var(--radius-control);
+  background: transparent;
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.secondary {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-secondary);
+}
+
+.icon {
+  width: var(--spacing-control);
+  padding-inline: 0;
+}
+
+.icon:hover {
+  background: var(--color-fill);
+}

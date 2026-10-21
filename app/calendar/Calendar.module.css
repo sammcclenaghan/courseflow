@@ -1,0 +1,102 @@
+.calendar {
+  border-radius: var(--radius-panel);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-ring);
+  overflow: clip;
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  padding: var(--spacing-2);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.week {
+  margin: 0 0 0 var(--spacing-2);
+  font-size: var(--text-md);
+  line-height: 18px;
+  font-weight: var(--font-weight-semibold);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 56px repeat(var(--days), minmax(0, 1fr));
+}
+
+.day {
+  padding: var(--spacing-1_5) var(--spacing-2);
+  border-bottom: 1px solid var(--color-line);
+  border-left: 1px solid var(--color-line);
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+}
+
+.hours {
+  position: relative;
+}
+
+.hours span {
+  position: absolute;
+  right: var(--spacing-2);
+  translate: 0 -50%;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.column {
+  position: relative;
+  border-left: 1px solid var(--color-line);
+  background: repeating-linear-gradient(
+    transparent 0 calc(var(--hour) - 1px),
+    var(--color-line-subtle) calc(var(--hour) - 1px) var(--hour)
+  );
+}
+
+.class {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  display: flex;
+  flex-direction: column;
+  min-height: 20px;
+  padding: var(--spacing-1) var(--spacing-1_5);
+  /* 1px of space between back-to-back classes. */
+  border: 1px solid var(--color-surface);
+  border-radius: var(--radius-event);
+  background: var(--tint);
+  overflow: clip;
+  line-height: var(--leading-event);
+}
+
+.class[data-indented="true"] {
+  left: 40%;
+  box-shadow: 0 0 0 1px var(--color-surface);
+}
+
+.name,
+.time {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.name {
+  font-weight: var(--font-weight-medium);
+}
+
+.name span,
+.time {
+  color: var(--color-on-tint);
+}
+
+.untimed {
+  margin: 0;
+  padding: var(--spacing-2) var(--spacing-3);
+  border-top: 1px solid var(--color-line);
+  color: var(--color-muted);
+}

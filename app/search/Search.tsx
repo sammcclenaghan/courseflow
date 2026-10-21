@@ -3,15 +3,21 @@ import { useEffect, useRef } from "preact/hooks";
 import { displayCode } from "#domain/course.ts";
 import { searchCourses } from "#domain/search.ts";
 import { termName } from "#domain/term.ts";
+import { courseState, toggleCourse, whyBlocked } from "../schedule.ts";
 import { TERM_CODE, term } from "../term.ts";
+import button from "../ui/button.module.css";
 import styles from "./Search.module.css";
 
 const TERM_NAME = termName(TERM_CODE);
 
-/** The "Search courses" button, and the dialog it opens. "/" opens it too. */
+/**
+ * The "Search courses" button, and the dialog it opens. "/" opens it too.
+ * ↑↓ move through the results and ↵ adds or removes the highlighted course.
+ */
 export function Search() {
   const dialog = useRef<HTMLDialogElement>(null);
   const query = useSignal("");
+  const active = useSignal(0);
   const results = useComputed(() =>
     typeof term.value === "string"
       ? []
@@ -28,12 +34,31 @@ export function Search() {
     return () => removeEventListener("keydown", onKey);
   }, []);
 
+  // Keep the highlighted result in view as the arrow keys move it.
+  useEffect(() => {
+    document
+      .getElementById(`result-${active.value}`)
+      ?.scrollIntoView({ block: "nearest" });
+  }, [active.value]);
+
+  const onKeyDown = (event: KeyboardEvent) => {
+    const last = results.value.length - 1;
+    if (event.key === "ArrowDown")
+      active.value = Math.min(active.value + 1, last);
+    else if (event.key === "ArrowUp")
+      active.value = Math.max(active.value - 1, 0);
+    else if (event.key === "Enter" && results.value[active.value])
+      toggleCourse(results.value[active.value]);
+    else return;
+    event.preventDefault();
+  };
+
   const typed = query.value.trim();
   return (
     <>
       <button
         type="button"
-        class={styles.open}
+        class={button.secondary}
         onClick={() => dialog.current?.showModal()}
       >
         <SearchIcon />
@@ -71,10 +96,18 @@ export function Search() {
               autocomplete="off"
               spellcheck={false}
               placeholder="Course code or title"
+              role="combobox"
+              aria-expanded={results.value.length > 0}
+              aria-controls="search-results"
+              aria-activedescendant={
+                results.value.length > 0 ? `result-${active.value}` : undefined
+              }
               value={query.value}
               onInput={(event) => {
                 query.value = event.currentTarget.value;
+                active.value = 0;
               }}
+              onKeyDown={onKeyDown}
             />
             <kbd class={styles.key}>esc</kbd>
           </label>
@@ -94,14 +127,41 @@ export function Search() {
               </span>
             </p>
           ) : (
-            <ul class={styles.results}>
-              {results.value.map((course) => (
-                <li key={course.code} class={styles.result}>
-                  <strong>{displayCode(course.code)}</strong>
-                  <span>{course.title}</span>
-                </li>
-              ))}
-            </ul>
+            <div id="search-results" role="listbox" class={styles.results}>
+              {results.value.map((course, i) => {
+                const state = courseState(course);
+                return (
+                  // biome-ignore lint/a11y/useKeyWithClickEvents: the input's ↑↓ and ↵ drive the list.
+                  <div
+                    key={course.code}
+                    id={`result-${i}`}
+                    role="option"
+                    // Focus stays in the input, which points here with
+                    // aria-activedescendant.
+                    tabIndex={-1}
+                    aria-selected={i === active.value}
+                    aria-disabled={state === "blocked"}
+                    class={styles.result}
+                    data-state={state}
+                    onMouseMove={() => {
+                      active.value = i;
+                    }}
+                    onClick={() => toggleCourse(course)}
+                  >
+                    <span class={styles.text}>
+                      <strong>{displayCode(course.code)}</strong>
+                      <span>{course.title}</span>
+                    </span>
+                    {state === "added" && (
+                      <span class={styles.status}>Added</span>
+                    )}
+                    {state === "blocked" && (
+                      <span class={styles.status}>{whyBlocked(course)}</span>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           )}
         </div>
       </dialog>
