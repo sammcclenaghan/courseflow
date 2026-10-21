@@ -10,9 +10,18 @@ Fourth iteration of the project: it started as a Go CLI scraper, grew into a Go 
 
 ## Stack
 
-- TanStack Start + Router + Query
-- Cloudflare Workers and D1
+- Preact + Signals, Hono on Cloudflare Workers
+- Course data as static JSON; D1 only for saved schedules
 - Biome, TypeScript, Vitest
+
+## Layout
+
+- `domain/`: the rules (terms, courses, sections, schedules). Pure TypeScript, no framework imports.
+- `catalog/`: Node scripts that fetch UVic's data and build `public/data/terms/<term>.json`.
+- `app/`: the Preact app.
+- `worker/`: the Hono API.
+
+`app/`, `catalog/` and `worker/` import from `domain/` (as `#domain/…`) and never from each other; `nub run check` enforces it.
 
 ## Development
 
@@ -20,21 +29,10 @@ In this project, we use [nub](https://github.com/nubjs/nub?og), and no that's no
 
 ```bash
 nub ci
-nub run d1:migrate:local
+nub run catalog:fetch courses        # Kuali, into data/raw
+nub run catalog:fetch sections 202609  # Banner, one term at a time
+nub run catalog:build                # data/raw → public/data/terms
 nub run dev
 ```
 
 `nub run check`, `nub run typecheck`, and `nub run test` must pass before deploying with `nub run deploy`.
-
-Course data comes from `scripts/import.ts`, which fetches the Kuali calendars and Banner 9 sections and prints SQL for wrangler to apply:
-
-```bash
-nub scripts/import.ts courses > .wrangler/courses.sql
-nub scripts/import.ts sections 202701 > .wrangler/sections-202701.sql
-nubx wrangler d1 execute course-flow-v4 --local --file .wrangler/courses.sql
-nubx wrangler d1 execute course-flow-v4 --local --file .wrangler/sections-202701.sql
-```
-
-Import courses before sections, so sections can link to them. Use `--remote` instead of `--local` for production.
-
-Secrets are set with `wrangler secret put`, never committed. Non-secret Worker vars live in `wrangler.jsonc`.

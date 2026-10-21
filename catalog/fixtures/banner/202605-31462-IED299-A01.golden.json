@@ -1,0 +1,28 @@
+{
+  "term": "202605",
+  "course": "IED299",
+  "title": "SPECIAL STUDIES: WSÁNEĆ and Neighbours; Cultural Materials",
+  "section": {
+    "crn": "31462",
+    "number": "A01",
+    "type": "Lecture Topic",
+    "linkId": null,
+    "seats": {
+      "enrolled": 15,
+      "capacity": 20
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-05-06",
+        "endDate": "2026-07-17"
+      }
+    ]
+  }
+}

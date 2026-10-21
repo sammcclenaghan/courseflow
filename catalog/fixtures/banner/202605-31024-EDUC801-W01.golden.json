@@ -1,0 +1,21 @@
+{
+  "term": "202605",
+  "course": "EDUC801",
+  "title": "CO-OP WORK TERM",
+  "section": {
+    "crn": "31024",
+    "number": "W01",
+    "type": "Work Term",
+    "linkId": null,
+    "seats": {
+      "enrolled": 2,
+      "capacity": 999
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": []
+  }
+}

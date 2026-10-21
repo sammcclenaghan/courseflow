@@ -1,20 +1,20 @@
 {
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["app", "catalog", "domain", "worker", "vite.config.ts", "vitest.config.ts"],
   "compilerOptions": {
-    "target": "ES2022",
-    "jsx": "react-jsx",
+    "target": "ES2024",
     "module": "ESNext",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "types": ["node", "vite/client"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
+
+    /* Preact */
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
 
     /* Linting */
     "skipLibCheck": true,

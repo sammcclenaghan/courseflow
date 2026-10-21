@@ -1,0 +1,28 @@
+{
+  "term": "202605",
+  "course": "BUS699",
+  "title": "PhD Dissertation",
+  "section": {
+    "crn": "30076",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 9,
+      "capacity": 15
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-05-06",
+        "endDate": "2026-07-31"
+      }
+    ]
+  }
+}

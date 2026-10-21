@@ -1,0 +1,28 @@
+{
+  "term": "202605",
+  "course": "BCMB298",
+  "title": "Research Experience",
+  "section": {
+    "crn": "31178",
+    "number": "B02",
+    "type": "Gradable Lab",
+    "linkId": null,
+    "seats": {
+      "enrolled": 1,
+      "capacity": 100
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 100
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-05-11",
+        "endDate": "2026-06-26"
+      }
+    ]
+  }
+}

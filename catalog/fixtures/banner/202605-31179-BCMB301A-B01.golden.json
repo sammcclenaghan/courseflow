@@ -1,0 +1,46 @@
+{
+  "term": "202605",
+  "course": "BCMB301A",
+  "title": "Lab Techniques & Projects I",
+  "section": {
+    "crn": "31179",
+    "number": "B01",
+    "type": "Gradable Lab",
+    "linkId": null,
+    "seats": {
+      "enrolled": 10,
+      "capacity": 24
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 10
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          1,
+          3
+        ],
+        "time": {
+          "start": 780,
+          "end": 1010
+        },
+        "startDate": "2026-05-11",
+        "endDate": "2026-06-26"
+      },
+      {
+        "days": [
+          2,
+          4
+        ],
+        "time": {
+          "start": 780,
+          "end": 890
+        },
+        "startDate": "2026-05-11",
+        "endDate": "2026-06-26"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "term": "202605",
+  "course": "LAW399",
+  "title": "Supervised Research and Writing",
+  "section": {
+    "crn": "31635",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 2,
+      "capacity": 10
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-05-06",
+        "endDate": "2026-07-31"
+      }
+    ]
+  }
+}

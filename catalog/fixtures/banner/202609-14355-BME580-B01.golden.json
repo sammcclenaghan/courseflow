@@ -1,0 +1,30 @@
+{
+  "term": "202609",
+  "course": "BME580",
+  "title": "SPECIAL TOPICS IN BME: Core Skills for Biomanufacturing",
+  "section": {
+    "crn": "14355",
+    "number": "B01",
+    "type": "Lab",
+    "linkId": "B1",
+    "seats": {
+      "enrolled": 5,
+      "capacity": 10
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          4
+        ],
+        "time": null,
+        "startDate": "2026-12-03",
+        "endDate": "2026-12-03"
+      }
+    ]
+  }
+}

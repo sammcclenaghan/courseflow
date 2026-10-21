@@ -1,0 +1,34 @@
+{
+  "term": "202701",
+  "course": "BIOL370",
+  "title": "Conservation Biology",
+  "section": {
+    "crn": "20352",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 104,
+      "capacity": 110
+    },
+    "waitlist": {
+      "enrolled": 19,
+      "capacity": 100
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          1,
+          4
+        ],
+        "time": {
+          "start": 600,
+          "end": 680
+        },
+        "startDate": "2027-01-06",
+        "endDate": "2027-04-07"
+      }
+    ]
+  }
+}

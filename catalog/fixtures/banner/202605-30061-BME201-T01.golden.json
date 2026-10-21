@@ -1,0 +1,33 @@
+{
+  "term": "202605",
+  "course": "BME201",
+  "title": "Quantitative Human Physiology",
+  "section": {
+    "crn": "30061",
+    "number": "T01",
+    "type": "Tutorial",
+    "linkId": "T1",
+    "seats": {
+      "enrolled": 39,
+      "capacity": 48
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 50
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          4
+        ],
+        "time": {
+          "start": 990,
+          "end": 1040
+        },
+        "startDate": "2026-05-11",
+        "endDate": "2026-07-31"
+      }
+    ]
+  }
+}

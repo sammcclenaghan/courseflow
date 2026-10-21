@@ -1,0 +1,21 @@
+{
+  "term": "202605",
+  "course": "PHYS662",
+  "title": "Research Seminar",
+  "section": {
+    "crn": "30762",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 14,
+      "capacity": 120
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": []
+  }
+}

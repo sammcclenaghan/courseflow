@@ -1,0 +1,28 @@
+{
+  "term": "202609",
+  "course": "THEA440",
+  "title": "Ensemble Creation",
+  "section": {
+    "crn": "14421",
+    "number": "T01",
+    "type": "Tutorial",
+    "linkId": "T1",
+    "seats": {
+      "enrolled": 2,
+      "capacity": 5
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-09-09",
+        "endDate": "2026-12-07"
+      }
+    ]
+  }
+}

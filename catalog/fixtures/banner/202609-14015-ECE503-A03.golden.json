@@ -1,0 +1,28 @@
+{
+  "term": "202609",
+  "course": "ECE503",
+  "title": "Optimization for Machine Learning",
+  "section": {
+    "crn": "14015",
+    "number": "A03",
+    "type": "Lecture",
+    "linkId": "A1",
+    "seats": {
+      "enrolled": 0,
+      "capacity": 15
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 50
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-09-09",
+        "endDate": "2026-12-07"
+      }
+    ]
+  }
+}

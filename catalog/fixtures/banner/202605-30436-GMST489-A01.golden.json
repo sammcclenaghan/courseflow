@@ -1,0 +1,43 @@
+{
+  "term": "202605",
+  "course": "GMST489",
+  "title": "I-witness Field School",
+  "section": {
+    "crn": "30436",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 14,
+      "capacity": 22
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 5
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "time": {
+          "start": 570,
+          "end": 920
+        },
+        "startDate": "2026-05-06",
+        "endDate": "2026-05-12"
+      },
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-05-14",
+        "endDate": "2026-08-01"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "term": "202605",
+  "course": "ANTH597",
+  "title": "Thesis Proposal Development",
+  "section": {
+    "crn": "30028",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 5,
+      "capacity": 100
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "term": "202605",
+  "course": "LAW390",
+  "title": "Major Research Paper Requirement",
+  "section": {
+    "crn": "31638",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 9,
+      "capacity": 15
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-05-06",
+        "endDate": "2026-07-31"
+      }
+    ]
+  }
+}

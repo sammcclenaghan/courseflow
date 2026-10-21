@@ -1,0 +1,28 @@
+{
+  "term": "202609",
+  "course": "MUS405",
+  "title": "Music Composition III",
+  "section": {
+    "crn": "14183",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": "A1",
+    "seats": {
+      "enrolled": 2,
+      "capacity": 5
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-09-09",
+        "endDate": "2026-12-07"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "term": "202609",
+  "course": "LAW352",
+  "title": "Exchange Law Term",
+  "section": {
+    "crn": "14147",
+    "number": "A04",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 3,
+      "capacity": 3
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": []
+  }
+}

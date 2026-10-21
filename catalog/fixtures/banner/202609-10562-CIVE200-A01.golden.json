@@ -1,0 +1,34 @@
+{
+  "term": "202609",
+  "course": "CIVE200",
+  "title": "Engineering Drawing",
+  "section": {
+    "crn": "10562",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": "A1",
+    "seats": {
+      "enrolled": 107,
+      "capacity": 110
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 25
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          1,
+          4
+        ],
+        "time": {
+          "start": 870,
+          "end": 950
+        },
+        "startDate": "2026-09-09",
+        "endDate": "2026-12-07"
+      }
+    ]
+  }
+}

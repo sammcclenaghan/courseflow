@@ -1,0 +1,34 @@
+{
+  "term": "202701",
+  "course": "EOS230",
+  "title": "Introduction to Environmental Data Analysis",
+  "section": {
+    "crn": "21408",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": "A1",
+    "seats": {
+      "enrolled": 14,
+      "capacity": 22
+    },
+    "waitlist": {
+      "enrolled": 5,
+      "capacity": 5
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          1,
+          4
+        ],
+        "time": {
+          "start": 600,
+          "end": 680
+        },
+        "startDate": "2027-01-06",
+        "endDate": "2027-04-07"
+      }
+    ]
+  }
+}

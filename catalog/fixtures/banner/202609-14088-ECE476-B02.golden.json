@@ -1,0 +1,66 @@
+{
+  "term": "202609",
+  "course": "ECE476",
+  "title": "Engineering System Software",
+  "section": {
+    "crn": "14088",
+    "number": "B02",
+    "type": "Lab",
+    "linkId": null,
+    "seats": {
+      "enrolled": 12,
+      "capacity": 34
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          5
+        ],
+        "time": {
+          "start": 870,
+          "end": 1040
+        },
+        "startDate": "2026-10-09",
+        "endDate": "2026-10-09"
+      },
+      {
+        "days": [
+          5
+        ],
+        "time": {
+          "start": 870,
+          "end": 1040
+        },
+        "startDate": "2026-10-30",
+        "endDate": "2026-10-30"
+      },
+      {
+        "days": [
+          5
+        ],
+        "time": {
+          "start": 870,
+          "end": 1040
+        },
+        "startDate": "2026-11-20",
+        "endDate": "2026-11-20"
+      },
+      {
+        "days": [
+          5
+        ],
+        "time": {
+          "start": 870,
+          "end": 1040
+        },
+        "startDate": "2026-12-04",
+        "endDate": "2026-12-04"
+      }
+    ]
+  }
+}

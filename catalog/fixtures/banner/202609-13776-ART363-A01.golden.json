@@ -1,0 +1,33 @@
+{
+  "term": "202609",
+  "course": "ART363",
+  "title": "Advanced Digital Art",
+  "section": {
+    "crn": "13776",
+    "number": "A01",
+    "type": "Lecture Topic",
+    "linkId": null,
+    "seats": {
+      "enrolled": 20,
+      "capacity": 18
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 100
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          2
+        ],
+        "time": {
+          "start": 540,
+          "end": 710
+        },
+        "startDate": "2026-09-09",
+        "endDate": "2026-12-07"
+      }
+    ]
+  }
+}

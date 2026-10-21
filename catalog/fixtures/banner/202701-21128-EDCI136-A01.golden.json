@@ -1,0 +1,21 @@
+{
+  "term": "202701",
+  "course": "EDCI136",
+  "title": "Digital Literacy",
+  "section": {
+    "crn": "21128",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": "A1",
+    "seats": {
+      "enrolled": 13,
+      "capacity": 126
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 100
+    },
+    "note": null,
+    "meetings": []
+  }
+}

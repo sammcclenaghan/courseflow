@@ -1,0 +1,28 @@
+{
+  "term": "202605",
+  "course": "ECE310",
+  "title": "Digital Signal Processing I",
+  "section": {
+    "crn": "30305",
+    "number": "T01",
+    "type": "Tutorial",
+    "linkId": "T1",
+    "seats": {
+      "enrolled": 20,
+      "capacity": 85
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 50
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-05-06",
+        "endDate": "2026-07-31"
+      }
+    ]
+  }
+}

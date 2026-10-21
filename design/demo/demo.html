@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Courseflow Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="tokens.css" />
+<style>
+  /* Motion — Benji Taylor-style: trays rise on a spring curve, heights animate, steps cross-fade with a slight scale,
+     changed blocks glide, direction follows position. Everything collapses under reduced motion. */
+  .step-in { animation: stepIn 240ms cubic-bezier(0.25, 1, 0.5, 1) both; }
+  @keyframes stepIn { from { opacity: 0; transform: scale(0.96); } }
+  .morph-in { display: inline-block; animation: morphIn 280ms ease both; }
+  @keyframes morphIn { from { opacity: 0; filter: blur(4px); transform: translateY(3px); } }
+  .pop { animation: pop 460ms cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+  @keyframes pop { from { transform: scale(0); } }
+  .fade { animation: fade 200ms ease both; } @keyframes fade { from { opacity: 0; } }
+  .slide-left { animation: slideL 340ms cubic-bezier(0.32, 0.72, 0, 1) both; } @keyframes slideL { from { transform: translateX(35%); opacity: 0; } }
+  .slide-right { animation: slideR 340ms cubic-bezier(0.32, 0.72, 0, 1) both; } @keyframes slideR { from { transform: translateX(-35%); opacity: 0; } }
+  .weeks-in { animation: fade 260ms ease both; }
+  .nav-in { animation: fade 200ms ease 260ms both; }
+  .rise { animation: rise 380ms cubic-bezier(0.2, 0.8, 0.2, 1) both; } @keyframes rise { from { opacity: 0; transform: translateY(14px) scale(0.97); } }
+  .block { transition: top 460ms cubic-bezier(0.32, 0.72, 0, 1), left 460ms cubic-bezier(0.32, 0.72, 0, 1), height 460ms cubic-bezier(0.32, 0.72, 0, 1), width 460ms cubic-bezier(0.32, 0.72, 0, 1), background-color 300ms, box-shadow 300ms, transform 140ms ease, filter 140ms ease; }
+  button { -webkit-tap-highlight-color: transparent; transition: transform 140ms ease, background-color 160ms; }
+  button:active { transform: scale(0.97); }
+  /* Classes answer a touch at once: they dim slightly while pressed (on top of the shared press-scale), so a tap feels
+     like it landed before the tray rises. */
+  .block:active { filter: brightness(0.94); }
+  .row:active { background-color: var(--color-fill) !important; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+  /* Framed on a desktop; full screen on a real phone. */
+  body { background: #EDEDED; }
+  .stage { min-height: 100vh; display: flex; align-items: center; justify-content: center; gap: 56px; padding: 32px; }
+  .device { --safe-top: 47px; --safe-bottom: 34px; --phone-radius: 48px; position: relative; width: 390px; height: 844px; border-radius: 48px; overflow: hidden;
+    box-shadow: 0 0 0 1px #0A0A0A1A, 0 32px 64px -24px #00000059; background: #FFF; flex-shrink: 0; }
+  .statusbar { position: absolute; top: 0; left: 0; right: 0; z-index: 60; pointer-events: none; }
+  .home { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); width: 134px; height: 5px; border-radius: 3px; background: #0A0A0A; z-index: 60; pointer-events: none; }
+  .notes { width: 300px; font-size: 12px; line-height: 18px; color: #404040; }
+  .notes h1 { font-size: 16px; line-height: 20px; margin: 0 0 8px; color: #0A0A0A; }
+  .notes li { margin-bottom: 6px; }
+  @media (max-width: 500px) {
+    body { background: #FFF; } .stage { padding: 0; display: block; } .notes, .statusbar, .home { display: none; }
+    .device { --safe-top: env(safe-area-inset-top); --safe-bottom: env(safe-area-inset-bottom); --phone-radius: 0px; width: 100vw; height: 100dvh; border-radius: 0; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="module">
+import { createRoot } from "https://esm.sh/react-dom@19/client";
+import { html, loadCatalog, loadTerm, planOf, ADDED } from "./ui.js";
+import { StatusBar } from "./mobile.js";
+import { DemoApp } from "./demo.js";
+const terms = { 202609: await loadCatalog(), 202701: await loadTerm("202701") };
+const { titles, graph } = await (await fetch("graph.json")).json();
+createRoot(document.getElementById("root")).render(html`<div class="stage">
+  <div class="notes">
+    <h1>Courseflow, live</h1>
+    <p>Real Fall 2026 data. The schedule starts with two clashes on Tuesday.</p>
+    <ol>
+      <li>Tap <b>Tue</b> → tap CSC 230 (it clashes with MATH 211) → <b>Change</b> → pick a lab. Watch it glide behind the tray.</li>
+      <li>Fix both clashes for the one celebratory moment; the red dot on Weeks leaves.</li>
+      <li>Tap any class → <b>Full page</b>: the tray grows into the page.</li>
+      <li><b>Search</b> → type <i>csc 226</i> → tap it → <b>Add to schedule</b> → pick a lab.</li>
+      <li>Swipe the day sideways (drag on desktop) or tap a weekday; Friday → Monday turns the week. <b>Weeks</b> jumps anywhere.</li>
+      <li>Tap <b>Fall 2026</b> to switch terms.</li>
+    </ol>
+    <p>Open this page on your phone (same Wi-Fi) for the full-screen version.</p>
+  </div>
+  <div class="device">
+    <div class="statusbar"><${StatusBar} /></div>
+    <${DemoApp} terms=${terms} graph=${graph} titles=${titles} initialPlan=${planOf(terms[202609], ADDED)} />
+    <div class="home" />
+  </div>
+</div>`);
+</script>
+</body>
+</html>

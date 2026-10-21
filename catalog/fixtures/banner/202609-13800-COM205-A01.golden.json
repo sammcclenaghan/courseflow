@@ -1,0 +1,33 @@
+{
+  "term": "202609",
+  "course": "COM205",
+  "title": "Professional Skills Development",
+  "section": {
+    "crn": "13800",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 299,
+      "capacity": 300
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 100
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          3
+        ],
+        "time": {
+          "start": 690,
+          "end": 770
+        },
+        "startDate": "2026-09-09",
+        "endDate": "2026-12-07"
+      }
+    ]
+  }
+}

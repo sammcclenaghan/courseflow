@@ -1,0 +1,34 @@
+{
+  "term": "202605",
+  "course": "LAW301",
+  "title": "The Administrative Law Process",
+  "section": {
+    "crn": "30914",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 43,
+      "capacity": 50
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 15
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          2,
+          4
+        ],
+        "time": {
+          "start": 780,
+          "end": 920
+        },
+        "startDate": "2026-05-06",
+        "endDate": "2026-07-31"
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "term": "202605",
+  "course": "SENG265",
+  "title": "Software Development Methods",
+  "section": {
+    "crn": "30802",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": "A1",
+    "seats": {
+      "enrolled": 17,
+      "capacity": 45
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 50
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          2,
+          3,
+          5
+        ],
+        "time": {
+          "start": 630,
+          "end": 680
+        },
+        "startDate": "2026-05-06",
+        "endDate": "2026-05-27"
+      },
+      {
+        "days": [
+          2,
+          3,
+          5
+        ],
+        "time": {
+          "start": 630,
+          "end": 680
+        },
+        "startDate": "2026-05-29",
+        "endDate": "2026-06-12"
+      },
+      {
+        "days": [
+          2,
+          3,
+          5
+        ],
+        "time": {
+          "start": 630,
+          "end": 680
+        },
+        "startDate": "2026-06-16",
+        "endDate": "2026-07-31"
+      }
+    ]
+  }
+}

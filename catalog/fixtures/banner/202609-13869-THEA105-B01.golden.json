@@ -1,0 +1,33 @@
+{
+  "term": "202609",
+  "course": "THEA105",
+  "title": "Introduction to Stagecraft and Technical Practice",
+  "section": {
+    "crn": "13869",
+    "number": "B01",
+    "type": "Lab",
+    "linkId": "B1",
+    "seats": {
+      "enrolled": 25,
+      "capacity": 40
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 40
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          2
+        ],
+        "time": {
+          "start": 570,
+          "end": 740
+        },
+        "startDate": "2026-09-09",
+        "endDate": "2026-12-07"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "term": "202609",
+  "course": "ASTR101",
+  "title": "Exploring the Night Sky",
+  "section": {
+    "crn": "10166",
+    "number": "B01",
+    "type": "Lab",
+    "linkId": "B1",
+    "seats": {
+      "enrolled": 15,
+      "capacity": 18
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          1
+        ],
+        "time": {
+          "start": 570,
+          "end": 740
+        },
+        "startDate": "2026-09-09",
+        "endDate": "2026-12-07"
+      },
+      {
+        "days": [
+          1
+        ],
+        "time": {
+          "start": 1230,
+          "end": 1400
+        },
+        "startDate": "2026-09-21",
+        "endDate": "2026-09-21"
+      }
+    ]
+  }
+}

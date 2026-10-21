@@ -1,36 +1,89 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.5.9/schema.json",
-	"vcs": {
-		"enabled": false,
-		"clientKind": "git",
-		"useIgnoreFile": false
-	},
-	"files": {
-		"ignoreUnknown": false,
-		"includes": [
-			"**/src/**/*",
-			"**/.vscode/**/*",
-			"**/index.html",
-			"**/vite.config.ts",
-			"**/vitest.config.ts",
-			"!**/src/routeTree.gen.ts",
-			"!**/src/styles.css"
-		]
-	},
-	"formatter": {
-		"enabled": true,
-		"indentStyle": "tab"
-	},
-	"assist": { "actions": { "source": { "organizeImports": "on" } } },
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"preset": "recommended"
-		}
-	},
-	"javascript": {
-		"formatter": {
-			"quoteStyle": "double"
-		}
-	}
+  "$schema": "https://biomejs.dev/schemas/2.5.9/schema.json",
+  "files": {
+    "includes": [
+      "app/**",
+      "catalog/**",
+      "domain/**",
+      "worker/**",
+      "index.html",
+      "vite.config.ts",
+      "vitest.config.ts",
+      "!catalog/fixtures"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended"
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["domain/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": [
+                      "preact",
+                      "preact/*",
+                      "@preact/*",
+                      "hono",
+                      "hono/*",
+                      "node:*",
+                      "zod",
+                      "../*",
+                      "#*"
+                    ],
+                    "message": "domain/ is pure rules: it imports only other domain/ files, with ./"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "includes": ["app/**", "catalog/**", "worker/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": [
+                      "**/app/**",
+                      "**/catalog/**",
+                      "**/worker/**",
+                      "**/domain/**"
+                    ],
+                    "message": "app/, catalog/ and worker/ never import each other; import domain/ as #domain/…"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }

@@ -1,0 +1,66 @@
+{
+  "term": "202605",
+  "course": "BME201",
+  "title": "Quantitative Human Physiology",
+  "section": {
+    "crn": "30057",
+    "number": "B01",
+    "type": "Lab",
+    "linkId": "B1",
+    "seats": {
+      "enrolled": 14,
+      "capacity": 14
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 3
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          1
+        ],
+        "time": {
+          "start": 870,
+          "end": 1040
+        },
+        "startDate": "2026-05-25",
+        "endDate": "2026-05-25"
+      },
+      {
+        "days": [
+          1
+        ],
+        "time": {
+          "start": 870,
+          "end": 1040
+        },
+        "startDate": "2026-06-08",
+        "endDate": "2026-06-08"
+      },
+      {
+        "days": [
+          1
+        ],
+        "time": {
+          "start": 870,
+          "end": 1040
+        },
+        "startDate": "2026-06-22",
+        "endDate": "2026-06-22"
+      },
+      {
+        "days": [
+          1
+        ],
+        "time": {
+          "start": 870,
+          "end": 1040
+        },
+        "startDate": "2026-07-13",
+        "endDate": "2026-07-13"
+      }
+    ]
+  }
+}

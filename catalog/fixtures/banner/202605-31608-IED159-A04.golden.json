@@ -1,0 +1,28 @@
+{
+  "term": "202605",
+  "course": "IED159",
+  "title": "INDIGENOUS LANGUAGE I: ʔayʔaǰuθəm (Ayajuthum)",
+  "section": {
+    "crn": "31608",
+    "number": "A04",
+    "type": "Lecture Topic",
+    "linkId": null,
+    "seats": {
+      "enrolled": 11,
+      "capacity": 50
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [],
+        "time": null,
+        "startDate": "2026-05-06",
+        "endDate": "2026-07-31"
+      }
+    ]
+  }
+}

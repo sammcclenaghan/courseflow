@@ -1,0 +1,33 @@
+{
+  "term": "202701",
+  "course": "EDCI591",
+  "title": "SELECTED TOPICS: Researching Educational Policy",
+  "section": {
+    "crn": "24307",
+    "number": "A01",
+    "type": "Lecture Topic",
+    "linkId": null,
+    "seats": {
+      "enrolled": 0,
+      "capacity": 25
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": [
+      {
+        "days": [
+          2
+        ],
+        "time": {
+          "start": 990,
+          "end": 1160
+        },
+        "startDate": "2027-01-06",
+        "endDate": "2027-04-07"
+      }
+    ]
+  }
+}

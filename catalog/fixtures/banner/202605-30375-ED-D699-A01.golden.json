@@ -1,0 +1,21 @@
+{
+  "term": "202605",
+  "course": "ED-D699",
+  "title": "PhD Dissertation",
+  "section": {
+    "crn": "30375",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 3,
+      "capacity": 25
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": []
+  }
+}

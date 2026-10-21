@@ -1,0 +1,77 @@
+/* Courseflow tokens — same names and values as the Paper file's tokens (Tailwind v4 @theme names).
+   If a value here differs from Paper, the preview is wrong; change both together. */
+:root {
+  --color-ink: #0A0A0A;
+  --color-muted: #737373;
+  --color-faint: #A3A3A3;
+  --color-on-tint: rgba(10, 10, 10, 0.58);
+  --color-line: #E5E5E5;
+  --color-line-subtle: #EBEBEB;
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #FAFAFA;
+  --color-fill: #F5F5F5;
+  --color-clash-solid: #ED4042;
+  --color-clash-fill: #FCDDDD;
+  --color-clash-ring: #F59697;
+  --color-course-green: #DAF4EB;
+  --color-course-green-ring: #9AE3CC;
+  --color-course-purple: #F0EAFF;
+  --color-course-purple-ring: #D8C7FF;
+  --color-course-cyan: #D8F4F9;
+  --color-course-cyan-ring: #91E1EF;
+  --color-course-blue: #E1EFFF;
+  --color-course-blue-ring: #B1D4FF;
+
+  --font-sans: Inter, system-ui, sans-serif;
+  --text-sm: 12px;
+  --text-md: 14px;
+  --text-lg: 16px;
+  --leading-sm: 16px;
+  --leading-event: 18px;
+  --leading-md: 20px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  --radius-key: 4px;
+  --radius-event: 6px;
+  --radius-control: 8px;
+  --radius-panel: 14px;
+
+  --spacing-0_5: 2px;
+  --spacing-1: 4px;
+  --spacing-1_5: 6px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-control: 28px;
+  --spacing-header: 44px;
+
+  /* Not in Paper (it has no shadow token type); here so every component uses the same recipe. */
+  --shadow-ring: 0 0 0 1px #0A0A0A1A;
+  --shadow-secondary: 0 0 0 1px #0A0A0A1A, 0 1px 2px #0000000D;
+  --shadow-primary: inset 0 1px 0 #424242, 0 0 0 1px #060606, 0 1px 2px #0000000D;
+  --gradient-primary: linear-gradient(in oklab 180deg, oklab(28.5% 0 0) 0%, oklab(20.5% 0 0) 100%);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-sans); color: var(--color-ink); -webkit-font-smoothing: antialiased; font-synthesis: none; }
+button { font: inherit; color: inherit; }
+
+/* ── Motion: modal ⇄ course page (View Transitions) ──
+   One shared element: the modal card becomes the page panel. */
+:root { --duration-expand: 380ms; --ease-expand: cubic-bezier(0.4, 0, 0.2, 1); } /* standard ease-in-out: gentle start, soft landing */
+.vt-panel { view-transition-name: course-panel; }
+.vt-action { display: inline-flex; }
+::view-transition-group(*) { animation-duration: var(--duration-expand); animation-timing-function: var(--ease-expand); }
+::view-transition-image-pair(course-panel) { overflow: clip; border-radius: var(--radius-panel); background: var(--color-surface); }
+/* Grow into the page: the destination itself, miniaturised to fill the card, grows with the card to full size —
+   uniform scale, anchored top-left, never stretched; the sidebar is revealed from the right as the card widens.
+   Header and button grow with it (not animated separately). The card's old content is simply replaced — no fade. */
+::view-transition-old(course-panel) { animation: none; opacity: 0; }
+::view-transition-new(course-panel) { animation: none; width: 100%; height: 100%; object-fit: cover; object-position: top left; }
+::view-transition-old(root) { animation: vt-out var(--duration-expand) ease both; }
+::view-transition-new(root) { animation: vt-in var(--duration-expand) ease both; }
+@keyframes vt-out { to { opacity: 0; } }
+@keyframes vt-in { from { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; } }

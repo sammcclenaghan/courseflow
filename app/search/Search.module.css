@@ -1,0 +1,127 @@
+.open {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-1_5);
+  height: var(--spacing-control);
+  padding-inline: var(--spacing-3);
+  border: 0;
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-secondary);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+.key {
+  min-width: 20px;
+  padding: 1px 5px;
+  border-radius: var(--radius-key);
+  background: var(--color-surface);
+  box-shadow: 0 0 0 1px var(--color-line);
+  color: var(--color-muted);
+  font: inherit;
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+}
+
+/* Touch screens have no "/" or Esc key to hint at. */
+@media (pointer: coarse) {
+  .key {
+    display: none;
+  }
+}
+
+.dialog {
+  width: min(560px, 100% - 32px);
+  max-width: none;
+  height: min(620px, 100% - 160px);
+  margin: 80px auto 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-panel);
+  background: var(--color-surface);
+  box-shadow:
+    var(--shadow-ring),
+    0 24px 64px -16px #00000059;
+}
+
+.dialog::backdrop {
+  background: rgb(10 10 10 / 25%);
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.field {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 10px;
+  height: 54px;
+  padding-inline: var(--spacing-4) 14px;
+  border-bottom: 1px solid var(--color-line);
+  color: var(--color-muted);
+}
+
+.field input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: var(--color-ink);
+  /* 16px stops iOS zooming in on focus. */
+  font-size: var(--text-lg);
+}
+
+.field input::placeholder {
+  color: var(--color-muted);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  margin: 0;
+  padding: var(--spacing-4) 26px;
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.message span {
+  color: var(--color-muted);
+}
+
+.results {
+  flex: 1;
+  margin: 0;
+  padding: var(--spacing-2) var(--spacing-4);
+  overflow-y: auto;
+  list-style: none;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-2) 10px;
+  border-radius: var(--radius-control);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.result strong {
+  font-weight: var(--font-weight-semibold);
+}
+
+.result span {
+  overflow: hidden;
+  color: var(--color-muted);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

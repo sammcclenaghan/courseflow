@@ -1,0 +1,16 @@
+.page {
+  min-height: 100dvh;
+  padding: var(--spacing-4);
+  background: var(--color-surface-subtle);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.term {
+  margin-right: auto;
+  color: var(--color-muted);
+}

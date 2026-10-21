@@ -1,0 +1,21 @@
+{
+  "term": "202609",
+  "course": "LAW699",
+  "title": "PhD Dissertation",
+  "section": {
+    "crn": "13502",
+    "number": "A01",
+    "type": "Lecture",
+    "linkId": null,
+    "seats": {
+      "enrolled": 8,
+      "capacity": 50
+    },
+    "waitlist": {
+      "enrolled": 0,
+      "capacity": 0
+    },
+    "note": null,
+    "meetings": []
+  }
+}
