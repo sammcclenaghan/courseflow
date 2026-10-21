@@ -3,6 +3,7 @@ import {
   addCourse,
   conflictingCourses,
   hasCourse,
+  pickSection,
   removeCourse,
   type Schedule,
   sectionSets,
@@ -192,5 +193,71 @@ describe("conflictingCourses", () => {
     expect(
       conflictingCourses(term([monday, tuesday, onlyMonday]), full, onlyMonday),
     ).toEqual([]);
+  });
+});
+
+describe("pickSection", () => {
+  // CSC110's shape: lectures in link groups 1 and 2, each with its own labs.
+  const a01 = section("A01", [meeting("MR", "10:00-11:20")], { linkId: "A1" });
+  const a16 = section("A16", [meeting("TF", "13:00-14:20")], { linkId: "A2" });
+  const b01 = section("B01", [meeting("W", "10:30-12:20")], { linkId: "B1" });
+  const b02 = section("B02", [meeting("W", "14:30-16:20")], { linkId: "B1" });
+  const b24 = section("B24", [meeting("W", "08:30-10:20")], { linkId: "B2" });
+  const b25 = section("B25", [meeting("R", "15:30-17:20")], { linkId: "B2" });
+  const csc110 = course("CSC110", [a01, a16, b01, b02, b24, b25]);
+  const math100 = course("MATH100", [
+    section("A01", [meeting("W", "08:30-09:20")]),
+  ]);
+  const catalog = term([math100, csc110]);
+  // MATH100 first, then CSC110 A01 + B01.
+  const schedule: Schedule = {
+    term: "202609",
+    crns: [math100.sections[0].crn, a01.crn, b01.crn],
+  };
+  const picks = (s: Schedule | null) =>
+    s && sectionsIn(catalog, s).map(({ section }) => section.number);
+
+  it("swaps a lab and keeps the lecture", () => {
+    expect(picks(pickSection(catalog, schedule, csc110, b02))).toEqual([
+      "A01",
+      "A01",
+      "B02",
+    ]);
+  });
+
+  it("moves the lab into the new lecture's link group", () => {
+    // B24 overlaps MATH100 on Wednesdays, so A16 gets B25.
+    expect(picks(pickSection(catalog, schedule, csc110, a16))).toEqual([
+      "A01",
+      "A16",
+      "B25",
+    ]);
+  });
+
+  it("is null for a section that conflicts with another course", () => {
+    expect(pickSection(catalog, schedule, csc110, b24)).toBeNull();
+    expect(
+      conflictingCourses(catalog, schedule, csc110, b24).map((c) => c.code),
+    ).toEqual(["MATH100"]);
+  });
+
+  it("keeps the course's other picks where it can", () => {
+    // Lecture + lab + tutorial: changing the lab keeps the tutorial.
+    const lecture = section("A01", [meeting("M", "09:00-10:00")]);
+    const labs = [
+      section("B01", [meeting("T", "09:00-10:00")]),
+      section("B02", [meeting("T", "11:00-12:00")]),
+    ];
+    const tutorials = [
+      section("T01", [meeting("F", "09:00-10:00")]),
+      section("T02", [meeting("F", "11:00-12:00")]),
+    ];
+    const phys = course("PHYS110", [lecture, ...labs, ...tutorials]);
+    const current: Schedule = {
+      term: "202609",
+      crns: [lecture.crn, labs[0].crn, tutorials[1].crn],
+    };
+    const next = pickSection(term([phys]), current, phys, labs[1]) as Schedule;
+    expect(next.crns).toEqual([lecture.crn, labs[1].crn, tutorials[1].crn]);
   });
 });

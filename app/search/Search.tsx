@@ -10,6 +10,11 @@ import styles from "./Search.module.css";
 
 const TERM_NAME = termName(TERM_CODE);
 
+let openDialog: (() => void) | undefined;
+
+/** Opens search from anywhere, like the empty schedule's button. */
+export const openSearch = () => openDialog?.();
+
 /**
  * The "Search courses" button, and the dialog it opens. "/" opens it too.
  * ↑↓ move through the results and ↵ adds or removes the highlighted course.
@@ -25,6 +30,7 @@ export function Search() {
   );
 
   useEffect(() => {
+    openDialog = () => dialog.current?.showModal();
     const onKey = (event: KeyboardEvent) => {
       if (event.key !== "/" || isTyping(event.target)) return;
       event.preventDefault();

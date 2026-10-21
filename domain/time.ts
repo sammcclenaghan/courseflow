@@ -52,6 +52,17 @@ const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 /** "2027-01-11" → "Mon" */
 export const formatDayName = (date: string) => DAYS[weekday(date)];
 
+/** "Oct 7", "Oct 19–24", "Sep 30 – Oct 2" */
+export function formatDateRange(from: string, to: string) {
+  const [a, b] = [toUtc(from), toUtc(to)];
+  const short = (d: Date) =>
+    `${MONTHS[d.getUTCMonth()].slice(0, 3)} ${d.getUTCDate()}`;
+  if (from === to) return short(a);
+  return a.getUTCMonth() === b.getUTCMonth()
+    ? `${short(a)}–${b.getUTCDate()}`
+    : `${short(a)} – ${short(b)}`;
+}
+
 /** The weekdays of a week: "January 11 – 15, 2027", "February 26 – March 2, 2027". */
 export function formatWeek(monday: string) {
   const [from, to] = [toUtc(monday), toUtc(addDays(monday, 4))];
@@ -62,8 +73,8 @@ export function formatWeek(monday: string) {
   return `${MONTHS[from.getUTCMonth()]} ${from.getUTCDate()} – ${end}, ${to.getUTCFullYear()}`;
 }
 
-/** 870 → "2:30", with "PM" when `period` is set. */
-function formatTime(minutes: number, period: boolean) {
+/** 870 → "2:30", or "2:30 PM" with `period`. */
+export function formatTime(minutes: number, period: boolean) {
   const clock = `${((Math.floor(minutes / 60) + 11) % 12) + 1}:${String(minutes % 60).padStart(2, "0")}`;
   return period ? `${clock} ${minutes < 720 ? "AM" : "PM"}` : clock;
 }

@@ -63,18 +63,62 @@ export function removeCourse(schedule: Schedule, course: Course): Schedule {
 }
 
 /**
- * The courses in the schedule that a course conflicts with: removing any one
- * of them would let it fit. Empty when it would take removing more than one.
+ * The schedule with a section of a course picked, or null when no legal
+ * schedule includes it. The course's other sections move only when they must:
+ * a different group-1 lab keeps CSC 110's lecture, but lecture A16 moves the
+ * lab into group 2. Of the sets that fit, the one keeping most of the course's
+ * current sections wins, then the lowest-numbered. The course keeps its place.
+ */
+export function pickSection(
+  term: Term,
+  schedule: Schedule,
+  course: Course,
+  section: Section,
+): Schedule | null {
+  const current = new Set(course.sections.map((s) => s.crn));
+  const rest = schedule.crns.filter((crn) => !current.has(crn));
+  const others = sectionsIn(term, { ...schedule, crns: rest }).map(
+    (p) => p.section,
+  );
+  const sets = sectionSets(course).filter(
+    (set) => set.includes(section) && fits(set, others),
+  );
+  if (sets.length === 0) return null;
+  const kept = (set: Section[]) =>
+    set.filter((s) => schedule.crns.includes(s.crn)).length;
+  const best = sets.reduce((a, b) => (kept(b) > kept(a) ? b : a));
+  const at = schedule.crns.findIndex((crn) => current.has(crn));
+  const place = at === -1 ? rest.length : at;
+  return {
+    ...schedule,
+    crns: [
+      ...rest.slice(0, place),
+      ...best.map((s) => s.crn),
+      ...rest.slice(place),
+    ],
+  };
+}
+
+/**
+ * The other courses in the schedule standing in the way of adding a course,
+ * or of picking one of its sections: removing any one of them would make it
+ * fit. Empty when it would take removing more than one.
  */
 export function conflictingCourses(
   term: Term,
   schedule: Schedule,
   course: Course,
+  section?: Section,
 ): Course[] {
+  const fitsWithout = (other: Course) => {
+    const without = removeCourse(schedule, other);
+    return section
+      ? pickSection(term, without, course, section) !== null
+      : addCourse(term, without, course) !== null;
+  };
   const courses = new Set(sectionsIn(term, schedule).map((p) => p.course));
-  return [...courses].filter(
-    (other) => addCourse(term, removeCourse(schedule, other), course) !== null,
-  );
+  courses.delete(course);
+  return [...courses].filter(fitsWithout);
 }
 
 /** Whether no two sections of a set conflict, and none conflicts with the picked ones. */

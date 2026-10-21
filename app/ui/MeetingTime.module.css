@@ -1,0 +1,38 @@
+.meeting {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.days {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.days span {
+  width: 12px;
+  color: var(--color-faint);
+  text-align: center;
+}
+
+.days span[data-on="true"] {
+  color: inherit;
+  font-weight: var(--font-weight-semibold);
+}
+
+/* The weekend sits a little apart, so weekday letters never move. */
+.days span:nth-child(6) {
+  margin-left: var(--spacing-1);
+}
+
+.dash {
+  padding-inline: var(--spacing-1);
+  color: var(--color-faint);
+}
+
+.end,
+.tba {
+  color: var(--color-muted);
+}

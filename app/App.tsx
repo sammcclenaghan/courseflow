@@ -1,6 +1,7 @@
 import { termName } from "#domain/term.ts";
 import styles from "./App.module.css";
 import { Calendar } from "./calendar/Calendar.tsx";
+import { SelectedCourses } from "./courses/SelectedCourses.tsx";
 import { Search } from "./search/Search.tsx";
 import { TERM_CODE } from "./term.ts";
 
@@ -12,8 +13,9 @@ export function App() {
         <span class={styles.term}>{termName(TERM_CODE)}</span>
         <Search />
       </header>
-      <main>
+      <main class={styles.main}>
         <Calendar />
+        <SelectedCourses />
       </main>
     </div>
   );

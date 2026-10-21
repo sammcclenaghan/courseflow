@@ -40,6 +40,7 @@ export const meetsOn = (meeting: Meeting, date: string) =>
 export function meetingsOverlap(a: Meeting, b: Meeting) {
   if (!a.time || !b.time) return false;
   if (a.time.start >= b.time.end || b.time.start >= a.time.end) return false;
+  if (!a.days.some((day) => b.days.includes(day))) return false;
   const from = a.startDate > b.startDate ? a.startDate : b.startDate;
   const to = a.endDate < b.endDate ? a.endDate : b.endDate;
   // Seven days in a row hold every weekday, so the first week both run

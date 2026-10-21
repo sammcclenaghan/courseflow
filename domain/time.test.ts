@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   addDays,
   datesBetween,
+  formatDateRange,
   formatDayName,
   formatHour,
   formatTimeRange,
@@ -59,6 +60,12 @@ describe("formatting", () => {
     expect(formatDayName("2027-01-11")).toBe("Mon");
     expect(formatWeek("2027-01-11")).toBe("January 11 – 15, 2027");
     expect(formatWeek("2027-03-29")).toBe("March 29 – April 2, 2027");
+  });
+
+  it("formats date ranges", () => {
+    expect(formatDateRange("2026-10-07", "2026-10-07")).toBe("Oct 7");
+    expect(formatDateRange("2026-10-19", "2026-10-24")).toBe("Oct 19–24");
+    expect(formatDateRange("2026-09-30", "2026-10-02")).toBe("Sep 30 – Oct 2");
   });
 
   it("formats times, with AM/PM once unless the range crosses noon", () => {
