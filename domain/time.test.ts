@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   addDays,
   datesBetween,
-  formatDay,
+  formatDayName,
   formatHour,
   formatTimeRange,
   formatWeek,
@@ -56,7 +56,7 @@ describe("addDays and mondayOf", () => {
 
 describe("formatting", () => {
   it("formats a day and a week", () => {
-    expect(formatDay("2027-01-11")).toBe("Mon 11");
+    expect(formatDayName("2027-01-11")).toBe("Mon");
     expect(formatWeek("2027-01-11")).toBe("January 11 – 15, 2027");
     expect(formatWeek("2027-03-29")).toBe("March 29 – April 2, 2027");
   });

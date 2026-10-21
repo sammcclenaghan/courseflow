@@ -4,7 +4,7 @@ import { meetsOn } from "#domain/section.ts";
 import type { Term } from "#domain/term.ts";
 import {
   addDays,
-  formatDay,
+  formatDayName,
   formatHour,
   formatTimeRange,
   formatWeek,
@@ -17,7 +17,7 @@ import button from "../ui/button.module.css";
 import styles from "./Calendar.module.css";
 
 /** Pixels per hour. */
-const HOUR = 56;
+const HOUR = 64;
 
 /** One week of the schedule, with every class that meets on each day. */
 export function Calendar() {
@@ -99,7 +99,7 @@ function Week({ term }: { term: Term }) {
         <div />
         {days.map(({ date }) => (
           <div key={date} class={styles.day}>
-            {formatDay(date)}
+            {formatDayName(date)}
           </div>
         ))}
 
@@ -125,10 +125,12 @@ function Week({ term }: { term: Term }) {
                   top: top(start),
                   height: height(start, end),
                   "--tint": `var(${colors.value.get(course.code)})`,
+                  "--ring": `var(${colors.value.get(course.code)}-ring)`,
                 }}
               >
                 <span class={styles.name}>
-                  {displayCode(course.code)} <span>{section.number}</span>
+                  <span>{displayCode(course.code)}</span>
+                  <span>{section.number}</span>
                 </span>
                 <span class={styles.time}>{formatTimeRange(start, end)}</span>
               </div>

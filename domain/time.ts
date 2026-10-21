@@ -49,9 +49,8 @@ const MONTHS = [
 ];
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-/** "2027-01-11" → "Mon 11" */
-export const formatDay = (date: string) =>
-  `${DAYS[weekday(date)]} ${toUtc(date).getUTCDate()}`;
+/** "2027-01-11" → "Mon" */
+export const formatDayName = (date: string) => DAYS[weekday(date)];
 
 /** The weekdays of a week: "January 11 – 15, 2027", "February 26 – March 2, 2027". */
 export function formatWeek(monday: string) {

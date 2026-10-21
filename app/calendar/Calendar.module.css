@@ -24,7 +24,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 56px repeat(var(--days), minmax(0, 1fr));
+  grid-template-columns: 73px repeat(var(--days), minmax(0, 1fr));
 }
 
 .day {
@@ -42,7 +42,7 @@
 
 .hours span {
   position: absolute;
-  right: var(--spacing-2);
+  right: 10px;
   translate: 0 -50%;
   color: var(--color-muted);
   white-space: nowrap;
@@ -60,22 +60,29 @@
 .class {
   position: absolute;
   left: 2px;
-  right: 2px;
+  /* Room on the right to click the day behind a class. */
+  right: 14px;
   display: flex;
   flex-direction: column;
-  min-height: 20px;
+  min-height: 24px;
   padding: var(--spacing-1) var(--spacing-1_5);
-  /* 1px of space between back-to-back classes. */
-  border: 1px solid var(--color-surface);
   border-radius: var(--radius-event);
   background: var(--tint);
+  box-shadow: inset 0 0 0 1px var(--ring);
   overflow: clip;
   line-height: var(--leading-event);
+  font-variant-numeric: tabular-nums;
 }
 
 .class[data-indented="true"] {
   left: 40%;
-  box-shadow: 0 0 0 1px var(--color-surface);
+  outline: 2px solid var(--color-surface);
+}
+
+.name {
+  display: flex;
+  gap: var(--spacing-1_5);
+  font-weight: var(--font-weight-medium);
 }
 
 .name,
@@ -85,11 +92,6 @@
   white-space: nowrap;
 }
 
-.name {
-  font-weight: var(--font-weight-medium);
-}
-
-.name span,
 .time {
   color: var(--color-on-tint);
 }
