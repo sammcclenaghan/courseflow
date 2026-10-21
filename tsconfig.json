@@ -1,5 +1,5 @@
 {
-  "include": ["app", "catalog", "domain", "worker", "vite.config.ts", "vitest.config.ts"],
+  "include": ["app", "catalog", "worker", "vite.config.ts", "vitest.config.ts"],
   "compilerOptions": {
     "target": "ES2024",
     "module": "ESNext",

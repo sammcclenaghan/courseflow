@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { Section } from "#domain/section.ts";
+import type { Section } from "./term.ts";
 
 // data/notes/<term>.json: section notes recovered from the old Banner 8
 // scrape. They can't be refetched, so the file is the source of truth.
@@ -29,7 +29,7 @@ export function parseNotes(raw: unknown): Notes {
 export function noteFor(
   notes: Notes,
   course: string,
-  section: Section,
+  section: Pick<Section, "crn" | "number">,
 ): string | null {
   const entry = notes.sections[section.crn];
   return entry?.course === course && entry.number === section.number

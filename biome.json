@@ -4,7 +4,6 @@
     "includes": [
       "app/**",
       "catalog/**",
-      "domain/**",
       "worker/**",
       "index.html",
       "vite.config.ts",
@@ -35,63 +34,6 @@
       "quoteStyle": "double"
     }
   },
-  "overrides": [
-    {
-      "includes": ["domain/**"],
-      "linter": {
-        "rules": {
-          "style": {
-            "noRestrictedImports": {
-              "level": "error",
-              "options": {
-                "patterns": [
-                  {
-                    "group": [
-                      "preact",
-                      "preact/*",
-                      "@preact/*",
-                      "hono",
-                      "hono/*",
-                      "node:*",
-                      "zod",
-                      "../*",
-                      "#*"
-                    ],
-                    "message": "domain/ is pure rules: it imports only other domain/ files, with ./"
-                  }
-                ]
-              }
-            }
-          }
-        }
-      }
-    },
-    {
-      "includes": ["app/**", "catalog/**", "worker/**"],
-      "linter": {
-        "rules": {
-          "style": {
-            "noRestrictedImports": {
-              "level": "error",
-              "options": {
-                "patterns": [
-                  {
-                    "group": [
-                      "**/app/**",
-                      "**/catalog/**",
-                      "**/worker/**",
-                      "**/domain/**"
-                    ],
-                    "message": "app/, catalog/ and worker/ never import each other; import domain/ as #domain/\u2026"
-                  }
-                ]
-              }
-            }
-          }
-        }
-      }
-    }
-  ],
   "css": {
     "parser": {
       "tailwindDirectives": true

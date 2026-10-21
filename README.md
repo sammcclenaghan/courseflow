@@ -16,12 +16,9 @@ Fourth iteration of the project: it started as a Go CLI scraper, grew into a Go 
 
 ## Layout
 
-- `domain/`: the rules (terms, courses, sections, schedules). Pure TypeScript, no framework imports.
-- `catalog/`: Node scripts that fetch UVic's data and build `public/data/terms/<term>.json`.
+- `catalog/`: Node scripts that fetch UVic's data and build `public/data/terms/<term>.json`. `catalog/term.ts` is that file's shape.
 - `app/`: the Preact app.
 - `worker/`: the Hono API.
-
-`app/`, `catalog/` and `worker/` import from `domain/` (as `#domain/…`) and never from each other; `nub run check` enforces it.
 
 ## Development
 

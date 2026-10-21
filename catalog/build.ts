@@ -9,13 +9,18 @@ import {
   writeFileSync,
 } from "node:fs";
 import { z } from "zod";
-import { byCode, type Course } from "#domain/course.ts";
-import { linkGroup, meetsOn, type Section } from "#domain/section.ts";
-import type { Term } from "#domain/term.ts";
-import { datesBetween } from "#domain/time.ts";
 import { parseSection } from "./banner.ts";
 import { parseCourse } from "./kuali.ts";
 import { noteFor, parseNotes } from "./notes.ts";
+import {
+  byCode,
+  type Course,
+  datesBetween,
+  linkGroup,
+  meetsOn,
+  type Section,
+  type Term,
+} from "./term.ts";
 
 const RAW = "data/raw";
 const NOTES = "data/notes";

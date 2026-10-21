@@ -2,9 +2,6 @@
   "name": "courseflow",
   "private": true,
   "type": "module",
-  "imports": {
-    "#domain/*": "./domain/*"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
