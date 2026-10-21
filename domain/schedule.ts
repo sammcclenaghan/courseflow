@@ -4,9 +4,10 @@ import type { Term } from "./term.ts";
 
 /**
  * What a student picked in one term: exactly what gets saved and shared.
- * CRNs are in the order their courses were added. Every function here keeps
- * a schedule legal: each course has a full legal set of sections, and no two
- * sections ever meet at the same time.
+ * CRNs are in the order their courses were added. Every course always has a
+ * full legal set of sections. Two sections can meet at the same time, but
+ * only when the student added a course that didn't fit; conflictsIn lists
+ * them, and picking a section never makes a new one.
  */
 export type Schedule = { term: string; crns: string[] };
 
@@ -42,19 +43,22 @@ export function sectionSets(course: Course): Section[][] {
 
 /**
  * The schedule with a course added, in its lowest-numbered sections that fit
- * around the rest, or null when no legal set fits.
+ * around the rest. When none fit, it's added anyway, in the lowest sections
+ * that at least fit each other, conflicts and all.
  */
 export function addCourse(
   term: Term,
   schedule: Schedule,
   course: Course,
-): Schedule | null {
+): Schedule {
   if (hasCourse(schedule, course)) return schedule;
   const picked = sectionsIn(term, schedule).map(({ section }) => section);
-  const set = sectionSets(course).find((set) => fits(set, picked));
-  return set
-    ? { ...schedule, crns: [...schedule.crns, ...set.map((s) => s.crn)] }
-    : null;
+  const sets = sectionSets(course);
+  const set =
+    sets.find((set) => fits(set, picked)) ??
+    sets.find((set) => fits(set, [])) ??
+    sets[0];
+  return { ...schedule, crns: [...schedule.crns, ...set.map((s) => s.crn)] };
 }
 
 export function removeCourse(schedule: Schedule, course: Course): Schedule {
@@ -100,25 +104,34 @@ export function pickSection(
 }
 
 /**
- * The other courses in the schedule standing in the way of adding a course,
- * or of picking one of its sections: removing any one of them would make it
- * fit. Empty when it would take removing more than one.
+ * The other courses in the schedule standing in the way of picking a section:
+ * removing any one of them would let it be picked. Empty when it would take
+ * removing more than one.
  */
 export function conflictingCourses(
   term: Term,
   schedule: Schedule,
   course: Course,
-  section?: Section,
+  section: Section,
 ): Course[] {
-  const fitsWithout = (other: Course) => {
-    const without = removeCourse(schedule, other);
-    return section
-      ? pickSection(term, without, course, section) !== null
-      : addCourse(term, without, course) !== null;
-  };
   const courses = new Set(sectionsIn(term, schedule).map((p) => p.course));
   courses.delete(course);
-  return [...courses].filter(fitsWithout);
+  return [...courses].filter(
+    (other) =>
+      pickSection(term, removeCourse(schedule, other), course, section) !==
+      null,
+  );
+}
+
+/** Every pair of picked sections that meet at the same time, on even one date. */
+export function conflictsIn(term: Term, schedule: Schedule) {
+  const picked = sectionsIn(term, schedule);
+  return picked.flatMap((a, i) =>
+    picked
+      .slice(i + 1)
+      .filter((b) => conflicts(a.section, b.section))
+      .map((b) => ({ a, b })),
+  );
 }
 
 /** Whether no two sections of a set conflict, and none conflicts with the picked ones. */

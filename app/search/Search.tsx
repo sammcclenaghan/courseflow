@@ -3,7 +3,7 @@ import { useEffect, useRef } from "preact/hooks";
 import { displayCode } from "#domain/course.ts";
 import { searchCourses } from "#domain/search.ts";
 import { termName } from "#domain/term.ts";
-import { courseState, courses, toggleCourse } from "../schedule.ts";
+import { courses, isAdded, toggleCourse } from "../schedule.ts";
 import { TERM_CODE, term } from "../term.ts";
 import button from "../ui/button.module.css";
 import { CourseDetail } from "./CourseDetail.tsx";
@@ -170,7 +170,7 @@ export function Search() {
               ) : (
                 <div id="search-results" role="listbox">
                   {results.value.map((course, i) => {
-                    const state = courseState(course);
+                    const added = isAdded(course);
                     return (
                       // biome-ignore lint/a11y/useKeyWithClickEvents: the input's ↑↓ and ↵ drive the list.
                       <div
@@ -181,9 +181,7 @@ export function Search() {
                         // aria-activedescendant.
                         tabIndex={-1}
                         aria-selected={i === active.value}
-                        aria-disabled={state === "blocked"}
                         class={styles.result}
-                        data-state={state}
                         onMouseMove={() => {
                           active.value = i;
                         }}
@@ -193,12 +191,7 @@ export function Search() {
                           <strong>{displayCode(course.code)}</strong>
                           <span>{course.title}</span>
                         </span>
-                        {state === "added" && (
-                          <span class={styles.status}>Added</span>
-                        )}
-                        {state === "blocked" && (
-                          <span class={styles.status}>Doesn't fit</span>
-                        )}
+                        {added && <span class={styles.status}>Added</span>}
                       </div>
                     );
                   })}

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   addCourse,
   conflictingCourses,
+  conflictsIn,
   hasCourse,
   pickSection,
   removeCourse,
@@ -95,7 +96,7 @@ describe("addCourse", () => {
   });
 
   it("skips sections that conflict with the schedule", () => {
-    const withMath = addCourse(catalog, empty, math100) as Schedule;
+    const withMath = addCourse(catalog, empty, math100);
     // B01 overlaps MATH100 on Mondays, so CSC110 gets B02.
     expect(numbersIn(addCourse(catalog, withMath, csc110))).toEqual([
       "MATH100 A01",
@@ -110,13 +111,13 @@ describe("addCourse", () => {
       section("B01", [meeting("M", "09:30-10:30")]),
       section("B02", [meeting("T", "09:30-10:30")]),
     ]);
-    const add = addCourse(term([clashing]), empty, clashing) as Schedule;
+    const add = addCourse(term([clashing]), empty, clashing);
     expect(
       sectionsIn(term([clashing]), add).map((p) => p.section.number),
     ).toEqual(["A01", "B02"]);
   });
 
-  it("is null when no legal set fits", () => {
+  it("adds a course that doesn't fit anyway, in its lowest sections", () => {
     const busy: Schedule = {
       term: "202609",
       crns: [math100.sections[0].crn],
@@ -124,11 +125,18 @@ describe("addCourse", () => {
     const mondayOnly = course("CSC115", [
       section("A01", [meeting("M", "10:30-11:20")]),
     ]);
-    expect(addCourse(term([math100, mondayOnly]), busy, mondayOnly)).toBeNull();
+    const catalog = term([math100, mondayOnly]);
+    const added = addCourse(catalog, busy, mondayOnly);
+    expect(
+      sectionsIn(catalog, added).map(
+        (p) => `${p.course.code} ${p.section.number}`,
+      ),
+    ).toEqual(["MATH100 A01", "CSC115 A01"]);
+    expect(conflictsIn(catalog, added)).toHaveLength(1);
   });
 
   it("leaves a course that's already added alone", () => {
-    const once = addCourse(catalog, empty, csc110) as Schedule;
+    const once = addCourse(catalog, empty, csc110);
     expect(addCourse(catalog, once, csc110)).toBe(once);
     expect(hasCourse(once, csc110)).toBe(true);
     expect(hasCourse(once, math100)).toBe(false);
@@ -147,7 +155,7 @@ describe("removeCourse", () => {
   });
 });
 
-describe("conflictingCourses", () => {
+describe("conflictsIn and conflictingCourses", () => {
   const monday = course("MATH100", [
     section("A01", [meeting("M", "10:00-11:00")]),
   ]);
@@ -159,39 +167,45 @@ describe("conflictingCourses", () => {
     section("A02", [meeting("T", "10:30-11:30")]),
   ]);
   const catalog = term([monday, tuesday, both]);
+  const full: Schedule = {
+    term: "202609",
+    crns: [monday.sections[0].crn, tuesday.sections[0].crn],
+  };
 
-  it("names the course whose removal would make room", () => {
-    const schedule: Schedule = {
-      term: "202609",
-      crns: [monday.sections[0].crn],
-    };
-    // Only one of CSC110's sections is blocked, so it still fits.
-    expect(addCourse(catalog, schedule, both)).not.toBeNull();
-    const full: Schedule = {
-      term: "202609",
-      crns: [monday.sections[0].crn, tuesday.sections[0].crn],
-    };
-    expect(addCourse(catalog, full, both)).toBeNull();
-    // Removing either MATH course frees one of CSC110's sections.
-    expect(conflictingCourses(catalog, full, both).map((c) => c.code)).toEqual([
-      "MATH100",
-      "MATH101",
-    ]);
+  it("lists each pair of conflicting sections once", () => {
+    const added = addCourse(catalog, full, both);
+    expect(
+      conflictsIn(catalog, added).map(
+        ({ a, b }) =>
+          `${a.course.code} ${a.section.number} × ${b.course.code} ${b.section.number}`,
+      ),
+    ).toEqual(["MATH100 A01 × CSC110 A01"]);
+    expect(conflictsIn(catalog, full)).toEqual([]);
+  });
+
+  it("names the course standing in the way of a section", () => {
+    const added = addCourse(catalog, full, both);
+    expect(
+      conflictingCourses(catalog, added, both, both.sections[1]).map(
+        (c) => c.code,
+      ),
+    ).toEqual(["MATH101"]);
   });
 
   it("is empty when it would take removing more than one course", () => {
-    const onlyMonday = course("CSC115", [
+    const twoDays = course("CSC115", [
       section("A01", [
         meeting("M", "10:30-11:30"),
         meeting("T", "10:30-11:30"),
       ]),
     ]);
-    const full: Schedule = {
-      term: "202609",
-      crns: [monday.sections[0].crn, tuesday.sections[0].crn],
-    };
     expect(
-      conflictingCourses(term([monday, tuesday, onlyMonday]), full, onlyMonday),
+      conflictingCourses(
+        term([monday, tuesday, twoDays]),
+        full,
+        twoDays,
+        twoDays.sections[0],
+      ),
     ).toEqual([]);
   });
 });

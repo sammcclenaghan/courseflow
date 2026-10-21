@@ -1,6 +1,6 @@
 import { type Course, displayCode } from "#domain/course.ts";
 import type { Term } from "#domain/term.ts";
-import { courseState, toggleCourse, whyBlocked } from "../schedule.ts";
+import { conflictsOf, isAdded, toggleCourse } from "../schedule.ts";
 import button from "../ui/button.module.css";
 import { MeetingTime } from "../ui/MeetingTime.tsx";
 import { pluralType } from "../ui/plural.ts";
@@ -11,7 +11,8 @@ import styles from "./CourseDetail.module.css";
  * with sections that meet at the same times counted together.
  */
 export function CourseDetail({ course, term }: { course: Course; term: Term }) {
-  const state = courseState(course);
+  const added = isAdded(course);
+  const clashes = added ? conflictsOf(course) : [];
   const types = Map.groupBy(course.sections, (section) => section.type);
   return (
     <div class={styles.detail}>
@@ -22,15 +23,16 @@ export function CourseDetail({ course, term }: { course: Course; term: Term }) {
         </div>
         <button
           type="button"
-          class={state === "added" ? button.secondary : button.primary}
-          disabled={state === "blocked"}
+          class={added ? button.secondary : button.primary}
           onClick={() => toggleCourse(course)}
         >
-          {state === "added" ? "Remove from schedule" : "Add to schedule"}
+          {added ? "Remove from schedule" : "Add to schedule"}
         </button>
       </header>
-      {state === "blocked" && (
-        <p class={styles.blocked}>{whyBlocked(course)}</p>
+      {clashes.length > 0 && (
+        <p class={styles.conflict}>
+          Conflicts with {clashes.map((c) => displayCode(c.code)).join(", ")}
+        </p>
       )}
       {[...types].map(([type, sections]) => {
         // Sections meeting at exactly the same times and dates share a row.

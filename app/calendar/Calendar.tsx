@@ -6,6 +6,7 @@ import {
   addDays,
   formatDayName,
   formatHour,
+  formatTime,
   formatTimeRange,
   formatWeek,
   mondayOf,
@@ -15,6 +16,7 @@ import { colors, picked } from "../schedule.ts";
 import { term } from "../term.ts";
 import button from "../ui/button.module.css";
 import styles from "./Calendar.module.css";
+import { sideBySide } from "./layout.ts";
 
 /** Pixels per hour. */
 const HOUR = 64;
@@ -112,29 +114,61 @@ function Week({ term }: { term: Term }) {
         </div>
         {days.map(({ date, classes }) => (
           <div key={date} class={styles.column} style={{ height: top(last) }}>
-            {classes.map(({ course, section, start, end }, i) => (
-              <div
-                key={`${section.crn}-${start}`}
-                class={styles.class}
-                // A section can overlap its own other meeting (ASTR 101's
-                // observing night); the later one sits indented on top.
-                data-indented={classes
-                  .slice(0, i)
-                  .some((earlier) => earlier.end > start)}
-                style={{
-                  top: top(start),
-                  height: height(start, end),
-                  "--tint": `var(${colors.value.get(course.code)})`,
-                  "--ring": `var(${colors.value.get(course.code)}-ring)`,
-                }}
-              >
-                <span class={styles.name}>
-                  <span>{displayCode(course.code)}</span>
-                  <span>{section.number}</span>
-                </span>
-                <span class={styles.time}>{formatTimeRange(start, end)}</span>
-              </div>
-            ))}
+            {sideBySide(classes).map(
+              ({ course, section, start, end, column, columns }) => {
+                // Red where it meets at the same time as another section.
+                const conflict = classes.some(
+                  (other) =>
+                    other.section.crn !== section.crn &&
+                    other.start < end &&
+                    start < other.end,
+                );
+                const color = colors.value.get(course.code);
+                return (
+                  <div
+                    key={`${section.crn}-${start}`}
+                    class={styles.class}
+                    data-narrow={columns > 1}
+                    style={{
+                      top: top(start),
+                      height: height(start, end),
+                      "--column": column,
+                      "--columns": columns,
+                      "--tint": conflict
+                        ? "var(--color-conflict-fill)"
+                        : `var(${color})`,
+                      "--ring": conflict
+                        ? "var(--color-conflict-ring)"
+                        : `var(${color}-ring)`,
+                    }}
+                  >
+                    {columns > 1 ? (
+                      <>
+                        <span class={styles.name}>
+                          {displayCode(course.code)}
+                        </span>
+                        <span class={styles.name}>
+                          <span>{section.number}</span>
+                          <span class={styles.time}>
+                            {formatTime(start, false)}
+                          </span>
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <span class={styles.name}>
+                          <span>{displayCode(course.code)}</span>
+                          <span>{section.number}</span>
+                        </span>
+                        <span class={styles.time}>
+                          {formatTimeRange(start, end)}
+                        </span>
+                      </>
+                    )}
+                  </div>
+                );
+              },
+            )}
           </div>
         ))}
       </div>

@@ -89,13 +89,25 @@
   color: var(--color-muted);
 }
 
+.courseName .conflict {
+  margin-top: var(--spacing-1);
+  color: var(--color-conflict-solid);
+  font-weight: var(--font-weight-medium);
+}
+
 .chevron {
   flex-shrink: 0;
   margin-top: 2px;
   color: var(--color-muted);
 }
 
-.courseToggle[aria-expanded="true"] .chevron {
+.courseToggle[aria-expanded="true"] .courseName .conflict {
+  margin-top: var(--spacing-1);
+  color: var(--color-conflict-solid);
+  font-weight: var(--font-weight-medium);
+}
+
+.chevron {
   rotate: 180deg;
 }
 
@@ -138,6 +150,11 @@
   border-color: var(--color-ink);
   background: var(--color-surface-subtle);
   cursor: default;
+}
+
+.section[data-conflict="true"] {
+  border-color: var(--color-conflict-solid);
+  background: var(--color-conflict-fill);
 }
 
 .section[data-state="pickable"]:hover {

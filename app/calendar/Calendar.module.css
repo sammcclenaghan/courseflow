@@ -57,11 +57,11 @@
   );
 }
 
+/* Overlapping classes share the width; 14px stays clear on the right. */
 .class {
   position: absolute;
-  left: 2px;
-  /* Room on the right to click the day behind a class. */
-  right: 14px;
+  left: calc(2px + (100% - 14px) * var(--column) / var(--columns));
+  width: calc((100% - 14px) / var(--columns) - 2px);
   display: flex;
   flex-direction: column;
   min-height: 24px;
@@ -72,11 +72,6 @@
   overflow: clip;
   line-height: var(--leading-event);
   font-variant-numeric: tabular-nums;
-}
-
-.class[data-indented="true"] {
-  left: 40%;
-  outline: 2px solid var(--color-surface);
 }
 
 .name {

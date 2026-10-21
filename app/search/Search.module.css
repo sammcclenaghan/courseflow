@@ -144,11 +144,6 @@
   background: var(--color-fill);
 }
 
-.result[data-state="blocked"] {
-  color: var(--color-faint);
-  cursor: default;
-}
-
 .text {
   display: flex;
   flex: 1;
@@ -165,10 +160,6 @@
   color: var(--color-muted);
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.result[data-state="blocked"] .text span {
-  color: inherit;
 }
 
 .status {

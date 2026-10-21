@@ -33,9 +33,10 @@
   color: var(--color-muted);
 }
 
-.blocked {
+.conflict {
   margin: calc(-1 * var(--spacing-3)) 0 0;
-  color: var(--color-muted);
+  color: var(--color-conflict-solid);
+  font-weight: var(--font-weight-medium);
 }
 
 .type {

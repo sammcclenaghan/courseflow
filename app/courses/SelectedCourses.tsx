@@ -4,6 +4,8 @@ import type { Section } from "#domain/section.ts";
 import type { Term } from "#domain/term.ts";
 import {
   clearSchedule,
+  conflictingCrns,
+  conflictsOf,
   courses,
   pick,
   sectionState,
@@ -79,6 +81,7 @@ function CourseSections({
   onToggle: () => void;
 }) {
   const code = displayCode(course.code);
+  const clashes = conflictsOf(course);
   return (
     <section class={styles.course}>
       <div class={styles.courseHeader}>
@@ -91,6 +94,12 @@ function CourseSections({
           <span class={styles.courseName}>
             <strong>{code}</strong>
             <span>{course.title}</span>
+            {clashes.length > 0 && (
+              <span class={styles.conflict}>
+                Conflicts with{" "}
+                {clashes.map((c) => displayCode(c.code)).join(", ")}
+              </span>
+            )}
           </span>
           <Icon path="m6 9 6 6 6-6" class={styles.chevron} />
         </button>
@@ -128,7 +137,10 @@ function CourseSections({
   );
 }
 
-/** One section to pick: picked, pickable, or faded with why it can't fit. */
+/**
+ * One section to pick: picked (red if it conflicts), pickable, or faded with
+ * why picking it would make a conflict.
+ */
 function SectionOption({
   course,
   section,
@@ -147,6 +159,7 @@ function SectionOption({
       class={styles.section}
       data-state={state}
       data-full={full}
+      data-conflict={conflictingCrns.value.has(section.crn)}
       aria-pressed={state === "picked"}
       disabled={state === "blocked"}
       onClick={() => pick(course, section)}

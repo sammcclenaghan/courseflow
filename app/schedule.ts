@@ -3,6 +3,7 @@ import { type Course, displayCode } from "#domain/course.ts";
 import {
   addCourse,
   conflictingCourses,
+  conflictsIn,
   hasCourse,
   pickSection,
   removeCourse,
@@ -25,6 +26,27 @@ export const courses = computed(() => [
   ...new Set(picked.value.map(({ course }) => course)),
 ]);
 
+/** Every pair of picked sections that meet at the same time. */
+export const conflicts = computed(() =>
+  typeof term.value === "string" ? [] : conflictsIn(term.value, schedule.value),
+);
+
+/** The CRNs of every picked section in a conflict. */
+export const conflictingCrns = computed(
+  () =>
+    new Set(
+      conflicts.value.flatMap(({ a, b }) => [a.section.crn, b.section.crn]),
+    ),
+);
+
+/** The other courses a course's picked sections conflict with. */
+export function conflictsOf(course: Course): Course[] {
+  const others = conflicts.value.flatMap(({ a, b }) =>
+    a.course === course ? [b.course] : b.course === course ? [a.course] : [],
+  );
+  return [...new Set(others)].filter((other) => other !== course);
+}
+
 // The course tints in styles.css, in the order courses take them.
 const COLORS = ["green", "purple", "cyan", "blue", "orange", "lime"];
 
@@ -42,14 +64,9 @@ export const colors = computed(
     ),
 );
 
-/** Whether a course is in the schedule, can be added, or can't fit. */
-export function courseState(course: Course): "added" | "addable" | "blocked" {
-  if (hasCourse(schedule.value, course)) return "added";
-  if (typeof term.value === "string") return "blocked";
-  return addCourse(term.value, schedule.value, course) ? "addable" : "blocked";
-}
+export const isAdded = (course: Course) => hasCourse(schedule.value, course);
 
-/** Whether a section is picked, could be picked, or can't fit. */
+/** Whether a section is picked, could be picked, or would make a conflict. */
 export function sectionState(
   course: Course,
   section: Section,
@@ -61,8 +78,8 @@ export function sectionState(
     : "blocked";
 }
 
-/** Why a course, or one of its sections, can't fit: "Conflicts with MATH 101". */
-export function whyBlocked(course: Course, section?: Section) {
+/** Why a section can't be picked: "Conflicts with MATH 101". */
+export function whyBlocked(course: Course, section: Section) {
   if (typeof term.value === "string") return "";
   const others = conflictingCourses(
     term.value,
@@ -75,15 +92,12 @@ export function whyBlocked(course: Course, section?: Section) {
     : `Conflicts with ${others.map((c) => displayCode(c.code)).join(", ")}`;
 }
 
-/** Adds a course if it isn't in the schedule and fits; removes it if it is. */
+/** Adds a course, even one that doesn't fit; removes it if it's added. */
 export function toggleCourse(course: Course) {
   if (typeof term.value === "string") return;
-  if (hasCourse(schedule.value, course)) {
-    schedule.value = removeCourse(schedule.value, course);
-    return;
-  }
-  const added = addCourse(term.value, schedule.value, course);
-  if (added) schedule.value = added;
+  schedule.value = hasCourse(schedule.value, course)
+    ? removeCourse(schedule.value, course)
+    : addCourse(term.value, schedule.value, course);
 }
 
 /** Picks a section, moving the course's others only if they must. */
