@@ -1,4 +1,4 @@
-import { weekday } from "./time.ts";
+import { addDays, datesBetween, weekday } from "./time.ts";
 
 /** One CRN: a lecture, lab, tutorial… of a course, in one term. */
 export type Section = {
@@ -32,6 +32,28 @@ export const meetsOn = (meeting: Meeting, date: string) =>
   meeting.startDate <= date &&
   date <= meeting.endDate &&
   meeting.days.includes(weekday(date));
+
+/**
+ * Whether two meetings are ever in progress at once, on even one date.
+ * Back-to-back meetings (one ends at 10:20, the next starts at 10:20) aren't.
+ */
+export function meetingsOverlap(a: Meeting, b: Meeting) {
+  if (!a.time || !b.time) return false;
+  if (a.time.start >= b.time.end || b.time.start >= a.time.end) return false;
+  const from = a.startDate > b.startDate ? a.startDate : b.startDate;
+  const to = a.endDate < b.endDate ? a.endDate : b.endDate;
+  // Seven days in a row hold every weekday, so the first week both run
+  // decides it.
+  const week = addDays(from, 6);
+  return datesBetween(from, week < to ? week : to).some(
+    (date) => meetsOn(a, date) && meetsOn(b, date),
+  );
+}
+
+/** Whether two different sections ever meet at the same time. */
+export const conflicts = (a: Section, b: Section) =>
+  a.crn !== b.crn &&
+  a.meetings.some((x) => b.meetings.some((y) => meetingsOverlap(x, y)));
 
 /**
  * A section's link group: "A2" → "2". A section with a link ID can only be

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { Section } from "#domain/section.ts";
+import { section as testSection } from "#domain/testing.ts";
 import { noteFor, parseNotes } from "./notes.ts";
 
 const notes = parseNotes({
@@ -14,16 +14,8 @@ const notes = parseNotes({
   },
 });
 
-const section = (crn: string, number: string): Section => ({
-  crn,
-  number,
-  type: "Lecture",
-  linkId: null,
-  seats: { enrolled: 0, capacity: 0 },
-  waitlist: { enrolled: 0, capacity: 0 },
-  note: null,
-  meetings: [],
-});
+const section = (crn: string, number: string) =>
+  testSection(number, [], { crn });
 
 describe("noteFor", () => {
   it("finds the note scraped for that section", () => {
