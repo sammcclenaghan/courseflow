@@ -3,12 +3,21 @@ import { useEffect, useRef } from "preact/hooks";
 import { displayCode } from "#domain/course.ts";
 import { searchCourses } from "#domain/search.ts";
 import { termName } from "#domain/term.ts";
-import { courseState, toggleCourse, whyBlocked } from "../schedule.ts";
+import { courseState, courses, toggleCourse } from "../schedule.ts";
 import { TERM_CODE, term } from "../term.ts";
 import button from "../ui/button.module.css";
+import { CourseDetail } from "./CourseDetail.tsx";
 import styles from "./Search.module.css";
 
 const TERM_NAME = termName(TERM_CODE);
+
+/** Queries to try on an empty search, each one finding something. */
+const SUGGESTIONS = [
+  "CSC 110",
+  "psychology",
+  "data structures",
+  "indigenous language",
+];
 
 let openDialog: (() => void) | undefined;
 
@@ -17,10 +26,12 @@ export const openSearch = () => openDialog?.();
 
 /**
  * The "Search courses" button, and the dialog it opens. "/" opens it too.
+ * Results are on the left and the highlighted one's details on the right;
  * ↑↓ move through the results and ↵ adds or removes the highlighted course.
  */
 export function Search() {
   const dialog = useRef<HTMLDialogElement>(null);
+  const input = useRef<HTMLInputElement>(null);
   const query = useSignal("");
   const active = useSignal(0);
   const results = useComputed(() =>
@@ -47,6 +58,11 @@ export function Search() {
       ?.scrollIntoView({ block: "nearest" });
   }, [active.value]);
 
+  const search = (text: string) => {
+    query.value = text;
+    active.value = 0;
+  };
+
   const onKeyDown = (event: KeyboardEvent) => {
     const last = results.value.length - 1;
     if (event.key === "ArrowDown")
@@ -60,6 +76,8 @@ export function Search() {
   };
 
   const typed = query.value.trim();
+  const highlighted = typed ? results.value[active.value] : undefined;
+  const count = courses.value.length;
   return (
     <>
       <button
@@ -67,7 +85,7 @@ export function Search() {
         class={button.secondary}
         onClick={() => dialog.current?.showModal()}
       >
-        <SearchIcon />
+        <SearchIcon size={16} />
         Search courses
         <kbd class={styles.key}>/</kbd>
       </button>
@@ -93,8 +111,9 @@ export function Search() {
       >
         <div class={styles.panel}>
           <label class={styles.field}>
-            <SearchIcon />
+            <SearchIcon size={18} />
             <input
+              ref={input}
               // Not type="search": its Esc clears the text instead of closing.
               type="text"
               inputmode="search"
@@ -106,69 +125,113 @@ export function Search() {
               aria-expanded={results.value.length > 0}
               aria-controls="search-results"
               aria-activedescendant={
-                results.value.length > 0 ? `result-${active.value}` : undefined
+                highlighted ? `result-${active.value}` : undefined
               }
               value={query.value}
-              onInput={(event) => {
-                query.value = event.currentTarget.value;
-                active.value = 0;
-              }}
+              onInput={(event) => search(event.currentTarget.value)}
               onKeyDown={onKeyDown}
             />
             <kbd class={styles.key}>esc</kbd>
           </label>
-          {term.value === "loading" ? (
-            <p class={styles.message}>Loading the {TERM_NAME} timetable…</p>
-          ) : term.value === "failed" ? (
-            <p class={styles.message}>
-              The {TERM_NAME} timetable didn't load. Refresh to try again.
-            </p>
-          ) : !typed ? (
-            <p class={styles.message}>Search the {TERM_NAME} timetable</p>
-          ) : results.value.length === 0 ? (
-            <p class={styles.message}>
-              No {TERM_NAME} courses match “{typed}”
-              <span>
-                Try a course code like CSC 110, or a word from the title.
-              </span>
-            </p>
-          ) : (
-            <div id="search-results" role="listbox" class={styles.results}>
-              {results.value.map((course, i) => {
-                const state = courseState(course);
-                return (
-                  // biome-ignore lint/a11y/useKeyWithClickEvents: the input's ↑↓ and ↵ drive the list.
-                  <div
-                    key={course.code}
-                    id={`result-${i}`}
-                    role="option"
-                    // Focus stays in the input, which points here with
-                    // aria-activedescendant.
-                    tabIndex={-1}
-                    aria-selected={i === active.value}
-                    aria-disabled={state === "blocked"}
-                    class={styles.result}
-                    data-state={state}
-                    onMouseMove={() => {
-                      active.value = i;
-                    }}
-                    onClick={() => toggleCourse(course)}
-                  >
-                    <span class={styles.text}>
-                      <strong>{displayCode(course.code)}</strong>
-                      <span>{course.title}</span>
-                    </span>
-                    {state === "added" && (
-                      <span class={styles.status}>Added</span>
-                    )}
-                    {state === "blocked" && (
-                      <span class={styles.status}>{whyBlocked(course)}</span>
-                    )}
+
+          <div class={styles.body}>
+            <div class={styles.list}>
+              {term.value === "loading" ? (
+                <p class={styles.message}>Loading the {TERM_NAME} timetable…</p>
+              ) : term.value === "failed" ? (
+                <p class={styles.message}>
+                  The {TERM_NAME} timetable didn't load. Refresh to try again.
+                </p>
+              ) : !typed ? (
+                <div class={styles.suggestions}>
+                  <span>Try</span>
+                  <div>
+                    {SUGGESTIONS.map((suggestion) => (
+                      <button
+                        key={suggestion}
+                        type="button"
+                        onClick={() => {
+                          search(suggestion);
+                          input.current?.focus();
+                        }}
+                      >
+                        {suggestion}
+                      </button>
+                    ))}
                   </div>
-                );
-              })}
+                </div>
+              ) : results.value.length === 0 ? (
+                <p class={styles.message}>
+                  No {TERM_NAME} courses match “{typed}”
+                  <span>
+                    Try a course code like CSC 110, or a word from the title.
+                  </span>
+                </p>
+              ) : (
+                <div id="search-results" role="listbox">
+                  {results.value.map((course, i) => {
+                    const state = courseState(course);
+                    return (
+                      // biome-ignore lint/a11y/useKeyWithClickEvents: the input's ↑↓ and ↵ drive the list.
+                      <div
+                        key={course.code}
+                        id={`result-${i}`}
+                        role="option"
+                        // Focus stays in the input, which points here with
+                        // aria-activedescendant.
+                        tabIndex={-1}
+                        aria-selected={i === active.value}
+                        aria-disabled={state === "blocked"}
+                        class={styles.result}
+                        data-state={state}
+                        onMouseMove={() => {
+                          active.value = i;
+                        }}
+                        onClick={() => toggleCourse(course)}
+                      >
+                        <span class={styles.text}>
+                          <strong>{displayCode(course.code)}</strong>
+                          <span>{course.title}</span>
+                        </span>
+                        {state === "added" && (
+                          <span class={styles.status}>Added</span>
+                        )}
+                        {state === "blocked" && (
+                          <span class={styles.status}>Doesn't fit</span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
-          )}
+            <div class={styles.detail}>
+              {highlighted && typeof term.value !== "string" ? (
+                <CourseDetail course={highlighted} term={term.value} />
+              ) : (
+                !typed && (
+                  <p class={styles.placeholder}>
+                    Search the {TERM_NAME} timetable
+                  </p>
+                )
+              )}
+            </div>
+          </div>
+
+          <footer class={styles.footer}>
+            <span class={styles.hint}>
+              <kbd class={styles.key}>↑</kbd>
+              <kbd class={styles.key}>↓</kbd>
+              browse
+            </span>
+            <span class={styles.hint}>
+              <kbd class={styles.key}>↵</kbd>
+              add or remove
+            </span>
+            <span class={styles.count}>
+              {count} {count === 1 ? "course" : "courses"} selected
+            </span>
+          </footer>
         </div>
       </dialog>
     </>
@@ -181,10 +244,10 @@ const isTyping = (target: EventTarget | null) =>
   (target.isContentEditable ||
     ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName));
 
-const SearchIcon = () => (
+const SearchIcon = ({ size }: { size: number }) => (
   <svg
-    width="16"
-    height="16"
+    width={size}
+    height={size}
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"

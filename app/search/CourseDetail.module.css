@@ -1,0 +1,65 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  max-width: 640px;
+  padding: 22px var(--spacing-4) 22px 24px;
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  margin-bottom: var(--spacing-2);
+}
+
+.name {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.name strong {
+  font-size: var(--text-md);
+  line-height: var(--leading-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.name span,
+.muted {
+  color: var(--color-muted);
+}
+
+.blocked {
+  margin: calc(-1 * var(--spacing-3)) 0 0;
+  color: var(--color-muted);
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1_5);
+}
+
+.type h3 {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: inherit;
+  font-weight: var(--font-weight-regular);
+}
+
+.times {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+}
+
+.meetings {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  margin-right: auto;
+}

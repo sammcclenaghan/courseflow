@@ -14,19 +14,8 @@ import { openSearch } from "../search/Search.tsx";
 import { term } from "../term.ts";
 import button from "../ui/button.module.css";
 import { MeetingTime } from "../ui/MeetingTime.tsx";
+import { pluralType } from "../ui/plural.ts";
 import styles from "./SelectedCourses.module.css";
-
-/** Every schedule type in Banner's data; anything new shows its own name. */
-const PLURALS: Record<string, string> = {
-  Lecture: "Lectures",
-  "Lecture Topic": "Lecture topics",
-  Lab: "Labs",
-  "Gradable Lab": "Gradable labs",
-  Tutorial: "Tutorials",
-  Seminar: "Seminars",
-  Practicum: "Practicums",
-  "Work Term": "Work terms",
-};
 
 /** The added courses, each with every section to pick from. */
 export function SelectedCourses() {
@@ -119,7 +108,7 @@ function CourseSections({
           {[...Map.groupBy(course.sections, (s) => s.type)].map(
             ([type, sections]) => (
               <div key={type}>
-                <div class={styles.groupLabel}>{PLURALS[type] ?? type}</div>
+                <div class={styles.groupLabel}>{pluralType(type)}</div>
                 <div class={styles.sections}>
                   {sections.map((section) => (
                     <SectionOption

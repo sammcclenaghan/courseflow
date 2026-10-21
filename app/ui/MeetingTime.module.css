@@ -27,6 +27,12 @@
   margin-left: var(--spacing-1);
 }
 
+.aligned {
+  display: inline-block;
+  min-width: 64px;
+  text-align: right;
+}
+
 .dash {
   padding-inline: var(--spacing-1);
   color: var(--color-faint);
