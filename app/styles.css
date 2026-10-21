@@ -1,5 +1,14 @@
-/* Migrated from Paper */
-:root {
+@import "tailwindcss";
+
+/*
+ * The design tokens, named as in the Paper file. Tailwind's own colours,
+ * text sizes, radii and shadows are cleared, so only these exist: text-ink,
+ * bg-course-green, rounded-panel, shadow-ring… Spacing keeps Tailwind's 4px
+ * scale, which is the design's. `static` keeps every token as a CSS variable
+ * even when no class uses it: course tints are only used through var().
+ */
+@theme static {
+  --color-*: initial;
   --color-ink: #0a0a0a;
   --color-muted: #737373;
   --color-faint: #a3a3a3;
@@ -26,34 +35,34 @@
   --color-course-lime-ring: #c6dba3;
 
   --font-sans: "Inter Variable", Inter, system-ui, sans-serif;
-  --text-sm: 12px;
-  --text-md: 14px;
-  --text-lg: 16px;
-  --leading-sm: 16px;
-  --leading-event: 18px;
-  --leading-md: 20px;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
 
+  --text-*: initial;
+  --text-sm: 12px;
+  --text-sm--line-height: 16px;
+  --text-md: 14px;
+  --text-md--line-height: 20px;
+  --text-lg: 16px;
+  --text-lg--line-height: 20px;
+  --leading-event: 18px;
+
+  --radius-*: initial;
   --radius-key: 4px;
   --radius-event: 6px;
   --radius-control: 8px;
   --radius-panel: 14px;
 
-  --spacing-0_5: 2px;
-  --spacing-1: 4px;
-  --spacing-1_5: 6px;
-  --spacing-2: 8px;
-  --spacing-3: 12px;
-  --spacing-4: 16px;
   --spacing-control: 28px;
   --spacing-header: 44px;
 
+  --shadow-*: initial;
   --shadow-ring: 0 0 0 1px #0a0a0a1a;
   --shadow-secondary: 0 0 0 1px #0a0a0a1a, 0 1px 2px #0000000d;
   --shadow-primary:
     inset 0 1px 0 #424242, 0 0 0 1px #060606, 0 1px 2px #0000000d;
+  --shadow-dialog: 0 0 0 1px #0a0a0a1a, 0 24px 64px -16px #00000059;
+}
+
+:root {
   --gradient-primary: linear-gradient(
     in oklab 180deg,
     oklab(28.5% 0 0) 0%,
@@ -61,33 +70,15 @@
   );
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@layer base {
+  body {
+    @apply bg-surface font-sans text-md text-ink antialiased;
+    font-synthesis: none;
+  }
 
-body {
-  margin: 0;
-  background: var(--color-surface);
-  color: var(--color-ink);
-  font-family: var(--font-sans);
-  font-size: var(--text-md);
-  line-height: var(--leading-md);
-  -webkit-font-smoothing: antialiased;
-  font-synthesis: none;
-}
-
-button,
-input,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-}
-
-/* One keyboard focus ring everywhere; white would vanish on white panels. */
-:focus-visible {
-  outline: 2px solid var(--color-ink);
-  outline-offset: 2px;
+  /* One keyboard focus ring everywhere; white would vanish on white panels. */
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+  }
 }

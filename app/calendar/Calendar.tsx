@@ -14,8 +14,7 @@ import {
 } from "#domain/time.ts";
 import { colors, picked } from "../schedule.ts";
 import { term } from "../term.ts";
-import button from "../ui/button.module.css";
-import styles from "./Calendar.module.css";
+import { button } from "../ui/button.ts";
 import { sideBySide } from "./layout.ts";
 
 /** Pixels per hour. */
@@ -60,8 +59,11 @@ function Week({ term }: { term: Term }) {
   );
 
   return (
-    <section class={styles.calendar} aria-label="Weekly calendar">
-      <header class={styles.toolbar}>
+    <section
+      class="overflow-clip rounded-panel bg-surface text-sm shadow-ring"
+      aria-label="Weekly calendar"
+    >
+      <header class="flex items-center gap-1 border-line border-b p-2">
         <button
           type="button"
           class={button.secondary}
@@ -91,29 +93,47 @@ function Week({ term }: { term: Term }) {
         >
           <Chevron path="m9 18 6-6-6-6" />
         </button>
-        <h2 class={styles.week}>{formatWeek(week.value)}</h2>
+        <h2 class="ml-2 font-semibold text-md leading-[18px]">
+          {formatWeek(week.value)}
+        </h2>
       </header>
 
       <div
-        class={styles.grid}
-        style={{ "--days": days.length, "--hour": `${HOUR}px` }}
+        class="grid"
+        style={{
+          gridTemplateColumns: `73px repeat(${days.length}, minmax(0, 1fr))`,
+        }}
       >
         <div />
         {days.map(({ date }) => (
-          <div key={date} class={styles.day}>
+          <div
+            key={date}
+            class="whitespace-nowrap border-line border-b border-l px-2 py-1.5 text-center font-medium"
+          >
             {formatDayName(date)}
           </div>
         ))}
 
-        <div class={styles.hours} style={{ height: top(last) }}>
+        <div class="relative" style={{ height: top(last) }}>
           {hours.slice(1).map((hour) => (
-            <span key={hour} style={{ top: top(hour) }}>
+            <span
+              key={hour}
+              class="absolute right-2.5 -translate-y-1/2 whitespace-nowrap text-muted"
+              style={{ top: top(hour) }}
+            >
               {formatHour(hour)}
             </span>
           ))}
         </div>
         {days.map(({ date, classes }) => (
-          <div key={date} class={styles.column} style={{ height: top(last) }}>
+          <div
+            key={date}
+            class="relative border-line border-l"
+            style={{
+              height: top(last),
+              background: `repeating-linear-gradient(transparent 0 ${HOUR - 1}px, var(--color-line-subtle) ${HOUR - 1}px ${HOUR}px)`,
+            }}
+          >
             {sideBySide(classes).map(
               ({ course, section, start, end, column, columns }) => {
                 // Red where it meets at the same time as another section.
@@ -127,13 +147,14 @@ function Week({ term }: { term: Term }) {
                 return (
                   <div
                     key={`${section.crn}-${start}`}
-                    class={styles.class}
-                    data-narrow={columns > 1}
+                    class="absolute flex min-h-6 flex-col overflow-clip rounded-event bg-(--tint) px-1.5 py-1 leading-event tabular-nums shadow-[inset_0_0_0_1px_var(--ring)]"
+                    // Overlapping classes share the width; 14px stays clear
+                    // on the right.
                     style={{
                       top: top(start),
                       height: height(start, end),
-                      "--column": column,
-                      "--columns": columns,
+                      left: `calc(2px + (100% - 14px) * ${column} / ${columns})`,
+                      width: `calc((100% - 14px) / ${columns} - 2px)`,
                       "--tint": conflict
                         ? "var(--color-conflict-fill)"
                         : `var(${color})`,
@@ -144,23 +165,23 @@ function Week({ term }: { term: Term }) {
                   >
                     {columns > 1 ? (
                       <>
-                        <span class={styles.name}>
+                        <span class="flex gap-1.5 truncate font-medium">
                           {displayCode(course.code)}
                         </span>
-                        <span class={styles.name}>
+                        <span class="flex gap-1.5 truncate font-medium">
                           <span>{section.number}</span>
-                          <span class={styles.time}>
+                          <span class="truncate text-on-tint">
                             {formatTime(start, false)}
                           </span>
                         </span>
                       </>
                     ) : (
                       <>
-                        <span class={styles.name}>
+                        <span class="flex gap-1.5 truncate font-medium">
                           <span>{displayCode(course.code)}</span>
                           <span>{section.number}</span>
                         </span>
-                        <span class={styles.time}>
+                        <span class="truncate text-on-tint">
                           {formatTimeRange(start, end)}
                         </span>
                       </>
@@ -174,7 +195,7 @@ function Week({ term }: { term: Term }) {
       </div>
 
       {untimed.length > 0 && (
-        <p class={styles.untimed}>
+        <p class="border-line border-t px-3 py-2 text-muted">
           No set time:{" "}
           {untimed
             .map(

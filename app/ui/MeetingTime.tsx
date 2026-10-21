@@ -1,7 +1,6 @@
 import type { Meeting } from "#domain/section.ts";
 import type { Term } from "#domain/term.ts";
 import { addDays, formatDateRange, formatTime } from "#domain/time.ts";
-import styles from "./MeetingTime.module.css";
 
 const WEEKDAYS = [1, 2, 3, 4, 5];
 const WEEKEND = [6, 0];
@@ -23,7 +22,7 @@ export function MeetingTime({
   term: Term;
   aligned?: boolean;
 }) {
-  if (!meeting.time) return <span class={styles.tba}>No set time</span>;
+  if (!meeting.time) return <span class="text-muted">No set time</span>;
   const { start, end } = meeting.time;
   const days = meeting.days.some((day) => WEEKEND.includes(day))
     ? [...WEEKDAYS, ...WEEKEND]
@@ -32,27 +31,31 @@ export function MeetingTime({
     meeting.startDate > addDays(term.startDate, 7) ||
     meeting.endDate < addDays(term.endDate, -7);
   return (
-    <span class={styles.meeting}>
+    <span class="flex items-center gap-3 whitespace-nowrap tabular-nums">
       <span
-        class={styles.days}
+        class="flex shrink-0"
         role="img"
         aria-label={meeting.days.map((day) => NAMES[day]).join(", ")}
       >
         {days.map((day) => (
-          <span key={day} data-on={meeting.days.includes(day)}>
+          <span
+            key={day}
+            // The weekend sits a little apart, so weekday letters never move.
+            class={`w-3 text-center ${meeting.days.includes(day) ? "font-semibold" : "text-faint"} ${day === 6 ? "ml-1" : ""}`}
+          >
             {LETTERS[day]}
           </span>
         ))}
       </span>
       <span>
-        <span class={aligned ? styles.aligned : undefined}>
+        <span class={aligned ? "inline-block min-w-16 text-right" : undefined}>
           {formatTime(start, start < 720 !== end < 720)}
         </span>
-        <span class={styles.dash}>–</span>
-        <span class={styles.end}>{formatTime(end, true)}</span>
+        <span class="px-1 text-faint">–</span>
+        <span class="text-muted">{formatTime(end, true)}</span>
       </span>
       {partOfTerm && (
-        <span class={styles.end}>
+        <span class="text-muted">
           {formatDateRange(meeting.startDate, meeting.endDate)}
         </span>
       )}

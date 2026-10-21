@@ -17,7 +17,13 @@
     "indentStyle": "space",
     "indentWidth": 2
   },
-  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -76,7 +82,7 @@
                       "**/worker/**",
                       "**/domain/**"
                     ],
-                    "message": "app/, catalog/ and worker/ never import each other; import domain/ as #domain/…"
+                    "message": "app/, catalog/ and worker/ never import each other; import domain/ as #domain/\u2026"
                   }
                 ]
               }
@@ -85,5 +91,10 @@
         }
       }
     }
-  ]
+  ],
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  }
 }

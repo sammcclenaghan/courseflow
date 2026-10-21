@@ -5,9 +5,8 @@ import { searchCourses } from "#domain/search.ts";
 import { termName } from "#domain/term.ts";
 import { courses, isAdded, toggleCourse } from "../schedule.ts";
 import { TERM_CODE, term } from "../term.ts";
-import button from "../ui/button.module.css";
+import { button } from "../ui/button.ts";
 import { CourseDetail } from "./CourseDetail.tsx";
-import styles from "./Search.module.css";
 
 const TERM_NAME = termName(TERM_CODE);
 
@@ -18,6 +17,13 @@ const SUGGESTIONS = [
   "data structures",
   "indigenous language",
 ];
+
+// A key in a hint; touch screens have no keys to hint at.
+const KEY =
+  "min-w-5 rounded-key bg-surface px-[5px] py-px text-center font-medium font-sans text-muted text-sm shadow-[0_0_0_1px_var(--color-line)] pointer-coarse:hidden";
+
+// A message in place of results; its second line is a muted hint.
+const MESSAGE = "flex flex-col gap-1 px-2.5 py-2 *:text-muted";
 
 let openDialog: (() => void) | undefined;
 
@@ -87,12 +93,12 @@ export function Search() {
       >
         <SearchIcon size={16} />
         Search courses
-        <kbd class={styles.key}>/</kbd>
+        <kbd class={KEY}>/</kbd>
       </button>
       {/* biome-ignore lint/a11y/useKeyWithClickEvents: keyboards close a dialog with Esc. */}
       <dialog
         ref={dialog}
-        class={styles.dialog}
+        class="mx-auto mt-20 h-[min(620px,100%-112px)] max-h-none w-[min(900px,100%-32px)] max-w-none rounded-panel bg-surface p-0 text-ink text-sm shadow-dialog backdrop:bg-ink/25"
         aria-label="Search courses"
         // A click on the backdrop lands on the dialog itself.
         onClick={(event) => {
@@ -109,11 +115,13 @@ export function Search() {
             focused.blur();
         }}
       >
-        <div class={styles.panel}>
-          <label class={styles.field}>
+        <div class="flex h-full flex-col">
+          <label class="flex h-13.5 shrink-0 items-center gap-2.5 border-line border-b pr-3.5 pl-4 text-muted">
             <SearchIcon size={18} />
             <input
               ref={input}
+              // 16px stops iOS zooming in on focus.
+              class="min-w-0 flex-1 px-0.5 text-ink text-lg outline-none placeholder:text-muted"
               // Not type="search": its Esc clears the text instead of closing.
               type="text"
               inputmode="search"
@@ -131,25 +139,27 @@ export function Search() {
               onInput={(event) => search(event.currentTarget.value)}
               onKeyDown={onKeyDown}
             />
-            <kbd class={styles.key}>esc</kbd>
+            <kbd class={KEY}>esc</kbd>
           </label>
 
-          <div class={styles.body}>
-            <div class={styles.list}>
+          <div class="flex min-h-0 flex-1">
+            {/* Too narrow for two panes, the results take the width. */}
+            <div class="w-90 shrink-0 overflow-y-auto px-4 py-2 max-[720px]:w-auto max-[720px]:flex-1">
               {term.value === "loading" ? (
-                <p class={styles.message}>Loading the {TERM_NAME} timetable…</p>
+                <p class={MESSAGE}>Loading the {TERM_NAME} timetable…</p>
               ) : term.value === "failed" ? (
-                <p class={styles.message}>
+                <p class={MESSAGE}>
                   The {TERM_NAME} timetable didn't load. Refresh to try again.
                 </p>
               ) : !typed ? (
-                <div class={styles.suggestions}>
-                  <span>Try</span>
-                  <div>
+                <div>
+                  <span class="block px-2.5 py-1 text-muted">Try</span>
+                  <div class="flex flex-wrap gap-1.5 py-1">
                     {SUGGESTIONS.map((suggestion) => (
                       <button
                         key={suggestion}
                         type="button"
+                        class="h-control cursor-pointer rounded-full bg-fill px-2.5 text-sm"
                         onClick={() => {
                           search(suggestion);
                           input.current?.focus();
@@ -161,7 +171,7 @@ export function Search() {
                   </div>
                 </div>
               ) : results.value.length === 0 ? (
-                <p class={styles.message}>
+                <p class={MESSAGE}>
                   No {TERM_NAME} courses match “{typed}”
                   <span>
                     Try a course code like CSC 110, or a word from the title.
@@ -181,29 +191,35 @@ export function Search() {
                         // aria-activedescendant.
                         tabIndex={-1}
                         aria-selected={i === active.value}
-                        class={styles.result}
+                        class="mb-0.5 flex cursor-pointer items-start gap-3 rounded-control px-2.5 py-2 aria-selected:bg-fill"
                         onMouseMove={() => {
                           active.value = i;
                         }}
                         onClick={() => toggleCourse(course)}
                       >
-                        <span class={styles.text}>
-                          <strong>{displayCode(course.code)}</strong>
-                          <span>{course.title}</span>
+                        <span class="flex min-w-0 flex-1 flex-col">
+                          <strong class="font-semibold">
+                            {displayCode(course.code)}
+                          </strong>
+                          <span class="truncate text-muted">
+                            {course.title}
+                          </span>
                         </span>
-                        {added && <span class={styles.status}>Added</span>}
+                        {added && (
+                          <span class="shrink-0 text-muted">Added</span>
+                        )}
                       </div>
                     );
                   })}
                 </div>
               )}
             </div>
-            <div class={styles.detail}>
+            <div class="min-w-0 flex-1 overflow-y-auto border-line border-l max-[720px]:hidden">
               {highlighted && typeof term.value !== "string" ? (
                 <CourseDetail course={highlighted} term={term.value} />
               ) : (
                 !typed && (
-                  <p class={styles.placeholder}>
+                  <p class="flex h-full items-center justify-center text-muted">
                     Search the {TERM_NAME} timetable
                   </p>
                 )
@@ -211,17 +227,17 @@ export function Search() {
             </div>
           </div>
 
-          <footer class={styles.footer}>
-            <span class={styles.hint}>
-              <kbd class={styles.key}>↑</kbd>
-              <kbd class={styles.key}>↓</kbd>
+          <footer class="flex h-9.5 shrink-0 items-center gap-4 border-line border-t px-4 text-muted">
+            <span class="flex items-center gap-1 pointer-coarse:hidden max-[720px]:hidden">
+              <kbd class={KEY}>↑</kbd>
+              <kbd class={KEY}>↓</kbd>
               browse
             </span>
-            <span class={styles.hint}>
-              <kbd class={styles.key}>↵</kbd>
+            <span class="flex items-center gap-1 pointer-coarse:hidden max-[720px]:hidden">
+              <kbd class={KEY}>↵</kbd>
               add or remove
             </span>
-            <span class={styles.count}>
+            <span class="ml-auto whitespace-nowrap">
               {count} {count === 1 ? "course" : "courses"} selected
             </span>
           </footer>
