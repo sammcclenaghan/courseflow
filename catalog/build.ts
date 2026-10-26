@@ -9,9 +9,9 @@ import {
   writeFileSync,
 } from "node:fs";
 import { z } from "zod";
-import { parseSection } from "./banner.ts";
-import { parseCourse } from "./kuali.ts";
+import { parseCourse } from "./courses.ts";
 import { noteFor, parseNotes } from "./notes.ts";
+import { parseSection } from "./sections.ts";
 import {
   byCode,
   type Course,
@@ -26,21 +26,21 @@ const RAW = "data/raw";
 const NOTES = "data/notes";
 const OUT = "public/data/terms";
 
-const kuali = z
+const catalog = z
   .object({ courses: z.array(z.unknown()) })
-  .parse(readJson(`${RAW}/kuali.json`));
+  .parse(readJson(`${RAW}/courses.json`));
 const titles = new Map<string, string>();
-for (const raw of kuali.courses) {
-  const { code, title } = parse(parseCourse, raw, "Kuali course");
-  if (titles.has(code)) throw new Error(`Duplicate Kuali course ${code}`);
+for (const raw of catalog.courses) {
+  const { code, title } = parse(parseCourse, raw, "course");
+  if (titles.has(code)) throw new Error(`Duplicate course ${code}`);
   titles.set(code, title);
 }
 
 const terms = readdirSync(RAW)
-  .map((file) => file.match(/^banner-(\d{6})\.json$/)?.[1])
+  .map((file) => file.match(/^sections-(\d{6})\.json$/)?.[1])
   .filter((term) => term !== undefined)
   .sort();
-if (terms.length === 0) throw new Error(`No banner-<term>.json in ${RAW}`);
+if (terms.length === 0) throw new Error(`No sections-<term>.json in ${RAW}`);
 
 mkdirSync(OUT, { recursive: true });
 for (const code of terms) {
@@ -49,15 +49,13 @@ for (const code of terms) {
 }
 
 function buildTerm(code: string): Term {
-  const banner = z
+  const file = z
     .object({ totalCount: z.number(), rows: z.array(z.unknown()) })
-    .parse(readJson(`${RAW}/banner-${code}.json`));
-  const rows = banner.rows.map((row) =>
-    parse(parseSection, row, `${code} row`),
-  );
+    .parse(readJson(`${RAW}/sections-${code}.json`));
+  const rows = file.rows.map((row) => parse(parseSection, row, `${code} row`));
   if (rows.length === 0) throw new Error(`${code}: no sections`);
-  if (rows.length !== banner.totalCount)
-    throw new Error(`${code}: ${rows.length} of ${banner.totalCount} sections`);
+  if (rows.length !== file.totalCount)
+    throw new Error(`${code}: ${rows.length} of ${file.totalCount} sections`);
 
   // Only some terms have a notes snapshot.
   const notesPath = `${NOTES}/${code}.json`;
@@ -99,7 +97,7 @@ function buildTerm(code: string): Term {
   const courses: Course[] = [...byCourse]
     .map(([course, { title, sections }]) => ({
       code: course,
-      // Banner's title is the fallback for the few courses Kuali lacks.
+      // The section's title is the fallback for the few courses not in courses.json.
       title: titles.get(course) ?? title,
       sections: sections.sort((a, b) => a.number.localeCompare(b.number)),
     }))

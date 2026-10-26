@@ -26,8 +26,8 @@ In this project, we use [nub](https://github.com/nubjs/nub?og), and no that's no
 
 ```bash
 nub ci
-nub run catalog:fetch courses        # Kuali, into data/raw
-nub run catalog:fetch sections 202609  # Banner, one term at a time
+nub run catalog:fetch courses        # into data/raw/courses.json
+nub run catalog:fetch sections 202609  # into data/raw/sections-202609.json
 nub run catalog:build                # data/raw → public/data/terms
 nub run dev
 ```

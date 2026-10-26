@@ -1,130 +1,105 @@
+// Saves UVic's API responses, untouched, to data/raw for build.ts to parse.
 import { mkdirSync, writeFileSync } from "node:fs";
-import { z } from "zod";
 
-const BANNER = "https://banner.uvic.ca/StudentRegistrationSsb/ssb";
-const KUALI = "https://uvic.kuali.co/api/v1/catalog";
+// Sections come from Banner, UVic's registration system; courses from Kuali,
+// its academic calendar.
+const SECTIONS_API = "https://banner.uvic.ca/StudentRegistrationSsb/ssb";
+const COURSES_API = "https://uvic.kuali.co/api/v1/catalog";
 
-const [kind, term = ""] = process.argv.slice(2);
+const [kind, term] = process.argv.slice(2);
 const fetchedAt = new Date().toISOString();
 
-if (kind === "sections" && /^\d{4}(01|05|09)$/.test(term)) {
-  await fetchSections();
-} else if (kind === "courses") {
-  await fetchCourses();
-} else {
-  throw new Error("Usage: fetch.ts sections <term> | fetch.ts courses");
-}
+if (kind === "sections" && term) await fetchSections(term);
+else if (kind === "courses") await fetchCourses();
+else throw new Error("Usage: fetch.ts sections <term> | fetch.ts courses");
 
-async function fetchSections() {
-  // Banner formats dates by Accept-Language; "*" gives the MM/DD/YYYY the
-  // parser expects.
+async function fetchSections(term: string) {
+  // Banner formats dates by Accept-Language; "*" gives MM/DD/YYYY.
   const headers: Record<string, string> = { "Accept-Language": "*" };
-
-  const session = await request(`${BANNER}/term/search?mode=search`, {
-    method: "POST",
+  const session = await post(
+    `${SECTIONS_API}/term/search?mode=search`,
     headers,
-    body: new URLSearchParams({ term }),
-  });
+    {
+      term,
+    },
+  );
   headers.Cookie = session.headers
     .getSetCookie()
     .map((cookie) => cookie.split(";")[0])
     .join("; ");
-
   // Without a reset, Banner silently answers with the previous search.
-  await request(`${BANNER}/classSearch/resetDataForm`, {
-    method: "POST",
-    headers,
-  });
+  await post(`${SECTIONS_API}/classSearch/resetDataForm`, headers, {});
 
   // Banner sends at most 500 sections a page.
-  const searchPage = z.object({
-    totalCount: z.number(),
-    data: z.array(z.unknown()),
-  });
-  const rows: unknown[] = [];
-  let totalCount: number;
-  do {
-    const query = new URLSearchParams({
-      txt_term: term,
-      pageOffset: String(rows.length),
-      pageMaxSize: "500",
-    });
-    const page = searchPage.parse(
-      await getJson(`${BANNER}/searchResults/searchResults?${query}`, {
-        headers,
-      }),
+  const search = (offset: number) =>
+    getJson(
+      `${SECTIONS_API}/searchResults/searchResults?txt_term=${term}&pageOffset=${offset}&pageMaxSize=500`,
+      { headers },
     );
-    totalCount = page.totalCount;
-    if (page.data.length === 0) break;
-    rows.push(...page.data);
-  } while (rows.length < totalCount);
+  const { totalCount, data } = await search(0);
+  const rows: { courseReferenceNumber: string }[] = data;
+  for (let offset = 500; offset < totalCount; offset += 500)
+    rows.push(...(await search(offset)).data);
 
-  if (rows.length === 0) throw new Error(`${term}: no sections`);
-  if (rows.length !== totalCount) {
-    throw new Error(`${term}: got ${rows.length} of ${totalCount} sections`);
+  // Section notes are only in each section's description.
+  const descriptions: Record<string, string> = {};
+  for (const { courseReferenceNumber } of rows) {
+    const response = await post(
+      `${SECTIONS_API}/searchResults/getCourseDescription`,
+      headers,
+      { term, courseReferenceNumber },
+    );
+    descriptions[courseReferenceNumber] = await response.text();
   }
 
-  save(`banner-${term}.json`, { fetchedAt, totalCount, rows });
-  console.log(`${term}: ${rows.length} sections`);
+  save(`sections-${term}.json`, { fetchedAt, totalCount, rows, descriptions });
+  console.log(`${term}: ${rows.length} of ${totalCount} sections`);
 }
 
 async function fetchCourses() {
-  const catalogs = z
-    .array(
-      z.object({ _id: z.string(), title: z.string(), startDate: z.string() }),
-    )
-    .parse(await getJson(`${KUALI}/public/catalogs`));
-  const newest = (title: string) => {
-    const [calendar] = catalogs
-      .filter((c) => c.title.startsWith(title))
-      .sort((a, b) => b.startDate.localeCompare(a.startDate));
-    if (!calendar) throw new Error(`No ${title}`);
-    return calendar._id;
-  };
+  const catalogs: { _id: string; title: string; startDate: string }[] =
+    await getJson(`${COURSES_API}/public/catalogs`);
+  const newest = (title: string) =>
+    catalogs
+      .filter((catalog) => catalog.title.startsWith(title))
+      .sort((a, b) => b.startDate.localeCompare(a.startDate))[0]._id;
   const calendars = {
     undergrad: newest("Undergraduate Calendar"),
     grad: newest("Graduate Calendar"),
   };
 
-  // A calendar's index only has codes, so each course is its own request.
-  const index = z.array(z.object({ pid: z.string() }));
+  // A calendar's index only has IDs, so each course is its own request.
   const courses: unknown[] = [];
-  for (const [name, calendar] of Object.entries(calendars)) {
-    const pids = index.parse(await getJson(`${KUALI}/courses/${calendar}`));
-    console.log(`${pids.length} ${name} courses`);
-    for (const { pid } of pids) {
-      courses.push(await getJson(`${KUALI}/course/${calendar}/${pid}`));
-    }
+  for (const calendar of Object.values(calendars)) {
+    const index: { pid: string }[] = await getJson(
+      `${COURSES_API}/courses/${calendar}`,
+    );
+    for (const { pid } of index)
+      courses.push(await getJson(`${COURSES_API}/course/${calendar}/${pid}`));
   }
 
-  save("kuali.json", { fetchedAt, calendars, courses });
+  save("courses.json", { fetchedAt, calendars, courses });
+  console.log(`${courses.length} courses`);
 }
 
-// Over thousands of requests UVic sometimes answers 500 or drops the
-// connection, and the same request works moments later, so retry twice.
-async function request(url: string, init: RequestInit = {}) {
-  for (let attempt = 1; ; attempt++) {
-    try {
-      const response = await fetch(url, {
-        ...init,
-        headers: {
-          "User-Agent": "CourseFlow (courseflow.smccl.ca)",
-          ...init.headers,
-        },
-        signal: AbortSignal.timeout(30_000),
-      });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response;
-    } catch (error) {
-      if (attempt === 3)
-        throw new Error(`${url} failed 3 times`, { cause: error });
-      await new Promise((resolve) => setTimeout(resolve, 5000 * attempt));
-    }
-  }
+async function post(
+  url: string,
+  headers: Record<string, string>,
+  form: Record<string, string>,
+) {
+  const response = await fetch(url, {
+    method: "POST",
+    headers,
+    body: new URLSearchParams(form),
+  });
+  if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
+  return response;
 }
 
-async function getJson(url: string, init?: RequestInit): Promise<unknown> {
-  return (await request(url, init)).json();
+async function getJson(url: string, init?: RequestInit) {
+  const response = await fetch(url, init);
+  if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
+  return response.json();
 }
 
 function save(file: string, snapshot: unknown) {

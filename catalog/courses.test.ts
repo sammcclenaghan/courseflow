@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { parseCourse } from "./kuali.ts";
+import { parseCourse } from "./courses.ts";
 
 describe("parseCourse", () => {
   it("takes the code and title, trimmed", () => {
