@@ -1,7 +1,5 @@
 {
-  "term": "202609",
   "course": "ART105",
-  "title": "Foundation Photography and Video Art",
   "section": {
     "crn": "10136",
     "number": "A02",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 100
     },
-    "note": null,
     "meetings": [
       {
         "days": [

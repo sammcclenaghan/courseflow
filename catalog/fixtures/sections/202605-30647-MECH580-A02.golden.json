@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "MECH580",
-  "title": "SELECTED TOPICS:MECH ENGR: Microfluidics for Biom. and Energy App.",
   "section": {
     "crn": "30647",
     "number": "A02",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 50
     },
-    "note": null,
     "meetings": [
       {
         "days": [

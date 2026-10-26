@@ -1,7 +1,5 @@
 {
-  "term": "202701",
   "course": "ASTR150",
-  "title": "Concepts in Modern Astronomy",
   "section": {
     "crn": "20187",
     "number": "B04",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 0
     },
-    "note": null,
     "meetings": [
       {
         "days": [

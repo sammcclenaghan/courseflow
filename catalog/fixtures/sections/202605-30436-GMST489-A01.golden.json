@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "GMST489",
-  "title": "I-witness Field School",
   "section": {
     "crn": "30436",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 5
     },
-    "note": null,
     "meetings": [
       {
         "days": [

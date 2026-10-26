@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "ART598",
-  "title": "MFA Degree Exhibition",
   "section": {
     "crn": "30038",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 30
     },
-    "note": null,
     "meetings": [
       {
         "days": [],

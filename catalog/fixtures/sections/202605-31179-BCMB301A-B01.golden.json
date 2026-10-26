@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "BCMB301A",
-  "title": "Lab Techniques & Projects I",
   "section": {
     "crn": "31179",
     "number": "B01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 10
     },
-    "note": null,
     "meetings": [
       {
         "days": [

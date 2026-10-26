@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "CHEM260",
-  "title": "Synthetic Chemistry Laboratory",
   "section": {
     "crn": "30091",
     "number": "B02",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 16
     },
-    "note": null,
     "meetings": [
       {
         "days": [

@@ -1,7 +1,5 @@
 {
-  "term": "202609",
   "course": "ECE476",
-  "title": "Engineering System Software",
   "section": {
     "crn": "14088",
     "number": "B02",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 0
     },
-    "note": null,
     "meetings": [
       {
         "days": [

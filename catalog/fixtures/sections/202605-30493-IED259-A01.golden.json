@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "IED259",
-  "title": "INDIGENOUS LANGUAGE II: Hul’q’umi’num’ (A)",
   "section": {
     "crn": "30493",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 0
     },
-    "note": null,
     "meetings": [
       {
         "days": [],

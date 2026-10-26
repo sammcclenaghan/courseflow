@@ -1,7 +1,5 @@
 {
-  "term": "202609",
   "course": "BME580",
-  "title": "SPECIAL TOPICS IN BME: Core Skills for Biomanufacturing",
   "section": {
     "crn": "14355",
     "number": "B01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 0
     },
-    "note": null,
     "meetings": [
       {
         "days": [

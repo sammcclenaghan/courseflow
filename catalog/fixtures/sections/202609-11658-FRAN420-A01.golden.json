@@ -1,7 +1,5 @@
 {
-  "term": "202609",
   "course": "FRAN420",
-  "title": "FRANCOPHONE LIT+CULTURES: Amour, érotisme et sexualité en Francophonie",
   "section": {
     "crn": "11658",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 25
     },
-    "note": null,
     "meetings": [
       {
         "days": [

@@ -1,166 +1,114 @@
-// Builds public/data/terms/<term>.json from the raw snapshots catalog/fetch.ts
-// saves in data/raw, failing loudly on anything that would make a wrong
-// schedule possible.
+// Builds public/data from the files catalog/fetch.ts saves in data/raw:
+// courses.json, courses/<code>.json and terms/<term>.json.
 import {
-  existsSync,
   mkdirSync,
   readdirSync,
   readFileSync,
+  rmSync,
   writeFileSync,
 } from "node:fs";
-import { z } from "zod";
-import { parseCourse } from "./courses.ts";
-import { noteFor, parseNotes } from "./notes.ts";
-import { parseSection } from "./sections.ts";
+import { parseCourse, parseDetails } from "./courses.ts";
+import { parseNote, parseSection } from "./sections.ts";
 import {
   byCode,
   type Course,
-  datesBetween,
   linkGroup,
-  meetsOn,
   type Section,
   type Term,
-} from "./term.ts";
+} from "./types.ts";
 
 const RAW = "data/raw";
-const NOTES = "data/notes";
-const OUT = "public/data/terms";
+const OUT = "public/data";
 
-const catalog = z
-  .object({ courses: z.array(z.unknown()) })
-  .parse(readJson(`${RAW}/courses.json`));
-const titles = new Map<string, string>();
-for (const raw of catalog.courses) {
-  const { code, title } = parse(parseCourse, raw, "course");
-  if (titles.has(code)) throw new Error(`Duplicate course ${code}`);
-  titles.set(code, title);
+const raw: unknown[] = readJson("courses.json").courses;
+const courses = raw
+  .map(parseCourse)
+  .sort((a: Course, b: Course) => byCode(a.code, b.code));
+const catalog = new Set(courses.map((course) => course.code));
+
+// Start empty, so a course or term that's gone doesn't leave a stale file.
+rmSync(OUT, { recursive: true, force: true });
+mkdirSync(`${OUT}/courses`, { recursive: true });
+mkdirSync(`${OUT}/terms`);
+writeFileSync(`${OUT}/courses.json`, JSON.stringify(courses));
+for (const entry of raw) {
+  const details = parseDetails(entry, catalog);
+  writeFileSync(`${OUT}/courses/${details.code}.json`, JSON.stringify(details));
 }
-
-const terms = readdirSync(RAW)
-  .map((file) => file.match(/^sections-(\d{6})\.json$/)?.[1])
-  .filter((term) => term !== undefined)
-  .sort();
-if (terms.length === 0) throw new Error(`No sections-<term>.json in ${RAW}`);
-
-mkdirSync(OUT, { recursive: true });
-for (const code of terms) {
-  const term = buildTerm(code);
-  writeFileSync(`${OUT}/${code}.json`, JSON.stringify(term));
+console.log(`${courses.length} courses`);
+for (const file of readdirSync(RAW)) {
+  const code = file.match(/^sections-(\d{6})\.json$/)?.[1];
+  if (code) {
+    const term = buildTerm(code);
+    writeFileSync(`${OUT}/terms/${code}.json`, JSON.stringify(term));
+  }
 }
 
 function buildTerm(code: string): Term {
-  const file = z
-    .object({ totalCount: z.number(), rows: z.array(z.unknown()) })
-    .parse(readJson(`${RAW}/sections-${code}.json`));
-  const rows = file.rows.map((row) => parse(parseSection, row, `${code} row`));
-  if (rows.length === 0) throw new Error(`${code}: no sections`);
-  if (rows.length !== file.totalCount)
-    throw new Error(`${code}: ${rows.length} of ${file.totalCount} sections`);
+  const { totalCount, rows, descriptions } = readJson(`sections-${code}.json`);
+  // A page that came back short would quietly drop sections.
+  if (rows.length !== totalCount)
+    throw new Error(`${code}: ${rows.length} of ${totalCount} sections`);
 
-  // Only some terms have a notes snapshot.
-  const notesPath = `${NOTES}/${code}.json`;
-  const notes = existsSync(notesPath)
-    ? parse(parseNotes, readJson(notesPath), notesPath)
-    : null;
-
-  const crns = new Set<string>();
-  const byCourse = new Map<string, { title: string; sections: Section[] }>();
+  const sections = new Map<string, Section[]>();
+  const skipped = new Set<string>();
   for (const row of rows) {
-    const { crn } = row.section;
-    if (row.term !== code)
-      throw new Error(`${code}: CRN ${crn} is in ${row.term}`);
-    if (crns.has(crn)) throw new Error(`${code}: duplicate CRN ${crn}`);
-    crns.add(crn);
-    for (const meeting of row.section.meetings) {
-      const dates = datesBetween(meeting.startDate, meeting.endDate);
-      if (meeting.time && !dates.some((date) => meetsOn(meeting, date)))
-        throw new Error(`${code}: CRN ${crn} has a meeting that never happens`);
+    const { course, section } = parseSection(row);
+    if (!catalog.has(course)) {
+      skipped.add(course);
+      continue;
     }
-    const section = {
-      ...row.section,
-      note: notes && noteFor(notes, row.course, row.section),
-    };
-    const course = byCourse.get(row.course);
-    if (course) course.sections.push(section);
-    else byCourse.set(row.course, { title: row.title, sections: [section] });
+    // Notes link any course in the calendar, offered this term or not.
+    const note = parseNote(descriptions[section.crn], catalog);
+    const list = sections.get(course) ?? [];
+    list.push({ ...section, note });
+    sections.set(course, list);
+  }
+  for (const [course, list] of sections) {
+    list.sort((a, b) => a.number.localeCompare(b.number));
+    checkLinks(course, list);
   }
 
-  // A term that shrinks by more than a tenth is almost certainly a bad fetch.
-  // To accept a real drop, delete the old term file and build again.
-  const previousPath = `${OUT}/${code}.json`;
-  const previous = existsSync(previousPath)
-    ? (readJson(previousPath) as Term).courses.flatMap((c) => c.sections).length
-    : 0;
-  if (crns.size < previous * 0.9)
-    throw new Error(`${code}: ${crns.size} sections, down from ${previous}`);
-
-  const courses: Course[] = [...byCourse]
-    .map(([course, { title, sections }]) => ({
-      code: course,
-      // The section's title is the fallback for the few courses not in courses.json.
-      title: titles.get(course) ?? title,
-      sections: sections.sort((a, b) => a.number.localeCompare(b.number)),
-    }))
-    .sort(byCode);
-  for (const course of courses) checkLinks(course);
-
-  const { startDate, endDate } = usualDates(courses);
-  const noted = courses.flatMap((c) => c.sections).filter((s) => s.note).length;
-  console.log(
-    `${code}: ${startDate} to ${endDate}, ${courses.length} courses, ${crns.size} sections (was ${previous}), ${noted} with notes`,
-  );
-  return { code, startDate, endDate, courses };
+  const { startDate, endDate } = usualDates([...sections.values()].flat());
+  console.log(`${code}: ${startDate} to ${endDate}, ${sections.size} courses`);
+  if (skipped.size > 0)
+    console.log(`  not in courses.json: ${[...skipped].join(", ")}`);
+  const byCourse = [...sections].sort(([a], [b]) => byCode(a, b));
+  return { code, startDate, endDate, sections: Object.fromEntries(byCourse) };
 }
 
 // The rules linkGroup relies on: a link ID's letter matches its section's,
 // and every link group has at least two types to link together.
-function checkLinks(course: Course) {
+function checkLinks(course: string, sections: Section[]) {
   const types = new Map<string, Set<string>>();
-  for (const section of course.sections) {
+  for (const section of sections) {
     const group = linkGroup(section);
     if (group === null) continue;
     if (section.linkId?.[0] !== section.number[0])
-      throw new Error(
-        `${course.code} ${section.number}: link ID ${section.linkId}`,
-      );
+      throw new Error(`${course} ${section.number}: link ID ${section.linkId}`);
     types.set(group, (types.get(group) ?? new Set()).add(section.type));
   }
   for (const [group, inGroup] of types)
     if (inGroup.size < 2)
       throw new Error(
-        `${course.code}: link group ${group} only has ${[...inGroup].join(", ")}`,
+        `${course}: link group ${group} only has ${[...inGroup].join(", ")}`,
       );
 }
 
 // Most classes run the full term, so the most common date range is the term's.
-function usualDates(courses: Course[]) {
+function usualDates(sections: Section[]) {
   const counts = new Map<string, number>();
-  for (const course of courses)
-    for (const section of course.sections)
-      for (const { time, startDate, endDate } of section.meetings)
-        if (time) {
-          const range = `${startDate}/${endDate}`;
-          counts.set(range, (counts.get(range) ?? 0) + 1);
-        }
+  for (const section of sections)
+    for (const { time, startDate, endDate } of section.meetings)
+      if (time) {
+        const range = `${startDate}/${endDate}`;
+        counts.set(range, (counts.get(range) ?? 0) + 1);
+      }
   const [common] = [...counts].sort((a, b) => b[1] - a[1]);
-  if (!common) throw new Error("No timed meetings");
   const [startDate, endDate] = common[0].split("/");
   return { startDate, endDate };
 }
 
-function parse<T>(parser: (raw: unknown) => T, raw: unknown, what: string): T {
-  try {
-    return parser(raw);
-  } catch (error) {
-    throw new Error(
-      `Can't parse ${what}: ${JSON.stringify(raw).slice(0, 200)}`,
-      {
-        cause: error,
-      },
-    );
-  }
-}
-
-function readJson(path: string): unknown {
-  return JSON.parse(readFileSync(path, "utf8"));
+function readJson(file: string) {
+  return JSON.parse(readFileSync(`${RAW}/${file}`, "utf8"));
 }

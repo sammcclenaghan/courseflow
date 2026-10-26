@@ -1,7 +1,5 @@
 {
-  "term": "202609",
   "course": "COM205",
-  "title": "Professional Skills Development",
   "section": {
     "crn": "13800",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 100
     },
-    "note": null,
     "meetings": [
       {
         "days": [

@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "EPHE577",
-  "title": "Research Methods and Techniques in Coaching Studies",
   "section": {
     "crn": "31536",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 0
     },
-    "note": null,
     "meetings": [
       {
         "days": [

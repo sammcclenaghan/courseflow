@@ -1,7 +1,5 @@
 {
-  "term": "202609",
   "course": "BIOL311",
-  "title": "Biological Oceanography",
   "section": {
     "crn": "10341",
     "number": "B01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 4
     },
-    "note": null,
     "meetings": [
       {
         "days": [

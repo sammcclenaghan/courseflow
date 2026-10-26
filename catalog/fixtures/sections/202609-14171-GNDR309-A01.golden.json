@@ -1,7 +1,5 @@
 {
-  "term": "202609",
   "course": "GNDR309",
-  "title": "Masculinities",
   "section": {
     "crn": "14171",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 100
     },
-    "note": null,
     "meetings": [
       {
         "days": [

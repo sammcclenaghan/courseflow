@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "BME201",
-  "title": "Quantitative Human Physiology",
   "section": {
     "crn": "30057",
     "number": "B01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 3
     },
-    "note": null,
     "meetings": [
       {
         "days": [

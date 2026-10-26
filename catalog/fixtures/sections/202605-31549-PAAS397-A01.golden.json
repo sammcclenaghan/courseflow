@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "PAAS397",
-  "title": "FIELD SCHOOL IN PAAS: Japan",
   "section": {
     "crn": "31549",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 0
     },
-    "note": null,
     "meetings": [
       {
         "days": [

@@ -1,7 +1,5 @@
 {
-  "term": "202701",
   "course": "EOS230",
-  "title": "Introduction to Environmental Data Analysis",
   "section": {
     "crn": "21408",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 5,
       "capacity": 5
     },
-    "note": null,
     "meetings": [
       {
         "days": [

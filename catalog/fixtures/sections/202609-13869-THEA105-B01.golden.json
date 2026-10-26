@@ -1,7 +1,5 @@
 {
-  "term": "202609",
   "course": "THEA105",
-  "title": "Introduction to Stagecraft and Technical Practice",
   "section": {
     "crn": "13869",
     "number": "B01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 40
     },
-    "note": null,
     "meetings": [
       {
         "days": [

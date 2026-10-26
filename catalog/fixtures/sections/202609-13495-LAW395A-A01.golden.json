@@ -1,7 +1,5 @@
 {
-  "term": "202609",
   "course": "LAW395A",
-  "title": "Intersocietal Jurisprudence Through Cinema",
   "section": {
     "crn": "13495",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 10
     },
-    "note": null,
     "meetings": [
       {
         "days": [

@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "SENG265",
-  "title": "Software Development Methods",
   "section": {
     "crn": "30802",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 50
     },
-    "note": null,
     "meetings": [
       {
         "days": [

@@ -43,13 +43,14 @@ async function fetchSections(term: string) {
 
   // Section notes are only in each section's description.
   const descriptions: Record<string, string> = {};
-  for (const { courseReferenceNumber } of rows) {
+  for (const [i, { courseReferenceNumber }] of rows.entries()) {
     const response = await post(
       `${SECTIONS_API}/searchResults/getCourseDescription`,
       headers,
       { term, courseReferenceNumber },
     );
     descriptions[courseReferenceNumber] = await response.text();
+    progress(i + 1, rows.length);
   }
 
   save(`sections-${term}.json`, { fetchedAt, totalCount, rows, descriptions });
@@ -74,32 +75,54 @@ async function fetchCourses() {
     const index: { pid: string }[] = await getJson(
       `${COURSES_API}/courses/${calendar}`,
     );
-    for (const { pid } of index)
+    for (const [i, { pid }] of index.entries()) {
       courses.push(await getJson(`${COURSES_API}/course/${calendar}/${pid}`));
+      progress(i + 1, index.length);
+    }
   }
 
   save("courses.json", { fetchedAt, calendars, courses });
   console.log(`${courses.length} courses`);
 }
 
-async function post(
+function post(
   url: string,
   headers: Record<string, string>,
   form: Record<string, string>,
 ) {
-  const response = await fetch(url, {
+  return request(url, {
     method: "POST",
     headers,
     body: new URLSearchParams(form),
   });
-  if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
-  return response;
 }
 
 async function getJson(url: string, init?: RequestInit) {
-  const response = await fetch(url, init);
-  if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
-  return response.json();
+  return (await request(url, init)).json();
+}
+
+// Over thousands of requests UVic sometimes fails to connect or answers with an
+// error, and the same request works moments later. Nothing is saved until the
+// end, so without retries one blip would lose the whole run.
+async function request(url: string, init: RequestInit = {}) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      // A request that hangs would otherwise stall the run with no error.
+      const signal = AbortSignal.timeout(30_000);
+      const response = await fetch(url, { ...init, signal });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response;
+    } catch (error) {
+      if (attempt === 3)
+        throw new Error(`${url} failed 3 times`, { cause: error });
+      await new Promise((resolve) => setTimeout(resolve, 5_000 * attempt));
+    }
+  }
+}
+
+// Runs take up to an hour, and silence looks the same as a hang.
+function progress(done: number, total: number) {
+  if (done % 500 === 0) console.log(`${done} of ${total}`);
 }
 
 function save(file: string, snapshot: unknown) {

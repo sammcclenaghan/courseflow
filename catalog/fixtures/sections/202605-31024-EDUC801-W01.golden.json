@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "EDUC801",
-  "title": "CO-OP WORK TERM",
   "section": {
     "crn": "31024",
     "number": "W01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 0
     },
-    "note": null,
     "meetings": []
   }
 }

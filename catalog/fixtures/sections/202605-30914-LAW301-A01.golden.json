@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "LAW301",
-  "title": "The Administrative Law Process",
   "section": {
     "crn": "30914",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 15
     },
-    "note": null,
     "meetings": [
       {
         "days": [

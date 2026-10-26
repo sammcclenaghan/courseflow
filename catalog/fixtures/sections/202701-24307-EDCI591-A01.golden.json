@@ -1,7 +1,5 @@
 {
-  "term": "202701",
   "course": "EDCI591",
-  "title": "SELECTED TOPICS: Researching Educational Policy",
   "section": {
     "crn": "24307",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 0
     },
-    "note": null,
     "meetings": [
       {
         "days": [

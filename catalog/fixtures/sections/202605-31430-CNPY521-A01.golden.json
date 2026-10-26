@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "CNPY521",
-  "title": "Developmental Issues in Family Counselling",
   "section": {
     "crn": "31430",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 30
     },
-    "note": null,
     "meetings": [
       {
         "days": [

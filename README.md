@@ -16,7 +16,7 @@ Fourth iteration of the project: it started as a Go CLI scraper, grew into a Go 
 
 ## Layout
 
-- `catalog/`: Node scripts that fetch UVic's data and build `public/data/terms/<term>.json`. `catalog/term.ts` is that file's shape.
+- `catalog/`: Node scripts that fetch UVic's data and build `public/data/courses.json` and `public/data/terms/<term>.json`. `catalog/types.ts` describes their shapes.
 - `app/`: the Preact app.
 - `worker/`: the Hono API.
 

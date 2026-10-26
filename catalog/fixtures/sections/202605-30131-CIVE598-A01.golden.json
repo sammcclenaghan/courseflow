@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "CIVE598",
-  "title": "MEng Project in Civil Engineering",
   "section": {
     "crn": "30131",
     "number": "A01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 10
     },
-    "note": null,
     "meetings": [
       {
         "days": [

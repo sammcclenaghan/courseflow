@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "BCMB298",
-  "title": "Research Experience",
   "section": {
     "crn": "31178",
     "number": "B02",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 100
     },
-    "note": null,
     "meetings": [
       {
         "days": [],

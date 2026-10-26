@@ -1,7 +1,5 @@
 {
-  "term": "202605",
   "course": "ECE310",
-  "title": "Digital Signal Processing I",
   "section": {
     "crn": "30305",
     "number": "T01",
@@ -15,7 +13,6 @@
       "enrolled": 0,
       "capacity": 50
     },
-    "note": null,
     "meetings": [
       {
         "days": [],
