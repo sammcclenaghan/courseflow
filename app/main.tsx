@@ -2,6 +2,7 @@ import { computed, signal } from "@preact/signals";
 import { render } from "preact";
 import { LocationProvider, Route, Router } from "preact-iso";
 import type { Course } from "../catalog/courses.ts";
+import type { Requisite } from "../catalog/requisites.ts";
 
 const courses: Course[] = await (await fetch("/data/courses.json")).json();
 
@@ -91,10 +92,52 @@ function Preview({ course }: { course: Course }) {
           </>
         )}
       </dl>
+      <CourseRequisites course={course} />
       {course.description.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}
     </section>
+  );
+}
+
+function CourseRequisites({ course }: { course: Course }) {
+  const kinds = [
+    ["Prerequisites", course.prerequisites],
+    ["Pre- or corequisites", course.preOrCorequisites],
+    ["Corequisites", course.corequisites],
+  ] as const;
+  return (
+    <>
+      {kinds
+        .filter(([, items]) => items.length > 0)
+        .map(([heading, items]) => (
+          <section key={heading}>
+            <h3>{heading}</h3>
+            <Requisites items={items} />
+          </section>
+        ))}
+    </>
+  );
+}
+
+function Requisites({ items }: { items: Requisite[] }) {
+  return (
+    <ul>
+      {items.map((item, index) => (
+        <li key={index}>
+          {"course" in item ? (
+            <a href={`/courses/${item.course}`}>{item.course}</a>
+          ) : "text" in item ? (
+            item.text
+          ) : (
+            <>
+              {item.label}
+              <Requisites items={item.items} />
+            </>
+          )}
+        </li>
+      ))}
+    </ul>
   );
 }
 
@@ -107,6 +150,7 @@ function CoursePage({ code }: { code: string }) {
       <h1>
         {course.code} {course.title}
       </h1>
+      <CourseRequisites course={course} />
       {course.description.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}

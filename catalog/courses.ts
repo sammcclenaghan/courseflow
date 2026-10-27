@@ -1,4 +1,5 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { type Requisite, requisites } from "./requisites.ts";
 import { paragraphs } from "./text.ts";
 
 export type Course = {
@@ -7,6 +8,9 @@ export type Course = {
   description: string[];
   units: string | null;
   hours: string | null;
+  prerequisites: Requisite[];
+  preOrCorequisites: Requisite[];
+  corequisites: Requisite[];
 };
 
 type RawCourse = {
@@ -18,11 +22,15 @@ type RawCourse = {
     | { chosen: "multiple"; value: string[] }
     | { chosen: "range"; value: { min: string; max: string } };
   hoursCatalogText?: string;
+  preAndCorequisites?: string;
+  preOrCorequisites?: string;
+  corequisites?: string;
 };
 
 const raw: { courses: RawCourse[] } = JSON.parse(
   readFileSync("data/raw/courses.json", "utf8"),
 );
+const codes = new Set(raw.courses.map((course) => course.__catalogCourseId));
 const courses: Course[] = raw.courses
   .map((course) => ({
     code: course.__catalogCourseId,
@@ -30,6 +38,9 @@ const courses: Course[] = raw.courses
     description: paragraphs(course.description ?? ""),
     units: units(course.credits),
     hours: course.hoursCatalogText?.trim() || null,
+    prerequisites: requisites(course.preAndCorequisites ?? "", codes),
+    preOrCorequisites: requisites(course.preOrCorequisites ?? "", codes),
+    corequisites: requisites(course.corequisites ?? "", codes),
   }))
   .sort((a, b) => a.code.localeCompare(b.code));
 
