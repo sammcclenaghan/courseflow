@@ -1,5 +1,6 @@
 import { computed, signal } from "@preact/signals";
 import { render } from "preact";
+import { LocationProvider, Route, Router } from "preact-iso";
 import type { Course } from "../catalog/courses.ts";
 
 const courses: Course[] = await (await fetch("/data/courses.json")).json();
@@ -20,7 +21,7 @@ const results = computed(() => {
     .slice(0, 50);
 });
 
-function App() {
+function Search() {
   return (
     <main>
       <input
@@ -34,11 +35,40 @@ function App() {
       <ul>
         {results.value.map((course) => (
           <li key={course.code}>
-            {course.code} {course.title}
+            <a href={`/courses/${course.code}`}>
+              {course.code} {course.title}
+            </a>
           </li>
         ))}
       </ul>
     </main>
+  );
+}
+
+function CoursePage({ code }: { code: string }) {
+  const course = courses.find((course) => course.code === code);
+  if (!course) return <p>No course {code}</p>;
+  return (
+    <main>
+      <a href="/">Search</a>
+      <h1>
+        {course.code} {course.title}
+      </h1>
+      {course.description.map((paragraph) => (
+        <p key={paragraph}>{paragraph}</p>
+      ))}
+    </main>
+  );
+}
+
+function App() {
+  return (
+    <LocationProvider>
+      <Router>
+        <Route path="/" component={Search} />
+        <Route path="/courses/:code" component={CoursePage} />
+      </Router>
+    </LocationProvider>
   );
 }
 
