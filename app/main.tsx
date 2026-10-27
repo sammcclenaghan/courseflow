@@ -21,7 +21,11 @@ const results = computed(() => {
     .slice(0, 50);
 });
 
+// A position in results, so typing starts again at the best match.
+const selected = signal(0);
+
 function Search() {
+  const course = results.value[selected.value];
   return (
     <main>
       <input
@@ -30,18 +34,53 @@ function Search() {
         value={query.value}
         onInput={(event) => {
           query.value = event.currentTarget.value;
+          selected.value = 0;
+        }}
+        onKeyDown={(event) => {
+          const last = results.value.length - 1;
+          if (event.key === "ArrowDown") {
+            event.preventDefault();
+            selected.value = Math.min(selected.value + 1, last);
+          } else if (event.key === "ArrowUp") {
+            event.preventDefault();
+            selected.value = Math.max(selected.value - 1, 0);
+          }
         }}
       />
       <ul>
-        {results.value.map((course) => (
-          <li key={course.code}>
-            <a href={`/courses/${course.code}`}>
-              {course.code} {course.title}
-            </a>
+        {results.value.map((result, index) => (
+          <li key={result.code}>
+            <button
+              type="button"
+              aria-current={index === selected.value}
+              // Keeps focus in the search box, so the arrows still work.
+              onMouseDown={(event) => event.preventDefault()}
+              onClick={() => {
+                selected.value = index;
+              }}
+            >
+              {index === selected.value && "→ "}
+              {result.code} {result.title}
+            </button>
           </li>
         ))}
       </ul>
+      {course && <Preview course={course} />}
     </main>
+  );
+}
+
+function Preview({ course }: { course: Course }) {
+  return (
+    <section>
+      <h2>
+        {course.code} {course.title}
+      </h2>
+      <a href={`/courses/${course.code}`}>Expand</a>
+      {course.description.map((paragraph) => (
+        <p key={paragraph}>{paragraph}</p>
+      ))}
+    </section>
   );
 }
 
