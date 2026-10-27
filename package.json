@@ -11,7 +11,8 @@
     "check": "biome check",
     "typecheck": "tsc --noEmit",
     "catalog:fetch": "node catalog/fetch.ts",
-    "catalog:courses": "node catalog/courses.ts"
+    "catalog:courses": "node catalog/courses.ts",
+    "catalog:terms": "node catalog/terms.ts"
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.3.0",

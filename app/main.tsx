@@ -3,8 +3,25 @@ import { render } from "preact";
 import { LocationProvider, Route, Router } from "preact-iso";
 import type { Course } from "../catalog/courses.ts";
 import type { Requisite } from "../catalog/requisites.ts";
+import type { TermSections } from "../catalog/terms.ts";
+import { byType, formatDays, formatTime, termName } from "./sections.ts";
 
-const courses: Course[] = await (await fetch("/data/courses.json")).json();
+const json = async (path: string) => (await fetch(path)).json();
+
+const [courses, terms]: [Course[], string[]] = await Promise.all([
+  json("/data/courses.json"),
+  json("/data/terms.json"),
+]);
+// Each term is a small file, so all of them load up front and switching
+// terms is instant.
+const sections: Record<string, TermSections> = Object.fromEntries(
+  await Promise.all(
+    terms.map(async (code) => [code, await json(`/data/terms/${code}.json`)]),
+  ),
+);
+
+// The latest term fetched, which is the next one to register for.
+const term = signal(terms[terms.length - 1]);
 
 const query = signal("");
 
@@ -29,6 +46,18 @@ function Search() {
   const course = results.value[selected.value];
   return (
     <main>
+      <select
+        value={term.value}
+        onChange={(event) => {
+          term.value = event.currentTarget.value;
+        }}
+      >
+        {terms.map((code) => (
+          <option key={code} value={code}>
+            {termName(code)}
+          </option>
+        ))}
+      </select>
       <input
         type="search"
         placeholder="Search courses"
@@ -93,11 +122,36 @@ function Preview({ course }: { course: Course }) {
         )}
       </dl>
       <CourseRequisites course={course} />
+      <CourseSections course={course} />
       {course.description.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}
       <CourseNotes course={course} />
     </section>
+  );
+}
+
+function CourseSections({ course }: { course: Course }) {
+  const offered = sections[term.value][course.code];
+  if (!offered) return <p>Not offered in {termName(term.value)}</p>;
+  return (
+    <>
+      {byType(offered).map(({ type, count, slots }) => (
+        <section key={type}>
+          <h3>{type}</h3>
+          <ul>
+            {slots.map((slot) => (
+              <li key={JSON.stringify(slot)}>
+                {formatDays(slot.days)} {formatTime(slot.time)}
+              </li>
+            ))}
+          </ul>
+          <p>
+            {count} {count === 1 ? "section" : "sections"}
+          </p>
+        </section>
+      ))}
+    </>
   );
 }
 
