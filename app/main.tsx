@@ -4,6 +4,7 @@ import { LocationProvider, Route, Router } from "preact-iso";
 import type { Course } from "../catalog/courses.ts";
 import type { Requisite } from "../catalog/requisites.ts";
 import type { TermSections } from "../catalog/terms.ts";
+import { add, schedules } from "./schedule.ts";
 import { byType, formatDays, formatTime, termName } from "./sections.ts";
 
 const json = async (path: string) => (await fetch(path)).json();
@@ -22,6 +23,8 @@ const sections: Record<string, TermSections> = Object.fromEntries(
 
 // The latest term fetched, which is the next one to register for.
 const term = signal(terms[terms.length - 1]);
+
+const schedule = computed(() => schedules.value[term.value] ?? []);
 
 const query = signal("");
 
@@ -74,6 +77,8 @@ function Search() {
           } else if (event.key === "ArrowUp") {
             event.preventDefault();
             selected.value = Math.max(selected.value - 1, 0);
+          } else if (event.key === "Enter" && course) {
+            add(term.value, course.code);
           }
         }}
       />
@@ -96,6 +101,12 @@ function Search() {
         ))}
       </ul>
       {course && <Preview course={course} />}
+      <h2>Schedule</h2>
+      <ul>
+        {schedule.value.map((code) => (
+          <li key={code}>{code}</li>
+        ))}
+      </ul>
     </main>
   );
 }
@@ -107,6 +118,13 @@ function Preview({ course }: { course: Course }) {
         {course.code} {course.title}
       </h2>
       <a href={`/courses/${course.code}`}>Expand</a>
+      <button
+        type="button"
+        disabled={schedule.value.includes(course.code)}
+        onClick={() => add(term.value, course.code)}
+      >
+        Add to schedule
+      </button>
       <dl>
         {course.units && (
           <>
