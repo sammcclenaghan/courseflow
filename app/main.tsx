@@ -26,6 +26,11 @@ const term = signal(terms[terms.length - 1]);
 
 const schedule = computed(() => schedules.value[term.value] ?? []);
 
+function addToSchedule(code: string) {
+  const offered = sections[term.value][code];
+  if (offered) add(term.value, code, offered);
+}
+
 const query = signal("");
 
 const squash = (text: string) => text.replaceAll(" ", "").toLowerCase();
@@ -78,7 +83,7 @@ function Search() {
             event.preventDefault();
             selected.value = Math.max(selected.value - 1, 0);
           } else if (event.key === "Enter" && course) {
-            add(term.value, course.code);
+            addToSchedule(course.code);
           }
         }}
       />
@@ -103,8 +108,14 @@ function Search() {
       {course && <Preview course={course} />}
       <h2>Schedule</h2>
       <ul>
-        {schedule.value.map((code) => (
-          <li key={code}>{code}</li>
+        {schedule.value.map(({ code, crns }) => (
+          <li key={code}>
+            {code}{" "}
+            {sections[term.value][code]
+              .filter((section) => crns.includes(section.crn))
+              .map((section) => section.number)
+              .join(" ")}
+          </li>
         ))}
       </ul>
     </main>
@@ -120,8 +131,11 @@ function Preview({ course }: { course: Course }) {
       <a href={`/courses/${course.code}`}>Expand</a>
       <button
         type="button"
-        disabled={schedule.value.includes(course.code)}
-        onClick={() => add(term.value, course.code)}
+        disabled={
+          !sections[term.value][course.code] ||
+          schedule.value.some((entry) => entry.code === course.code)
+        }
+        onClick={() => addToSchedule(course.code)}
       >
         Add to schedule
       </button>
