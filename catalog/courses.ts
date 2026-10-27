@@ -11,6 +11,7 @@ export type Course = {
   prerequisites: Requisite[];
   preOrCorequisites: Requisite[];
   corequisites: Requisite[];
+  notes: string[];
 };
 
 type RawCourse = {
@@ -25,6 +26,9 @@ type RawCourse = {
   preAndCorequisites?: string;
   preOrCorequisites?: string;
   corequisites?: string;
+  supplementalNotes?: string;
+  recommendations?: string;
+  repeatableCatalogText?: string;
 };
 
 const raw: { courses: RawCourse[] } = JSON.parse(
@@ -41,6 +45,16 @@ const courses: Course[] = raw.courses
     prerequisites: requisites(course.preAndCorequisites ?? "", codes),
     preOrCorequisites: requisites(course.preOrCorequisites ?? "", codes),
     corequisites: requisites(course.corequisites ?? "", codes),
+    // A Set, since Kuali sometimes repeats the repeat rule among the notes.
+    notes: [
+      ...new Set([
+        ...paragraphs(course.supplementalNotes ?? ""),
+        ...paragraphs(course.recommendations ?? ""),
+        ...(course.repeatableCatalogText?.trim()
+          ? [course.repeatableCatalogText.trim()]
+          : []),
+      ]),
+    ],
   }))
   .sort((a, b) => a.code.localeCompare(b.code));
 

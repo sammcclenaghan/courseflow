@@ -96,6 +96,21 @@ function Preview({ course }: { course: Course }) {
       {course.description.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}
+      <CourseNotes course={course} />
+    </section>
+  );
+}
+
+function CourseNotes({ course }: { course: Course }) {
+  if (course.notes.length === 0) return null;
+  return (
+    <section>
+      <h3>Notes</h3>
+      <ul>
+        {course.notes.map((note) => (
+          <li key={note}>{note}</li>
+        ))}
+      </ul>
     </section>
   );
 }
@@ -154,6 +169,7 @@ function CoursePage({ code }: { code: string }) {
       {course.description.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}
+      <CourseNotes course={course} />
     </main>
   );
 }

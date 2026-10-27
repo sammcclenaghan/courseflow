@@ -13,10 +13,17 @@ export function clean(text: string | null | undefined): string {
 
 /**
  * Kuali's HTML as plain-text paragraphs. Each top-level element is a
- * paragraph; a <br> between them has no text, so it drops out.
+ * paragraph, except a list, whose items each are; a <br> between them has no
+ * text, so it drops out.
  */
 export function paragraphs(html: string): string[] {
   return [...htmlBody(html).children]
+    .flatMap((element) =>
+      // childNodes, not children: a few lists have a sentence outside any <li>.
+      element.nodeName === "UL" || element.nodeName === "OL"
+        ? [...element.childNodes]
+        : [element],
+    )
     .map((element) => clean(element.textContent))
     .filter((text) => text !== "");
 }

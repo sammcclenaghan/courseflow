@@ -10,6 +10,28 @@ describe("paragraphs", () => {
     ).toEqual(["Examination of a topic.", "* Hours may vary."]);
   });
 
+  it("makes each list item a paragraph", () => {
+    expect(
+      paragraphs(
+        "<ul><li>Credit for only one of CSC 110, CSC 111.</li><li>Not open to Engineering students.</li></ul>",
+      ),
+    ).toEqual([
+      "Credit for only one of CSC 110, CSC 111.",
+      "Not open to Engineering students.",
+    ]);
+  });
+
+  it("keeps a sentence a list has outside its items", () => {
+    expect(
+      paragraphs(
+        "<ul> <li>Credit for only one of CYC 211, CYC 210.</li> Complete 150 hours.</ul>",
+      ),
+    ).toEqual([
+      "Credit for only one of CYC 211, CYC 210.",
+      "Complete 150 hours.",
+    ]);
+  });
+
   it("treats a div as a paragraph", () => {
     expect(paragraphs("<div>Introduction to estimation.</div>")).toEqual([
       "Introduction to estimation.",
