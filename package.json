@@ -10,8 +10,7 @@
     "test": "vitest run",
     "check": "biome check",
     "typecheck": "tsc --noEmit",
-    "catalog:fetch": "node catalog/fetch.ts",
-    "catalog:build": "node catalog/build.ts"
+    "catalog:fetch": "node catalog/fetch.ts"
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.3.0",
@@ -26,13 +25,11 @@
     "@preact/preset-vite": "2.10.6",
     "@tailwindcss/vite": "4.3.3",
     "@types/node": "22.20.0",
-    "linkedom": "0.18.13",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
     "vite": "8.3.4",
     "vitest": "4.1.11",
-    "wrangler": "4.149.0",
-    "zod": "4.4.3"
+    "wrangler": "4.149.0"
   },
   "allowScripts": {
     "esbuild": true,

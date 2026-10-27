@@ -7,8 +7,7 @@
       "worker/**",
       "index.html",
       "vite.config.ts",
-      "vitest.config.ts",
-      "!catalog/fixtures"
+      "vitest.config.ts"
     ]
   },
   "formatter": {
