@@ -77,6 +77,20 @@ function Preview({ course }: { course: Course }) {
         {course.code} {course.title}
       </h2>
       <a href={`/courses/${course.code}`}>Expand</a>
+      <dl>
+        {course.units && (
+          <>
+            <dt>Units</dt>
+            <dd>{course.units}</dd>
+          </>
+        )}
+        {course.hours && (
+          <>
+            <dt>Hours</dt>
+            <dd>{course.hours}</dd>
+          </>
+        )}
+      </dl>
       {course.description.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}
