@@ -1,4 +1,5 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { clean, htmlBody } from "./text.ts";
 
 /** public/data/terms/<code>.json: each offered course's sections, by code. */
 export type TermSections = Record<string, Section[]>;
@@ -12,6 +13,10 @@ export type Section = {
    * lecture A1 goes with tutorials T1, and lecture A2 with tutorials T2.
    */
   group: string | null;
+  /** "Face-to-face", "Fully Online", "Blended"… as Banner writes it. */
+  delivery: string | null;
+  /** Where it's held, or null on the main campus, where most are. */
+  campus: string | null;
   meetings: Meeting[];
 };
 
@@ -38,6 +43,8 @@ type RawSection = {
   sequenceNumber: string;
   scheduleTypeDescription: string;
   linkIdentifier: string | null;
+  instructionalMethodDescription: string | null;
+  campusDescription: string;
   meetingsFaculty: { meetingTime: RawMeeting }[];
 };
 
@@ -72,6 +79,8 @@ for (const code of terms) {
       number: row.sequenceNumber,
       type: row.scheduleTypeDescription,
       group: row.linkIdentifier?.slice(1) ?? null,
+      delivery: row.instructionalMethodDescription,
+      campus: campus(row.campusDescription),
       meetings: meetings(row.meetingsFaculty.map((m) => m.meetingTime)),
     });
     sections[row.subjectCourse] = list;
@@ -108,6 +117,12 @@ function meetings(raw: RawMeeting[]): Meeting[] {
     all.map((meeting) => [JSON.stringify(meeting), meeting]),
   );
   return [...unique.values()];
+}
+
+// Banner escapes some names, like "W&#39;SANEC".
+function campus(description: string): string | null {
+  const name = clean(htmlBody(description).textContent);
+  return name === "Main (Gordon Head)" ? null : name;
 }
 
 // "0930" → 570

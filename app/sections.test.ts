@@ -18,6 +18,8 @@ const section = (
   number,
   type,
   group: null,
+  delivery: "Face-to-face",
+  campus: null,
   meetings: [{ days, time, startDate: "2027-01-06", endDate: "2027-04-07" }],
 });
 

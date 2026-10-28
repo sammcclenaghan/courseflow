@@ -17,7 +17,15 @@ const section = (
   type: string,
   group: string | null = null,
   meetings: Meeting[] = [],
-): Section => ({ crn: `crn-${number}`, number, type, group, meetings });
+): Section => ({
+  crn: `crn-${number}`,
+  number,
+  type,
+  group,
+  delivery: "Face-to-face",
+  campus: null,
+  meetings,
+});
 
 // ASTR 101's labs: a weekly Monday morning, and one Monday night.
 const lab = section("B01", "Lab", null, [
