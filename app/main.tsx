@@ -4,7 +4,18 @@ import { LocationProvider, Route, Router } from "preact-iso";
 import type { Course } from "../catalog/courses.ts";
 import type { Requisite } from "../catalog/requisites.ts";
 import type { TermSections } from "../catalog/terms.ts";
-import { add, schedules } from "./schedule.ts";
+import { addDays, formatDate, monday, today } from "./dates.ts";
+import {
+  add,
+  type Conflict,
+  conflicts,
+  conflictsOn,
+  type Occurrence,
+  occurrences,
+  openingWeek,
+  picked,
+  schedules,
+} from "./schedule.ts";
 import { byType, formatDays, formatTime, termName } from "./sections.ts";
 
 const json = async (path: string) => (await fetch(path)).json();
@@ -25,6 +36,26 @@ const sections: Record<string, TermSections> = Object.fromEntries(
 const term = signal(terms[terms.length - 1]);
 
 const schedule = computed(() => schedules.value[term.value] ?? []);
+
+// The Monday picked with the arrows, or null to open on openingWeek.
+const week = signal<string | null>(null);
+
+const scheduleConflicts = computed(() =>
+  conflicts(schedule.value, sections[term.value]),
+);
+
+const name = ({ code, section }: Occurrence) => `${code} ${section.number}`;
+
+// The other side of each conflict an occurrence is in.
+const against = (
+  found: Conflict[],
+  isIt: (occurrence: Occurrence) => boolean,
+) => found.flatMap(([a, b]) => (isIt(a) ? [b] : isIt(b) ? [a] : []));
+
+const shownWeek = computed(
+  () =>
+    week.value ?? openingWeek(schedule.value, sections[term.value], today()),
+);
 
 function addToSchedule(code: string) {
   const offered = sections[term.value][code];
@@ -58,6 +89,7 @@ function Search() {
         value={term.value}
         onChange={(event) => {
           term.value = event.currentTarget.value;
+          week.value = null;
         }}
       >
         {terms.map((code) => (
@@ -108,17 +140,101 @@ function Search() {
       {course && <Preview course={course} />}
       <h2>Schedule</h2>
       <ul>
-        {schedule.value.map(({ code, crns }) => (
-          <li key={code}>
-            {code}{" "}
-            {sections[term.value][code]
-              .filter((section) => crns.includes(section.crn))
-              .map((section) => section.number)
-              .join(" ")}
-          </li>
-        ))}
+        {schedule.value.map((entry) => {
+          const others = new Set(
+            against(
+              scheduleConflicts.value,
+              (occurrence) => occurrence.code === entry.code,
+            ).map(name),
+          );
+          return (
+            <li key={entry.code}>
+              {entry.code}{" "}
+              {picked(entry, sections[term.value])
+                .map((section) => section.number)
+                .join(" ")}
+              {others.size > 0 && ` — conflicts with ${[...others].join(", ")}`}
+            </li>
+          );
+        })}
       </ul>
+      <Calendar />
     </main>
+  );
+}
+
+function Calendar() {
+  const start = shownWeek.value;
+  if (!start) return null;
+  const termSections = sections[term.value];
+  const days = [0, 1, 2, 3, 4, 5, 6]
+    .map((offset) => addDays(start, offset))
+    .map((date) => {
+      const day = occurrences(schedule.value, termSections, date);
+      return { date, day, found: conflictsOn(day) };
+    })
+    // Weekends only when something meets on them, which is rare.
+    .filter(({ day }, index) => index < 5 || day.length > 0);
+  const unscheduled = schedule.value.flatMap((entry) =>
+    picked(entry, termSections)
+      .filter((section) => section.meetings.every((meeting) => !meeting.time))
+      .map((section) => `${entry.code} ${section.number}`),
+  );
+  return (
+    <section>
+      <h2>Week of {formatDate(start)}</h2>
+      <button
+        type="button"
+        onClick={() => {
+          week.value = addDays(start, -7);
+        }}
+      >
+        Previous
+      </button>
+      <button
+        type="button"
+        onClick={() => {
+          week.value = monday(today());
+        }}
+      >
+        Today
+      </button>
+      <button
+        type="button"
+        onClick={() => {
+          week.value = addDays(start, 7);
+        }}
+      >
+        Next
+      </button>
+      {days.map(({ date, day, found }) => (
+        <section key={date}>
+          <h3>{formatDate(date)}</h3>
+          <ul>
+            {day.map((occurrence) => {
+              const others = against(found, (other) => other === occurrence);
+              return (
+                <li key={`${occurrence.section.crn} ${occurrence.time.start}`}>
+                  {name(occurrence)} {formatTime(occurrence.time)}
+                  {others.length > 0 &&
+                    ` — conflicts with ${others.map(name).join(", ")}`}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      ))}
+      {unscheduled.length > 0 && (
+        <section>
+          <h3>Unscheduled</h3>
+          <ul>
+            {unscheduled.map((name) => (
+              <li key={name}>{name}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </section>
   );
 }
 
