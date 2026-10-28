@@ -7,7 +7,11 @@ export type Section = {
   crn: string;
   number: string;
   type: string;
-  linkId: string | null;
+  /**
+   * The number in Banner's link ID, which pairs sections across types:
+   * lecture A1 goes with tutorials T1, and lecture A2 with tutorials T2.
+   */
+  group: string | null;
   meetings: Meeting[];
 };
 
@@ -67,13 +71,19 @@ for (const code of terms) {
       crn: row.courseReferenceNumber,
       number: row.sequenceNumber,
       type: row.scheduleTypeDescription,
-      linkId: row.linkIdentifier,
+      group: row.linkIdentifier?.slice(1) ?? null,
       meetings: meetings(row.meetingsFaculty.map((m) => m.meetingTime)),
     });
     sections[row.subjectCourse] = list;
   }
-  for (const list of Object.values(sections))
+  for (const [course, list] of Object.entries(sections)) {
     list.sort((a, b) => a.number.localeCompare(b.number));
+    // The lecture picks the group, so a group without one can't be chosen.
+    const lead = list[0].type;
+    for (const { group } of list)
+      if (group && !list.some((s) => s.type === lead && s.group === group))
+        throw new Error(`${code} ${course}: group ${group} has no ${lead}`);
+  }
 
   writeFileSync(`public/data/terms/${code}.json`, JSON.stringify(sections));
   console.log(`${code}: ${Object.keys(sections).length} courses`);

@@ -1,4 +1,5 @@
 import type { Meeting, Section } from "../catalog/terms.ts";
+import { formatDate } from "./dates.ts";
 
 export type Slot = Pick<Meeting, "days" | "time">;
 
@@ -41,6 +42,13 @@ const DAY_LETTERS = ["U", "M", "T", "W", "R", "F", "S"];
 /** [2, 3, 5] → "T W F", as UVic writes days. */
 export function formatDays(days: number[]): string {
   return days.map((day) => DAY_LETTERS[day]).join(" ");
+}
+
+/** "M R 10:00 – 11:20 AM", or its date for a meeting that happens once. */
+export function formatMeeting(meeting: Meeting): string {
+  const once = meeting.startDate === meeting.endDate;
+  const when = once ? formatDate(meeting.startDate) : formatDays(meeting.days);
+  return `${when} ${formatTime(meeting.time)}`;
 }
 
 /** 570–620 → "9:30 – 10:20 AM"; 690–740 → "11:30 AM – 12:20 PM". */

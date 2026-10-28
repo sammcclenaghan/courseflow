@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 import type { Section } from "../catalog/terms.ts";
-import { byType, formatDays, formatTime, termName } from "./sections.ts";
+import {
+  byType,
+  formatDays,
+  formatMeeting,
+  formatTime,
+  termName,
+} from "./sections.ts";
 
 const section = (
   number: string,
@@ -11,7 +17,7 @@ const section = (
   crn: number,
   number,
   type,
-  linkId: null,
+  group: null,
   meetings: [{ days, time, startDate: "2027-01-06", endDate: "2027-04-07" }],
 });
 
@@ -53,6 +59,21 @@ describe("formatTime", () => {
 
   it("says TBA without a time", () => {
     expect(formatTime(null)).toBe("TBA");
+  });
+});
+
+describe("formatMeeting", () => {
+  it("names the date of a meeting that happens once", () => {
+    const meeting = {
+      days: [1],
+      time: { start: 1230, end: 1370 },
+      startDate: "2027-03-22",
+      endDate: "2027-04-07",
+    };
+    expect(formatMeeting(meeting)).toBe("M 8:30 – 10:50 PM");
+    expect(formatMeeting({ ...meeting, endDate: "2027-03-22" })).toBe(
+      "Mon, Mar 22 8:30 – 10:50 PM",
+    );
   });
 });
 

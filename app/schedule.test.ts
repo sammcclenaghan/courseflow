@@ -5,17 +5,19 @@ import {
   conflicts,
   conflictsOn,
   lowestSections,
+  missingTypes,
   occurrences,
   openingWeek,
   schedules,
+  withChoice,
 } from "./schedule.ts";
 
 const section = (
   number: string,
   type: string,
-  linkId: string | null = null,
+  group: string | null = null,
   meetings: Meeting[] = [],
-): Section => ({ crn: `crn-${number}`, number, type, linkId, meetings });
+): Section => ({ crn: `crn-${number}`, number, type, group, meetings });
 
 // ASTR 101's labs: a weekly Monday morning, and one Monday night.
 const lab = section("B01", "Lab", null, [
@@ -67,10 +69,10 @@ describe("lowestSections", () => {
   it("keeps every pick in the lowest section's link group", () => {
     expect(
       lowestSections([
-        section("A01", "Lecture", "A2"),
-        section("A02", "Lecture", "A1"),
-        section("T01", "Tutorial", "T1"),
-        section("T02", "Tutorial", "T2"),
+        section("A01", "Lecture", "2"),
+        section("A02", "Lecture", "1"),
+        section("T01", "Tutorial", "1"),
+        section("T02", "Tutorial", "2"),
       ]).map((pick) => pick.number),
     ).toEqual(["A01", "T02"]);
   });
@@ -146,5 +148,63 @@ describe("conflicts", () => {
     expect(found.map(([a, b]) => [a.date, a.code, b.code])).toEqual([
       ["2027-03-22", "PHYS999", "ASTR101"],
     ]);
+  });
+});
+
+describe("withChoice", () => {
+  // CSC 110's shape: lectures and labs in two link groups.
+  const csc110 = [
+    section("A01", "Lecture", "1"),
+    section("A16", "Lecture", "2"),
+    section("B01", "Lab", "1"),
+    section("B02", "Lab", "1"),
+    section("B24", "Lab", "2"),
+  ];
+  const sections = { CSC110: csc110 };
+  const [a01, a16, , b02, b24] = csc110;
+  const start = [{ code: "CSC110", crns: ["crn-A01", "crn-B01"] }];
+  const crns = (entries: { crns: string[] }[]) => entries[0].crns.toSorted();
+
+  it("replaces the pick of the chosen section's type", () => {
+    expect(crns(withChoice(start, "CSC110", b02, sections))).toEqual([
+      "crn-A01",
+      "crn-B02",
+    ]);
+  });
+
+  it("drops picks a new lecture doesn't go with, instead of replacing them", () => {
+    const moved = withChoice(start, "CSC110", a16, sections);
+    expect(crns(moved)).toEqual(["crn-A16"]);
+    expect(crns(withChoice(moved, "CSC110", b24, sections))).toEqual([
+      "crn-A16",
+      "crn-B24",
+    ]);
+  });
+
+  it("refuses a section that doesn't go with the lecture", () => {
+    expect(withChoice(start, "CSC110", b24, sections)).toEqual(start);
+    expect(crns(withChoice(start, "CSC110", a01, sections))).toEqual([
+      "crn-A01",
+      "crn-B01",
+    ]);
+  });
+});
+
+describe("missingTypes", () => {
+  // MECH 580's shape: each lecture's group has different other types.
+  const mech580 = [
+    section("A01", "Lecture", "1"),
+    section("A02", "Lecture", "2"),
+    section("A03", "Lecture"),
+    section("B01", "Lab", "1"),
+    section("T01", "Tutorial", "2"),
+  ];
+  const [a01, a02, a03, b01] = mech580;
+
+  it("asks only for the types the lecture's group has", () => {
+    expect(missingTypes([a01], mech580)).toEqual(["Lab"]);
+    expect(missingTypes([a01, b01], mech580)).toEqual([]);
+    expect(missingTypes([a02], mech580)).toEqual(["Tutorial"]);
+    expect(missingTypes([a03], mech580)).toEqual([]);
   });
 });

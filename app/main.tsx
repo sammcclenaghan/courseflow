@@ -8,15 +8,26 @@ import { addDays, formatDate, monday, today } from "./dates.ts";
 import {
   add,
   type Conflict,
+  canChoose,
+  choose,
   conflicts,
   conflictsOn,
+  type Entry,
+  missingTypes,
   type Occurrence,
   occurrences,
   openingWeek,
   picked,
   schedules,
+  withChoice,
 } from "./schedule.ts";
-import { byType, formatDays, formatTime, termName } from "./sections.ts";
+import {
+  byType,
+  formatDays,
+  formatMeeting,
+  formatTime,
+  termName,
+} from "./sections.ts";
 
 const json = async (path: string) => (await fetch(path)).json();
 
@@ -36,6 +47,9 @@ const sections: Record<string, TermSections> = Object.fromEntries(
 const term = signal(terms[terms.length - 1]);
 
 const schedule = computed(() => schedules.value[term.value] ?? []);
+
+// The course whose sections are open for picking.
+const editing = signal<string | null>(null);
 
 // The Monday picked with the arrows, or null to open on openingWeek.
 const week = signal<string | null>(null);
@@ -81,10 +95,20 @@ const results = computed(() => {
 // A position in results, so typing starts again at the best match.
 const selected = signal(0);
 
+// Separate components, so typing a search doesn't redraw the schedule.
+function Home() {
+  return (
+    <main>
+      <Search />
+      <Schedule />
+    </main>
+  );
+}
+
 function Search() {
   const course = results.value[selected.value];
   return (
-    <main>
+    <>
       <select
         value={term.value}
         onChange={(event) => {
@@ -138,6 +162,13 @@ function Search() {
         ))}
       </ul>
       {course && <Preview course={course} />}
+    </>
+  );
+}
+
+function Schedule() {
+  return (
+    <>
       <h2>Schedule</h2>
       <ul>
         {schedule.value.map((entry) => {
@@ -153,13 +184,88 @@ function Search() {
               {picked(entry, sections[term.value])
                 .map((section) => section.number)
                 .join(" ")}
-              {others.size > 0 && ` — conflicts with ${[...others].join(", ")}`}
+              {others.size > 0 && ` — conflicts with ${[...others].join(", ")}`}{" "}
+              <button
+                type="button"
+                onClick={() => {
+                  editing.value =
+                    editing.value === entry.code ? null : entry.code;
+                }}
+              >
+                {editing.value === entry.code ? "Done" : "Change sections"}
+              </button>
+              {editing.value === entry.code && <Picker entry={entry} />}
             </li>
           );
         })}
       </ul>
       <Calendar />
-    </main>
+    </>
+  );
+}
+
+function Picker({ entry }: { entry: Entry }) {
+  const termSections = sections[term.value];
+  const offered = termSections[entry.code];
+  const picks = picked(entry, termSections);
+  const missing = missingTypes(picks, offered);
+  const lead = offered[0].type;
+  const types = [...new Set(offered.map((section) => section.type))];
+  return (
+    <>
+      {types.map((type) => (
+        <section key={type}>
+          <h4>
+            {type}
+            {missing.includes(type) && " — pick one"}
+          </h4>
+          <ul>
+            {offered
+              .filter((section) => section.type === type)
+              .map((section) => {
+                const isPicked = picks.includes(section);
+                const allowed = canChoose(section, picks, offered);
+                const lectures = offered
+                  .filter((s) => s.type === lead && s.group === section.group)
+                  .map((s) => s.number);
+                const others =
+                  allowed && !isPicked
+                    ? against(
+                        conflicts(
+                          withChoice(
+                            schedule.value,
+                            entry.code,
+                            section,
+                            termSections,
+                          ),
+                          termSections,
+                        ),
+                        (occurrence) => occurrence.section === section,
+                      ).map(name)
+                    : [];
+                return (
+                  <li key={section.crn}>
+                    <button
+                      type="button"
+                      disabled={isPicked || !allowed}
+                      onClick={() =>
+                        choose(term.value, entry.code, section, termSections)
+                      }
+                    >
+                      {isPicked && "✓ "}
+                      {section.number} ·{" "}
+                      {section.meetings.map(formatMeeting).join("; ") || "TBA"}
+                    </button>
+                    {!allowed && ` — goes with ${lectures.join(", ")}`}
+                    {others.length > 0 &&
+                      ` — conflicts with ${[...new Set(others)].join(", ")}`}
+                  </li>
+                );
+              })}
+          </ul>
+        </section>
+      ))}
+    </>
   );
 }
 
@@ -380,7 +486,7 @@ function App() {
   return (
     <LocationProvider>
       <Router>
-        <Route path="/" component={Search} />
+        <Route path="/" component={Home} />
         <Route path="/courses/:code" component={CoursePage} />
       </Router>
     </LocationProvider>

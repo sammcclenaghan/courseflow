@@ -24,19 +24,81 @@ export function add(term: string, code: string, sections: Section[]) {
   };
 }
 
-/**
- * The lowest-numbered section of each type that can be taken with the
- * lowest section overall. A link ID's number pairs sections: lecture A1
- * goes with tutorials T1, and lecture A2 with tutorials T2.
- */
+/** The lowest section of each type that goes with the lowest one overall. */
 export function lowestSections(sections: Section[]): Section[] {
-  const group = sections[0].linkId?.slice(1);
   const picks = new Map<string, Section>();
-  for (const section of sections) {
-    const fits = !section.linkId || section.linkId.slice(1) === group;
-    if (fits && !picks.has(section.type)) picks.set(section.type, section);
-  }
+  for (const section of sections)
+    if (goesWith(section, sections[0]) && !picks.has(section.type))
+      picks.set(section.type, section);
   return [...picks.values()];
+}
+
+/**
+ * The lecture is a course's leading type, the type of its first section,
+ * and its group decides which other sections can be taken with it.
+ */
+function goesWith(section: Section, lecture: Section) {
+  return !section.group || section.group === lecture.group;
+}
+
+/** Any lecture can be chosen; anything else must go with the lecture. */
+export function canChoose(
+  choice: Section,
+  picks: Section[],
+  sections: Section[],
+): boolean {
+  if (choice.type === sections[0].type) return true;
+  const lecture = picks.find((pick) => pick.type === sections[0].type);
+  return lecture !== undefined && goesWith(choice, lecture);
+}
+
+/**
+ * A schedule after choosing a section. A new lecture keeps the picks that
+ * still go with it and drops the rest, to be picked again, so nothing is
+ * ever chosen for you.
+ */
+export function withChoice(
+  entries: Entry[],
+  code: string,
+  choice: Section,
+  sections: TermSections,
+): Entry[] {
+  return entries.map((entry) => {
+    if (entry.code !== code) return entry;
+    const picks = picked(entry, sections);
+    if (!canChoose(choice, picks, sections[code])) return entry;
+    const kept = picks.filter(
+      (pick) =>
+        pick.type !== choice.type &&
+        (choice.type !== sections[code][0].type || goesWith(pick, choice)),
+    );
+    return { code, crns: [...kept, choice].map((section) => section.crn) };
+  });
+}
+
+export function choose(
+  term: string,
+  code: string,
+  choice: Section,
+  sections: TermSections,
+) {
+  const entries = schedules.value[term] ?? [];
+  schedules.value = {
+    ...schedules.value,
+    [term]: withChoice(entries, code, choice, sections),
+  };
+}
+
+/** The types the lecture's group has that nothing is picked for yet. */
+export function missingTypes(picks: Section[], sections: Section[]): string[] {
+  const lecture = picks.find((pick) => pick.type === sections[0].type);
+  if (!lecture) return [];
+  const needed = sections
+    .filter((section) => goesWith(section, lecture))
+    .map((section) => section.type);
+  return [...new Set(needed)].filter(
+    (type) => !picks.some((pick) => pick.type === type),
+  );
 }
 
 export function picked({ code, crns }: Entry, sections: TermSections) {
